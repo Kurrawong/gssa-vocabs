@@ -2,7 +2,9 @@
 
 This repository contains the source files of the Geological Survey of South Australia ([GSSA](https://www.energymining.sa.gov.au/industry/geological-survey)). 
 
-These vocabularies are presented as [Simple Knowledge Organization System (SKOS)](https://www.w3.org/TR/skos-reference/) vocabularies.
+These vocabularies are presented as [Simple Knowledge Organization System (SKOS)](https://www.w3.org/TR/skos-reference/) vocabularies online. 
+
+This repository is managed so that vocabularies merged into the main branch here are automatically pushed through to the online publishing location, see next section.
 
 ## Online location
 
