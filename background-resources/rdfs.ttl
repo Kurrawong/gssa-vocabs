@@ -69,7 +69,7 @@ rdfs:seeAlso a rdf:Property ;
 rdfs:isDefinedBy a rdf:Property ;
 	rdfs:isDefinedBy <http://www.w3.org/2000/01/rdf-schema#> ;
 	rdfs:subPropertyOf rdfs:seeAlso ;
-	rdfs:label "isDefinedBy" ;
+	rdfs:label "is defined by" ;
 	rdfs:comment "The defininition of the subject resource." ;
 	rdfs:range rdfs:Resource ;
 	rdfs:domain rdfs:Resource .

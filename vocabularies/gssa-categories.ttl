@@ -40,6 +40,7 @@ These categories are often the same as the Australian government's Fields of Res
 <https://linked.data.gov.au/org/gssa>
     a sdo:Organization ;
     sdo:name "Geological Survey of South Australia" ;
+    rdfs:label "Geological Survey of South Australia" ;
     sdo:url "https://www.energymining.sa.gov.au/industry/geological-survey"^^xsd:anyURI ;
 .
 
