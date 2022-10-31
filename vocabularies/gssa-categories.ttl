@@ -1,0 +1,1453 @@
+PREFIX : <https://linked.data.gov.au/def/gssa-categories/>
+PREFIX cs: <https://linked.data.gov.au/def/gssa-categories>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX for2008: <http://purl.org/au-research/vocabulary/anzsrc-for/2008/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX sdo: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+
+cs:
+    a skos:ConceptScheme ;
+    dcterms:created "2021-09-14"^^xsd:date ;
+    dcterms:modified "2022-10-31"^^xsd:date ;
+    dcterms:published "2022-11-01"^^xsd:date ;
+    dcterms:creator <https://linked.data.gov.au/org/gssa> ;
+    dcterms:publisher <https://linked.data.gov.au/org/gssa> ;
+    dcterms:identifier "gssa-categories"^^xsd:token ;
+    dcterms:license <https://purl.org/NET/rdflicense/cc-by4.0> ;
+    dcterms:provenance "This vocabulary was established in 2022 as part of GSSA's new catalogue implementation project" ;
+    dcterms:rights "© Department for Energy and Mining, 2022" ;
+    skos:definition """Categories of data used by the Geological Survey of South Australia.
+
+These categories are often the same as the Australian government's Fields of Research (FoR) codes but with fine-grained additions in GSSA's areas of interest and excluding many codes in unrelated areas."""@en ;
+    skos:prefLabel "Geological Survey of South Australia Categories"@en ;
+    skos:hasTopConcept
+        :0976 ,
+        :0616 ,
+        :0463 ,
+        :0986 ,
+        :0628 ,
+        :0148 ,
+        :0056 ,
+        :0802 ,
+        :0389 ,
+        :0492 ,
+        :0030 ;
+.
+
+<https://linked.data.gov.au/org/gssa>
+    a sdo:Organization ;
+    sdo:name "Geological Survey of South Australia" ;
+    sdo:url "https://www.energymining.sa.gov.au/industry/geological-survey"^^xsd:anyURI ;
+.
+
+:0016
+    a skos:Concept ;
+    dcterms:identifier "0016"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0148 ;
+    skos:definition "Environemental Engineering"@en ;
+    skos:exactMatch for2008:0907 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Environemental Engineering"@en ;
+.
+
+:0024
+    a skos:Concept ;
+    dcterms:identifier "0024"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0492 ;
+    skos:definition "Mining And Extraction Of Energy Resources"@en ;
+    skos:exactMatch for2008:8502 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Mining and Extraction of Energy Resources"@en ;
+.
+
+:0049
+    a skos:Concept ;
+    dcterms:identifier "0049"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0379 ;
+    skos:definition "Conserving Natural Heritage"@en ;
+    skos:exactMatch for2008:950305 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Conserving Natural Heritage"@en ;
+.
+
+:0063
+    a skos:Concept ;
+    dcterms:identifier "0063"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0849 ;
+    skos:definition "Passive Seismic"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Passive Seismic"@en ;
+.
+
+:0067
+    a skos:Concept ;
+    dcterms:identifier "0067"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0875 ;
+    skos:definition "Geothermal Resource Geology"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Geothermal Resource Geology"@en ;
+.
+
+:0070
+    a skos:Concept ;
+    dcterms:identifier "0070"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0659 ;
+    skos:definition "Land Capability And Soil Degradation"@en ;
+    skos:exactMatch for2008:050302 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Land Capability and Soil Degradation"@en ;
+.
+
+:0077
+    a skos:Concept ;
+    dcterms:identifier "0077"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0148 ;
+    skos:definition "Chemical Engineering"@en ;
+    skos:exactMatch for2008:0904 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Chemical Engineering"@en ;
+.
+
+:0083
+    a skos:Concept ;
+    dcterms:identifier "0083"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0459 ;
+    skos:definition "Geostorage Engineering"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Geostorage Engineering"@en ;
+.
+
+:0100
+    a skos:Concept ;
+    dcterms:identifier "0100"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0822 ;
+    skos:definition "Environmental Impact Assessment"@en ;
+    skos:exactMatch for2008:050204 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Environmental Impact Assessment"@en ;
+.
+
+:0101
+    a skos:Concept ;
+    dcterms:identifier "0101"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0875 ;
+    skos:definition "Petroleum Geology"@en ;
+    skos:exactMatch for2008:040309 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Petroleum Geology"@en ;
+.
+
+:0117
+    a skos:Concept ;
+    dcterms:identifier "0117"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0822 ;
+    skos:definition "Natural Resource Management"@en ;
+    skos:exactMatch for2008:050207 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Natural Resource Management"@en ;
+.
+
+:0123
+    a skos:Concept ;
+    dcterms:identifier "0123"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0968 ;
+    skos:definition "Extraterrestrial Geology"@en ;
+    skos:exactMatch for2008:040302 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Extraterrestrial Geology"@en ;
+.
+
+:0132
+    a skos:Concept ;
+    dcterms:identifier "0132"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0942 ;
+    skos:definition "Numerical Computation"@en ;
+    skos:exactMatch for2008:080205 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Numerical Computation"@en ;
+.
+
+:0133
+    a skos:Concept ;
+    dcterms:identifier "0133"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0965 ;
+    skos:definition "Photogrammetry And Remote Sensing"@en ;
+    skos:exactMatch for2008:090905 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Photogrammetry and Remote Sensing"@en ;
+.
+
+:0145
+    a skos:Concept ;
+    dcterms:identifier "0145"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0351 ;
+    skos:definition "Expert Systems"@en ;
+    skos:exactMatch for2008:080105 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Expert Systems"@en ;
+.
+
+:0152
+    a skos:Concept ;
+    dcterms:identifier "0152"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0968 ;
+    skos:definition "Mineral System Geology"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Mineral System Geology"@en ;
+.
+
+:0154
+    a skos:Concept ;
+    dcterms:identifier "0154"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0389 ;
+    skos:definition "Environmentally Sustainable Mineral Resource Activities"@en ;
+    skos:exactMatch for2008:8404 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Environmentally Sustainable Mineral Resource Activities"@en ;
+.
+
+:0156
+    a skos:Concept ;
+    dcterms:identifier "0156"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0659 ;
+    skos:definition "Soil Chemistry"@en ;
+    skos:exactMatch for2008:050304 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Soil Chemistry"@en ;
+.
+
+:0176
+    a skos:Concept ;
+    dcterms:identifier "0176"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0149 ;
+    skos:definition "Land Use And Environmental Planning "@en ;
+    skos:exactMatch for2008:120504 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Land Use and Environmental Planning "@en ;
+.
+
+:0192
+    a skos:Concept ;
+    dcterms:identifier "0192"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0961 ;
+    skos:definition "Surfacewater Hydrology"@en ;
+    skos:exactMatch for2008:040608 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Surfacewater Hydrology"@en ;
+.
+
+:0202
+    a skos:Concept ;
+    dcterms:identifier "0202"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0351 ;
+    skos:definition "Pattern Recognition And Data Mining"@en ;
+    skos:exactMatch for2008:080109 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Pattern Recognition and Data Mining"@en ;
+.
+
+:0226
+    a skos:Concept ;
+    dcterms:identifier "0226"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0577 ;
+    skos:definition "Geodynamics"@en ;
+    skos:exactMatch for2008:040402 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Geodynamics"@en ;
+.
+
+:0236
+    a skos:Concept ;
+    dcterms:identifier "0236"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0389 ;
+    skos:definition "First Stage Treatment Of Ores And Minerals"@en ;
+    skos:exactMatch for2008:8403 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "First Stage Treatment Of Ores And Minerals"@en ;
+.
+
+:0256
+    a skos:Concept ;
+    dcterms:identifier "0256"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0492 ;
+    skos:definition "Energy Storage, Distribution And Supply"@en ;
+    skos:exactMatch for2008:8506 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Energy Storage, Distribution and Supply"@en ;
+.
+
+:0257
+    a skos:Concept ;
+    dcterms:identifier "0257"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0965 ;
+    skos:definition "Geospatial Information Systems"@en ;
+    skos:exactMatch for2008:090903 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Geospatial Information Systems"@en ;
+.
+
+:0261
+    a skos:Concept ;
+    dcterms:identifier "0261"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0459 ;
+    skos:definition "Geomechanics And Resources Geotechnical Engineering"@en ;
+    skos:exactMatch for2008:0901402 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Geomechanics and Resources Geotechnical Engineering"@en ;
+.
+
+:0268
+    a skos:Concept ;
+    dcterms:identifier "0268"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0492 ;
+    skos:definition "Energy Conservation And Efficiency"@en ;
+    skos:exactMatch for2008:8507 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Energy Conservation and Efficiency"@en ;
+.
+
+:0279
+    a skos:Concept ;
+    dcterms:identifier "0279"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0492 ;
+    skos:definition "Environmentally Sustainable Energy Activities"@en ;
+    skos:exactMatch for2008:8508 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Environmentally Sustainable Energy Activities"@en ;
+.
+
+:0282
+    a skos:Concept ;
+    dcterms:identifier "0282"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0968 ;
+    skos:definition "Basement Geology"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Basement Geology"@en ;
+.
+
+:0296
+    a skos:Concept ;
+    dcterms:identifier "0296"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0986 ;
+    skos:definition "Atmospheric Sciences"@en ;
+    skos:exactMatch for2008:0401 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Atmospheric Sciences"@en ;
+.
+
+:0306
+    a skos:Concept ;
+    dcterms:identifier "0306"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0351 ;
+    skos:definition "Simulation And Modelling"@en ;
+    skos:exactMatch for2008:080110 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Simulation and Modelling"@en ;
+.
+
+:0312
+    a skos:Concept ;
+    dcterms:identifier "0312"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0459 ;
+    skos:definition "Hydrometallurgy"@en ;
+    skos:exactMatch for2008:0901403 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Hydrometallurgy"@en ;
+.
+
+:0313
+    a skos:Concept ;
+    dcterms:identifier "0313"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0961 ;
+    skos:definition "Surface Processes"@en ;
+    skos:exactMatch for2008:040607 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Surface Processes"@en ;
+.
+
+:0314
+    a skos:Concept ;
+    dcterms:identifier "0314"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0961 ;
+    skos:definition "Glaciology"@en ;
+    skos:exactMatch for2008:040602 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Glaciology"@en ;
+.
+
+:0318
+    a skos:Concept ;
+    dcterms:identifier "0318"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0986 ;
+    skos:definition "Exploration Geochemistry"@en ;
+    skos:exactMatch for2008:040201 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Exploration Geochemistry"@en ;
+.
+
+:0323
+    a skos:Concept ;
+    dcterms:identifier "0323"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0968 ;
+    skos:definition "Regional Geology"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Regional Geology"@en ;
+.
+
+:0365
+    a skos:Concept ;
+    dcterms:identifier "0365"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0822 ;
+    skos:definition "Environmental Monitoring"@en ;
+    skos:exactMatch for2008:050206 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Environmental Monitoring"@en ;
+.
+
+:0385
+    a skos:Concept ;
+    dcterms:identifier "0385"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0459 ;
+    skos:definition "Mineral Processing/Beneficiation"@en ;
+    skos:exactMatch for2008:0901404 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Mineral Processing/Beneficiation"@en ;
+.
+
+:0405
+    a skos:Concept ;
+    dcterms:identifier "0405"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0492 ;
+    skos:definition "Preparation And Production Of Energy Sources"@en ;
+    skos:exactMatch for2008:8503 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Preparation and Production of Energy Sources"@en ;
+.
+
+:0408
+    a skos:Concept ;
+    dcterms:identifier "0408"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0968 ;
+    skos:definition "Petroleum System Geology"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Petroleum System Geology"@en ;
+.
+
+:0420
+    a skos:Concept ;
+    dcterms:identifier "0420"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0659 ;
+    skos:definition "Soil Biology"@en ;
+    skos:exactMatch for2008:050303 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Soil Biology"@en ;
+.
+
+:0423
+    a skos:Concept ;
+    dcterms:identifier "0423"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0148 ;
+    skos:definition "Civil Engineering"@en ;
+    skos:exactMatch for2008:0905 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Civil Engineering"@en ;
+.
+
+:0426
+    a skos:Concept ;
+    dcterms:identifier "0426"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0965 ;
+    skos:definition "Cartography"@en ;
+    skos:exactMatch for2008:090901 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Cartography"@en ;
+.
+
+:0430
+    a skos:Concept ;
+    dcterms:identifier "0430"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0968 ;
+    skos:definition "Sedimentology"@en ;
+    skos:exactMatch for2008:040310 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Sedimentology"@en ;
+.
+
+:0437
+    a skos:Concept ;
+    dcterms:identifier "0437"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0492 ;
+    skos:definition "Energy Transformation"@en ;
+    skos:exactMatch for2008:8504 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Energy Transformation"@en ;
+.
+
+:0452
+    a skos:Concept ;
+    dcterms:identifier "0452"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0968 ;
+    skos:definition "Tectonics"@en ;
+    skos:exactMatch for2008:040313 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Tectonics"@en ;
+.
+
+:0466
+    a skos:Concept ;
+    dcterms:identifier "0466"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0968 ;
+    skos:definition "Stratigraphy"@en ;
+    skos:exactMatch for2008:040311 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Stratigraphy"@en ;
+.
+
+:0468
+    a skos:Concept ;
+    dcterms:identifier "0468"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0994 ;
+    skos:definition "Igneous And Metamorphic Petrology"@en ;
+    skos:exactMatch for2008:040304 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Igneous and Metamorphic Petrology"@en ;
+.
+
+:0485
+    a skos:Concept ;
+    dcterms:identifier "0485"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0968 ;
+    skos:definition "Volcanology"@en ;
+    skos:exactMatch for2008:040314 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Volcanology"@en ;
+.
+
+:0504
+    a skos:Concept ;
+    dcterms:identifier "0504"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0968 ;
+    skos:definition "Carbon Capture And Storage"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Carbon Capture and Storage"@en ;
+.
+
+:0530
+    a skos:Concept ;
+    dcterms:identifier "0530"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0961 ;
+    skos:definition "Hydrogeology"@en ;
+    skos:exactMatch for2008:040603 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Hydrogeology"@en ;
+.
+
+:0534
+    a skos:Concept ;
+    dcterms:identifier "0534"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0994 ;
+    skos:definition "Sedimentary Petrology"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Sedimentary Petrology"@en ;
+.
+
+:0535
+    a skos:Concept ;
+    dcterms:identifier "0535"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0659 ;
+    skos:definition "Carbon Sequestration Science"@en ;
+    skos:exactMatch for2008:050301 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Carbon Sequestration Science"@en ;
+.
+
+:0542
+    a skos:Concept ;
+    dcterms:identifier "0542"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0822 ;
+    skos:definition "Environmental Rehabilitation (Excl. Bioremediation)"@en ;
+    skos:exactMatch for2008:050207 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Environmental Rehabilitation"@en ;
+.
+
+:0549
+    a skos:Concept ;
+    dcterms:identifier "0549"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0659 ;
+    skos:definition "Soil Physics"@en ;
+    skos:exactMatch for2008:050305 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Soil Physics"@en ;
+.
+
+:0565
+    a skos:Concept ;
+    dcterms:identifier "0565"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0459 ;
+    skos:definition "Pyrometallurgy"@en ;
+    skos:exactMatch for2008:0901407 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Pyrometallurgy"@en ;
+.
+
+:0588
+    a skos:Concept ;
+    dcterms:identifier "0588"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0968 ;
+    skos:definition "Biogeology"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Biogeology"@en ;
+.
+
+:0602
+    a skos:Concept ;
+    dcterms:identifier "0602"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0577 ;
+    skos:definition "Radiometrics"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Radiometrics"@en ;
+.
+
+:0613
+    a skos:Concept ;
+    dcterms:identifier "0613"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0968 ;
+    skos:definition "Surface Geology"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Surface Geology"@en ;
+.
+
+:0614
+    a skos:Concept ;
+    dcterms:identifier "0614"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0875 ;
+    skos:definition "Quarry And Extractive Resource Geology"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Quarry and Extractive Resource Geology"@en ;
+.
+
+:0625
+    a skos:Concept ;
+    dcterms:identifier "0625"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0965 ;
+    skos:definition "Navigation And Position Fixing"@en ;
+    skos:exactMatch for2008:090904 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Navigation and Position Fixing"@en ;
+.
+
+:0630
+    a skos:Concept ;
+    dcterms:identifier "0630"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0577 ;
+    skos:definition "Petrophysics"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Petrophysics"@en ;
+.
+
+:0653
+    a skos:Concept ;
+    dcterms:identifier "0653"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0459 ;
+    skos:definition "Drilling Engineering"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Drilling Engineering"@en ;
+.
+
+:0656
+    a skos:Concept ;
+    dcterms:identifier "0656"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0492 ;
+    skos:definition "Renewable Energy"@en ;
+    skos:exactMatch for2008:8505 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Renewable Energy"@en ;
+.
+
+:0680
+    a skos:Concept ;
+    dcterms:identifier "0680"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0459 ;
+    skos:definition "Mining Engineering"@en ;
+    skos:exactMatch for2008:0901405 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Mining Engineering"@en ;
+.
+
+:0681
+    a skos:Concept ;
+    dcterms:identifier "0681"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0492 ;
+    skos:definition "Energy Exploration"@en ;
+    skos:exactMatch for2008:8501 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Energy Exploration"@en ;
+.
+
+:0692
+    a skos:Concept ;
+    dcterms:identifier "0692"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0459 ;
+    skos:definition "Petroleum And Reservoir Engineering"@en ;
+    skos:exactMatch for2008:0901406 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Petroleum and Reservoir Engineering"@en ;
+.
+
+:0717
+    a skos:Concept ;
+    dcterms:identifier "0717"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0616 ;
+    skos:definition "Ecology"@en ;
+    skos:exactMatch for2008:0602 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Ecology"@en ;
+.
+
+:0719
+    a skos:Concept ;
+    dcterms:identifier "0719"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0945 ;
+    skos:definition "Organic Geochemistry"@en ;
+    skos:exactMatch for2008:040204 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Organic Geochemistry"@en ;
+.
+
+:0723
+    a skos:Concept ;
+    dcterms:identifier "0723"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0011 ;
+    skos:definition "Lithogeochemistry"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Lithogeochemistry"@en ;
+.
+
+:0726
+    a skos:Concept ;
+    dcterms:identifier "0726"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0968 ;
+    skos:definition "Structural Geology"@en ;
+    skos:exactMatch for2008:040312 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Structural Geology"@en ;
+.
+
+:0739
+    a skos:Concept ;
+    dcterms:identifier "0739"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0965 ;
+    skos:definition "Geodesy"@en ;
+    skos:exactMatch for2008:090902 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Geodesy"@en ;
+.
+
+:0740
+    a skos:Concept ;
+    dcterms:identifier "0740"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0822 ;
+    skos:definition "Environmental Management"@en ;
+    skos:exactMatch for2008:050205 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Environmental Management"@en ;
+.
+
+:0743
+    a skos:Concept ;
+    dcterms:identifier "0743"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0682 ;
+    skos:definition "Gravity Gradiometry"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Gravity Gradiometry"@en ;
+.
+
+:0744
+    a skos:Concept ;
+    dcterms:identifier "0744"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0730 ;
+    skos:definition "Magnetotellurics"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Magnetotellurics"@en ;
+.
+
+:0756
+    a skos:Concept ;
+    dcterms:identifier "0756"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0968 ;
+    skos:definition "Basin Analysis"@en ;
+    skos:exactMatch for2008:040301 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Basin Analysis"@en ;
+.
+
+:0775
+    a skos:Concept ;
+    dcterms:identifier "0775"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0968 ;
+    skos:definition "Historical Geology"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Historical Geology"@en ;
+.
+
+:0776
+    a skos:Concept ;
+    dcterms:identifier "0776"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0965 ;
+    skos:definition "Remote Sensing"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Remote Sensing"@en ;
+.
+
+:0789
+    a skos:Concept ;
+    dcterms:identifier "0789"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0961 ;
+    skos:definition "Paleoclimatology"@en ;
+    skos:exactMatch for2008:040605 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Paleoclimatology"@en ;
+.
+
+:0801
+    a skos:Concept ;
+    dcterms:identifier "0801"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0961 ;
+    skos:definition "Geomorphology And Regolith And Landscape Evolution"@en ;
+    skos:exactMatch for2008:040601 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Geomorphology And Regolith And Landscape Evolution"@en ;
+.
+
+:0807
+    a skos:Concept ;
+    dcterms:identifier "0807"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0389 ;
+    skos:definition "Mineral Exploration"@en ;
+    skos:exactMatch for2008:8401 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Mineral Exploration"@en ;
+.
+
+:0809
+    a skos:Concept ;
+    dcterms:identifier "0809"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0994 ;
+    skos:definition "Organic Petrology"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Organic Petrology"@en ;
+.
+
+:0810
+    a skos:Concept ;
+    dcterms:identifier "0810"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0802 ;
+    skos:definition "Archaeology"@en ;
+    skos:exactMatch for2008:2101 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Archaeology"@en ;
+.
+
+:0813
+    a skos:Concept ;
+    dcterms:identifier "0813"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0945 ;
+    skos:definition "Inorganic Geochemistry"@en ;
+    skos:exactMatch for2008:040202 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Inorganic Geochemistry"@en ;
+.
+
+:0815
+    a skos:Concept ;
+    dcterms:identifier "0815"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0945 ;
+    skos:definition "Isotope Geochemistry"@en ;
+    skos:exactMatch for2008:040203 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Isotope Geochemistry"@en ;
+.
+
+:0823
+    a skos:Concept ;
+    dcterms:identifier "0823"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0900 ;
+    skos:definition "Magnetic Gradiometry"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Magnetic Gradiometry"@en ;
+.
+
+:0827
+    a skos:Concept ;
+    dcterms:identifier "0827"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0379 ;
+    skos:definition "Conserving Aboriginal And Tores Strait Islander Heritage"@en ;
+    skos:exactMatch for2008:950302 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Conserving Aboriginal and Tores Strait Islander Heritage"@en ;
+.
+
+:0836
+    a skos:Concept ;
+    dcterms:identifier "0836"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0389 ;
+    skos:definition "Primary Mining And Extraction Of Mineral Resources"@en ;
+    skos:exactMatch for2008:8402 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Primary Mining And Extraction Of Mineral Resources"@en ;
+.
+
+:0855
+    a skos:Concept ;
+    dcterms:identifier "0855"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0961 ;
+    skos:definition "Natural Hazards"@en ;
+    skos:exactMatch for2008:040604 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Natural Hazards"@en ;
+.
+
+:0856
+    a skos:Concept ;
+    dcterms:identifier "0856"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0875 ;
+    skos:definition "Mineral Resource Geology"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Mineral Resource Geology"@en ;
+.
+
+:0878
+    a skos:Concept ;
+    dcterms:identifier "0878"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0968 ;
+    skos:definition "Mineralogy And Crystallography "@en ;
+    skos:exactMatch for2008:040306 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Mineralogy and Crystallography "@en ;
+.
+
+:0881
+    a skos:Concept ;
+    dcterms:identifier "0881"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0351 ;
+    skos:definition "Computer Graphics"@en ;
+    skos:exactMatch for2008:080103 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Computer Graphics"@en ;
+.
+
+:0882
+    a skos:Concept ;
+    dcterms:identifier "0882"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0728 ;
+    skos:definition "Palynology"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Palynology"@en ;
+.
+
+:0885
+    a skos:Concept ;
+    dcterms:identifier "0885"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0945 ;
+    skos:definition "Biogeochemistry"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Biogeochemistry"@en ;
+.
+
+:0916
+    a skos:Concept ;
+    dcterms:identifier "0916"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0968 ;
+    skos:definition "Geochronology"@en ;
+    skos:exactMatch for2008:040303 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Geochronology"@en ;
+.
+
+:0918
+    a skos:Concept ;
+    dcterms:identifier "0918"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0968 ;
+    skos:definition "Marine Geoscience"@en ;
+    skos:exactMatch for2008:040305 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Marine Geoscience"@en ;
+.
+
+:0943
+    a skos:Concept ;
+    dcterms:identifier "0943"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0965 ;
+    skos:definition "Surveying (Incl. Hydrographic Surveying)"@en ;
+    skos:exactMatch for2008:090906 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Surveying"@en ;
+.
+
+:0964
+    a skos:Concept ;
+    dcterms:identifier "0964"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0961 ;
+    skos:definition "Quaternary Environments"@en ;
+    skos:exactMatch for2008:040606 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Quaternary Environments"@en ;
+.
+
+:0976
+    a skos:Concept ;
+    dcterms:identifier "0976"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Policy and Administration"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Policy and Administration"@en ;
+.
+
+:0981
+    a skos:Concept ;
+    dcterms:identifier "0981"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0459 ;
+    skos:definition "Electrometallurgy"@en ;
+    skos:exactMatch for2008:0901401 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Electrometallurgy"@en ;
+.
+
+:0982
+    a skos:Concept ;
+    dcterms:identifier "0982"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0577 ;
+    skos:definition "Geophysics Fluid Dynamics"@en ;
+    skos:exactMatch for2008:040403 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Geophysics Fluid Dynamics"@en ;
+.
+
+:0985
+    a skos:Concept ;
+    dcterms:identifier "0985"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0351 ;
+    skos:definition "Image Processing"@en ;
+    skos:exactMatch for2008:080106 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Image Processing"@en ;
+.
+
+:0011
+    a skos:Concept ;
+    dcterms:identifier "0011"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0945 ;
+    skos:definition "Hydrogeochemistry"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Hydrogeochemistry"@en ;
+.
+
+:0030
+    a skos:Concept ;
+    dcterms:identifier "0030"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Cultural Understanding"@en ;
+    skos:exactMatch for2008:95 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Cultural Understanding"@en ;
+.
+
+:0149
+    a skos:Concept ;
+    dcterms:identifier "0149"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0463 ;
+    skos:definition "Urban And Regional Planning "@en ;
+    skos:exactMatch for2008:1205 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Urban and Regional Planning "@en ;
+.
+
+:0463
+    a skos:Concept ;
+    dcterms:identifier "0463"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Built Environment And Design"@en ;
+    skos:exactMatch for2008:12 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Built Environment and Design"@en ;
+.
+
+:0616
+    a skos:Concept ;
+    dcterms:identifier "0616"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Biological Sciences"@en ;
+    skos:exactMatch for2008:06 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Biological Sciences"@en ;
+.
+
+:0682
+    a skos:Concept ;
+    dcterms:identifier "0682"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0577 ;
+    skos:definition "Gravity"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Gravity"@en ;
+.
+
+:0728
+    a skos:Concept ;
+    dcterms:identifier "0728"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0968 ;
+    skos:definition "Paleontology"@en ;
+    skos:exactMatch for2008:040308 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Paleontology"@en ;
+.
+
+:0730
+    a skos:Concept ;
+    dcterms:identifier "0730"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0577 ;
+    skos:definition "Electrical And Electromagnetic Methods In Geophysics"@en ;
+    skos:exactMatch for2008:040401 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Electrical and Electromagnetic Methods in Geophysics"@en ;
+.
+
+:0802
+    a skos:Concept ;
+    dcterms:identifier "0802"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "History And Archaeology"@en ;
+    skos:exactMatch for2008:21 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "History and Archaeology"@en ;
+.
+
+:0849
+    a skos:Concept ;
+    dcterms:identifier "0849"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0577 ;
+    skos:definition "Seismology And Seismic Exploration"@en ;
+    skos:exactMatch for2008:040407 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Seismology and Seismic Exploration"@en ;
+.
+
+:0900
+    a skos:Concept ;
+    dcterms:identifier "0900"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0577 ;
+    skos:definition "Magnetics"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Magnetics"@en ;
+.
+
+:0942
+    a skos:Concept ;
+    dcterms:identifier "0942"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0056 ;
+    skos:definition "Computation Theory And Mathematics"@en ;
+    skos:exactMatch for2008:0802 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Computation Theory and Mathematics"@en ;
+.
+
+:0056
+    a skos:Concept ;
+    dcterms:identifier "0056"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Information And Computuing Sciences"@en ;
+    skos:exactMatch for2008:08 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Information and Computing Sciences"@en ;
+.
+
+:0379
+    a skos:Concept ;
+    dcterms:identifier "0379"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0030 ;
+    skos:definition "Heritage"@en ;
+    skos:exactMatch for2008:9503 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Heritage"@en ;
+.
+
+:0628
+    a skos:Concept ;
+    dcterms:identifier "0628"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Environmental Sciences"@en ;
+    skos:exactMatch for2008:05 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Environmental Sciences"@en ;
+.
+
+:0389
+    a skos:Concept ;
+    dcterms:identifier "0389"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Mineral Resources (Excl. Energy Resources)"@en ;
+    skos:exactMatch for2008:84 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Mineral Resources"@en ;
+.
+
+:0875
+    a skos:Concept ;
+    dcterms:identifier "0875"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0968 ;
+    skos:definition "Resource Geology"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Resource Geology"@en ;
+.
+
+:0986
+    a skos:Concept ;
+    dcterms:identifier "0986"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Earth Sciences"@en ;
+    skos:exactMatch for2008:04 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Earth Sciences"@en ;
+.
+
+:0994
+    a skos:Concept ;
+    dcterms:identifier "0994"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0968 ;
+    skos:definition "Petrology"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Petrology"@en ;
+.
+
+:0148
+    a skos:Concept ;
+    dcterms:identifier "0148"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Engineering"@en ;
+    skos:exactMatch for2008:09 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Engineering"@en ;
+.
+
+:0351
+    a skos:Concept ;
+    dcterms:identifier "0351"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0056 ;
+    skos:definition "Artificial Intelligence And Image Processing"@en ;
+    skos:exactMatch for2008:0801 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Artificial Intelligence and Image Processing"@en ;
+.
+
+:0659
+    a skos:Concept ;
+    dcterms:identifier "0659"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0628 ;
+    skos:definition "Soil Science"@en ;
+    skos:exactMatch for2008:0503 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Soil Science"@en ;
+.
+
+:0822
+    a skos:Concept ;
+    dcterms:identifier "0822"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0628 ;
+    skos:definition "Environmental Science And Management "@en ;
+    skos:exactMatch for2008:0502 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Environmental Science and Management "@en ;
+.
+
+:0945
+    a skos:Concept ;
+    dcterms:identifier "0945"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Geochemistry"@en ;
+    skos:exactMatch for2008:0402 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Geochemistry"@en ;
+.
+
+:0965
+    a skos:Concept ;
+    dcterms:identifier "0965"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0148 ;
+    skos:definition "Geomatic Engineering"@en ;
+    skos:exactMatch for2008:0909 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Geomatic Engineering"@en ;
+.
+
+:0492
+    a skos:Concept ;
+    dcterms:identifier "0492"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Energy"@en ;
+    skos:exactMatch for2008:85 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Energy"@en ;
+.
+
+:0577
+    a skos:Concept ;
+    dcterms:identifier "0577"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0986 ;
+    skos:definition "Geophysics"@en ;
+    skos:exactMatch for2008:0404 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Geophysics"@en ;
+.
+
+:0961
+    a skos:Concept ;
+    dcterms:identifier "0961"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0986 ;
+    skos:definition "Physical Geography"@en ;
+    skos:exactMatch for2008:0406 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Physical Geography"@en ;
+.
+
+:0459
+    a skos:Concept ;
+    dcterms:identifier "0459"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0148 ;
+    skos:definition "Resources Engineering "@en ;
+    skos:exactMatch for2008:09014 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Resources Engineering "@en ;
+.
+
+:0968
+    a skos:Concept ;
+    dcterms:identifier "0968"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :0986 ;
+    skos:definition "Geology"@en ;
+    skos:exactMatch for2008:0403 ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Geology"@en ;
+.
