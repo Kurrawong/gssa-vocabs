@@ -23,6 +23,7 @@ cs:
 
 These categories are often the same as the Australian government's Fields of Research (FoR) codes but with fine-grained additions in GSSA's areas of interest and excluding many codes in unrelated areas."""@en ;
     skos:prefLabel "Geological Survey of South Australia Categories"@en ;
+    rdfs:label "Geological Survey of South Australia Categories" ;
     skos:hasTopConcept
         :0976 ,
         :0616 ,

@@ -4842,6 +4842,7 @@ cs:
     skos:hasTopConcept
         :direct-use-commodity ,
         :produced-commodity ;
-    skos:prefLabel "Commodity Code"@en ;
+    skos:prefLabel "Commodity Codes"@en ;
+    rdfs:label "Commodity Codes" ;
 .
 
