@@ -68,6 +68,21 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:prefLabel "alunite"@en ;
 .
 
+:shale
+    a skos:Concept ;
+    dcterms:identifier "shale"^^xsd:token ;
+    dcterms:provenance "http://www.webmineral.com/data/Alunite.shtml http; http://en.wikipedia.org/wiki/Alunite"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :industrial-mineral ;
+    skos:definition "Nic's shale"@en ;
+    skos:exactMatch eucc:alunite ;
+    skos:inScheme cs: ;
+    skos:notation
+        "Alu"^^dt:AbbreviatedLabel ,
+        "01.02.02"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "shale"@en ;
+.
+
 :amazonite
     a skos:Concept ;
     dcterms:identifier "amazonite"^^xsd:token ;
