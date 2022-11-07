@@ -1,0 +1,5 @@
+{
+    "gssa-categories.ttl": "https://linked.data.gov.au/def/gssa-categories",
+    "commodity-code.sa.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code",
+    "common_context.ttl": "https://context"
+}

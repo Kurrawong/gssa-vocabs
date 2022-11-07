@@ -1,0 +1,2043 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcmitype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://purl.org/NET/rdflicense/cc-by4.0> rdfs:label "Creative Commons CC-BY" .
+
+dcterms: rdfs:label "DCMI Metadata Terms - other"@en .
+
+dcterms:Agent rdfs:label "Agent"@en .
+
+dcterms:AgentClass rdfs:label "Agent Class"@en ;
+    rdfs:subClassOf rdfs:Class .
+
+dcterms:BibliographicResource rdfs:label "Bibliographic Resource"@en .
+
+dcterms:Box rdfs:label "DCMI Box"@en .
+
+dcterms:DCMIType rdfs:label "DCMI Type Vocabulary"@en .
+
+dcterms:DDC rdfs:label "DDC"@en .
+
+dcterms:FileFormat rdfs:label "File Format"@en ;
+    rdfs:subClassOf dcterms:MediaType .
+
+dcterms:Frequency rdfs:label "Frequency"@en .
+
+dcterms:IMT rdfs:label "IMT"@en .
+
+dcterms:ISO3166 rdfs:label "ISO 3166"@en .
+
+dcterms:ISO639-2 rdfs:label "ISO 639-2"@en .
+
+dcterms:ISO639-3 rdfs:label "ISO 639-3"@en .
+
+dcterms:Jurisdiction rdfs:label "Jurisdiction"@en ;
+    rdfs:subClassOf dcterms:LocationPeriodOrJurisdiction .
+
+dcterms:LCC rdfs:label "LCC"@en .
+
+dcterms:LCSH rdfs:label "LCSH"@en .
+
+dcterms:LicenseDocument rdfs:label "License Document"@en ;
+    rdfs:subClassOf dcterms:RightsStatement .
+
+dcterms:LinguisticSystem rdfs:label "Linguistic System"@en ;
+    dcterms:description "Written, spoken, sign, and computer languages are linguistic systems."@en .
+
+dcterms:Location rdfs:label "Location"@en ;
+    rdfs:subClassOf dcterms:LocationPeriodOrJurisdiction .
+
+dcterms:MESH rdfs:label "MeSH"@en .
+
+dcterms:MethodOfAccrual rdfs:label "Method of Accrual"@en .
+
+dcterms:MethodOfInstruction rdfs:label "Method of Instruction"@en .
+
+dcterms:NLM rdfs:label "NLM"@en .
+
+dcterms:Period rdfs:label "DCMI Period"@en .
+
+dcterms:PeriodOfTime rdfs:label "Period of Time"@en ;
+    rdfs:subClassOf dcterms:LocationPeriodOrJurisdiction .
+
+dcterms:PhysicalMedium rdfs:label "Physical Medium"@en ;
+    dcterms:description "Examples include paper, canvas, or DVD."@en ;
+    rdfs:subClassOf dcterms:MediaType .
+
+dcterms:PhysicalResource rdfs:label "Physical Resource"@en .
+
+dcterms:Point rdfs:label "DCMI Point"@en .
+
+dcterms:Policy rdfs:label "Policy"@en .
+
+dcterms:ProvenanceStatement rdfs:label "Provenance Statement"@en .
+
+dcterms:RFC1766 rdfs:label "RFC 1766"@en .
+
+dcterms:RFC3066 rdfs:label "RFC 3066"@en ;
+    dcterms:description "RFC 3066 has been obsoleted by RFC 4646."@en .
+
+dcterms:RFC4646 rdfs:label "RFC 4646"@en ;
+    dcterms:description "RFC 4646 obsoletes RFC 3066."@en .
+
+dcterms:RFC5646 rdfs:label "RFC 5646"@en ;
+    dcterms:description "RFC 5646 obsoletes RFC 4646."@en .
+
+dcterms:SizeOrDuration rdfs:label "Size or Duration"@en ;
+    dcterms:description "Examples include a number of pages, a specification of length, width, and breadth, or a period in hours, minutes, and seconds."@en ;
+    rdfs:subClassOf dcterms:MediaTypeOrExtent .
+
+dcterms:Standard rdfs:label "Standard"@en .
+
+dcterms:TGN rdfs:label "TGN"@en .
+
+dcterms:UDC rdfs:label "UDC"@en .
+
+dcterms:URI rdfs:label "URI"@en .
+
+dcterms:W3CDTF rdfs:label "W3C-DTF"@en .
+
+dcterms:abstract rdfs:label "Abstract"@en .
+
+dcterms:accessRights rdfs:label "Access Rights"@en ;
+    dcterms:description "Access Rights may include information regarding access or restrictions based on privacy, security, or other policies."@en .
+
+dcterms:accrualMethod rdfs:label "Accrual Method"@en ;
+    dcterms:description "Recommended practice is to use a value from the Collection Description Accrual Method Vocabulary [[DCMI-ACCRUALMETHOD](https://dublincore.org/groups/collections/accrual-method/)]."@en .
+
+dcterms:accrualPeriodicity rdfs:label "Accrual Periodicity"@en ;
+    dcterms:description "Recommended practice is to use a value from the Collection Description Frequency Vocabulary [[DCMI-COLLFREQ](https://dublincore.org/groups/collections/frequency/)]."@en .
+
+dcterms:accrualPolicy rdfs:label "Accrual Policy"@en ;
+    dcterms:description "Recommended practice is to use a value from the Collection Description Accrual Policy Vocabulary [[DCMI-ACCRUALPOLICY](https://dublincore.org/groups/collections/accrual-policy/)]."@en .
+
+dcterms:alternative rdfs:label "Alternative Title"@en ;
+    dcterms:description "The distinction between titles and alternative titles is application-specific."@en .
+
+dcterms:audience rdfs:label "Audience"@en ;
+    dcterms:description "Recommended practice is to use this property with non-literal values from a vocabulary of audience types."@en .
+
+dcterms:available rdfs:label "Date Available"@en ;
+    dcterms:description "Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty."@en .
+
+dcterms:bibliographicCitation rdfs:label "Bibliographic Citation"@en ;
+    dcterms:description "Recommended practice is to include sufficient bibliographic detail to identify the resource as unambiguously as possible."@en .
+
+dcterms:conformsTo rdfs:label "Conforms To"@en .
+
+dcterms:contributor rdfs:label "Contributor"@en ;
+    dcterms:description "The guidelines for using names of persons or organizations as creators apply to contributors."@en .
+
+dcterms:coverage rdfs:label "Coverage"@en ;
+    dcterms:description "Spatial topic and spatial applicability may be a named place or a location specified by its geographic coordinates. Temporal topic may be a named period, date, or date range. A jurisdiction may be a named administrative entity or a geographic place to which the resource applies. Recommended practice is to use a controlled vocabulary such as the Getty Thesaurus of Geographic Names [[TGN](https://www.getty.edu/research/tools/vocabulary/tgn/index.html)]. Where appropriate, named places or time periods may be used in preference to numeric identifiers such as sets of coordinates or date ranges.  Because coverage is so broadly defined, it is preferable to use the more specific subproperties Temporal Coverage and Spatial Coverage."@en .
+
+dcterms:created rdfs:label "Date Created"@en ;
+    dcterms:description "Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty."@en .
+
+dcterms:creator rdfs:label "Creator"@en ;
+    dcterms:description "Recommended practice is to identify the creator with a URI.  If this is not possible or feasible, a literal value that identifies the creator may be provided."@en .
+
+dcterms:date rdfs:label "Date"@en ;
+    dcterms:description "Date may be used to express temporal information at any level of granularity.  Recommended practice is to express the date, date/time, or period of time according to ISO 8601-1 [[ISO 8601-1](https://www.iso.org/iso-8601-date-and-time-format.html)] or a published profile of the ISO standard, such as the W3C Note on Date and Time Formats [[W3CDTF](https://www.w3.org/TR/NOTE-datetime)] or the Extended Date/Time Format Specification [[EDTF](http://www.loc.gov/standards/datetime/)].  If the full date is unknown, month and year (YYYY-MM) or just year (YYYY) may be used. Date ranges may be specified using ISO 8601 period of time specification in which start and end dates are separated by a '/' (slash) character.  Either the start or end date may be missing."@en .
+
+dcterms:dateAccepted rdfs:label "Date Accepted"@en ;
+    dcterms:description "Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty.  Examples of resources to which a date of acceptance may be relevant are a thesis (accepted by a university department) or an article (accepted by a journal)."@en .
+
+dcterms:dateCopyrighted rdfs:label "Date Copyrighted"@en ;
+    dcterms:description "Typically a year.  Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty."@en .
+
+dcterms:dateSubmitted rdfs:label "Date Submitted"@en ;
+    dcterms:description "Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty.  Examples of resources to which a 'Date Submitted' may be relevant include a thesis (submitted to a university department) or an article (submitted to a journal)."@en .
+
+dcterms:description rdfs:label "Description"@en ;
+    dcterms:description "Description may include but is not limited to: an abstract, a table of contents, a graphical representation, or a free-text account of the resource."@en .
+
+dcterms:educationLevel rdfs:label "Audience Education Level"@en .
+
+dcterms:extent rdfs:label "Extent"@en ;
+    dcterms:description "Recommended practice is to specify the file size in megabytes and duration in ISO 8601 format."@en .
+
+dcterms:format rdfs:label "Format"@en ;
+    dcterms:description "Recommended practice is to use a controlled vocabulary where available. For example, for file formats one could use the list of Internet Media Types [[MIME](https://www.iana.org/assignments/media-types/media-types.xhtml)].  Examples of dimensions include size and duration."@en .
+
+dcterms:hasFormat rdfs:label "Has Format"@en ;
+    dcterms:description "This property is intended to be used with non-literal values. This property is an inverse property of Is Format Of."@en .
+
+dcterms:hasPart rdfs:label "Has Part"@en ;
+    dcterms:description "This property is intended to be used with non-literal values. This property is an inverse property of Is Part Of."@en .
+
+dcterms:hasVersion rdfs:label "Has Version"@en ;
+    dcterms:description "Changes in version imply substantive changes in content rather than differences in format. This property is intended to be used with non-literal values. This property is an inverse property of Is Version Of."@en .
+
+dcterms:identifier rdfs:label "Identifier"@en ;
+    dcterms:description "Recommended practice is to identify the resource by means of a string conforming to an identification system. Examples include International Standard Book Number (ISBN), Digital Object Identifier (DOI), and Uniform Resource Name (URN).  Persistent identifiers should be provided as HTTP URIs."@en .
+
+dcterms:instructionalMethod rdfs:label "Instructional Method"@en ;
+    dcterms:description "Instructional Method typically includes ways of presenting instructional materials or conducting instructional activities, patterns of learner-to-learner and learner-to-instructor interactions, and mechanisms by which group and individual levels of learning are measured.  Instructional methods include all aspects of the instruction and learning processes from planning and implementation through evaluation and feedback."@en .
+
+dcterms:isFormatOf rdfs:label "Is Format Of"@en ;
+    dcterms:description "This property is intended to be used with non-literal values. This property is an inverse property of Has Format."@en .
+
+dcterms:isPartOf rdfs:label "Is Part Of"@en ;
+    dcterms:description "This property is intended to be used with non-literal values. This property is an inverse property of Has Part."@en .
+
+dcterms:isReferencedBy rdfs:label "Is Referenced By"@en ;
+    dcterms:description "This property is intended to be used with non-literal values. This property is an inverse property of References."@en .
+
+dcterms:isReplacedBy rdfs:label "Is Replaced By"@en ;
+    dcterms:description "This property is intended to be used with non-literal values. This property is an inverse property of Replaces."@en .
+
+dcterms:isRequiredBy rdfs:label "Is Required By"@en ;
+    dcterms:description "This property is intended to be used with non-literal values. This property is an inverse property of Requires."@en .
+
+dcterms:isVersionOf rdfs:label "Is Version Of"@en ;
+    dcterms:description "Changes in version imply substantive changes in content rather than differences in format. This property is intended to be used with non-literal values. This property is an inverse property of Has Version."@en .
+
+dcterms:issued rdfs:label "Date Issued"@en ;
+    dcterms:description "Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty."@en .
+
+dcterms:language rdfs:label "Language"@en ;
+    dcterms:description "Recommended practice is to use either a non-literal value representing a language from a controlled vocabulary such as ISO 639-2 or ISO 639-3, or a literal value consisting of an IETF Best Current Practice 47 [[IETF-BCP47](https://tools.ietf.org/html/bcp47)] language tag."@en .
+
+dcterms:license rdfs:label "License"@en ;
+    dcterms:description "Recommended practice is to identify the license document with a URI. If this is not possible or feasible, a literal value that identifies the license may be provided."@en .
+
+dcterms:mediator rdfs:label "Mediator"@en ;
+    dcterms:description "In an educational context, a mediator might be a parent, teacher, teaching assistant, or care-giver."@en .
+
+dcterms:medium rdfs:label "Medium"@en .
+
+dcterms:modified rdfs:label "Date Modified"@en ;
+    dcterms:description "Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty."@en .
+
+dcterms:provenance rdfs:label "Provenance"@en ;
+    dcterms:description "The statement may include a description of any changes successive custodians made to the resource."@en .
+
+dcterms:publisher rdfs:label "Publisher"@en .
+
+dcterms:references rdfs:label "References"@en ;
+    dcterms:description "This property is intended to be used with non-literal values. This property is an inverse property of Is Referenced By."@en .
+
+dcterms:relation rdfs:label "Relation"@en ;
+    dcterms:description "Recommended practice is to identify the related resource by means of a URI.  If this is not possible or feasible, a string conforming to a formal identification system may be provided."@en .
+
+dcterms:replaces rdfs:label "Replaces"@en ;
+    dcterms:description "This property is intended to be used with non-literal values. This property is an inverse property of Is Replaced By."@en .
+
+dcterms:requires rdfs:label "Requires"@en ;
+    dcterms:description "This property is intended to be used with non-literal values. This property is an inverse property of Is Required By."@en .
+
+dcterms:rights rdfs:label "Rights"@en ;
+    dcterms:description "Typically, rights information includes a statement about various property rights associated with the resource, including intellectual property rights.  Recommended practice is to refer to a rights statement with a URI.  If this is not possible or feasible, a literal value (name, label, or short text) may be provided."@en .
+
+dcterms:rightsHolder rdfs:label "Rights Holder"@en ;
+    dcterms:description "Recommended practice is to refer to the rights holder with a URI. If this is not possible or feasible, a literal value that identifies the rights holder may be provided."@en .
+
+dcterms:source rdfs:label "Source"@en ;
+    dcterms:description "This property is intended to be used with non-literal values. The described resource may be derived from the related resource in whole or in part. Best practice is to identify the related resource by means of a URI or a string conforming to a formal identification system."@en .
+
+dcterms:spatial rdfs:label "Spatial Coverage"@en .
+
+dcterms:subject rdfs:label "Subject"@en ;
+    dcterms:description "Recommended practice is to refer to the subject with a URI. If this is not possible or feasible, a literal value that identifies the subject may be provided. Both should preferably refer to a subject in a controlled vocabulary."@en .
+
+dcterms:tableOfContents rdfs:label "Table Of Contents"@en .
+
+dcterms:temporal rdfs:label "Temporal Coverage"@en .
+
+dcterms:title rdfs:label "Title"@en .
+
+dcterms:type rdfs:label "Type"@en ;
+    dcterms:description "Recommended practice is to use a controlled vocabulary such as the DCMI Type Vocabulary [[DCMI-TYPE](http://dublincore.org/documents/dcmi-type-vocabulary/)]. To describe the file format, physical medium, or dimensions of the resource, use the property Format."@en .
+
+dcterms:valid rdfs:label "Date Valid"@en ;
+    dcterms:description "Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty."@en .
+
+<http://qudt.org/schema/qudt/numericValue> rdfs:label "numeric value" ;
+    dcterms:description "A value for a Result that is numeric."@en .
+
+<http://qudt.org/schema/qudt/unit> rdfs:label "unit" ;
+    dcterms:description "A reference to the unit of measure of a quantity (variable or constant) of interest."@en .
+
+<http://qudt.org/vocab/unit/DEG> rdfs:label "Degree"@en ;
+    dcterms:description "A degree (in full, a degree of arc, arc degree, or arcdegree), usually denoted by ∘ (the degree symbol), is a measurement of plane angle, representing 1/360 of a full rotation; one degree is equivalent to 2π/360rad, 0.017453rad. It is not an SI unit, as the SI unit for angles is radian, but is an accepted SI unit."@en .
+
+<http://qudt.org/vocab/unit/HA> rdfs:label "Hectare"@en ;
+    dcterms:description "The customary metric unit of land area, equal to 100 ares. One hectare is a square hectometer, that is, the area of a square 100 meters on each side: exactly 10 000 square meters or approximately 107 639.1 square feet, 11 959.9 square yards, or 2.471 054 acres."@en .
+
+<http://qudt.org/vocab/unit/M2> rdfs:label "Square Metre"@en ;
+    dcterms:description "The S I unit of area is the square metre."@en .
+
+<http://www.opengis.net/ont/geosparql> rdfs:label "GeoSPARQL Ontology" ;
+    dcterms:description "An RDF/OWL vocabulary for representing spatial information"@en .
+
+geo:Feature rdfs:label "Feature"@en ;
+    dcterms:description "A discrete spatial phenomenon in a universe of discourse."@en ;
+    rdfs:subClassOf geo:SpatialObject .
+
+geo:FeatureCollection rdfs:label "Feature Collection"@en ;
+    dcterms:description "A collection of individual Features."@en ;
+    rdfs:subClassOf [ ],
+        geo:SpatialObjectCollection .
+
+geo:Geometry rdfs:label "Geometry"@en ;
+    dcterms:description "A coherent set of direct positions in space. The positions are held within a Spatial Reference System (SRS)."@en ;
+    rdfs:subClassOf geo:SpatialObject .
+
+geo:GeometryCollection rdfs:label "Geometry Collection"@en ;
+    dcterms:description "A collection of individual Geometries."@en ;
+    rdfs:subClassOf [ ],
+        geo:SpatialObjectCollection .
+
+geo:asDGGS rdfs:label "as DGGS"@en ;
+    dcterms:description "The Discrete Global Grid System (DGGS) serialization of a Geometry"@en .
+
+geo:asGML rdfs:label "as GML"@en ;
+    dcterms:description "The GML serialization of a Geometry"@en .
+
+geo:asGeoJSON rdfs:label "as GeoJSON"@en ;
+    dcterms:description "The GeoJSON serialization of a Geometry"@en .
+
+geo:asKML rdfs:label "as KML"@en ;
+    dcterms:description "The KML serialization of a Geometry"@en .
+
+geo:asWKT rdfs:label "as WKT"@en ;
+    dcterms:description "The WKT serialization of a Geometry"@en .
+
+geo:coordinateDimension rdfs:label "coordinate dimension"@en ;
+    dcterms:description "The number of measurements or axes needed to describe the position of this Geometry in a coordinate system."@en .
+
+geo:defaultGeometry rdfs:label "default geometry"@en ;
+    dcterms:description "The default Geometry to be used in spatial calculations. It is usually the most detailed Geometry."@en .
+
+geo:dggsLiteral rdfs:label "DGGS Literal"@en ;
+    dcterms:description "A textual serialization of a Discrete Global Grid (DGGS) Geometry object."@en .
+
+geo:dimension rdfs:label "dimension"@en ;
+    dcterms:description "The topological dimension of this geometric object, which must be less than or equal to the coordinate dimension. In non-homogeneous collections, this will return the largest topological dimension of the contained objects."@en .
+
+geo:ehContains rdfs:label "contains"@en ;
+    dcterms:description "States that the subject SpatialObject spatially contains the object SpatialObject. DE-9IM: T*TFF*FF*"@en .
+
+geo:ehCoveredBy rdfs:label "covered by"@en ;
+    dcterms:description "States that the subject SpatialObject is spatially covered by the object SpatialObject. DE-9IM: TFF*TFT**"@en .
+
+geo:ehCovers rdfs:label "covers"@en ;
+    dcterms:description "States that the subject SpatialObject spatially covers the object SpatialObject. DE-9IM: T*TFT*FF*"@en .
+
+geo:ehDisjoint rdfs:label "disjoint"@en ;
+    dcterms:description "States that the subject SpatialObject is spatially disjoint from the object SpatialObject. DE-9IM: FF*FF****"@en .
+
+geo:ehEquals rdfs:label "equals"@en ;
+    dcterms:description "States that the subject SpatialObject spatially equals the object SpatialObject. DE-9IM: TFFFTFFFT"@en .
+
+geo:ehInside rdfs:label "inside"@en ;
+    dcterms:description "States that the subject SpatialObject is spatially inside the object SpatialObject. DE-9IM: TFF*FFT**"@en .
+
+geo:ehMeet rdfs:label "meet"@en ;
+    dcterms:description "States that the subject SpatialObject spatially meets the object SpatialObject. DE-9IM: FT******* ^ F**T***** ^ F***T****"@en .
+
+geo:ehOverlap rdfs:label "overlap"@en ;
+    dcterms:description "States that the subject SpatialObject spatially overlaps the object SpatialObject. DE-9IM: T*T***T**"@en .
+
+geo:geoJSONLiteral rdfs:label "GeoJSON Literal"@en ;
+    dcterms:description "A GeoJSON serialization of a Geometry object."@en .
+
+geo:gmlLiteral rdfs:label "GML Literal"@en ;
+    dcterms:description "A GML serialization of a Geometry object."@en .
+
+geo:hasArea rdfs:label "has area"@en ;
+    dcterms:description "The area of a Spatial Object."@en .
+
+geo:hasBoundingBox rdfs:label "has bounding box"@en ;
+    dcterms:description "The minimum or smallest bounding or enclosing box of a given Feature."@en .
+
+geo:hasCentroid rdfs:label "has centroid"@en ;
+    dcterms:description "The arithmetic mean position of all the Geometry points of a given Feature."@en .
+
+geo:hasDefaultGeometry rdfs:label "has default geometry"@en ;
+    dcterms:description "The default Geometry to be used in spatial calculations. It is usually the most detailed Geometry."@en .
+
+geo:hasGeometry rdfs:label "has geometry"@en ;
+    dcterms:description "A spatial representation for a given Feature."@en .
+
+geo:hasLength rdfs:label "has length"@en ;
+    dcterms:description "The length of a Spatial Object."@en .
+
+geo:hasMetricArea rdfs:label "has area in square meters"@en ;
+    dcterms:description "The area of a Spatial Object in square meters."@en .
+
+geo:hasMetricLength rdfs:label "has length in meters"@en ;
+    dcterms:description "The length of a Spatial Object in meters."@en .
+
+geo:hasMetricPerimeterLength rdfs:label "has perimeter length in meters"@en ;
+    dcterms:description "The length of the perimeter of a Spatial Object in meters."@en .
+
+geo:hasMetricSize rdfs:label "has metric size"@en ;
+    dcterms:description "Subproperties of this property are used to indicate the size of a Spatial Object, as a measurement or estimate of one or more dimensions of the Spatial Object's spatial presence. Units are always metric (meter, square meter or cubic meter)."@en .
+
+geo:hasMetricSpatialAccuracy rdfs:label "has spatial accuracy in meters"@en ;
+    dcterms:description "The positional accuracy of the coordinates of a Geometry in meters."@en .
+
+geo:hasMetricSpatialResolution rdfs:label "has spatial resolution in meters"@en ;
+    dcterms:description "The spatial resolution of a Geometry in meters."@en .
+
+geo:hasMetricVolume rdfs:label "has volume in cubic meters"@en ;
+    dcterms:description "The volume of a Spatial Object in cubic meters."@en .
+
+geo:hasPerimeterLength rdfs:label "has perimeter length"@en ;
+    dcterms:description "The length of the perimeter of a Spatial Object."@en .
+
+geo:hasSerialization rdfs:label "has serialization"@en ;
+    dcterms:description "Connects a Geometry object with its text-based serialization."@en .
+
+geo:hasSize rdfs:label "has size"@en ;
+    dcterms:description "Subproperties of this property are used to indicate the size of a Spatial Object as a measurement or estimate of one or more dimensions of the Spatial Object's spatial presence."@en .
+
+geo:hasSpatialAccuracy rdfs:label "has spatial accuracy"@en ;
+    dcterms:description "The positional accuracy of the coordinates of a Geometry."@en .
+
+geo:hasSpatialResolution rdfs:label "has spatial resolution"@en ;
+    dcterms:description "The spatial resolution of a Geometry."@en .
+
+geo:hasVolume rdfs:label "has volume"@en ;
+    dcterms:description "The volume of a three-dimensional Spatial Object."@en .
+
+geo:isEmpty rdfs:label "is empty"@en ;
+    dcterms:description "(true) if this geometric object is the empty Geometry. If true, then this geometric object represents the empty point set for the coordinate space."@en .
+
+geo:isSimple rdfs:label "is simple"@en ;
+    dcterms:description "(true) if this geometric object has no anomalous geometric points, such as self intersection or self tangency."@en .
+
+geo:kmlLiteral rdfs:label "KML Literal"@en ;
+    dcterms:description "A KML serialization of a Geometry object."@en .
+
+geo:rcc8dc rdfs:label "disconnected"@en ;
+    dcterms:description "States that the subject SpatialObject is spatially disjoint from the object SpatialObject. DE-9IM: FFTFFTTTT"@en .
+
+geo:rcc8ec rdfs:label "externally connected"@en ;
+    dcterms:description "States that the subject SpatialObject spatially meets the object SpatialObject. DE-9IM: FFTFTTTTT"@en .
+
+geo:rcc8eq rdfs:label "equals"@en ;
+    dcterms:description "States that the subject SpatialObject spatially equals the object SpatialObject. DE-9IM: TFFFTFFFT"@en .
+
+geo:rcc8ntpp rdfs:label "non-tangential proper part"@en ;
+    dcterms:description "States that the subject SpatialObject is spatially inside the object SpatialObject. DE-9IM: TFFTFFTTT"@en .
+
+geo:rcc8ntppi rdfs:label "non-tangential proper part inverse"@en ;
+    dcterms:description "States that the subject SpatialObject spatially contains the object SpatialObject. DE-9IM: TTTFFTFFT"@en .
+
+geo:rcc8po rdfs:label "partially overlapping"@en ;
+    dcterms:description "States that the subject SpatialObject spatially overlaps the object SpatialObject. DE-9IM: TTTTTTTTT"@en .
+
+geo:rcc8tpp rdfs:label "tangential proper part"@en ;
+    dcterms:description "States that the subject SpatialObject is spatially covered by the object SpatialObject. DE-9IM: TFFTTFTTT"@en .
+
+geo:rcc8tppi rdfs:label "tangential proper part inverse"@en ;
+    dcterms:description "States that the subject SpatialObject spatially covers the object SpatialObject. DE-9IM: TTTFTTFFT"@en .
+
+geo:sfContains rdfs:label "contains"@en ;
+    dcterms:description "States that the subject SpatialObject spatially contains the object SpatialObject. DE-9IM: T*****FF*"@en .
+
+geo:sfCrosses rdfs:label "crosses"@en ;
+    dcterms:description "States that the subject SpatialObject spatially crosses the object SpatialObject. DE-9IM: T*T******"@en .
+
+geo:sfDisjoint rdfs:label "disjoint"@en ;
+    dcterms:description "States that the subject SpatialObject is spatially disjoint from the object SpatialObject. DE-9IM: FF*FF****"@en .
+
+geo:sfEquals rdfs:label "equals"@en ;
+    dcterms:description "States that the subject SpatialObject spatially equals the object SpatialObject. DE-9IM: TFFFTFFFT"@en .
+
+geo:sfIntersects rdfs:label "intersects"@en ;
+    dcterms:description "States that the subject SpatialObject is not spatially disjoint from the object SpatialObject. DE-9IM: T******** ^ *T******* ^ ***T***** ^ ****T****"@en .
+
+geo:sfOverlaps rdfs:label "overlaps"@en ;
+    dcterms:description "States that the subject SpatialObject spatially overlaps the object SpatialObject. DE-9IM: T*T***T**"@en .
+
+geo:sfTouches rdfs:label "touches"@en ;
+    dcterms:description "States that the subject SpatialObject spatially touches the object SpatialObject. DE-9IM: FT******* ^ F**T***** ^ F***T****"@en .
+
+geo:sfWithin rdfs:label "within"@en ;
+    dcterms:description "States that the subject SpatialObject is spatially within the object SpatialObject. DE-9IM: T*F**F***"@en .
+
+geo:spatialDimension rdfs:label "spatial dimension"@en ;
+    dcterms:description "The number of measurements or axes needed to describe the spatial position of this Geometry in a coordinate system."@en .
+
+geo:wktLiteral rdfs:label "Well-known Text Literal"@en ;
+    dcterms:description "A Well-known Text serialization of a Geometry object."@en .
+
+rdf:Alt rdfs:label "Alt" ;
+    rdfs:subClassOf rdfs:Container .
+
+rdf:Bag rdfs:label "Bag" ;
+    rdfs:subClassOf rdfs:Container .
+
+rdf:CompoundLiteral rdfs:label "CompoundLiteral" ;
+    rdfs:subClassOf rdfs:Resource .
+
+rdf:HTML rdfs:label "HTML" ;
+    rdfs:subClassOf rdfs:Literal .
+
+rdf:JSON rdfs:label "JSON" ;
+    rdfs:subClassOf rdfs:Literal .
+
+rdf:List rdfs:label "List" ;
+    rdfs:subClassOf rdfs:Resource .
+
+rdf:PlainLiteral rdfs:label "PlainLiteral" ;
+    rdfs:subClassOf rdfs:Literal .
+
+rdf:Seq rdfs:label "Seq" ;
+    rdfs:subClassOf rdfs:Container .
+
+rdf:Statement rdfs:label "Statement" ;
+    rdfs:subClassOf rdfs:Resource .
+
+rdf:XMLLiteral rdfs:label "XMLLiteral" ;
+    rdfs:subClassOf rdfs:Literal .
+
+rdf:direction rdfs:label "direction" .
+
+rdf:first rdfs:label "first" .
+
+rdf:langString rdfs:label "langString" ;
+    rdfs:subClassOf rdfs:Literal .
+
+rdf:language rdfs:label "language" .
+
+() rdfs:label "nil" .
+
+rdf:object rdfs:label "object" .
+
+rdf:predicate rdfs:label "predicate" .
+
+rdf:rest rdfs:label "rest" .
+
+rdf:subject rdfs:label "subject" .
+
+rdf:type rdfs:label "type" .
+
+rdf:value rdfs:label "value" .
+
+rdfs:ContainerMembershipProperty rdfs:label "ContainerMembershipProperty" ;
+    rdfs:subClassOf rdf:Property .
+
+rdfs:comment rdfs:label "comment" .
+
+rdfs:domain rdfs:label "domain" .
+
+rdfs:isDefinedBy rdfs:label "isDefinedBy" .
+
+rdfs:label rdfs:label "label" .
+
+rdfs:member rdfs:label "member" .
+
+rdfs:range rdfs:label "range" .
+
+rdfs:seeAlso rdfs:label "seeAlso",
+        "geographic identifier"@en .
+
+rdfs:subClassOf rdfs:label "subClassOf" .
+
+rdfs:subPropertyOf rdfs:label "subPropertyOf" .
+
+xsd:dateTimeStamp rdfs:label "sello de tiempo"@es .
+
+owl:AllDifferent rdfs:label "AllDifferent" ;
+    rdfs:subClassOf rdfs:Resource .
+
+owl:AllDisjointClasses rdfs:label "AllDisjointClasses" ;
+    rdfs:subClassOf rdfs:Resource .
+
+owl:AllDisjointProperties rdfs:label "AllDisjointProperties" ;
+    rdfs:subClassOf rdfs:Resource .
+
+owl:Annotation rdfs:label "Annotation" ;
+    rdfs:subClassOf rdfs:Resource .
+
+owl:AnnotationProperty rdfs:label "AnnotationProperty" ;
+    rdfs:subClassOf rdf:Property .
+
+owl:AsymmetricProperty rdfs:label "AsymmetricProperty" ;
+    rdfs:subClassOf owl:ObjectProperty .
+
+owl:Axiom rdfs:label "Axiom" ;
+    rdfs:subClassOf rdfs:Resource .
+
+owl:DataRange rdfs:label "DataRange" ;
+    rdfs:subClassOf rdfs:Datatype .
+
+owl:DatatypeProperty rdfs:label "DatatypeProperty" ;
+    rdfs:subClassOf rdf:Property .
+
+owl:DeprecatedClass rdfs:label "DeprecatedClass" ;
+    rdfs:subClassOf rdfs:Class .
+
+owl:DeprecatedProperty rdfs:label "DeprecatedProperty" ;
+    rdfs:subClassOf rdf:Property .
+
+owl:FunctionalProperty rdfs:label "FunctionalProperty" ;
+    rdfs:subClassOf rdf:Property .
+
+owl:InverseFunctionalProperty rdfs:label "InverseFunctionalProperty" ;
+    rdfs:subClassOf owl:ObjectProperty .
+
+owl:IrreflexiveProperty rdfs:label "IrreflexiveProperty" ;
+    rdfs:subClassOf owl:ObjectProperty .
+
+owl:NamedIndividual rdfs:label "NamedIndividual" ;
+    rdfs:subClassOf owl:Thing .
+
+owl:NegativePropertyAssertion rdfs:label "NegativePropertyAssertion" ;
+    rdfs:subClassOf rdfs:Resource .
+
+owl:Nothing rdfs:label "Nothing" ;
+    rdfs:subClassOf owl:Thing .
+
+owl:Ontology rdfs:label "Ontology" ;
+    rdfs:subClassOf rdfs:Resource .
+
+owl:OntologyProperty rdfs:label "OntologyProperty" ;
+    rdfs:subClassOf rdf:Property .
+
+owl:ReflexiveProperty rdfs:label "ReflexiveProperty" ;
+    rdfs:subClassOf owl:ObjectProperty .
+
+owl:Restriction rdfs:label "Restriction" ;
+    rdfs:subClassOf owl:Class .
+
+owl:SymmetricProperty rdfs:label "SymmetricProperty" ;
+    rdfs:subClassOf owl:ObjectProperty .
+
+owl:TransitiveProperty rdfs:label "TransitiveProperty" ;
+    rdfs:subClassOf owl:ObjectProperty .
+
+owl:allValuesFrom rdfs:label "allValuesFrom" .
+
+owl:annotatedProperty rdfs:label "annotatedProperty" .
+
+owl:annotatedSource rdfs:label "annotatedSource" .
+
+owl:annotatedTarget rdfs:label "annotatedTarget" .
+
+owl:assertionProperty rdfs:label "assertionProperty" .
+
+owl:backwardCompatibleWith rdfs:label "backwardCompatibleWith" .
+
+owl:bottomDataProperty rdfs:label "bottomDataProperty" .
+
+owl:bottomObjectProperty rdfs:label "bottomObjectProperty" .
+
+owl:cardinality rdfs:label "cardinality" .
+
+owl:complementOf rdfs:label "complementOf" .
+
+owl:datatypeComplementOf rdfs:label "datatypeComplementOf" .
+
+owl:deprecated rdfs:label "deprecated" .
+
+owl:differentFrom rdfs:label "differentFrom" .
+
+owl:disjointUnionOf rdfs:label "disjointUnionOf" .
+
+owl:disjointWith rdfs:label "disjointWith" .
+
+owl:distinctMembers rdfs:label "distinctMembers" .
+
+owl:equivalentClass rdfs:label "equivalentClass" .
+
+owl:equivalentProperty rdfs:label "equivalentProperty" .
+
+owl:hasKey rdfs:label "hasKey" .
+
+owl:hasSelf rdfs:label "hasSelf" .
+
+owl:hasValue rdfs:label "hasValue" .
+
+owl:imports rdfs:label "imports" .
+
+owl:incompatibleWith rdfs:label "incompatibleWith" .
+
+owl:intersectionOf rdfs:label "intersectionOf" .
+
+owl:inverseOf rdfs:label "inverseOf" .
+
+owl:maxCardinality rdfs:label "maxCardinality" .
+
+owl:maxQualifiedCardinality rdfs:label "maxQualifiedCardinality" .
+
+owl:members rdfs:label "members" .
+
+owl:minCardinality rdfs:label "minCardinality" .
+
+owl:minQualifiedCardinality rdfs:label "minQualifiedCardinality" .
+
+owl:onClass rdfs:label "onClass" .
+
+owl:onDataRange rdfs:label "onDataRange" .
+
+owl:onDatatype rdfs:label "onDatatype" .
+
+owl:onProperties rdfs:label "onProperties" .
+
+owl:onProperty rdfs:label "onProperty" .
+
+owl:oneOf rdfs:label "oneOf" .
+
+owl:priorVersion rdfs:label "priorVersion" .
+
+owl:propertyChainAxiom rdfs:label "propertyChainAxiom" .
+
+owl:propertyDisjointWith rdfs:label "propertyDisjointWith" .
+
+owl:qualifiedCardinality rdfs:label "qualifiedCardinality" .
+
+owl:sameAs rdfs:label "sameAs" .
+
+owl:someValuesFrom rdfs:label "someValuesFrom" .
+
+owl:sourceIndividual rdfs:label "sourceIndividual" .
+
+owl:targetIndividual rdfs:label "targetIndividual" .
+
+owl:targetValue rdfs:label "targetValue" .
+
+owl:topDataProperty rdfs:label "topDataProperty" .
+
+owl:topObjectProperty rdfs:label "topObjectProperty" .
+
+owl:unionOf rdfs:label "unionOf" .
+
+owl:versionIRI rdfs:label "versionIRI" .
+
+owl:versionInfo rdfs:label "versionInfo" .
+
+owl:withRestrictions rdfs:label "withRestrictions" .
+
+<http://www.w3.org/2004/02/skos/core> rdfs:label "SKOS Vocabulary"@en ;
+    dcterms:description "An RDF vocabulary for describing the basic structure and content of concept schemes such as thesauri, classification schemes, subject heading lists, taxonomies, 'folksonomies', other types of controlled vocabulary, and also concept schemes embedded in glossaries and terminologies."@en .
+
+skos:ConceptScheme rdfs:label "Concept Scheme"@en ;
+    dcterms:description "A set of concepts, optionally including statements about semantic relationships between those concepts."@en .
+
+skos:OrderedCollection rdfs:label "Ordered Collection"@en ;
+    dcterms:description "An ordered collection of concepts, where both the grouping and the ordering are meaningful."@en ;
+    rdfs:subClassOf skos:Collection .
+
+skos:altLabel rdfs:label "alternative label"@en ;
+    dcterms:description "An alternative lexical label for a resource."@en .
+
+skos:broadMatch rdfs:label "has broader match"@en ;
+    dcterms:description "skos:broadMatch is used to state a hierarchical mapping link between two conceptual resources in different concept schemes."@en .
+
+skos:broader rdfs:label "has broader"@en ;
+    dcterms:description "Relates a concept to a concept that is more general in meaning."@en .
+
+skos:broaderTransitive rdfs:label "has broader transitive"@en ;
+    dcterms:description "skos:broaderTransitive is a transitive superproperty of skos:broader." .
+
+skos:changeNote rdfs:label "change note"@en ;
+    dcterms:description "A note about a modification to a concept."@en .
+
+skos:closeMatch rdfs:label "has close match"@en ;
+    dcterms:description "skos:closeMatch is used to link two concepts that are sufficiently similar that they can be used interchangeably in some information retrieval applications. In order to avoid the possibility of \"compound errors\" when combining mappings across more than two concept schemes, skos:closeMatch is not declared to be a transitive property."@en .
+
+skos:definition rdfs:label "definition"@en ;
+    dcterms:description "A statement or formal explanation of the meaning of a concept."@en .
+
+skos:editorialNote rdfs:label "editorial note"@en ;
+    dcterms:description "A note for an editor, translator or maintainer of the vocabulary."@en .
+
+skos:exactMatch rdfs:label "has exact match"@en ;
+    dcterms:description "skos:exactMatch is used to link two concepts, indicating a high degree of confidence that the concepts can be used interchangeably across a wide range of information retrieval applications. skos:exactMatch is a transitive property, and is a sub-property of skos:closeMatch."@en .
+
+skos:example rdfs:label "example"@en ;
+    dcterms:description "An example of the use of a concept."@en .
+
+skos:hasTopConcept rdfs:label "has top concept"@en ;
+    dcterms:description "Relates, by convention, a concept scheme to a concept which is topmost in the broader/narrower concept hierarchies for that scheme, providing an entry point to these hierarchies."@en .
+
+skos:hiddenLabel rdfs:label "hidden label"@en ;
+    dcterms:description "A lexical label for a resource that should be hidden when generating visual displays of the resource, but should still be accessible to free text search operations."@en .
+
+skos:historyNote rdfs:label "history note"@en ;
+    dcterms:description "A note about the past state/use/meaning of a concept."@en .
+
+skos:inScheme rdfs:label "is in scheme"@en ;
+    dcterms:description "Relates a resource (for example a concept) to a concept scheme in which it is included."@en .
+
+skos:mappingRelation rdfs:label "is in mapping relation with"@en ;
+    dcterms:description "Relates two concepts coming, by convention, from different schemes, and that have comparable meanings"@en .
+
+skos:member rdfs:label "has member"@en ;
+    dcterms:description "Relates a collection to one of its members."@en .
+
+skos:memberList rdfs:label "has member list"@en ;
+    dcterms:description "Relates an ordered collection to the RDF list containing its members."@en .
+
+skos:narrowMatch rdfs:label "has narrower match"@en ;
+    dcterms:description "skos:narrowMatch is used to state a hierarchical mapping link between two conceptual resources in different concept schemes."@en .
+
+skos:narrower rdfs:label "has narrower"@en ;
+    dcterms:description "Relates a concept to a concept that is more specific in meaning."@en .
+
+skos:narrowerTransitive rdfs:label "has narrower transitive"@en ;
+    dcterms:description "skos:narrowerTransitive is a transitive superproperty of skos:narrower." .
+
+skos:notation rdfs:label "notation"@en ;
+    dcterms:description "A notation, also known as classification code, is a string of characters such as \"T58.5\" or \"303.4833\" used to uniquely identify a concept within the scope of a given concept scheme."@en .
+
+skos:note rdfs:label "note"@en ;
+    dcterms:description "A general note, for any purpose."@en .
+
+skos:prefLabel rdfs:label "preferred label"@en ;
+    dcterms:description "The preferred lexical label for a resource, in a given language."@en .
+
+skos:related rdfs:label "has related"@en ;
+    dcterms:description "Relates a concept to a concept with which there is an associative semantic relationship."@en .
+
+skos:relatedMatch rdfs:label "has related match"@en ;
+    dcterms:description "skos:relatedMatch is used to state an associative mapping link between two conceptual resources in different concept schemes."@en .
+
+skos:scopeNote rdfs:label "scope note"@en ;
+    dcterms:description "A note that helps to clarify the meaning and/or the use of a concept."@en .
+
+skos:semanticRelation rdfs:label "is in semantic relation with"@en ;
+    dcterms:description "Links a concept to a concept related by meaning."@en .
+
+skos:topConceptOf rdfs:label "is top concept in scheme"@en ;
+    dcterms:description "Relates a concept to the concept scheme that it is a top level concept of."@en .
+
+<http://www.w3.org/2006/time> rdfs:label "OWL-Time"@en,
+        "Tiempo en OWL"@es .
+
+time:DateTimeInterval rdfs:label "Date-time interval"@en,
+        "intervalo de fecha-hora"@es ;
+    dcterms:description "DateTimeInterval is a subclass of ProperInterval, defined using the multi-element DateTimeDescription."@en ;
+    rdfs:subClassOf time:ProperInterval .
+
+time:DayOfWeek rdfs:label "Day of week"@en,
+        "día de la semana"@es ;
+    dcterms:description "The day of week"@en ;
+    rdfs:subClassOf owl:Thing .
+
+time:Duration rdfs:label "duración de tiempo",
+        "Time duration"@en ;
+    dcterms:description "Duration of a temporal extent expressed as a number scaled by a temporal unit"@en ;
+    rdfs:subClassOf [ ],
+        [ ],
+        time:TemporalDuration .
+
+time:Friday rdfs:label "Friday"@en .
+
+time:Instant rdfs:label "Time instant"@en,
+        "instante de tiempo."@es ;
+    dcterms:description "A temporal entity with zero extent or duration"@en ;
+    rdfs:subClassOf time:TemporalEntity .
+
+time:January rdfs:label "January" ;
+    rdfs:subClassOf [ ],
+        [ ],
+        time:DateTimeDescription .
+
+time:Monday rdfs:label "Monday"@en .
+
+time:MonthOfYear rdfs:label "Month of year"@en,
+        "mes del año"@es ;
+    dcterms:description "The month of the year"@en ;
+    rdfs:subClassOf [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        time:DateTimeDescription .
+
+time:Saturday rdfs:label "Saturday"@en .
+
+time:Sunday rdfs:label "Sunday"@en .
+
+time:TRS rdfs:label "Temporal Reference System"@en,
+        "sistema de referencia temporal"@es ;
+    dcterms:description """A temporal reference system, such as a temporal coordinate system (with an origin, direction, and scale), a calendar-clock combination, or a (possibly hierarchical) ordinal system. 
+
+This is a stub class, representing the set of all temporal reference systems."""@en .
+
+time:TemporalUnit rdfs:label "Temporal unit"@en,
+        "unidad de tiempo"@es ;
+    dcterms:description "A standard duration, which provides a scale factor for a time extent, or the granularity or precision for a time position."@en ;
+    rdfs:subClassOf time:TemporalDuration .
+
+time:Thursday rdfs:label "Thursday"@en .
+
+time:TimePosition rdfs:label "Time position"@en,
+        "posición de tiempo"@es ;
+    dcterms:description "A temporal position described using either a (nominal) value from an ordinal reference system, or a (numeric) value in a temporal coordinate system. "@en ;
+    rdfs:subClassOf [ ],
+        time:TemporalPosition .
+
+time:TimeZone rdfs:label "Time Zone"@en,
+        "huso horario"@es ;
+    dcterms:description """A Time Zone specifies the amount by which the local time is offset from UTC. 
+	A time zone is usually denoted geographically (e.g. Australian Eastern Daylight Time), with a constant value in a given region. 
+The region where it applies and the offset from UTC are specified by a locally recognised governing authority."""@en .
+
+time:Tuesday rdfs:label "Tuesday"@en .
+
+time:Wednesday rdfs:label "Wednesday"@en .
+
+time:Year rdfs:label "Year"@en ;
+    dcterms:description "Year duration" ;
+    rdfs:subClassOf [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        time:DurationDescription .
+
+time:after rdfs:label "after"@en,
+        "después"@es ;
+    dcterms:description "Gives directionality to time. If a temporal entity T1 is after another temporal entity T2, then the beginning of T1 is after the end of T2."@en .
+
+time:before rdfs:label "before"@en,
+        "antes"@es ;
+    dcterms:description "Gives directionality to time. If a temporal entity T1 is before another temporal entity T2, then the end of T1 is before the beginning of T2. Thus, \"before\" can be considered to be basic to instants and derived for intervals."@en .
+
+time:day rdfs:label "day"@en,
+        "día"@es ;
+    dcterms:description """Day position in a calendar-clock system.
+
+The range of this property is not specified, so can be replaced by any specific representation of a calendar day from any calendar. """@en .
+
+time:dayOfWeek rdfs:label "day of week"@en,
+        "día de la semana"@es ;
+    dcterms:description "The day of week, whose value is a member of the class time:DayOfWeek"@en .
+
+time:dayOfYear rdfs:label "day of year"@en,
+        "día del año"@es ;
+    dcterms:description "The number of the day within the year"@en .
+
+time:days rdfs:label "days duration"@en,
+        "duración en días"@es ;
+    dcterms:description "length of, or element of the length of, a temporal extent expressed in days"@en .
+
+time:generalDay rdfs:label "Generalized day"@en,
+        "Día generalizado"@es ;
+    dcterms:description """Day of month - formulated as a text string with a pattern constraint to reproduce the same lexical form as gDay, except that values up to 99 are permitted, in order to support calendars with more than 31 days in a month. 
+Note that the value-space is not defined, so a generic OWL2 processor cannot compute ordering relationships of values of this type."""@en .
+
+time:generalMonth rdfs:label "Generalized month"@en,
+        "Mes generalizado"@es ;
+    dcterms:description """Month of year - formulated as a text string with a pattern constraint to reproduce the same lexical form as gMonth, except that values up to 20 are permitted, in order to support calendars with more than 12 months in the year. 
+Note that the value-space is not defined, so a generic OWL2 processor cannot compute ordering relationships of values of this type."""@en .
+
+time:generalYear rdfs:label "Generalized year"@en,
+        "Año generalizado"@es ;
+    dcterms:description """Year number - formulated as a text string with a pattern constraint to reproduce the same lexical form as gYear, but not restricted to values from the Gregorian calendar. 
+Note that the value-space is not defined, so a generic OWL2 processor cannot compute ordering relationships of values of this type."""@en .
+
+time:hasBeginning rdfs:label "has beginning"@en,
+        "tiene principio"@es ;
+    dcterms:description "Beginning of a temporal entity."@en .
+
+time:hasDateTimeDescription rdfs:label "has Date-Time description"@en,
+        "tiene descripción fecha-hora"@es ;
+    dcterms:description "Value of DateTimeInterval expressed as a structured value. The beginning and end of the interval coincide with the limits of the shortest element in the description."@en .
+
+time:hasDuration rdfs:label "has duration"@en,
+        "tiene duración"@es ;
+    dcterms:description "Duration of a temporal entity, event or activity, or thing, expressed as a scaled value"@en .
+
+time:hasDurationDescription rdfs:label "has duration description"@en,
+        "tiene descripción de duración"@es ;
+    dcterms:description "Duration of a temporal entity, expressed using a structured description"@en .
+
+time:hasEnd rdfs:label "has end"@en,
+        "tiene fin"@es ;
+    dcterms:description "End of a temporal entity."@en .
+
+time:hasTRS rdfs:label "Temporal reference system used"@en,
+        "sistema de referencia temporal utilizado"@es ;
+    dcterms:description "The temporal reference system used by a temporal position or extent description. "@en .
+
+time:hasTemporalDuration rdfs:label "has temporal duration"@en,
+        "tiene duración temporal"@es ;
+    dcterms:description "Duration of a temporal entity."@en .
+
+time:hasTime rdfs:label "has time"@en,
+        "tiene tiempo"@es ;
+    dcterms:description "Supports the association of a temporal entity (instant or interval) to any thing"@en .
+
+time:hasXSDDuration rdfs:label "has XSD duration"@en,
+        "tiene duración XSD"@es ;
+    dcterms:description "Extent of a temporal entity, expressed using xsd:duration"@en .
+
+time:hour rdfs:label "hour"@en,
+        "hora"@es ;
+    dcterms:description "Hour position in a calendar-clock system."@en .
+
+time:hours rdfs:label "hours duration"@en,
+        "duración en horas"@es ;
+    dcterms:description "length of, or element of the length of, a temporal extent expressed in hours"@en .
+
+time:inDateTime rdfs:label "in date-time description"@en,
+        "en descripción de fecha-hora"@es ;
+    dcterms:description "Position of an instant, expressed using a structured description"@en .
+
+time:inTemporalPosition rdfs:label "Temporal position"@en,
+        "posición temporal"@es ;
+    dcterms:description "Position of a time instant"@en .
+
+time:inTimePosition rdfs:label "Time position"@en,
+        "posición de tiempo"@es ;
+    dcterms:description "Position of a time instant expressed as a TimePosition"@en .
+
+time:inXSDDate rdfs:label "in XSD date"@en,
+        "en fecha XSD"@es ;
+    dcterms:description "Position of an instant, expressed using xsd:date"@en .
+
+time:inXSDDateTime rdfs:label "in XSD Date-Time"@en,
+        "en fecha-tiempo XSD"@es ;
+    dcterms:description "Position of an instant, expressed using xsd:dateTime"@en .
+
+time:inXSDDateTimeStamp rdfs:label "in XSD Date-Time-Stamp"@en,
+        "en fecha-sello de tiempo XSD"@es ;
+    dcterms:description "Position of an instant, expressed using xsd:dateTimeStamp"@en .
+
+time:inXSDgYear rdfs:label "in XSD g-Year"@en,
+        "en año gregoriano XSD"@es ;
+    dcterms:description "Position of an instant, expressed using xsd:gYear"@en .
+
+time:inXSDgYearMonth rdfs:label "in XSD g-YearMonth"@en,
+        "en año-mes gregoriano XSD"@es ;
+    dcterms:description "Position of an instant, expressed using xsd:gYearMonth"@en .
+
+time:inside rdfs:label "has time instant inside"@en,
+        "tiene instante de tiempo dentro"@es ;
+    dcterms:description "An instant that falls inside the interval. It is not intended to include beginnings and ends of intervals."@en .
+
+time:intervalAfter rdfs:label "interval after"@en,
+        "intervalo posterior"@es ;
+    dcterms:description "If a proper interval T1 is intervalAfter another proper interval T2, then the beginning of T1 is after the end of T2."@en .
+
+time:intervalBefore rdfs:label "interval before"@en,
+        "intervalo anterior"@es ;
+    dcterms:description "If a proper interval T1 is intervalBefore another proper interval T2, then the end of T1 is before the beginning of T2."@en .
+
+time:intervalContains rdfs:label "interval contains"@en,
+        "intervalo contiene"@es ;
+    dcterms:description "If a proper interval T1 is intervalContains another proper interval T2, then the beginning of T1 is before the beginning of T2, and the end of T1 is after the end of T2."@en .
+
+time:intervalDisjoint rdfs:label "interval disjoint"@en,
+        "intervalo disjunto"@es ;
+    dcterms:description "If a proper interval T1 is intervalDisjoint another proper interval T2, then the beginning of T1 is after the end of T2, or the end of T1 is before the beginning of T2, i.e. the intervals do not overlap in any way, but their ordering relationship is not known."@en .
+
+time:intervalDuring rdfs:label "interval during"@en,
+        "intervalo durante"@es ;
+    dcterms:description "If a proper interval T1 is intervalDuring another proper interval T2, then the beginning of T1 is after the beginning of T2, and the end of T1 is before the end of T2."@en .
+
+time:intervalEquals rdfs:label "interval equals"@en,
+        "intervalo igual"@es ;
+    dcterms:description "If a proper interval T1 is intervalEquals another proper interval T2, then the beginning of T1 is coincident with the beginning of T2, and the end of T1 is coincident with the end of T2."@en .
+
+time:intervalFinishedBy rdfs:label "interval finished by"@en,
+        "intervalo terminado por"@es ;
+    dcterms:description "If a proper interval T1 is intervalFinishedBy another proper interval T2, then the beginning of T1 is before the beginning of T2, and the end of T1 is coincident with the end of T2."@en .
+
+time:intervalFinishes rdfs:label "interval finishes"@en,
+        "intervalo termina"@es ;
+    dcterms:description "If a proper interval T1 is intervalFinishes another proper interval T2, then the beginning of T1 is after the beginning of T2, and the end of T1 is coincident with the end of T2."@en .
+
+time:intervalIn rdfs:label "interval in"@en,
+        "intervalo interior"@es ;
+    dcterms:description "If a proper interval T1 is intervalIn another proper interval T2, then the beginning of T1 is after the beginning of T2 or is coincident with the beginning of T2, and the end of T1 is before the end of T2, or is coincident with the end of T2, except that end of T1 may not be coincident with the end of T2 if the beginning of T1 is coincident with the beginning of T2."@en .
+
+time:intervalMeets rdfs:label "interval meets"@en,
+        "intervalo se encuentra"@es ;
+    dcterms:description "If a proper interval T1 is intervalMeets another proper interval T2, then the end of T1 is coincident with the beginning of T2."@en .
+
+time:intervalMetBy rdfs:label "interval met by"@en,
+        "intervalo encontrado por"@es ;
+    dcterms:description "If a proper interval T1 is intervalMetBy another proper interval T2, then the beginning of T1 is coincident with the end of T2."@en .
+
+time:intervalOverlappedBy rdfs:label "interval overlapped by"@en,
+        "intervalo solapado por"@es ;
+    dcterms:description "If a proper interval T1 is intervalOverlappedBy another proper interval T2, then the beginning of T1 is after the beginning of T2, the beginning of T1 is before the end of T2, and the end of T1 is after the end of T2."@en .
+
+time:intervalOverlaps rdfs:label "interval overlaps"@en,
+        "intervalo se solapa"@es ;
+    dcterms:description "If a proper interval T1 is intervalOverlaps another proper interval T2, then the beginning of T1 is before the beginning of T2, the end of T1 is after the beginning of T2, and the end of T1 is before the end of T2."@en .
+
+time:intervalStartedBy rdfs:label "interval started by"@en ;
+    dcterms:description "If a proper interval T1 is intervalStarted another proper interval T2, then the beginning of T1 is coincident with the beginning of T2, and the end of T1 is after the end of T2."@en .
+
+time:intervalStarts rdfs:label "interval starts"@en,
+        "intervalo empieza"@es ;
+    dcterms:description "If a proper interval T1 is intervalStarts another proper interval T2, then the beginning of T1 is coincident with the beginning of T2, and the end of T1 is before the end of T2."@en .
+
+time:minute rdfs:label "minute"@en,
+        "minuto"@es ;
+    dcterms:description "Minute position in a calendar-clock system."@en .
+
+time:minutes rdfs:label "minutes"@en,
+        "minutos"@es ;
+    dcterms:description "length, or element of, a temporal extent expressed in minutes"@en .
+
+time:month rdfs:label "month"@en,
+        "mes"@es ;
+    dcterms:description """Month position in a calendar-clock system.
+
+The range of this property is not specified, so can be replaced by any specific representation of a calendar month from any calendar. """@en .
+
+time:monthOfYear rdfs:label "month of year"@en,
+        "mes del año"@es ;
+    dcterms:description "The month of the year, whose value is a member of the class time:MonthOfYear"@en .
+
+time:months rdfs:label "months duration"@en,
+        "duración en meses"@es ;
+    dcterms:description "length of, or element of the length of, a temporal extent expressed in months"@en .
+
+time:nominalPosition rdfs:label "Name of temporal position"@en,
+        "nombre de posición temporal"@es ;
+    dcterms:description "The (nominal) value indicating temporal position in an ordinal reference system "@en .
+
+time:numericDuration rdfs:label "Numeric value of temporal duration"@en,
+        "valor numérico de duración temporal"@es ;
+    dcterms:description "Value of a temporal extent expressed as a decimal number scaled by a temporal unit"@en .
+
+time:numericPosition rdfs:label "Numeric value of temporal position"@en,
+        "valor numérico de posición temporal"@es ;
+    dcterms:description "The (numeric) value indicating position within a temporal coordinate system "@en .
+
+time:second rdfs:label "second"@en,
+        "segundo"@es .
+
+time:seconds rdfs:label "seconds duration"@en,
+        "duración en segundos"@es .
+
+time:timeZone rdfs:label "in time zone"@en,
+        "en huso horario"@es .
+
+time:unitDay rdfs:label "Day (unit of temporal duration)"@en .
+
+time:unitHour rdfs:label "Hour (unit of temporal duration)"@en .
+
+time:unitMinute rdfs:label "Minute (unit of temporal duration)"@en .
+
+time:unitMonth rdfs:label "Month (unit of temporal duration)"@en .
+
+time:unitSecond rdfs:label "Second (unit of temporal duration)"@en .
+
+time:unitType rdfs:label "temporal unit type"@en,
+        "tipo de unidad temporal"@es .
+
+time:unitWeek rdfs:label "Week (unit of temporal duration)"@en .
+
+time:unitYear rdfs:label "Year (unit of temporal duration)"@en .
+
+time:week rdfs:label "week"@en,
+        "semana"@es .
+
+time:weeks rdfs:label "weeks duration"@en,
+        "duración en semanas"@es .
+
+time:xsdDateTime rdfs:label "has XSD date-time"@en,
+        "tiene fecha-hora XSD"@es .
+
+time:year rdfs:label "year"@en .
+
+time:years rdfs:label "years duration"@en,
+        "duración en años"@es .
+
+<http://www.w3.org/2006/vcard/ns> rdfs:label "Ontology for vCard"@en .
+
+<http://www.w3.org/2006/vcard/ns#Acquaintance> rdfs:label "Acquaintance"@en ;
+    rdfs:subClassOf <http://www.w3.org/2006/vcard/ns#RelatedType> .
+
+<http://www.w3.org/2006/vcard/ns#Address> rdfs:label "Address"@en .
+
+<http://www.w3.org/2006/vcard/ns#Agent> rdfs:label "Agent"@en ;
+    rdfs:subClassOf <http://www.w3.org/2006/vcard/ns#RelatedType> .
+
+<http://www.w3.org/2006/vcard/ns#BBS> rdfs:label "BBS"@en ;
+    rdfs:subClassOf <http://www.w3.org/2006/vcard/ns#TelephoneType> .
+
+<http://www.w3.org/2006/vcard/ns#Car> rdfs:label "Car"@en ;
+    rdfs:subClassOf <http://www.w3.org/2006/vcard/ns#TelephoneType> .
+
+<http://www.w3.org/2006/vcard/ns#Cell> rdfs:label "Cell"@en ;
+    rdfs:subClassOf <http://www.w3.org/2006/vcard/ns#TelephoneType> .
+
+<http://www.w3.org/2006/vcard/ns#Child> rdfs:label "Child"@en ;
+    rdfs:subClassOf <http://www.w3.org/2006/vcard/ns#RelatedType> .
+
+<http://www.w3.org/2006/vcard/ns#Colleague> rdfs:label "Colleague"@en ;
+    rdfs:subClassOf <http://www.w3.org/2006/vcard/ns#RelatedType> .
+
+<http://www.w3.org/2006/vcard/ns#Contact> rdfs:label "Contact"@en ;
+    rdfs:subClassOf <http://www.w3.org/2006/vcard/ns#RelatedType> .
+
+<http://www.w3.org/2006/vcard/ns#Coresident> rdfs:label "Coresident"@en ;
+    rdfs:subClassOf <http://www.w3.org/2006/vcard/ns#RelatedType> .
+
+<http://www.w3.org/2006/vcard/ns#Coworker> rdfs:label "Coworker"@en ;
+    rdfs:subClassOf <http://www.w3.org/2006/vcard/ns#RelatedType> .
+
+<http://www.w3.org/2006/vcard/ns#Crush> rdfs:label "Crush"@en ;
+    rdfs:subClassOf <http://www.w3.org/2006/vcard/ns#RelatedType> .
+
+<http://www.w3.org/2006/vcard/ns#Date> rdfs:label "Date"@en ;
+    rdfs:subClassOf <http://www.w3.org/2006/vcard/ns#RelatedType> .
+
+<http://www.w3.org/2006/vcard/ns#Dom> rdfs:label "Dom"@en ;
+    rdfs:subClassOf <http://www.w3.org/2006/vcard/ns#Type> .
+
+<http://www.w3.org/2006/vcard/ns#Email> rdfs:label "Email"@en .
+
+<http://www.w3.org/2006/vcard/ns#Emergency> rdfs:label "Emergency"@en ;
+    rdfs:subClassOf <http://www.w3.org/2006/vcard/ns#RelatedType> .
+
+<http://www.w3.org/2006/vcard/ns#Fax> rdfs:label "Fax"@en ;
+    rdfs:subClassOf <http://www.w3.org/2006/vcard/ns#TelephoneType> .
+
+<http://www.w3.org/2006/vcard/ns#Female> rdfs:label "Female"@en ;
+    rdfs:subClassOf <http://www.w3.org/2006/vcard/ns#Gender> .
+
+<http://www.w3.org/2006/vcard/ns#Friend> rdfs:label "Friend"@en ;
+    rdfs:subClassOf <http://www.w3.org/2006/vcard/ns#RelatedType> .
+
+<http://www.w3.org/2006/vcard/ns#Group> rdfs:label "Group"@en ;
+    rdfs:subClassOf <http://www.w3.org/2006/vcard/ns#Kind> .
+
+<http://www.w3.org/2006/vcard/ns#Home> rdfs:label "Home"@en ;
+    rdfs:subClassOf <http://www.w3.org/2006/vcard/ns#Type> .
+
+<http://www.w3.org/2006/vcard/ns#ISDN> rdfs:label "ISDN"@en ;
+    rdfs:subClassOf <http://www.w3.org/2006/vcard/ns#Type> .
+
+<http://www.w3.org/2006/vcard/ns#Individual> rdfs:label "Individual"@en ;
+    rdfs:subClassOf <http://www.w3.org/2006/vcard/ns#Kind> .
+
+<http://www.w3.org/2006/vcard/ns#Internet> rdfs:label "Internet"@en ;
+    rdfs:subClassOf <http://www.w3.org/2006/vcard/ns#Type> .
+
+<http://www.w3.org/2006/vcard/ns#Intl> rdfs:label "Intl"@en ;
+    rdfs:subClassOf <http://www.w3.org/2006/vcard/ns#Type> .
+
+<http://www.w3.org/2006/vcard/ns#Kin> rdfs:label "Kin"@en ;
+    rdfs:subClassOf <http://www.w3.org/2006/vcard/ns#RelatedType> .
+
+<http://www.w3.org/2006/vcard/ns#Label> rdfs:label "Label"@en ;
+    rdfs:subClassOf <http://www.w3.org/2006/vcard/ns#Type> .
+
+<http://www.w3.org/2006/vcard/ns#Location> rdfs:label "Location"@en ;
+    rdfs:subClassOf <http://www.w3.org/2006/vcard/ns#Kind> .
+
+<http://www.w3.org/2006/vcard/ns#Male> rdfs:label "Male"@en ;
+    rdfs:subClassOf <http://www.w3.org/2006/vcard/ns#Gender> .
+
+<http://www.w3.org/2006/vcard/ns#Me> rdfs:label "Me"@en ;
+    rdfs:subClassOf <http://www.w3.org/2006/vcard/ns#RelatedType> .
+
+<http://www.w3.org/2006/vcard/ns#Met> rdfs:label "Met"@en ;
+    rdfs:subClassOf <http://www.w3.org/2006/vcard/ns#RelatedType> .
+
+<http://www.w3.org/2006/vcard/ns#Modem> rdfs:label "Modem"@en ;
+    rdfs:subClassOf <http://www.w3.org/2006/vcard/ns#TelephoneType> .
+
+<http://www.w3.org/2006/vcard/ns#Msg> rdfs:label "Msg"@en ;
+    rdfs:subClassOf <http://www.w3.org/2006/vcard/ns#TelephoneType> .
+
+<http://www.w3.org/2006/vcard/ns#Muse> rdfs:label "Muse"@en ;
+    rdfs:subClassOf <http://www.w3.org/2006/vcard/ns#RelatedType> .
+
+<http://www.w3.org/2006/vcard/ns#Name> rdfs:label "Name"@en .
+
+<http://www.w3.org/2006/vcard/ns#Neighbor> rdfs:label "Neighbor"@en ;
+    rdfs:subClassOf <http://www.w3.org/2006/vcard/ns#RelatedType> .
+
+<http://www.w3.org/2006/vcard/ns#None> rdfs:label "None"@en ;
+    rdfs:subClassOf <http://www.w3.org/2006/vcard/ns#Gender> .
+
+<http://www.w3.org/2006/vcard/ns#Organization> rdfs:label "Organization"@en ;
+    rdfs:subClassOf <http://www.w3.org/2006/vcard/ns#Kind> .
+
+<http://www.w3.org/2006/vcard/ns#Other> rdfs:label "Other"@en ;
+    rdfs:subClassOf <http://www.w3.org/2006/vcard/ns#Gender> .
+
+<http://www.w3.org/2006/vcard/ns#PCS> rdfs:label "PCS"@en ;
+    rdfs:subClassOf <http://www.w3.org/2006/vcard/ns#TelephoneType> .
+
+<http://www.w3.org/2006/vcard/ns#Pager> rdfs:label "Pager"@en ;
+    rdfs:subClassOf <http://www.w3.org/2006/vcard/ns#TelephoneType> .
+
+<http://www.w3.org/2006/vcard/ns#Parcel> rdfs:label "Parcel"@en ;
+    rdfs:subClassOf <http://www.w3.org/2006/vcard/ns#Type> .
+
+<http://www.w3.org/2006/vcard/ns#Parent> rdfs:label "Parent"@en ;
+    rdfs:subClassOf <http://www.w3.org/2006/vcard/ns#RelatedType> .
+
+<http://www.w3.org/2006/vcard/ns#Postal> rdfs:label "Postal"@en ;
+    rdfs:subClassOf <http://www.w3.org/2006/vcard/ns#Type> .
+
+<http://www.w3.org/2006/vcard/ns#Pref> rdfs:label "Pref"@en ;
+    rdfs:subClassOf <http://www.w3.org/2006/vcard/ns#Type> .
+
+<http://www.w3.org/2006/vcard/ns#Sibling> rdfs:label "Sibling"@en ;
+    rdfs:subClassOf <http://www.w3.org/2006/vcard/ns#RelatedType> .
+
+<http://www.w3.org/2006/vcard/ns#Spouse> rdfs:label "Spouse"@en ;
+    rdfs:subClassOf <http://www.w3.org/2006/vcard/ns#RelatedType> .
+
+<http://www.w3.org/2006/vcard/ns#Sweetheart> rdfs:label "Sweetheart"@en ;
+    rdfs:subClassOf <http://www.w3.org/2006/vcard/ns#RelatedType> .
+
+<http://www.w3.org/2006/vcard/ns#Tel> rdfs:label "Tel"@en .
+
+<http://www.w3.org/2006/vcard/ns#Text> rdfs:label "Text"@en ;
+    rdfs:subClassOf <http://www.w3.org/2006/vcard/ns#TelephoneType> .
+
+<http://www.w3.org/2006/vcard/ns#TextPhone> rdfs:label "Text phone"@en ;
+    rdfs:subClassOf <http://www.w3.org/2006/vcard/ns#TelephoneType> .
+
+<http://www.w3.org/2006/vcard/ns#Unknown> rdfs:label "Unknown"@en ;
+    rdfs:subClassOf <http://www.w3.org/2006/vcard/ns#Gender> .
+
+<http://www.w3.org/2006/vcard/ns#VCard> rdfs:label "VCard"@en .
+
+<http://www.w3.org/2006/vcard/ns#Video> rdfs:label "Video"@en ;
+    rdfs:subClassOf <http://www.w3.org/2006/vcard/ns#TelephoneType> .
+
+<http://www.w3.org/2006/vcard/ns#Voice> rdfs:label "Voice"@en ;
+    rdfs:subClassOf <http://www.w3.org/2006/vcard/ns#TelephoneType> .
+
+<http://www.w3.org/2006/vcard/ns#Work> rdfs:label "Work"@en ;
+    rdfs:subClassOf <http://www.w3.org/2006/vcard/ns#Type> .
+
+<http://www.w3.org/2006/vcard/ns#X400> rdfs:label "X400"@en ;
+    rdfs:subClassOf <http://www.w3.org/2006/vcard/ns#Type> .
+
+<http://www.w3.org/2006/vcard/ns#additional-name> rdfs:label "additional name"@en .
+
+<http://www.w3.org/2006/vcard/ns#adr> rdfs:label "address"@en .
+
+<http://www.w3.org/2006/vcard/ns#agent> rdfs:label "agent"@en .
+
+<http://www.w3.org/2006/vcard/ns#anniversary> rdfs:label "anniversary"@en .
+
+<http://www.w3.org/2006/vcard/ns#bday> rdfs:label "birth date"@en .
+
+<http://www.w3.org/2006/vcard/ns#category> rdfs:label "category"@en .
+
+<http://www.w3.org/2006/vcard/ns#class> rdfs:label "class"@en .
+
+<http://www.w3.org/2006/vcard/ns#country-name> rdfs:label "country name"@en .
+
+<http://www.w3.org/2006/vcard/ns#email> rdfs:label "email"@en .
+
+<http://www.w3.org/2006/vcard/ns#extended-address> rdfs:label "extended address"@en .
+
+<http://www.w3.org/2006/vcard/ns#family-name> rdfs:label "family name"@en .
+
+<http://www.w3.org/2006/vcard/ns#fn> rdfs:label "formatted name"@en .
+
+<http://www.w3.org/2006/vcard/ns#geo> rdfs:label "geo"@en .
+
+<http://www.w3.org/2006/vcard/ns#given-name> rdfs:label "given name"@en .
+
+<http://www.w3.org/2006/vcard/ns#hasAdditionalName> rdfs:label "has additional name"@en .
+
+<http://www.w3.org/2006/vcard/ns#hasAddress> rdfs:label "has address"@en .
+
+<http://www.w3.org/2006/vcard/ns#hasCalendarBusy> rdfs:label "has calendar busy"@en .
+
+<http://www.w3.org/2006/vcard/ns#hasCalendarLink> rdfs:label "has calendar link"@en .
+
+<http://www.w3.org/2006/vcard/ns#hasCalendarRequest> rdfs:label "has calendar request"@en .
+
+<http://www.w3.org/2006/vcard/ns#hasCategory> rdfs:label "has category"@en .
+
+<http://www.w3.org/2006/vcard/ns#hasCountryName> rdfs:label "has country name"@en .
+
+<http://www.w3.org/2006/vcard/ns#hasEmail> rdfs:label "has email"@en .
+
+<http://www.w3.org/2006/vcard/ns#hasFN> rdfs:label "has formatted name"@en .
+
+<http://www.w3.org/2006/vcard/ns#hasFamilyName> rdfs:label "has family name"@en .
+
+<http://www.w3.org/2006/vcard/ns#hasGender> rdfs:label "has gender"@en .
+
+<http://www.w3.org/2006/vcard/ns#hasGeo> rdfs:label "has geo"@en .
+
+<http://www.w3.org/2006/vcard/ns#hasGivenName> rdfs:label "has given name"@en .
+
+<http://www.w3.org/2006/vcard/ns#hasHonorificPrefix> rdfs:label "has honorific prefix"@en .
+
+<http://www.w3.org/2006/vcard/ns#hasHonorificSuffix> rdfs:label "has honorific suffix"@en .
+
+<http://www.w3.org/2006/vcard/ns#hasInstantMessage> rdfs:label "has messaging"@en .
+
+<http://www.w3.org/2006/vcard/ns#hasKey> rdfs:label "has key"@en .
+
+<http://www.w3.org/2006/vcard/ns#hasLanguage> rdfs:label "has language"@en .
+
+<http://www.w3.org/2006/vcard/ns#hasLocality> rdfs:label "has locality"@en .
+
+<http://www.w3.org/2006/vcard/ns#hasLogo> rdfs:label "has logo"@en .
+
+<http://www.w3.org/2006/vcard/ns#hasMember> rdfs:label "has member"@en .
+
+<http://www.w3.org/2006/vcard/ns#hasName> rdfs:label "has name"@en .
+
+<http://www.w3.org/2006/vcard/ns#hasNickname> rdfs:label "has nickname"@en .
+
+<http://www.w3.org/2006/vcard/ns#hasNote> rdfs:label "has note"@en .
+
+<http://www.w3.org/2006/vcard/ns#hasOrganizationName> rdfs:label "has organization name"@en .
+
+<http://www.w3.org/2006/vcard/ns#hasOrganizationUnit> rdfs:label "has organization unit name"@en .
+
+<http://www.w3.org/2006/vcard/ns#hasPhoto> rdfs:label "has photo"@en .
+
+<http://www.w3.org/2006/vcard/ns#hasPostalCode> rdfs:label "has postal code"@en .
+
+<http://www.w3.org/2006/vcard/ns#hasRegion> rdfs:label "has region"@en .
+
+<http://www.w3.org/2006/vcard/ns#hasRelated> rdfs:label "has related"@en .
+
+<http://www.w3.org/2006/vcard/ns#hasRole> rdfs:label "has role"@en .
+
+<http://www.w3.org/2006/vcard/ns#hasSound> rdfs:label "has sound"@en .
+
+<http://www.w3.org/2006/vcard/ns#hasSource> rdfs:label "has source"@en .
+
+<http://www.w3.org/2006/vcard/ns#hasStreetAddress> rdfs:label "has street address"@en .
+
+<http://www.w3.org/2006/vcard/ns#hasTelephone> rdfs:label "has telephone"@en .
+
+<http://www.w3.org/2006/vcard/ns#hasTitle> rdfs:label "has title"@en .
+
+<http://www.w3.org/2006/vcard/ns#hasUID> rdfs:label "has uid"@en .
+
+<http://www.w3.org/2006/vcard/ns#hasURL> rdfs:label "has url"@en .
+
+<http://www.w3.org/2006/vcard/ns#hasValue> rdfs:label "has value"@en .
+
+<http://www.w3.org/2006/vcard/ns#honorific-prefix> rdfs:label "honorific prefix"@en .
+
+<http://www.w3.org/2006/vcard/ns#honorific-suffix> rdfs:label "honorific suffix"@en .
+
+<http://www.w3.org/2006/vcard/ns#key> rdfs:label "key"@en .
+
+<http://www.w3.org/2006/vcard/ns#label> rdfs:label "label"@en .
+
+<http://www.w3.org/2006/vcard/ns#language> rdfs:label "language"@en .
+
+<http://www.w3.org/2006/vcard/ns#latitude> rdfs:label "latitude"@en .
+
+<http://www.w3.org/2006/vcard/ns#locality> rdfs:label "locality"@en .
+
+<http://www.w3.org/2006/vcard/ns#logo> rdfs:label "logo"@en .
+
+<http://www.w3.org/2006/vcard/ns#longitude> rdfs:label "longitude"@en .
+
+<http://www.w3.org/2006/vcard/ns#mailer> rdfs:label "mailer"@en .
+
+<http://www.w3.org/2006/vcard/ns#n> rdfs:label "name"@en .
+
+<http://www.w3.org/2006/vcard/ns#nickname> rdfs:label "nickname"@en .
+
+<http://www.w3.org/2006/vcard/ns#note> rdfs:label "note"@en .
+
+<http://www.w3.org/2006/vcard/ns#org> rdfs:label "organization"@en .
+
+<http://www.w3.org/2006/vcard/ns#organization-name> rdfs:label "organization name"@en .
+
+<http://www.w3.org/2006/vcard/ns#organization-unit> rdfs:label "organizational unit name"@en .
+
+<http://www.w3.org/2006/vcard/ns#photo> rdfs:label "photo"@en .
+
+<http://www.w3.org/2006/vcard/ns#post-office-box> rdfs:label "post office box"@en .
+
+<http://www.w3.org/2006/vcard/ns#postal-code> rdfs:label "postal code"@en .
+
+<http://www.w3.org/2006/vcard/ns#prodid> rdfs:label "product id"@en .
+
+<http://www.w3.org/2006/vcard/ns#region> rdfs:label "region"@en .
+
+<http://www.w3.org/2006/vcard/ns#rev> rdfs:label "revision"@en .
+
+<http://www.w3.org/2006/vcard/ns#role> rdfs:label "role"@en .
+
+<http://www.w3.org/2006/vcard/ns#sort-string> rdfs:label "sort as"@en .
+
+<http://www.w3.org/2006/vcard/ns#sound> rdfs:label "sound"@en .
+
+<http://www.w3.org/2006/vcard/ns#street-address> rdfs:label "street address"@en .
+
+<http://www.w3.org/2006/vcard/ns#tel> rdfs:label "telephone"@en .
+
+<http://www.w3.org/2006/vcard/ns#title> rdfs:label "title"@en .
+
+<http://www.w3.org/2006/vcard/ns#tz> rdfs:label "time zone"@en .
+
+<http://www.w3.org/2006/vcard/ns#url> rdfs:label "url"@en .
+
+<http://www.w3.org/2006/vcard/ns#value> rdfs:label "value"@en .
+
+<http://www.w3.org/ns/dcat> rdfs:label "أنطولوجية فهارس قوائم البيانات"@ar,
+        "Slovník pro datové katalogy"@cs,
+        "Datakatalogvokabular"@da,
+        "Το λεξιλόγιο των καταλόγων δεδομένων"@el,
+        "The data catalog vocabulary"@en,
+        "El vocabulario de catálogo de datos"@es,
+        "Le vocabulaire des jeux de données"@fr,
+        "Il vocabolario del catalogo dei dati"@it,
+        "データ・カタログ語彙（DCAT）"@ja .
+
+dcat:Catalog rdfs:label "فهرس قوائم البيانات"@ar,
+        "Katalog"@cs,
+        "Katalog"@da,
+        "Κατάλογος"@el,
+        "Catalog"@en,
+        "Catálogo"@es,
+        "Catalogue"@fr,
+        "Catalogo"@it,
+        "カタログ"@ja ;
+    dcterms:description "A curated collection of metadata about resources (e.g., datasets and data services in the context of a data catalog)."@en ;
+    rdfs:subClassOf dcat:Dataset .
+
+dcat:CatalogRecord rdfs:label "سجل"@ar,
+        "Katalogizační záznam"@cs,
+        "Katalogpost"@da,
+        "Καταγραφή καταλόγου"@el,
+        "Catalog Record"@en,
+        "Registro del catálogo"@es,
+        "Registre du catalogue"@fr,
+        "Record di catalogo"@it,
+        "カタログ・レコード"@ja ;
+    dcterms:description "A record in a data catalog, describing the registration of a single dataset or data service."@en ;
+    rdfs:subClassOf [ ],
+        [ ] .
+
+dcat:DataService rdfs:label "Datatjeneste"@da,
+        "Data service"@en,
+        "Servicio de datos"@es,
+        "Servizio di dati"@it ;
+    dcterms:description "A site or end-point providing operations related to the discovery of, access to, or processing functions on, data or related resources."@en ;
+    rdfs:subClassOf dcmitype:Service,
+        dcat:Resource .
+
+dcat:Distribution rdfs:label "التوزيع"@ar,
+        "Distribuce"@cs,
+        "Distribution"@da,
+        "Διανομή"@el,
+        "Distribution"@en,
+        "Distribución"@es,
+        "Distribution"@fr,
+        "Distribuzione"@it,
+        "配信"@ja ;
+    dcterms:description "A specific representation of a dataset. A dataset might be available in multiple serializations that may differ in various ways, including natural language, media-type or format, schematic organization, temporal and spatial resolution, level of detail or profiles (which might specify any or all of the above)."@en .
+
+dcat:Relationship rdfs:label "Vztah"@cs,
+        "Relation"@da,
+        "Relationship"@en,
+        "Relación"@es,
+        "Relazione"@it ;
+    dcterms:description "An association class for attaching additional information to a relationship between DCAT Resources."@en .
+
+dcat:Role rdfs:label "Role"@cs,
+        "Rolle"@da,
+        "Role"@en,
+        "Rol"@es,
+        "Ruolo"@it ;
+    dcterms:description "A role is the function of a resource or agent with respect to another resource, in the context of resource attribution or resource relationships."@en ;
+    rdfs:subClassOf skos:Concept .
+
+dcat:accessService rdfs:label "služba pro přístup k datům"@cs,
+        "dataadgangstjeneste"@da,
+        "data access service"@en,
+        "servicio de acceso de datos"@es,
+        "servizio di accesso ai dati"@it ;
+    dcterms:description "A site or end-point that gives access to the distribution of the dataset."@en .
+
+dcat:accessURL rdfs:label "رابط وصول"@ar,
+        "přístupová adresa"@cs,
+        "adgangsadresse"@da,
+        "URL πρόσβασης"@el,
+        "access address"@en,
+        "URL de acceso"@es,
+        "URL d'accès"@fr,
+        "indirizzo di accesso"@it,
+        "アクセスURL"@ja ;
+    dcterms:description "A URL of a resource that gives access to a distribution of the dataset. E.g. landing page, feed, SPARQL endpoint. Use for all cases except a simple download link, in which case downloadURL is preferred."@en .
+
+dcat:bbox rdfs:label "ohraničení oblasti"@cs,
+        "bounding box"@da,
+        "bounding box"@en,
+        "cuadro delimitador"@es,
+        "quadro di delimitazione"@it ;
+    dcterms:description "The geographic bounding box of a resource."@en .
+
+dcat:byteSize rdfs:label "الحجم بالبايت"@ar,
+        "velikost v bajtech"@cs,
+        "bytestørrelse"@da,
+        "μέγεθος σε bytes"@el,
+        "byte size"@en,
+        "tamaño en bytes"@es,
+        "taille en octects"@fr,
+        "dimensione in byte"@it,
+        "バイト・サイズ"@ja ;
+    dcterms:description "The size of a distribution in bytes."@en .
+
+dcat:catalog rdfs:label "katalog"@cs,
+        "katalog"@da,
+        "catalog"@en,
+        "catálogo"@es,
+        "catalogo"@it ;
+    dcterms:description "A catalog whose contents are of interest in the context of this catalog."@en .
+
+dcat:centroid rdfs:label "centroid"@cs,
+        "geometrisk tyngdepunkt"@da,
+        "centroid"@en,
+        "centroide"@es,
+        "centroide"@it ;
+    dcterms:description "The geographic center (centroid) of a resource."@en .
+
+dcat:compressFormat rdfs:label "formát komprese"@cs,
+        "kompressionsformat"@da,
+        "compression format"@en,
+        "formato de compresión"@es,
+        "formato di compressione"@it ;
+    dcterms:description "The compression format of the distribution in which the data is contained in a compressed form, e.g. to reduce the size of the downloadable file."@en .
+
+dcat:contactPoint rdfs:label "عنوان اتصال"@ar,
+        "kontaktní bod"@cs,
+        "kontaktpunkt"@da,
+        "σημείο επικοινωνίας"@el,
+        "contact point"@en,
+        "Punto de contacto"@es,
+        "point de contact"@fr,
+        "punto di contatto"@it,
+        "窓口"@ja ;
+    dcterms:description "Relevant contact information for the catalogued resource. Use of vCard is recommended."@en .
+
+dcat:dataset rdfs:label "قائمة بيانات"@ar,
+        "datová sada"@cs,
+        "datasæt"@da,
+        "σύνολο δεδομένων"@el,
+        "dataset"@en,
+        "conjunto de datos"@es,
+        "jeu de données"@fr,
+        "dataset"@it,
+        "データセット"@ja ;
+    dcterms:description "A collection of data that is listed in the catalog."@en .
+
+dcat:distribution rdfs:label "توزيع"@ar,
+        "distribuce"@cs,
+        "distribution"@da,
+        "διανομή"@el,
+        "distribution"@en,
+        "distribución"@es,
+        "distribution"@fr,
+        "distribuzione"@it,
+        "データセット配信"@ja ;
+    dcterms:description "An available distribution of the dataset."@en .
+
+dcat:downloadURL rdfs:label "رابط تحميل"@ar,
+        "URL souboru ke stažení"@cs,
+        "downloadURL"@da,
+        "URL μεταφόρτωσης"@el,
+        "download URL"@en,
+        "URL de descarga"@es,
+        "URL de téléchargement"@fr,
+        "URL di scarico"@it,
+        "ダウンロードURL"@ja ;
+    dcterms:description "The URL of the downloadable file in a given format. E.g. CSV file or RDF file. The format is indicated by the distribution's dct:format and/or dcat:mediaType."@en .
+
+dcat:endDate rdfs:label "datum konce"@cs,
+        "slutdato"@da,
+        "end date"@en,
+        "fecha final"@es,
+        "data di fine"@it ;
+    dcterms:description "The end of the period."@en .
+
+dcat:endpointDescription rdfs:label "popis přístupového bodu služby"@cs,
+        "endpointbeskrivelse"@da,
+        "description of service end-point"@en,
+        "descripción del end-point del servicio"@es,
+        "descrizione dell'endpoint del servizio"@it ;
+    dcterms:description "A description of the service end-point, including its operations, parameters etc."@en .
+
+dcat:endpointURL rdfs:label "přístupový bod služby"@cs,
+        "tjenesteendpoint"@da,
+        "service end-point"@en,
+        "end-point del servicio"@es,
+        "end-point del servizio"@it ;
+    dcterms:description "The root location or primary endpoint of the service (a web-resolvable IRI)."@en .
+
+dcat:hadRole rdfs:label "sehraná role"@cs,
+        "havde rolle"@da,
+        "hadRole"@en,
+        "haRuolo"@it,
+        "tiene rol"@it ;
+    dcterms:description "The function of an entity or agent with respect to another entity or resource."@en .
+
+dcat:keyword rdfs:label "كلمة  مفتاحية "@ar,
+        "klíčové slovo"@cs,
+        "nøgleord"@da,
+        "λέξη-κλειδί"@el,
+        "keyword"@en,
+        "palabra clave"@es,
+        "mot-clés "@fr,
+        "parola chiave"@it,
+        "キーワード/タグ"@ja ;
+    dcterms:description "A keyword or tag describing a resource."@en .
+
+dcat:landingPage rdfs:label "صفحة وصول"@ar,
+        "vstupní stránka"@cs,
+        "destinationsside"@da,
+        "ιστοσελίδα αρχικής πρόσβασης"@el,
+        "landing page"@en,
+        "página de destino"@es,
+        "page d'atterrissage"@fr,
+        "pagina di destinazione"@it,
+        "ランディング・ページ"@ja ;
+    dcterms:description "A Web page that can be navigated to in a Web browser to gain access to the catalog, a dataset, its distributions and/or additional information."@en .
+
+dcat:mediaType rdfs:label "نوع الميديا"@ar,
+        "typ média"@cs,
+        "medietype"@da,
+        "τύπος μέσου"@el,
+        "media type"@en,
+        "tipo de media"@es,
+        "type de média"@fr,
+        "tipo di media"@it,
+        "メディア・タイプ"@ja ;
+    dcterms:description "The media type of the distribution as defined by IANA."@en .
+
+dcat:packageFormat rdfs:label "formát balíčku"@cs,
+        "pakkeformat"@da,
+        "packaging format"@en,
+        "formato de empaquetado"@es,
+        "formato di impacchettamento"@it ;
+    dcterms:description "The package format of the distribution in which one or more data files are grouped together, e.g. to enable a set of related files to be downloaded together."@en .
+
+dcat:qualifiedRelation rdfs:label "kvalifikovaný vztah"@cs,
+        "Kvalificeret relation"@da,
+        "qualified relation"@en,
+        "relación calificada"@es,
+        "relazione qualificata"@it ;
+    dcterms:description "Link to a description of a relationship with another resource."@en .
+
+dcat:record rdfs:label "سجل"@ar,
+        "záznam"@cs,
+        "post"@da,
+        "καταγραφή"@el,
+        "record"@en,
+        "registro"@es,
+        "registre"@fr,
+        "record"@it,
+        "カタログ・レコード"@ja ;
+    dcterms:description "A record describing the registration of a single dataset or data service that is part of the catalog."@en .
+
+dcat:servesDataset rdfs:label "poskytuje datovou sadu"@cs,
+        "datatjeneste for datasæt"@da,
+        "serves dataset"@en,
+        "provee conjunto de datos"@es,
+        "serve set di dati"@it ;
+    dcterms:description "A collection of data that this DataService can distribute."@en .
+
+dcat:service rdfs:label "služba"@cs,
+        "datatjeneste"@da,
+        "service"@en,
+        "servicio"@es,
+        "servizio"@it ;
+    dcterms:description "A site or endpoint that is listed in the catalog."@en .
+
+dcat:spatialResolutionInMeters rdfs:label "prostorové rozlišení (metry)"@cs,
+        "geografisk opløsning (meter)"@da,
+        "spatial resolution (metres)"@en-GB,
+        "spatial resolution (meters)"@en-US,
+        "resolución espacial (metros)"@es,
+        "risoluzione spaziale (metros)"@it .
+
+dcat:startDate rdfs:label "datum začátku"@cs,
+        "startdato"@da,
+        "start date"@en,
+        "data di inizio"@it ;
+    dcterms:description "The start of the period"@en .
+
+dcat:temporalResolution rdfs:label "časové rozlišení"@cs,
+        "tidslig opløsning"@da,
+        "temporal resolution"@en,
+        "resolución temporal"@es,
+        "risoluzione temporale"@it ;
+    dcterms:description "minimum time period resolvable in a dataset."@en .
+
+dcat:theme rdfs:label "التصنيف"@ar,
+        "téma"@cs,
+        "emne"@da,
+        "Θέμα"@el,
+        "theme"@en,
+        "tema"@es,
+        "thème"@fr,
+        "tema"@it,
+        "テーマ/カテゴリー"@ja ;
+    dcterms:description "A main category of the resource. A resource can have multiple themes."@en .
+
+dcat:themeTaxonomy rdfs:label "قائمة التصنيفات"@ar,
+        "taxonomie témat"@cs,
+        "emnetaksonomi"@da,
+        "Ταξινομία θεματικών κατηγοριών."@el,
+        "theme taxonomy"@en,
+        "taxonomía de temas"@es,
+        "taxonomie de thèmes"@fr,
+        "tassonomia dei temi"@it,
+        "テーマ"@ja ;
+    dcterms:description "The knowledge organization system (KOS) used to classify catalog's datasets."@en .
+
+<http://www.w3.org/ns/locn> rdfs:label "ISA Programme Location Core Vocabulary"@en .
+
+<http://www.w3.org/ns/locn#Address> rdfs:label "Address"@en .
+
+<http://www.w3.org/ns/locn#Geometry> rdfs:label "Geometry"@en .
+
+<http://www.w3.org/ns/locn#address> rdfs:label "address"@en .
+
+<http://www.w3.org/ns/locn#addressArea> rdfs:label "address area"@en .
+
+<http://www.w3.org/ns/locn#addressId> rdfs:label "address ID"@en .
+
+<http://www.w3.org/ns/locn#adminUnitL1> rdfs:label "admin unit level 1"@en .
+
+<http://www.w3.org/ns/locn#adminUnitL2> rdfs:label "admin unit level 2"@en .
+
+<http://www.w3.org/ns/locn#fullAddress> rdfs:label "full address"@en .
+
+<http://www.w3.org/ns/locn#geographicName> rdfs:label "geographic name"@en .
+
+<http://www.w3.org/ns/locn#geometry> rdfs:label "geometry"@en .
+
+<http://www.w3.org/ns/locn#location> rdfs:label "location"@en .
+
+<http://www.w3.org/ns/locn#locatorDesignator> rdfs:label "locator designator"@en .
+
+<http://www.w3.org/ns/locn#locatorName> rdfs:label "locator name"@en .
+
+<http://www.w3.org/ns/locn#poBox> rdfs:label "PO box"@en .
+
+<http://www.w3.org/ns/locn#postCode> rdfs:label "post code"@en .
+
+<http://www.w3.org/ns/locn#postName> rdfs:label "post name"@en .
+
+<http://www.w3.org/ns/locn#thoroughfare> rdfs:label "thoroughfare"@en .
+
+<http://www.w3.org/ns/locn.html> rdfs:label "HTML version of the ISA Programme Location Core Vocabulary"@en .
+
+<http://www.w3.org/ns/locn.rdf> rdfs:label "RDF/XML version of the ISA Programme Location Core Vocabulary"@en .
+
+<http://www.w3.org/ns/locn.ttl> rdfs:label "Turtle version of the ISA Programme Location Core Vocabulary"@en .
+
+<https://joinup.ec.europa.eu/category/licence/isa-open-metadata-licence-v11> rdfs:label "ISA Open Metadata Licence v1.1" .
+
+<https://joinup.ec.europa.eu/node/43160> rdfs:label "Process and Methodology for Developing Core Vocabularies" .
+
+<https://joinup.ec.europa.eu/node/55858> rdfs:label "Core Vocabularies Specification" .
+
+schema:affiliation rdfs:label "affiliation" .
+
+<https://w3id.org/profile/ogcldapi/labeling-vocabulary> rdfs:label "Labeling Vocabulary for OGC LD API"@en ;
+    dcterms:description """This vocabulary contains annotated classes, properties and other Semantic Web elements from ontologies that are commonly seen in OGC LD API data. 
+  
+Rather than just importing those ontologies, we just list the elements that are actually seen in in OGC LD API data here as it's not always sensible to import a large ontology like QUDT when we only need 4 or 4 elements from its thousands
+
+No properties other than basic annotations from those other ontologies are given here as this vocab is only to be used for labeling."""@en .
+
+<https://www.w3.org/ns/locn.svg> rdfs:label "Class and property diagram of the LOCN vocabulary" .
+
+dcterms:RightsStatement rdfs:label "Rights Statement"@en .
+
+rdfs:Datatype rdfs:label "Datatype" ;
+    rdfs:subClassOf rdfs:Class .
+
+owl:Class rdfs:label "Class" ;
+    rdfs:subClassOf rdfs:Class .
+
+skos:Collection rdfs:label "Collection"@en ;
+    dcterms:description "A meaningful collection of concepts."@en .
+
+skos:Concept rdfs:label "Concept"@en ;
+    dcterms:description "An idea or notion; a unit of thought."@en .
+
+time:DurationDescription rdfs:label "Duration description"@en,
+        "descripción de duración"@es ;
+    dcterms:description "Description of temporal extent structured with separate values for the various elements of a calendar-clock system. The temporal reference system is fixed to Gregorian Calendar, and the range of each of the numeric properties is restricted to xsd:decimal"@en ;
+    rdfs:subClassOf [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        time:GeneralDurationDescription .
+
+time:GeneralDateTimeDescription rdfs:label "Generalized date-time description"@en,
+        "descripción de fecha-hora generalizada"@es ;
+    dcterms:description "Descripción de fecha y hora estructurada con valores separados para los distintos elementos de un sistema calendario-reloj.",
+        "Description of date and time structured with separate values for the various elements of a calendar-clock system"@en ;
+    rdfs:subClassOf [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        time:TemporalPosition .
+
+time:GeneralDurationDescription rdfs:label "Generalized duration description"@en,
+        "descripción de duración generalizada"@es ;
+    dcterms:description "Description of temporal extent structured with separate values for the various elements of a calendar-clock system."@en ;
+    rdfs:subClassOf [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        time:TemporalDuration .
+
+time:Interval rdfs:label "Time interval"@en,
+        "intervalo de tiempo"@es ;
+    dcterms:description "A temporal entity with an extent or duration"@en ;
+    rdfs:subClassOf time:TemporalEntity .
+
+time:ProperInterval rdfs:label "Proper interval"@en,
+        "intervalo propio"@es ;
+    dcterms:description "A temporal entity with non-zero extent or duration, i.e. for which the value of the beginning and end are different"@en ;
+    rdfs:subClassOf time:Interval .
+
+dcat:Dataset rdfs:label "قائمة بيانات"@ar,
+        "Datová sada"@cs,
+        "Datasæt"@da,
+        "Σύνολο Δεδομένων"@el,
+        "Dataset"@en,
+        "Conjunto de datos"@es,
+        "Jeu de données"@fr,
+        "Dataset"@it,
+        "データセット"@ja ;
+    dcterms:description "A collection of data, published or curated by a single source, and available for access or download in one or more represenations."@en ;
+    rdfs:subClassOf dcat:Resource .
+
+dcterms:MediaType rdfs:label "Media Type"@en ;
+    rdfs:subClassOf dcterms:MediaTypeOrExtent .
+
+dcterms:MediaTypeOrExtent rdfs:label "Media Type or Extent"@en .
+
+geo:SpatialObject rdfs:label "Spatial Object"@en ;
+    dcterms:description "Anything spatial (being or having a shape, position or an extent)."@en .
+
+geo:SpatialObjectCollection rdfs:label "Spatial Object Collection"@en ;
+    dcterms:description "A collection of individual Spatial Objects."@en ;
+    rdfs:subClassOf [ ],
+        rdfs:Container .
+
+time:DateTimeDescription rdfs:label "Date-Time description"@en,
+        "descripción de fecha-tiempo"@es ;
+    dcterms:description "Description of date and time structured with separate values for the various elements of a calendar-clock system. The temporal reference system is fixed to Gregorian Calendar, and the range of year, month, day properties restricted to corresponding XML Schema types xsd:gYear, xsd:gMonth and xsd:gDay, respectively."@en ;
+    rdfs:subClassOf [ ],
+        [ ],
+        [ ],
+        [ ],
+        time:GeneralDateTimeDescription .
+
+time:TemporalEntity rdfs:label "Temporal entity"@en,
+        "entidad temporal"@es ;
+    dcterms:description "A temporal interval or instant."@en ;
+    rdfs:subClassOf owl:Thing .
+
+time:TemporalPosition rdfs:label "Temporal position"@en,
+        "posición temporal"@es ;
+    dcterms:description "A position on a time-line"@en ;
+    rdfs:subClassOf [ ] .
+
+dcat:Resource rdfs:label "Katalogizovaný zdroj"@cs,
+        "Katalogiseret ressource"@da,
+        "Catalogued resource"@en,
+        "Recurso catalogado"@es,
+        "Risorsa catalogata"@it ;
+    dcterms:description "Resource published or curated by a single agent."@en .
+
+dcterms:LocationPeriodOrJurisdiction rdfs:label "Location, Period, or Jurisdiction"@en .
+
+time:TemporalDuration rdfs:label "Temporal duration"@en,
+        "duración temporal"@es ;
+    dcterms:description "Time extent; duration of a time interval separate from its particular start position"@en .
+
+rdfs:Class rdfs:label "Class" ;
+    rdfs:subClassOf rdfs:Resource .
+
+rdfs:Container rdfs:label "Container" ;
+    rdfs:subClassOf rdfs:Resource .
+
+owl:Thing rdfs:label "Thing" .
+
+<http://www.w3.org/2006/vcard/ns#Kind> rdfs:label "Kind"@en .
+
+rdfs:Literal rdfs:label "Literal" ;
+    rdfs:subClassOf rdfs:Resource .
+
+<http://www.w3.org/2006/vcard/ns#Gender> rdfs:label "Gender"@en .
+
+owl:ObjectProperty rdfs:label "ObjectProperty" ;
+    rdfs:subClassOf rdf:Property .
+
+rdf:Property rdfs:label "Property" ;
+    rdfs:subClassOf rdfs:Resource .
+
+<http://www.w3.org/2006/vcard/ns#Type> rdfs:label "Type"@en .
+
+<http://www.w3.org/2006/vcard/ns#TelephoneType> rdfs:label "Phone"@en .
+
+rdfs:Resource rdfs:label "Resource" .
+
+<http://www.w3.org/2006/vcard/ns#RelatedType> rdfs:label "Relation Type"@en .
+
+[] rdfs:label "Open Geospatial Consortium" .
+
+[] rdfs:label "Matthew Perry" .
+
+[] rdfs:label "John Herring" .
+
+[] rdfs:label "Nicholas J. Car" .
+
+[] rdfs:label "Joseph Abhayaratna" .
+
+[] rdfs:label "Timo Homburg" .
+
+[] rdfs:label "Simon J D Cox" .
+
+[] rdfs:label "Frans Knibbe" .
+
+[] rdfs:label "Mathias Bonduel" .
+
