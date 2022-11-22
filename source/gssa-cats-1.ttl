@@ -1,0 +1,142 @@
+PREFIX cs: <https://linked.data.gov.au/def/gssa-categories>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX for: <https://linked.data.gov.au/def/anzsrc-for/2020/>
+PREFIX for-cs: <https://linked.data.gov.au/def/anzsrc-for/2020>
+PREFIX gssacat: <https://linked.data.gov.au/def/gssa-categories/>
+PREFIX isostatus: <http://def.isotc211.org/iso19135/-1/2015/CoreModel/code/RE_ItemStatus/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX reg: <http://purl.org/linked-data/registry#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+
+for:4407 a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Policy And Administration"@en ; skos:topConceptOf cs: .
+for:31 a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Biological Sciences"@en ; skos:topConceptOf cs: .
+for:3103 a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Ecology"@en ; skos:broader for:31 .
+for:33 a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Built Environment And Design"@en ; skos:topConceptOf cs: .
+for:3304 a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Urban And Regional Planning"@en ; skos:broader for:33 .
+for:330404 a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Land Use And Environmental Planning"@en ; skos:broader for:3304 .
+for:37 a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Earth Sciences"@en ; skos:topConceptOf cs: .
+for:3701 a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Atmospheric Sciences"@en ; skos:broader for:37 .
+for:3703 a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Geochemistry"@en ; skos:broader for:37 .
+for:370301 a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Exploration Geochemistry"@en ; skos:broader for:3703 .
+gssacat:biogeochemistry a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Biogeochemistry"@en ; skos:broader for:3703 .
+gssacat:hydrogeochemistry a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Hydrogeochemistry"@en ; skos:broader for:3703 .
+for:370302 a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Inorganic Geochemistry"@en ; skos:broader for:3703 .
+gssacat:lithogeochemistry a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Lithogeochemistry"@en ; skos:broader for:370302 .
+for:370303 a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Isotope Geochemistry"@en ; skos:broader for:3703 .
+for:370304 a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Organic Geochemistry"@en ; skos:broader for:3703 .
+for:3705 a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Geology"@en ; skos:broader for:37 .
+gssacat:basement-geology a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Basement Geology"@en ; skos:broader for:3705 .
+gssacat:basin-analysis a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Basin Analysis"@en ; skos:broader for:3705 .
+gssacat:biogeology a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Biogeology"@en ; skos:broader for:3705 .
+gssacat:carbon-capture-and-storage a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Carbon Capture And Storage"@en ; skos:broader for:3705 .
+gssacat:extraterrestrial-geology a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Extraterrestrial Geology"@en ; skos:broader for:3705 .
+for:370502 a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Geochronology"@en ; skos:broader for:3705 .
+gssacat:historical-geology a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Historical Geology"@en ; skos:broader for:3705 .
+for:370504 a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Marine Geoscience"@en ; skos:broader for:3705 .
+gssacat:mineral-system-geology a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Mineral System Geology"@en ; skos:broader for:3705 .
+gssacat:petroleum-system-geology a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Petroleum System Geology"@en ; skos:broader for:3705 .
+for:370505 a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Mineralogy And Crystallography"@en ; skos:broader for:3705 .
+for:370506 a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Paleontology"@en ; skos:broader for:3705 .
+gssacat:palynology a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Palynology"@en ; skos:broader for:370506 .
+gssacat:petrology a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Petrology"@en ; skos:broader for:3705 .
+for:370503 a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Igneous And Metamorphic Petrology"@en ; skos:broader gssacat:petrology .
+gssacat:organic-petrology a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Organic Petrology"@en ; skos:broader gssacat:petrology .
+gssacat:sedimentary-petrology a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Sedimentary Petrology"@en ; skos:broader gssacat:petrology .
+gssacat:regional-geology a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Regional Geology"@en ; skos:broader for:3705 .
+gssacat:resource-geology a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Resource Geology"@en ; skos:broader for:3705 .
+gssacat:geothermal-resource-geology a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Geothermal Resource Geology"@en ; skos:broader gssacat:resource-geology .
+gssacat:mineral-resource-geology a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Mineral Resource Geology"@en ; skos:broader gssacat:resource-geology .
+gssacat:petroleum-geology a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Petroleum Geology"@en ; skos:broader gssacat:resource-geology .
+gssacat:quarry-and-extractive-resource-geology a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Quarry And Extractive Resource Geology"@en ; skos:broader gssacat:resource-geology .
+for:370509 a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Sedimentology"@en ; skos:broader for:3705 .
+for:370510 a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Stratigraphy"@en ; skos:broader for:3705 .
+for:370511 a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Structural Geology & Tectonics"@en ; skos:broader for:3705 .
+gssacat:surface-geology a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Surface Geology"@en ; skos:broader for:3705 .
+for:370512 a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Volcanology"@en ; skos:broader for:3705 .
+for:3706 a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Geophysics"@en ; skos:broader for:37 .
+for:370602 a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Electrical And Electromagnetic Methods In Geophysics"@en ; skos:broader for:3706 .
+gssacat:magnetotellurics a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Magnetotellurics"@en ; skos:broader for:370602 .
+for:370604 a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Geodynamics"@en ; skos:broader for:3706 .
+for:401208 a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Geophysics Fluid Dynamics"@en ; skos:broader for:3706 .
+gssacat:gravity a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Gravity"@en ; skos:broader for:3706 .
+gssacat:gravity-gradiometry a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Gravity Gradiometry"@en ; skos:broader gssacat:gravity .
+gssacat:magnetics a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Magnetics"@en ; skos:broader for:3706 .
+gssacat:magnetic-gradiometry a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Magnetic Gradiometry"@en ; skos:broader gssacat:magnetics .
+gssacat:petrophysics a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Petrophysics"@en ; skos:broader for:3706 .
+gssacat:radiometrics a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Radiometrics"@en ; skos:broader for:3706 .
+for:370609 a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Seismology And Seismic Exploration"@en ; skos:broader for:3706 .
+gssacat:passive-seismic a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Passive Seismic"@en ; skos:broader for:370609 .
+gssacat:physical-geography a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Physical Geography"@en ; skos:broader for:37 .
+gssacat:geomorphology-and-regolith-and-landscape-evolution a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Geomorphology And Regolith And Landscape Evolution"@en ; skos:broader gssacat:physical-geography .
+for:370902 a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Glaciology"@en ; skos:broader gssacat:physical-geography .
+gssacat:hydrogeology a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Hydrogeology"@en ; skos:broader gssacat:physical-geography .
+for:370903 a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Natural Hazards"@en ; skos:broader gssacat:physical-geography .
+gssacat:paleoclimatology a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Paleoclimatology"@en ; skos:broader gssacat:physical-geography .
+for:370905 a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Quaternary Environments"@en ; skos:broader gssacat:physical-geography .
+gssacat:surface-processes a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Surface Processes"@en ; skos:broader gssacat:physical-geography .
+gssacat:surfacewater-hydrology a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Surfacewater Hydrology"@en ; skos:broader gssacat:physical-geography .
+for:41 a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Environmental Sciences"@en ; skos:topConceptOf cs: .
+gssacat:environmental-science-and-management a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Environmental Science And Management"@en ; skos:broader for:41 .
+gssacat:environmental-impact-assessment a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Environmental Impact Assessment"@en ; skos:broader gssacat:environmental-science-and-management .
+for:4104 a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Environmental Management"@en ; skos:broader gssacat:environmental-science-and-management .
+gssacat:environmental-monitoring a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Environmental Monitoring"@en ; skos:broader gssacat:environmental-science-and-management .
+gssacat:environmental-rehabilitation-excl-bioremediation a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Environmental Rehabilitation (Excl. Bioremediation)"@en ; skos:broader gssacat:environmental-science-and-management .
+for:410406 a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Natural Resource Management"@en ; skos:broader gssacat:environmental-science-and-management .
+gssacat:soil-science a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Soil Science"@en ; skos:broader for:41 .
+for:410101 a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Carbon Sequestration Science"@en ; skos:broader gssacat:soil-science .
+gssacat:land-capability-and-soil-degradation a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Land Capability And Soil Degradation"@en ; skos:broader gssacat:soil-science .
+for:410603 a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Soil Biology"@en ; skos:broader gssacat:soil-science .
+gssacat:soil-chemistry a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Soil Chemistry"@en ; skos:broader gssacat:soil-science .
+for:410605 a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Soil Physics"@en ; skos:broader gssacat:soil-science .
+for:40 a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Engineering"@en ; skos:topConceptOf cs: .
+gssacat:environemental-engineering a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Environemental Engineering"@en ; skos:broader for:40 .
+for:4004 a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Chemical Engineering"@en ; skos:broader for:40 .
+for:4005 a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Civil Engineering"@en ; skos:broader for:40 .
+for:4013 a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Geomatic Engineering"@en ; skos:broader for:40 .
+gssacat:remote-sensing a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Remote Sensing"@en ; skos:broader for:4013 .
+gssacat:cartography a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Cartography"@en ; skos:broader for:4013 .
+for:370603 a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Geodesy"@en ; skos:broader for:4013 .
+gssacat:geospatial-information-systems a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Geospatial Information Systems"@en ; skos:broader for:4013 .
+for:401303 a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Navigation And Position Fixing"@en ; skos:broader for:4013 .
+for:401304 a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Photogrammetry And Remote Sensing"@en ; skos:broader for:4013 .
+for:401306 a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Surveying (Incl. Hydrographic Surveying)"@en ; skos:broader for:4013 .
+gssacat:resources-engineering a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Resources Engineering"@en ; skos:broader for:40 .
+gssacat:drilling-engineering a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Drilling Engineering"@en ; skos:broader gssacat:resources-engineering .
+gssacat:geostorage-engineering a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Geostorage Engineering"@en ; skos:broader gssacat:resources-engineering .
+for:401901 a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Electrometallurgy"@en ; skos:broader gssacat:resources-engineering .
+for:401902 a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Geomechanics And Resources Geotechnical Engineering"@en ; skos:broader gssacat:resources-engineering .
+for:401903 a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Hydrometallurgy"@en ; skos:broader gssacat:resources-engineering .
+for:401904 a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Mineral Processing/Beneficiation"@en ; skos:broader gssacat:resources-engineering .
+for:401905 a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Mining Engineering"@en ; skos:broader gssacat:resources-engineering .
+for:401907 a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Petroleum And Reservoir Engineering"@en ; skos:broader gssacat:resources-engineering .
+for:401908 a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Pyrometallurgy"@en ; skos:broader gssacat:resources-engineering .
+for:46 a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Information And Computing Sciences"@en ; skos:topConceptOf cs: .
+gssacat:artificial-intelligence-and-image-processing a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Artificial Intelligence And Image Processing"@en ; skos:broader for:46 .
+for:460702 a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Computer Graphics"@en ; skos:broader gssacat:artificial-intelligence-and-image-processing .
+gssacat:expert-systems a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Expert Systems"@en ; skos:broader gssacat:artificial-intelligence-and-image-processing .
+for:460306 a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Image Processing"@en ; skos:broader gssacat:artificial-intelligence-and-image-processing .
+gssacat:pattern-recognition-and-data-mining a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Pattern Recognition And Data Mining"@en ; skos:broader gssacat:artificial-intelligence-and-image-processing .
+gssacat:simulation-and-modelling a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Simulation And Modelling"@en ; skos:broader gssacat:artificial-intelligence-and-image-processing .
+gssacat:computation-theory-and-mathematics a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Computation Theory And Mathematics"@en ; skos:broader for:46 .
+gssacat:numerical-computation a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Numerical Computation"@en ; skos:broader gssacat:computation-theory-and-mathematics .
+for:43 a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "History And Archaeology"@en ; skos:topConceptOf cs: .
+for:4301 a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Archaeology"@en ; skos:broader for:43 .
+gssacat:mineral-resources-exc-energy-resources a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Mineral Resources (Excl. Energy Resources)"@en ; skos:topConceptOf cs: .
+gssacat:mineral-exploration a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Mineral Exploration"@en ; skos:broader gssacat:mineral-resources-exc-energy-resources .
+gssacat:primary-mining-and-extraction-of-mineral-resources a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Primary Mining And Extraction Of Mineral Resources"@en ; skos:broader gssacat:mineral-resources-exc-energy-resources .
+gssacat:first-stage-treatment-of-ores-and-minerals a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "First Stage Treatment Of Ores And Minerals"@en ; skos:broader gssacat:mineral-resources-exc-energy-resources .
+gssacat:environmentally-sustainable-mineral-resource-activities a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Environmentally Sustainable Mineral Resource Activities"@en ; skos:broader gssacat:mineral-resources-exc-energy-resources .
+gssacat:energy a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Energy"@en ; skos:topConceptOf cs: .
+gssacat:energy-exploration a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Energy Exploration"@en ; skos:broader gssacat:energy .
+gssacat:mining-and-extraction-of-energy-resources a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Mining And Extraction Of Energy Resources"@en ; skos:broader gssacat:energy .
+gssacat:preparation-and-production-of-energy-sources a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Preparation And Production Of Energy Sources"@en ; skos:broader gssacat:energy .
+gssacat:energy-transformation a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Energy Transformation"@en ; skos:broader gssacat:energy .
+gssacat:renewable-energy a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Renewable Energy"@en ; skos:broader gssacat:energy .
+gssacat:energy-storage-distribution-and-supply a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Energy Storage, Distribution And Supply"@en ; skos:broader gssacat:energy .
+gssacat:energy-conservation-and-efficiency a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Energy Conservation And Efficiency"@en ; skos:broader gssacat:energy .
+gssacat:environmentally-sustainable-energy-activities a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Environmentally Sustainable Energy Activities"@en ; skos:broader gssacat:energy .
+gssacat:cultural-understanding a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Cultural Understanding"@en ; skos:topConceptOf cs: .
+gssacat:conserving-aboriginal-and-torres-strait-islander-heritage a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Conserving Aboriginal And Torres Strait Islander Heritage"@en ; skos:broader for:43 .
+gssacat:conserving-natural-heritage a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Conserving Natural Heritage"@en ; skos:broader for:43 .

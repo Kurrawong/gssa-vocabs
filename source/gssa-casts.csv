@@ -1,0 +1,132 @@
+Pref Label	FOR ID	Initial IRI	Initial IRI values	Final IRI	#	PrefLabel	"	Broader
+Policy and Administration	4407	geo-for:policy-and-administration	geo-for:policy-and-administration	for:4407	#	Policy And Administration	"
+BIOLOGICAL SCIENCES	31	geo-for:biological-sciences	geo-for:biological-sciences	for:31	#	Biological Sciences	"
+Ecology	3103	geo-for:ecology	geo-for:ecology	for:3103	#	Ecology	"	for:31
+BUILT ENVIRONMENT AND DESIGN	33	geo-for:built-environment-and-design	geo-for:built-environment-and-design	for:33	#	Built Environment And Design	"
+Urban and Regional Planning 	3304	geo-for:urban-and-regional-planning-	geo-for:urban-and-regional-planning-	for:3304	#	Urban And Regional Planning	"	for:33
+Land Use and Environmental Planning 	330404	geo-for:land-use-and-environmental-planning-	geo-for:land-use-and-environmental-planning-	for:330404	#	Land Use And Environmental Planning	"	for:3304
+EARTH SCIENCES	37	geo-for:earth-sciences	geo-for:earth-sciences	for:37	#	Earth Sciences	"
+Atmospheric Sciences	3701	geo-for:atmospheric-sciences	geo-for:atmospheric-sciences	for:3701	#	Atmospheric Sciences	"	for:37
+Geochemistry	3703	geo-for:geochemistry	geo-for:geochemistry	for:3703	#	Geochemistry	"	for:37
+Exploration Geochemistry	370301	geo-for:exploration-geochemistry	geo-for:exploration-geochemistry	for:370301	#	Exploration Geochemistry	"	for:3703
+Biogeochemistry		geo-for:biogeochemistry	geo-for:biogeochemistry	geo-for:biogeochemistry	#	Biogeochemistry	"	for:3703
+Hydrogeochemistry		geo-for:hydrogeochemistry	geo-for:hydrogeochemistry	geo-for:hydrogeochemistry	#	Hydrogeochemistry	"	for:3703
+Inorganic Geochemistry	370302	geo-for:inorganic-geochemistry	geo-for:inorganic-geochemistry	for:370302	#	Inorganic Geochemistry	"	for:3703
+Lithogeochemistry		geo-for:lithogeochemistry	geo-for:lithogeochemistry	geo-for:lithogeochemistry	#	Lithogeochemistry	"	for:370302
+Isotope Geochemistry	370303	geo-for:isotope-geochemistry	geo-for:isotope-geochemistry	for:370303	#	Isotope Geochemistry	"	for:3703
+Organic Geochemistry	370304	geo-for:organic-geochemistry	geo-for:organic-geochemistry	for:370304	#	Organic Geochemistry	"	for:3703
+Geology	3705	geo-for:geology	geo-for:geology	for:3705	#	Geology	"	for:37
+Basement Geology		geo-for:basement-geology	geo-for:basement-geology	geo-for:basement-geology	#	Basement Geology	"	for:3705
+Basin Analysis		geo-for:basin-analysis	geo-for:basin-analysis	geo-for:basin-analysis	#	Basin Analysis	"	for:3705
+Biogeology		geo-for:biogeology	geo-for:biogeology	geo-for:biogeology	#	Biogeology	"	for:3705
+Carbon Capture and Storage		geo-for:carbon-capture-and-storage	geo-for:carbon-capture-and-storage	geo-for:carbon-capture-and-storage	#	Carbon Capture And Storage	"	for:3705
+Extraterrestrial Geology		geo-for:extraterrestrial-geology	geo-for:extraterrestrial-geology	geo-for:extraterrestrial-geology	#	Extraterrestrial Geology	"	for:3705
+Geochronology	370502	geo-for:geochronology	geo-for:geochronology	for:370502	#	Geochronology	"	for:3705
+Historical Geology		geo-for:historical-geology	geo-for:historical-geology	geo-for:historical-geology	#	Historical Geology	"	for:3705
+Marine Geoscience	370504	geo-for:marine-geoscience	geo-for:marine-geoscience	for:370504	#	Marine Geoscience	"	for:3705
+Mineral System Geology		geo-for:mineral-system-geology	geo-for:mineral-system-geology	geo-for:mineral-system-geology	#	Mineral System Geology	"	for:3705
+Petroleum System Geology		geo-for:petroleum-system-geology	geo-for:petroleum-system-geology	geo-for:petroleum-system-geology	#	Petroleum System Geology	"	for:3705
+   Mineralogy and Crystallography 	370505	geo-for:---mineralogy-and-crystallography-	geo-for:mineralogy-and-crystallography-	for:370505	#	Mineralogy And Crystallography	"	for:3705
+   Paleontology	370506	geo-for:---paleontology	geo-for:paleontology	for:370506	#	Paleontology	"	for:3705
+Palynology		geo-for:palynology	geo-for:palynology	geo-for:palynology	#	Palynology	"	for:370506
+Petrology		geo-for:petrology	geo-for:petrology	geo-for:petrology	#	Petrology	"	for:3705
+   Igneous and Metamorphic Petrology	370503	geo-for:---igneous-and-metamorphic-petrology	geo-for:igneous-and-metamorphic-petrology	for:370503	#	Igneous And Metamorphic Petrology	"	geo-for:petrology
+Organic Petrology		geo-for:organic-petrology	geo-for:organic-petrology	geo-for:organic-petrology	#	Organic Petrology	"	geo-for:petrology
+Sedimentary Petrology		geo-for:sedimentary-petrology	geo-for:sedimentary-petrology	geo-for:sedimentary-petrology	#	Sedimentary Petrology	"	geo-for:petrology
+Regional Geology		geo-for:regional-geology	geo-for:regional-geology	geo-for:regional-geology	#	Regional Geology	"	for:3705
+Resource Geology		geo-for:resource-geology	geo-for:resource-geology	geo-for:resource-geology	#	Resource Geology	"	for:3705
+Geothermal Resource Geology		geo-for:geothermal-resource-geology	geo-for:geothermal-resource-geology	geo-for:geothermal-resource-geology	#	Geothermal Resource Geology	"	geo-for:resource-geology
+Mineral Resource Geology		geo-for:mineral-resource-geology	geo-for:mineral-resource-geology	geo-for:mineral-resource-geology	#	Mineral Resource Geology	"	geo-for:resource-geology
+Petroleum Geology		geo-for:petroleum-geology	geo-for:petroleum-geology	geo-for:petroleum-geology	#	Petroleum Geology	"	geo-for:resource-geology
+Quarry and Extractive Resource Geology		geo-for:quarry-and-extractive-resource-geology	geo-for:quarry-and-extractive-resource-geology	geo-for:quarry-and-extractive-resource-geology	#	Quarry And Extractive Resource Geology	"	geo-for:resource-geology
+Sedimentology	370509	geo-for:sedimentology	geo-for:sedimentology	for:370509	#	Sedimentology	"	for:3705
+Stratigraphy	370510	geo-for:stratigraphy	geo-for:stratigraphy	for:370510	#	Stratigraphy	"	for:3705
+Structural Geology & Tectonics	370511	geo-for:structural-geology-&-tectonics	geo-for:structural-geology-&-tectonics	for:370511	#	Structural Geology & Tectonics	"	for:3705
+Surface Geology		geo-for:surface-geology	geo-for:surface-geology	geo-for:surface-geology	#	Surface Geology	"	for:3705
+Volcanology	370512	geo-for:volcanology	geo-for:volcanology	for:370512	#	Volcanology	"	for:3705
+Geophysics	3706	geo-for:geophysics	geo-for:geophysics	for:3706	#	Geophysics	"	for:37
+Electrical and Electromagnetic Methods in Geophysics	370602	geo-for:electrical-and-electromagnetic-methods-in-geophysics	geo-for:electrical-and-electromagnetic-methods-in-geophysics	for:370602	#	Electrical And Electromagnetic Methods In Geophysics	"	for:3706
+Magnetotellurics		geo-for:magnetotellurics	geo-for:magnetotellurics	geo-for:magnetotellurics	#	Magnetotellurics	"	for:370602
+Geodynamics	370604	geo-for:geodynamics	geo-for:geodynamics	for:370604	#	Geodynamics	"	for:3706
+Geophysics Fluid Dynamics	401208	geo-for:geophysics-fluid-dynamics	geo-for:geophysics-fluid-dynamics	for:401208	#	Geophysics Fluid Dynamics	"	for:3706
+Gravity		geo-for:gravity	geo-for:gravity	geo-for:gravity	#	Gravity	"	for:3706
+Gravity Gradiometry		geo-for:gravity-gradiometry	geo-for:gravity-gradiometry	geo-for:gravity-gradiometry	#	Gravity Gradiometry	"	geo-for:gravity
+Magnetics		geo-for:magnetics	geo-for:magnetics	geo-for:magnetics	#	Magnetics	"	for:3706
+Magnetic Gradiometry		geo-for:magnetic-gradiometry	geo-for:magnetic-gradiometry	geo-for:magnetic-gradiometry	#	Magnetic Gradiometry	"	geo-for:magnetics
+Petrophysics		geo-for:petrophysics	geo-for:petrophysics	geo-for:petrophysics	#	Petrophysics	"	for:3706
+Radiometrics		geo-for:radiometrics	geo-for:radiometrics	geo-for:radiometrics	#	Radiometrics	"	for:3706
+Seismology and Seismic Exploration	370609	geo-for:seismology-and-seismic-exploration	geo-for:seismology-and-seismic-exploration	for:370609	#	Seismology And Seismic Exploration	"	for:3706
+Passive Seismic		geo-for:passive-seismic	geo-for:passive-seismic	geo-for:passive-seismic	#	Passive Seismic	"	for:370609
+Physical Geography		geo-for:physical-geography	geo-for:physical-geography	geo-for:physical-geography	#	Physical Geography	"	for:37
+Geomorphology And Regolith And Landscape Evolution		geo-for:geomorphology-and-regolith-and-landscape-evolution	geo-for:geomorphology-and-regolith-and-landscape-evolution	geo-for:geomorphology-and-regolith-and-landscape-evolution	#	Geomorphology And Regolith And Landscape Evolution	"	geo-for:physical-geography
+Glaciology	370902	geo-for:glaciology	geo-for:glaciology	for:370902	#	Glaciology	"	geo-for:physical-geography
+Hydrogeology		geo-for:hydrogeology	geo-for:hydrogeology	geo-for:hydrogeology	#	Hydrogeology	"	geo-for:physical-geography
+Natural Hazards	370903	geo-for:natural-hazards	geo-for:natural-hazards	for:370903	#	Natural Hazards	"	geo-for:physical-geography
+Paleoclimatology		geo-for:paleoclimatology	geo-for:paleoclimatology	geo-for:paleoclimatology	#	Paleoclimatology	"	geo-for:physical-geography
+Quaternary Environments	370905	geo-for:quaternary-environments	geo-for:quaternary-environments	for:370905	#	Quaternary Environments	"	geo-for:physical-geography
+Surface Processes		geo-for:surface-processes	geo-for:surface-processes	geo-for:surface-processes	#	Surface Processes	"	geo-for:physical-geography
+Surfacewater Hydrology		geo-for:surfacewater-hydrology	geo-for:surfacewater-hydrology	geo-for:surfacewater-hydrology	#	Surfacewater Hydrology	"	geo-for:physical-geography
+ENVIRONMENTAL SCIENCES	41	geo-for:environmental-sciences	geo-for:environmental-sciences	for:41	#	Environmental Sciences	"
+Environmental Science and Management		geo-for:environmental-science-and-management	geo-for:environmental-science-and-management	geo-for:environmental-science-and-management	#	Environmental Science And Management	"	for:41
+Environmental Impact Assessment		geo-for:environmental-impact-assessment	geo-for:environmental-impact-assessment	geo-for:environmental-impact-assessment	#	Environmental Impact Assessment	"	geo-for:environmental-science-and-management
+Environmental Management	4104	geo-for:environmental-management	geo-for:environmental-management	for:4104	#	Environmental Management	"	geo-for:environmental-science-and-management
+Environmental Monitoring		geo-for:environmental-monitoring	geo-for:environmental-monitoring	geo-for:environmental-monitoring	#	Environmental Monitoring	"	geo-for:environmental-science-and-management
+Environmental Rehabilitation (excl. Bioremediation)		geo-for:environmental-rehabilitation-(excl.-bioremediation)	geo-for:environmental-rehabilitation-excl-bioremediation	geo-for:environmental-rehabilitation-excl-bioremediation	#	Environmental Rehabilitation (Excl. Bioremediation)	"	geo-for:environmental-science-and-management
+Natural Resource Management	410406	geo-for:natural-resource-management	geo-for:natural-resource-management	for:410406	#	Natural Resource Management	"	geo-for:environmental-science-and-management
+Soil Science		geo-for:soil-science	geo-for:soil-science	geo-for:soil-science	#	Soil Science	"	for:41
+          Carbon Sequestration Science	410101	geo-for:----------carbon-sequestration-science	geo-for:carbon-sequestration-science	for:410101	#	Carbon Sequestration Science	"	geo-for:soil-science
+Land Capability and Soil Degradation		geo-for:land-capability-and-soil-degradation	geo-for:land-capability-and-soil-degradation	geo-for:land-capability-and-soil-degradation	#	Land Capability And Soil Degradation	"	geo-for:soil-science
+Soil Biology	410603	geo-for:soil-biology	geo-for:soil-biology	for:410603	#	Soil Biology	"	geo-for:soil-science
+Soil Chemistry		geo-for:soil-chemistry	geo-for:soil-chemistry	geo-for:soil-chemistry	#	Soil Chemistry	"	geo-for:soil-science
+Soil Physics	410605	geo-for:soil-physics	geo-for:soil-physics	for:410605	#	Soil Physics	"	geo-for:soil-science
+ENGINEERING	40	geo-for:engineering	geo-for:engineering	for:40	#	Engineering	"
+Environemental Engineering		geo-for:environemental-engineering	geo-for:environemental-engineering	geo-for:environemental-engineering	#	Environemental Engineering	"	for:40
+Chemical Engineering	4004	geo-for:chemical-engineering	geo-for:chemical-engineering	for:4004	#	Chemical Engineering	"	for:40
+Civil Engineering	4005	geo-for:civil-engineering	geo-for:civil-engineering	for:4005	#	Civil Engineering	"	for:40
+Geomatic Engineering	4013	geo-for:geomatic-engineering	geo-for:geomatic-engineering	for:4013	#	Geomatic Engineering	"	for:40
+Remote Sensing		geo-for:remote-sensing	geo-for:remote-sensing	geo-for:remote-sensing	#	Remote Sensing	"	for:4013
+Cartography		geo-for:cartography	geo-for:cartography	geo-for:cartography	#	Cartography	"	for:4013
+Geodesy	370603	geo-for:geodesy	geo-for:geodesy	for:370603	#	Geodesy	"	for:4013
+Geospatial Information Systems		geo-for:geospatial-information-systems	geo-for:geospatial-information-systems	geo-for:geospatial-information-systems	#	Geospatial Information Systems	"	for:4013
+Navigation and Position Fixing	401303	geo-for:navigation-and-position-fixing	geo-for:navigation-and-position-fixing	for:401303	#	Navigation And Position Fixing	"	for:4013
+Photogrammetry and Remote Sensing	401304	geo-for:photogrammetry-and-remote-sensing	geo-for:photogrammetry-and-remote-sensing	for:401304	#	Photogrammetry And Remote Sensing	"	for:4013
+Surveying (incl. Hydrographic Surveying)	401306	geo-for:surveying-incl-hydrographic-surveying	geo-for:surveying-incl-hydrographic-surveying	for:401306	#	Surveying (Incl. Hydrographic Surveying)	"	for:4013
+Resources Engineering		geo-for:resources-engineering	geo-for:resources-engineering	geo-for:resources-engineering	#	Resources Engineering	"	for:40
+Drilling Engineering		geo-for:drilling-engineering	geo-for:drilling-engineering	geo-for:drilling-engineering	#	Drilling Engineering	"	geo-for:resources-engineering
+Geostorage Engineering		geo-for:geostorage-engineering	geo-for:geostorage-engineering	geo-for:geostorage-engineering	#	Geostorage Engineering	"	geo-for:resources-engineering
+Electrometallurgy	401901	geo-for:electrometallurgy	geo-for:electrometallurgy	for:401901	#	Electrometallurgy	"	geo-for:resources-engineering
+Geomechanics and Resources Geotechnical Engineering	401902	geo-for:geomechanics-and-resources-geotechnical-engineering	geo-for:geomechanics-and-resources-geotechnical-engineering	for:401902	#	Geomechanics And Resources Geotechnical Engineering	"	geo-for:resources-engineering
+Hydrometallurgy	401903	geo-for:hydrometallurgy	geo-for:hydrometallurgy	for:401903	#	Hydrometallurgy	"	geo-for:resources-engineering
+Mineral Processing/Beneficiation	401904	geo-for:mineral-processing/beneficiation	geo-for:mineral-processing/beneficiation	for:401904	#	Mineral Processing/Beneficiation	"	geo-for:resources-engineering
+Mining Engineering	401905	geo-for:mining-engineering	geo-for:mining-engineering	for:401905	#	Mining Engineering	"	geo-for:resources-engineering
+Petroleum and Reservoir Engineering	401907	geo-for:petroleum-and-reservoir-engineering	geo-for:petroleum-and-reservoir-engineering	for:401907	#	Petroleum And Reservoir Engineering	"	geo-for:resources-engineering
+Pyrometallurgy	401908	geo-for:pyrometallurgy	geo-for:pyrometallurgy	for:401908	#	Pyrometallurgy	"	geo-for:resources-engineering
+INFORMATION AND COMPUTUING SCIENCES		geo-for:information-and-computuing-sciences	geo-for:information-and-computuing-sciences	geo-for:information-and-computuing-sciences	#	Information And Computuing Sciences	"
+Artificial Intelligence and Image Processing		geo-for:artificial-intelligence-and-image-processing	geo-for:artificial-intelligence-and-image-processing	geo-for:artificial-intelligence-and-image-processing	#	Artificial Intelligence And Image Processing	"	for:46
+Computer Graphics	460702	geo-for:computer-graphics	geo-for:computer-graphics	for:460702	#	Computer Graphics	"	geo-for:artificial-intelligence-and-image-processing
+Expert Systems		geo-for:expert-systems	geo-for:expert-systems	geo-for:expert-systems	#	Expert Systems	"	geo-for:artificial-intelligence-and-image-processing
+Image Processing	460306	geo-for:image-processing	geo-for:image-processing	for:460306	#	Image Processing	"	geo-for:artificial-intelligence-and-image-processing
+Pattern Recognition and Data Mining		geo-for:pattern-recognition-and-data-mining	geo-for:pattern-recognition-and-data-mining	geo-for:pattern-recognition-and-data-mining	#	Pattern Recognition And Data Mining	"	geo-for:artificial-intelligence-and-image-processing
+Simulation and Modelling		geo-for:simulation-and-modelling	geo-for:simulation-and-modelling	geo-for:simulation-and-modelling	#	Simulation And Modelling	"	geo-for:artificial-intelligence-and-image-processing
+Computation Theory and Mathematics		geo-for:computation-theory-and-mathematics	geo-for:computation-theory-and-mathematics	geo-for:computation-theory-and-mathematics	#	Computation Theory And Mathematics	"	for:46
+Numerical Computation		geo-for:numerical-computation	geo-for:numerical-computation	geo-for:numerical-computation	#	Numerical Computation	"	geo-for:computation-theory-and-mathematics
+HISTORY AND ARCHAEOLOGY		geo-for:history-and-archaeology	geo-for:history-and-archaeology	geo-for:history-and-archaeology	#	History And Archaeology	"
+Archaeology	4301	geo-for:archaeology	geo-for:archaeology	for:4301	#	Archaeology	"	for:43
+MINERAL RESOURCES (EXCL. ENERGY RESOURCES)		geo-for:mineral-resources-excl-energy-resources	geo-for:mineral-resources-excl-energy-resources	geo-for:mineral-resources-excl-energy-resources	#	Mineral Resources (Excl. Energy Resources)	"
+Mineral Exploration		geo-for:mineral-exploration	geo-for:mineral-exploration	geo-for:mineral-exploration	#	Mineral Exploration	"	geo-for:mineral-resources
+Primary Mining And Extraction Of Mineral Resources		geo-for:primary-mining-and-extraction-of-mineral-resources	geo-for:primary-mining-and-extraction-of-mineral-resources	geo-for:primary-mining-and-extraction-of-mineral-resources	#	Primary Mining And Extraction Of Mineral Resources	"	geo-for:mineral-resources
+First Stage Treatment Of Ores And Minerals		geo-for:first-stage-treatment-of-ores-and-minerals	geo-for:first-stage-treatment-of-ores-and-minerals	geo-for:first-stage-treatment-of-ores-and-minerals	#	First Stage Treatment Of Ores And Minerals	"	geo-for:mineral-resources
+Environmentally Sustainable Mineral Resource Activities		geo-for:environmentally-sustainable-mineral-resource-activities	geo-for:environmentally-sustainable-mineral-resource-activities	geo-for:environmentally-sustainable-mineral-resource-activities	#	Environmentally Sustainable Mineral Resource Activities	"	geo-for:mineral-resources
+ENERGY		geo-for:energy	geo-for:energy	geo-for:energy	#	Energy	"
+Energy Exploration		geo-for:energy-exploration	geo-for:energy-exploration	geo-for:energy-exploration	#	Energy Exploration	"	geo-for:energy
+Mining and Extraction of Energy Resources		geo-for:mining-and-extraction-of-energy-resources	geo-for:mining-and-extraction-of-energy-resources	geo-for:mining-and-extraction-of-energy-resources	#	Mining And Extraction Of Energy Resources	"	geo-for:energy
+Preparation and Production of Energy Sources		geo-for:preparation-and-production-of-energy-sources	geo-for:preparation-and-production-of-energy-sources	geo-for:preparation-and-production-of-energy-sources	#	Preparation And Production Of Energy Sources	"	geo-for:energy
+Energy Transformation		geo-for:energy-transformation	geo-for:energy-transformation	geo-for:energy-transformation	#	Energy Transformation	"	geo-for:energy
+Renewable Energy		geo-for:renewable-energy	geo-for:renewable-energy	geo-for:renewable-energy	#	Renewable Energy	"	geo-for:energy
+Energy Storage, Distribution and Supply		geo-for:energy-storage-distribution-and-supply	geo-for:energy-storage-distribution-and-supply	geo-for:energy-storage-distribution-and-supply	#	Energy Storage, Distribution And Supply	"	geo-for:energy
+Energy Conservation and Efficiency		geo-for:energy-conservation-and-efficiency	geo-for:energy-conservation-and-efficiency	geo-for:energy-conservation-and-efficiency	#	Energy Conservation And Efficiency	"	geo-for:energy
+Environmentally Sustainable Energy Activities		geo-for:environmentally-sustainable-energy-activities	geo-for:environmentally-sustainable-energy-activities	geo-for:environmentally-sustainable-energy-activities	#	Environmentally Sustainable Energy Activities	"	geo-for:energy
+CULTURAL UNDERSTANDING		geo-for:cultural-understanding	geo-for:cultural-understanding	geo-for:cultural-understanding	#	Cultural Understanding	"
+Heritage
+Conserving Aboriginal and Tores Strait Islander Heritage		geo-for:conserving-aboriginal-and-tores-strait-islander-heritage	geo-for:conserving-aboriginal-and-tores-strait-islander-heritage	geo-for:conserving-aboriginal-and-tores-strait-islander-heritage	"	Conserving Aboriginal And Tores Strait Islander Heritage	"	for:43	geo-for:cultural-understanding
+Conserving Natural Heritage		geo-for:conserving-natural-heritage	geo-for:conserving-natural-heritage	geo-for:conserving-natural-heritage	"	Conserving Natural Heritage	"	for:43	geo-for:cultural-understanding
