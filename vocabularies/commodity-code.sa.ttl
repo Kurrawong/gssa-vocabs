@@ -1,9 +1,11 @@
 PREFIX : <http://resource.geosciml.org/classifier/cgi/commodity-code/>
+PREFIX agldwgstatus: <https://linked.data.gov.au/def/reg-statuses/>
 PREFIX cs: <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX dt: <http://resource.geosciml.org/datatype/>
 PREFIX eucc: <http://inspire.ec.europa.eu/codelist/CommodityCodeValue/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX reg: <http://purl.org/linked-data/registry#>
 PREFIX sdo: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
@@ -4832,6 +4834,7 @@ cs:
     dcterms:modified "2020-06-26"^^xsd:date ;
     dcterms:provenance "The EarthResourceML standard"@en ;
     dcterms:source "https://earthresourceml.org"^^xsd:anyURI ;
+    reg:status agldwgstatus:stable ;
     skos:changeNote
         "2016-07-18 OLR - Reformat SKOS for migration to new vocabulary server. No changes to concepts."@en ,
         "2020-06-23 NJC Added properties to ensure vocab matched Geoscience Australia's vocab profile (http://linked.data.gov.au/def/ga-skos-profile). Just annotation properties, no new content. Agents (creator/publisher) now not text but RDF resource. Dates (create/modified) derived from editorial notes & existing date properties. Simple definition for silica added as missing."@en ,

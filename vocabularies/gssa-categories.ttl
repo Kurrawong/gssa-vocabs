@@ -1452,7 +1452,7 @@ cs:
     dcterms:identifier "gssa-categories"^^xsd:token ;
     dcterms:license <https://purl.org/NET/rdflicense/cc-by4.0> ;
     dcterms:modified "2022-11-22"^^xsd:date ;
-    dcterms:published "2022-11-01"^^xsd:date ;
+    dcterms:issued "2022-11-01"^^xsd:date ;
     dcterms:publisher <https://linked.data.gov.au/org/gssa> ;
     dcterms:rights "© Department for Energy and Mining, 2022" ;
     dcterms:source "https://linked.data.gov.au/def/anzsrc-for"^^xsd:anyURI ;
