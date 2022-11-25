@@ -6,3 +6,7 @@ PREFIX sdo: <https://schema.org/>
 <https://linked.data.gov.au/org/gssa>
     rdfs:label "Geological Survey of South Australia" ;
 .
+
+<http://def.isotc211.org/org/tc211>
+    rdfs:label "ISO Technical Committee 211" ;
+.

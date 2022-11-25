@@ -12,3 +12,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 <https://linked.data.gov.au/def/anzsrc-for/2020>
     rdfs:label "Fields of Research Codes, 2020" ;
 .
+
+<https://linked.data.gov.au/def/gssa-doc-types>
+    rdfs:label "GSSA Document Types" ;
+.
