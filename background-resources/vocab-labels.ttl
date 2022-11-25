@@ -1,0 +1,14 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+
+<https://linked.data.gov.au/def/gssa-categories>
+    rdfs:label "Geological Survey of South Australia Categories" ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/commodity-code>
+    rdfs:label "CGI Commodity Codes" ;
+.
+
+<https://linked.data.gov.au/def/anzsrc-for/2020>
+    rdfs:label "Fields of Research Codes, 2020" ;
+.
