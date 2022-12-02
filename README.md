@@ -44,7 +44,7 @@ Geological Survey of South Australia Categories | [Implemented](https://prezcli.
 SA Commodity Codes | [Partly Implemented](https://prezcli.azurewebsites.net/vocab/commodity-codes), needs SA additions
 Maintenance Frequency Code | [Implemented](https://prezcli.azurewebsites.net/vocab/MD_MaintenanceFrequencyCode)
 Stratigraphy | ?
-Geological Province | in progress (here)
+SA Geological Features | [Implemented](https://prezcli.azurewebsites.net/vocab/sa-geological-features) but doesn't look correct (hierarchy off)
 Document Type | [Implemented](https://prezcli.azurewebsites.net/vocab/gssa-doc-types)
 MD Scope | [Implemented](https://prezcli.azurewebsites.net/vocab/MD_ScopeCode)
 MD Topic Category | in progress (here)
