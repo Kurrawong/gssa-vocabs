@@ -29,7 +29,7 @@ cs:
         :legislation-and-policy ,
         :mineral-company-report ,
         :energy-company-report ,
-        :geopysical-report ;
+        :geophysical-report ;
     skos:prefLabel "GSSA Document Types"@en ;
 .
 
@@ -193,7 +193,7 @@ cs:
     a skos:Concept ;
     dcterms:identifier "geophysical-survey-report-acquisition"^^xsd:token ;
     rdfs:isDefinedBy cs: ;
-    skos:broader :geopysical-report ;
+    skos:broader :geophysical-report ;
     skos:definition "A report, often outlining the activities or movements of individuals or teams whilst undertaking field activities, e.g., a production log. Often included in the final report."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "Geophysical Survey Report - Acquisition"@en ;
@@ -203,7 +203,7 @@ cs:
     a skos:Concept ;
     dcterms:identifier "geophysical-survey-report-final"^^xsd:token ;
     rdfs:isDefinedBy cs: ;
-    skos:broader :geopysical-report ;
+    skos:broader :geophysical-report ;
     skos:definition "A detailed report, containing all information pertaining to the survey. It should contain information such as the dates of the survey, who was involved, technical information regarding instrumentation(s), field safety protocols, data format explanations, and data processing notes. It may also contain Acquisition and Logistics information and should be part of the geophysical data package."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "Geophysical Survey Report - Final"@en ;
@@ -213,7 +213,7 @@ cs:
     a skos:Concept ;
     dcterms:identifier "geophysical-survey-report-logistics"^^xsd:token ;
     rdfs:isDefinedBy cs: ;
-    skos:broader :geopysical-report ;
+    skos:broader :geophysical-report ;
     skos:definition "A report, often as part of the Final Report, outlining field logistics. E.g., Campsite details, land access, a timeline and/or maps demonstrating how field activities were conducted."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "Geophysical Survey Report - Logistics"@en ;
@@ -569,13 +569,13 @@ cs:
     skos:topConceptOf cs: ;
 .
 
-:geopysical-report
+:geophysical-report
     a skos:Concept ;
-    dcterms:identifier "geopysical-report"^^xsd:token ;
+    dcterms:identifier "geophysical-report"^^xsd:token ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Reports pertaining to the aquisition, processing or result interpretation of geophysical data."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "Geopysical Report"@en ;
+    skos:prefLabel "Geophysical Report"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -593,7 +593,7 @@ cs:
     a skos:Concept ;
     dcterms:identifier "seismic-report"^^xsd:token ;
     rdfs:isDefinedBy cs: ;
-    skos:broader :geopysical-report ;
+    skos:broader :geophysical-report ;
     skos:definition ""@en ;
     skos:inScheme cs: ;
     skos:prefLabel "Seismic Report"@en ;

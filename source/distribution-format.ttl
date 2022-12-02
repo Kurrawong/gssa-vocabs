@@ -41,10 +41,10 @@ ZIP
 @prefix ns1: <http://publications.europa.eu/ontology/authority/> .
 @prefix ns2: <http://publications.europa.eu/resource/authority/> .
 @prefix dc11: <http://purl.org/dc/elements/1.1/> .
-@prefix qgft: <http://linked.data.gov.au/def/qg-file-types/> .
+@prefix qgft: <https://linked.data.gov.au/def/qg-file-types/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://linked.data.gov.au/def/qg-file-types> a owl:Ontology,
+<https://linked.data.gov.au/def/qg-file-types> a owl:Ontology,
       skos:ConceptScheme ;
   ns0:id "file-type" ;
   ns0:version.number "20200923-0" ;
@@ -56,13 +56,13 @@ ZIP
   dc11:modified "2021-04-19"^^xsd:date ;
   dc11:source <http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type> ;
   dcterms:creator "Interinstitutional Metadata Maintenance Committee (IMMC) of the European Union" ;
-  dcterms:publisher <http://linked.data.gov.au/org/gsq> .
+  dcterms:publisher <https://linked.data.gov.au/org/gsq> .
 
 <http://publications.europa.eu/resource/authority/file-type/TAR>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "TAR" ;
   ns1:op-code "TAR" ;
@@ -87,9 +87,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/GZIP>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "GZIP" ;
   ns1:op-code "GZIP" ;
@@ -117,9 +117,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/ZIP>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "ZIP" ;
   ns1:op-code "ZIP" ;
@@ -159,9 +159,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/AZW>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "AZW" ;
   ns1:op-code "AZW" ;
@@ -198,9 +198,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/EPUB>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "EPUB" ;
   ns1:op-code "EPUB" ;
@@ -237,9 +237,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/MOBI>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "MOBI" ;
   ns1:op-code "MOBI" ;
@@ -280,9 +280,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/GIF>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "GIF" ;
   ns1:op-code "GIF" ;
@@ -319,9 +319,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/JPEG>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "JPEG" ;
   ns1:op-code "JPEG" ;
@@ -361,9 +361,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/TIFF>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "TIFF" ;
   ns1:op-code "TIFF" ;
@@ -412,9 +412,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/PNG>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "PNG" ;
   ns1:op-code "PNG" ;
@@ -455,9 +455,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/EPS>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "EPS" ;
   ns1:op-code "EPS" ;
@@ -477,9 +477,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/CSS>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "CSS" ;
   ns1:op-code "CSS" ;
@@ -512,9 +512,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/PDF>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "PDF" ;
   ns1:op-code "PDF" ;
@@ -551,9 +551,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/PDFA1A>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "PDFA1A" ;
   ns1:op-code "PDFA1A" ;
@@ -590,9 +590,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/PDFA1B>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "PDFA1B" ;
   ns1:op-code "PDFA1B" ;
@@ -629,9 +629,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/PDFX>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "PDFX" ;
   ns1:op-code "PDFX" ;
@@ -668,9 +668,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/METS>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "METS" ;
   ns1:op-code "METS" ;
@@ -691,9 +691,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/METS_ZIP>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "METS_ZIP" ;
   ns1:op-code "METS_ZIP" ;
@@ -714,9 +714,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/PPSX>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "PPSX" ;
   ns1:op-code "PPSX" ;
@@ -753,9 +753,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/PPS>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "PPS" ;
   ns1:op-code "PPS" ;
@@ -776,9 +776,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/PPT>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "PPT" ;
   ns1:op-code "PPT" ;
@@ -815,9 +815,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/PPTX>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "PPTX" ;
   ns1:op-code "PPTX" ;
@@ -854,9 +854,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/XLS>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "XLS" ;
   ns1:op-code "XLS" ;
@@ -897,9 +897,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/XLSX>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "XLSX" ;
   ns1:op-code "XLSX" ;
@@ -940,9 +940,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/XSLFO>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "XSLFO" ;
   ns1:op-code "XSLFO" ;
@@ -959,9 +959,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/XSLT>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "XSLT" ;
   ns1:op-code "XSLT" ;
@@ -1002,9 +1002,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/DTD_SGML>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "DTD_SGML" ;
   ns1:op-code "DTD_SGML" ;
@@ -1025,9 +1025,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/DTD_XML>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "DTD_XML" ;
   ns1:op-code "DTD_XML" ;
@@ -1048,9 +1048,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/SCHEMA_XML>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "SCHEMA_XML" ;
   ns1:op-code "SCHEMA_XML" ;
@@ -1067,9 +1067,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/FMX2>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "true" ;
   ns1:authority-code "FMX2" ;
   ns1:op-code "FMX2" ;
@@ -1111,9 +1111,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/FMX3>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "true" ;
   ns1:authority-code "FMX3" ;
   ns1:op-code "FMX3" ;
@@ -1155,9 +1155,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/FMX4>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "FMX4" ;
   ns1:op-code "FMX4" ;
@@ -1194,9 +1194,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/RDF_XML>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "RDF_XML" ;
   ns1:op-code "RDF_XML" ;
@@ -1241,9 +1241,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "RDF_TURTLE" ;
   ns1:op-code "RDF_TURTLE" ;
@@ -1284,9 +1284,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/SGML>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "SGML" ;
   ns1:op-code "SGML" ;
@@ -1327,9 +1327,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/SKOS_XML>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "SKOS_XML" ;
   ns1:op-code "SKOS_XML" ;
@@ -1350,9 +1350,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/OWL>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "OWL" ;
   ns1:op-code "OWL" ;
@@ -1377,9 +1377,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/XML>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "XML" ;
   ns1:op-code "XML" ;
@@ -1424,9 +1424,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/SPARQLQ>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "SPARQLQ" ;
   ns1:op-code "SPARQLQ" ;
@@ -1467,9 +1467,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/SPARQLQRES>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "SPARQLQRES" ;
   ns1:op-code "SPARQLQRES" ;
@@ -1510,9 +1510,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/DOC>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "DOC" ;
   ns1:op-code "DOC" ;
@@ -1549,9 +1549,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/DOCX>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "DOCX" ;
   ns1:op-code "DOCX" ;
@@ -1588,9 +1588,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/ODT>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "ODT" ;
   ns1:op-code "ODT" ;
@@ -1611,9 +1611,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/TXT>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "TXT" ;
   ns1:op-code "TXT" ;
@@ -1654,9 +1654,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/RTF>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "RTF" ;
   ns1:op-code "RTF" ;
@@ -1697,9 +1697,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/HTML>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "HTML" ;
   ns1:op-code "HTML" ;
@@ -1744,9 +1744,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/XHTML>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "XHTML" ;
   ns1:op-code "XHTML" ;
@@ -1795,9 +1795,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/CSV>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "CSV" ;
   ns1:op-code "CSV" ;
@@ -1826,9 +1826,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/MDB>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "MDB" ;
   ns1:op-code "MDB" ;
@@ -1845,9 +1845,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/DBF>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "DBF" ;
   ns1:op-code "DBF" ;
@@ -1868,9 +1868,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/MOP>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "MOP" ;
   ns1:op-code "MOP" ;
@@ -1887,9 +1887,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/E00>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "E00" ;
   ns1:op-code "E00" ;
@@ -1906,9 +1906,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/MXD>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "MXD" ;
   ns1:op-code "MXD" ;
@@ -1925,9 +1925,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/KML>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "KML" ;
   ns1:op-code "KML" ;
@@ -1952,9 +1952,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/TSV>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "TSV" ;
   ns1:op-code "TSV" ;
@@ -1979,9 +1979,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/JSON>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "JSON" ;
   ns1:op-code "JSON" ;
@@ -2006,9 +2006,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/KMZ>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "KMZ" ;
   ns1:op-code "KMZ" ;
@@ -2033,9 +2033,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/GML>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "GML" ;
   ns1:op-code "GML" ;
@@ -2052,9 +2052,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/RSS>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "RSS" ;
   ns1:op-code "RSS" ;
@@ -2083,9 +2083,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/ODS>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "ODS" ;
   ns1:op-code "ODS" ;
@@ -2110,9 +2110,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/INDD>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "INDD" ;
   ns1:op-code "INDD" ;
@@ -2129,9 +2129,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/PSD>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "PSD" ;
   ns1:op-code "PSD" ;
@@ -2148,9 +2148,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/PS>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "PS" ;
   ns1:op-code "PS" ;
@@ -2167,9 +2167,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/ODF>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "ODF" ;
   ns1:op-code "ODF" ;
@@ -2186,9 +2186,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/TAR_XZ>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "TAR_XZ" ;
   ns1:op-code "TAR_XZ" ;
@@ -2205,9 +2205,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/TAR_GZ>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "TAR_GZ" ;
   ns1:op-code "TAR_GZ" ;
@@ -2224,9 +2224,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/RDF>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "RDF" ;
   ns1:op-code "RDF" ;
@@ -2243,9 +2243,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/XLIFF>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "XLIFF" ;
   ns1:op-code "XLIFF" ;
@@ -2262,9 +2262,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/OVF>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "OVF" ;
   ns1:op-code "OVF" ;
@@ -2281,9 +2281,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/JSON_LD>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "JSON_LD" ;
   ns1:op-code "JSON_LD" ;
@@ -2308,9 +2308,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/RDF_N_TRIPLES>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "RDF_N_TRIPLES" ;
   ns1:op-code "RDF_N_TRIPLES" ;
@@ -2351,9 +2351,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/HDF>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "HDF" ;
   ns1:op-code "HDF" ;
@@ -2398,9 +2398,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/NETCDF>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "NETCDF" ;
   ns1:op-code "NETCDF" ;
@@ -2433,9 +2433,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/SDMX>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "SDMX" ;
   ns1:op-code "SDMX" ;
@@ -2456,9 +2456,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/JPEG2000>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "JPEG2000" ;
   ns1:op-code "JPEG2000" ;
@@ -2483,9 +2483,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/SHP>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "SHP" ;
   ns1:op-code "SHP" ;
@@ -2514,9 +2514,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/GDB>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "GDB" ;
   ns1:op-code "GDB" ;
@@ -2533,9 +2533,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/GMZ>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "GMZ" ;
   ns1:op-code "GMZ" ;
@@ -2552,9 +2552,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/ECW>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "ECW" ;
   ns1:op-code "ECW" ;
@@ -2571,9 +2571,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/GRID_ASCII>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "GRID_ASCII" ;
   ns1:op-code "GRID_ASCII" ;
@@ -2590,9 +2590,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/DMP>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "DMP" ;
   ns1:op-code "DMP" ;
@@ -2608,9 +2608,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/LAS>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "LAS" ;
   ns1:op-code "LAS" ;
@@ -2626,9 +2626,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/LAZ>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "LAZ" ;
   ns1:op-code "LAZ" ;
@@ -2645,9 +2645,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/TAB>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "TAB" ;
   ns1:op-code "TAB" ;
@@ -2663,9 +2663,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/TAB_RSTR>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "TAB_RSTR" ;
   ns1:op-code "TAB_RSTR" ;
@@ -2681,9 +2681,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/WORLD>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "WORLD" ;
   ns1:op-code "WORLD" ;
@@ -2703,9 +2703,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/TMX>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "TMX" ;
   ns1:op-code "TMX" ;
@@ -2726,9 +2726,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/ATOM>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "ATOM" ;
   ns1:op-code "ATOM" ;
@@ -2749,9 +2749,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/OCTET>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "OCTET" ;
   ns1:op-code "OCTET" ;
@@ -2771,9 +2771,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/BIN>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "BIN" ;
   ns1:op-code "BIN" ;
@@ -2793,9 +2793,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/ODC>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "ODC" ;
   ns1:op-code "ODC" ;
@@ -2811,9 +2811,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/ODB>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "ODB" ;
   ns1:op-code "ODB" ;
@@ -2829,9 +2829,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/ODG>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "ODG" ;
   ns1:op-code "ODG" ;
@@ -2847,9 +2847,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/BMP>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "BMP" ;
   ns1:op-code "BMP" ;
@@ -2881,9 +2881,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/DCR>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "DCR" ;
   ns1:op-code "DCR" ;
@@ -2903,9 +2903,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/XYZ>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "XYZ" ;
   ns1:op-code "XYZ" ;
@@ -2925,9 +2925,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/MAP_PRVW>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "MAP_PRVW" ;
   ns1:op-code "MAP_PRVW" ;
@@ -2938,9 +2938,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/MAP_SRVC>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "MAP_SRVC" ;
   ns1:op-code "MAP_SRVC" ;
@@ -2951,9 +2951,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/REST>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "REST" ;
   ns1:op-code "REST" ;
@@ -2965,9 +2965,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/MSG_HTTP>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "MSG_HTTP" ;
   ns1:op-code "MSG_HTTP" ;
@@ -2979,9 +2979,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/TIFF_FX>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "TIFF_FX" ;
   ns1:op-code "TIFF_FX" ;
@@ -3006,9 +3006,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/PDF1X>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "PDF1X" ;
   ns1:op-code "PDF1X" ;
@@ -3049,9 +3049,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/WARC_GZ>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "WARC_GZ" ;
   ns1:op-code "WARC_GZ" ;
@@ -3068,9 +3068,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/RDF_N_QUADS>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "RDF_N_QUADS" ;
   ns1:op-code "RDF_N_QUADS" ;
@@ -3095,9 +3095,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/RDF_TRIG>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "RDF_TRIG" ;
   ns1:op-code "RDF_TRIG" ;
@@ -3122,9 +3122,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/RDFA>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "RDFA" ;
   ns1:op-code "RDFA" ;
@@ -3145,9 +3145,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/ARC>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "ARC" ;
   ns1:op-code "ARC" ;
@@ -3164,9 +3164,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/HTML_SIMPL>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "HTML_SIMPL" ;
   ns1:op-code "HTML_SIMPL" ;
@@ -3207,9 +3207,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/XHTML_SIMPL>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "XHTML_SIMPL" ;
   ns1:op-code "XHTML_SIMPL" ;
@@ -3258,9 +3258,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/SQL>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "SQL" ;
   ns1:op-code "SQL" ;
@@ -3277,9 +3277,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/PDFA2A>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "PDFA2A" ;
   ns1:op-code "PDFA2A" ;
@@ -3315,9 +3315,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/PDFA2B>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "PDFA2B" ;
   ns1:op-code "PDFA2B" ;
@@ -3353,9 +3353,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/PDFA3>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "PDFA3" ;
   ns1:op-code "PDFA3" ;
@@ -3391,9 +3391,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/MBOX>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "MBOX" ;
   ns1:op-code "MBOX" ;
@@ -3410,9 +3410,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/MPEG2>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "MPEG2" ;
   ns1:op-code "MPEG2" ;
@@ -3445,9 +3445,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/MPEG4>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "MPEG4" ;
   ns1:op-code "MPEG4" ;
@@ -3472,9 +3472,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/MPEG4_AVC>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "MPEG4_AVC" ;
   ns1:op-code "MPEG4_AVC" ;
@@ -3499,9 +3499,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/BWF>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "BWF" ;
   ns1:op-code "BWF" ;
@@ -3522,9 +3522,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/MHTML>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "MHTML" ;
   ns1:op-code "MHTML" ;
@@ -3545,9 +3545,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/ARC_GZ>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "ARC_GZ" ;
   ns1:op-code "ARC_GZ" ;
@@ -3564,9 +3564,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/WARC>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "WARC" ;
   ns1:op-code "WARC" ;
@@ -3603,9 +3603,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/PDFX1A>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "PDFX1A" ;
   ns1:op-code "PDFX1A" ;
@@ -3641,9 +3641,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/PDFX2A>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "PDFX2A" ;
   ns1:op-code "PDFX2A" ;
@@ -3679,9 +3679,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/PDFX4>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "PDFX4" ;
   ns1:op-code "PDFX4" ;
@@ -3717,9 +3717,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/GEOJSON>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "GEOJSON" ;
   ns1:op-code "GEOJSON" ;
@@ -3768,9 +3768,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/GRID>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "GRID" ;
   ns1:op-code "GRID" ;
@@ -3782,9 +3782,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/JATS>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "JATS" ;
   ns1:op-code "JATS" ;
@@ -3801,9 +3801,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/BITS>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "BITS" ;
   ns1:op-code "BITS" ;
@@ -3820,9 +3820,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/PWP>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "PWP" ;
   ns1:op-code "PWP" ;
@@ -3834,9 +3834,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/ISO>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "ISO" ;
   ns1:op-code "ISO" ;
@@ -3857,9 +3857,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/ISO_ZIP>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "ISO_ZIP" ;
   ns1:op-code "ISO_ZIP" ;
@@ -3876,9 +3876,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/RAR>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "RAR" ;
   ns1:op-code "RAR" ;
@@ -3907,9 +3907,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/SVG>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "SVG" ;
   ns1:op-code "SVG" ;
@@ -3930,9 +3930,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/QGS>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "QGS" ;
   ns1:op-code "QGS" ;
@@ -3949,9 +3949,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/N3>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "N3" ;
   ns1:op-code "N3" ;
@@ -3968,9 +3968,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/MRSID>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "MRSID" ;
   ns1:op-code "MRSID" ;
@@ -3987,9 +3987,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/EXE>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "EXE" ;
   ns1:op-code "EXE" ;
@@ -4006,9 +4006,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/JS>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "JS" ;
   ns1:op-code "JS" ;
@@ -4040,9 +4040,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/ICS>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "ICS" ;
   ns1:op-code "ICS" ;
@@ -4079,9 +4079,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/PL>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "PL" ;
   ns1:op-code "PL" ;
@@ -4109,9 +4109,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/WFS_SRVC>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "WFS_SRVC" ;
   ns1:op-code "WFS_SRVC" ;
@@ -4123,9 +4123,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/WMS_SRVC>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "WMS_SRVC" ;
   ns1:op-code "WMS_SRVC" ;
@@ -4142,9 +4142,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/HDT>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "HDT" ;
   ns1:op-code "HDT" ;
@@ -4161,9 +4161,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/LEG>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "LEG" ;
   ns1:op-code "LEG" ;
@@ -4179,9 +4179,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/IMMC_XML>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "IMMC_XML" ;
   ns1:op-code "IMMC_XML" ;
@@ -4213,9 +4213,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/XLSB>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "XLSB" ;
   ns1:op-code "XLSB" ;
@@ -4232,9 +4232,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/XLSM>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "XLSM" ;
   ns1:op-code "XLSM" ;
@@ -4251,9 +4251,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/ODP>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "ODP" ;
   ns1:op-code "ODP" ;
@@ -4274,9 +4274,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/RDF_TRIX>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "RDF_TRIX" ;
   ns1:op-code "RDF_TRIX" ;
@@ -4297,9 +4297,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/7Z>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "7Z" ;
   ns1:op-code "7Z" ;
@@ -4316,9 +4316,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/AAC>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "AAC" ;
   ns1:op-code "AAC" ;
@@ -4347,9 +4347,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/APK>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "APK" ;
   ns1:op-code "APK" ;
@@ -4370,9 +4370,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/APPX>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "APPX" ;
   ns1:op-code "APPX" ;
@@ -4393,9 +4393,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/ARJ>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "ARJ" ;
   ns1:op-code "ARJ" ;
@@ -4412,9 +4412,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/BZIP2>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "BZIP2" ;
   ns1:op-code "BZIP2" ;
@@ -4431,9 +4431,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/DEB>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "DEB" ;
   ns1:op-code "DEB" ;
@@ -4450,9 +4450,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/DMG>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "DMG" ;
   ns1:op-code "DMG" ;
@@ -4469,9 +4469,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/JAR>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "JAR" ;
   ns1:op-code "JAR" ;
@@ -4488,9 +4488,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/LHA>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "LHA" ;
   ns1:op-code "LHA" ;
@@ -4511,9 +4511,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/LZIP>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "LZIP" ;
   ns1:op-code "LZIP" ;
@@ -4530,9 +4530,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/LZO>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "LZO" ;
   ns1:op-code "LZO" ;
@@ -4549,9 +4549,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/LZMA>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "LZMA" ;
   ns1:op-code "LZMA" ;
@@ -4568,9 +4568,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/RPM>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "RPM" ;
   ns1:op-code "RPM" ;
@@ -4587,9 +4587,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/SB3>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "SB3" ;
   ns1:op-code "SB3" ;
@@ -4610,9 +4610,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/SWM>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "SWM" ;
   ns1:op-code "SWM" ;
@@ -4629,9 +4629,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/WIM>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "WIM" ;
   ns1:op-code "WIM" ;
@@ -4648,9 +4648,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/XZ>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "XZ" ;
   ns1:op-code "XZ" ;
@@ -4667,9 +4667,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/Z>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "Z" ;
   ns1:op-code "Z" ;
@@ -4686,9 +4686,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/MSI>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "MSI" ;
   ns1:op-code "MSI" ;
@@ -4709,9 +4709,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/WAR>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "WAR" ;
   ns1:op-code "WAR" ;
@@ -4728,9 +4728,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/EAR>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:deprecated "false" ;
   ns1:authority-code "EAR" ;
   ns1:op-code "EAR" ;
@@ -4747,9 +4747,9 @@ ZIP
 
 <http://publications.europa.eu/resource/authority/file-type/OP_DATPRO>
   a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:inScheme <http://linked.data.gov.au/def/qg-file-types> ;
-  skos:topConceptOf <http://linked.data.gov.au/def/qg-file-types> ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:inScheme <https://linked.data.gov.au/def/qg-file-types> ;
+  skos:topConceptOf <https://linked.data.gov.au/def/qg-file-types> ;
   ns1:op-code "OP_DATPRO" ;
   ns2:op-code "OP_DATPRO" ;
   dc11:identifier "OP_DATPRO" ;

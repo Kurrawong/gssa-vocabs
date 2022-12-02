@@ -35,3 +35,18 @@ _Vocabulary Specialist_
 Kurrawong AI  
 <nick@kurrawong.net>  
 <https://kurrawong.net>
+
+## Checklist
+
+**Vocab** | **Status**
+--- | ---
+Geological Survey of South Australia Categories | [Implemented](https://prezcli.azurewebsites.net/vocab/gssa-categories)
+SA Commodity Codes | [Partly Implemented](https://prezcli.azurewebsites.net/vocab/commodity-codes), needs SA additions
+Maintenance Frequency Code | [Implemented](https://prezcli.azurewebsites.net/vocab/MD_MaintenanceFrequencyCode)
+Stratigraphy | ?
+Geological Province | in progress (here)
+Document Type | [Implemented](https://prezcli.azurewebsites.net/vocab/gssa-doc-types)
+MD Scope | [Implemented](https://prezcli.azurewebsites.net/vocab/MD_ScopeCode)
+MD Topic Category | in progress (here)
+Distribution format | ?
+Status | ?

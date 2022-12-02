@@ -1,0 +1,1699 @@
+PREFIX : <https://linked.data.gov.au/def/sa-geological-features/>
+PREFIX agldwgstatus: <https://linked.data.gov.au/def/reg-statuses/>
+PREFIX cs: <https://linked.data.gov.au/def/sa-geological-features>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX reg: <http://purl.org/linked-data/registry#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:adelaide-plains-sub-basin
+    a skos:Concept ;
+    dcterms:identifier "adelaide-plains-sub-basin"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :st-vincent-basin ;
+    skos:definition "Adelaide Plains Sub-Basin"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Adelaide Plains Sub-Basin"@en ;
+.
+
+:aldgate-inlier
+    a skos:Concept ;
+    dcterms:identifier "aldgate-inlier"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :mt-lofty-ranges-inliers ;
+    skos:definition "Aldgate Inlier"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Aldgate Inlier"@en ;
+.
+
+:baratta-trough
+    a skos:Concept ;
+    dcterms:identifier "baratta-trough"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :adelaide-geosyncline ;
+    skos:definition "Baratta Trough"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Baratta Trough"@en ;
+.
+
+:benagerie-ridge
+    a skos:Concept ;
+    dcterms:identifier "benagerie-ridge"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :curnamona-province ;
+    skos:definition "Benagerie Ridge"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Benagerie Ridge"@en ;
+.
+
+:birdsville-track-ridge
+    a skos:Concept ;
+    dcterms:identifier "birdsville-track-ridge"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :simpson-basin ;
+    skos:definition "Birdsville Track Ridge"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Birdsville Track Ridge"@en ;
+.
+
+:birksgate-sub-basin
+    a skos:Concept ;
+    dcterms:identifier "birksgate-sub-basin"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :officer-basin ;
+    skos:definition "Birksgate Sub-Basin"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Birksgate Sub-Basin"@en ;
+.
+
+:bitchera-ridge
+    a skos:Concept ;
+    dcterms:identifier "bitchera-ridge"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :officer-basin ;
+    skos:definition "Bitchera Ridge"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Bitchera Ridge"@en ;
+.
+
+:boorthanna-trough
+    a skos:Concept ;
+    dcterms:identifier "boorthanna-trough"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :arckaringa-basin ;
+    skos:definition "Boorthanna Trough"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Boorthanna Trough"@en ;
+.
+
+:callabonna-sub-basin
+    a skos:Concept ;
+    dcterms:identifier "callabonna-sub-basin"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :lake-eyre-basin ;
+    skos:definition "Callabonna Sub-Basin"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Callabonna Sub-Basin"@en ;
+.
+
+:canegrass-lobe
+    a skos:Concept ;
+    dcterms:identifier "canegrass-lobe"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :nadda-basin ;
+    skos:definition "Canegrass Lobe"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Canegrass Lobe"@en ;
+.
+
+:christie-subdomain
+    a skos:Concept ;
+    dcterms:identifier "christie-subdomain"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :gawler-craton ;
+    skos:definition "Christie Subdomain"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Christie Subdomain"@en ;
+.
+
+:cleve-subdomain
+    a skos:Concept ;
+    dcterms:identifier "cleve-subdomain"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :gawler-craton ;
+    skos:definition "Cleve Subdomain"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Cleve Subdomain"@en ;
+.
+
+:coober-pedy-ridge
+    a skos:Concept ;
+    dcterms:identifier "coober-pedy-ridge"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :arckaringa-basin ;
+    skos:definition "Coober Pedy Ridge"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Coober Pedy Ridge"@en ;
+.
+
+:coulta-subdomain
+    a skos:Concept ;
+    dcterms:identifier "coulta-subdomain"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :gawler-craton ;
+    skos:definition "Coulta Subdomain"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Coulta Subdomain"@en ;
+.
+
+:cowell-sub-basin
+    a skos:Concept ;
+    dcterms:identifier "cowell-sub-basin"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :pirie-basin ;
+    skos:definition "Cowell Sub-Basin"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Cowell Sub-Basin"@en ;
+.
+
+:curnamona-craton
+    a skos:Concept ;
+    dcterms:identifier "curnamona-craton"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :curnamona-province ;
+    skos:definition "Curnamona Craton"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Curnamona Craton"@en ;
+.
+
+:eringa-trough
+    a skos:Concept ;
+    dcterms:identifier "eringa-trough"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :pedirka-basin ;
+    skos:definition "Eringa Trough"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Eringa Trough"@en ;
+.
+
+:fregon-subdomain
+    a skos:Concept ;
+    dcterms:identifier "fregon-subdomain"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :musgrave-province ;
+    skos:definition "Fregon Subdomain"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Fregon Subdomain"@en ;
+.
+
+:frome-embayment
+    a skos:Concept ;
+    dcterms:identifier "frome-embayment"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :eromanga-basin ;
+    skos:definition "Frome Embayment"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Frome Embayment"@en ;
+.
+
+:gason-dome
+    a skos:Concept ;
+    dcterms:identifier "gason-dome"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :lake-eyre-basin ;
+    skos:definition "Gason Dome"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Gason Dome"@en ;
+.
+
+:gladstone-trough
+    a skos:Concept ;
+    dcterms:identifier "gladstone-trough"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :adelaide-geosyncline ;
+    skos:definition "Gladstone Trough"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Gladstone Trough"@en ;
+.
+
+:gmi-ridge
+    a skos:Concept ;
+    dcterms:identifier "gmi-ridge"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :cooper-basin-gidgealpa-merimel ;
+    skos:definition "Gmi Ridge"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Gmi Ridge"@en ;
+.
+
+:golden-grove-sub-basin
+    a skos:Concept ;
+    dcterms:identifier "golden-grove-sub-basin"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :st-vincent-basin ;
+    skos:definition "Golden Grove Sub-Basin"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Golden Grove Sub-Basin"@en ;
+.
+
+:houghton-inlier
+    a skos:Concept ;
+    dcterms:identifier "houghton-inlier"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :mt-lofty-ranges-inliers ;
+    skos:definition "Houghton Inlier"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Houghton Inlier"@en ;
+.
+
+:kangaroo-island
+    a skos:Concept ;
+    dcterms:identifier "kangaroo-island"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :stansbury-basin ;
+    skos:definition "Kangaroo Island"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Kangaroo Island"@en ;
+.
+
+:kanmantoo-trough
+    a skos:Concept ;
+    dcterms:identifier "kanmantoo-trough"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :adelaide-geosyncline ;
+    skos:definition "Kanmantoo Trough"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Kanmantoo Trough"@en ;
+.
+
+:karkaro-trough
+    a skos:Concept ;
+    dcterms:identifier "karkaro-trough"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :arckaringa-basin ;
+    skos:definition "Karkaro Trough"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Karkaro Trough"@en ;
+.
+
+:kilroo-sub-basin
+    a skos:Concept ;
+    dcterms:identifier "kilroo-sub-basin"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :polda-basin ;
+    skos:definition "Kilroo Sub-Basin"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Kilroo Sub-Basin"@en ;
+.
+
+:kopperamanna-dome
+    a skos:Concept ;
+    dcterms:identifier "kopperamanna-dome"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :lake-eyre-basin ;
+    skos:definition "Kopperamanna Dome"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Kopperamanna Dome"@en ;
+.
+
+:lake-frome-embayment
+    a skos:Concept ;
+    dcterms:identifier "lake-frome-embayment"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :arrowie-basin ;
+    skos:definition "Lake Frome Embayment"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Lake Frome Embayment"@en ;
+.
+
+:lock-sub-basin
+    a skos:Concept ;
+    dcterms:identifier "lock-sub-basin"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :polda-basin ;
+    skos:definition "Lock Sub-Basin"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Lock Sub-Basin"@en ;
+.
+
+:mabel-creek-ridge
+    a skos:Concept ;
+    dcterms:identifier "mabel-creek-ridge"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :arckaringa-basin ;
+    skos:definition "Mabel Creek Ridge"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Mabel Creek Ridge"@en ;
+.
+
+:moonta-subdomain
+    a skos:Concept ;
+    dcterms:identifier "moonta-subdomain"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :gawler-craton ;
+    skos:definition "Moonta Subdomain"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Moonta Subdomain"@en ;
+.
+
+:moorowie-syncline
+    a skos:Concept ;
+    dcterms:identifier "moorowie-syncline"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :arrowie-basin ;
+    skos:definition "Moorowie Syncline"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Moorowie Syncline"@en ;
+.
+
+:mount-babbage-inlier
+    a skos:Concept ;
+    dcterms:identifier "mount-babbage-inlier"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :curnamona-province ;
+    skos:definition "Mount Babbage Inlier"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Mount Babbage Inlier"@en ;
+.
+
+:mount-painter-inlier
+    a skos:Concept ;
+    dcterms:identifier "mount-painter-inlier"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :curnamona-province ;
+    skos:definition "Mount Painter Inlier"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Mount Painter Inlier"@en ;
+.
+
+:mt-john-anticline
+    a skos:Concept ;
+    dcterms:identifier "mt-john-anticline"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :lake-eyre-basin ;
+    skos:definition "Mt John Anticline"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Mt John Anticline"@en ;
+.
+
+:mt-sarah-anticline
+    a skos:Concept ;
+    dcterms:identifier "mt-sarah-anticline"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :lake-eyre-basin ;
+    skos:definition "Mt Sarah Anticline"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Mt Sarah Anticline"@en ;
+.
+
+:mulga-park-subdomain
+    a skos:Concept ;
+    dcterms:identifier "mulga-park-subdomain"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :musgrave-province ;
+    skos:definition "Mulga Park Subdomain"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Mulga Park Subdomain"@en ;
+.
+
+:mulgathing-trough
+    a skos:Concept ;
+    dcterms:identifier "mulgathing-trough"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :arckaringa-basin ;
+    skos:definition "Mulgathing Trough"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Mulgathing Trough"@en ;
+.
+
+:munyarai-trough
+    a skos:Concept ;
+    dcterms:identifier "munyarai-trough"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :officer-basin ;
+    skos:definition "Munyarai Trough"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Munyarai Trough"@en ;
+.
+
+:murteree-ridge
+    a skos:Concept ;
+    dcterms:identifier "murteree-ridge"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :cooper-basin ;
+    skos:definition "Murteree Ridge"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Murteree Ridge"@en ;
+.
+
+:myponga-inlier
+    a skos:Concept ;
+    dcterms:identifier "myponga-inlier"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :mt-lofty-ranges-inliers ;
+    skos:definition "Myponga Inlier"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Myponga Inlier"@en ;
+.
+
+:nappamerri-trough
+    a skos:Concept ;
+    dcterms:identifier "nappamerri-trough"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :cooper-basin ;
+    skos:definition "Nappamerri Trough"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Nappamerri Trough"@en ;
+.
+
+:nawa-subdomain
+    a skos:Concept ;
+    dcterms:identifier "nawa-subdomain"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :gawler-craton ;
+    skos:definition "Nawa Subdomain"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Nawa Subdomain"@en ;
+.
+
+:noarlunga-sub-basin
+    a skos:Concept ;
+    dcterms:identifier "noarlunga-sub-basin"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :st-vincent-basin ;
+    skos:definition "Noarlunga Sub-Basin"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Noarlunga Sub-Basin"@en ;
+.
+
+:nurrai-ridge
+    a skos:Concept ;
+    dcterms:identifier "nurrai-ridge"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :officer-basin ;
+    skos:definition "Nurrai Ridge"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Nurrai Ridge"@en ;
+.
+
+:nuyts-subdomain
+    a skos:Concept ;
+    dcterms:identifier "nuyts-subdomain"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :gawler-craton ;
+    skos:definition "Nuyts Subdomain"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Nuyts Subdomain"@en ;
+.
+
+:oakbank-inlier
+    a skos:Concept ;
+    dcterms:identifier "oakbank-inlier"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :mt-lofty-ranges-inliers ;
+    skos:definition "Oakbank Inlier"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Oakbank Inlier"@en ;
+.
+
+:padthaway-ridge
+    a skos:Concept ;
+    dcterms:identifier "padthaway-ridge"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :delamerian-orogen ;
+    skos:definition "Padthaway Ridge"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Padthaway Ridge"@en ;
+.
+
+:paringa-embayment
+    a skos:Concept ;
+    dcterms:identifier "paringa-embayment"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :nadda-basin ;
+    skos:definition "Paringa Embayment"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Paringa Embayment"@en ;
+.
+
+:patchawarra-trough
+    a skos:Concept ;
+    dcterms:identifier "patchawarra-trough"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :cooper-basin ;
+    skos:definition "Patchawarra Trough"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Patchawarra Trough"@en ;
+.
+
+:penola-trough
+    a skos:Concept ;
+    dcterms:identifier "penola-trough"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :otway-basin ;
+    skos:definition "Penola Trough"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Penola Trough"@en ;
+.
+
+:phillipson-trough
+    a skos:Concept ;
+    dcterms:identifier "phillipson-trough"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :arckaringa-basin ;
+    skos:definition "Phillipson Trough"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Phillipson Trough"@en ;
+.
+
+:poolowanna-trough
+    a skos:Concept ;
+    dcterms:identifier "poolowanna-trough"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader
+        :eromanga-basin ,
+        :simpson-basin ;
+    skos:definition "Poolowanna Trough"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Poolowanna Trough"@en ;
+.
+
+:renmark-trough
+    a skos:Concept ;
+    dcterms:identifier "renmark-trough"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :nadda-basin ;
+    skos:definition "Renmark Trough"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Renmark Trough"@en ;
+.
+
+:robe-trough
+    a skos:Concept ;
+    dcterms:identifier "robe-trough"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :otway-basin ;
+    skos:definition "Robe Trough"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Robe Trough"@en ;
+.
+
+:spalding-trough
+    a skos:Concept ;
+    dcterms:identifier "spalding-trough"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :adelaide-geosyncline ;
+    skos:definition "Spalding Trough"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Spalding Trough"@en ;
+.
+
+:tallaringa-trough
+    a skos:Concept ;
+    dcterms:identifier "tallaringa-trough"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :arckaringa-basin ;
+    skos:definition "Tallaringa Trough"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Tallaringa Trough"@en ;
+.
+
+:tenappera-trough
+    a skos:Concept ;
+    dcterms:identifier "tenappera-trough"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :cooper-basin ;
+    skos:definition "Tenappera Trough"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Tenappera Trough"@en ;
+.
+
+:tilparee-trough
+    a skos:Concept ;
+    dcterms:identifier "tilparee-trough"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :warburton-basin ;
+    skos:definition "Tilparee Trough"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Tilparee Trough"@en ;
+.
+
+:tirari-sub-basin
+    a skos:Concept ;
+    dcterms:identifier "tirari-sub-basin"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :lake-eyre-basin ;
+    skos:definition "Tirari Sub-Basin"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Tirari Sub-Basin"@en ;
+.
+
+:torrens-hinge-zone
+    a skos:Concept ;
+    dcterms:identifier "torrens-hinge-zone"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :adelaide-geosyncline ;
+    skos:definition "Torrens Hinge Zone"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Torrens Hinge Zone"@en ;
+.
+
+:ucatana-uplift
+    a skos:Concept ;
+    dcterms:identifier "ucatana-uplift"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :lake-eyre-basin ;
+    skos:definition "Ucatana Uplift"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Ucatana Uplift"@en ;
+.
+
+:wallira-trough
+    a skos:Concept ;
+    dcterms:identifier "wallira-trough"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :arckaringa-basin ;
+    skos:definition "Wallira Trough"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Wallira Trough"@en ;
+.
+
+:warren-inlier
+    a skos:Concept ;
+    dcterms:identifier "warren-inlier"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :mt-lofty-ranges-inliers ;
+    skos:definition "Warren Inlier"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Warren Inlier"@en ;
+.
+
+:wilgena-subdomain
+    a skos:Concept ;
+    dcterms:identifier "wilgena-subdomain"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :gawler-craton ;
+    skos:definition "Wilgena Subdomain"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Wilgena Subdomain"@en ;
+.
+
+:willouran-trough
+    a skos:Concept ;
+    dcterms:identifier "willouran-trough"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :adelaide-geosyncline ;
+    skos:definition "Willouran Trough"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Willouran Trough"@en ;
+.
+
+:willunga-sub-basin
+    a skos:Concept ;
+    dcterms:identifier "willunga-sub-basin"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :st-vincent-basin ;
+    skos:definition "Willunga Sub-Basin"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Willunga Sub-Basin"@en ;
+.
+
+:willyama-inliers
+    a skos:Concept ;
+    dcterms:identifier "willyama-inliers"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :curnamona-province ;
+    skos:definition "Willyama Inliers"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Willyama Inliers"@en ;
+.
+
+:wintinna-trough
+    a skos:Concept ;
+    dcterms:identifier "wintinna-trough"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :officer-basin ;
+    skos:definition "Wintinna Trough"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Wintinna Trough"@en ;
+.
+
+:worumba-trough
+    a skos:Concept ;
+    dcterms:identifier "worumba-trough"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :adelaide-geosyncline ;
+    skos:definition "Worumba Trough"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Worumba Trough"@en ;
+.
+
+:yalkalpo-syncline
+    a skos:Concept ;
+    dcterms:identifier "yalkalpo-syncline"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :arrowie-basin ;
+    skos:definition "Yalkalpo Syncline"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Yalkalpo Syncline"@en ;
+.
+
+:yudnamutana-trough
+    a skos:Concept ;
+    dcterms:identifier "yudnamutana-trough"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :adelaide-geosyncline ;
+    skos:definition "Yudnamutana Trough"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Yudnamutana Trough"@en ;
+.
+
+:amadeus-basin
+    a skos:Concept ;
+    dcterms:identifier "amadeus-basin"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Amadeus Basin"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Amadeus Basin"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:ammaroodinna-inlier
+    a skos:Concept ;
+    dcterms:identifier "ammaroodinna-inlier"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Ammaroodinna Inlier"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Ammaroodinna Inlier"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:arunta-block
+    a skos:Concept ;
+    dcterms:identifier "arunta-block"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Arunta Block"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Arunta Block"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:barossa-basin
+    a skos:Concept ;
+    dcterms:identifier "barossa-basin"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Barossa Basin"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Barossa Basin"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:berri-basin
+    a skos:Concept ;
+    dcterms:identifier "berri-basin"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Berri Basin"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Berri Basin"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:bight-basin
+    a skos:Concept ;
+    dcterms:identifier "bight-basin"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Bight Basin"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Bight Basin"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:bight-duntroon-basins
+    a skos:Concept ;
+    dcterms:identifier "bight-duntroon-basins"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Bight-Duntroon Basins"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Bight-Duntroon Basins"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:billa-kalina-basin
+    a skos:Concept ;
+    dcterms:identifier "billa-kalina-basin"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Billa Kalina Basin"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Billa Kalina Basin"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:boolcunda-basin
+    a skos:Concept ;
+    dcterms:identifier "boolcunda-basin"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Boolcunda Basin"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Boolcunda Basin"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:cariewerloo-basin
+    a skos:Concept ;
+    dcterms:identifier "cariewerloo-basin"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Cariewerloo Basin"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Cariewerloo Basin"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:coastal-quaternary
+    a skos:Concept ;
+    dcterms:identifier "coastal-quaternary"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Coastal Quaternary"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Coastal Quaternary"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:coompana-block
+    a skos:Concept ;
+    dcterms:identifier "coompana-block"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Coompana Block"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Coompana Block"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:copley-basin
+    a skos:Concept ;
+    dcterms:identifier "copley-basin"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Copley Basin"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Copley Basin"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:cummins-basin
+    a skos:Concept ;
+    dcterms:identifier "cummins-basin"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Cummins Basin"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Cummins Basin"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:darling-basin
+    a skos:Concept ;
+    dcterms:identifier "darling-basin"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Darling Basin"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Darling Basin"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:denman-basin
+    a skos:Concept ;
+    dcterms:identifier "denman-basin"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Denman Basin"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Denman Basin"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:duntroon-basin
+    a skos:Concept ;
+    dcterms:identifier "duntroon-basin"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Duntroon Basin"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Duntroon Basin"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:encounter-basin
+    a skos:Concept ;
+    dcterms:identifier "encounter-basin"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Encounter Basin"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Encounter Basin"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:eucla-basin
+    a skos:Concept ;
+    dcterms:identifier "eucla-basin"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Eucla Basin"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Eucla Basin"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:eucla-basin-and-palaeodrainage
+    a skos:Concept ;
+    dcterms:identifier "eucla-basin-and-palaeodrainage"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Eucla Basin And Palaeodrainage"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Eucla Basin And Palaeodrainage"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:gambier-basin
+    a skos:Concept ;
+    dcterms:identifier "gambier-basin"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Gambier Basin"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Gambier Basin"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:gawler-range-volcanic-province
+    a skos:Concept ;
+    dcterms:identifier "gawler-range-volcanic-province"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Gawler Range Volcanic Province"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Gawler Range Volcanic Province"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:great-artesian-basin
+    a skos:Concept ;
+    dcterms:identifier "great-artesian-basin"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Great Artesian Basin"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Great Artesian Basin"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:great-australian-bight-basin
+    a skos:Concept ;
+    dcterms:identifier "great-australian-bight-basin"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Great Australian Bight Basin"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Great Australian Bight Basin"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:hamilton-basin
+    a skos:Concept ;
+    dcterms:identifier "hamilton-basin"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Hamilton Basin"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Hamilton Basin"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:harris-greenstone-belt
+    a skos:Concept ;
+    dcterms:identifier "harris-greenstone-belt"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Harris Greenstone Belt"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Harris Greenstone Belt"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:hindmarsh-tiers-basin
+    a skos:Concept ;
+    dcterms:identifier "hindmarsh-tiers-basin"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Hindmarsh Tiers Basin"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Hindmarsh Tiers Basin"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:inland-quaternary
+    a skos:Concept ;
+    dcterms:identifier "inland-quaternary"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Inland Quaternary"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Inland Quaternary"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:itiledoo-basin
+    a skos:Concept ;
+    dcterms:identifier "itiledoo-basin"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Itiledoo Basin"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Itiledoo Basin"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:lake-frome
+    a skos:Concept ;
+    dcterms:identifier "lake-frome"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Lake Frome"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Lake Frome"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:leigh-creek-coal-field
+    a skos:Concept ;
+    dcterms:identifier "leigh-creek-coal-field"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Leigh Creek Coal Field"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Leigh Creek Coal Field"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:levenger-graben
+    a skos:Concept ;
+    dcterms:identifier "levenger-graben"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Levenger Graben"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Levenger Graben"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:meadows-basin
+    a skos:Concept ;
+    dcterms:identifier "meadows-basin"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Meadows Basin"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Meadows Basin"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:moorilyanna-graben
+    a skos:Concept ;
+    dcterms:identifier "moorilyanna-graben"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Moorilyanna Graben"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Moorilyanna Graben"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:mount-lofty-ranges-inliers
+    a skos:Concept ;
+    dcterms:identifier "mount-lofty-ranges-inliers"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Mount Lofty Ranges Inliers"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Mount Lofty Ranges Inliers"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:mount-woods-inlier
+    a skos:Concept ;
+    dcterms:identifier "mount-woods-inlier"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Mount Woods Inlier"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Mount Woods Inlier"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:murray-basin
+    a skos:Concept ;
+    dcterms:identifier "murray-basin"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Murray Basin"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Murray Basin"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:murray-basin-basement
+    a skos:Concept ;
+    dcterms:identifier "murray-basin-basement"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Murray Basin Basement"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Murray Basin Basement"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:murray-river-valley
+    a skos:Concept ;
+    dcterms:identifier "murray-river-valley"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Murray River Valley"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Murray River Valley"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:myponga-basin
+    a skos:Concept ;
+    dcterms:identifier "myponga-basin"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Myponga Basin"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Myponga Basin"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:newer-volcanics-southeast-sa
+    a skos:Concept ;
+    dcterms:identifier "newer-volcanics-southeast-sa"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Newer Volcanics Southeast Sa"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Newer Volcanics Southeast Sa"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:north-field-basin
+    a skos:Concept ;
+    dcterms:identifier "north-field-basin"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "North Field Basin"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "North Field Basin"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:northern-spencer-gulf
+    a skos:Concept ;
+    dcterms:identifier "northern-spencer-gulf"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Northern Spencer Gulf"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Northern Spencer Gulf"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:olympic-domain
+    a skos:Concept ;
+    dcterms:identifier "olympic-domain"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Olympic Domain"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Olympic Domain"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:peake-and-denison-inliers
+    a skos:Concept ;
+    dcterms:identifier "peake-and-denison-inliers"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Peake And Denison Inliers"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Peake And Denison Inliers"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:pirie-torrens-basin
+    a skos:Concept ;
+    dcterms:identifier "pirie-torrens-basin"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Pirie-Torrens Basin"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Pirie-Torrens Basin"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:robinson-basin
+    a skos:Concept ;
+    dcterms:identifier "robinson-basin"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Robinson Basin"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Robinson Basin"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:sedan-coal-basin
+    a skos:Concept ;
+    dcterms:identifier "sedan-coal-basin"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Sedan Coal Basin"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Sedan Coal Basin"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:spencer-domain
+    a skos:Concept ;
+    dcterms:identifier "spencer-domain"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Spencer Domain"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Spencer Domain"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:spencer-shelf
+    a skos:Concept ;
+    dcterms:identifier "spencer-shelf"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader
+        :adelaide-geosyncline ,
+        :stansbury-basin ;
+    skos:definition
+        "Spencer Shelf"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel
+        "Spencer Shelf"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:springfield-basin
+    a skos:Concept ;
+    dcterms:identifier "springfield-basin"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Springfield Basin"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Springfield Basin"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:stuart-shelf
+    a skos:Concept ;
+    dcterms:identifier "stuart-shelf"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader
+        :adelaide-geosyncline ,
+        :arrowie-basin ;
+    skos:definition
+        "Stuart Shelf"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel
+        "Stuart Shelf"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:tallaringa-palaeochannel
+    a skos:Concept ;
+    dcterms:identifier "tallaringa-palaeochannel"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Tallaringa Palaeochannel"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Tallaringa Palaeochannel"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:tasman-fold-belt
+    a skos:Concept ;
+    dcterms:identifier "tasman-fold-belt"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Tasman Fold Belt"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Tasman Fold Belt"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:telford-basin
+    a skos:Concept ;
+    dcterms:identifier "telford-basin"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Telford Basin"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Telford Basin"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:tertiary-palaeochannels
+    a skos:Concept ;
+    dcterms:identifier "tertiary-palaeochannels"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Tertiary Palaeochannels"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Tertiary Palaeochannels"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:torrens-basin
+    a skos:Concept ;
+    dcterms:identifier "torrens-basin"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Torrens Basin"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Torrens Basin"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:troubridge-basin
+    a skos:Concept ;
+    dcterms:identifier "troubridge-basin"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Troubridge Basin"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Troubridge Basin"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:uley-groundwater-basin
+    a skos:Concept ;
+    dcterms:identifier "uley-groundwater-basin"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Uley Groundwater Basin"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Uley Groundwater Basin"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:unknown
+    a skos:Concept ;
+    dcterms:identifier "unknown"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Unknown"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Unknown"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:unnamed-intermontane-basin
+    a skos:Concept ;
+    dcterms:identifier "unnamed-intermontane-basin"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Unnamed Intermontane Basin"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Unnamed Intermontane Basin"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:walloway-basin
+    a skos:Concept ;
+    dcterms:identifier "walloway-basin"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Walloway Basin"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Walloway Basin"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:willochra-basin
+    a skos:Concept ;
+    dcterms:identifier "willochra-basin"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Willochra Basin"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Willochra Basin"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:yoolperlunna-inlier
+    a skos:Concept ;
+    dcterms:identifier "yoolperlunna-inlier"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Yoolperlunna Inlier"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Yoolperlunna Inlier"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:delamerian-orogen
+    a skos:Concept ;
+    dcterms:identifier "delamerian-orogen"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Delamerian Orogen"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Delamerian Orogen"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:pedirka-basin
+    a skos:Concept ;
+    dcterms:identifier "pedirka-basin"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Pedirka Basin"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Pedirka Basin"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:pirie-basin
+    a skos:Concept ;
+    dcterms:identifier "pirie-basin"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Pirie Basin"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Pirie Basin"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:stansbury-basin
+    a skos:Concept ;
+    dcterms:identifier "stansbury-basin"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :adelaide-geosyncline ;
+    skos:definition "Stansbury Basin"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Stansbury Basin"@en ;
+.
+
+:warburton-basin
+    a skos:Concept ;
+    dcterms:identifier "warburton-basin"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Warburton Basin"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Warburton Basin"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:eromanga-basin
+    a skos:Concept ;
+    dcterms:identifier "eromanga-basin"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Eromanga Basin"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Eromanga Basin"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:musgrave-province
+    a skos:Concept ;
+    dcterms:identifier "musgrave-province"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Musgrave Province"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Musgrave Province"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:otway-basin
+    a skos:Concept ;
+    dcterms:identifier "otway-basin"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Otway Basin"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Otway Basin"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:polda-basin
+    a skos:Concept ;
+    dcterms:identifier "polda-basin"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Polda Basin"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Polda Basin"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:simpson-basin
+    a skos:Concept ;
+    dcterms:identifier "simpson-basin"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Simpson Basin"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Simpson Basin"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:arrowie-basin
+    a skos:Concept ;
+    dcterms:identifier "arrowie-basin"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :adelaide-geosyncline ;
+    skos:definition "Arrowie Basin"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Arrowie Basin"@en ;
+.
+
+:nadda-basin
+    a skos:Concept ;
+    dcterms:identifier "nadda-basin"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Nadda Basin"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Nadda Basin"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:cooper-basin
+    a skos:Concept ;
+    dcterms:identifier "cooper-basin"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Cooper Basin"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Cooper Basin"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:st-vincent-basin
+    a skos:Concept ;
+    dcterms:identifier "st-vincent-basin"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "St Vincent Basin"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "St Vincent Basin"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:curnamona-province
+    a skos:Concept ;
+    dcterms:identifier "curnamona-province"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Curnamona Province"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Curnamona Province"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:officer-basin
+    a skos:Concept ;
+    dcterms:identifier "officer-basin"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Officer Basin"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Officer Basin"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:gawler-craton
+    a skos:Concept ;
+    dcterms:identifier "gawler-craton"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Gawler Craton"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Gawler Craton"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:lake-eyre-basin
+    a skos:Concept ;
+    dcterms:identifier "lake-eyre-basin"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Lake Eyre Basin"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Lake Eyre Basin"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:arckaringa-basin
+    a skos:Concept ;
+    dcterms:identifier "arckaringa-basin"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Arckaringa Basin"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Arckaringa Basin"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:adelaide-geosyncline
+    a skos:Concept ;
+    dcterms:identifier "adelaide-geosyncline"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Adelaide Geosyncline"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Adelaide Geosyncline"@en ;
+    skos:topConceptOf cs: ;
+.
+
+cs:
+    a skos:ConceptScheme ;
+    dcterms:created "2022-12-02"^^xsd:date ;
+    dcterms:creator <https://linked.data.gov.au/org/gssa> ;
+    dcterms:identifier "sa-geological-features"^^xsd:token ;
+    dcterms:issued "2022-12-02"^^xsd:date ;
+    dcterms:license <https://purl.org/NET/rdflicense/cc-by4.0> ;
+    dcterms:modified "2022-12-02"^^xsd:date ;
+    dcterms:provenance "This vocabulary was created in 2022 by and for the GSSA to support its data catalogue."@en ;
+    dcterms:publisher <https://linked.data.gov.au/org/gssa> ;
+    dcterms:rights "© Department for Energy and Mining, 2022"@en ;
+    reg:status agldwgstatus:stable ;
+    skos:definition "Individual geological features in South Australia"@en ;
+    skos:hasTopConcept
+        :adelaide-geosyncline ,
+        :amadeus-basin ,
+        :ammaroodinna-inlier ,
+        :arckaringa-basin ,
+        :arunta-block ,
+        :barossa-basin ,
+        :berri-basin ,
+        :bight-basin ,
+        :bight-duntroon-basins ,
+        :billa-kalina-basin ,
+        :boolcunda-basin ,
+        :cariewerloo-basin ,
+        :coastal-quaternary ,
+        :coompana-block ,
+        :cooper-basin ,
+        :copley-basin ,
+        :cummins-basin ,
+        :curnamona-province ,
+        :darling-basin ,
+        :delamerian-orogen ,
+        :denman-basin ,
+        :duntroon-basin ,
+        :encounter-basin ,
+        :eromanga-basin ,
+        :eucla-basin ,
+        :eucla-basin-and-palaeodrainage ,
+        :gambier-basin ,
+        :gawler-craton ,
+        :gawler-range-volcanic-province ,
+        :great-artesian-basin ,
+        :great-australian-bight-basin ,
+        :hamilton-basin ,
+        :harris-greenstone-belt ,
+        :hindmarsh-tiers-basin ,
+        :inland-quaternary ,
+        :itiledoo-basin ,
+        :lake-eyre-basin ,
+        :lake-frome ,
+        :leigh-creek-coal-field ,
+        :levenger-graben ,
+        :meadows-basin ,
+        :moorilyanna-graben ,
+        :mount-lofty-ranges-inliers ,
+        :mount-woods-inlier ,
+        :murray-basin ,
+        :murray-basin-basement ,
+        :murray-river-valley ,
+        :musgrave-province ,
+        :myponga-basin ,
+        :nadda-basin ,
+        :newer-volcanics-southeast-sa ,
+        :north-field-basin ,
+        :northern-spencer-gulf ,
+        :officer-basin ,
+        :olympic-domain ,
+        :otway-basin ,
+        :peake-and-denison-inliers ,
+        :pedirka-basin ,
+        :pirie-basin ,
+        :pirie-torrens-basin ,
+        :polda-basin ,
+        :robinson-basin ,
+        :sedan-coal-basin ,
+        :simpson-basin ,
+        :spencer-domain ,
+        :spencer-shelf ,
+        :springfield-basin ,
+        :st-vincent-basin ,
+        :stuart-shelf ,
+        :tallaringa-palaeochannel ,
+        :tasman-fold-belt ,
+        :telford-basin ,
+        :tertiary-palaeochannels ,
+        :torrens-basin ,
+        :troubridge-basin ,
+        :uley-groundwater-basin ,
+        :unknown ,
+        :unnamed-intermontane-basin ,
+        :walloway-basin ,
+        :warburton-basin ,
+        :willochra-basin ,
+        :yoolperlunna-inlier ;
+    skos:prefLabel "SA Geological Features"@en ;
+.
