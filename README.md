@@ -41,7 +41,7 @@ Kurrawong AI
 **Vocab** | **Status**
 --- | ---
 Geological Survey of South Australia Categories | [Implemented](https://prezcli.azurewebsites.net/vocab/gssa-categories)
-SA Commodity Codes | [Partly Implemented](https://prezcli.azurewebsites.net/vocab/commodity-codes), needs SA additions
+SA Commodity Codes | [Implemented](https://prezcli.azurewebsites.net/vocab/commodity-codes)
 Maintenance Frequency Code | [Implemented](https://prezcli.azurewebsites.net/vocab/MD_MaintenanceFrequencyCode)
 Stratigraphy | ?
 SA Geological Features | [Implemented](https://prezcli.azurewebsites.net/vocab/sa-geological-features) but doesn't look correct (hierarchy off)
