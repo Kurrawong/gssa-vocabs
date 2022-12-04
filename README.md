@@ -47,6 +47,6 @@ Stratigraphy | ?
 SA Geological Features | [Implemented](https://prezcli.azurewebsites.net/vocab/sa-geological-features) but doesn't look correct (hierarchy off)
 Document Type | [Implemented](https://prezcli.azurewebsites.net/vocab/gssa-doc-types)
 MD Scope | [Implemented](https://prezcli.azurewebsites.net/vocab/MD_ScopeCode)
-MD Topic Category | in progress (here)
-Distribution format | ?
-Status | ?
+MD Topic Category | [Implemented](https://prezcli.azurewebsites.net/vocab/topic-categories)
+Distribution format | [Implemented](https://prezcli.azurewebsites.net/vocab/distribution-formats)
+Status | [Implemented](https://prezcli.azurewebsites.net/vocab/work-status)

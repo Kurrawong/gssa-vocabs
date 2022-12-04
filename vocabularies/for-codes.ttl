@@ -1449,7 +1449,7 @@ cs:
     a skos:ConceptScheme ;
     dcterms:created "2021-09-14"^^xsd:date ;
     dcterms:creator <https://linked.data.gov.au/org/gssa> ;
-    dcterms:identifier "gssa-categories"^^xsd:token ;
+    dcterms:identifier "for-codes"^^xsd:token ;
     dcterms:license <https://purl.org/NET/rdflicense/cc-by4.0> ;
     dcterms:modified "2022-11-22"^^xsd:date ;
     dcterms:issued "2022-11-01"^^xsd:date ;
@@ -1472,6 +1472,6 @@ cs:
         for:43 ,
         for:46 ,
         gssacat:mineral-resources-exc-energy-resources ;
-    skos:prefLabel "Geological Survey of South Australia Categories"@en ;
+    skos:prefLabel "Fields of Research Codes"@en ;
 .
 

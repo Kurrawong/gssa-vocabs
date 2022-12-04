@@ -1,0 +1,117 @@
+PREFIX : <http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation/code/MD_TopicCategoryCode/>
+PREFIX agldwgstatus: <https://linked.data.gov.au/def/reg-statuses/>
+PREFIX cs: <http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation/code/MD_TopicCategoryCode>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX reg: <http://purl.org/linked-data/registry#>
+PREFIX sdo: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX status: <http://def.isotc211.org/iso19135/-1/2015/CoreModel/code/RE_ItemStatus/>
+PREFIX this-cs: <https://linked.data.gov.au/def/gssa-topic-category>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<http://def.isotc211.org/org/tc211>
+    a sdo:Organization ;
+    sdo:description "The International Organization for Standardization's Technical Committee on \"Geographic information/Geomatics\", charged with standardization in the field of digital geographic information"@en ;
+    sdo:name "ISO's Technical Committee 211" ;
+    sdo:url "https://www.iso.org/committee/54904.html"^^xsd:anyURI ;
+.
+
+:boundaries
+    a skos:Concept ;
+    dcterms:identifier "boundaries"^^xsd:token ;
+    dcterms:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition """Legal land descriptions.
+
+Examples: political and administrative boundaries"""@en ;
+    skos:inScheme this-cs: ;
+    skos:prefLabel "Boundaries"@en ;
+    skos:topConceptOf this-cs: ;
+.
+
+:environment
+    a skos:Concept ;
+    dcterms:identifier "environment"^^xsd:token ;
+    dcterms:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition """Environmental resources, protection and conservation.
+
+Examples: environmental pollution, waste storage and treatment, environmental impact assessment, monitoring environmental risk, nature reserves, landscape
+    """@en ;
+    skos:inScheme this-cs: ;
+    skos:prefLabel "Environment"@en ;
+    skos:topConceptOf this-cs: ;
+.
+
+:geoscientificInformation
+    a skos:Concept ;
+    dcterms:identifier "geoscientificInformation"^^xsd:token ;
+    dcterms:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition """Information pertaining to earth sciences.
+
+Examples: geophysical features and processes, geology, minerals, sciences dealing with the composition, structure and origin of the earth s rocks, risks of earthquakes, volcanic activity, landslides, gravity information, soils, permafrost, hydrogeology, erosion"""@en ;
+    skos:inScheme this-cs: ;
+    skos:prefLabel "Geoscientific Information"@en ;
+    skos:topConceptOf this-cs: ;
+.
+
+:transportation
+    a skos:Concept ;
+    dcterms:identifier "transportation"^^xsd:token ;
+    dcterms:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition """Means and aids for conveying persons and/or goods.
+
+Examples: roads, airports/airstrips, shipping routes, tunnels, nautical charts, vehicle or vessel location, aeronautical charts, railways"""@en ;
+    skos:inScheme this-cs: ;
+    skos:prefLabel "Transportation"@en ;
+    skos:topConceptOf this-cs: ;
+.
+
+:utilitiesCommunication
+    a skos:Concept ;
+    dcterms:identifier "utilitiesCommunication"^^xsd:token ;
+    dcterms:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition """Energy, water and waste systems and communications infrastructure and services.
+
+Examples: hydroelectricity, geothermal, solar and nuclear sources of energy, water purification and distribution, sewage collection and disposal, electricity and gas distribution, data communication, telecommunication, radio, communication networks"""@en ;
+    skos:inScheme this-cs: ;
+    skos:prefLabel "Utilities Communication"@en ;
+    skos:topConceptOf this-cs: ;
+.
+
+<https://linked.data.gov.au/org/gssa>
+    a sdo:Organization ;
+    sdo:name "Geological Survey of South Australia" ;
+    sdo:url "https://www.energymining.sa.gov.au/industry/geological-survey"^^xsd:anyURI ;
+.
+
+this-cs:
+    a skos:ConceptScheme ;
+    dcterms:created "2022-12-04"^^xsd:date ;
+    dcterms:creator <https://linked.data.gov.au/org/gssa> ;
+    dcterms:identifier "topic-categories"^^xsd:token ;
+    dcterms:issued "2022-12-04"^^xsd:date ;
+    dcterms:license <https://purl.org/NET/rdflicense/cc-by4.0> ;
+    dcterms:modified "2022-12-05"^^xsd:date ;
+    dcterms:provenance "Derived from http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation/code/MD_TopicCategoryCode"@en ;
+    dcterms:publisher <https://linked.data.gov.au/org/gssa> ;
+    dcterms:rights "© Department for Energy and Mining, 2022"@en ;
+    reg:status agldwgstatus:stable ;
+    skos:definition "High-level	geographic data thematic classification to assist in the grouping and search of available geographic datasets"@en ;
+    skos:hasTopConcept
+        :boundaries ,
+        :environment ,
+        :geoscientificInformation ,
+        :transportation ,
+        :utilitiesCommunication ;
+    skos:prefLabel "Topic Category Codes"@en ;
+.

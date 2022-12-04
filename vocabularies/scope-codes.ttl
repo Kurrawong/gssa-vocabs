@@ -1,15 +1,14 @@
 PREFIX : <http://def.isotc211.org/iso19115/-1/2014/CommonClasses/code/MD_ScopeCode/>
 PREFIX cs: <http://def.isotc211.org/iso19115/-1/2014/CommonClasses/code/MD_ScopeCode>
-PREFIX this-cs: <https://linked.data.gov.au/def/gssa-scope-codes>
-PREFIX this-ns: <https://linked.data.gov.au/def/gssa-scope-codes/>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX reg: <http://purl.org/linked-data/registry#>
 PREFIX sdo: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX status: <http://def.isotc211.org/iso19135/-1/2015/CoreModel/code/RE_ItemStatus/>
+PREFIX this-cs: <https://linked.data.gov.au/def/gssa-scope-codes>
+PREFIX this-ns: <https://linked.data.gov.au/def/gssa-scope-codes/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-
 
 :application
     a skos:Concept ;
@@ -47,18 +46,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:topConceptOf this-cs: ;
 .
 
-this-ns:map
-    a skos:Concept ;
-    dcterms:identifier "map"^^xsd:token ;
-    dcterms:provenance "Created by GSSA"@en ;
-    reg:status status:original ;
-    rdfs:isDefinedBy this-cs: ;
-    skos:definition "information applies to a map"@en ;
-    skos:inScheme this-cs: ;
-    skos:prefLabel "map"@en ;
-    skos:topConceptOf this-cs: ;
-.
-
 :model
     a skos:Concept ;
     dcterms:identifier "model"^^xsd:token ;
@@ -90,6 +77,18 @@ this-ns:map
     sdo:url "https://www.iso.org/committee/54904.html"^^xsd:anyURI ;
 .
 
+this-ns:map
+    a skos:Concept ;
+    dcterms:identifier "map"^^xsd:token ;
+    dcterms:provenance "Created by GSSA"@en ;
+    reg:status status:original ;
+    rdfs:isDefinedBy this-cs: ;
+    skos:definition "information applies to a map"@en ;
+    skos:inScheme this-cs: ;
+    skos:prefLabel "map"@en ;
+    skos:topConceptOf this-cs: ;
+.
+
 <https://linked.data.gov.au/org/gssa>
     a sdo:Organization ;
     sdo:name "Geological Survey of South Australia" ;
@@ -98,11 +97,10 @@ this-ns:map
 
 this-cs:
     a skos:ConceptScheme ;
+    dcterms:contributor <http://def.isotc211.org/org/tc211> ;
     dcterms:created "2022-11-25"^^xsd:date ;
     dcterms:creator <https://linked.data.gov.au/org/gssa> ;
-    dcterms:contributor <http://def.isotc211.org/org/tc211> ;
     dcterms:identifier "MD_ScopeCode"^^xsd:token ;
-    dcterms:isFormatOf <http://def.isotc211.org/iso19115/-1/2014/CommonClasses#MD_ScopeCode> ;
     dcterms:issued "2022-11-25"^^xsd:date ;
     dcterms:modified "2022-11-25"^^xsd:date ;
     dcterms:provenance "Derived from http://def.isotc211.org/iso19115/-1/2014/CommonClasses/code/MD_ScopeCode"@en ;
@@ -113,8 +111,8 @@ this-cs:
         :application ,
         :dataset ,
         :document ,
-        this-ns:map ,
         :model ,
-        :service ;
-    skos:prefLabel "GSSA Scope Codes"@en ;
+        :service ,
+        this-ns:map ;
+    skos:prefLabel "Scope Codes"@en ;
 .

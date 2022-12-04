@@ -1,0 +1,294 @@
+PREFIX : <https://linked.data.gov.au/def/gssa-distribution-formats/>
+PREFIX agldwgstatus: <https://linked.data.gov.au/def/reg-statuses/>
+PREFIX cs: <https://linked.data.gov.au/def/gssa-distribution-formats>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX reg: <http://purl.org/linked-data/registry#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:ascii
+    a skos:Concept ;
+    dcterms:identifier "ascii"^^xsd:token ;
+    skos:topConceptOf cs: ;
+    skos:definition "American Standard Code for Information Interchange file format"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "ASCII"@en ;
+.
+
+:csv
+    a skos:Concept ;
+    dcterms:identifier "csv"^^xsd:token ;
+    skos:topConceptOf cs: ;
+    skos:definition "Comma Separated Values file format"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "CSV"@en ;
+.
+
+:doc
+    a skos:Concept ;
+    dcterms:identifier "doc"^^xsd:token ;
+    skos:topConceptOf cs: ;
+    skos:definition "Microsoft Word Doc file format"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "DOC"@en ;
+.
+
+:docx
+    a skos:Concept ;
+    dcterms:identifier "docx"^^xsd:token ;
+    skos:topConceptOf cs: ;
+    skos:definition "Microsoft Word Docx file format"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "DOCX"@en ;
+.
+
+:ecw
+    a skos:Concept ;
+    dcterms:identifier "ecw"^^xsd:token ;
+    skos:topConceptOf cs: ;
+    skos:definition "Enhanced Compressed Wavelet file format"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "ECW"@en ;
+.
+
+:ers
+    a skos:Concept ;
+    dcterms:identifier "ers"^^xsd:token ;
+    skos:topConceptOf cs: ;
+    skos:definition "ERS QGIS text  file format"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "ERS"@en ;
+.
+
+:esri-shapefile
+    a skos:Concept ;
+    dcterms:identifier "esri-shapefile"^^xsd:token ;
+    skos:topConceptOf cs: ;
+    skos:definition "ESRI Shapefile file format"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "ESRI Shapefile"@en ;
+.
+
+:geotiff
+    a skos:Concept ;
+    dcterms:identifier "geotiff"^^xsd:token ;
+    skos:topConceptOf cs: ;
+    skos:definition "Geo-located Tagged Image File Format (TIFF) file format"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "GeoTIFF"@en ;
+.
+
+:gml
+    a skos:Concept ;
+    dcterms:identifier "gml"^^xsd:token ;
+    skos:topConceptOf cs: ;
+    skos:definition "Geography Marlup Language (XML) file format"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "GML"@en ;
+.
+
+:jpeg
+    a skos:Concept ;
+    dcterms:identifier "jpeg"^^xsd:token ;
+    skos:topConceptOf cs: ;
+    skos:definition "Joint Photographic Experts Group (JPEG) compress image file format"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "JPEG"@en ;
+.
+
+:jpeg2000
+    a skos:Concept ;
+    dcterms:identifier "jpeg2000"^^xsd:token ;
+    skos:topConceptOf cs: ;
+    skos:definition "Joint Photographic Experts Group (JPEG) compress image file format"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "JPEG2000"@en ;
+.
+
+:kml
+    a skos:Concept ;
+    dcterms:identifier "kml"^^xsd:token ;
+    skos:topConceptOf cs: ;
+    skos:definition "Keyhole Markup Language (XML) file format"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "KML"@en ;
+.
+
+:mapinfo-mif-mid
+    a skos:Concept ;
+    dcterms:identifier "mapinfo-mif-mid"^^xsd:token ;
+    skos:topConceptOf cs: ;
+    skos:definition "MapInfo Interchange Format"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "MapInfo MIF/MID"@en ;
+.
+
+:mapinfo-tab
+    a skos:Concept ;
+    dcterms:identifier "mapinfo-tab"^^xsd:token ;
+    skos:topConceptOf cs: ;
+    skos:definition "MapInfo TAB geospatial vector data format "@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "MapInfo TAB"@en ;
+.
+
+:mp4
+    a skos:Concept ;
+    dcterms:identifier "mp4"^^xsd:token ;
+    skos:topConceptOf cs: ;
+    skos:definition "MPEG-4 Part 14 video file format"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "MP4"@en ;
+.
+
+:netcdf
+    a skos:Concept ;
+    dcterms:identifier "netcdf"^^xsd:token ;
+    skos:topConceptOf cs: ;
+    skos:definition "network Common Data Form file format"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "NETCDF"@en ;
+.
+
+:pdf
+    a skos:Concept ;
+    dcterms:identifier "pdf"^^xsd:token ;
+    skos:topConceptOf cs: ;
+    skos:definition "Portable Document Format"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "PDF"@en ;
+.
+
+:png
+    a skos:Concept ;
+    dcterms:identifier "png"^^xsd:token ;
+    skos:topConceptOf cs: ;
+    skos:definition "Portabel Netowork Graphics"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "PNG"@en ;
+.
+
+:pps
+    a skos:Concept ;
+    dcterms:identifier "pps"^^xsd:token ;
+    skos:topConceptOf cs: ;
+    skos:definition "Microsoft PowerPoint Slide Show file format"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "PPS"@en ;
+.
+
+:ppt
+    a skos:Concept ;
+    dcterms:identifier "ppt"^^xsd:token ;
+    skos:topConceptOf cs: ;
+    skos:definition "Microsoft PowerPoint file format"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "PPT"@en ;
+.
+
+:rtf
+    a skos:Concept ;
+    dcterms:identifier "rtf"^^xsd:token ;
+    skos:topConceptOf cs: ;
+    skos:definition "Rich Text File format"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "RTF"@en ;
+.
+
+:text
+    a skos:Concept ;
+    dcterms:identifier "text"^^xsd:token ;
+    skos:topConceptOf cs: ;
+    skos:definition "Text file format"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Text"@en ;
+.
+
+:wcs
+    a skos:Concept ;
+    dcterms:identifier "wcs"^^xsd:token ;
+    skos:topConceptOf cs: ;
+    skos:definition "OGC Web Coverage Service"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "WCS"@en ;
+.
+
+:wfs
+    a skos:Concept ;
+    dcterms:identifier "wfs"^^xsd:token ;
+    skos:topConceptOf cs: ;
+    skos:definition "OGC Web Feature Service"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "WFS"@en ;
+.
+
+:wms
+    a skos:Concept ;
+    dcterms:identifier "wms"^^xsd:token ;
+    skos:topConceptOf cs: ;
+    skos:definition "OGC Web Map Service"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "WMS"@en ;
+.
+
+:xlsx
+    a skos:Concept ;
+    dcterms:identifier "xlsx"^^xsd:token ;
+    skos:topConceptOf cs: ;
+    skos:definition "Microsoft Excel file format"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "XLSX"@en ;
+.
+
+:zip
+    a skos:Concept ;
+    dcterms:identifier "zip"^^xsd:token ;
+    skos:topConceptOf cs: ;
+    skos:definition "ZIP compressed file format"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "ZIP"@en ;
+.
+
+cs:
+    a skos:ConceptScheme ;
+    dcterms:created "2022-12-05"^^xsd:date ;
+    dcterms:creator <https://linked.data.gov.au/org/gssa> ;
+    dcterms:identifier "distribution-formats"^^xsd:token ;
+    dcterms:issued "2022-12-05"^^xsd:date ;
+    dcterms:license <https://purl.org/NET/rdflicense/cc-by4.0> ;
+    dcterms:modified "2022-12-05"^^xsd:date ;
+    dcterms:provenance "Created by GSSA in 2022 for the catalogue update project"@en ;
+    dcterms:publisher <https://linked.data.gov.au/org/gssa> ;
+    dcterms:rights "© Department for Energy and Mining, 2022"@en ;
+    reg:status agldwgstatus:stable ;
+    skos:definition "The format used for a distribution of a dataset"@en ;
+    skos:hasTopConcept
+        :ascii ,
+        :csv ,
+        :doc ,
+        :docx ,
+        :ecw ,
+        :ers ,
+        :esri-shapefile ,
+        :geotiff ,
+        :gml ,
+        :jpeg ,
+        :jpeg2000 ,
+        :kml ,
+        :mapinfo-mif-mid ,
+        :mapinfo-tab ,
+        :mp4 ,
+        :netcdf ,
+        :pdf ,
+        :png ,
+        :pps ,
+        :ppt ,
+        :rtf ,
+        :text ,
+        :wcs ,
+        :wfs ,
+        :wms ,
+        :xlsx ,
+        :zip ;
+    skos:prefLabel "Distribution Formats"@en ;
+.
