@@ -628,3 +628,97 @@ cs:
     skos:inScheme cs: ;
     skos:prefLabel "Departmental Publication - Closed Series"@en ;
 .
+
+:departmental-publications
+    a skos:Collection ;
+    dcterms:identifier "departmental-publications"^^xsd:token ;
+    skos:definition "All Departmental Publications document types"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Departmental Publications document types"@en ;
+    skos:member
+        :annual-report ,
+        :departmental-compliance-report ,
+        :departmental-other ,
+        :departmental-publication-closed-series ,
+        :commodity-review ,
+        :handbook ,
+        :inspector-of-mines-report ,
+        :mineral-and-energy-resources-annual-review ,
+        :mineral-industry-quarterly ,
+        :mineral-information-series ,
+        :mineral-resources-review ,
+        :mines-and-energy-review ,
+        :mining-review ,
+        :quarterly-note ,
+        :record-of-mine ,
+        :report-of-investigation ,
+        :special-publication ,
+        :energy-geoscience-publication ,
+        :engineering-geology-publication ,
+        :geological-survey-bulletin ,
+        :geological-survey-geoscience-publication ,
+        :hydrogeological-publication ,
+        :mesa-journal ,
+        :mineral-production-statistics ;
+.
+
+:legislation-and-guidance
+    a skos:Collection ;
+    dcterms:identifier "legislation-and-guidance"^^xsd:token ;
+    skos:definition "All Legislation and Guidance document types"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Legislation and Guidance document types"@en ;
+    skos:member
+        :energy-information-sheet ,
+        :energy-policy ,
+        :energy-regulatory-guideline ,
+        :mineral-information-sheet ,
+        :mineral-ministerial-determination ,
+        :mineral-policy ,
+        :mineral-regulatory-guideline ;
+.
+
+:mineral-exploration-company-reports
+    a skos:Collection ;
+    dcterms:identifier "mineral-exploration-company-reports"^^xsd:token ;
+    skos:definition "All Mineral Exploration Company Reports document types"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Mineral Exploration Company Reports document types"@en ;
+    skos:member
+        :mineral-exploration-tenement-report ;
+.
+
+:exploration-initiatives
+    a skos:Collection ;
+    dcterms:identifier "exploration-initiatives"^^xsd:token ;
+    skos:definition "All Exploration Initiatives document types"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Exploration Initiatives document types"@en ;
+    skos:member
+        :collaborative-drilling-initiative ,
+        :collaborative-exploration-initiative ;
+.
+
+:mineral-mining-reports
+    a skos:Collection ;
+    dcterms:identifier "mineral-mining-reports"^^xsd:token ;
+    skos:definition "All Mineral Mining Reports document types"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Mineral Mining Reports document types"@en ;
+    skos:member
+        :mining-operation-proposal ,
+        :mining-operation-compliance-report ,
+        :mining-operation-environmental-program ;
+.
+
+:geoscience-reports-and-publications
+    a skos:Collection ;
+    dcterms:identifier "geoscience-reports-and-publications"^^xsd:token ;
+    skos:definition "All Geoscience Reports and Publications document types"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Geoscience Reports and Publications document types"@en ;
+    skos:member
+        :mesa-journal ,
+        :geological-survey-geoscience-publication ,
+        :energy-geoscience-publication ;
+.
