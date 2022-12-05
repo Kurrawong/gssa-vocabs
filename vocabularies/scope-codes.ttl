@@ -22,7 +22,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme this-cs: ;
-    skos:prefLabel "application"@en ;
+    skos:prefLabel "Application"@en ;
     skos:topConceptOf this-cs: ;
 .
 
@@ -34,7 +34,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "information applies to the dataset"@en ;
     skos:inScheme this-cs: ;
-    skos:prefLabel "dataset"@en ;
+    skos:prefLabel "Dataset"@en ;
     skos:topConceptOf this-cs: ;
 .
 
@@ -46,7 +46,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "information applies to a document"@en ;
     skos:inScheme this-cs: ;
-    skos:prefLabel "document"@en ;
+    skos:prefLabel "Document"@en ;
     skos:topConceptOf this-cs: ;
 .
 
@@ -58,7 +58,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "information applies to a copy or imitation of an existing or hypothetical object"@en ;
     skos:inScheme this-cs: ;
-    skos:prefLabel "model"@en ;
+    skos:prefLabel "Model"@en ;
     skos:topConceptOf this-cs: ;
 .
 
@@ -70,7 +70,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "information applies to a capability which a service provider entity makes available to a service user entity through a set of interfaces that define a behaviour, such as a use case"@en ;
     skos:inScheme this-cs: ;
-    skos:prefLabel "service"@en ;
+    skos:prefLabel "Service"@en ;
     skos:topConceptOf this-cs: ;
 .
 
@@ -89,7 +89,7 @@ this-ns:map
     rdfs:isDefinedBy this-cs: ;
     skos:definition "information applies to a map"@en ;
     skos:inScheme this-cs: ;
-    skos:prefLabel "map"@en ;
+    skos:prefLabel "Map"@en ;
     skos:topConceptOf this-cs: ;
 .
 

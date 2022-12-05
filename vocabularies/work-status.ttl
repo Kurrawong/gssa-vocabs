@@ -114,5 +114,5 @@ cs:
         :planned ,
         :superseded ,
         :under-development ;
-    skos:prefLabel "Work Status"@en ;
+    skos:prefLabel "GSSA Work Status"@en ;
 .

@@ -16,3 +16,31 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 <https://linked.data.gov.au/def/gssa-doc-types>
     rdfs:label "GSSA Document Types" ;
 .
+
+<https://linked.data.gov.au/def/sa-tenament-types>
+    rdfs:label "SA Tenement Types" ;
+.
+
+<http://def.isotc211.org/iso19115/-1/2014/MaintenanceInformation/code/MD_MaintenanceFrequencyCode>
+    rdfs:label "Maintenance Frequency Codes" ;
+.
+
+<https://linked.data.gov.au/def/sa-geological-features>
+    rdfs:label "SA Geological Features" ;
+.
+
+<https://linked.data.gov.au/def/sa-commodity-codes>
+    rdfs:label "SA Commodity Codes" ;
+.
+
+<http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation/code/MD_TopicCategoryCode>
+    rdfs:label "Topic Category Codes" ;
+.
+
+<https://linked.data.gov.au/def/vocab-derivation-modes>
+    rdfs:label "Vocabulary Derivation Modes" ;
+.
+
+<https://linked.data.gov.au/def/gssa-work-status>
+    rdfs:label "GSSA Work Status" ;
+.
