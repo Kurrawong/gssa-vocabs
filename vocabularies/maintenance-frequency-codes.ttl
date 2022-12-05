@@ -1,4 +1,5 @@
 PREFIX : <http://def.isotc211.org/iso19115/-1/2014/MaintenanceInformation/code/MD_MaintenanceFrequencyCode/>
+PREFIX agldwgstatus: <https://linked.data.gov.au/def/reg-statuses/>
 PREFIX cs: <http://def.isotc211.org/iso19115/-1/2014/MaintenanceInformation/code/MD_MaintenanceFrequencyCode>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -205,6 +206,7 @@ cs:
     dcterms:provenance "Derived from TC211-produced RDF versions of the standard's UML"@en ;
     dcterms:publisher <http://def.isotc211.org/org/tc211> ;
     dcterms:source "http://standards.iso.org/iso/19115/-1/ed-1/en/"^^xsd:anyURI ;
+    reg:status agldwgstatus:stable ;
     skos:definition "An ISO standard's ConceptScheme"@en ;
     skos:hasTopConcept
         :annually ,

@@ -1,15 +1,18 @@
 PREFIX : <http://resource.geosciml.org/classifier/cgi/commodity-code/>
 PREFIX agldwgstatus: <https://linked.data.gov.au/def/reg-statuses/>
 PREFIX cs: <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX dt: <http://resource.geosciml.org/datatype/>
 PREFIX eucc: <http://inspire.ec.europa.eu/codelist/CommodityCodeValue/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX reg: <http://purl.org/linked-data/registry#>
 PREFIX sdo: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX status: <http://def.isotc211.org/iso19135/-1/2015/CoreModel/code/RE_ItemStatus/>
 PREFIX this-cs: <https://linked.data.gov.au/def/sa-commodity-codes>
+PREFIX vocmode: <https://linked.data.gov.au/def/vocab-derivation-modes/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
@@ -5238,6 +5241,10 @@ this-cs:
     dcterms:modified "2022-12-05"^^xsd:date ;
     dcterms:provenance "The EarthResourceML standard"@en ;
     dcterms:source "https://earthresourceml.org"^^xsd:anyURI ;
+    prov:qualifiedDerivation [
+        prov:entity <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
+        dcat:hadRole vocmode:extension ;
+    ] ;
     reg:status agldwgstatus:stable ;
     skos:changeNote
         "2016-07-18 OLR - Reformat SKOS for migration to new vocabulary server. No changes to concepts."@en ,

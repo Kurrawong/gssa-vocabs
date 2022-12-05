@@ -1,12 +1,15 @@
+PREFIX agldwgstatus: <https://linked.data.gov.au/def/reg-statuses/>
 PREFIX cs: <https://linked.data.gov.au/def/gssa-for-codes>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX for: <https://linked.data.gov.au/def/anzsrc-for/2020/>
 PREFIX gssafor: <https://linked.data.gov.au/def/gssa-for-codes/>
-PREFIX agldwgstatus: <https://linked.data.gov.au/def/reg-statuses/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX reg: <http://purl.org/linked-data/registry#>
 PREFIX sdo: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX vocmode: <https://linked.data.gov.au/def/vocab-derivation-modes/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 for:3103
@@ -1456,6 +1459,10 @@ cs:
     dcterms:publisher <https://linked.data.gov.au/org/gssa> ;
     dcterms:rights "© Department for Energy and Mining, 2022" ;
     dcterms:source "https://linked.data.gov.au/def/anzsrc-for"^^xsd:anyURI ;
+    prov:qualifiedDerivation [
+        prov:entity <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
+        dcat:hadRole vocmode:subsetting-and-extension ;
+    ] ;
     reg:status agldwgstatus:experimental ;
     skos:definition """Fields of Research Codes used as categories for data by the Geological Survey of South Australia.
         

@@ -1,6 +1,9 @@
 PREFIX : <http://def.isotc211.org/iso19115/-1/2014/CommonClasses/code/MD_ScopeCode/>
+PREFIX agldwgstatus: <https://linked.data.gov.au/def/reg-statuses/>
 PREFIX cs: <http://def.isotc211.org/iso19115/-1/2014/CommonClasses/code/MD_ScopeCode>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX reg: <http://purl.org/linked-data/registry#>
 PREFIX sdo: <https://schema.org/>
@@ -8,6 +11,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX status: <http://def.isotc211.org/iso19135/-1/2015/CoreModel/code/RE_ItemStatus/>
 PREFIX this-cs: <https://linked.data.gov.au/def/gssa-scope-codes>
 PREFIX this-ns: <https://linked.data.gov.au/def/gssa-scope-codes/>
+PREFIX vocmode: <https://linked.data.gov.au/def/vocab-derivation-modes/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :application
@@ -106,6 +110,11 @@ this-cs:
     dcterms:provenance "Derived from http://def.isotc211.org/iso19115/-1/2014/CommonClasses/code/MD_ScopeCode"@en ;
     dcterms:publisher <https://linked.data.gov.au/org/gssa> ;
     dcterms:source "http://def.isotc211.org/iso19115/-1/2014/CommonClasses/code/MD_ScopeCode"^^xsd:anyURI ;
+    prov:qualifiedDerivation [
+        prov:entity <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
+        dcat:hadRole vocmode:extension ;
+    ] ;
+    reg:status agldwgstatus:stable ;
     skos:definition "An subset and extended version of ISO19115-1's Scope Codes vocabulary"@en ;
     skos:hasTopConcept
         :application ,
