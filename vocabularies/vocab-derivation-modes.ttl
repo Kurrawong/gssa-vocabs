@@ -12,7 +12,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 :direct
     a skos:Concept ;
     dcterms:identifier "direct"^^xsd:token ;
-    dcterms:provenance "Created for the GSSA catalogue upgrade project, 2022"@en ;
+    dcterms:provenance "Created for the MER catalogue upgrade project, 2022"@en ;
     reg:status status:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Derivation without alteration"@en ;
@@ -24,7 +24,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 :extension
     a skos:Concept ;
     dcterms:identifier "extension"^^xsd:token ;
-    dcterms:provenance "Created for the GSSA catalogue upgrade project, 2022"@en ;
+    dcterms:provenance "Created for the MER catalogue upgrade project, 2022"@en ;
     reg:status status:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Derivation with extension"@en ;
@@ -37,7 +37,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 :relabelling
     a skos:Concept ;
     dcterms:identifier "relabelling"^^xsd:token ;
-    dcterms:provenance "Created for the GSSA catalogue upgrade project, 2022"@en ;
+    dcterms:provenance "Created for the MER catalogue upgrade project, 2022"@en ;
     reg:status status:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Derivation with relabelling"@en ;
@@ -50,7 +50,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 :subsetting
     a skos:Concept ;
     dcterms:identifier "subsetting"^^xsd:token ;
-    dcterms:provenance "Created for the GSSA catalogue upgrade project, 2022"@en ;
+    dcterms:provenance "Created for the MER catalogue upgrade project, 2022"@en ;
     reg:status status:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Derivation with subsetting"@en ;
@@ -63,7 +63,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 :subset-and-extension
     a skos:Concept ;
     dcterms:identifier "subset-and-extension"^^xsd:token ;
-    dcterms:provenance "Created for the GSSA catalogue upgrade project, 2022"@en ;
+    dcterms:provenance "Created for the MER catalogue upgrade project, 2022"@en ;
     reg:status status:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Derivation with subsetting and extension"@en ;
@@ -81,9 +81,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     sdo:url "https://kurrawong.net"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/org/gssa>
+<https://linked.data.gov.au/org/mer>
     a sdo:Organization ;
-    sdo:name "Geological Survey of South Australia" ;
+    sdo:name "SA Minerals and Energy Resources" ;
     sdo:url "https://www.energymining.sa.gov.au/industry/geological-survey"^^xsd:anyURI ;
 .
 
@@ -95,8 +95,8 @@ cs:
     dcterms:identifier "vocab-derivation-modes"^^xsd:token ;
     dcterms:issued "2022-12-05"^^xsd:date ;
     dcterms:modified "2022-12-05"^^xsd:date ;
-    dcterms:provenance "Created for the GSSA catalogue upgrade project, 2022"@en ;
-    dcterms:publisher <https://linked.data.gov.au/org/gssa> ;
+    dcterms:provenance "Created for the MER catalogue upgrade project, 2022"@en ;
+    dcterms:publisher <https://linked.data.gov.au/org/mer> ;
     reg:status agldwgstatus:stable ;
     skos:definition "The modes by which one vocabulary may derive from another"@en ;
     skos:hasTopConcept

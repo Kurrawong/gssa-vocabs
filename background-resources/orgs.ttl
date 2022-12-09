@@ -3,8 +3,8 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
 PREFIX sdo: <https://schema.org/>
 
 
-<https://linked.data.gov.au/org/gssa>
-    rdfs:label "Geological Survey of South Australia" ;
+<https://linked.data.gov.au/org/mer>
+    rdfs:label "South Australian Minerals and Energy Resources" ;
 .
 
 <http://def.isotc211.org/org/tc211>

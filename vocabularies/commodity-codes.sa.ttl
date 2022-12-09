@@ -5127,7 +5127,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 :shale
     a skos:Concept ;
     dcterms:identifier "shale"^^xsd:token ;
-    dcterms:provenance "Added by GSSA"@en ;
+    dcterms:provenance "Added by MER"@en ;
     reg:status status:addition ;
     rdfs:isDefinedBy this-cs: ;
     skos:definition "Shale"@en ;
@@ -5139,7 +5139,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 :heavy-mineral-sands
     a skos:Concept ;
     dcterms:identifier "heavy-mineral-sands"^^xsd:token ;
-    dcterms:provenance "Added by GSSA"@en ;
+    dcterms:provenance "Added by MER"@en ;
     reg:status status:addition ;
     rdfs:isDefinedBy this-cs: ;
     skos:definition "Heavy mineral sands"@en ;
@@ -5151,7 +5151,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 :meta-siltstone
     a skos:Concept ;
     dcterms:identifier "meta-siltstone"^^xsd:token ;
-    dcterms:provenance "Added by GSSA"@en ;
+    dcterms:provenance "Added by MER"@en ;
     reg:status status:addition ;
     rdfs:isDefinedBy this-cs: ;
     skos:definition "Meta-siltstone"@en ;
@@ -5163,7 +5163,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 :dolomite
     a skos:Concept ;
     dcterms:identifier "dolomite"^^xsd:token ;
-    dcterms:provenance "Added by GSSA"@en ;
+    dcterms:provenance "Added by MER"@en ;
     reg:status status:addition ;
     rdfs:isDefinedBy this-cs: ;
     skos:definition "Dolomite"@en ;
@@ -5175,7 +5175,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 :silica-sand
     a skos:Concept ;
     dcterms:identifier "silica-sand"^^xsd:token ;
-    dcterms:provenance "Added by GSSA"@en ;
+    dcterms:provenance "Added by MER"@en ;
     reg:status status:addition ;
     rdfs:isDefinedBy this-cs: ;
     skos:definition "Silica sand"@en ;
@@ -5187,7 +5187,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 :limesand
     a skos:Concept ;
     dcterms:identifier "limesand"^^xsd:token ;
-    dcterms:provenance "Added by GSSA"@en ;
+    dcterms:provenance "Added by MER"@en ;
     reg:status status:addition ;
     rdfs:isDefinedBy this-cs: ;
     skos:definition "Limesand"@en ;
@@ -5199,7 +5199,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 :critical-minerals
     a skos:Concept ;
     dcterms:identifier "critical-minerals"^^xsd:token ;
-    dcterms:provenance "Added by GSSA"@en ;
+    dcterms:provenance "Added by MER"@en ;
     reg:status status:addition ;
     rdfs:isDefinedBy this-cs: ;
     skos:definition "Critical minerals"@en ;
@@ -5211,7 +5211,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 :natural-gas
     a skos:Concept ;
     dcterms:identifier "natural-gas"^^xsd:token ;
-    dcterms:provenance "Added by GSSA"@en ;
+    dcterms:provenance "Added by MER"@en ;
     reg:status status:addition ;
     rdfs:isDefinedBy this-cs: ;
     skos:definition "Natural gas"@en ;
@@ -5222,7 +5222,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/org/gssa>
     a sdo:Organization ;
-    sdo:name "Geological Survey of South Australia" ;
+    sdo:name "South Australian Minerals and Energy Resources" ;
     sdo:url "https://www.energymining.sa.gov.au/industry/geological-survey"^^xsd:anyURI ;
 .
 
@@ -5251,7 +5251,7 @@ this-cs:
         "2020-06-23 NJC Added properties to ensure vocab matched Geoscience Australia's vocab profile (https://linked.data.gov.au/def/ga-skos-profile). Just annotation properties, no new content. Agents (creator/publisher) now not text but RDF resource. Dates (create/modified) derived from editorial notes & existing date properties. Simple definition for silica added as missing."@en ,
         "2020-06-26 NJC tidied some definitions with random characters at the end."@en ,
         "2021-12-17 R.Heaven BGS Added prefLabel and altLabel in non English languages, obtained from previously determined alignments between @en labels in CGI and Multi-lingual Thesaurus of Geosciences (MulTG) and Asian Multi-lingual Thesaurus of Geosciences (AMTG). Note that specific language packs are required to render the fonts.  Known issues: @lo and @fi labels were incorrectly encoded in the digitised source datasets; they have been included regardless of this in case the encoding can be corrected."@en ,
-        "2022-12-05 NJC Added GSSA additions"@en ;
+        "2022-12-05 NJC Added MER additions"@en ;
     skos:definition "Commodity codes for South Australia, which are mostly the CGI Commodity Codes with additions to meet categorisation obligations under the SA Mining Act"@en ;
     skos:hasTopConcept
         :direct-use-commodity ,

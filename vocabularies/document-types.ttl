@@ -1,6 +1,6 @@
-PREFIX : <https://linked.data.gov.au/def/gssa-doc-types/>
+PREFIX : <https://linked.data.gov.au/def/mer-doc-types/>
 PREFIX agldwgstatus: <https://linked.data.gov.au/def/reg-statuses/>
-PREFIX cs: <https://linked.data.gov.au/def/gssa-doc-types>
+PREFIX cs: <https://linked.data.gov.au/def/mer-doc-types>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX reg: <http://purl.org/linked-data/registry#>
@@ -12,16 +12,16 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 cs:
     a skos:ConceptScheme ;
     dcterms:created "2022-11-25"^^xsd:date ;
-    dcterms:creator <https://linked.data.gov.au/org/gssa> ;
-    dcterms:identifier "gssa-doc-types"^^xsd:token ;
+    dcterms:creator <https://linked.data.gov.au/org/mer> ;
+    dcterms:identifier "mer-doc-types"^^xsd:token ;
     dcterms:license <https://purl.org/NET/rdflicense/cc-by4.0> ;
     dcterms:modified "2022-11-25"^^xsd:date ;
     dcterms:issued "2022-11-25"^^xsd:date ;
-    dcterms:publisher <https://linked.data.gov.au/org/gssa> ;
+    dcterms:publisher <https://linked.data.gov.au/org/mer> ;
     dcterms:rights "© Department for Energy and Mining, 2022" ;
-    dcterms:provenance "This vocabulary was created in 2022 by and for the GSSA to support its data catalogue." ;
+    dcterms:provenance "This vocabulary was created in 2022 by and for the MER to support its data catalogue." ;
     reg:status agldwgstatus:stable ;
-    skos:definition """Types of document produced and used by the Geological Survey of South Australia"""@en ;
+    skos:definition """Types of document produced and used by South Australian Minerals and Energy Resources"""@en ;
     skos:hasTopConcept
         :departmental-publication ,
         :exploration-initiative ,
@@ -30,12 +30,12 @@ cs:
         :mineral-company-report ,
         :energy-company-report ,
         :geophysical-report ;
-    skos:prefLabel "GSSA Document Types"@en ;
+    skos:prefLabel "MER Document Types"@en ;
 .
 
-<https://linked.data.gov.au/org/gssa>
+<https://linked.data.gov.au/org/mer>
     a sdo:Organization ;
-    sdo:name "Geological Survey of South Australia" ;
+    sdo:name "South Australian Minerals and Energy Resources" ;
     sdo:url "https://www.energymining.sa.gov.au/industry/geological-survey"^^xsd:anyURI ;
 .
 
@@ -174,7 +174,7 @@ cs:
     dcterms:identifier "geological-survey-bulletin"^^xsd:token ;
     rdfs:isDefinedBy cs: ;
     skos:broader :departmental-publication ;
-    skos:definition "A detailed written study of a specialised geoscience subject produced by the Geological Survey of South Australia."@en ;
+    skos:definition "A detailed written study of a specialised geoscience subject produced by South Australian Minerals and Energy Resources."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "Geological Survey Bulletin"@en ;
 .
@@ -184,7 +184,7 @@ cs:
     dcterms:identifier "geological-survey-geoscience-publication"^^xsd:token ;
     rdfs:isDefinedBy cs: ;
     skos:broader :departmental-publication ;
-    skos:definition "A publication or technical report that has been produced by, for or in collaboration with the Geological Survey of South Australia."@en ;
+    skos:definition "A publication or technical report that has been produced by, for or in collaboration with South Australian Minerals and Energy Resources."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "Geological Survey Geoscience Publication"@en ;
 .

@@ -12,11 +12,11 @@ from rdflib.namespace import RDF, SKOS
 MAX_RETRIES = 3
 
 DB_TYPE = "fuseki"  # options: "fuseki" | "graphdb"
-BASE_DB_URI = "http://fusekicli.azurewebsites.net/gssa"
+BASE_DB_URI = "https://gssa-fuseki-linux-web-app.azurewebsites.net/gssa"
 WEBSITE_URL = "http://prezcli.azurewebsites.net"
 
-DB_USERNAME = os.environ.get("DB_USERNAME", None)
-DB_PASSWORD = os.environ.get("DB_PASSWORD", None)
+DB_USERNAME = os.environ.get("DB_USERNAME", "")
+DB_PASSWORD = os.environ.get("DB_PASSWORD", "")
 
 
 def add_vocabs(vocabs: List[Path], mappings: dict):

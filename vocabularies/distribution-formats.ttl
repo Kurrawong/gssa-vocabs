@@ -1,6 +1,6 @@
-PREFIX : <https://linked.data.gov.au/def/gssa-distribution-formats/>
+PREFIX : <https://linked.data.gov.au/def/mer-distribution-formats/>
 PREFIX agldwgstatus: <https://linked.data.gov.au/def/reg-statuses/>
-PREFIX cs: <https://linked.data.gov.au/def/gssa-distribution-formats>
+PREFIX cs: <https://linked.data.gov.au/def/mer-distribution-formats>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX reg: <http://purl.org/linked-data/registry#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -280,13 +280,13 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 cs:
     a skos:ConceptScheme ;
     dcterms:created "2022-12-05"^^xsd:date ;
-    dcterms:creator <https://linked.data.gov.au/org/gssa> ;
+    dcterms:creator <https://linked.data.gov.au/org/mer> ;
     dcterms:identifier "distribution-formats"^^xsd:token ;
     dcterms:issued "2022-12-05"^^xsd:date ;
     dcterms:license <https://purl.org/NET/rdflicense/cc-by4.0> ;
     dcterms:modified "2022-12-05"^^xsd:date ;
-    dcterms:provenance "Created by GSSA in 2022 for the catalogue update project"@en ;
-    dcterms:publisher <https://linked.data.gov.au/org/gssa> ;
+    dcterms:provenance "Created by MER in 2022 for the catalogue update project"@en ;
+    dcterms:publisher <https://linked.data.gov.au/org/mer> ;
     dcterms:rights "© Department for Energy and Mining, 2022"@en ;
     reg:status agldwgstatus:stable ;
     skos:definition "The format used for a distribution of a dataset"@en ;

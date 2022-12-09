@@ -1,8 +1,8 @@
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 
-<https://linked.data.gov.au/def/gssa-categories>
-    rdfs:label "Geological Survey of South Australia Categories" ;
+<https://linked.data.gov.au/def/mer-categories>
+    rdfs:label "South Australian Minerals and Energy Resources Categories" ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/commodity-code>
@@ -13,8 +13,8 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     rdfs:label "Fields of Research Codes, 2020" ;
 .
 
-<https://linked.data.gov.au/def/gssa-doc-types>
-    rdfs:label "GSSA Document Types" ;
+<https://linked.data.gov.au/def/mer-doc-types>
+    rdfs:label "MER Document Types" ;
 .
 
 <https://linked.data.gov.au/def/sa-tenament-types>
@@ -41,6 +41,6 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     rdfs:label "Vocabulary Derivation Modes" ;
 .
 
-<https://linked.data.gov.au/def/gssa-work-status>
-    rdfs:label "GSSA Work Status" ;
+<https://linked.data.gov.au/def/mer-work-status>
+    rdfs:label "MER Work Status" ;
 .

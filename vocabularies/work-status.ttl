@@ -1,6 +1,6 @@
-PREFIX : <https://linked.data.gov.au/def/gssa-work-status/>
+PREFIX : <https://linked.data.gov.au/def/mer-work-statuses/>
 PREFIX agldwgstatus: <https://linked.data.gov.au/def/reg-statuses/>
-PREFIX cs: <https://linked.data.gov.au/def/gssa-work-status>
+PREFIX cs: <https://linked.data.gov.au/def/mer-work-statuses>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX reg: <http://purl.org/linked-data/registry#>
@@ -86,7 +86,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:topConceptOf cs: ;
 .
 
-<https://linked.data.gov.au/org/gssa>
+<https://linked.data.gov.au/org/mer>
     a sdo:Organization ;
     sdo:name "Geological Survey of South Australia" ;
     sdo:url "https://www.energymining.sa.gov.au/industry/geological-survey"^^xsd:anyURI ;
@@ -95,13 +95,13 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 cs:
     a skos:ConceptScheme ;
     dcterms:created "2022-12-05"^^xsd:date ;
-    dcterms:creator <https://linked.data.gov.au/org/gssa> ;
+    dcterms:creator <https://linked.data.gov.au/org/mer> ;
     dcterms:identifier "work-status"^^xsd:token ;
     dcterms:issued "2022-12-05"^^xsd:date ;
     dcterms:license <https://purl.org/NET/rdflicense/cc-by4.0> ;
     dcterms:modified "2022-12-05"^^xsd:date ;
-    dcterms:provenance "Created by GSSA in 2022 for the catalogue update project"@en ;
-    dcterms:publisher <https://linked.data.gov.au/org/gssa> ;
+    dcterms:provenance "Created by MER in 2022 for the catalogue update project"@en ;
+    dcterms:publisher <https://linked.data.gov.au/org/mer> ;
     dcterms:rights "© Department for Energy and Mining, 2022"@en ;
     dcterms:source "http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation/code/MD_TopicCategoryCode"^^xsd:anyURI ;
     reg:status agldwgstatus:stable ;
@@ -114,5 +114,5 @@ cs:
         :planned ,
         :superseded ,
         :under-development ;
-    skos:prefLabel "GSSA Work Status"@en ;
+    skos:prefLabel "MER Work Status"@en ;
 .

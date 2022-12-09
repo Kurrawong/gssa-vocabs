@@ -9,7 +9,7 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
 PREFIX sdo: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX status: <http://def.isotc211.org/iso19135/-1/2015/CoreModel/code/RE_ItemStatus/>
-PREFIX this-cs: <https://linked.data.gov.au/def/gssa-topic-category>
+PREFIX this-cs: <https://linked.data.gov.au/def/mer-topic-categories>
 PREFIX vocmode: <https://linked.data.gov.au/def/vocab-derivation-modes/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
@@ -91,22 +91,22 @@ Examples: hydroelectricity, geothermal, solar and nuclear sources of energy, wat
     skos:topConceptOf this-cs: ;
 .
 
-<https://linked.data.gov.au/org/gssa>
+<https://linked.data.gov.au/org/mer>
     a sdo:Organization ;
-    sdo:name "Geological Survey of South Australia" ;
+    sdo:name "South Australian Minerals and Energy Resources" ;
     sdo:url "https://www.energymining.sa.gov.au/industry/geological-survey"^^xsd:anyURI ;
 .
 
 this-cs:
     a skos:ConceptScheme ;
     dcterms:created "2022-12-04"^^xsd:date ;
-    dcterms:creator <https://linked.data.gov.au/org/gssa> ;
+    dcterms:creator <https://linked.data.gov.au/org/mer> ;
     dcterms:identifier "topic-categories"^^xsd:token ;
     dcterms:issued "2022-12-04"^^xsd:date ;
     dcterms:license <https://purl.org/NET/rdflicense/cc-by4.0> ;
     dcterms:modified "2022-12-05"^^xsd:date ;
     dcterms:provenance "Derived from http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation/code/MD_TopicCategoryCode"@en ;
-    dcterms:publisher <https://linked.data.gov.au/org/gssa> ;
+    dcterms:publisher <https://linked.data.gov.au/org/mer> ;
     dcterms:rights "© Department for Energy and Mining, 2022"@en ;
     prov:qualifiedDerivation [
         prov:entity <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;

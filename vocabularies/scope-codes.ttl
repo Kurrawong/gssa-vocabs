@@ -9,8 +9,8 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
 PREFIX sdo: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX status: <http://def.isotc211.org/iso19135/-1/2015/CoreModel/code/RE_ItemStatus/>
-PREFIX this-cs: <https://linked.data.gov.au/def/gssa-scope-codes>
-PREFIX this-ns: <https://linked.data.gov.au/def/gssa-scope-codes/>
+PREFIX this-cs: <https://linked.data.gov.au/def/mer-scope-codes>
+PREFIX this-ns: <https://linked.data.gov.au/def/mer-scope-codes/>
 PREFIX vocmode: <https://linked.data.gov.au/def/vocab-derivation-modes/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
@@ -84,7 +84,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 this-ns:map
     a skos:Concept ;
     dcterms:identifier "map"^^xsd:token ;
-    dcterms:provenance "Created by GSSA"@en ;
+    dcterms:provenance "Created by MER"@en ;
     reg:status status:original ;
     rdfs:isDefinedBy this-cs: ;
     skos:definition "information applies to a map"@en ;
@@ -93,9 +93,9 @@ this-ns:map
     skos:topConceptOf this-cs: ;
 .
 
-<https://linked.data.gov.au/org/gssa>
+<https://linked.data.gov.au/org/mer>
     a sdo:Organization ;
-    sdo:name "Geological Survey of South Australia" ;
+    sdo:name "South Australian Minerals and Energy Resources" ;
     sdo:url "https://www.energymining.sa.gov.au/industry/geological-survey"^^xsd:anyURI ;
 .
 
@@ -103,12 +103,12 @@ this-cs:
     a skos:ConceptScheme ;
     dcterms:contributor <http://def.isotc211.org/org/tc211> ;
     dcterms:created "2022-11-25"^^xsd:date ;
-    dcterms:creator <https://linked.data.gov.au/org/gssa> ;
+    dcterms:creator <https://linked.data.gov.au/org/mer> ;
     dcterms:identifier "MD_ScopeCode"^^xsd:token ;
     dcterms:issued "2022-11-25"^^xsd:date ;
     dcterms:modified "2022-11-25"^^xsd:date ;
     dcterms:provenance "Derived from http://def.isotc211.org/iso19115/-1/2014/CommonClasses/code/MD_ScopeCode"@en ;
-    dcterms:publisher <https://linked.data.gov.au/org/gssa> ;
+    dcterms:publisher <https://linked.data.gov.au/org/mer> ;
     dcterms:source "http://def.isotc211.org/iso19115/-1/2014/CommonClasses/code/MD_ScopeCode"^^xsd:anyURI ;
     prov:qualifiedDerivation [
         prov:entity <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;

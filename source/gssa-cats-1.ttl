@@ -1,8 +1,8 @@
-PREFIX cs: <https://linked.data.gov.au/def/gssa-categories>
+PREFIX cs: <https://linked.data.gov.au/def/mer-categories>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX for: <https://linked.data.gov.au/def/anzsrc-for/2020/>
 PREFIX for-cs: <https://linked.data.gov.au/def/anzsrc-for/2020>
-PREFIX gssacat: <https://linked.data.gov.au/def/gssa-categories/>
+PREFIX mercat: <https://linked.data.gov.au/def/mer-categories/>
 PREFIX isostatus: <http://def.isotc211.org/iso19135/-1/2015/CoreModel/code/RE_ItemStatus/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX reg: <http://purl.org/linked-data/registry#>
@@ -20,23 +20,23 @@ for:37 a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Earth Sciences"@en ;
 for:3701 a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Atmospheric Sciences"@en ; skos:broader for:37 .
 for:3703 a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Geochemistry"@en ; skos:broader for:37 .
 for:370301 a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Exploration Geochemistry"@en ; skos:broader for:3703 .
-gssacat:biogeochemistry a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Biogeochemistry"@en ; skos:broader for:3703 .
-gssacat:hydrogeochemistry a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Hydrogeochemistry"@en ; skos:broader for:3703 .
+mercat:biogeochemistry a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Biogeochemistry"@en ; skos:broader for:3703 .
+mercat:hydrogeochemistry a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Hydrogeochemistry"@en ; skos:broader for:3703 .
 for:370302 a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Inorganic Geochemistry"@en ; skos:broader for:3703 .
-gssacat:lithogeochemistry a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Lithogeochemistry"@en ; skos:broader for:370302 .
+mercat:lithogeochemistry a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Lithogeochemistry"@en ; skos:broader for:370302 .
 for:370303 a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Isotope Geochemistry"@en ; skos:broader for:3703 .
 for:370304 a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Organic Geochemistry"@en ; skos:broader for:3703 .
 for:3705 a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Geology"@en ; skos:broader for:37 .
-gssacat:basement-geology a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Basement Geology"@en ; skos:broader for:3705 .
-gssacat:basin-analysis a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Basin Analysis"@en ; skos:broader for:3705 .
-gssacat:biogeology a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Biogeology"@en ; skos:broader for:3705 .
-gssacat:carbon-capture-and-storage a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Carbon Capture And Storage"@en ; skos:broader for:3705 .
-gssacat:extraterrestrial-geology a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Extraterrestrial Geology"@en ; skos:broader for:3705 .
+mercat:basement-geology a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Basement Geology"@en ; skos:broader for:3705 .
+mercat:basin-analysis a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Basin Analysis"@en ; skos:broader for:3705 .
+mercat:biogeology a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Biogeology"@en ; skos:broader for:3705 .
+mercat:carbon-capture-and-storage a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Carbon Capture And Storage"@en ; skos:broader for:3705 .
+mercat:extraterrestrial-geology a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Extraterrestrial Geology"@en ; skos:broader for:3705 .
 for:370502 a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Geochronology"@en ; skos:broader for:3705 .
-gssacat:historical-geology a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Historical Geology"@en ; skos:broader for:3705 .
+mercat:historical-geology a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Historical Geology"@en ; skos:broader for:3705 .
 for:370504 a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Marine Geoscience"@en ; skos:broader for:3705 .
-gssacat:mineral-system-geology a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Mineral System Geology"@en ; skos:broader for:3705 .
-gssacat:petroleum-system-geology a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Petroleum System Geology"@en ; skos:broader for:3705 .
+mercat:mineral-system-geology a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Mineral System Geology"@en ; skos:broader for:3705 .
+mercat:petroleum-system-geology a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Petroleum System Geology"@en ; skos:broader for:3705 .
 for:370505 a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Mineralogy And Crystallography"@en ; skos:broader for:3705 .
 for:370506 a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Paleontology"@en ; skos:broader for:3705 .
 gssacat:palynology a skos:Concept ; skos:inScheme cs: ; skos:prefLabel "Palynology"@en ; skos:broader for:370506 .

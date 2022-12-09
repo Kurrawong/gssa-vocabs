@@ -1,6 +1,6 @@
-PREFIX cs: <https://linked.data.gov.au/def/gssa-categories>
+PREFIX cs: <https://linked.data.gov.au/def/mer-categories>
 PREFIX for: <https://linked.data.gov.au/def/anzsrc-for/2020/>
-PREFIX gssacat: <https://linked.data.gov.au/def/gssa-categories/>
+PREFIX mercat: <https://linked.data.gov.au/def/mer-categories/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 
 for:3103
@@ -54,7 +54,7 @@ for:370502
 
 for:370503
     a skos:Concept ;
-    skos:broader gssacat:petrology ;
+    skos:broader mercat:petrology ;
     skos:inScheme cs: ;
     skos:prefLabel "Igneous And Metamorphic Petrology"@en ;
 .
@@ -117,21 +117,21 @@ for:370604
 
 for:370902
     a skos:Concept ;
-    skos:broader gssacat:physical-geography ;
+    skos:broader mercat:physical-geography ;
     skos:inScheme cs: ;
     skos:prefLabel "Glaciology"@en ;
 .
 
 for:370903
     a skos:Concept ;
-    skos:broader gssacat:physical-geography ;
+    skos:broader mercat:physical-geography ;
     skos:inScheme cs: ;
     skos:prefLabel "Natural Hazards"@en ;
 .
 
 for:370905
     a skos:Concept ;
-    skos:broader gssacat:physical-geography ;
+    skos:broader mercat:physical-geography ;
     skos:inScheme cs: ;
     skos:prefLabel "Quaternary Environments"@en ;
 .
@@ -180,84 +180,84 @@ for:401306
 
 for:401901
     a skos:Concept ;
-    skos:broader gssacat:resources-engineering ;
+    skos:broader mercat:resources-engineering ;
     skos:inScheme cs: ;
     skos:prefLabel "Electrometallurgy"@en ;
 .
 
 for:401902
     a skos:Concept ;
-    skos:broader gssacat:resources-engineering ;
+    skos:broader mercat:resources-engineering ;
     skos:inScheme cs: ;
     skos:prefLabel "Geomechanics And Resources Geotechnical Engineering"@en ;
 .
 
 for:401903
     a skos:Concept ;
-    skos:broader gssacat:resources-engineering ;
+    skos:broader mercat:resources-engineering ;
     skos:inScheme cs: ;
     skos:prefLabel "Hydrometallurgy"@en ;
 .
 
 for:401904
     a skos:Concept ;
-    skos:broader gssacat:resources-engineering ;
+    skos:broader mercat:resources-engineering ;
     skos:inScheme cs: ;
     skos:prefLabel "Mineral Processing/Beneficiation"@en ;
 .
 
 for:401905
     a skos:Concept ;
-    skos:broader gssacat:resources-engineering ;
+    skos:broader mercat:resources-engineering ;
     skos:inScheme cs: ;
     skos:prefLabel "Mining Engineering"@en ;
 .
 
 for:401907
     a skos:Concept ;
-    skos:broader gssacat:resources-engineering ;
+    skos:broader mercat:resources-engineering ;
     skos:inScheme cs: ;
     skos:prefLabel "Petroleum And Reservoir Engineering"@en ;
 .
 
 for:401908
     a skos:Concept ;
-    skos:broader gssacat:resources-engineering ;
+    skos:broader mercat:resources-engineering ;
     skos:inScheme cs: ;
     skos:prefLabel "Pyrometallurgy"@en ;
 .
 
 for:410101
     a skos:Concept ;
-    skos:broader gssacat:soil-science ;
+    skos:broader mercat:soil-science ;
     skos:inScheme cs: ;
     skos:prefLabel "Carbon Sequestration Science"@en ;
 .
 
 for:4104
     a skos:Concept ;
-    skos:broader gssacat:environmental-science-and-management ;
+    skos:broader mercat:environmental-science-and-management ;
     skos:inScheme cs: ;
     skos:prefLabel "Environmental Management"@en ;
 .
 
 for:410406
     a skos:Concept ;
-    skos:broader gssacat:environmental-science-and-management ;
+    skos:broader mercat:environmental-science-and-management ;
     skos:inScheme cs: ;
     skos:prefLabel "Natural Resource Management"@en ;
 .
 
 for:410603
     a skos:Concept ;
-    skos:broader gssacat:soil-science ;
+    skos:broader mercat:soil-science ;
     skos:inScheme cs: ;
     skos:prefLabel "Soil Biology"@en ;
 .
 
 for:410605
     a skos:Concept ;
-    skos:broader gssacat:soil-science ;
+    skos:broader mercat:soil-science ;
     skos:inScheme cs: ;
     skos:prefLabel "Soil Physics"@en ;
 .
@@ -278,14 +278,14 @@ for:4407
 
 for:460306
     a skos:Concept ;
-    skos:broader gssacat:artificial-intelligence-and-image-processing ;
+    skos:broader mercat:artificial-intelligence-and-image-processing ;
     skos:inScheme cs: ;
     skos:prefLabel "Image Processing"@en ;
 .
 
 for:460702
     a skos:Concept ;
-    skos:broader gssacat:artificial-intelligence-and-image-processing ;
+    skos:broader mercat:artificial-intelligence-and-image-processing ;
     skos:inScheme cs: ;
     skos:prefLabel "Computer Graphics"@en ;
 .

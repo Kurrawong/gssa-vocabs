@@ -1602,13 +1602,13 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 cs:
     a skos:ConceptScheme ;
     dcterms:created "2022-12-02"^^xsd:date ;
-    dcterms:creator <https://linked.data.gov.au/org/gssa> ;
+    dcterms:creator <https://linked.data.gov.au/org/mer> ;
     dcterms:identifier "sa-geological-features"^^xsd:token ;
     dcterms:issued "2022-12-02"^^xsd:date ;
     dcterms:license <https://purl.org/NET/rdflicense/cc-by4.0> ;
     dcterms:modified "2022-12-02"^^xsd:date ;
-    dcterms:provenance "This vocabulary was created in 2022 by and for the GSSA to support its data catalogue."@en ;
-    dcterms:publisher <https://linked.data.gov.au/org/gssa> ;
+    dcterms:provenance "This vocabulary was created in 2022 by and for the MER to support its data catalogue."@en ;
+    dcterms:publisher <https://linked.data.gov.au/org/mer> ;
     dcterms:rights "© Department for Energy and Mining, 2022"@en ;
     reg:status agldwgstatus:stable ;
     skos:definition "Individual geological features in South Australia"@en ;

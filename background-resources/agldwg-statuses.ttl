@@ -12,7 +12,7 @@
 
 
 cs: 
-    a owl:Ontology , skos:ConceptScheme;
+    a owl:Ontology ;
     skos:prefLabel "Registry Status Vocabulary"@en ;
     skos:definition """This vocabulary is a re-published and only marginally changed version of the Registry Ontology's (http://epimorphics.com/public/vocabulary/Registry.html) *Status* vocabulary (online in RDF: http://purl.org/linked-data/registry). The only real change to content has been the addition of the term `unstable`. This re-publication has been performed to allow the IRIs of each vocab term (skos:Concept) to resolve to both human-readable and machine-readable forms of content (HTML and RDF), using HTTP content negotiation.
 
