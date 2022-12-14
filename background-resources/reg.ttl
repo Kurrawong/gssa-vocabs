@@ -202,7 +202,7 @@ reg:Status    a owl:Class;
     rdfs:subClassOf skos:Concept;
     .
 
-reg:StatusScheme a skos:ConceptScheme;
+reg:StatusScheme
     rdfs:label "Status Scheme"@en;
     rdfs:comment "Concept scheme containing registry status codes"@en;
     .
