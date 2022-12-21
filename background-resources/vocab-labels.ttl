@@ -5,7 +5,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     rdfs:label "South Australian Minerals and Energy Resources Categories" ;
 .
 
-<http://resource.geosciml.org/classifier/cgi/commodity-code>
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code>
     rdfs:label "CGI Commodity Codes" ;
 .
 
