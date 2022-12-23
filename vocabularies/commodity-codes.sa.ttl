@@ -12,7 +12,6 @@ PREFIX sdo: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX status: <http://def.isotc211.org/iso19135/-1/2015/CoreModel/code/RE_ItemStatus/>
 PREFIX this-cs: <https://linked.data.gov.au/def/sa-commodity-codes>
-PREFIX vocmode: <https://linked.data.gov.au/def/vocab-derivation-modes/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
@@ -5220,7 +5219,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:topConceptOf this-cs: ;
 .
 
-<https://linked.data.gov.au/org/gssa>
+<https://linked.data.gov.au/org/mer>
     a sdo:Organization ;
     sdo:name "South Australian Minerals and Energy Resources" ;
     sdo:url "https://www.energymining.sa.gov.au/industry/geological-survey"^^xsd:anyURI ;
@@ -5235,7 +5234,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 this-cs:
     a skos:ConceptScheme ;
     dcterms:identifier "commodity-codes"^^xsd:token ;
-    dcterms:contributor <https://linked.data.gov.au/org/gssa> ;
+    dcterms:contributor <https://linked.data.gov.au/org/mer> ;
     dcterms:created "2022-12-05"^^xsd:date ;
     dcterms:creator <https://linked.data.gov.au/org/cgi-gtwg> ;
     dcterms:modified "2022-12-05"^^xsd:date ;
@@ -5243,7 +5242,7 @@ this-cs:
     dcterms:source "https://earthresourceml.org"^^xsd:anyURI ;
     prov:qualifiedDerivation [
         prov:entity <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
-        dcat:hadRole vocmode:extension ;
+        dcat:hadRole <https://linked.data.gov.au/def/vocab-derivation-modes/extension> ;
     ] ;
     reg:status agldwgstatus:stable ;
     skos:changeNote

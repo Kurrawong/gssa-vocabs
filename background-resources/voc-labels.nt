@@ -1,0 +1,771 @@
+<http://resource.geosciml.org/classifier/cgi/commodity-code/anthracite> <http://www.w3.org/2000/01/rdf-schema#label> "anthracite" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/malachite> <http://www.w3.org/2000/01/rdf-schema#label> "malachite" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/quartz-gemstone> <http://www.w3.org/2000/01/rdf-schema#label> "quartz-gemstone" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/sylvite> <http://www.w3.org/2000/01/rdf-schema#label> "sylvite" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/cerium> <http://www.w3.org/2000/01/rdf-schema#label> "cerium" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/aluminium> <http://www.w3.org/2000/01/rdf-schema#label> "aluminium" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/olivine-gemstone> <http://www.w3.org/2000/01/rdf-schema#label> "olivine-gemstone" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/sodalite> <http://www.w3.org/2000/01/rdf-schema#label> "sodalite" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/liquid-hydrocarbons> <http://www.w3.org/2000/01/rdf-schema#label> "liquid hydrocarbons" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/sapphire> <http://www.w3.org/2000/01/rdf-schema#label> "sapphire" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/recycled-aggregate> <http://www.w3.org/2000/01/rdf-schema#label> "recycled aggregate" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/dumortierite> <http://www.w3.org/2000/01/rdf-schema#label> "dumortierite" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/diamond-gemstone> <http://www.w3.org/2000/01/rdf-schema#label> "diamond-gemstone" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/metalloid> <http://www.w3.org/2000/01/rdf-schema#label> "metalloid" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/hematite-gemstone> <http://www.w3.org/2000/01/rdf-schema#label> "hematite-gemstone" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/obsidian> <http://www.w3.org/2000/01/rdf-schema#label> "obsidian" .
+<https://linked.data.gov.au/def/sa-commodity-codes> <http://www.w3.org/2000/01/rdf-schema#label> "South Australian Commodity Codes" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/jade> <http://www.w3.org/2000/01/rdf-schema#label> "jade" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/smokey-quartz> <http://www.w3.org/2000/01/rdf-schema#label> "smokey quartz" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/chrysotile> <http://www.w3.org/2000/01/rdf-schema#label> "chrysotile" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/chrysoberyl> <http://www.w3.org/2000/01/rdf-schema#label> "chrysoberyl" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/corundum> <http://www.w3.org/2000/01/rdf-schema#label> "corundum" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/chromite> <http://www.w3.org/2000/01/rdf-schema#label> "chromite" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/iron> <http://www.w3.org/2000/01/rdf-schema#label> "iron" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/borate> <http://www.w3.org/2000/01/rdf-schema#label> "borate" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/magnetite-ore> <http://www.w3.org/2000/01/rdf-schema#label> "magnetite ore" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/epsomite> <http://www.w3.org/2000/01/rdf-schema#label> "epsomite" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/osmium> <http://www.w3.org/2000/01/rdf-schema#label> "osmium" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/bismuth> <http://www.w3.org/2000/01/rdf-schema#label> "bismuth" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/zircon-gemstone> <http://www.w3.org/2000/01/rdf-schema#label> "zircon-gemstone" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/tantalum-pentoxide> <http://www.w3.org/2000/01/rdf-schema#label> "tantalum pentoxide" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/metal> <http://www.w3.org/2000/01/rdf-schema#label> "metal" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/sandstone> <http://www.w3.org/2000/01/rdf-schema#label> "sandstone" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/scapolite> <http://www.w3.org/2000/01/rdf-schema#label> "scapolite" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/vanadium-pentoxide> <http://www.w3.org/2000/01/rdf-schema#label> "vanadium pentoxide" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/salt> <http://www.w3.org/2000/01/rdf-schema#label> "salt" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/bauxite> <http://www.w3.org/2000/01/rdf-schema#label> "bauxite" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/diatomite> <http://www.w3.org/2000/01/rdf-schema#label> "diatomite" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/silica-gemstone> <http://www.w3.org/2000/01/rdf-schema#label> "silica-gemstone" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/diamond> <http://www.w3.org/2000/01/rdf-schema#label> "diamond" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/manganese-ore> <http://www.w3.org/2000/01/rdf-schema#label> "manganese ore" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/thenardite> <http://www.w3.org/2000/01/rdf-schema#label> "thenardite" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/sinhalite> <http://www.w3.org/2000/01/rdf-schema#label> "sinhalite" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/sapphirine> <http://www.w3.org/2000/01/rdf-schema#label> "sapphirine" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/natural-secondary-aggregate> <http://www.w3.org/2000/01/rdf-schema#label> "natural secondary aggregate" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/beryl> <http://www.w3.org/2000/01/rdf-schema#label> "beryl" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/apatite> <http://www.w3.org/2000/01/rdf-schema#label> "apatite" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/cassiterite-gemstone> <http://www.w3.org/2000/01/rdf-schema#label> "cassiterite-gemstone" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/critical-minerals> <http://www.w3.org/2000/01/rdf-schema#label> "Critical minerals" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/kyanite> <http://www.w3.org/2000/01/rdf-schema#label> "kyanite" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/xenotime-gemstone> <http://www.w3.org/2000/01/rdf-schema#label> "xenotime-gemstone" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/garnet-gemstone> <http://www.w3.org/2000/01/rdf-schema#label> "garnet-gemstone" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/gypsum> <http://www.w3.org/2000/01/rdf-schema#label> "gypsum" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/gas-hydrate> <http://www.w3.org/2000/01/rdf-schema#label> "gas hydrate" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/evaporite> <http://www.w3.org/2000/01/rdf-schema#label> "evaporite" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/rutile> <http://www.w3.org/2000/01/rdf-schema#label> "rutile" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/kornerupine> <http://www.w3.org/2000/01/rdf-schema#label> "kornerupine" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/rhenium> <http://www.w3.org/2000/01/rdf-schema#label> "rhenium" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/dimension-stone> <http://www.w3.org/2000/01/rdf-schema#label> "dimension stone" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/wollastonite> <http://www.w3.org/2000/01/rdf-schema#label> "wollastonite" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/heavy-rare-earth-oxide> <http://www.w3.org/2000/01/rdf-schema#label> "heavy rare earth oxide" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/garnet> <http://www.w3.org/2000/01/rdf-schema#label> "garnet" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/tin> <http://www.w3.org/2000/01/rdf-schema#label> "tin" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/titanium> <http://www.w3.org/2000/01/rdf-schema#label> "titanium" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/silicon> <http://www.w3.org/2000/01/rdf-schema#label> "silicon" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/nitrate> <http://www.w3.org/2000/01/rdf-schema#label> "nitrate" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/soda-ash> <http://www.w3.org/2000/01/rdf-schema#label> "soda ash" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/silica> <http://www.w3.org/2000/01/rdf-schema#label> "silica" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/zircon> <http://www.w3.org/2000/01/rdf-schema#label> "zircon" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/bromine> <http://www.w3.org/2000/01/rdf-schema#label> "bromine" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/chemical-compound-product> <http://www.w3.org/2000/01/rdf-schema#label> "chemical compound product" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/kyanite-gemstone> <http://www.w3.org/2000/01/rdf-schema#label> "kyanite-gemstone" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/asbestos> <http://www.w3.org/2000/01/rdf-schema#label> "asbestos" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/spongolite> <http://www.w3.org/2000/01/rdf-schema#label> "spongolite" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/palladium> <http://www.w3.org/2000/01/rdf-schema#label> "palladium" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/iridium> <http://www.w3.org/2000/01/rdf-schema#label> "iridium" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/euclase> <http://www.w3.org/2000/01/rdf-schema#label> "euclase" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/arsenic> <http://www.w3.org/2000/01/rdf-schema#label> "arsenic" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/prehnite> <http://www.w3.org/2000/01/rdf-schema#label> "prehnite" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/zirconium> <http://www.w3.org/2000/01/rdf-schema#label> "zirconium" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/germanium> <http://www.w3.org/2000/01/rdf-schema#label> "germanium" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/cadmium> <http://www.w3.org/2000/01/rdf-schema#label> "cadmium" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/talc> <http://www.w3.org/2000/01/rdf-schema#label> "talc" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/light-rare-earth-oxide> <http://www.w3.org/2000/01/rdf-schema#label> "light rare earth oxide" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/laterite> <http://www.w3.org/2000/01/rdf-schema#label> "laterite" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/bentonite> <http://www.w3.org/2000/01/rdf-schema#label> "bentonite" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/magnesium> <http://www.w3.org/2000/01/rdf-schema#label> "magnesium" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/potash> <http://www.w3.org/2000/01/rdf-schema#label> "potash" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/oil-shale> <http://www.w3.org/2000/01/rdf-schema#label> "oil shale" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/antimony> <http://www.w3.org/2000/01/rdf-schema#label> "antimony" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/gemstones> <http://www.w3.org/2000/01/rdf-schema#label> "gemstone" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/baryte> <http://www.w3.org/2000/01/rdf-schema#label> "baryte" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/peat> <http://www.w3.org/2000/01/rdf-schema#label> "peat" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/ytterbium> <http://www.w3.org/2000/01/rdf-schema#label> "ytterbium" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/asphalt> <http://www.w3.org/2000/01/rdf-schema#label> "asphalt" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/zirconia> <http://www.w3.org/2000/01/rdf-schema#label> "zirconia" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/oil> <http://www.w3.org/2000/01/rdf-schema#label> "oil" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/slate> <http://www.w3.org/2000/01/rdf-schema#label> "slate" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/asbestos-amphibole> <http://www.w3.org/2000/01/rdf-schema#label> "asbestos-amphibole" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/radium> <http://www.w3.org/2000/01/rdf-schema#label> "radium" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/iodine> <http://www.w3.org/2000/01/rdf-schema#label> "iodine" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/pumice> <http://www.w3.org/2000/01/rdf-schema#label> "pumice" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/indium> <http://www.w3.org/2000/01/rdf-schema#label> "indium" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/chrysoprase> <http://www.w3.org/2000/01/rdf-schema#label> "chrysoprase" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/tungsten> <http://www.w3.org/2000/01/rdf-schema#label> "tungsten" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/uranium-oxide> <http://www.w3.org/2000/01/rdf-schema#label> "uranium oxide" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/thorium> <http://www.w3.org/2000/01/rdf-schema#label> "thorium" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/chert> <http://www.w3.org/2000/01/rdf-schema#label> "chert" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/yttrium-oxide> <http://www.w3.org/2000/01/rdf-schema#label> "yttrium oxide" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/emerald> <http://www.w3.org/2000/01/rdf-schema#label> "emerald" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/asbestos-serpentine> <http://www.w3.org/2000/01/rdf-schema#label> "asbestos-serpentine" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/vermiculite> <http://www.w3.org/2000/01/rdf-schema#label> "vermiculite" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/direct-shipping-ore> <http://www.w3.org/2000/01/rdf-schema#label> "direct shipping ore" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/produced-commodity> <http://www.w3.org/2000/01/rdf-schema#label> "produced commodity" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/base-metal> <http://www.w3.org/2000/01/rdf-schema#label> "base metal" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/iron-ore> <http://www.w3.org/2000/01/rdf-schema#label> "iron ore" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/tar-sand> <http://www.w3.org/2000/01/rdf-schema#label> "tar sand" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/saponite> <http://www.w3.org/2000/01/rdf-schema#label> "saponite" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/alumina> <http://www.w3.org/2000/01/rdf-schema#label> "alumina" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/vesuvianite> <http://www.w3.org/2000/01/rdf-schema#label> "vesuvianite" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/phenakite> <http://www.w3.org/2000/01/rdf-schema#label> "phenakite" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/pozzolan> <http://www.w3.org/2000/01/rdf-schema#label> "pozzolan" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/variscite> <http://www.w3.org/2000/01/rdf-schema#label> "variscite" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/graphite> <http://www.w3.org/2000/01/rdf-schema#label> "graphite" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/ochre> <http://www.w3.org/2000/01/rdf-schema#label> "ochre" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/zinc> <http://www.w3.org/2000/01/rdf-schema#label> "zinc" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/moss-agate> <http://www.w3.org/2000/01/rdf-schema#label> "moss agate" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/pyrophyllite> <http://www.w3.org/2000/01/rdf-schema#label> "pyrophyllite" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/alunite> <http://www.w3.org/2000/01/rdf-schema#label> "alunite" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/industrial-rock> <http://www.w3.org/2000/01/rdf-schema#label> "industrial rock" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/scandium> <http://www.w3.org/2000/01/rdf-schema#label> "scandium" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/thulium> <http://www.w3.org/2000/01/rdf-schema#label> "thulium" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/magnesite> <http://www.w3.org/2000/01/rdf-schema#label> "magnesite" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/yttrium> <http://www.w3.org/2000/01/rdf-schema#label> "yttrium" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/primary-aggregate> <http://www.w3.org/2000/01/rdf-schema#label> "primary aggregate" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/cobalt> <http://www.w3.org/2000/01/rdf-schema#label> "cobalt" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/sillimanite> <http://www.w3.org/2000/01/rdf-schema#label> "sillimanite" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/clay> <http://www.w3.org/2000/01/rdf-schema#label> "clay" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/gold> <http://www.w3.org/2000/01/rdf-schema#label> "gold" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/platinum> <http://www.w3.org/2000/01/rdf-schema#label> "platinum" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/non-metal> <http://www.w3.org/2000/01/rdf-schema#label> "non metal" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/phosphorous-pentoxide> <http://www.w3.org/2000/01/rdf-schema#label> "phosphorous pentoxide" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/limestone> <http://www.w3.org/2000/01/rdf-schema#label> "limestone" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/quartz> <http://www.w3.org/2000/01/rdf-schema#label> "quartz" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/heliodor> <http://www.w3.org/2000/01/rdf-schema#label> "heliodor" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/miscellaneous-dimension-stones> <http://www.w3.org/2000/01/rdf-schema#label> "miscellaneous dimension stones" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/amber> <http://www.w3.org/2000/01/rdf-schema#label> "amber" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/neodymium> <http://www.w3.org/2000/01/rdf-schema#label> "neodymium" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/zeolite> <http://www.w3.org/2000/01/rdf-schema#label> "zeolite" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/aggregate> <http://www.w3.org/2000/01/rdf-schema#label> "aggregate" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/ferrous-metal> <http://www.w3.org/2000/01/rdf-schema#label> "ferrous metal" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/gadolinium> <http://www.w3.org/2000/01/rdf-schema#label> "gadolinium" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/lree> <http://www.w3.org/2000/01/rdf-schema#label> "LREE" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/precious-metal> <http://www.w3.org/2000/01/rdf-schema#label> "precious metal" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/silica-sand> <http://www.w3.org/2000/01/rdf-schema#label> "Silica sand" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/selenium> <http://www.w3.org/2000/01/rdf-schema#label> "selenium" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/niobium> <http://www.w3.org/2000/01/rdf-schema#label> "niobium" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/samarium> <http://www.w3.org/2000/01/rdf-schema#label> "samarium" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/spinel-gemstone> <http://www.w3.org/2000/01/rdf-schema#label> "spinel-gemstone" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/direct-use-commodity> <http://www.w3.org/2000/01/rdf-schema#label> "direct use commodity" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/dysprosium> <http://www.w3.org/2000/01/rdf-schema#label> "dysprosium" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/natural-gas> <http://www.w3.org/2000/01/rdf-schema#label> "Natural gas" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/europium> <http://www.w3.org/2000/01/rdf-schema#label> "europium" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/magnetite> <http://www.w3.org/2000/01/rdf-schema#label> "magnetite" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/aluminosilicate> <http://www.w3.org/2000/01/rdf-schema#label> "aluminosilicate" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/andalusite> <http://www.w3.org/2000/01/rdf-schema#label> "andalusite" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/carnelian> <http://www.w3.org/2000/01/rdf-schema#label> "carnelian" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/coal> <http://www.w3.org/2000/01/rdf-schema#label> "coal" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/organic-material> <http://www.w3.org/2000/01/rdf-schema#label> "organic material" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/tanzanite> <http://www.w3.org/2000/01/rdf-schema#label> "tanzanite" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/black-coal> <http://www.w3.org/2000/01/rdf-schema#label> "black coal" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/anhydrite> <http://www.w3.org/2000/01/rdf-schema#label> "anhydrite" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/spectrolite> <http://www.w3.org/2000/01/rdf-schema#label> "spectrolite" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/rubidium> <http://www.w3.org/2000/01/rdf-schema#label> "rubidium" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/turquoise> <http://www.w3.org/2000/01/rdf-schema#label> "turquoise" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/chalcedony> <http://www.w3.org/2000/01/rdf-schema#label> "chalcedony" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/industrial-material> <http://www.w3.org/2000/01/rdf-schema#label> "industrial material" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/apatite-gemstone> <http://www.w3.org/2000/01/rdf-schema#label> "apatite-gemstone" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/silver> <http://www.w3.org/2000/01/rdf-schema#label> "silver" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/feldspar> <http://www.w3.org/2000/01/rdf-schema#label> "feldspar" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/hematite> <http://www.w3.org/2000/01/rdf-schema#label> "hematite" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/crushed-rock> <http://www.w3.org/2000/01/rdf-schema#label> "crushed rock" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/crocidolite> <http://www.w3.org/2000/01/rdf-schema#label> "crocidolite" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/ruthenium> <http://www.w3.org/2000/01/rdf-schema#label> "ruthenium" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/halloysite> <http://www.w3.org/2000/01/rdf-schema#label> "halloysite" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/coal-bed-methane> <http://www.w3.org/2000/01/rdf-schema#label> "coal bed methane" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/sand> <http://www.w3.org/2000/01/rdf-schema#label> "sand" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/chrome> <http://www.w3.org/2000/01/rdf-schema#label> "chrome" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/industrial-mineral> <http://www.w3.org/2000/01/rdf-schema#label> "industrial mineral" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/rare-earth-oxide> <http://www.w3.org/2000/01/rdf-schema#label> "rare earth oxide" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/praseodymium> <http://www.w3.org/2000/01/rdf-schema#label> "praseodymium" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/granite> <http://www.w3.org/2000/01/rdf-schema#label> "granite" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/meta-siltstone> <http://www.w3.org/2000/01/rdf-schema#label> "Meta-siltstone" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/lead> <http://www.w3.org/2000/01/rdf-schema#label> "lead" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/anthophyllite> <http://www.w3.org/2000/01/rdf-schema#label> "anthophyllite" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/strontium> <http://www.w3.org/2000/01/rdf-schema#label> "strontium" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/reservoir-gas> <http://www.w3.org/2000/01/rdf-schema#label> "reservoir gas" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/perlite> <http://www.w3.org/2000/01/rdf-schema#label> "perlite" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/sand-and-gravel> <http://www.w3.org/2000/01/rdf-schema#label> "sand and gravel" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/olivine> <http://www.w3.org/2000/01/rdf-schema#label> "olivine" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/riprap> <http://www.w3.org/2000/01/rdf-schema#label> "riprap" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/cesium> <http://www.w3.org/2000/01/rdf-schema#label> "cesium" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/strontianite> <http://www.w3.org/2000/01/rdf-schema#label> "strontianite" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/sepiolite> <http://www.w3.org/2000/01/rdf-schema#label> "sepiolite" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/lutetium> <http://www.w3.org/2000/01/rdf-schema#label> "lutetium" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/aquamarine> <http://www.w3.org/2000/01/rdf-schema#label> "aquamarine" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/tremolite-actinolite> <http://www.w3.org/2000/01/rdf-schema#label> "tremolite-actinolite" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/nickel> <http://www.w3.org/2000/01/rdf-schema#label> "nickel" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/ruby> <http://www.w3.org/2000/01/rdf-schema#label> "ruby" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/fluorite> <http://www.w3.org/2000/01/rdf-schema#label> "fluorite" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/agate> <http://www.w3.org/2000/01/rdf-schema#label> "agate" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/greenstone> <http://www.w3.org/2000/01/rdf-schema#label> "greenstone" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/calcite> <http://www.w3.org/2000/01/rdf-schema#label> "calcite" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/shell-grit> <http://www.w3.org/2000/01/rdf-schema#label> "shell grit" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/gaseous-hydrocarbons> <http://www.w3.org/2000/01/rdf-schema#label> "gaseous hydrocarbons" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/rare-earth-element> <http://www.w3.org/2000/01/rdf-schema#label> "rare earth element" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/carbonaceous-material> <http://www.w3.org/2000/01/rdf-schema#label> "carbonaceous material" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/sericite> <http://www.w3.org/2000/01/rdf-schema#label> "sericite" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/erbium> <http://www.w3.org/2000/01/rdf-schema#label> "erbium" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/chemical-oxide-product> <http://www.w3.org/2000/01/rdf-schema#label> "chemical oxide product" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/kaolin> <http://www.w3.org/2000/01/rdf-schema#label> "kaolin" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/basalt> <http://www.w3.org/2000/01/rdf-schema#label> "basalt" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/rhodonite> <http://www.w3.org/2000/01/rdf-schema#label> "rhodonite" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/manganese> <http://www.w3.org/2000/01/rdf-schema#label> "manganese" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/promethium> <http://www.w3.org/2000/01/rdf-schema#label> "promethium" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/moonstone> <http://www.w3.org/2000/01/rdf-schema#label> "moonstone" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/rhodium> <http://www.w3.org/2000/01/rdf-schema#label> "rhodium" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/thallium> <http://www.w3.org/2000/01/rdf-schema#label> "thallium" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/onyx> <http://www.w3.org/2000/01/rdf-schema#label> "onyx" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/chlorite> <http://www.w3.org/2000/01/rdf-schema#label> "chlorite" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/lime> <http://www.w3.org/2000/01/rdf-schema#label> "lime" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/brick-clay> <http://www.w3.org/2000/01/rdf-schema#label> "brick clay" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/ilmenite> <http://www.w3.org/2000/01/rdf-schema#label> "ilmenite" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/sulphur> <http://www.w3.org/2000/01/rdf-schema#label> "sulphur" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/dioptase> <http://www.w3.org/2000/01/rdf-schema#label> "dioptase" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/tsavorite> <http://www.w3.org/2000/01/rdf-schema#label> "tsavorite" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/lithium> <http://www.w3.org/2000/01/rdf-schema#label> "lithium" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/magnesia> <http://www.w3.org/2000/01/rdf-schema#label> "magnesia" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/mercury> <http://www.w3.org/2000/01/rdf-schema#label> "mercury" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/phosphorous> <http://www.w3.org/2000/01/rdf-schema#label> "phosphorous" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/carnallite> <http://www.w3.org/2000/01/rdf-schema#label> "carnallite" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/cryolite> <http://www.w3.org/2000/01/rdf-schema#label> "cryolite" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/morganite> <http://www.w3.org/2000/01/rdf-schema#label> "morganite" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/staurolite> <http://www.w3.org/2000/01/rdf-schema#label> "staurolite" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/molybdenite> <http://www.w3.org/2000/01/rdf-schema#label> "molybdenite" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/boron> <http://www.w3.org/2000/01/rdf-schema#label> "boron" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/amazonite> <http://www.w3.org/2000/01/rdf-schema#label> "amazonite" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/amethyst> <http://www.w3.org/2000/01/rdf-schema#label> "amethyst" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/white-firing-clay> <http://www.w3.org/2000/01/rdf-schema#label> "white-firing clay" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/shale> <http://www.w3.org/2000/01/rdf-schema#label> "Shale" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/uranium> <http://www.w3.org/2000/01/rdf-schema#label> "uranium" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/holmium> <http://www.w3.org/2000/01/rdf-schema#label> "holmium" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/barium> <http://www.w3.org/2000/01/rdf-schema#label> "barium" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/mica> <http://www.w3.org/2000/01/rdf-schema#label> "mica" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/foundry-sand> <http://www.w3.org/2000/01/rdf-schema#label> "foundry sand" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/fullers-earth> <http://www.w3.org/2000/01/rdf-schema#label> "Fullers earth" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/gallium> <http://www.w3.org/2000/01/rdf-schema#label> "gallium" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/iron-oxide> <http://www.w3.org/2000/01/rdf-schema#label> "iron oxide" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/vanadium> <http://www.w3.org/2000/01/rdf-schema#label> "vanadium" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/frac-sand> <http://www.w3.org/2000/01/rdf-schema#label> "frac sand" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/fluorine> <http://www.w3.org/2000/01/rdf-schema#label> "fluorine" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/spinel> <http://www.w3.org/2000/01/rdf-schema#label> "spinel" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/diopside-enstatite> <http://www.w3.org/2000/01/rdf-schema#label> "diopside-enstatite" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/niobium-pentoxide> <http://www.w3.org/2000/01/rdf-schema#label> "niobium pentoxide" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/beryllium> <http://www.w3.org/2000/01/rdf-schema#label> "beryllium" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/tellurium> <http://www.w3.org/2000/01/rdf-schema#label> "tellurium" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/palygorskite> <http://www.w3.org/2000/01/rdf-schema#label> "palygorskite" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/opal> <http://www.w3.org/2000/01/rdf-schema#label> "opal" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/limesand> <http://www.w3.org/2000/01/rdf-schema#label> "Limesand" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/monazite> <http://www.w3.org/2000/01/rdf-schema#label> "monazite" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/iolite> <http://www.w3.org/2000/01/rdf-schema#label> "cordierite" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/tourmaline> <http://www.w3.org/2000/01/rdf-schema#label> "tourmaline" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/hematite-ore> <http://www.w3.org/2000/01/rdf-schema#label> "hematite ore" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/leucoxene> <http://www.w3.org/2000/01/rdf-schema#label> "leucoxene" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/hree> <http://www.w3.org/2000/01/rdf-schema#label> "HREE" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/feldspar-gemstone> <http://www.w3.org/2000/01/rdf-schema#label> "feldspar-gemstone" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/spodumene> <http://www.w3.org/2000/01/rdf-schema#label> "spodumene" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/chromium> <http://www.w3.org/2000/01/rdf-schema#label> "chromium" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/jarosite> <http://www.w3.org/2000/01/rdf-schema#label> "jarosite" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/hafnium> <http://www.w3.org/2000/01/rdf-schema#label> "hafnium" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/rose-quartz> <http://www.w3.org/2000/01/rdf-schema#label> "rose quartz" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/terbium> <http://www.w3.org/2000/01/rdf-schema#label> "terbium" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/platinum-group> <http://www.w3.org/2000/01/rdf-schema#label> "platinum group metal" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/lithium-oxide> <http://www.w3.org/2000/01/rdf-schema#label> "lithium oxide" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/serpentine> <http://www.w3.org/2000/01/rdf-schema#label> "serpentine" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/lanthanum> <http://www.w3.org/2000/01/rdf-schema#label> "lanthanum" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/pyrite> <http://www.w3.org/2000/01/rdf-schema#label> "pyrite" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/dolomite> <http://www.w3.org/2000/01/rdf-schema#label> "Dolomite" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/glauconite> <http://www.w3.org/2000/01/rdf-schema#label> "glauconite" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/molybdenum> <http://www.w3.org/2000/01/rdf-schema#label> "molybdenum" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/copper> <http://www.w3.org/2000/01/rdf-schema#label> "copper" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/potassium> <http://www.w3.org/2000/01/rdf-schema#label> "potassium" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/tantalum> <http://www.w3.org/2000/01/rdf-schema#label> "tantalum" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/phosphate-rock> <http://www.w3.org/2000/01/rdf-schema#label> "phosphate rock" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/brown-coal> <http://www.w3.org/2000/01/rdf-schema#label> "brown coal" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/heavy-mineral-sands> <http://www.w3.org/2000/01/rdf-schema#label> "Heavy mineral sands" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/corundum-gemstone> <http://www.w3.org/2000/01/rdf-schema#label> "corundum-gemstone" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/nepheline-syenite> <http://www.w3.org/2000/01/rdf-schema#label> "nepheline syenite" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/marble> <http://www.w3.org/2000/01/rdf-schema#label> "marble" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/topaz> <http://www.w3.org/2000/01/rdf-schema#label> "topaz" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/citrine> <http://www.w3.org/2000/01/rdf-schema#label> "citrine" .
+<http://resource.geosciml.org/classifier/cgi/commodity-code/lazulite> <http://www.w3.org/2000/01/rdf-schema#label> "lazulite" .
+<https://linked.data.gov.au/def/mer-distribution-formats/wms> <http://www.w3.org/2000/01/rdf-schema#label> "WMS" .
+<https://linked.data.gov.au/def/mer-distribution-formats/ers> <http://www.w3.org/2000/01/rdf-schema#label> "ERS" .
+<https://linked.data.gov.au/def/mer-distribution-formats/wcs> <http://www.w3.org/2000/01/rdf-schema#label> "WCS" .
+<https://linked.data.gov.au/def/mer-distribution-formats/pdf> <http://www.w3.org/2000/01/rdf-schema#label> "PDF" .
+<https://linked.data.gov.au/def/mer-distribution-formats/doc> <http://www.w3.org/2000/01/rdf-schema#label> "DOC" .
+<https://linked.data.gov.au/def/mer-distribution-formats/jpeg2000> <http://www.w3.org/2000/01/rdf-schema#label> "JPEG2000" .
+<https://linked.data.gov.au/def/mer-distribution-formats/rtf> <http://www.w3.org/2000/01/rdf-schema#label> "RTF" .
+<https://linked.data.gov.au/def/mer-distribution-formats> <http://www.w3.org/2000/01/rdf-schema#label> "Distribution Formats" .
+<https://linked.data.gov.au/def/mer-distribution-formats/ascii> <http://www.w3.org/2000/01/rdf-schema#label> "ASCII" .
+<https://linked.data.gov.au/def/mer-distribution-formats/esri-shapefile> <http://www.w3.org/2000/01/rdf-schema#label> "ESRI Shapefile" .
+<https://linked.data.gov.au/def/mer-distribution-formats/mapinfo-tab> <http://www.w3.org/2000/01/rdf-schema#label> "MapInfo TAB" .
+<https://linked.data.gov.au/def/mer-distribution-formats/text> <http://www.w3.org/2000/01/rdf-schema#label> "Text" .
+<https://linked.data.gov.au/def/mer-distribution-formats/geotiff> <http://www.w3.org/2000/01/rdf-schema#label> "GeoTIFF" .
+<https://linked.data.gov.au/def/mer-distribution-formats/gml> <http://www.w3.org/2000/01/rdf-schema#label> "GML" .
+<https://linked.data.gov.au/def/mer-distribution-formats/docx> <http://www.w3.org/2000/01/rdf-schema#label> "DOCX" .
+<https://linked.data.gov.au/def/mer-distribution-formats/mp4> <http://www.w3.org/2000/01/rdf-schema#label> "MP4" .
+<https://linked.data.gov.au/def/mer-distribution-formats/zip> <http://www.w3.org/2000/01/rdf-schema#label> "ZIP" .
+<https://linked.data.gov.au/def/mer-distribution-formats/ppt> <http://www.w3.org/2000/01/rdf-schema#label> "PPT" .
+<https://linked.data.gov.au/def/mer-distribution-formats/xlsx> <http://www.w3.org/2000/01/rdf-schema#label> "XLSX" .
+<https://linked.data.gov.au/def/mer-distribution-formats/pps> <http://www.w3.org/2000/01/rdf-schema#label> "PPS" .
+<https://linked.data.gov.au/def/mer-distribution-formats/csv> <http://www.w3.org/2000/01/rdf-schema#label> "CSV" .
+<https://linked.data.gov.au/def/mer-distribution-formats/wfs> <http://www.w3.org/2000/01/rdf-schema#label> "WFS" .
+<https://linked.data.gov.au/def/mer-distribution-formats/mapinfo-mif-mid> <http://www.w3.org/2000/01/rdf-schema#label> "MapInfo MIF/MID" .
+<https://linked.data.gov.au/def/mer-distribution-formats/kml> <http://www.w3.org/2000/01/rdf-schema#label> "KML" .
+<https://linked.data.gov.au/def/mer-distribution-formats/netcdf> <http://www.w3.org/2000/01/rdf-schema#label> "NETCDF" .
+<https://linked.data.gov.au/def/mer-distribution-formats/png> <http://www.w3.org/2000/01/rdf-schema#label> "PNG" .
+<https://linked.data.gov.au/def/mer-distribution-formats/ecw> <http://www.w3.org/2000/01/rdf-schema#label> "ECW" .
+<https://linked.data.gov.au/def/mer-distribution-formats/jpeg> <http://www.w3.org/2000/01/rdf-schema#label> "JPEG" .
+<https://linked.data.gov.au/def/mer-doc-types/mineral-information-sheet> <http://www.w3.org/2000/01/rdf-schema#label> "Mineral Information Sheet" .
+<https://linked.data.gov.au/def/mer-doc-types/seismic-report-final> <http://www.w3.org/2000/01/rdf-schema#label> "Seismic Report - Final" .
+<https://linked.data.gov.au/def/mer-doc-types/mining-review> <http://www.w3.org/2000/01/rdf-schema#label> "Mining Review" .
+<https://linked.data.gov.au/def/mer-doc-types/mining-operation-compliance-report> <http://www.w3.org/2000/01/rdf-schema#label> "Mining Operation Compliance Report" .
+<https://linked.data.gov.au/def/mer-doc-types/mineral-and-energy-resources-annual-review> <http://www.w3.org/2000/01/rdf-schema#label> "Mineral And Energy Resources Annual Review" .
+<https://linked.data.gov.au/def/mer-doc-types/energy-company-report> <http://www.w3.org/2000/01/rdf-schema#label> "Energy Company Report" .
+<https://linked.data.gov.au/def/mer-doc-types/mineral-information-series> <http://www.w3.org/2000/01/rdf-schema#label> "Mineral Information Series" .
+<https://linked.data.gov.au/def/mer-doc-types/mineral-industry-quarterly> <http://www.w3.org/2000/01/rdf-schema#label> "Mineral Industry Quarterly" .
+<https://linked.data.gov.au/def/mer-doc-types/exploration-initiative> <http://www.w3.org/2000/01/rdf-schema#label> "Exploration Initiative" .
+<https://linked.data.gov.au/def/mer-doc-types/energy-geoscience-publication> <http://www.w3.org/2000/01/rdf-schema#label> "Energy Geoscience Publication" .
+<https://linked.data.gov.au/def/mer-doc-types/mineral-exploration-tenement-report> <http://www.w3.org/2000/01/rdf-schema#label> "Mineral Exploration Tenement Report" .
+<https://linked.data.gov.au/def/mer-doc-types/mining-operation-environmental-program> <http://www.w3.org/2000/01/rdf-schema#label> "Mining Operation Environmental Program" .
+<https://linked.data.gov.au/def/mer-doc-types> <http://www.w3.org/2000/01/rdf-schema#label> "MER Document Types" .
+<https://linked.data.gov.au/def/mer-doc-types/seismic-report-processing> <http://www.w3.org/2000/01/rdf-schema#label> "Seismic Report - Processing" .
+<https://linked.data.gov.au/def/mer-doc-types/energy-company-annual-licence-report> <http://www.w3.org/2000/01/rdf-schema#label> "Energy Company Annual Licence Report" .
+<https://linked.data.gov.au/def/mer-doc-types/handbook> <http://www.w3.org/2000/01/rdf-schema#label> "Handbook" .
+<https://linked.data.gov.au/def/mer-doc-types/annual-report> <http://www.w3.org/2000/01/rdf-schema#label> "Annual Report" .
+<https://linked.data.gov.au/def/mer-doc-types/departmental-publications> <http://www.w3.org/2000/01/rdf-schema#label> "Departmental Publications document types" .
+<https://linked.data.gov.au/def/mer-doc-types/external-publication> <http://www.w3.org/2000/01/rdf-schema#label> "External Publication" .
+<https://linked.data.gov.au/def/mer-doc-types/geoscience-reports-and-publications> <http://www.w3.org/2000/01/rdf-schema#label> "Geoscience Reports and Publications document types" .
+<https://linked.data.gov.au/def/mer-doc-types/collaborative-exploration-initiative> <http://www.w3.org/2000/01/rdf-schema#label> "Collaborative Exploration Initiative" .
+<https://linked.data.gov.au/def/mer-doc-types/departmental-compliance-report> <http://www.w3.org/2000/01/rdf-schema#label> "Departmental Compliance Report" .
+<https://linked.data.gov.au/def/mer-doc-types/departmental-publication-closed-series> <http://www.w3.org/2000/01/rdf-schema#label> "Departmental Publication - Closed Series" .
+<https://linked.data.gov.au/def/mer-doc-types/energy-policy> <http://www.w3.org/2000/01/rdf-schema#label> "Energy Policy" .
+<https://linked.data.gov.au/def/mer-doc-types/geophysical-survey-report-logistics> <http://www.w3.org/2000/01/rdf-schema#label> "Geophysical Survey Report - Logistics" .
+<https://linked.data.gov.au/def/mer-doc-types/mines-and-energy-review> <http://www.w3.org/2000/01/rdf-schema#label> "Mines And Energy Review" .
+<https://linked.data.gov.au/def/mer-doc-types/geological-survey-geoscience-publication> <http://www.w3.org/2000/01/rdf-schema#label> "Geological Survey Geoscience Publication" .
+<https://linked.data.gov.au/def/mer-doc-types/departmental-other> <http://www.w3.org/2000/01/rdf-schema#label> "Departmental Other" .
+<https://linked.data.gov.au/def/mer-doc-types/mineral-laboratory-analyses> <http://www.w3.org/2000/01/rdf-schema#label> "Mineral Laboratory Analyses" .
+<https://linked.data.gov.au/def/mer-doc-types/geological-survey-bulletin> <http://www.w3.org/2000/01/rdf-schema#label> "Geological Survey Bulletin" .
+<https://linked.data.gov.au/def/mer-doc-types/seismic-report-other> <http://www.w3.org/2000/01/rdf-schema#label> "Seismic Report - Other" .
+<https://linked.data.gov.au/def/mer-doc-types/energy-information-sheet> <http://www.w3.org/2000/01/rdf-schema#label> "Energy Information Sheet" .
+<https://linked.data.gov.au/def/mer-doc-types/seismic-report-interpretation> <http://www.w3.org/2000/01/rdf-schema#label> "Seismic Report - Interpretation" .
+<https://linked.data.gov.au/def/mer-doc-types/private-mine-program-and-report> <http://www.w3.org/2000/01/rdf-schema#label> "Private Mine Program And Report" .
+<https://linked.data.gov.au/def/mer-doc-types/energy-regulatory-guideline> <http://www.w3.org/2000/01/rdf-schema#label> "Energy Regulatory Guideline" .
+<https://linked.data.gov.au/def/mer-doc-types/mineral-mining-reports> <http://www.w3.org/2000/01/rdf-schema#label> "Mineral Mining Reports document types" .
+<https://linked.data.gov.au/def/mer-doc-types/geophysical-report> <http://www.w3.org/2000/01/rdf-schema#label> "Geophysical Report" .
+<https://linked.data.gov.au/def/mer-doc-types/mesa-journal> <http://www.w3.org/2000/01/rdf-schema#label> "Mesa Journal" .
+<https://linked.data.gov.au/def/mer-doc-types/engineering-geology-publication> <http://www.w3.org/2000/01/rdf-schema#label> "Engineering Geology Publication" .
+<https://linked.data.gov.au/def/mer-doc-types/inspector-of-mines-report> <http://www.w3.org/2000/01/rdf-schema#label> "Inspector Of Mines Report" .
+<https://linked.data.gov.au/def/mer-doc-types/mineral-production-statistics> <http://www.w3.org/2000/01/rdf-schema#label> "Mineral Production Statistics" .
+<https://linked.data.gov.au/def/mer-doc-types/legislation-and-guidance> <http://www.w3.org/2000/01/rdf-schema#label> "Legislation and Guidance document types" .
+<https://linked.data.gov.au/def/mer-doc-types/seismic-report> <http://www.w3.org/2000/01/rdf-schema#label> "Seismic Report" .
+<https://linked.data.gov.au/def/mer-doc-types/report-of-investigation> <http://www.w3.org/2000/01/rdf-schema#label> "Report Of Investigation" .
+<https://linked.data.gov.au/def/mer-doc-types/collaborative-drilling-initiative> <http://www.w3.org/2000/01/rdf-schema#label> "Collaborative Drilling Initiative" .
+<https://linked.data.gov.au/def/mer-doc-types/commodity-review> <http://www.w3.org/2000/01/rdf-schema#label> "Commodity Review" .
+<https://linked.data.gov.au/def/mer-doc-types/seismic-report-acquisition> <http://www.w3.org/2000/01/rdf-schema#label> "Seismic Report - Acquisition" .
+<https://linked.data.gov.au/def/mer-doc-types/quarterly-note> <http://www.w3.org/2000/01/rdf-schema#label> "Quarterly Note" .
+<https://linked.data.gov.au/def/mer-doc-types/seismic-report-operations> <http://www.w3.org/2000/01/rdf-schema#label> "Seismic Report - Operations" .
+<https://linked.data.gov.au/def/mer-doc-types/mining-operation-proposal> <http://www.w3.org/2000/01/rdf-schema#label> "Mining Operation Proposal" .
+<https://linked.data.gov.au/def/mer-doc-types/mineral-ministerial-determination> <http://www.w3.org/2000/01/rdf-schema#label> "Mineral Ministerial Determination" .
+<https://linked.data.gov.au/def/mer-doc-types/mineral-exploration-company-reports> <http://www.w3.org/2000/01/rdf-schema#label> "Mineral Exploration Company Reports document types" .
+<https://linked.data.gov.au/def/mer-doc-types/record-of-mine> <http://www.w3.org/2000/01/rdf-schema#label> "Record Of Mine" .
+<https://linked.data.gov.au/def/mer-doc-types/hydrogeological-publication> <http://www.w3.org/2000/01/rdf-schema#label> "Hydrogeological Publication" .
+<https://linked.data.gov.au/def/mer-doc-types/geophysical-survey-report-acquisition> <http://www.w3.org/2000/01/rdf-schema#label> "Geophysical Survey Report - Acquisition" .
+<https://linked.data.gov.au/def/mer-doc-types/water-report> <http://www.w3.org/2000/01/rdf-schema#label> "Water Report" .
+<https://linked.data.gov.au/def/mer-doc-types/exploration-initiatives> <http://www.w3.org/2000/01/rdf-schema#label> "Exploration Initiatives document types" .
+<https://linked.data.gov.au/def/mer-doc-types/mineral-company-report> <http://www.w3.org/2000/01/rdf-schema#label> "Mineral Company Report" .
+<https://linked.data.gov.au/def/mer-doc-types/mineral-policy> <http://www.w3.org/2000/01/rdf-schema#label> "Mineral Policy" .
+<https://linked.data.gov.au/def/mer-doc-types/mineral-regulatory-guideline> <http://www.w3.org/2000/01/rdf-schema#label> "Mineral Regulatory Guideline" .
+<https://linked.data.gov.au/def/mer-doc-types/mineral-resources-review> <http://www.w3.org/2000/01/rdf-schema#label> "Mineral Resources Review" .
+<https://linked.data.gov.au/def/mer-doc-types/departmental-publication> <http://www.w3.org/2000/01/rdf-schema#label> "Departmental Publication" .
+<https://linked.data.gov.au/def/mer-doc-types/energy-environmental-register> <http://www.w3.org/2000/01/rdf-schema#label> "Energy Environmental Register" .
+<https://linked.data.gov.au/def/mer-doc-types/geophysical-survey-report-final> <http://www.w3.org/2000/01/rdf-schema#label> "Geophysical Survey Report - Final" .
+<https://linked.data.gov.au/def/mer-doc-types/special-publication> <http://www.w3.org/2000/01/rdf-schema#label> "Special Publication" .
+<https://linked.data.gov.au/def/mer-doc-types/legislation-and-policy> <http://www.w3.org/2000/01/rdf-schema#label> "Legislation And Policy" .
+<https://linked.data.gov.au/def/anzsrc-for/2020/370603> <http://www.w3.org/2000/01/rdf-schema#label> "Geodesy" .
+<https://linked.data.gov.au/def/mer-for-codes/magnetotellurics> <http://www.w3.org/2000/01/rdf-schema#label> "Magnetotellurics" .
+<https://linked.data.gov.au/def/mer-for-codes/surface-processes> <http://www.w3.org/2000/01/rdf-schema#label> "Surface Processes" .
+<https://linked.data.gov.au/def/mer-for-codes/mineral-resource-geology> <http://www.w3.org/2000/01/rdf-schema#label> "Mineral Resource Geology" .
+<https://linked.data.gov.au/def/anzsrc-for/2020/370503> <http://www.w3.org/2000/01/rdf-schema#label> "Igneous And Metamorphic Petrology" .
+<https://linked.data.gov.au/def/anzsrc-for/2020/401908> <http://www.w3.org/2000/01/rdf-schema#label> "Pyrometallurgy" .
+<https://linked.data.gov.au/def/mer-for-codes/environmental-impact-assessment> <http://www.w3.org/2000/01/rdf-schema#label> "Environmental Impact Assessment" .
+<https://linked.data.gov.au/def/mer-for-codes/historical-geology> <http://www.w3.org/2000/01/rdf-schema#label> "Historical Geology" .
+<https://linked.data.gov.au/def/anzsrc-for/2020/370902> <http://www.w3.org/2000/01/rdf-schema#label> "Glaciology" .
+<https://linked.data.gov.au/def/anzsrc-for/2020/4005> <http://www.w3.org/2000/01/rdf-schema#label> "Civil Engineering" .
+<https://linked.data.gov.au/def/mer-for-codes/resources-engineering> <http://www.w3.org/2000/01/rdf-schema#label> "Resources Engineering" .
+<https://linked.data.gov.au/def/anzsrc-for/2020/401902> <http://www.w3.org/2000/01/rdf-schema#label> "Geomechanics And Resources Geotechnical Engineering" .
+<https://linked.data.gov.au/def/anzsrc-for/2020/370303> <http://www.w3.org/2000/01/rdf-schema#label> "Isotope Geochemistry" .
+<https://linked.data.gov.au/def/anzsrc-for/2020/370510> <http://www.w3.org/2000/01/rdf-schema#label> "Stratigraphy" .
+<https://linked.data.gov.au/def/mer-for-codes/magnetics> <http://www.w3.org/2000/01/rdf-schema#label> "Magnetics" .
+<https://linked.data.gov.au/def/mer-for-codes> <http://www.w3.org/2000/01/rdf-schema#label> "MER Fields of Research Codes" .
+<https://linked.data.gov.au/def/anzsrc-for/2020/401303> <http://www.w3.org/2000/01/rdf-schema#label> "Navigation And Position Fixing" .
+<https://linked.data.gov.au/def/mer-for-codes/surface-geology> <http://www.w3.org/2000/01/rdf-schema#label> "Surface Geology" .
+<https://linked.data.gov.au/def/mer-for-codes/petroleum-system-geology> <http://www.w3.org/2000/01/rdf-schema#label> "Petroleum System Geology" .
+<https://linked.data.gov.au/def/anzsrc-for/2020/37> <http://www.w3.org/2000/01/rdf-schema#label> "Earth Sciences" .
+<https://linked.data.gov.au/def/anzsrc-for/2020/370602> <http://www.w3.org/2000/01/rdf-schema#label> "Electrical And Electromagnetic Methods In Geophysics" .
+<https://linked.data.gov.au/def/mer-for-codes/hydrogeology> <http://www.w3.org/2000/01/rdf-schema#label> "Hydrogeology" .
+<https://linked.data.gov.au/def/mer-for-codes/energy> <http://www.w3.org/2000/01/rdf-schema#label> "Energy" .
+<https://linked.data.gov.au/def/mer-for-codes/soil-chemistry> <http://www.w3.org/2000/01/rdf-schema#label> "Soil Chemistry" .
+<https://linked.data.gov.au/def/mer-for-codes/geospatial-information-systems> <http://www.w3.org/2000/01/rdf-schema#label> "Geospatial Information Systems" .
+<https://linked.data.gov.au/def/anzsrc-for/2020/4104> <http://www.w3.org/2000/01/rdf-schema#label> "Environmental Management" .
+<https://linked.data.gov.au/def/anzsrc-for/2020/370502> <http://www.w3.org/2000/01/rdf-schema#label> "Geochronology" .
+<https://linked.data.gov.au/def/mer-for-codes/conserving-natural-heritage> <http://www.w3.org/2000/01/rdf-schema#label> "Conserving Natural Heritage" .
+<https://linked.data.gov.au/def/anzsrc-for/2020/31> <http://www.w3.org/2000/01/rdf-schema#label> "Biological Sciences" .
+<https://linked.data.gov.au/def/mer-for-codes/petrophysics> <http://www.w3.org/2000/01/rdf-schema#label> "Petrophysics" .
+<https://linked.data.gov.au/def/anzsrc-for/2020/401907> <http://www.w3.org/2000/01/rdf-schema#label> "Petroleum And Reservoir Engineering" .
+<https://linked.data.gov.au/def/anzsrc-for/2020/4004> <http://www.w3.org/2000/01/rdf-schema#label> "Chemical Engineering" .
+<https://linked.data.gov.au/def/anzsrc-for/2020/3304> <http://www.w3.org/2000/01/rdf-schema#label> "Urban And Regional Planning" .
+<https://linked.data.gov.au/def/anzsrc-for/2020/460702> <http://www.w3.org/2000/01/rdf-schema#label> "Computer Graphics" .
+<https://linked.data.gov.au/def/mer-for-codes/geology-collection> <http://www.w3.org/2000/01/rdf-schema#label> "Geology Fields of Research Codes" .
+<https://linked.data.gov.au/def/mer-for-codes/environmental-rehabilitation-excl-bioremediation> <http://www.w3.org/2000/01/rdf-schema#label> "Environmental Rehabilitation (Excl. Bioremediation)" .
+<https://linked.data.gov.au/def/anzsrc-for/2020/3703> <http://www.w3.org/2000/01/rdf-schema#label> "Geochemistry" .
+<https://linked.data.gov.au/def/anzsrc-for/2020/370302> <http://www.w3.org/2000/01/rdf-schema#label> "Inorganic Geochemistry" .
+<https://linked.data.gov.au/def/anzsrc-for/2020/401901> <http://www.w3.org/2000/01/rdf-schema#label> "Electrometallurgy" .
+<https://linked.data.gov.au/def/anzsrc-for/2020/401208> <http://www.w3.org/2000/01/rdf-schema#label> "Geophysics Fluid Dynamics" .
+<https://linked.data.gov.au/def/mer-for-codes/carbon-capture-and-storage> <http://www.w3.org/2000/01/rdf-schema#label> "Carbon Capture And Storage" .
+<https://linked.data.gov.au/def/mer-for-codes/regional-geology> <http://www.w3.org/2000/01/rdf-schema#label> "Regional Geology" .
+<https://linked.data.gov.au/def/mer-for-codes/environment-collection> <http://www.w3.org/2000/01/rdf-schema#label> "Environment Fields of Research Codes" .
+<https://linked.data.gov.au/def/mer-for-codes/cartography> <http://www.w3.org/2000/01/rdf-schema#label> "Cartography" .
+<https://linked.data.gov.au/def/mer-for-codes/spatial-collection> <http://www.w3.org/2000/01/rdf-schema#label> "Spatial Fields of Research Codes" .
+<https://linked.data.gov.au/def/anzsrc-for/2020/43> <http://www.w3.org/2000/01/rdf-schema#label> "History And Archaeology" .
+<https://linked.data.gov.au/def/mer-for-codes/expert-systems> <http://www.w3.org/2000/01/rdf-schema#label> "Expert Systems" .
+<https://linked.data.gov.au/def/mer-for-codes/remote-sensing> <http://www.w3.org/2000/01/rdf-schema#label> "Remote Sensing" .
+<https://linked.data.gov.au/def/mer-for-codes/biogeology> <http://www.w3.org/2000/01/rdf-schema#label> "Biogeology" .
+<https://linked.data.gov.au/def/mer-for-codes/geomorphology-and-regolith-and-landscape-evolution> <http://www.w3.org/2000/01/rdf-schema#label> "Geomorphology And Regolith And Landscape Evolution" .
+<https://linked.data.gov.au/def/mer-for-codes/passive-seismic> <http://www.w3.org/2000/01/rdf-schema#label> "Passive Seismic" .
+<https://linked.data.gov.au/def/anzsrc-for/2020/370301> <http://www.w3.org/2000/01/rdf-schema#label> "Exploration Geochemistry" .
+<https://linked.data.gov.au/def/mer-for-codes/soil-science> <http://www.w3.org/2000/01/rdf-schema#label> "Soil Science" .
+<https://linked.data.gov.au/def/mer-for-codes/computation-theory-and-mathematics> <http://www.w3.org/2000/01/rdf-schema#label> "Computation Theory And Mathematics" .
+<https://linked.data.gov.au/def/mer-for-codes/drilling-engineering> <http://www.w3.org/2000/01/rdf-schema#label> "Drilling Engineering" .
+<https://linked.data.gov.au/def/mer-for-codes/palynology> <http://www.w3.org/2000/01/rdf-schema#label> "Palynology" .
+<https://linked.data.gov.au/def/mer-for-codes/resource-geology> <http://www.w3.org/2000/01/rdf-schema#label> "Resource Geology" .
+<https://linked.data.gov.au/def/anzsrc-for/2020/3103> <http://www.w3.org/2000/01/rdf-schema#label> "Ecology" .
+<https://linked.data.gov.au/def/anzsrc-for/2020/370506> <http://www.w3.org/2000/01/rdf-schema#label> "Paleontology" .
+<https://linked.data.gov.au/def/anzsrc-for/2020/410101> <http://www.w3.org/2000/01/rdf-schema#label> "Carbon Sequestration Science" .
+<https://linked.data.gov.au/def/anzsrc-for/2020/410406> <http://www.w3.org/2000/01/rdf-schema#label> "Natural Resource Management" .
+<https://linked.data.gov.au/def/mer-for-codes/first-stage-treatment-of-ores-and-minerals> <http://www.w3.org/2000/01/rdf-schema#label> "First Stage Treatment Of Ores And Minerals" .
+<https://linked.data.gov.au/def/mer-for-codes/paleoclimatology> <http://www.w3.org/2000/01/rdf-schema#label> "Paleoclimatology" .
+<https://linked.data.gov.au/def/anzsrc-for/2020/370905> <http://www.w3.org/2000/01/rdf-schema#label> "Quaternary Environments" .
+<https://linked.data.gov.au/def/mer-for-codes/hydrogeochemistry> <http://www.w3.org/2000/01/rdf-schema#label> "Hydrogeochemistry" .
+<https://linked.data.gov.au/def/mer-for-codes/energy-collection> <http://www.w3.org/2000/01/rdf-schema#label> "Energy Fields of Research Codes" .
+<https://linked.data.gov.au/def/mer-for-codes/simulation-and-modelling> <http://www.w3.org/2000/01/rdf-schema#label> "Simulation And Modelling" .
+<https://linked.data.gov.au/def/anzsrc-for/2020/4407> <http://www.w3.org/2000/01/rdf-schema#label> "Policy And Administration" .
+<https://linked.data.gov.au/def/anzsrc-for/2020/401905> <http://www.w3.org/2000/01/rdf-schema#label> "Mining Engineering" .
+<https://linked.data.gov.au/def/mer-for-codes/primary-mining-and-extraction-of-mineral-resources> <http://www.w3.org/2000/01/rdf-schema#label> "Primary Mining And Extraction Of Mineral Resources" .
+<https://linked.data.gov.au/def/mer-for-codes/environmental-science-and-management> <http://www.w3.org/2000/01/rdf-schema#label> "Environmental Science And Management" .
+<https://linked.data.gov.au/def/mer-for-codes/land-capability-and-soil-degradation> <http://www.w3.org/2000/01/rdf-schema#label> "Land Capability And Soil Degradation" .
+<https://linked.data.gov.au/def/mer-for-codes/physical-geography> <http://www.w3.org/2000/01/rdf-schema#label> "Physical Geography" .
+<https://linked.data.gov.au/def/anzsrc-for/2020/401306> <http://www.w3.org/2000/01/rdf-schema#label> "Surveying (Incl. Hydrographic Surveying)" .
+<https://linked.data.gov.au/def/anzsrc-for/2020/410605> <http://www.w3.org/2000/01/rdf-schema#label> "Soil Physics" .
+<https://linked.data.gov.au/def/mer-for-codes/sedimentary-petrology> <http://www.w3.org/2000/01/rdf-schema#label> "Sedimentary Petrology" .
+<https://linked.data.gov.au/def/anzsrc-for/2020/3701> <http://www.w3.org/2000/01/rdf-schema#label> "Atmospheric Sciences" .
+<https://linked.data.gov.au/def/mer-for-codes/gravity> <http://www.w3.org/2000/01/rdf-schema#label> "Gravity" .
+<https://linked.data.gov.au/def/mer-for-codes/mineral-exploration> <http://www.w3.org/2000/01/rdf-schema#label> "Mineral Exploration" .
+<https://linked.data.gov.au/def/mer-for-codes/basement-geology> <http://www.w3.org/2000/01/rdf-schema#label> "Basement Geology" .
+<https://linked.data.gov.au/def/mer-for-codes/pattern-recognition-and-data-mining> <http://www.w3.org/2000/01/rdf-schema#label> "Pattern Recognition And Data Mining" .
+<https://linked.data.gov.au/def/anzsrc-for/2020/4301> <http://www.w3.org/2000/01/rdf-schema#label> "Archaeology" .
+<https://linked.data.gov.au/def/mer-for-codes/energy-conservation-and-efficiency> <http://www.w3.org/2000/01/rdf-schema#label> "Energy Conservation And Efficiency" .
+<https://linked.data.gov.au/def/mer-for-codes/artificial-intelligence-and-image-processing> <http://www.w3.org/2000/01/rdf-schema#label> "Artificial Intelligence And Image Processing" .
+<https://linked.data.gov.au/def/anzsrc-for/2020/370505> <http://www.w3.org/2000/01/rdf-schema#label> "Mineralogy And Crystallography" .
+<https://linked.data.gov.au/def/mer-for-codes/radiometrics> <http://www.w3.org/2000/01/rdf-schema#label> "Radiometrics" .
+<https://linked.data.gov.au/def/mer-for-codes/preparation-and-production-of-energy-sources> <http://www.w3.org/2000/01/rdf-schema#label> "Preparation And Production Of Energy Sources" .
+<https://linked.data.gov.au/def/anzsrc-for/2020/460306> <http://www.w3.org/2000/01/rdf-schema#label> "Image Processing" .
+<https://linked.data.gov.au/def/mer-for-codes/surfacewater-hydrology> <http://www.w3.org/2000/01/rdf-schema#label> "Surfacewater Hydrology" .
+<https://linked.data.gov.au/def/mer-for-codes/geophysics-collection> <http://www.w3.org/2000/01/rdf-schema#label> "Geophysics Fields of Research Codes" .
+<https://linked.data.gov.au/def/anzsrc-for/2020/3706> <http://www.w3.org/2000/01/rdf-schema#label> "Geophysics" .
+<https://linked.data.gov.au/def/anzsrc-for/2020/401904> <http://www.w3.org/2000/01/rdf-schema#label> "Mineral Processing/Beneficiation" .
+<https://linked.data.gov.au/def/anzsrc-for/2020/370512> <http://www.w3.org/2000/01/rdf-schema#label> "Volcanology" .
+<https://linked.data.gov.au/def/anzsrc-for/2020/41> <http://www.w3.org/2000/01/rdf-schema#label> "Environmental Sciences" .
+<https://linked.data.gov.au/def/mer-for-codes/petroleum-geology> <http://www.w3.org/2000/01/rdf-schema#label> "Petroleum Geology" .
+<https://linked.data.gov.au/def/mer-for-codes/petrology> <http://www.w3.org/2000/01/rdf-schema#label> "Petrology" .
+<https://linked.data.gov.au/def/mer-for-codes/biogeochemistry> <http://www.w3.org/2000/01/rdf-schema#label> "Biogeochemistry" .
+<https://linked.data.gov.au/def/mer-for-codes/environemental-engineering> <http://www.w3.org/2000/01/rdf-schema#label> "Environemental Engineering" .
+<https://linked.data.gov.au/def/mer-for-codes/renewable-energy> <http://www.w3.org/2000/01/rdf-schema#label> "Renewable Energy" .
+<https://linked.data.gov.au/def/mer-for-codes/energy-storage-distribution-and-supply> <http://www.w3.org/2000/01/rdf-schema#label> "Energy Storage, Distribution And Supply" .
+<https://linked.data.gov.au/def/anzsrc-for/2020/370604> <http://www.w3.org/2000/01/rdf-schema#label> "Geodynamics" .
+<https://linked.data.gov.au/def/anzsrc-for/2020/330404> <http://www.w3.org/2000/01/rdf-schema#label> "Land Use And Environmental Planning" .
+<https://linked.data.gov.au/def/mer-for-codes/magnetic-gradiometry> <http://www.w3.org/2000/01/rdf-schema#label> "Magnetic Gradiometry" .
+<https://linked.data.gov.au/def/mer-for-codes/environmentally-sustainable-mineral-resource-activities> <http://www.w3.org/2000/01/rdf-schema#label> "Environmentally Sustainable Mineral Resource Activities" .
+<https://linked.data.gov.au/def/mer-for-codes/energy-transformation> <http://www.w3.org/2000/01/rdf-schema#label> "Energy Transformation" .
+<https://linked.data.gov.au/def/anzsrc-for/2020/370504> <http://www.w3.org/2000/01/rdf-schema#label> "Marine Geoscience" .
+<https://linked.data.gov.au/def/anzsrc-for/2020/33> <http://www.w3.org/2000/01/rdf-schema#label> "Built Environment And Design" .
+<https://linked.data.gov.au/def/mer-for-codes/environmental-monitoring> <http://www.w3.org/2000/01/rdf-schema#label> "Environmental Monitoring" .
+<https://linked.data.gov.au/def/mer-for-codes/mineral-resources-exc-energy-resources> <http://www.w3.org/2000/01/rdf-schema#label> "Mineral Resources (Excl. Energy Resources)" .
+<https://linked.data.gov.au/def/mer-for-codes/energy-exploration> <http://www.w3.org/2000/01/rdf-schema#label> "Energy Exploration" .
+<https://linked.data.gov.au/def/anzsrc-for/2020/370903> <http://www.w3.org/2000/01/rdf-schema#label> "Natural Hazards" .
+<https://linked.data.gov.au/def/mer-for-codes/gravity-gradiometry> <http://www.w3.org/2000/01/rdf-schema#label> "Gravity Gradiometry" .
+<https://linked.data.gov.au/def/anzsrc-for/2020/46> <http://www.w3.org/2000/01/rdf-schema#label> "Information And Computing Sciences" .
+<https://linked.data.gov.au/def/mer-for-codes/environmentally-sustainable-energy-activities> <http://www.w3.org/2000/01/rdf-schema#label> "Environmentally Sustainable Energy Activities" .
+<https://linked.data.gov.au/def/mer-for-codes/geostorage-engineering> <http://www.w3.org/2000/01/rdf-schema#label> "Geostorage Engineering" .
+<https://linked.data.gov.au/def/mer-for-codes/cultural-understanding> <http://www.w3.org/2000/01/rdf-schema#label> "Cultural Understanding" .
+<https://linked.data.gov.au/def/mer-for-codes/lithogeochemistry> <http://www.w3.org/2000/01/rdf-schema#label> "Lithogeochemistry" .
+<https://linked.data.gov.au/def/mer-for-codes/mineral-system-geology> <http://www.w3.org/2000/01/rdf-schema#label> "Mineral System Geology" .
+<https://linked.data.gov.au/def/mer-for-codes/exploration-collection> <http://www.w3.org/2000/01/rdf-schema#label> "Exploration Fields of Research Codes" .
+<https://linked.data.gov.au/def/anzsrc-for/2020/3705> <http://www.w3.org/2000/01/rdf-schema#label> "Geology" .
+<https://linked.data.gov.au/def/anzsrc-for/2020/370511> <http://www.w3.org/2000/01/rdf-schema#label> "Structural Geology & Tectonics" .
+<https://linked.data.gov.au/def/mer-for-codes/organic-petrology> <http://www.w3.org/2000/01/rdf-schema#label> "Organic Petrology" .
+<https://linked.data.gov.au/def/anzsrc-for/2020/370304> <http://www.w3.org/2000/01/rdf-schema#label> "Organic Geochemistry" .
+<https://linked.data.gov.au/def/anzsrc-for/2020/401903> <http://www.w3.org/2000/01/rdf-schema#label> "Hydrometallurgy" .
+<https://linked.data.gov.au/def/mer-for-codes/quarry-and-extractive-resource-geology> <http://www.w3.org/2000/01/rdf-schema#label> "Quarry And Extractive Resource Geology" .
+<https://linked.data.gov.au/def/anzsrc-for/2020/40> <http://www.w3.org/2000/01/rdf-schema#label> "Engineering" .
+<https://linked.data.gov.au/def/anzsrc-for/2020/370609> <http://www.w3.org/2000/01/rdf-schema#label> "Seismology And Seismic Exploration" .
+<https://linked.data.gov.au/def/mer-for-codes/mining-and-extraction-of-energy-resources> <http://www.w3.org/2000/01/rdf-schema#label> "Mining And Extraction Of Energy Resources" .
+<https://linked.data.gov.au/def/mer-for-codes/conserving-aboriginal-and-torres-strait-islander-heritage> <http://www.w3.org/2000/01/rdf-schema#label> "Conserving Aboriginal And Torres Strait Islander Heritage" .
+<https://linked.data.gov.au/def/anzsrc-for/2020/4013> <http://www.w3.org/2000/01/rdf-schema#label> "Geomatic Engineering" .
+<https://linked.data.gov.au/def/anzsrc-for/2020/401304> <http://www.w3.org/2000/01/rdf-schema#label> "Photogrammetry And Remote Sensing" .
+<https://linked.data.gov.au/def/anzsrc-for/2020/410603> <http://www.w3.org/2000/01/rdf-schema#label> "Soil Biology" .
+<https://linked.data.gov.au/def/anzsrc-for/2020/370509> <http://www.w3.org/2000/01/rdf-schema#label> "Sedimentology" .
+<https://linked.data.gov.au/def/mer-for-codes/basin-analysis> <http://www.w3.org/2000/01/rdf-schema#label> "Basin Analysis" .
+<https://linked.data.gov.au/def/mer-for-codes/numerical-computation> <http://www.w3.org/2000/01/rdf-schema#label> "Numerical Computation" .
+<https://linked.data.gov.au/def/mer-for-codes/extraterrestrial-geology> <http://www.w3.org/2000/01/rdf-schema#label> "Extraterrestrial Geology" .
+<https://linked.data.gov.au/def/mer-for-codes/geothermal-resource-geology> <http://www.w3.org/2000/01/rdf-schema#label> "Geothermal Resource Geology" .
+<http://def.isotc211.org/iso19115/-1/2014/MaintenanceInformation/code/MD_MaintenanceFrequencyCode/quarterly> <http://www.w3.org/2000/01/rdf-schema#label> "Quarterly" .
+<http://def.isotc211.org/iso19115/-1/2014/MaintenanceInformation/code/MD_MaintenanceFrequencyCode/biannually> <http://www.w3.org/2000/01/rdf-schema#label> "Biannually" .
+<http://def.isotc211.org/iso19115/-1/2014/MaintenanceInformation/code/MD_MaintenanceFrequencyCode/biennially> <http://www.w3.org/2000/01/rdf-schema#label> "Biennially" .
+<http://def.isotc211.org/iso19115/-1/2014/MaintenanceInformation/code/MD_MaintenanceFrequencyCode/semimonthly> <http://www.w3.org/2000/01/rdf-schema#label> "Semimonthly" .
+<http://def.isotc211.org/iso19115/-1/2014/MaintenanceInformation/code/MD_MaintenanceFrequencyCode/continual> <http://www.w3.org/2000/01/rdf-schema#label> "Continual" .
+<http://def.isotc211.org/iso19115/-1/2014/MaintenanceInformation/code/MD_MaintenanceFrequencyCode/irregular> <http://www.w3.org/2000/01/rdf-schema#label> "Irregular" .
+<http://def.isotc211.org/iso19115/-1/2014/MaintenanceInformation/code/MD_MaintenanceFrequencyCode/unknown> <http://www.w3.org/2000/01/rdf-schema#label> "Unknown" .
+<http://def.isotc211.org/iso19115/-1/2014/MaintenanceInformation/code/MD_MaintenanceFrequencyCode/monthly> <http://www.w3.org/2000/01/rdf-schema#label> "Monthly" .
+<http://def.isotc211.org/iso19115/-1/2014/MaintenanceInformation/code/MD_MaintenanceFrequencyCode/fortnightly> <http://www.w3.org/2000/01/rdf-schema#label> "Fortnightly" .
+<http://def.isotc211.org/iso19115/-1/2014/MaintenanceInformation/code/MD_MaintenanceFrequencyCode/annually> <http://www.w3.org/2000/01/rdf-schema#label> "Annually" .
+<http://def.isotc211.org/iso19115/-1/2014/MaintenanceInformation/code/MD_MaintenanceFrequencyCode/daily> <http://www.w3.org/2000/01/rdf-schema#label> "Daily" .
+<http://def.isotc211.org/iso19115/-1/2014/MaintenanceInformation/code/MD_MaintenanceFrequencyCode/asNeeded> <http://www.w3.org/2000/01/rdf-schema#label> "As needed" .
+<http://def.isotc211.org/iso19115/-1/2014/MaintenanceInformation/code/MD_MaintenanceFrequencyCode/notPlanned> <http://www.w3.org/2000/01/rdf-schema#label> "Not planned" .
+<http://def.isotc211.org/iso19115/-1/2014/MaintenanceInformation/code/MD_MaintenanceFrequencyCode> <http://www.w3.org/2000/01/rdf-schema#label> "Maintenance Frequency Codes" .
+<http://def.isotc211.org/iso19115/-1/2014/MaintenanceInformation/code/MD_MaintenanceFrequencyCode/weekly> <http://www.w3.org/2000/01/rdf-schema#label> "Weekly" .
+<http://def.isotc211.org/iso19115/-1/2014/MaintenanceInformation/code/MD_MaintenanceFrequencyCode/periodic> <http://www.w3.org/2000/01/rdf-schema#label> "Periodic" .
+<https://linked.data.gov.au/def/sa-geological-features/wilgena-subdomain> <http://www.w3.org/2000/01/rdf-schema#label> "Wilgena Subdomain" .
+<https://linked.data.gov.au/def/sa-geological-features/torrens-hinge-zone> <http://www.w3.org/2000/01/rdf-schema#label> "Torrens Hinge Zone" .
+<https://linked.data.gov.au/def/sa-geological-features/lock-sub-basin> <http://www.w3.org/2000/01/rdf-schema#label> "Lock Sub-Basin" .
+<https://linked.data.gov.au/def/sa-geological-features/nawa-subdomain> <http://www.w3.org/2000/01/rdf-schema#label> "Nawa Subdomain" .
+<https://linked.data.gov.au/def/sa-geological-features/cowell-sub-basin> <http://www.w3.org/2000/01/rdf-schema#label> "Cowell Sub-Basin" .
+<https://linked.data.gov.au/def/sa-geological-features/arrowie-basin> <http://www.w3.org/2000/01/rdf-schema#label> "Arrowie Basin" .
+<https://linked.data.gov.au/def/sa-geological-features/coober-pedy-ridge> <http://www.w3.org/2000/01/rdf-schema#label> "Coober Pedy Ridge" .
+<https://linked.data.gov.au/def/sa-geological-features/boorthanna-trough> <http://www.w3.org/2000/01/rdf-schema#label> "Boorthanna Trough" .
+<https://linked.data.gov.au/def/sa-geological-features/houghton-inlier> <http://www.w3.org/2000/01/rdf-schema#label> "Houghton Inlier" .
+<https://linked.data.gov.au/def/sa-geological-features/paringa-embayment> <http://www.w3.org/2000/01/rdf-schema#label> "Paringa Embayment" .
+<https://linked.data.gov.au/def/sa-geological-features/mabel-creek-ridge> <http://www.w3.org/2000/01/rdf-schema#label> "Mabel Creek Ridge" .
+<https://linked.data.gov.au/def/sa-geological-features/harris-greenstone-belt> <http://www.w3.org/2000/01/rdf-schema#label> "Harris Greenstone Belt" .
+<https://linked.data.gov.au/def/sa-geological-features/padthaway-ridge> <http://www.w3.org/2000/01/rdf-schema#label> "Padthaway Ridge" .
+<https://linked.data.gov.au/def/sa-geological-features/eromanga-basin> <http://www.w3.org/2000/01/rdf-schema#label> "Eromanga Basin" .
+<https://linked.data.gov.au/def/sa-geological-features/mulga-park-subdomain> <http://www.w3.org/2000/01/rdf-schema#label> "Mulga Park Subdomain" .
+<https://linked.data.gov.au/def/sa-geological-features/lake-frome-embayment> <http://www.w3.org/2000/01/rdf-schema#label> "Lake Frome Embayment" .
+<https://linked.data.gov.au/def/sa-geological-features/nappamerri-trough> <http://www.w3.org/2000/01/rdf-schema#label> "Nappamerri Trough" .
+<https://linked.data.gov.au/def/sa-geological-features/torrens-basin> <http://www.w3.org/2000/01/rdf-schema#label> "Torrens Basin" .
+<https://linked.data.gov.au/def/sa-geological-features/cleve-subdomain> <http://www.w3.org/2000/01/rdf-schema#label> "Cleve Subdomain" .
+<https://linked.data.gov.au/def/sa-geological-features/inland-quaternary> <http://www.w3.org/2000/01/rdf-schema#label> "Inland Quaternary" .
+<https://linked.data.gov.au/def/sa-geological-features/gason-dome> <http://www.w3.org/2000/01/rdf-schema#label> "Gason Dome" .
+<https://linked.data.gov.au/def/sa-geological-features/tertiary-palaeochannels> <http://www.w3.org/2000/01/rdf-schema#label> "Tertiary Palaeochannels" .
+<https://linked.data.gov.au/def/sa-geological-features/gambier-basin> <http://www.w3.org/2000/01/rdf-schema#label> "Gambier Basin" .
+<https://linked.data.gov.au/def/sa-geological-features/eucla-basin-and-palaeodrainage> <http://www.w3.org/2000/01/rdf-schema#label> "Eucla Basin And Palaeodrainage" .
+<https://linked.data.gov.au/def/sa-geological-features/uley-groundwater-basin> <http://www.w3.org/2000/01/rdf-schema#label> "Uley Groundwater Basin" .
+<https://linked.data.gov.au/def/sa-geological-features/troubridge-basin> <http://www.w3.org/2000/01/rdf-schema#label> "Troubridge Basin" .
+<https://linked.data.gov.au/def/sa-geological-features> <http://www.w3.org/2000/01/rdf-schema#label> "SA Geological Features" .
+<https://linked.data.gov.au/def/sa-geological-features/walloway-basin> <http://www.w3.org/2000/01/rdf-schema#label> "Walloway Basin" .
+<https://linked.data.gov.au/def/sa-geological-features/frome-embayment> <http://www.w3.org/2000/01/rdf-schema#label> "Frome Embayment" .
+<https://linked.data.gov.au/def/sa-geological-features/kopperamanna-dome> <http://www.w3.org/2000/01/rdf-schema#label> "Kopperamanna Dome" .
+<https://linked.data.gov.au/def/sa-geological-features/tallaringa-trough> <http://www.w3.org/2000/01/rdf-schema#label> "Tallaringa Trough" .
+<https://linked.data.gov.au/def/sa-geological-features/arunta-block> <http://www.w3.org/2000/01/rdf-schema#label> "Arunta Block" .
+<https://linked.data.gov.au/def/sa-geological-features/moorilyanna-graben> <http://www.w3.org/2000/01/rdf-schema#label> "Moorilyanna Graben" .
+<https://linked.data.gov.au/def/sa-geological-features/hindmarsh-tiers-basin> <http://www.w3.org/2000/01/rdf-schema#label> "Hindmarsh Tiers Basin" .
+<https://linked.data.gov.au/def/sa-geological-features/tasman-fold-belt> <http://www.w3.org/2000/01/rdf-schema#label> "Tasman Fold Belt" .
+<https://linked.data.gov.au/def/sa-geological-features/ammaroodinna-inlier> <http://www.w3.org/2000/01/rdf-schema#label> "Ammaroodinna Inlier" .
+<https://linked.data.gov.au/def/sa-geological-features/cooper-basin> <http://www.w3.org/2000/01/rdf-schema#label> "Cooper Basin" .
+<https://linked.data.gov.au/def/sa-geological-features/yudnamutana-trough> <http://www.w3.org/2000/01/rdf-schema#label> "Yudnamutana Trough" .
+<https://linked.data.gov.au/def/sa-geological-features/gmi-ridge> <http://www.w3.org/2000/01/rdf-schema#label> "Gmi Ridge" .
+<https://linked.data.gov.au/def/sa-geological-features/poolowanna-trough> <http://www.w3.org/2000/01/rdf-schema#label> "Poolowanna Trough" .
+<https://linked.data.gov.au/def/sa-geological-features/bight-duntroon-basins> <http://www.w3.org/2000/01/rdf-schema#label> "Bight-Duntroon Basins" .
+<https://linked.data.gov.au/def/sa-geological-features/musgrave-province> <http://www.w3.org/2000/01/rdf-schema#label> "Musgrave Province" .
+<https://linked.data.gov.au/def/sa-geological-features/myponga-basin> <http://www.w3.org/2000/01/rdf-schema#label> "Myponga Basin" .
+<https://linked.data.gov.au/def/sa-geological-features/newer-volcanics-southeast-sa> <http://www.w3.org/2000/01/rdf-schema#label> "Newer Volcanics Southeast Sa" .
+<https://linked.data.gov.au/def/sa-geological-features/spalding-trough> <http://www.w3.org/2000/01/rdf-schema#label> "Spalding Trough" .
+<https://linked.data.gov.au/def/sa-geological-features/itiledoo-basin> <http://www.w3.org/2000/01/rdf-schema#label> "Itiledoo Basin" .
+<https://linked.data.gov.au/def/sa-geological-features/unknown> <http://www.w3.org/2000/01/rdf-schema#label> "Unknown" .
+<https://linked.data.gov.au/def/sa-geological-features/stansbury-basin> <http://www.w3.org/2000/01/rdf-schema#label> "Stansbury Basin" .
+<https://linked.data.gov.au/def/sa-geological-features/robe-trough> <http://www.w3.org/2000/01/rdf-schema#label> "Robe Trough" .
+<https://linked.data.gov.au/def/sa-geological-features/phillipson-trough> <http://www.w3.org/2000/01/rdf-schema#label> "Phillipson Trough" .
+<https://linked.data.gov.au/def/sa-geological-features/birksgate-sub-basin> <http://www.w3.org/2000/01/rdf-schema#label> "Birksgate Sub-Basin" .
+<https://linked.data.gov.au/def/sa-geological-features/murteree-ridge> <http://www.w3.org/2000/01/rdf-schema#label> "Murteree Ridge" .
+<https://linked.data.gov.au/def/sa-geological-features/ucatana-uplift> <http://www.w3.org/2000/01/rdf-schema#label> "Ucatana Uplift" .
+<https://linked.data.gov.au/def/sa-geological-features/kilroo-sub-basin> <http://www.w3.org/2000/01/rdf-schema#label> "Kilroo Sub-Basin" .
+<https://linked.data.gov.au/def/sa-geological-features/mulgathing-trough> <http://www.w3.org/2000/01/rdf-schema#label> "Mulgathing Trough" .
+<https://linked.data.gov.au/def/sa-geological-features/munyarai-trough> <http://www.w3.org/2000/01/rdf-schema#label> "Munyarai Trough" .
+<https://linked.data.gov.au/def/sa-geological-features/barossa-basin> <http://www.w3.org/2000/01/rdf-schema#label> "Barossa Basin" .
+<https://linked.data.gov.au/def/sa-geological-features/cariewerloo-basin> <http://www.w3.org/2000/01/rdf-schema#label> "Cariewerloo Basin" .
+<https://linked.data.gov.au/def/sa-geological-features/north-field-basin> <http://www.w3.org/2000/01/rdf-schema#label> "North Field Basin" .
+<https://linked.data.gov.au/def/sa-geological-features/adelaide-plains-sub-basin> <http://www.w3.org/2000/01/rdf-schema#label> "Adelaide Plains Sub-Basin" .
+<https://linked.data.gov.au/def/sa-geological-features/murray-basin> <http://www.w3.org/2000/01/rdf-schema#label> "Murray Basin" .
+<https://linked.data.gov.au/def/sa-geological-features/eringa-trough> <http://www.w3.org/2000/01/rdf-schema#label> "Eringa Trough" .
+<https://linked.data.gov.au/def/sa-geological-features/willunga-sub-basin> <http://www.w3.org/2000/01/rdf-schema#label> "Willunga Sub-Basin" .
+<https://linked.data.gov.au/def/sa-geological-features/pirie-basin> <http://www.w3.org/2000/01/rdf-schema#label> "Pirie Basin" .
+<https://linked.data.gov.au/def/sa-geological-features/coastal-quaternary> <http://www.w3.org/2000/01/rdf-schema#label> "Coastal Quaternary" .
+<https://linked.data.gov.au/def/sa-geological-features/benagerie-ridge> <http://www.w3.org/2000/01/rdf-schema#label> "Benagerie Ridge" .
+<https://linked.data.gov.au/def/sa-geological-features/lake-frome> <http://www.w3.org/2000/01/rdf-schema#label> "Lake Frome" .
+<https://linked.data.gov.au/def/sa-geological-features/leigh-creek-coal-field> <http://www.w3.org/2000/01/rdf-schema#label> "Leigh Creek Coal Field" .
+<https://linked.data.gov.au/def/sa-geological-features/nadda-basin> <http://www.w3.org/2000/01/rdf-schema#label> "Nadda Basin" .
+<https://linked.data.gov.au/def/sa-geological-features/murray-basin-basement> <http://www.w3.org/2000/01/rdf-schema#label> "Murray Basin Basement" .
+<https://linked.data.gov.au/def/sa-geological-features/bitchera-ridge> <http://www.w3.org/2000/01/rdf-schema#label> "Bitchera Ridge" .
+<https://linked.data.gov.au/def/sa-geological-features/mt-john-anticline> <http://www.w3.org/2000/01/rdf-schema#label> "Mt John Anticline" .
+<https://linked.data.gov.au/def/sa-geological-features/wallira-trough> <http://www.w3.org/2000/01/rdf-schema#label> "Wallira Trough" .
+<https://linked.data.gov.au/def/sa-geological-features/kanmantoo-trough> <http://www.w3.org/2000/01/rdf-schema#label> "Kanmantoo Trough" .
+<https://linked.data.gov.au/def/sa-geological-features/duntroon-basin> <http://www.w3.org/2000/01/rdf-schema#label> "Duntroon Basin" .
+<https://linked.data.gov.au/def/sa-geological-features/moorowie-syncline> <http://www.w3.org/2000/01/rdf-schema#label> "Moorowie Syncline" .
+<https://linked.data.gov.au/def/sa-geological-features/fregon-subdomain> <http://www.w3.org/2000/01/rdf-schema#label> "Fregon Subdomain" .
+<https://linked.data.gov.au/def/sa-geological-features/pirie-torrens-basin> <http://www.w3.org/2000/01/rdf-schema#label> "Pirie-Torrens Basin" .
+<https://linked.data.gov.au/def/sa-geological-features/curnamona-province> <http://www.w3.org/2000/01/rdf-schema#label> "Curnamona Province" .
+<https://linked.data.gov.au/def/sa-geological-features/gawler-craton> <http://www.w3.org/2000/01/rdf-schema#label> "Gawler Craton" .
+<https://linked.data.gov.au/def/sa-geological-features/officer-basin> <http://www.w3.org/2000/01/rdf-schema#label> "Officer Basin" .
+<https://linked.data.gov.au/def/sa-geological-features/gawler-range-volcanic-province> <http://www.w3.org/2000/01/rdf-schema#label> "Gawler Range Volcanic Province" .
+<https://linked.data.gov.au/def/sa-geological-features/telford-basin> <http://www.w3.org/2000/01/rdf-schema#label> "Telford Basin" .
+<https://linked.data.gov.au/def/sa-geological-features/warren-inlier> <http://www.w3.org/2000/01/rdf-schema#label> "Warren Inlier" .
+<https://linked.data.gov.au/def/sa-geological-features/golden-grove-sub-basin> <http://www.w3.org/2000/01/rdf-schema#label> "Golden Grove Sub-Basin" .
+<https://linked.data.gov.au/def/sa-geological-features/warburton-basin> <http://www.w3.org/2000/01/rdf-schema#label> "Warburton Basin" .
+<https://linked.data.gov.au/def/sa-geological-features/spencer-shelf> <http://www.w3.org/2000/01/rdf-schema#label> "Spencer Shelf" .
+<https://linked.data.gov.au/def/sa-geological-features/great-australian-bight-basin> <http://www.w3.org/2000/01/rdf-schema#label> "Great Australian Bight Basin" .
+<https://linked.data.gov.au/def/sa-geological-features/wintinna-trough> <http://www.w3.org/2000/01/rdf-schema#label> "Wintinna Trough" .
+<https://linked.data.gov.au/def/sa-geological-features/robinson-basin> <http://www.w3.org/2000/01/rdf-schema#label> "Robinson Basin" .
+<https://linked.data.gov.au/def/sa-geological-features/noarlunga-sub-basin> <http://www.w3.org/2000/01/rdf-schema#label> "Noarlunga Sub-Basin" .
+<https://linked.data.gov.au/def/sa-geological-features/yoolperlunna-inlier> <http://www.w3.org/2000/01/rdf-schema#label> "Yoolperlunna Inlier" .
+<https://linked.data.gov.au/def/sa-geological-features/lake-eyre-basin> <http://www.w3.org/2000/01/rdf-schema#label> "Lake Eyre Basin" .
+<https://linked.data.gov.au/def/sa-geological-features/cummins-basin> <http://www.w3.org/2000/01/rdf-schema#label> "Cummins Basin" .
+<https://linked.data.gov.au/def/sa-geological-features/willochra-basin> <http://www.w3.org/2000/01/rdf-schema#label> "Willochra Basin" .
+<https://linked.data.gov.au/def/sa-geological-features/great-artesian-basin> <http://www.w3.org/2000/01/rdf-schema#label> "Great Artesian Basin" .
+<https://linked.data.gov.au/def/sa-geological-features/tilparee-trough> <http://www.w3.org/2000/01/rdf-schema#label> "Tilparee Trough" .
+<https://linked.data.gov.au/def/sa-geological-features/tirari-sub-basin> <http://www.w3.org/2000/01/rdf-schema#label> "Tirari Sub-Basin" .
+<https://linked.data.gov.au/def/sa-geological-features/sedan-coal-basin> <http://www.w3.org/2000/01/rdf-schema#label> "Sedan Coal Basin" .
+<https://linked.data.gov.au/def/sa-geological-features/birdsville-track-ridge> <http://www.w3.org/2000/01/rdf-schema#label> "Birdsville Track Ridge" .
+<https://linked.data.gov.au/def/sa-geological-features/willouran-trough> <http://www.w3.org/2000/01/rdf-schema#label> "Willouran Trough" .
+<https://linked.data.gov.au/def/sa-geological-features/christie-subdomain> <http://www.w3.org/2000/01/rdf-schema#label> "Christie Subdomain" .
+<https://linked.data.gov.au/def/sa-geological-features/copley-basin> <http://www.w3.org/2000/01/rdf-schema#label> "Copley Basin" .
+<https://linked.data.gov.au/def/sa-geological-features/mt-sarah-anticline> <http://www.w3.org/2000/01/rdf-schema#label> "Mt Sarah Anticline" .
+<https://linked.data.gov.au/def/sa-geological-features/baratta-trough> <http://www.w3.org/2000/01/rdf-schema#label> "Baratta Trough" .
+<https://linked.data.gov.au/def/sa-geological-features/darling-basin> <http://www.w3.org/2000/01/rdf-schema#label> "Darling Basin" .
+<https://linked.data.gov.au/def/sa-geological-features/renmark-trough> <http://www.w3.org/2000/01/rdf-schema#label> "Renmark Trough" .
+<https://linked.data.gov.au/def/sa-geological-features/gladstone-trough> <http://www.w3.org/2000/01/rdf-schema#label> "Gladstone Trough" .
+<https://linked.data.gov.au/def/sa-geological-features/coulta-subdomain> <http://www.w3.org/2000/01/rdf-schema#label> "Coulta Subdomain" .
+<https://linked.data.gov.au/def/sa-geological-features/meadows-basin> <http://www.w3.org/2000/01/rdf-schema#label> "Meadows Basin" .
+<https://linked.data.gov.au/def/sa-geological-features/amadeus-basin> <http://www.w3.org/2000/01/rdf-schema#label> "Amadeus Basin" .
+<https://linked.data.gov.au/def/sa-geological-features/coompana-block> <http://www.w3.org/2000/01/rdf-schema#label> "Coompana Block" .
+<https://linked.data.gov.au/def/sa-geological-features/willyama-inliers> <http://www.w3.org/2000/01/rdf-schema#label> "Willyama Inliers" .
+<https://linked.data.gov.au/def/sa-geological-features/myponga-inlier> <http://www.w3.org/2000/01/rdf-schema#label> "Myponga Inlier" .
+<https://linked.data.gov.au/def/sa-geological-features/levenger-graben> <http://www.w3.org/2000/01/rdf-schema#label> "Levenger Graben" .
+<https://linked.data.gov.au/def/sa-geological-features/nurrai-ridge> <http://www.w3.org/2000/01/rdf-schema#label> "Nurrai Ridge" .
+<https://linked.data.gov.au/def/sa-geological-features/yalkalpo-syncline> <http://www.w3.org/2000/01/rdf-schema#label> "Yalkalpo Syncline" .
+<https://linked.data.gov.au/def/sa-geological-features/boolcunda-basin> <http://www.w3.org/2000/01/rdf-schema#label> "Boolcunda Basin" .
+<https://linked.data.gov.au/def/sa-geological-features/canegrass-lobe> <http://www.w3.org/2000/01/rdf-schema#label> "Canegrass Lobe" .
+<https://linked.data.gov.au/def/sa-geological-features/spencer-domain> <http://www.w3.org/2000/01/rdf-schema#label> "Spencer Domain" .
+<https://linked.data.gov.au/def/sa-geological-features/unnamed-intermontane-basin> <http://www.w3.org/2000/01/rdf-schema#label> "Unnamed Intermontane Basin" .
+<https://linked.data.gov.au/def/sa-geological-features/eucla-basin> <http://www.w3.org/2000/01/rdf-schema#label> "Eucla Basin" .
+<https://linked.data.gov.au/def/sa-geological-features/st-vincent-basin> <http://www.w3.org/2000/01/rdf-schema#label> "St Vincent Basin" .
+<https://linked.data.gov.au/def/sa-geological-features/berri-basin> <http://www.w3.org/2000/01/rdf-schema#label> "Berri Basin" .
+<https://linked.data.gov.au/def/sa-geological-features/curnamona-craton> <http://www.w3.org/2000/01/rdf-schema#label> "Curnamona Craton" .
+<https://linked.data.gov.au/def/sa-geological-features/polda-basin> <http://www.w3.org/2000/01/rdf-schema#label> "Polda Basin" .
+<https://linked.data.gov.au/def/sa-geological-features/worumba-trough> <http://www.w3.org/2000/01/rdf-schema#label> "Worumba Trough" .
+<https://linked.data.gov.au/def/sa-geological-features/stuart-shelf> <http://www.w3.org/2000/01/rdf-schema#label> "Stuart Shelf" .
+<https://linked.data.gov.au/def/sa-geological-features/encounter-basin> <http://www.w3.org/2000/01/rdf-schema#label> "Encounter Basin" .
+<https://linked.data.gov.au/def/sa-geological-features/tenappera-trough> <http://www.w3.org/2000/01/rdf-schema#label> "Tenappera Trough" .
+<https://linked.data.gov.au/def/sa-geological-features/tallaringa-palaeochannel> <http://www.w3.org/2000/01/rdf-schema#label> "Tallaringa Palaeochannel" .
+<https://linked.data.gov.au/def/sa-geological-features/mount-painter-inlier> <http://www.w3.org/2000/01/rdf-schema#label> "Mount Painter Inlier" .
+<https://linked.data.gov.au/def/sa-geological-features/olympic-domain> <http://www.w3.org/2000/01/rdf-schema#label> "Olympic Domain" .
+<https://linked.data.gov.au/def/sa-geological-features/karkaro-trough> <http://www.w3.org/2000/01/rdf-schema#label> "Karkaro Trough" .
+<https://linked.data.gov.au/def/sa-geological-features/mount-woods-inlier> <http://www.w3.org/2000/01/rdf-schema#label> "Mount Woods Inlier" .
+<https://linked.data.gov.au/def/sa-geological-features/pedirka-basin> <http://www.w3.org/2000/01/rdf-schema#label> "Pedirka Basin" .
+<https://linked.data.gov.au/def/sa-geological-features/mount-babbage-inlier> <http://www.w3.org/2000/01/rdf-schema#label> "Mount Babbage Inlier" .
+<https://linked.data.gov.au/def/sa-geological-features/peake-and-denison-inliers> <http://www.w3.org/2000/01/rdf-schema#label> "Peake And Denison Inliers" .
+<https://linked.data.gov.au/def/sa-geological-features/patchawarra-trough> <http://www.w3.org/2000/01/rdf-schema#label> "Patchawarra Trough" .
+<https://linked.data.gov.au/def/sa-geological-features/denman-basin> <http://www.w3.org/2000/01/rdf-schema#label> "Denman Basin" .
+<https://linked.data.gov.au/def/sa-geological-features/adelaide-geosyncline> <http://www.w3.org/2000/01/rdf-schema#label> "Adelaide Geosyncline" .
+<https://linked.data.gov.au/def/sa-geological-features/mount-lofty-ranges-inliers> <http://www.w3.org/2000/01/rdf-schema#label> "Mount Lofty Ranges Inliers" .
+<https://linked.data.gov.au/def/sa-geological-features/callabonna-sub-basin> <http://www.w3.org/2000/01/rdf-schema#label> "Callabonna Sub-Basin" .
+<https://linked.data.gov.au/def/sa-geological-features/springfield-basin> <http://www.w3.org/2000/01/rdf-schema#label> "Springfield Basin" .
+<https://linked.data.gov.au/def/sa-geological-features/delamerian-orogen> <http://www.w3.org/2000/01/rdf-schema#label> "Delamerian Orogen" .
+<https://linked.data.gov.au/def/sa-geological-features/northern-spencer-gulf> <http://www.w3.org/2000/01/rdf-schema#label> "Northern Spencer Gulf" .
+<https://linked.data.gov.au/def/sa-geological-features/hamilton-basin> <http://www.w3.org/2000/01/rdf-schema#label> "Hamilton Basin" .
+<https://linked.data.gov.au/def/sa-geological-features/simpson-basin> <http://www.w3.org/2000/01/rdf-schema#label> "Simpson Basin" .
+<https://linked.data.gov.au/def/sa-geological-features/aldgate-inlier> <http://www.w3.org/2000/01/rdf-schema#label> "Aldgate Inlier" .
+<https://linked.data.gov.au/def/sa-geological-features/bight-basin> <http://www.w3.org/2000/01/rdf-schema#label> "Bight Basin" .
+<https://linked.data.gov.au/def/sa-geological-features/nuyts-subdomain> <http://www.w3.org/2000/01/rdf-schema#label> "Nuyts Subdomain" .
+<https://linked.data.gov.au/def/sa-geological-features/arckaringa-basin> <http://www.w3.org/2000/01/rdf-schema#label> "Arckaringa Basin" .
+<https://linked.data.gov.au/def/sa-geological-features/moonta-subdomain> <http://www.w3.org/2000/01/rdf-schema#label> "Moonta Subdomain" .
+<https://linked.data.gov.au/def/sa-geological-features/murray-river-valley> <http://www.w3.org/2000/01/rdf-schema#label> "Murray River Valley" .
+<https://linked.data.gov.au/def/sa-geological-features/kangaroo-island> <http://www.w3.org/2000/01/rdf-schema#label> "Kangaroo Island" .
+<https://linked.data.gov.au/def/sa-geological-features/penola-trough> <http://www.w3.org/2000/01/rdf-schema#label> "Penola Trough" .
+<https://linked.data.gov.au/def/sa-geological-features/billa-kalina-basin> <http://www.w3.org/2000/01/rdf-schema#label> "Billa Kalina Basin" .
+<https://linked.data.gov.au/def/sa-geological-features/oakbank-inlier> <http://www.w3.org/2000/01/rdf-schema#label> "Oakbank Inlier" .
+<https://linked.data.gov.au/def/sa-geological-features/otway-basin> <http://www.w3.org/2000/01/rdf-schema#label> "Otway Basin" .
+<http://def.isotc211.org/iso19115/-1/2014/CommonClasses/code/MD_ScopeCode/application> <http://www.w3.org/2000/01/rdf-schema#label> "Application" .
+<https://linked.data.gov.au/def/mer-scope-codes/map> <http://www.w3.org/2000/01/rdf-schema#label> "Map" .
+<http://def.isotc211.org/iso19115/-1/2014/CommonClasses/code/MD_ScopeCode/service> <http://www.w3.org/2000/01/rdf-schema#label> "Service" .
+<http://def.isotc211.org/iso19115/-1/2014/CommonClasses/code/MD_ScopeCode/model> <http://www.w3.org/2000/01/rdf-schema#label> "Model" .
+<http://def.isotc211.org/iso19115/-1/2014/CommonClasses/code/MD_ScopeCode/dataset> <http://www.w3.org/2000/01/rdf-schema#label> "Dataset" .
+<https://linked.data.gov.au/def/mer-scope-codes> <http://www.w3.org/2000/01/rdf-schema#label> "Scope Codes" .
+<http://def.isotc211.org/iso19115/-1/2014/CommonClasses/code/MD_ScopeCode/document> <http://www.w3.org/2000/01/rdf-schema#label> "Document" .
+<https://linked.data.gov.au/def/mer-tenament-types/PL> <http://www.w3.org/2000/01/rdf-schema#label> "Pipeline licence holders " .
+<https://linked.data.gov.au/def/mer-tenament-types> <http://www.w3.org/2000/01/rdf-schema#label> "MER Tenement Types" .
+<https://linked.data.gov.au/def/mer-tenament-types/PEL> <http://www.w3.org/2000/01/rdf-schema#label> "Onshore exploration licences - petroleum" .
+<https://linked.data.gov.au/def/mer-tenament-types/ERA> <http://www.w3.org/2000/01/rdf-schema#label> "Exploration Release Area" .
+<https://linked.data.gov.au/def/mer-tenament-types/AALA> <http://www.w3.org/2000/01/rdf-schema#label> "Associated activities licences applications" .
+<https://linked.data.gov.au/def/mer-tenament-types/EL> <http://www.w3.org/2000/01/rdf-schema#label> "Exploration Licence" .
+<https://linked.data.gov.au/def/mer-tenament-types/GSRL> <http://www.w3.org/2000/01/rdf-schema#label> "Onshore retention licences – gas storage" .
+<https://linked.data.gov.au/def/mer-tenament-types/GEL> <http://www.w3.org/2000/01/rdf-schema#label> "Onshore exploration licences - geothermal" .
+<https://linked.data.gov.au/def/mer-tenament-types/ML> <http://www.w3.org/2000/01/rdf-schema#label> "Mineral Licence" .
+<https://linked.data.gov.au/def/mer-tenament-types/MPL> <http://www.w3.org/2000/01/rdf-schema#label> "Miscellaneous purposes licence" .
+<https://linked.data.gov.au/def/mer-tenament-types/SFLA> <http://www.w3.org/2000/01/rdf-schema#label> "Special facilities licence applications" .
+<https://linked.data.gov.au/def/mer-tenament-types/P> <http://www.w3.org/2000/01/rdf-schema#label> "Petroleum" .
+<https://linked.data.gov.au/def/mer-tenament-types/PELA> <http://www.w3.org/2000/01/rdf-schema#label> "Onshore exploration licences applications - petroleum" .
+<https://linked.data.gov.au/def/mer-tenament-types/MCA> <http://www.w3.org/2000/01/rdf-schema#label> "Mineral claim application" .
+<https://linked.data.gov.au/def/mer-tenament-types/GSELA> <http://www.w3.org/2000/01/rdf-schema#label> "Onshore exploration licences applications – gas storage" .
+<https://linked.data.gov.au/def/mer-tenament-types/PSLA> <http://www.w3.org/2000/01/rdf-schema#label> "Preliminary survey licence applications" .
+<https://linked.data.gov.au/def/mer-tenament-types/SFL> <http://www.w3.org/2000/01/rdf-schema#label> "Special facilities licence" .
+<https://linked.data.gov.au/def/mer-tenament-types/AAL> <http://www.w3.org/2000/01/rdf-schema#label> "Associated activities licences" .
+<https://linked.data.gov.au/def/mer-tenament-types/GSEL> <http://www.w3.org/2000/01/rdf-schema#label> "Onshore exploration licences – gas storage" .
+<https://linked.data.gov.au/def/mer-tenament-types/PSL> <http://www.w3.org/2000/01/rdf-schema#label> "Preliminary survey licence" .
+<https://linked.data.gov.au/def/mer-tenament-types/RG> <http://www.w3.org/2000/01/rdf-schema#label> "Relinquished Ground" .
+<https://linked.data.gov.au/def/mer-tenament-types/GELA> <http://www.w3.org/2000/01/rdf-schema#label> "Onshore exploration licences applications- geothermal" .
+<https://linked.data.gov.au/def/mer-tenament-types/ELA> <http://www.w3.org/2000/01/rdf-schema#label> "Exploration Licence Application" .
+<https://linked.data.gov.au/def/mer-tenament-types/GSRLA> <http://www.w3.org/2000/01/rdf-schema#label> "Onshore retention licences applications – gas storage" .
+<https://linked.data.gov.au/def/mer-tenament-types/PRL> <http://www.w3.org/2000/01/rdf-schema#label> "Onshore retention Licences - petroleum" .
+<https://linked.data.gov.au/def/mer-tenament-types/EML> <http://www.w3.org/2000/01/rdf-schema#label> "Extractive mineral lease" .
+<https://linked.data.gov.au/def/mer-tenament-types/MC> <http://www.w3.org/2000/01/rdf-schema#label> "Mineral claim" .
+<https://linked.data.gov.au/def/mer-tenament-types/RL> <http://www.w3.org/2000/01/rdf-schema#label> "Retention lease" .
+<https://linked.data.gov.au/def/mer-tenament-types/PM> <http://www.w3.org/2000/01/rdf-schema#label> "Private mine" .
+<https://linked.data.gov.au/def/mer-tenament-types/M> <http://www.w3.org/2000/01/rdf-schema#label> "Mineral" .
+<https://linked.data.gov.au/def/mer-tenament-types/GSL> <http://www.w3.org/2000/01/rdf-schema#label> "Gas storage licence" .
+<https://linked.data.gov.au/def/mer-tenament-types/MPLA> <http://www.w3.org/2000/01/rdf-schema#label> "Mineral licence application" .
+<https://linked.data.gov.au/def/mer-tenament-types/PPL> <http://www.w3.org/2000/01/rdf-schema#label> "Petroleum production licence" .
+<https://linked.data.gov.au/def/mer-tenament-types/PPLA> <http://www.w3.org/2000/01/rdf-schema#label> "Petroleum production licence applications" .
+<https://linked.data.gov.au/def/mer-tenament-types/GRL> <http://www.w3.org/2000/01/rdf-schema#label> "Onshore retention licences - geothermal" .
+<http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation/code/MD_TopicCategoryCode/geoscientificInformation> <http://www.w3.org/2000/01/rdf-schema#label> "Geoscientific Information" .
+<http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation/code/MD_TopicCategoryCode/utilitiesCommunication> <http://www.w3.org/2000/01/rdf-schema#label> "Utilities Communication" .
+<http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation/code/MD_TopicCategoryCode/transportation> <http://www.w3.org/2000/01/rdf-schema#label> "Transportation" .
+<https://linked.data.gov.au/def/mer-topic-categories> <http://www.w3.org/2000/01/rdf-schema#label> "Topic Category Codes" .
+<http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation/code/MD_TopicCategoryCode/environment> <http://www.w3.org/2000/01/rdf-schema#label> "Environment" .
+<http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation/code/MD_TopicCategoryCode/boundaries> <http://www.w3.org/2000/01/rdf-schema#label> "Boundaries" .
+<https://linked.data.gov.au/def/vocab-derivation-modes/subsetting> <http://www.w3.org/2000/01/rdf-schema#label> "Subsetting" .
+<https://linked.data.gov.au/def/vocab-derivation-modes> <http://www.w3.org/2000/01/rdf-schema#label> "Vocabulary Derivation Modes" .
+<https://linked.data.gov.au/def/vocab-derivation-modes/relabelling> <http://www.w3.org/2000/01/rdf-schema#label> "Relabelling" .
+<https://linked.data.gov.au/def/vocab-derivation-modes/direct> <http://www.w3.org/2000/01/rdf-schema#label> "Direct" .
+<https://linked.data.gov.au/def/vocab-derivation-modes/extension> <http://www.w3.org/2000/01/rdf-schema#label> "Extension" .
+<https://linked.data.gov.au/def/vocab-derivation-modes/not-applicable> <http://www.w3.org/2000/01/rdf-schema#label> "Not Applicable" .
+<https://linked.data.gov.au/def/vocab-derivation-modes/subsetting-and-extension> <http://www.w3.org/2000/01/rdf-schema#label> "Subset and Extension" .
+<https://linked.data.gov.au/def/mer-work-statuses/completed> <http://www.w3.org/2000/01/rdf-schema#label> "Completed" .
+<https://linked.data.gov.au/def/mer-work-statuses/planned> <http://www.w3.org/2000/01/rdf-schema#label> "Planned" .
+<https://linked.data.gov.au/def/mer-work-statuses> <http://www.w3.org/2000/01/rdf-schema#label> "MER Work Status" .
+<https://linked.data.gov.au/def/mer-work-statuses/on-going> <http://www.w3.org/2000/01/rdf-schema#label> "On Going" .
+<https://linked.data.gov.au/def/mer-work-statuses/under-development> <http://www.w3.org/2000/01/rdf-schema#label> "Under Development" .
+<https://linked.data.gov.au/def/mer-work-statuses/final> <http://www.w3.org/2000/01/rdf-schema#label> "Final" .
+<https://linked.data.gov.au/def/mer-work-statuses/superseded> <http://www.w3.org/2000/01/rdf-schema#label> "Superseded" .
+<https://linked.data.gov.au/def/mer-work-statuses/historical-archive> <http://www.w3.org/2000/01/rdf-schema#label> "Historical Archive" .

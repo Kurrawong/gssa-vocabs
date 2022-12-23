@@ -34,6 +34,19 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:topConceptOf cs: ;
 .
 
+:not-applicable
+    a skos:Concept ;
+    dcterms:identifier "not-applicable"^^xsd:token ;
+    dcterms:provenance "Created for the MER catalogue upgrade project, 2022"@en ;
+    reg:status status:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Derivation mode is not applicable to this vocabulary"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Not Applicable"@en ;
+    skos:scopeNote "Use this Concept if the vocabulary is known not to reuse any other vocabularies" ;
+    skos:topConceptOf cs: ;
+.
+
 :relabelling
     a skos:Concept ;
     dcterms:identifier "relabelling"^^xsd:token ;
@@ -60,9 +73,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:topConceptOf cs: ;
 .
 
-:subset-and-extension
+:subsetting-and-extension
     a skos:Concept ;
-    dcterms:identifier "subset-and-extension"^^xsd:token ;
+    dcterms:identifier "subsetting-and-extension"^^xsd:token ;
     dcterms:provenance "Created for the MER catalogue upgrade project, 2022"@en ;
     reg:status status:original ;
     rdfs:isDefinedBy cs: ;
@@ -102,6 +115,7 @@ cs:
     skos:hasTopConcept
         :direct ,
         :extension ,
+        :not-applicable ,
         :relabelling ,
         :subsetting ;
     skos:prefLabel "Vocabulary Derivation Modes"@en ;

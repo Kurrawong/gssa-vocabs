@@ -10,7 +10,6 @@ PREFIX sdo: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX status: <http://def.isotc211.org/iso19135/-1/2015/CoreModel/code/RE_ItemStatus/>
 PREFIX this-cs: <https://linked.data.gov.au/def/mer-topic-categories>
-PREFIX vocmode: <https://linked.data.gov.au/def/vocab-derivation-modes/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <http://def.isotc211.org/org/tc211>
@@ -109,8 +108,8 @@ this-cs:
     dcterms:publisher <https://linked.data.gov.au/org/mer> ;
     dcterms:rights "© Department for Energy and Mining, 2022"@en ;
     prov:qualifiedDerivation [
-        prov:entity <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
-        dcat:hadRole vocmode:subsetting ;
+        prov:entity <http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation/code/MD_TopicCategoryCode> ;
+        dcat:hadRole <https://linked.data.gov.au/def/vocab-derivation-modes/subsetting> ;
     ] ;
     reg:status agldwgstatus:stable ;
     skos:definition "High-level	geographic data thematic classification to assist in the grouping and search of available geographic datasets"@en ;

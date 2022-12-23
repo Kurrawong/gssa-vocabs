@@ -431,7 +431,6 @@ cs:
     dcterms:provenance "Created by MER in 2022 for the catalogue update project"@en ;
     dcterms:publisher <https://linked.data.gov.au/org/mer> ;
     dcterms:rights "© Department for Energy and Mining, 2022"@en ;
-    dcterms:source "http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation/code/MD_TopicCategoryCode"^^xsd:anyURI ;
     reg:status agldwgstatus:stable ;
     skos:definition "Types of South Australian mining and petroleum tenements constituted under the Mining Act 1971 and the Petroleum and Geothermal Energy Act 2000"@en ;
     skos:hasTopConcept

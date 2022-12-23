@@ -1,77 +1,76 @@
-PREFIX : <http://def.isotc211.org/iso19115/-1/2014/CommonClasses/code/MD_ScopeCode/>
+PREFIX : <https://linked.data.gov.au/def/mer-scope-codes/>
 PREFIX agldwgstatus: <https://linked.data.gov.au/def/reg-statuses/>
-PREFIX cs: <http://def.isotc211.org/iso19115/-1/2014/CommonClasses/code/MD_ScopeCode>
+PREFIX cs: <https://linked.data.gov.au/def/mer-scope-codes>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX iso-cs: <http://def.isotc211.org/iso19115/-1/2014/CommonClasses/code/MD_ScopeCode>
+PREFIX iso-ns: <http://def.isotc211.org/iso19115/-1/2014/CommonClasses/code/MD_ScopeCode/>
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX reg: <http://purl.org/linked-data/registry#>
 PREFIX sdo: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX status: <http://def.isotc211.org/iso19135/-1/2015/CoreModel/code/RE_ItemStatus/>
-PREFIX this-cs: <https://linked.data.gov.au/def/mer-scope-codes>
-PREFIX this-ns: <https://linked.data.gov.au/def/mer-scope-codes/>
-PREFIX vocmode: <https://linked.data.gov.au/def/vocab-derivation-modes/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-:application
+iso-ns:application
     a skos:Concept ;
     dcterms:identifier "application"^^xsd:token ;
     dcterms:provenance "Presented in the original standard's codelist"@en ;
     reg:status status:original ;
-    rdfs:isDefinedBy cs: ;
+    rdfs:isDefinedBy iso-cs: ;
     skos:definition "Missing"@en ;
-    skos:inScheme this-cs: ;
+    skos:inScheme cs: ;
     skos:prefLabel "Application"@en ;
-    skos:topConceptOf this-cs: ;
+    skos:topConceptOf cs: ;
 .
 
-:dataset
+iso-ns:dataset
     a skos:Concept ;
     dcterms:identifier "dataset"^^xsd:token ;
     dcterms:provenance "Presented in the original standard's codelist"@en ;
     reg:status status:original ;
-    rdfs:isDefinedBy cs: ;
+    rdfs:isDefinedBy iso-cs: ;
     skos:definition "information applies to the dataset"@en ;
-    skos:inScheme this-cs: ;
+    skos:inScheme cs: ;
     skos:prefLabel "Dataset"@en ;
-    skos:topConceptOf this-cs: ;
+    skos:topConceptOf cs: ;
 .
 
-:document
+iso-ns:document
     a skos:Concept ;
     dcterms:identifier "document"^^xsd:token ;
     dcterms:provenance "Presented in the original standard's codelist"@en ;
     reg:status status:original ;
-    rdfs:isDefinedBy cs: ;
+    rdfs:isDefinedBy iso-cs: ;
     skos:definition "information applies to a document"@en ;
-    skos:inScheme this-cs: ;
+    skos:inScheme cs: ;
     skos:prefLabel "Document"@en ;
-    skos:topConceptOf this-cs: ;
+    skos:topConceptOf cs: ;
 .
 
-:model
+iso-ns:model
     a skos:Concept ;
     dcterms:identifier "model"^^xsd:token ;
     dcterms:provenance "Presented in the original standard's codelist"@en ;
     reg:status status:original ;
-    rdfs:isDefinedBy cs: ;
+    rdfs:isDefinedBy iso-cs: ;
     skos:definition "information applies to a copy or imitation of an existing or hypothetical object"@en ;
-    skos:inScheme this-cs: ;
+    skos:inScheme cs: ;
     skos:prefLabel "Model"@en ;
-    skos:topConceptOf this-cs: ;
+    skos:topConceptOf cs: ;
 .
 
-:service
+iso-ns:service
     a skos:Concept ;
     dcterms:identifier "service"^^xsd:token ;
     dcterms:provenance "Presented in the original standard's codelist"@en ;
     reg:status status:original ;
-    rdfs:isDefinedBy cs: ;
+    rdfs:isDefinedBy iso-cs: ;
     skos:definition "information applies to a capability which a service provider entity makes available to a service user entity through a set of interfaces that define a behaviour, such as a use case"@en ;
-    skos:inScheme this-cs: ;
+    skos:inScheme cs: ;
     skos:prefLabel "Service"@en ;
-    skos:topConceptOf this-cs: ;
+    skos:topConceptOf cs: ;
 .
 
 <http://def.isotc211.org/org/tc211>
@@ -81,16 +80,16 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     sdo:url "https://www.iso.org/committee/54904.html"^^xsd:anyURI ;
 .
 
-this-ns:map
+:map
     a skos:Concept ;
     dcterms:identifier "map"^^xsd:token ;
     dcterms:provenance "Created by MER"@en ;
     reg:status status:original ;
-    rdfs:isDefinedBy this-cs: ;
+    rdfs:isDefinedBy cs: ;
     skos:definition "information applies to a map"@en ;
-    skos:inScheme this-cs: ;
+    skos:inScheme cs: ;
     skos:prefLabel "Map"@en ;
-    skos:topConceptOf this-cs: ;
+    skos:topConceptOf cs: ;
 .
 
 <https://linked.data.gov.au/org/mer>
@@ -99,7 +98,7 @@ this-ns:map
     sdo:url "https://www.energymining.sa.gov.au/industry/geological-survey"^^xsd:anyURI ;
 .
 
-this-cs:
+cs:
     a skos:ConceptScheme ;
     dcterms:contributor <http://def.isotc211.org/org/tc211> ;
     dcterms:created "2022-11-25"^^xsd:date ;
@@ -110,18 +109,18 @@ this-cs:
     dcterms:provenance "Derived from http://def.isotc211.org/iso19115/-1/2014/CommonClasses/code/MD_ScopeCode"@en ;
     dcterms:publisher <https://linked.data.gov.au/org/mer> ;
     dcterms:source "http://def.isotc211.org/iso19115/-1/2014/CommonClasses/code/MD_ScopeCode"^^xsd:anyURI ;
-    prov:qualifiedDerivation [
-        prov:entity <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
-        dcat:hadRole vocmode:extension ;
-    ] ;
     reg:status agldwgstatus:stable ;
     skos:definition "An subset and extended version of ISO19115-1's Scope Codes vocabulary"@en ;
     skos:hasTopConcept
-        :application ,
-        :dataset ,
-        :document ,
-        :model ,
-        :service ,
-        this-ns:map ;
+        iso-ns:application ,
+        iso-ns:dataset ,
+        iso-ns:document ,
+        :map ,
+        iso-ns:model ,
+        iso-ns:service ;
     skos:prefLabel "Scope Codes"@en ;
+    prov:qualifiedDerivation [
+            dcat:hadRole <https://linked.data.gov.au/def/vocab-derivation-modes/subsetting-and-extension> ;
+            prov:entity iso-cs:
+        ] ;
 .
