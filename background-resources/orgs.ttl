@@ -4,9 +4,17 @@ PREFIX sdo: <https://schema.org/>
 
 
 <https://linked.data.gov.au/org/mer>
-    rdfs:label "South Australian Minerals and Energy Resources" ;
+    rdfs:label "SA Minerals & Energy Resources" ;
 .
 
 <http://def.isotc211.org/org/tc211>
     rdfs:label "ISO Technical Committee 211" ;
+.
+
+<https://kurrawong.net>
+    rdfs:label "KurrawongAI" ;
+.
+
+<https://linked.data.gov.au/org/cgi-gtwg>
+    rdfs:label "CGI Geoscience Terminology Working Group" ;
 .

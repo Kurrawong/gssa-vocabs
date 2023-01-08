@@ -1257,7 +1257,7 @@ for:46
 
 <https://linked.data.gov.au/org/mer>
     a sdo:Organization ;
-    sdo:name "South Australian Minerals and Energy Resources" ;
+    sdo:name "SA Minerals & Energy Resources" ;
     sdo:url "https://www.energymining.sa.gov.au/industry/geological-survey"^^xsd:anyURI ;
 .
 
