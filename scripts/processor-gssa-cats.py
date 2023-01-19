@@ -64,7 +64,7 @@ g.parse(
         
         <https://linked.data.gov.au/org/gssa>
             a sdo:Organization ;
-            sdo:name "South Australian Minerals and Energy Resources" ;
+            sdo:name "SA Minerals & Energy Resources" ;
             sdo:url "https://www.energymining.sa.gov.au/industry/geological-survey"^^xsd:anyURI ;
         .
         ''',

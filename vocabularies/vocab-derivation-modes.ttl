@@ -6,14 +6,13 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX reg: <http://purl.org/linked-data/registry#>
 PREFIX sdo: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-PREFIX status: <http://def.isotc211.org/iso19135/-1/2015/CoreModel/code/RE_ItemStatus/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :direct
     a skos:Concept ;
     dcterms:identifier "direct"^^xsd:token ;
     dcterms:provenance "Created for the MER catalogue upgrade project, 2022"@en ;
-    reg:status status:original ;
+    reg:status agldwgstatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Derivation without alteration"@en ;
     skos:inScheme cs: ;
@@ -25,7 +24,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a skos:Concept ;
     dcterms:identifier "extension"^^xsd:token ;
     dcterms:provenance "Created for the MER catalogue upgrade project, 2022"@en ;
-    reg:status status:original ;
+    reg:status agldwgstatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Derivation with extension"@en ;
     skos:inScheme cs: ;
@@ -38,7 +37,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a skos:Concept ;
     dcterms:identifier "not-applicable"^^xsd:token ;
     dcterms:provenance "Created for the MER catalogue upgrade project, 2022"@en ;
-    reg:status status:original ;
+    reg:status agldwgstatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Derivation mode is not applicable to this vocabulary"@en ;
     skos:inScheme cs: ;
@@ -51,7 +50,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a skos:Concept ;
     dcterms:identifier "relabelling"^^xsd:token ;
     dcterms:provenance "Created for the MER catalogue upgrade project, 2022"@en ;
-    reg:status status:original ;
+    reg:status agldwgstatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Derivation with relabelling"@en ;
     skos:inScheme cs: ;
@@ -64,7 +63,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a skos:Concept ;
     dcterms:identifier "subsetting"^^xsd:token ;
     dcterms:provenance "Created for the MER catalogue upgrade project, 2022"@en ;
-    reg:status status:original ;
+    reg:status agldwgstatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Derivation with subsetting"@en ;
     skos:inScheme cs: ;
@@ -77,7 +76,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a skos:Concept ;
     dcterms:identifier "subsetting-and-extension"^^xsd:token ;
     dcterms:provenance "Created for the MER catalogue upgrade project, 2022"@en ;
-    reg:status status:original ;
+    reg:status agldwgstatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Derivation with subsetting and extension"@en ;
     skos:inScheme cs: ;

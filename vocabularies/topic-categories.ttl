@@ -8,7 +8,6 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX reg: <http://purl.org/linked-data/registry#>
 PREFIX sdo: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-PREFIX status: <http://def.isotc211.org/iso19135/-1/2015/CoreModel/code/RE_ItemStatus/>
 PREFIX this-cs: <https://linked.data.gov.au/def/mer-topic-categories>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
@@ -23,7 +22,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a skos:Concept ;
     dcterms:identifier "boundaries"^^xsd:token ;
     dcterms:provenance "Presented in the original standard's codelist"@en ;
-    reg:status status:original ;
+    reg:status agldwgstatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition """Legal land descriptions.
 
@@ -37,7 +36,7 @@ Examples: political and administrative boundaries"""@en ;
     a skos:Concept ;
     dcterms:identifier "environment"^^xsd:token ;
     dcterms:provenance "Presented in the original standard's codelist"@en ;
-    reg:status status:original ;
+    reg:status agldwgstatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition """Environmental resources, protection and conservation.
 
@@ -52,7 +51,7 @@ Examples: environmental pollution, waste storage and treatment, environmental im
     a skos:Concept ;
     dcterms:identifier "geoscientificInformation"^^xsd:token ;
     dcterms:provenance "Presented in the original standard's codelist"@en ;
-    reg:status status:original ;
+    reg:status agldwgstatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition """Information pertaining to earth sciences.
 
@@ -66,7 +65,7 @@ Examples: geophysical features and processes, geology, minerals, sciences dealin
     a skos:Concept ;
     dcterms:identifier "transportation"^^xsd:token ;
     dcterms:provenance "Presented in the original standard's codelist"@en ;
-    reg:status status:original ;
+    reg:status agldwgstatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition """Means and aids for conveying persons and/or goods.
 
@@ -80,7 +79,7 @@ Examples: roads, airports/airstrips, shipping routes, tunnels, nautical charts, 
     a skos:Concept ;
     dcterms:identifier "utilitiesCommunication"^^xsd:token ;
     dcterms:provenance "Presented in the original standard's codelist"@en ;
-    reg:status status:original ;
+    reg:status agldwgstatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition """Energy, water and waste systems and communications infrastructure and services.
 

@@ -769,3 +769,16 @@
 <https://linked.data.gov.au/def/mer-work-statuses/final> <http://www.w3.org/2000/01/rdf-schema#label> "Final" .
 <https://linked.data.gov.au/def/mer-work-statuses/superseded> <http://www.w3.org/2000/01/rdf-schema#label> "Superseded" .
 <https://linked.data.gov.au/def/mer-work-statuses/historical-archive> <http://www.w3.org/2000/01/rdf-schema#label> "Historical Archive" .
+<https://linked.data.gov.au/def/reg-statuses/accepted <http://www.w3.org/2000/01/rdf-schema#label> "accepted" .
+<https://linked.data.gov.au/def/reg-statuses/addition <http://www.w3.org/2000/01/rdf-schema#label> "addition" .
+<https://linked.data.gov.au/def/reg-statuses/deprecated <http://www.w3.org/2000/01/rdf-schema#label> "deprecated" .
+<https://linked.data.gov.au/def/reg-statuses/invalid <http://www.w3.org/2000/01/rdf-schema#label> "invalid" .
+<https://linked.data.gov.au/def/reg-statuses/notAccepted <http://www.w3.org/2000/01/rdf-schema#label> "not accepted" .
+<https://linked.data.gov.au/def/reg-statuses/original <http://www.w3.org/2000/01/rdf-schema#label> "original" .
+<https://linked.data.gov.au/def/reg-statuses/reserved <http://www.w3.org/2000/01/rdf-schema#label> "reserved" .
+<https://linked.data.gov.au/def/reg-statuses/retired <http://www.w3.org/2000/01/rdf-schema#label> "retired" .
+<https://linked.data.gov.au/def/reg-statuses/stable <http://www.w3.org/2000/01/rdf-schema#label> "stable" .
+<https://linked.data.gov.au/def/reg-statuses/submitted <http://www.w3.org/2000/01/rdf-schema#label> "submitted" .
+<https://linked.data.gov.au/def/reg-statuses/superseded <http://www.w3.org/2000/01/rdf-schema#label> "superseded" .
+<https://linked.data.gov.au/def/reg-statuses/unstable <http://www.w3.org/2000/01/rdf-schema#label> "unstable" .
+<https://linked.data.gov.au/def/reg-statuses/valid <http://www.w3.org/2000/01/rdf-schema#label> "valid" .

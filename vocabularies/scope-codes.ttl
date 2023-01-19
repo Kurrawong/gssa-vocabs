@@ -10,14 +10,13 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX reg: <http://purl.org/linked-data/registry#>
 PREFIX sdo: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-PREFIX status: <http://def.isotc211.org/iso19135/-1/2015/CoreModel/code/RE_ItemStatus/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 iso-ns:application
     a skos:Concept ;
     dcterms:identifier "application"^^xsd:token ;
     dcterms:provenance "Presented in the original standard's codelist"@en ;
-    reg:status status:original ;
+    reg:status agldwgstatus:original ;
     rdfs:isDefinedBy iso-cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
@@ -29,7 +28,7 @@ iso-ns:dataset
     a skos:Concept ;
     dcterms:identifier "dataset"^^xsd:token ;
     dcterms:provenance "Presented in the original standard's codelist"@en ;
-    reg:status status:original ;
+    reg:status agldwgstatus:original ;
     rdfs:isDefinedBy iso-cs: ;
     skos:definition "information applies to the dataset"@en ;
     skos:inScheme cs: ;
@@ -41,7 +40,7 @@ iso-ns:document
     a skos:Concept ;
     dcterms:identifier "document"^^xsd:token ;
     dcterms:provenance "Presented in the original standard's codelist"@en ;
-    reg:status status:original ;
+    reg:status agldwgstatus:original ;
     rdfs:isDefinedBy iso-cs: ;
     skos:definition "information applies to a document"@en ;
     skos:inScheme cs: ;
@@ -53,7 +52,7 @@ iso-ns:model
     a skos:Concept ;
     dcterms:identifier "model"^^xsd:token ;
     dcterms:provenance "Presented in the original standard's codelist"@en ;
-    reg:status status:original ;
+    reg:status agldwgstatus:original ;
     rdfs:isDefinedBy iso-cs: ;
     skos:definition "information applies to a copy or imitation of an existing or hypothetical object"@en ;
     skos:inScheme cs: ;
@@ -65,7 +64,7 @@ iso-ns:service
     a skos:Concept ;
     dcterms:identifier "service"^^xsd:token ;
     dcterms:provenance "Presented in the original standard's codelist"@en ;
-    reg:status status:original ;
+    reg:status agldwgstatus:original ;
     rdfs:isDefinedBy iso-cs: ;
     skos:definition "information applies to a capability which a service provider entity makes available to a service user entity through a set of interfaces that define a behaviour, such as a use case"@en ;
     skos:inScheme cs: ;
@@ -84,7 +83,7 @@ iso-ns:service
     a skos:Concept ;
     dcterms:identifier "map"^^xsd:token ;
     dcterms:provenance "Created by MER"@en ;
-    reg:status status:original ;
+    reg:status agldwgstatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "information applies to a map"@en ;
     skos:inScheme cs: ;
