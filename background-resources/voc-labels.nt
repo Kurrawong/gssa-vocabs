@@ -544,7 +544,6 @@
 <http://def.isotc211.org/iso19115/-1/2014/MaintenanceInformation/code/MD_MaintenanceFrequencyCode/daily> <http://www.w3.org/2000/01/rdf-schema#label> "Daily" .
 <http://def.isotc211.org/iso19115/-1/2014/MaintenanceInformation/code/MD_MaintenanceFrequencyCode/asNeeded> <http://www.w3.org/2000/01/rdf-schema#label> "As needed" .
 <http://def.isotc211.org/iso19115/-1/2014/MaintenanceInformation/code/MD_MaintenanceFrequencyCode/notPlanned> <http://www.w3.org/2000/01/rdf-schema#label> "Not planned" .
-<http://def.isotc211.org/iso19115/-1/2014/MaintenanceInformation/code/MD_MaintenanceFrequencyCode> <http://www.w3.org/2000/01/rdf-schema#label> "Maintenance Frequency Codes" .
 <http://def.isotc211.org/iso19115/-1/2014/MaintenanceInformation/code/MD_MaintenanceFrequencyCode/weekly> <http://www.w3.org/2000/01/rdf-schema#label> "Weekly" .
 <http://def.isotc211.org/iso19115/-1/2014/MaintenanceInformation/code/MD_MaintenanceFrequencyCode/periodic> <http://www.w3.org/2000/01/rdf-schema#label> "Periodic" .
 <https://linked.data.gov.au/def/sa-geological-features/wilgena-subdomain> <http://www.w3.org/2000/01/rdf-schema#label> "Wilgena Subdomain" .
