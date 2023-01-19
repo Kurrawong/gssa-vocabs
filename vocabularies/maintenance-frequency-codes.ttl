@@ -1,6 +1,6 @@
 PREFIX : <http://def.isotc211.org/iso19115/-1/2014/MaintenanceInformation/code/MD_MaintenanceFrequencyCode/>
 PREFIX agldwgstatus: <https://linked.data.gov.au/def/reg-statuses/>
-PREFIX cs: <http://def.isotc211.org/iso19115/-1/2014/MaintenanceInformation/code/MD_MaintenanceFrequencyCode>
+PREFIX cs: <https://linked.data.gov.au/def/maintenancefrequencycode>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX prov: <http://www.w3.org/ns/prov#>
@@ -8,14 +8,13 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX reg: <http://purl.org/linked-data/registry#>
 PREFIX sdo: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-PREFIX status: <http://def.isotc211.org/iso19135/-1/2015/CoreModel/code/RE_ItemStatus/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :annually
     a skos:Concept ;
     dcterms:identifier "annually"^^xsd:token ;
     dcterms:provenance "Presented in the original standard's codelist"@en ;
-    reg:status status:original ;
+    reg:status agldwgstatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
@@ -27,7 +26,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a skos:Concept ;
     dcterms:identifier "asNeeded"^^xsd:token ;
     dcterms:provenance "Presented in the original standard's codelist"@en ;
-    reg:status status:original ;
+    reg:status agldwgstatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
@@ -39,7 +38,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a skos:Concept ;
     dcterms:identifier "biannually"^^xsd:token ;
     dcterms:provenance "Presented in the original standard's codelist"@en ;
-    reg:status status:original ;
+    reg:status agldwgstatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
@@ -51,7 +50,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a skos:Concept ;
     dcterms:identifier "biennially"^^xsd:token ;
     dcterms:provenance "Presented in the original standard's codelist"@en ;
-    reg:status status:original ;
+    reg:status agldwgstatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
@@ -63,7 +62,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a skos:Concept ;
     dcterms:identifier "continual"^^xsd:token ;
     dcterms:provenance "Presented in the original standard's codelist"@en ;
-    reg:status status:original ;
+    reg:status agldwgstatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
@@ -75,7 +74,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a skos:Concept ;
     dcterms:identifier "daily"^^xsd:token ;
     dcterms:provenance "Presented in the original standard's codelist"@en ;
-    reg:status status:original ;
+    reg:status agldwgstatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
@@ -87,7 +86,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a skos:Concept ;
     dcterms:identifier "fortnightly"^^xsd:token ;
     dcterms:provenance "Presented in the original standard's codelist"@en ;
-    reg:status status:original ;
+    reg:status agldwgstatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
@@ -99,7 +98,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a skos:Concept ;
     dcterms:identifier "irregular"^^xsd:token ;
     dcterms:provenance "Presented in the original standard's codelist"@en ;
-    reg:status status:original ;
+    reg:status agldwgstatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
@@ -111,7 +110,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a skos:Concept ;
     dcterms:identifier "monthly"^^xsd:token ;
     dcterms:provenance "Presented in the original standard's codelist"@en ;
-    reg:status status:original ;
+    reg:status agldwgstatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
@@ -123,7 +122,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a skos:Concept ;
     dcterms:identifier "notPlanned"^^xsd:token ;
     dcterms:provenance "Presented in the original standard's codelist"@en ;
-    reg:status status:original ;
+    reg:status agldwgstatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
@@ -135,7 +134,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a skos:Concept ;
     dcterms:identifier "periodic"^^xsd:token ;
     dcterms:provenance "Presented in the original standard's codelist"@en ;
-    reg:status status:original ;
+    reg:status agldwgstatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
@@ -147,7 +146,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a skos:Concept ;
     dcterms:identifier "quarterly"^^xsd:token ;
     dcterms:provenance "Presented in the original standard's codelist"@en ;
-    reg:status status:original ;
+    reg:status agldwgstatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
@@ -159,7 +158,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a skos:Concept ;
     dcterms:identifier "semimonthly"^^xsd:token ;
     dcterms:provenance "Presented in the original standard's codelist"@en ;
-    reg:status status:original ;
+    reg:status agldwgstatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
@@ -171,7 +170,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a skos:Concept ;
     dcterms:identifier "unknown"^^xsd:token ;
     dcterms:provenance "Presented in the original standard's codelist"@en ;
-    reg:status status:original ;
+    reg:status agldwgstatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
@@ -183,7 +182,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a skos:Concept ;
     dcterms:identifier "weekly"^^xsd:token ;
     dcterms:provenance "Presented in the original standard's codelist"@en ;
-    reg:status status:original ;
+    reg:status agldwgstatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
@@ -203,17 +202,17 @@ cs:
     dcterms:created "2000-01-01"^^xsd:date ;
     dcterms:creator <http://def.isotc211.org/org/tc211> ;
     dcterms:identifier "MD_MaintenanceFrequencyCode"^^xsd:token ;
-    dcterms:issued "2000-01-01"^^xsd:date ;
-    dcterms:modified "2000-01-01"^^xsd:date ;
-    dcterms:provenance "Derived from TC211-produced RDF versions of the standard's UML"@en ;
+    dcterms:issued "2023-01-19"^^xsd:date ;
+    dcterms:modified "2023-01-19"^^xsd:date ;
+    dcterms:provenance "Derived from the TC211-produced RDF version of ISO 19115-1's standard's MD_MaintenanceFrequencyCode UML codelist online at https://github.com/ISO-TC211/GOM/tree/master/experimental/codelist-vocabularies/iso19115/-1/2018"@en ;
     dcterms:publisher <http://def.isotc211.org/org/tc211> ;
     dcterms:source "http://standards.iso.org/iso/19115/-1/ed-1/en/"^^xsd:anyURI ;
     prov:qualifiedDerivation [
         prov:entity <http://def.isotc211.org/iso19115/-1/2014/MaintenanceInformation/code/MD_MaintenanceFrequencyCode> ;
         dcat:hadRole <https://linked.data.gov.au/def/vocab-derivation-modes/direct> ;
     ] ;
-    reg:status agldwgstatus:original ;
-    skos:definition "An ISO standard's ConceptScheme"@en ;
+    reg:status agldwgstatus:stable ;
+    skos:definition "A direct reimplementation of ISO 19115-1's standard's MD_MaintenanceFrequencyCode UML codelist"@en ;
     skos:hasTopConcept
         :annually ,
         :asNeeded ,
