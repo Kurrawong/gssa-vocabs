@@ -85,10 +85,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dcterms:identifier "GEL"^^xsd:token ;
     rdfs:isDefinedBy cs: ;
     skos:broader :P ;
-    skos:definition "Onshore exploration licences - geothermal"@en ;
+    skos:definition "Onshore exploration licences: geothermal"@en ;
     skos:inScheme cs: ;
     dcterms:provenance "Defined in the Petroleum and Geothermal Energy Act 2000" ;
-    skos:prefLabel "Onshore exploration licences - geothermal"@en ;
+    skos:prefLabel "Onshore exploration licences: geothermal"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -97,10 +97,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dcterms:identifier "GELA"^^xsd:token ;
     rdfs:isDefinedBy cs: ;
     skos:broader :P ;
-    skos:definition "Onshore exploration licences applications- geothermal"@en ;
+    skos:definition "Onshore exploration licences applications: geothermal"@en ;
     skos:inScheme cs: ;
     dcterms:provenance "Defined in the Petroleum and Geothermal Energy Act 2000" ;
-    skos:prefLabel "Onshore exploration licences applications- geothermal"@en ;
+    skos:prefLabel "Onshore exploration licences applications: geothermal"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -109,10 +109,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dcterms:identifier "GRL"^^xsd:token ;
     rdfs:isDefinedBy cs: ;
     skos:broader :P ;
-    skos:definition "Onshore retention licences - geothermal"@en ;
+    skos:definition "Onshore retention licences: geothermal"@en ;
     skos:inScheme cs: ;
     dcterms:provenance "Defined in the Petroleum and Geothermal Energy Act 2000" ;
-    skos:prefLabel "Onshore retention licences - geothermal"@en ;
+    skos:prefLabel "Onshore retention licences: geothermal"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -121,10 +121,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dcterms:identifier "GSEL"^^xsd:token ;
     rdfs:isDefinedBy cs: ;
     skos:broader :P ;
-    skos:definition "Onshore exploration licences – gas storage"@en ;
+    skos:definition "Onshore exploration licences: gas storage"@en ;
     skos:inScheme cs: ;
     dcterms:provenance "Defined in the Petroleum and Geothermal Energy Act 2000" ;
-    skos:prefLabel "Onshore exploration licences – gas storage"@en ;
+    skos:prefLabel "Onshore exploration licences: gas storage"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -133,10 +133,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dcterms:identifier "GSELA"^^xsd:token ;
     rdfs:isDefinedBy cs: ;
     skos:broader :P ;
-    skos:definition "Onshore exploration licences applications – gas storage"@en ;
+    skos:definition "Onshore exploration licences applications: gas storage"@en ;
     skos:inScheme cs: ;
     dcterms:provenance "Defined in the Petroleum and Geothermal Energy Act 2000" ;
-    skos:prefLabel "Onshore exploration licences applications – gas storage"@en ;
+    skos:prefLabel "Onshore exploration licences applications: gas storage"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -157,10 +157,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dcterms:identifier "GSRL"^^xsd:token ;
     rdfs:isDefinedBy cs: ;
     skos:broader :P ;
-    skos:definition "Onshore retention licences – gas storage"@en ;
+    skos:definition "Onshore retention licences: gas storage"@en ;
     skos:inScheme cs: ;
     dcterms:provenance "Defined in the Petroleum and Geothermal Energy Act 2000" ;
-    skos:prefLabel "Onshore retention licences – gas storage"@en ;
+    skos:prefLabel "Onshore retention licences: gas storage"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -169,10 +169,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dcterms:identifier "GSRLA"^^xsd:token ;
     rdfs:isDefinedBy cs: ;
     skos:broader :P ;
-    skos:definition "Onshore retention licences applications – gas storage"@en ;
+    skos:definition "Onshore retention licences applications: gas storage"@en ;
     skos:inScheme cs: ;
     dcterms:provenance "Defined in the Petroleum and Geothermal Energy Act 2000" ;
-    skos:prefLabel "Onshore retention licences applications – gas storage"@en ;
+    skos:prefLabel "Onshore retention licences applications: gas storage"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -241,10 +241,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dcterms:identifier "PEL"^^xsd:token ;
     rdfs:isDefinedBy cs: ;
     skos:broader :P ;
-    skos:definition "Onshore exploration licences - petroleum"@en ;
+    skos:definition "Onshore exploration licences: petroleum"@en ;
     skos:inScheme cs: ;
     dcterms:provenance "Defined in the Petroleum and Geothermal Energy Act 2000" ;
-    skos:prefLabel "Onshore exploration licences - petroleum"@en ;
+    skos:prefLabel "Onshore exploration licences: petroleum"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -253,10 +253,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dcterms:identifier "PELA"^^xsd:token ;
     rdfs:isDefinedBy cs: ;
     skos:broader :P ;
-    skos:definition "Onshore exploration licences applications - petroleum"@en ;
+    skos:definition "Onshore exploration licences applications: petroleum"@en ;
     skos:inScheme cs: ;
     dcterms:provenance "Defined in the Petroleum and Geothermal Energy Act 2000" ;
-    skos:prefLabel "Onshore exploration licences applications - petroleum"@en ;
+    skos:prefLabel "Onshore exploration licences applications: petroleum"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -313,10 +313,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dcterms:identifier "PRL"^^xsd:token ;
     rdfs:isDefinedBy cs: ;
     skos:broader :P ;
-    skos:definition "Onshore retention Licences - petroleum"@en ;
+    skos:definition "Onshore retention Licences: petroleum"@en ;
     skos:inScheme cs: ;
     dcterms:provenance "Defined in the Petroleum and Geothermal Energy Act 2000" ;
-    skos:prefLabel "Onshore retention Licences - petroleum"@en ;
+    skos:prefLabel "Onshore retention Licences: petroleum"@en ;
     skos:topConceptOf cs: ;
 .
 

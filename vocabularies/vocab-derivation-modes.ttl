@@ -80,7 +80,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Derivation with subsetting and extension"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "Subset and Extension"@en ;
+    skos:prefLabel "Subset & Extension"@en ;
     skos:scopeNote "Use this Concept if the reusing vocabulary both extends and subsets the original vocabulary" ;
     skos:broader
         :extension ,

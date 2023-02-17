@@ -610,7 +610,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     reg:status agldwgstatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :metal ;
-    skos:definition "Caesium or cesium[note 1] is a chemical element with symbol Cs and atomic number 55. It is a soft, silvery-gold alkali metal with a melting point of 28 °C (82 °F), which makes it one of only five elemental metals that are liquid at or near room temperature. - Caesium or cesium[note 1] is a chemical element with symbol Cs and atomic number 55. It is a soft, silvery-gold alkali metal with a melting point of 28 °C (82 °F), which makes it one of only five elemental metals that are liquid at or near room temperature"@en ;
+    skos:definition "Caesium or cesium[note 1] is a chemical element with symbol Cs and atomic number 55. It is a soft, silvery-gold alkali metal with a melting point of 28 °C (82 °F), which makes it one of only five elemental metals that are liquid at or near room temperature. Caesium or cesium[note 1] is a chemical element with symbol Cs and atomic number 55. It is a soft, silvery-gold alkali metal with a melting point of 28 °C (82 °F), which makes it one of only five elemental metals that are liquid at or near room temperature"@en ;
     skos:exactMatch eucc:cesium ;
     skos:inScheme this-cs: ;
     skos:notation
@@ -2172,7 +2172,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     reg:status agldwgstatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :industrial-rock ;
-    skos:definition "In the IUGS classification, the variety of foid syenite in which nepheline is the most abundant feldspathoid. - AGI - Glossary of geology"@en ;
+    skos:definition "In the IUGS classification, the variety of foid syenite in which nepheline is the most abundant feldspathoid. AGI Glossary of geology"@en ;
     skos:exactMatch eucc:nephelineSyenite ;
     skos:inScheme this-cs: ;
     skos:notation
@@ -2384,7 +2384,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     reg:status agldwgstatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :platinum-group ;
-    skos:definition "Osmium is a chemical element with the symbol Os and atomic number 76. It is a hard, brittle, bluish-white transition metal in the platinum group that is found as a trace element in alloys, mostly in platinum ores. - Osmium (from Greek osme (ὀσμή) meaning \"smell\") is a chemical element with the symbol Os and atomic number 76. It is a hard, brittle, bluish-white transition metal in the platinum group that is found as a trace element in alloys, mostly in platinum ores."@en ;
+    skos:definition "Osmium is a chemical element with the symbol Os and atomic number 76. It is a hard, brittle, bluish-white transition metal in the platinum group that is found as a trace element in alloys, mostly in platinum ores. Osmium (from Greek osme (ὀσμή) meaning \"smell\") is a chemical element with the symbol Os and atomic number 76. It is a hard, brittle, bluish-white transition metal in the platinum group that is found as a trace element in alloys, mostly in platinum ores."@en ;
     skos:exactMatch eucc:osmium ;
     skos:inScheme this-cs: ;
     skos:notation
@@ -2981,7 +2981,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     reg:status agldwgstatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :gemstones ;
-    skos:definition "Sapphire is the non-red variety of corundum, the second hardest natural mineral known to mankind. The red variety of corundum is Ruby - all other colors are called sapphire, even pink."@en ;
+    skos:definition "Sapphire is the non-red variety of corundum, the second hardest natural mineral known to mankind. The red variety of corundum is Ruby: all other colors are called sapphire, even pink."@en ;
     skos:exactMatch eucc:sapphirine ;
     skos:inScheme this-cs: ;
     skos:notation
@@ -3500,7 +3500,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     reg:status agldwgstatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :hree ;
-    skos:definition "Terbium is a chemical element with the symbol Tb and atomic number 65. It is a silvery-white rare earth metal that is malleable, ductile and very hard. Terbium is never found in nature as a free element, but it is contained in many minerals, including cerite, gadolinite, monazite, xenotime and euxenite. - Terbium is a chemical element with the symbol Tb and atomic number 65. It is a silvery-white rare earth metal that is malleable, ductile and very hard. Terbium is never found in nature as a free element, but it is contained in many minerals, including cerite, gadolinite, monazite, xenotime and euxenite."@en ;
+    skos:definition "Terbium is a chemical element with the symbol Tb and atomic number 65. It is a silvery-white rare earth metal that is malleable, ductile and very hard. Terbium is never found in nature as a free element, but it is contained in many minerals, including cerite, gadolinite, monazite, xenotime and euxenite. Terbium is a chemical element with the symbol Tb and atomic number 65. It is a silvery-white rare earth metal that is malleable, ductile and very hard. Terbium is never found in nature as a free element, but it is contained in many minerals, including cerite, gadolinite, monazite, xenotime and euxenite."@en ;
     skos:inScheme this-cs: ;
     skos:notation
         "Tb"^^dt:AbbreviatedLabel ,
@@ -3710,7 +3710,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     reg:status agldwgstatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :metal ;
-    skos:definition "Uranium is a silvery-white metallic chemical element in the actinide series of the periodic table, with symbol U and atomic number 92. A uranium atom has 92 protons and 92 electrons, of which 6 are valence electrons. Uranium is weakly radioactive because all its isotopes are unstable (with half-lives of the 6 naturally known isotopes, U-233 - U-238, varying between 69 years and 4½ billion years)."@en ;
+    skos:definition "Uranium is a silvery-white metallic chemical element in the actinide series of the periodic table, with symbol U and atomic number 92. A uranium atom has 92 protons and 92 electrons, of which 6 are valence electrons. Uranium is weakly radioactive because all its isotopes are unstable (with half-lives of the 6 naturally known isotopes, U-233 & U-238, varying between 69 years and 4½ billion years)."@en ;
     skos:exactMatch eucc:uranium ;
     skos:inScheme this-cs: ;
     skos:notation
@@ -4052,7 +4052,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:broader
         :industrial-rock ,
         :primary-aggregate ;
-    skos:definition "Durable rock fragments (silicates, flints, etc) with a size range: 0.063 mm - 80mm, derived from the weathering, erosion and transport of rocks by glacial or fluvial processes. Used for aggregate purposes and construction fill."@en ;
+    skos:definition "Durable rock fragments (silicates, flints, etc) with a size range: 0.063 mm to 80mm, derived from the weathering, erosion and transport of rocks by glacial or fluvial processes. Used for aggregate purposes and construction fill."@en ;
     skos:exactMatch eucc:sandAndGravel ;
     skos:inScheme this-cs: ;
     skos:notation
@@ -4688,7 +4688,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     reg:status agldwgstatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :metal ;
-    skos:definition "Those metals [that are] typically mined for their alloying properties with iron in the manufacture of steel. - AGi fifth ediition"@en ;
+    skos:definition "Those metals [that are] typically mined for their alloying properties with iron in the manufacture of steel. AGi fifth edition"@en ;
     skos:exactMatch eucc:ferrousMetal ;
     skos:inScheme this-cs: ;
     skos:narrower
@@ -5245,11 +5245,12 @@ this-cs:
     ] ;
     reg:status agldwgstatus:stable ;
     skos:changeNote
-        "2016-07-18 OLR - Reformat SKOS for migration to new vocabulary server. No changes to concepts."@en ,
+        "2016-07-18 OLR Reformat SKOS for migration to new vocabulary server. No changes to concepts."@en ,
         "2020-06-23 NJC Added properties to ensure vocab matched Geoscience Australia's vocab profile (https://linked.data.gov.au/def/ga-skos-profile). Just annotation properties, no new content. Agents (creator/publisher) now not text but RDF resource. Dates (create/modified) derived from editorial notes & existing date properties. Simple definition for silica added as missing."@en ,
         "2020-06-26 NJC tidied some definitions with random characters at the end."@en ,
         "2021-12-17 R.Heaven BGS Added prefLabel and altLabel in non English languages, obtained from previously determined alignments between @en labels in CGI and Multi-lingual Thesaurus of Geosciences (MulTG) and Asian Multi-lingual Thesaurus of Geosciences (AMTG). Note that specific language packs are required to render the fonts.  Known issues: @lo and @fi labels were incorrectly encoded in the digitised source datasets; they have been included regardless of this in case the encoding can be corrected."@en ,
-        "2022-12-05 NJC Added MER additions"@en ;
+        "2022-12-05 NJC Added MER additions"@en ,
+        "2023-02-17 NJC Formatting changes only for GSSA vocab management system"
     skos:definition "Commodity codes for South Australia, which are mostly the CGI Commodity Codes with additions to meet categorisation obligations under the SA Mining Act"@en ;
     skos:hasTopConcept
         :direct-use-commodity ,
