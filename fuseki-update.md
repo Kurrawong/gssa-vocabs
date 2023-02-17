@@ -12,3 +12,13 @@ To update the vocabularies in Fuseki, you need to:
 "background-resources" directories of this repo. It is suggested but not required to upload these sets of files to two 
 different named graphs (step 4), i.e. upload the first set of files, change the "Dataset graph name", then upload the 
 second set.
+
+## Automating updates
+
+Updates to Fuseki can be automated through the use of Github Actions, Bitbucket Pipelines etc. This will not currently 
+work from Github as the Fuseki instance is not publicly accessible.
+
+Once the repo has been moved to its final location, automation could be reconsidered.
+
+Using these kinds of automation for data updates is only advised for vocabularies as the volumes of data involved are 
+relatively small.
