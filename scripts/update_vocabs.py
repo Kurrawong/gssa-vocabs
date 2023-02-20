@@ -13,7 +13,7 @@ MAX_RETRIES = 3
 
 DB_TYPE = "fuseki"  # options: "fuseki" | "graphdb"
 BASE_DB_URI = "https://gssa-fuseki-linux-web-app.azurewebsites.net/gssa"
-WEBSITE_URL = "http://prezcli.azurewebsites.net"
+WEBSITE_URL = "https://gssa-prez-code-linux-web-app.azurewebsites.net/"
 
 DB_USERNAME = os.environ.get("DB_USERNAME", "")
 DB_PASSWORD = os.environ.get("DB_PASSWORD", "")

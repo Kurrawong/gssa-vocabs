@@ -5250,7 +5250,7 @@ this-cs:
         "2020-06-26 NJC tidied some definitions with random characters at the end."@en ,
         "2021-12-17 R.Heaven BGS Added prefLabel and altLabel in non English languages, obtained from previously determined alignments between @en labels in CGI and Multi-lingual Thesaurus of Geosciences (MulTG) and Asian Multi-lingual Thesaurus of Geosciences (AMTG). Note that specific language packs are required to render the fonts.  Known issues: @lo and @fi labels were incorrectly encoded in the digitised source datasets; they have been included regardless of this in case the encoding can be corrected."@en ,
         "2022-12-05 NJC Added MER additions"@en ,
-        "2023-02-17 NJC Formatting changes only for GSSA vocab management system"
+        "2023-02-17 NJC Formatting changes only for GSSA vocab management system" ;
     skos:definition "Commodity codes for South Australia, which are mostly the CGI Commodity Codes with additions to meet categorisation obligations under the SA Mining Act"@en ;
     skos:hasTopConcept
         :direct-use-commodity ,
