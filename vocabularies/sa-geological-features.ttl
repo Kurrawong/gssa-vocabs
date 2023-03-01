@@ -21,7 +21,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a skos:Concept ;
     dcterms:identifier "aldgate-inlier"^^xsd:token ;
     rdfs:isDefinedBy cs: ;
-    skos:broader :mt-lofty-ranges-inliers ;
+    skos:broader :mount-lofty-ranges-inliers ;
     skos:definition "Aldgate Inlier"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "Aldgate Inlier"@en ;
@@ -221,7 +221,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a skos:Concept ;
     dcterms:identifier "gmi-ridge"^^xsd:token ;
     rdfs:isDefinedBy cs: ;
-    skos:broader :cooper-basin-gidgealpa-merimel ;
+    skos:broader :cooper-basin ;
     skos:definition "Gmi Ridge"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "Gmi Ridge"@en ;
@@ -241,7 +241,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a skos:Concept ;
     dcterms:identifier "houghton-inlier"^^xsd:token ;
     rdfs:isDefinedBy cs: ;
-    skos:broader :mt-lofty-ranges-inliers ;
+    skos:broader :mount-lofty-ranges-inliers ;
     skos:definition "Houghton Inlier"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "Houghton Inlier"@en ;
@@ -431,7 +431,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a skos:Concept ;
     dcterms:identifier "myponga-inlier"^^xsd:token ;
     rdfs:isDefinedBy cs: ;
-    skos:broader :mt-lofty-ranges-inliers ;
+    skos:broader :mount-lofty-ranges-inliers ;
     skos:definition "Myponga Inlier"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "Myponga Inlier"@en ;
@@ -491,7 +491,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a skos:Concept ;
     dcterms:identifier "oakbank-inlier"^^xsd:token ;
     rdfs:isDefinedBy cs: ;
-    skos:broader :mt-lofty-ranges-inliers ;
+    skos:broader :mount-lofty-ranges-inliers ;
     skos:definition "Oakbank Inlier"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "Oakbank Inlier"@en ;
@@ -663,7 +663,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a skos:Concept ;
     dcterms:identifier "warren-inlier"^^xsd:token ;
     rdfs:isDefinedBy cs: ;
-    skos:broader :mt-lofty-ranges-inliers ;
+    skos:broader :mount-lofty-ranges-inliers ;
     skos:definition "Warren Inlier"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "Warren Inlier"@en ;
@@ -859,13 +859,13 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:topConceptOf cs: ;
 .
 
-:coompana-block
+:coompana-province
     a skos:Concept ;
-    dcterms:identifier "coompana-block"^^xsd:token ;
+    dcterms:identifier "coompana-province"^^xsd:token ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "Coompana Block"@en ;
+    skos:definition "Coompana Province"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "Coompana Block"@en ;
+    skos:prefLabel "Coompana Province"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -1626,7 +1626,7 @@ cs:
         :boolcunda-basin ,
         :cariewerloo-basin ,
         :coastal-quaternary ,
-        :coompana-block ,
+        :coompana-province ,
         :cooper-basin ,
         :copley-basin ,
         :cummins-basin ,

@@ -220,7 +220,7 @@ cs:
     skos:broader :geophysical-report ;
     skos:definition "A report, often outlining the activities or movements of individuals or teams whilst undertaking field activities, e.g., a production log. Often included in the final report."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "Geophysical Survey Report:Acquisition"@en ;
+    skos:prefLabel "Acquisition"@en ;
     skos:notation "geophysical survey"^^:tabIndex ;
 .
 
@@ -231,7 +231,7 @@ cs:
     skos:broader :geophysical-report ;
     skos:definition "A detailed report, containing all information pertaining to the survey. It should contain information such as the dates of the survey, who was involved, technical information regarding instrumentation(s), field safety protocols, data format explanations, and data processing notes. It may also contain Acquisition and Logistics information and should be part of the geophysical data package."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "Geophysical Survey Report:Final"@en ;
+    skos:prefLabel "Final"@en ;
     skos:notation "geophysical survey"^^:tabIndex ;
 .
 
@@ -242,7 +242,7 @@ cs:
     skos:broader :geophysical-report ;
     skos:definition "A report, often as part of the Final Report, outlining field logistics. E.g., Campsite details, land access, a timeline and/or maps demonstrating how field activities were conducted."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "Geophysical Survey Report:Logistics"@en ;
+    skos:prefLabel "Logistics"@en ;
     skos:notation "geophysical survey"^^:tabIndex ;
 .
 
@@ -539,7 +539,7 @@ cs:
     skos:broader :seismic-report ;
     skos:definition "A report pertaining to Seismic data acquisition, the first of the three distinct stages of seismic exploration. The report should include information such as location of the survey, survey scope and objectives, field operations such as line preparation, surveying and recording/acquisition of the data."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "Seismic Report:Acquisition"@en ;
+    skos:prefLabel "Acquisition"@en ;
     skos:notation "geophysical survey"^^:tabIndex ;
 .
 
@@ -550,7 +550,7 @@ cs:
     skos:broader :seismic-report ;
     skos:definition "Overarching report that covers some/all aspects of seismic exploration. Usually includes embedded reports/appendices about Acquisition, Field Supervision, Operations, Processing, Surveying, Interpretation etc."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "Seismic Report:Final"@en ;
+    skos:prefLabel "Final"@en ;
     skos:notation "geophysical survey"^^:tabIndex ;
 .
 
@@ -561,7 +561,7 @@ cs:
     skos:broader :seismic-report ;
     skos:definition "A report pertaining to Seismic data interpretation, the third of the three distinct stages of seismic exploration. The report should include information such as objectives of the survey acquisition, regional geology and exploration history of the area of interest, seismic mapping/interpretation including key horizons mapped and methodology, leads and prospects and conclusions."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "Seismic Report:Interpretation"@en ;
+    skos:prefLabel "Interpretation"@en ;
     skos:notation "geophysical survey"^^:tabIndex ;
 .
 
@@ -572,7 +572,7 @@ cs:
     skos:broader :seismic-report ;
     skos:definition "Generally refers to Field Operation activities undertaken during the acquisition of a survey. Includes line preparation, surveying, recording, QC/pre-processing of the data."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "Seismic Report:Operations"@en ;
+    skos:prefLabel "Operations"@en ;
     skos:notation "geophysical survey"^^:tabIndex ;
 .
 
@@ -583,7 +583,7 @@ cs:
     skos:broader :seismic-report ;
     skos:definition "Refers to any other Seismic Report not captured by main categories."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "Seismic Report:Other"@en ;
+    skos:prefLabel "Other"@en ;
     skos:notation "geophysical survey"^^:tabIndex ;
 .
 
@@ -594,7 +594,7 @@ cs:
     skos:broader :seismic-report ;
     skos:definition "A report pertaining to Seismic data processing, the second of the three distinct stages of seismic exploration. The report should include information such as acquisition parameters, goals and outcomes of the processing, processing sequence and final deliverable products."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "Seismic Report:Processing"@en ;
+    skos:prefLabel "Processing"@en ;
     skos:notation "geophysical survey"^^:tabIndex ;
 .
 
@@ -729,7 +729,7 @@ cs:
     skos:broader :departmental-publication ;
     skos:definition "Publications produced by South Australia's Department for Energy and Mining, that have been superseded or discontinued."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "Departmental Publication:Closed Series"@en ;
+    skos:prefLabel "Closed Series"@en ;
 .
 
 :departmental-publications
