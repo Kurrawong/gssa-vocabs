@@ -329,69 +329,73 @@
 <https://linked.data.gov.au/def/mer-distribution-formats/ecw> <http://www.w3.org/2000/01/rdf-schema#label> "ECW" .
 <https://linked.data.gov.au/def/mer-distribution-formats/jpeg> <http://www.w3.org/2000/01/rdf-schema#label> "JPEG" .
 <https://linked.data.gov.au/def/mer-doc-types/mineral-information-sheet> <http://www.w3.org/2000/01/rdf-schema#label> "Mineral Information Sheet" .
-<https://linked.data.gov.au/def/mer-doc-types/seismic-report-final> <http://www.w3.org/2000/01/rdf-schema#label> "Seismic Report - Final" .
+<https://linked.data.gov.au/def/mer-doc-types/seismic-report-final> <http://www.w3.org/2000/01/rdf-schema#label> "Final" .
+<https://linked.data.gov.au/def/mer-doc-types/private-mine-program> <http://www.w3.org/2000/01/rdf-schema#label> "Private Mine Program" .
 <https://linked.data.gov.au/def/mer-doc-types/mining-review> <http://www.w3.org/2000/01/rdf-schema#label> "Mining Review" .
-<https://linked.data.gov.au/def/mer-doc-types/mining-operation-compliance-report> <http://www.w3.org/2000/01/rdf-schema#label> "Mining Operation Compliance Report" .
 <https://linked.data.gov.au/def/mer-doc-types/mineral-and-energy-resources-annual-review> <http://www.w3.org/2000/01/rdf-schema#label> "Mineral And Energy Resources Annual Review" .
 <https://linked.data.gov.au/def/mer-doc-types/energy-company-report> <http://www.w3.org/2000/01/rdf-schema#label> "Energy Company Report" .
 <https://linked.data.gov.au/def/mer-doc-types/mineral-information-series> <http://www.w3.org/2000/01/rdf-schema#label> "Mineral Information Series" .
 <https://linked.data.gov.au/def/mer-doc-types/mineral-industry-quarterly> <http://www.w3.org/2000/01/rdf-schema#label> "Mineral Industry Quarterly" .
 <https://linked.data.gov.au/def/mer-doc-types/exploration-initiative> <http://www.w3.org/2000/01/rdf-schema#label> "Exploration Initiative" .
-<https://linked.data.gov.au/def/mer-doc-types/energy-geoscience-publication> <http://www.w3.org/2000/01/rdf-schema#label> "Energy Geoscience Publication" .
-<https://linked.data.gov.au/def/mer-doc-types/mineral-exploration-tenement-report> <http://www.w3.org/2000/01/rdf-schema#label> "Mineral Exploration Tenement Report" .
-<https://linked.data.gov.au/def/mer-doc-types/mining-operation-environmental-program> <http://www.w3.org/2000/01/rdf-schema#label> "Mining Operation Environmental Program" .
+<https://linked.data.gov.au/def/mer-doc-types/collaborative-drilling> <http://www.w3.org/2000/01/rdf-schema#label> "Collaborative Drilling" .
+<https://linked.data.gov.au/def/mer-doc-types/letter-book> <http://www.w3.org/2000/01/rdf-schema#label> "Letter Book" .
 <https://linked.data.gov.au/def/mer-doc-types> <http://www.w3.org/2000/01/rdf-schema#label> "MER Document Types" .
-<https://linked.data.gov.au/def/mer-doc-types/seismic-report-processing> <http://www.w3.org/2000/01/rdf-schema#label> "Seismic Report - Processing" .
-<https://linked.data.gov.au/def/mer-doc-types/energy-company-annual-licence-report> <http://www.w3.org/2000/01/rdf-schema#label> "Energy Company Annual Licence Report" .
+<https://linked.data.gov.au/def/mer-doc-types/seismic-report-processing> <http://www.w3.org/2000/01/rdf-schema#label> "Processing" .
 <https://linked.data.gov.au/def/mer-doc-types/handbook> <http://www.w3.org/2000/01/rdf-schema#label> "Handbook" .
 <https://linked.data.gov.au/def/mer-doc-types/annual-report> <http://www.w3.org/2000/01/rdf-schema#label> "Annual Report" .
 <https://linked.data.gov.au/def/mer-doc-types/departmental-publications> <http://www.w3.org/2000/01/rdf-schema#label> "Departmental Publications document types" .
 <https://linked.data.gov.au/def/mer-doc-types/external-publication> <http://www.w3.org/2000/01/rdf-schema#label> "External Publication" .
 <https://linked.data.gov.au/def/mer-doc-types/geoscience-reports-and-publications> <http://www.w3.org/2000/01/rdf-schema#label> "Geoscience Reports and Publications document types" .
-<https://linked.data.gov.au/def/mer-doc-types/collaborative-exploration-initiative> <http://www.w3.org/2000/01/rdf-schema#label> "Collaborative Exploration Initiative" .
-<https://linked.data.gov.au/def/mer-doc-types/departmental-compliance-report> <http://www.w3.org/2000/01/rdf-schema#label> "Departmental Compliance Report" .
-<https://linked.data.gov.au/def/mer-doc-types/departmental-publication-closed-series> <http://www.w3.org/2000/01/rdf-schema#label> "Departmental Publication - Closed Series" .
+<https://linked.data.gov.au/def/mer-doc-types/mining-operation-compliance> <http://www.w3.org/2000/01/rdf-schema#label> "Mining Operation Compliance" .
+<https://linked.data.gov.au/def/mer-doc-types/collaborative-exploration> <http://www.w3.org/2000/01/rdf-schema#label> "Collaborative Exploration" .
+<https://linked.data.gov.au/def/mer-doc-types/departmental-publication-closed-series> <http://www.w3.org/2000/01/rdf-schema#label> "Closed Series" .
 <https://linked.data.gov.au/def/mer-doc-types/energy-policy> <http://www.w3.org/2000/01/rdf-schema#label> "Energy Policy" .
-<https://linked.data.gov.au/def/mer-doc-types/geophysical-survey-report-logistics> <http://www.w3.org/2000/01/rdf-schema#label> "Geophysical Survey Report - Logistics" .
+<https://linked.data.gov.au/def/mer-doc-types/geophysical-survey-report-logistics> <http://www.w3.org/2000/01/rdf-schema#label> "Logistics" .
 <https://linked.data.gov.au/def/mer-doc-types/mines-and-energy-review> <http://www.w3.org/2000/01/rdf-schema#label> "Mines And Energy Review" .
+<https://linked.data.gov.au/def/mer-doc-types/quarterly-geological-Notes> <http://www.w3.org/2000/01/rdf-schema#label> "Quarterly Geological Notes" .
 <https://linked.data.gov.au/def/mer-doc-types/geological-survey-geoscience-publication> <http://www.w3.org/2000/01/rdf-schema#label> "Geological Survey Geoscience Publication" .
-<https://linked.data.gov.au/def/mer-doc-types/departmental-other> <http://www.w3.org/2000/01/rdf-schema#label> "Departmental Other" .
-<https://linked.data.gov.au/def/mer-doc-types/mineral-laboratory-analyses> <http://www.w3.org/2000/01/rdf-schema#label> "Mineral Laboratory Analyses" .
-<https://linked.data.gov.au/def/mer-doc-types/geological-survey-bulletin> <http://www.w3.org/2000/01/rdf-schema#label> "Geological Survey Bulletin" .
-<https://linked.data.gov.au/def/mer-doc-types/seismic-report-other> <http://www.w3.org/2000/01/rdf-schema#label> "Seismic Report - Other" .
+<https://linked.data.gov.au/def/mer-doc-types/seismic-report-other> <http://www.w3.org/2000/01/rdf-schema#label> "Other" .
 <https://linked.data.gov.au/def/mer-doc-types/energy-information-sheet> <http://www.w3.org/2000/01/rdf-schema#label> "Energy Information Sheet" .
-<https://linked.data.gov.au/def/mer-doc-types/seismic-report-interpretation> <http://www.w3.org/2000/01/rdf-schema#label> "Seismic Report - Interpretation" .
-<https://linked.data.gov.au/def/mer-doc-types/private-mine-program-and-report> <http://www.w3.org/2000/01/rdf-schema#label> "Private Mine Program And Report" .
+<https://linked.data.gov.au/def/mer-doc-types/seismic-report-interpretation> <http://www.w3.org/2000/01/rdf-schema#label> "Interpretation" .
 <https://linked.data.gov.au/def/mer-doc-types/energy-regulatory-guideline> <http://www.w3.org/2000/01/rdf-schema#label> "Energy Regulatory Guideline" .
 <https://linked.data.gov.au/def/mer-doc-types/mineral-mining-reports> <http://www.w3.org/2000/01/rdf-schema#label> "Mineral Mining Reports document types" .
 <https://linked.data.gov.au/def/mer-doc-types/geophysical-report> <http://www.w3.org/2000/01/rdf-schema#label> "Geophysical Report" .
 <https://linked.data.gov.au/def/mer-doc-types/mesa-journal> <http://www.w3.org/2000/01/rdf-schema#label> "Mesa Journal" .
 <https://linked.data.gov.au/def/mer-doc-types/engineering-geology-publication> <http://www.w3.org/2000/01/rdf-schema#label> "Engineering Geology Publication" .
+<https://linked.data.gov.au/def/mer-doc-types/bulletin> <http://www.w3.org/2000/01/rdf-schema#label> "Bulletin" .
 <https://linked.data.gov.au/def/mer-doc-types/inspector-of-mines-report> <http://www.w3.org/2000/01/rdf-schema#label> "Inspector Of Mines Report" .
-<https://linked.data.gov.au/def/mer-doc-types/mineral-production-statistics> <http://www.w3.org/2000/01/rdf-schema#label> "Mineral Production Statistics" .
 <https://linked.data.gov.au/def/mer-doc-types/legislation-and-guidance> <http://www.w3.org/2000/01/rdf-schema#label> "Legislation and Guidance document types" .
 <https://linked.data.gov.au/def/mer-doc-types/seismic-report> <http://www.w3.org/2000/01/rdf-schema#label> "Seismic Report" .
+<https://linked.data.gov.au/def/mer-doc-types/mineral-exploration> <http://www.w3.org/2000/01/rdf-schema#label> "Mineral Exploration" .
+<https://linked.data.gov.au/def/mer-doc-types/environmental-register> <http://www.w3.org/2000/01/rdf-schema#label> "Environmental Register" .
+<https://linked.data.gov.au/def/mer-doc-types/mineral-production> <http://www.w3.org/2000/01/rdf-schema#label> "Mineral Production" .
 <https://linked.data.gov.au/def/mer-doc-types/report-of-investigation> <http://www.w3.org/2000/01/rdf-schema#label> "Report Of Investigation" .
-<https://linked.data.gov.au/def/mer-doc-types/collaborative-drilling-initiative> <http://www.w3.org/2000/01/rdf-schema#label> "Collaborative Drilling Initiative" .
 <https://linked.data.gov.au/def/mer-doc-types/commodity-review> <http://www.w3.org/2000/01/rdf-schema#label> "Commodity Review" .
-<https://linked.data.gov.au/def/mer-doc-types/seismic-report-acquisition> <http://www.w3.org/2000/01/rdf-schema#label> "Seismic Report - Acquisition" .
+<https://linked.data.gov.au/def/mer-doc-types/seismic-report-acquisition> <http://www.w3.org/2000/01/rdf-schema#label> "Acquisition" .
 <https://linked.data.gov.au/def/mer-doc-types/quarterly-note> <http://www.w3.org/2000/01/rdf-schema#label> "Quarterly Note" .
-<https://linked.data.gov.au/def/mer-doc-types/seismic-report-operations> <http://www.w3.org/2000/01/rdf-schema#label> "Seismic Report - Operations" .
+<https://linked.data.gov.au/def/mer-doc-types/seismic-report-operations> <http://www.w3.org/2000/01/rdf-schema#label> "Operations" .
 <https://linked.data.gov.au/def/mer-doc-types/mining-operation-proposal> <http://www.w3.org/2000/01/rdf-schema#label> "Mining Operation Proposal" .
+<https://linked.data.gov.au/def/mer-doc-types/mining-environmental-program> <http://www.w3.org/2000/01/rdf-schema#label> "Mining Environmental Program" .
+<https://linked.data.gov.au/def/mer-doc-types/energy-geoscience> <http://www.w3.org/2000/01/rdf-schema#label> "Energy Geoscience" .
+<https://linked.data.gov.au/def/mer-doc-types/compliance> <http://www.w3.org/2000/01/rdf-schema#label> "Compliance" .
 <https://linked.data.gov.au/def/mer-doc-types/mineral-ministerial-determination> <http://www.w3.org/2000/01/rdf-schema#label> "Mineral Ministerial Determination" .
+<https://linked.data.gov.au/def/mer-doc-types/laboratory-analyses> <http://www.w3.org/2000/01/rdf-schema#label> "Laboratory Analyses" .
 <https://linked.data.gov.au/def/mer-doc-types/mineral-exploration-company-reports> <http://www.w3.org/2000/01/rdf-schema#label> "Mineral Exploration Company Reports document types" .
 <https://linked.data.gov.au/def/mer-doc-types/record-of-mine> <http://www.w3.org/2000/01/rdf-schema#label> "Record Of Mine" .
+<https://linked.data.gov.au/def/mer-doc-types/geophysical-survey-report-acquisition> <http://www.w3.org/2000/01/rdf-schema#label> "Acquisition" .
 <https://linked.data.gov.au/def/mer-doc-types/hydrogeological-publication> <http://www.w3.org/2000/01/rdf-schema#label> "Hydrogeological Publication" .
-<https://linked.data.gov.au/def/mer-doc-types/geophysical-survey-report-acquisition> <http://www.w3.org/2000/01/rdf-schema#label> "Geophysical Survey Report - Acquisition" .
 <https://linked.data.gov.au/def/mer-doc-types/water-report> <http://www.w3.org/2000/01/rdf-schema#label> "Water Report" .
 <https://linked.data.gov.au/def/mer-doc-types/exploration-initiatives> <http://www.w3.org/2000/01/rdf-schema#label> "Exploration Initiatives document types" .
+<https://linked.data.gov.au/def/mer-doc-types/other> <http://www.w3.org/2000/01/rdf-schema#label> "Other" .
 <https://linked.data.gov.au/def/mer-doc-types/mineral-company-report> <http://www.w3.org/2000/01/rdf-schema#label> "Mineral Company Report" .
+<https://linked.data.gov.au/def/mer-doc-types/external-other> <http://www.w3.org/2000/01/rdf-schema#label> "External other" .
+<https://linked.data.gov.au/def/mer-doc-types/annual-licence-or-technical-report> <http://www.w3.org/2000/01/rdf-schema#label> "Annual licence or technical report" .
 <https://linked.data.gov.au/def/mer-doc-types/mineral-policy> <http://www.w3.org/2000/01/rdf-schema#label> "Mineral Policy" .
 <https://linked.data.gov.au/def/mer-doc-types/mineral-regulatory-guideline> <http://www.w3.org/2000/01/rdf-schema#label> "Mineral Regulatory Guideline" .
 <https://linked.data.gov.au/def/mer-doc-types/mineral-resources-review> <http://www.w3.org/2000/01/rdf-schema#label> "Mineral Resources Review" .
 <https://linked.data.gov.au/def/mer-doc-types/departmental-publication> <http://www.w3.org/2000/01/rdf-schema#label> "Departmental Publication" .
-<https://linked.data.gov.au/def/mer-doc-types/energy-environmental-register> <http://www.w3.org/2000/01/rdf-schema#label> "Energy Environmental Register" .
-<https://linked.data.gov.au/def/mer-doc-types/geophysical-survey-report-final> <http://www.w3.org/2000/01/rdf-schema#label> "Geophysical Survey Report - Final" .
+<https://linked.data.gov.au/def/mer-doc-types/groundwater-report> <http://www.w3.org/2000/01/rdf-schema#label> "Consultant's groundwater report (closed series)" .
+<https://linked.data.gov.au/def/mer-doc-types/geophysical-survey-report-final> <http://www.w3.org/2000/01/rdf-schema#label> "Final" .
 <https://linked.data.gov.au/def/mer-doc-types/special-publication> <http://www.w3.org/2000/01/rdf-schema#label> "Special Publication" .
 <https://linked.data.gov.au/def/mer-doc-types/legislation-and-policy> <http://www.w3.org/2000/01/rdf-schema#label> "Legislation And Policy" .
 <https://linked.data.gov.au/def/anzsrc-for/2020/370603> <http://www.w3.org/2000/01/rdf-schema#label> "Geodesy" .
@@ -542,6 +546,7 @@
 <http://def.isotc211.org/iso19115/-1/2014/MaintenanceInformation/code/MD_MaintenanceFrequencyCode/fortnightly> <http://www.w3.org/2000/01/rdf-schema#label> "Fortnightly" .
 <http://def.isotc211.org/iso19115/-1/2014/MaintenanceInformation/code/MD_MaintenanceFrequencyCode/annually> <http://www.w3.org/2000/01/rdf-schema#label> "Annually" .
 <http://def.isotc211.org/iso19115/-1/2014/MaintenanceInformation/code/MD_MaintenanceFrequencyCode/daily> <http://www.w3.org/2000/01/rdf-schema#label> "Daily" .
+<https://linked.data.gov.au/def/maintenancefrequencycode> <http://www.w3.org/2000/01/rdf-schema#label> "Maintenance Frequency Codes" .
 <http://def.isotc211.org/iso19115/-1/2014/MaintenanceInformation/code/MD_MaintenanceFrequencyCode/asNeeded> <http://www.w3.org/2000/01/rdf-schema#label> "As needed" .
 <http://def.isotc211.org/iso19115/-1/2014/MaintenanceInformation/code/MD_MaintenanceFrequencyCode/notPlanned> <http://www.w3.org/2000/01/rdf-schema#label> "Not planned" .
 <http://def.isotc211.org/iso19115/-1/2014/MaintenanceInformation/code/MD_MaintenanceFrequencyCode/weekly> <http://www.w3.org/2000/01/rdf-schema#label> "Weekly" .
@@ -590,6 +595,7 @@
 <https://linked.data.gov.au/def/sa-geological-features/musgrave-province> <http://www.w3.org/2000/01/rdf-schema#label> "Musgrave Province" .
 <https://linked.data.gov.au/def/sa-geological-features/myponga-basin> <http://www.w3.org/2000/01/rdf-schema#label> "Myponga Basin" .
 <https://linked.data.gov.au/def/sa-geological-features/newer-volcanics-southeast-sa> <http://www.w3.org/2000/01/rdf-schema#label> "Newer Volcanics Southeast Sa" .
+<https://linked.data.gov.au/def/sa-geological-features/coompana-province> <http://www.w3.org/2000/01/rdf-schema#label> "Coompana Province" .
 <https://linked.data.gov.au/def/sa-geological-features/spalding-trough> <http://www.w3.org/2000/01/rdf-schema#label> "Spalding Trough" .
 <https://linked.data.gov.au/def/sa-geological-features/itiledoo-basin> <http://www.w3.org/2000/01/rdf-schema#label> "Itiledoo Basin" .
 <https://linked.data.gov.au/def/sa-geological-features/unknown> <http://www.w3.org/2000/01/rdf-schema#label> "Unknown" .
@@ -657,7 +663,6 @@
 <https://linked.data.gov.au/def/sa-geological-features/coulta-subdomain> <http://www.w3.org/2000/01/rdf-schema#label> "Coulta Subdomain" .
 <https://linked.data.gov.au/def/sa-geological-features/meadows-basin> <http://www.w3.org/2000/01/rdf-schema#label> "Meadows Basin" .
 <https://linked.data.gov.au/def/sa-geological-features/amadeus-basin> <http://www.w3.org/2000/01/rdf-schema#label> "Amadeus Basin" .
-<https://linked.data.gov.au/def/sa-geological-features/coompana-block> <http://www.w3.org/2000/01/rdf-schema#label> "Coompana Block" .
 <https://linked.data.gov.au/def/sa-geological-features/willyama-inliers> <http://www.w3.org/2000/01/rdf-schema#label> "Willyama Inliers" .
 <https://linked.data.gov.au/def/sa-geological-features/myponga-inlier> <http://www.w3.org/2000/01/rdf-schema#label> "Myponga Inlier" .
 <https://linked.data.gov.au/def/sa-geological-features/levenger-graben> <http://www.w3.org/2000/01/rdf-schema#label> "Levenger Graben" .
@@ -714,29 +719,29 @@
 <http://def.isotc211.org/iso19115/-1/2014/CommonClasses/code/MD_ScopeCode/document> <http://www.w3.org/2000/01/rdf-schema#label> "Document" .
 <https://linked.data.gov.au/def/mer-tenament-types/PL> <http://www.w3.org/2000/01/rdf-schema#label> "Pipeline licence holders " .
 <https://linked.data.gov.au/def/mer-tenament-types> <http://www.w3.org/2000/01/rdf-schema#label> "MER Tenement Types" .
-<https://linked.data.gov.au/def/mer-tenament-types/PEL> <http://www.w3.org/2000/01/rdf-schema#label> "Onshore exploration licences - petroleum" .
+<https://linked.data.gov.au/def/mer-tenament-types/PEL> <http://www.w3.org/2000/01/rdf-schema#label> "Onshore exploration licences: petroleum" .
 <https://linked.data.gov.au/def/mer-tenament-types/ERA> <http://www.w3.org/2000/01/rdf-schema#label> "Exploration Release Area" .
 <https://linked.data.gov.au/def/mer-tenament-types/AALA> <http://www.w3.org/2000/01/rdf-schema#label> "Associated activities licences applications" .
 <https://linked.data.gov.au/def/mer-tenament-types/EL> <http://www.w3.org/2000/01/rdf-schema#label> "Exploration Licence" .
-<https://linked.data.gov.au/def/mer-tenament-types/GSRL> <http://www.w3.org/2000/01/rdf-schema#label> "Onshore retention licences – gas storage" .
-<https://linked.data.gov.au/def/mer-tenament-types/GEL> <http://www.w3.org/2000/01/rdf-schema#label> "Onshore exploration licences - geothermal" .
+<https://linked.data.gov.au/def/mer-tenament-types/GSRL> <http://www.w3.org/2000/01/rdf-schema#label> "Onshore retention licences: gas storage" .
+<https://linked.data.gov.au/def/mer-tenament-types/GEL> <http://www.w3.org/2000/01/rdf-schema#label> "Onshore exploration licences: geothermal" .
 <https://linked.data.gov.au/def/mer-tenament-types/ML> <http://www.w3.org/2000/01/rdf-schema#label> "Mineral Licence" .
 <https://linked.data.gov.au/def/mer-tenament-types/MPL> <http://www.w3.org/2000/01/rdf-schema#label> "Miscellaneous purposes licence" .
 <https://linked.data.gov.au/def/mer-tenament-types/SFLA> <http://www.w3.org/2000/01/rdf-schema#label> "Special facilities licence applications" .
 <https://linked.data.gov.au/def/mer-tenament-types/P> <http://www.w3.org/2000/01/rdf-schema#label> "Petroleum" .
-<https://linked.data.gov.au/def/mer-tenament-types/PELA> <http://www.w3.org/2000/01/rdf-schema#label> "Onshore exploration licences applications - petroleum" .
+<https://linked.data.gov.au/def/mer-tenament-types/PELA> <http://www.w3.org/2000/01/rdf-schema#label> "Onshore exploration licences applications: petroleum" .
 <https://linked.data.gov.au/def/mer-tenament-types/MCA> <http://www.w3.org/2000/01/rdf-schema#label> "Mineral claim application" .
-<https://linked.data.gov.au/def/mer-tenament-types/GSELA> <http://www.w3.org/2000/01/rdf-schema#label> "Onshore exploration licences applications – gas storage" .
+<https://linked.data.gov.au/def/mer-tenament-types/GSELA> <http://www.w3.org/2000/01/rdf-schema#label> "Onshore exploration licences applications: gas storage" .
 <https://linked.data.gov.au/def/mer-tenament-types/PSLA> <http://www.w3.org/2000/01/rdf-schema#label> "Preliminary survey licence applications" .
 <https://linked.data.gov.au/def/mer-tenament-types/SFL> <http://www.w3.org/2000/01/rdf-schema#label> "Special facilities licence" .
 <https://linked.data.gov.au/def/mer-tenament-types/AAL> <http://www.w3.org/2000/01/rdf-schema#label> "Associated activities licences" .
-<https://linked.data.gov.au/def/mer-tenament-types/GSEL> <http://www.w3.org/2000/01/rdf-schema#label> "Onshore exploration licences – gas storage" .
+<https://linked.data.gov.au/def/mer-tenament-types/GSEL> <http://www.w3.org/2000/01/rdf-schema#label> "Onshore exploration licences: gas storage" .
 <https://linked.data.gov.au/def/mer-tenament-types/PSL> <http://www.w3.org/2000/01/rdf-schema#label> "Preliminary survey licence" .
 <https://linked.data.gov.au/def/mer-tenament-types/RG> <http://www.w3.org/2000/01/rdf-schema#label> "Relinquished Ground" .
-<https://linked.data.gov.au/def/mer-tenament-types/GELA> <http://www.w3.org/2000/01/rdf-schema#label> "Onshore exploration licences applications- geothermal" .
+<https://linked.data.gov.au/def/mer-tenament-types/GELA> <http://www.w3.org/2000/01/rdf-schema#label> "Onshore exploration licences applications: geothermal" .
 <https://linked.data.gov.au/def/mer-tenament-types/ELA> <http://www.w3.org/2000/01/rdf-schema#label> "Exploration Licence Application" .
-<https://linked.data.gov.au/def/mer-tenament-types/GSRLA> <http://www.w3.org/2000/01/rdf-schema#label> "Onshore retention licences applications – gas storage" .
-<https://linked.data.gov.au/def/mer-tenament-types/PRL> <http://www.w3.org/2000/01/rdf-schema#label> "Onshore retention Licences - petroleum" .
+<https://linked.data.gov.au/def/mer-tenament-types/GSRLA> <http://www.w3.org/2000/01/rdf-schema#label> "Onshore retention licences applications: gas storage" .
+<https://linked.data.gov.au/def/mer-tenament-types/PRL> <http://www.w3.org/2000/01/rdf-schema#label> "Onshore retention Licences: petroleum" .
 <https://linked.data.gov.au/def/mer-tenament-types/EML> <http://www.w3.org/2000/01/rdf-schema#label> "Extractive mineral lease" .
 <https://linked.data.gov.au/def/mer-tenament-types/MC> <http://www.w3.org/2000/01/rdf-schema#label> "Mineral claim" .
 <https://linked.data.gov.au/def/mer-tenament-types/RL> <http://www.w3.org/2000/01/rdf-schema#label> "Retention lease" .
@@ -746,7 +751,7 @@
 <https://linked.data.gov.au/def/mer-tenament-types/MPLA> <http://www.w3.org/2000/01/rdf-schema#label> "Mineral licence application" .
 <https://linked.data.gov.au/def/mer-tenament-types/PPL> <http://www.w3.org/2000/01/rdf-schema#label> "Petroleum production licence" .
 <https://linked.data.gov.au/def/mer-tenament-types/PPLA> <http://www.w3.org/2000/01/rdf-schema#label> "Petroleum production licence applications" .
-<https://linked.data.gov.au/def/mer-tenament-types/GRL> <http://www.w3.org/2000/01/rdf-schema#label> "Onshore retention licences - geothermal" .
+<https://linked.data.gov.au/def/mer-tenament-types/GRL> <http://www.w3.org/2000/01/rdf-schema#label> "Onshore retention licences: geothermal" .
 <http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation/code/MD_TopicCategoryCode/geoscientificInformation> <http://www.w3.org/2000/01/rdf-schema#label> "Geoscientific Information" .
 <http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation/code/MD_TopicCategoryCode/utilitiesCommunication> <http://www.w3.org/2000/01/rdf-schema#label> "Utilities Communication" .
 <http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation/code/MD_TopicCategoryCode/transportation> <http://www.w3.org/2000/01/rdf-schema#label> "Transportation" .
@@ -759,7 +764,7 @@
 <https://linked.data.gov.au/def/vocab-derivation-modes/direct> <http://www.w3.org/2000/01/rdf-schema#label> "Direct" .
 <https://linked.data.gov.au/def/vocab-derivation-modes/extension> <http://www.w3.org/2000/01/rdf-schema#label> "Extension" .
 <https://linked.data.gov.au/def/vocab-derivation-modes/not-applicable> <http://www.w3.org/2000/01/rdf-schema#label> "Not Applicable" .
-<https://linked.data.gov.au/def/vocab-derivation-modes/subsetting-and-extension> <http://www.w3.org/2000/01/rdf-schema#label> "Subset and Extension" .
+<https://linked.data.gov.au/def/vocab-derivation-modes/subsetting-and-extension> <http://www.w3.org/2000/01/rdf-schema#label> "Subset & Extension" .
 <https://linked.data.gov.au/def/mer-work-statuses/completed> <http://www.w3.org/2000/01/rdf-schema#label> "Completed" .
 <https://linked.data.gov.au/def/mer-work-statuses/planned> <http://www.w3.org/2000/01/rdf-schema#label> "Planned" .
 <https://linked.data.gov.au/def/mer-work-statuses> <http://www.w3.org/2000/01/rdf-schema#label> "MER Work Status" .
@@ -768,16 +773,3 @@
 <https://linked.data.gov.au/def/mer-work-statuses/final> <http://www.w3.org/2000/01/rdf-schema#label> "Final" .
 <https://linked.data.gov.au/def/mer-work-statuses/superseded> <http://www.w3.org/2000/01/rdf-schema#label> "Superseded" .
 <https://linked.data.gov.au/def/mer-work-statuses/historical-archive> <http://www.w3.org/2000/01/rdf-schema#label> "Historical Archive" .
-<https://linked.data.gov.au/def/reg-statuses/accepted> <http://www.w3.org/2000/01/rdf-schema#label> "accepted" .
-<https://linked.data.gov.au/def/reg-statuses/addition> <http://www.w3.org/2000/01/rdf-schema#label> "addition" .
-<https://linked.data.gov.au/def/reg-statuses/deprecated> <http://www.w3.org/2000/01/rdf-schema#label> "deprecated" .
-<https://linked.data.gov.au/def/reg-statuses/invalid> <http://www.w3.org/2000/01/rdf-schema#label> "invalid" .
-<https://linked.data.gov.au/def/reg-statuses/notAccepted> <http://www.w3.org/2000/01/rdf-schema#label> "not accepted" .
-<https://linked.data.gov.au/def/reg-statuses/original> <http://www.w3.org/2000/01/rdf-schema#label> "original" .
-<https://linked.data.gov.au/def/reg-statuses/reserved> <http://www.w3.org/2000/01/rdf-schema#label> "reserved" .
-<https://linked.data.gov.au/def/reg-statuses/retired> <http://www.w3.org/2000/01/rdf-schema#label> "retired" .
-<https://linked.data.gov.au/def/reg-statuses/stable> <http://www.w3.org/2000/01/rdf-schema#label> "stable" .
-<https://linked.data.gov.au/def/reg-statuses/submitted> <http://www.w3.org/2000/01/rdf-schema#label> "submitted" .
-<https://linked.data.gov.au/def/reg-statuses/superseded> <http://www.w3.org/2000/01/rdf-schema#label> "superseded" .
-<https://linked.data.gov.au/def/reg-statuses/unstable> <http://www.w3.org/2000/01/rdf-schema#label> "unstable" .
-<https://linked.data.gov.au/def/reg-statuses/valid> <http://www.w3.org/2000/01/rdf-schema#label> "valid" .
