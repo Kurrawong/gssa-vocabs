@@ -479,7 +479,7 @@ cs:
 
 :quarterly-geological-Notes
     a skos:Concept ;
-    dcterms:identifier "quarterly-geological-Notes"^^xsd:token ;
+    dcterms:identifier "quarterly-geological-notes"^^xsd:token ;
     rdfs:isDefinedBy cs: ;
     skos:broader :departmental-publication-closed-series ;
     skos:definition "Published from 1962 to 1996. Replaced by the MESA Journal."@en ;
@@ -740,29 +740,30 @@ cs:
     skos:prefLabel "Departmental Publications document types"@en ;
     skos:member
         :annual-report ,
-        :departmental-compliance-report ,
-        :other ,
-        :departmental-publication-closed-series ,
-        :commodity-review ,
-        :handbook ,
-        :inspector-of-mines-report ,
-        :mineral-and-energy-resources-annual-review ,
-        :mineral-industry-quarterly ,
-        :mineral-information-series ,
-        :mineral-resources-review ,
-        :mines-and-energy-review ,
-        :mining-review ,
-        :quarterly-note ,
-        :record-of-mine ,
-        :report-of-investigation ,
-        :special-publication ,
-        :energy-geoscience-publication ,
+		:bulletin ,
+		:commodity-review ,
+		:handbook ,
+		:inspector-of-mines-report ,
+		:letter-book ,
+		:mineral-and-energy-resources-annual-review ,
+		:mineral-industry-quarterly ,
+		:mineral-information-series ,
+		:mineral-resources-review ,
+		:mines-and-energy-review ,
+		:mining-review ,
+		:quarterly-geological-notes ,
+		:quarterly-note ,
+		:record-of-mine ,
+		:report-of-investigation ,
+		:special-publication ,
+		:compliance ,
+		:energy-geoscience ,
         :engineering-geology-publication ,
-        :geological-survey-bulletin ,
         :geological-survey-geoscience-publication ,
         :hydrogeological-publication ,
         :mesa-journal ,
-        :mineral-production-statistics ;
+		:mineral-production ,
+        :departmental-other ;
 .
 
 :legislation-and-guidance
@@ -788,7 +789,7 @@ cs:
     skos:inScheme cs: ;
     skos:prefLabel "Mineral Exploration Company Reports document types"@en ;
     skos:member
-        :mineral-exploration-tenement-report ;
+        :mineral-exploration ;
 .
 
 :exploration-initiatives
@@ -798,8 +799,8 @@ cs:
     skos:inScheme cs: ;
     skos:prefLabel "Exploration Initiatives document types"@en ;
     skos:member
-        :collaborative-drilling-initiative ,
-        :collaborative-exploration-initiative ;
+        :collaborative-drilling ,
+        :collaborative-exploration ;
 .
 
 :mineral-mining-reports
@@ -810,7 +811,7 @@ cs:
     skos:prefLabel "Mineral Mining Reports document types"@en ;
     skos:member
         :mining-operation-proposal ,
-        :mining-operation-compliance-report ,
+        :mining-operation-compliance ,
         :mining-environmental-program ;
 .
 
@@ -823,5 +824,5 @@ cs:
     skos:member
         :mesa-journal ,
         :geological-survey-geoscience-publication ,
-        :energy-geoscience-publication ;
+        :energy-geoscience ;
 .
