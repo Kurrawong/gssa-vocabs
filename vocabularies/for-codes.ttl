@@ -122,6 +122,17 @@ for:370505
     skos:prefLabel "Mineralogy And Crystallography"@en ;
 .
 
+merfor:sedimentary-geology
+    a skos:Concept ;
+    dcterms:identifier "sedimentary-geology"^^xsd:token ;
+    dcterms:provenance "Created by MER for this vocabulary" ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader for:3705 ;
+    skos:definition "Sedimentary Geology"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Sedimentary Geology"@en ;
+.
+
 for:370509
     a skos:Concept ;
     dcterms:identifier "370509"^^xsd:token ;
@@ -655,7 +666,7 @@ merfor:environmentally-sustainable-mineral-resource-activities
     dcterms:identifier "environmentally-sustainable-mineral-resource-activities"^^xsd:token ;
     dcterms:provenance "Created by MER for this vocabulary" ;
     rdfs:isDefinedBy cs: ;
-    skos:broader merfor:mineral-resources-exc-energy-resources ;
+    skos:broader merfor:energy ;
     skos:definition "Environmentally Sustainable Mineral Resource Activities"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "Environmentally Sustainable Mineral Resource Activities"@en ;
@@ -714,6 +725,17 @@ merfor:geospatial-information-systems
     skos:definition "Geospatial Information Systems"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "Geospatial Information Systems"@en ;
+.
+
+merfor:information-systems
+    a skos:Concept ;
+    dcterms:identifier "information-systems"^^xsd:token ;
+    dcterms:provenance "Created by MER for this vocabulary" ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader for:4013 ;
+    skos:definition "Information Systems"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Information Systems"@en ;
 .
 
 merfor:geostorage-engineering
@@ -1538,6 +1560,7 @@ merfor:geology-collection
         merfor:petrology ,
         for:370503 ,
         merfor:organic-petrology ,
+		merfor:sedimentary-geology ,
         merfor:sedimentary-petrology ,
         merfor:regional-geology ,
         merfor:resource-geology ,
