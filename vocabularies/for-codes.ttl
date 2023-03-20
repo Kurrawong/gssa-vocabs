@@ -465,7 +465,7 @@ for:460702
 
 merfor:basement-geology
     a skos:Concept ;
-    dcterms:identifier "	-geology"^^xsd:token ;
+    dcterms:identifier "basement-geology"^^xsd:token ;
     dcterms:provenance "Created by MER for this vocabulary" ;
     rdfs:isDefinedBy cs: ;
     skos:broader for:3705 ;
