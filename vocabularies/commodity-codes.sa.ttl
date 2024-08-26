@@ -1,7 +1,6 @@
 PREFIX : <http://resource.geosciml.org/classifier/cgi/commodity-code/>
 PREFIX astatus: <https://linked.data.gov.au/def/reg-statuses/>
 PREFIX cs: <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code>
-PREFIX schema: <https://schema.org/>
 PREFIX dt: <http://resource.geosciml.org/datatype/>
 PREFIX eucc: <http://inspire.ec.europa.eu/codelist/CommodityCodeValue/>
 PREFIX prov: <http://www.w3.org/ns/prov#>
@@ -12,23 +11,19 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX this-cs: <https://linked.data.gov.au/def/sa-commodity-codes>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-
-<https://linked.data.gov.au/org/cgi-gtwg>
-    a schema:Organization ;
-    schema:affiliation <https://linked.data.gov.au/org/cgi> ;
-    schema:name "CGI Geoscience Terminology Working Group" ;
-    schema:url "http://www.cgi-iugs.org/tech_collaboration/geoscience_terminology_working_group.html"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/org/cgi>
-    a schema:Organization ;
-    schema:name "Commission for the Management and Application of Geoscience Information" ;
-    schema:url "http://www.cgi-iugs.org"^^xsd:anyURI ;
+:shale
+    a skos:Concept ;
+    reg:status astatus:addition ;
+    rdfs:isDefinedBy this-cs: ;
+    skos:definition "Shale"@en ;
+    skos:inScheme this-cs: ;
+    skos:prefLabel "Shale"@en ;
+    skos:topConceptOf this-cs: ;
+    schema:citation "Added by MER"@en ;
 .
 
 :alumina
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Alumina"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel "aluminium oxide"@en ;
@@ -40,11 +35,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Alum"^^dt:AbbreviatedLabel ,
         "02.04.05.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "alumina"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Alumina"^^xsd:anyURI ;
 .
 
 :aluminium
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Aluminium"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :metal ;
@@ -55,11 +50,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Al"^^dt:AbbreviatedLabel ,
         "02.01.05"^^dt:LocalHierarchyKey ;
     skos:prefLabel "aluminium"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Aluminium"^^xsd:anyURI ;
 .
 
 :alunite
     a skos:Concept ;
-    schema:citation "http://www.webmineral.com/data/Alunite.shtml http; http://en.wikipedia.org/wiki/Alunite"@en ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :industrial-mineral ;
@@ -70,11 +65,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Alu"^^dt:AbbreviatedLabel ,
         "01.02.02"^^dt:LocalHierarchyKey ;
     skos:prefLabel "alunite"@en ;
+    schema:citation "http://www.webmineral.com/data/Alunite.shtml http; http://en.wikipedia.org/wiki/Alunite"@en ;
 .
 
 :amazonite
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Amazonite"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel "microcline"@en ;
@@ -86,11 +81,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Amz"^^dt:AbbreviatedLabel ,
         "01.03.13.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "amazonite"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Amazonite"^^xsd:anyURI ;
 .
 
 :amber
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Amber"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader
@@ -103,11 +98,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Amb"^^dt:AbbreviatedLabel ,
         "01.03.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "amber"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Amber"^^xsd:anyURI ;
 .
 
 :amethyst
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Amethyst"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :quartz-gemstone ;
@@ -118,11 +113,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Amt"^^dt:AbbreviatedLabel ,
         "01.03.25.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "amethyst"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Amethyst"^^xsd:anyURI ;
 .
 
 :andalusite
     a skos:Concept ;
-    schema:citation "http://webmineral.com/data/Andalusite.shtml"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :aluminosilicate ;
@@ -133,11 +128,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Anda"^^dt:AbbreviatedLabel ,
         "01.02.01.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "andalusite"@en ;
+    schema:citation "http://webmineral.com/data/Andalusite.shtml"^^xsd:anyURI ;
 .
 
 :anhydrite
     a skos:Concept ;
-    schema:citation "http://www.galleries.com/Anhydrite"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :evaporite ;
@@ -148,11 +143,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Anhd"^^dt:AbbreviatedLabel ,
         "01.02.15.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "anhydrite"@en ;
+    schema:citation "http://www.galleries.com/Anhydrite"^^xsd:anyURI ;
 .
 
 :anthophyllite
     a skos:Concept ;
-    schema:citation "http://www.webmineral.com/data/Anthophyllite.shtml http://en.wikipedia.org/wiki/Anthophyllite"@en ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :asbestos-amphibole ;
@@ -163,11 +158,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Ant"^^dt:AbbreviatedLabel ,
         "01.02.04.01.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "anthophyllite"@en ;
+    schema:citation "http://www.webmineral.com/data/Anthophyllite.shtml http://en.wikipedia.org/wiki/Anthophyllite"@en ;
 .
 
 :anthracite
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Anthracite"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :coal ;
@@ -178,11 +173,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Anthr"^^dt:AbbreviatedLabel ,
         "01.01.05.01.01.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "anthracite"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Anthracite"^^xsd:anyURI ;
 .
 
 :antimony
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Antimony"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :metalloid ;
@@ -193,11 +188,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Sb"^^dt:AbbreviatedLabel ,
         "02.02.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "antimony"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Antimony"^^xsd:anyURI ;
 .
 
 :apatite
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Apatite"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :industrial-mineral ;
@@ -208,11 +203,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Apat"^^dt:AbbreviatedLabel ,
         "01.02.03"^^dt:LocalHierarchyKey ;
     skos:prefLabel "apatite"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Apatite"^^xsd:anyURI ;
 .
 
 :apatite-gemstone
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Apatite"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :gemstones ;
@@ -223,11 +218,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "ApatGe"^^dt:AbbreviatedLabel ,
         "01.03.02"^^dt:LocalHierarchyKey ;
     skos:prefLabel "apatite-gemstone"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Apatite"^^xsd:anyURI ;
 .
 
 :aquamarine
     a skos:Concept ;
-    schema:citation "This vocabulary"@en ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :beryl ;
@@ -238,11 +233,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "AgM"^^dt:AbbreviatedLabel ,
         "01.03.03.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "aquamarine"@en ;
+    schema:citation "This vocabulary"@en ;
 .
 
 :arsenic
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Arsenic"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :metalloid ;
@@ -253,11 +248,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "As"^^dt:AbbreviatedLabel ,
         "02.02.02"^^dt:LocalHierarchyKey ;
     skos:prefLabel "arsenic"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Arsenic"^^xsd:anyURI ;
 .
 
 :asphalt
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Asphalt"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel
@@ -273,11 +268,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Asph"^^dt:AbbreviatedLabel ,
         "01.01.05.03.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "asphalt"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Asphalt"^^xsd:anyURI ;
 .
 
 :barium
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Barium"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :metal ;
@@ -288,11 +283,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Ba"^^dt:AbbreviatedLabel ,
         "02.01.07"^^dt:LocalHierarchyKey ;
     skos:prefLabel "barium"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Barium"^^xsd:anyURI ;
 .
 
 :baryte
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Baryte"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel "barite"@en ;
@@ -304,11 +299,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Brt"^^dt:AbbreviatedLabel ,
         "01.02.05"^^dt:LocalHierarchyKey ;
     skos:prefLabel "baryte"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Baryte"^^xsd:anyURI ;
 .
 
 :basalt
     a skos:Concept ;
-    schema:citation "http://minerals.usgs.gov/minerals/pubs/commodity/stone_dimension/myb1-2007-stond.pdf"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel "trap rock"@en ;
@@ -319,11 +314,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Bas"^^dt:AbbreviatedLabel ,
         "01.01.03.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "basalt"@en ;
+    schema:citation "http://minerals.usgs.gov/minerals/pubs/commodity/stone_dimension/myb1-2007-stond.pdf"^^xsd:anyURI ;
 .
 
 :bauxite
     a skos:Concept ;
-    schema:citation "http://geology.com/minerals/bauxite.shtml"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :direct-shipping-ore ;
@@ -334,11 +329,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Baux"^^dt:AbbreviatedLabel ,
         "01.01.02.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "bauxite"@en ;
+    schema:citation "http://geology.com/minerals/bauxite.shtml"^^xsd:anyURI ;
 .
 
 :bentonite
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Bentonite"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :fullers-earth ;
@@ -349,11 +344,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Bent"^^dt:AbbreviatedLabel ,
         "01.02.10.03.02"^^dt:LocalHierarchyKey ;
     skos:prefLabel "bentonite"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Bentonite"^^xsd:anyURI ;
 .
 
 :beryllium
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Beryllium"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :metal ;
@@ -364,11 +359,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Be"^^dt:AbbreviatedLabel ,
         "02.01.06"^^dt:LocalHierarchyKey ;
     skos:prefLabel "beryllium"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Beryllium"^^xsd:anyURI ;
 .
 
 :bismuth
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Bismuth"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :metal ;
@@ -379,11 +374,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Bi"^^dt:AbbreviatedLabel ,
         "02.01.08"^^dt:LocalHierarchyKey ;
     skos:prefLabel "bismuth"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Bismuth"^^xsd:anyURI ;
 .
 
 :black-coal
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Black_coal"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel "bituminous coal"@en ;
@@ -395,11 +390,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "BlcC"^^dt:AbbreviatedLabel ,
         "01.01.05.01.01.02"^^dt:LocalHierarchyKey ;
     skos:prefLabel "black coal"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Black_coal"^^xsd:anyURI ;
 .
 
 :borate
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Borate_minerals"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :industrial-mineral ;
@@ -410,11 +405,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Bor"^^dt:AbbreviatedLabel ,
         "01.02.06"^^dt:LocalHierarchyKey ;
     skos:prefLabel "borate"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Borate_minerals"^^xsd:anyURI ;
 .
 
 :boron
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Boron"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :metalloid ;
@@ -425,11 +420,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "B"^^dt:AbbreviatedLabel ,
         "02.02.03"^^dt:LocalHierarchyKey ;
     skos:prefLabel "boron"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Boron"^^xsd:anyURI ;
 .
 
 :brick-clay
     a skos:Concept ;
-    schema:citation "This vocabulary"@en ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel "structural clay"@en ;
@@ -441,11 +436,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Bclay"^^dt:AbbreviatedLabel ,
         "01.02.10.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "brick clay"@en ;
+    schema:citation "This vocabulary"@en ;
 .
 
 :bromine
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Bromine"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :non-metal ;
@@ -456,11 +451,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Br"^^dt:AbbreviatedLabel ,
         "02.03.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "bromine"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Bromine"^^xsd:anyURI ;
 .
 
 :brown-coal
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Brown_coal"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel
@@ -474,11 +469,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "BrnC"^^dt:AbbreviatedLabel ,
         "01.01.05.01.01.03"^^dt:LocalHierarchyKey ;
     skos:prefLabel "brown coal"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Brown_coal"^^xsd:anyURI ;
 .
 
 :cadmium
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Cadmium"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :metal ;
@@ -488,11 +483,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Cd"^^dt:AbbreviatedLabel ,
         "02.01.09"^^dt:LocalHierarchyKey ;
     skos:prefLabel "cadmium"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Cadmium"^^xsd:anyURI ;
 .
 
 :calcite
     a skos:Concept ;
-    schema:citation "http://www.webmineral.com/data/Calcite.shtml http ; http//en.wikipedia.org/wiki/Calcite"@en ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :industrial-mineral ;
@@ -503,11 +498,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Cal"^^dt:AbbreviatedLabel ,
         "01.02.07"^^dt:LocalHierarchyKey ;
     skos:prefLabel "calcite"@en ;
+    schema:citation "http://www.webmineral.com/data/Calcite.shtml http ; http//en.wikipedia.org/wiki/Calcite"@en ;
 .
 
 :carnallite
     a skos:Concept ;
-    schema:citation "http://www.galleries.com/Carnallite"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :evaporite ;
@@ -518,11 +513,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Carn"^^dt:AbbreviatedLabel ,
         "01.02.15.02"^^dt:LocalHierarchyKey ;
     skos:prefLabel "carnallite"@en ;
+    schema:citation "http://www.galleries.com/Carnallite"^^xsd:anyURI ;
 .
 
 :carnelian
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Carnelian; http ; http//www.controverscial.com/Carnelian.htm"@en ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel
@@ -536,11 +531,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Carnl"^^dt:AbbreviatedLabel ,
         "01.03.29.01.02"^^dt:LocalHierarchyKey ;
     skos:prefLabel "carnelian"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Carnelian; http ; http//www.controverscial.com/Carnelian.htm"@en ;
 .
 
 :cassiterite-gemstone
     a skos:Concept ;
-    schema:citation "http://www.galleries.com/Cassiterite"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :gemstones ;
@@ -551,11 +546,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "CassGe"^^dt:AbbreviatedLabel ,
         "01.03.04"^^dt:LocalHierarchyKey ;
     skos:prefLabel "cassiterite-gemstone"@en ;
+    schema:citation "http://www.galleries.com/Cassiterite"^^xsd:anyURI ;
 .
 
 :cerium
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Cerium"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :lree ;
@@ -565,11 +560,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Ce"^^dt:AbbreviatedLabel ,
         "02.01.03.02.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "cerium"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Cerium"^^xsd:anyURI ;
 .
 
 :cesium
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Cesium"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :metal ;
@@ -580,11 +575,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Cs"^^dt:AbbreviatedLabel ,
         "02.01.10"^^dt:LocalHierarchyKey ;
     skos:prefLabel "cesium"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Cesium"^^xsd:anyURI ;
 .
 
 :chert
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Chert"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :silica ;
@@ -595,11 +590,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Chrt"^^dt:AbbreviatedLabel ,
         "01.02.37.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "chert"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Chert"^^xsd:anyURI ;
 .
 
 :chlorite
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Chlorite_group"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :industrial-mineral ;
@@ -610,11 +605,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Chlo"^^dt:AbbreviatedLabel ,
         "01.02.08"^^dt:LocalHierarchyKey ;
     skos:prefLabel "chlorite"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Chlorite_group"^^xsd:anyURI ;
 .
 
 :chrome
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Chromium(III)_oxide"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel "chromium oxide"@en ;
@@ -626,11 +621,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Cr2O3"^^dt:AbbreviatedLabel ,
         "02.04.05.02"^^dt:LocalHierarchyKey ;
     skos:prefLabel "chrome"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Chromium(III)_oxide"^^xsd:anyURI ;
 .
 
 :chromite
     a skos:Concept ;
-    schema:citation "http//www.webmineral.com/data/Chromite.shtml http ; http//en.wikipedia.org/wiki/Chromite"@en ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :industrial-mineral ;
@@ -641,11 +636,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Chro"^^dt:AbbreviatedLabel ,
         "01.02.09"^^dt:LocalHierarchyKey ;
     skos:prefLabel "chromite"@en ;
+    schema:citation "http//www.webmineral.com/data/Chromite.shtml http ; http//en.wikipedia.org/wiki/Chromite"@en ;
 .
 
 :chromium
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Chromium"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :ferrous-metal ;
@@ -656,11 +651,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Cr"^^dt:AbbreviatedLabel ,
         "02.01.04.1"^^dt:LocalHierarchyKey ;
     skos:prefLabel "chromium"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Chromium"^^xsd:anyURI ;
 .
 
 :chrysoberyl
     a skos:Concept ;
-    schema:citation "http://www.galleries.com/Chrysoberyl"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :gemstones ;
@@ -671,11 +666,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "CBrl"^^dt:AbbreviatedLabel ,
         "01.03.05"^^dt:LocalHierarchyKey ;
     skos:prefLabel "chrysoberyl"@en ;
+    schema:citation "http://www.galleries.com/Chrysoberyl"^^xsd:anyURI ;
 .
 
 :chrysoprase
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Chrysoprase"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel
@@ -690,11 +685,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Chrys"^^dt:AbbreviatedLabel ,
         "01.03.29.01.03"^^dt:LocalHierarchyKey ;
     skos:prefLabel "chrysoprase"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Chrysoprase"^^xsd:anyURI ;
 .
 
 :chrysotile
     a skos:Concept ;
-    schema:citation "http://www.webmineral.com/data/Chrysotile.shtml http://en.wikipedia.org/wiki/Chrysotile"@en ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :asbestos-serpentine ;
@@ -705,11 +700,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Chr"^^dt:AbbreviatedLabel ,
         "01.02.04.02.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "chrysotile"@en ;
+    schema:citation "http://www.webmineral.com/data/Chrysotile.shtml http://en.wikipedia.org/wiki/Chrysotile"@en ;
 .
 
 :citrine
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Citrine#Citrine"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :quartz-gemstone ;
@@ -720,11 +715,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Citr"^^dt:AbbreviatedLabel ,
         "01.03.25.02"^^dt:LocalHierarchyKey ;
     skos:prefLabel "citrine"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Citrine#Citrine"^^xsd:anyURI ;
 .
 
 :coal-bed-methane
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Coal_bed_methane"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel
@@ -738,11 +733,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "CBM"^^dt:AbbreviatedLabel ,
         "01.01.05.02.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "coal bed methane"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Coal_bed_methane"^^xsd:anyURI ;
 .
 
 :cobalt
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Cobalt"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :base-metal ;
@@ -753,11 +748,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Co"^^dt:AbbreviatedLabel ,
         "02.01.01.02"^^dt:LocalHierarchyKey ;
     skos:prefLabel "cobalt"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Cobalt"^^xsd:anyURI ;
 .
 
 :copper
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Copper"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :base-metal ;
@@ -768,11 +763,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Cu"^^dt:AbbreviatedLabel ,
         "02.01.01.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "copper"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Copper"^^xsd:anyURI ;
 .
 
 :corundum
     a skos:Concept ;
-    schema:citation "http://www.webmineral.com/data/Corundum.shtml http ; http//en.wikipedia.org/wiki/Corundum"@en ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :industrial-mineral ;
@@ -783,11 +778,22 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Cor"^^dt:AbbreviatedLabel ,
         "01.02.11"^^dt:LocalHierarchyKey ;
     skos:prefLabel "corundum"@en ;
+    schema:citation "http://www.webmineral.com/data/Corundum.shtml http ; http//en.wikipedia.org/wiki/Corundum"@en ;
+.
+
+:critical-minerals
+    a skos:Concept ;
+    reg:status astatus:addition ;
+    rdfs:isDefinedBy this-cs: ;
+    skos:definition "Critical minerals"@en ;
+    skos:inScheme this-cs: ;
+    skos:prefLabel "Critical minerals"@en ;
+    skos:topConceptOf this-cs: ;
+    schema:citation "Added by MER"@en ;
 .
 
 :crocidolite
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Riebeckite"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel
@@ -801,11 +807,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Cro"^^dt:AbbreviatedLabel ,
         "01.02.04.01.02"^^dt:LocalHierarchyKey ;
     skos:prefLabel "crocidolite"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Riebeckite"^^xsd:anyURI ;
 .
 
 :crushed-rock
     a skos:Concept ;
-    schema:citation "This vocabulary"@en ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel "crushed stone"@en ;
@@ -819,11 +825,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Crush"^^dt:AbbreviatedLabel ,
         "01.01.01.01.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "crushed rock"@en ;
+    schema:citation "This vocabulary"@en ;
 .
 
 :cryolite
     a skos:Concept ;
-    schema:citation "http://www.webmineral.com/data/Cryolite.shtml http ; http//en.wikipedia.org/wiki/Cryolite"@en ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :industrial-mineral ;
@@ -834,11 +840,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Cryo"^^dt:AbbreviatedLabel ,
         "01.02.12"^^dt:LocalHierarchyKey ;
     skos:prefLabel "cryolite"@en ;
+    schema:citation "http://www.webmineral.com/data/Cryolite.shtml http ; http//en.wikipedia.org/wiki/Cryolite"@en ;
 .
 
 :diamond
     a skos:Concept ;
-    schema:citation "http://www.webmineral.com/data/Diamond.shtml http ; http//en.wikipedia.org/wiki/Diamond"@en ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :industrial-mineral ;
@@ -849,11 +855,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Diam"^^dt:AbbreviatedLabel ,
         "01.02.13"^^dt:LocalHierarchyKey ;
     skos:prefLabel "diamond"@en ;
+    schema:citation "http://www.webmineral.com/data/Diamond.shtml http ; http//en.wikipedia.org/wiki/Diamond"@en ;
 .
 
 :diamond-gemstone
     a skos:Concept ;
-    schema:citation "http://www.galleries.com/Diamond"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :gemstones ;
@@ -864,11 +870,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "DiamGe"^^dt:AbbreviatedLabel ,
         "01.03.08"^^dt:LocalHierarchyKey ;
     skos:prefLabel "diamond-gemstone"@en ;
+    schema:citation "http://www.galleries.com/Diamond"^^xsd:anyURI ;
 .
 
 :diatomite
     a skos:Concept ;
-    schema:citation "BGS"@en ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel "diatomaceous earth"@en ;
@@ -880,11 +886,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Dtm"^^dt:AbbreviatedLabel ,
         "01.01.04.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "diatomite"@en ;
+    schema:citation "BGS"@en ;
 .
 
 :diopside-enstatite
     a skos:Concept ;
-    schema:citation "http://www.galleries.com/Diopside"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :gemstones ;
@@ -895,11 +901,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Enst"^^dt:AbbreviatedLabel ,
         "01.03.09"^^dt:LocalHierarchyKey ;
     skos:prefLabel "diopside-enstatite"@en ;
+    schema:citation "http://www.galleries.com/Diopside"^^xsd:anyURI ;
 .
 
 :dioptase
     a skos:Concept ;
-    schema:citation "http://www.galleries.com/Dioptase"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :gemstones ;
@@ -910,11 +916,22 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Diop"^^dt:AbbreviatedLabel ,
         "01.03.10"^^dt:LocalHierarchyKey ;
     skos:prefLabel "dioptase"@en ;
+    schema:citation "http://www.galleries.com/Dioptase"^^xsd:anyURI ;
+.
+
+:dolomite
+    a skos:Concept ;
+    reg:status astatus:addition ;
+    rdfs:isDefinedBy this-cs: ;
+    skos:definition "Dolomite"@en ;
+    skos:inScheme this-cs: ;
+    skos:prefLabel "Dolomite"@en ;
+    skos:topConceptOf this-cs: ;
+    schema:citation "Added by MER"@en ;
 .
 
 :dumortierite
     a skos:Concept ;
-    schema:citation "http://www.galleries.com/Dumortierite"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :gemstones ;
@@ -925,11 +942,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Dum"^^dt:AbbreviatedLabel ,
         "01.03.11"^^dt:LocalHierarchyKey ;
     skos:prefLabel "dumortierite"@en ;
+    schema:citation "http://www.galleries.com/Dumortierite"^^xsd:anyURI ;
 .
 
 :dysprosium
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Dysprosium"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :hree ;
@@ -940,11 +957,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Dy"^^dt:AbbreviatedLabel ,
         "02.01.03.01.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "dysprosium"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Dysprosium"^^xsd:anyURI ;
 .
 
 :emerald
     a skos:Concept ;
-    schema:citation "This vocabulary"@en ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :beryl ;
@@ -955,11 +972,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Em"^^dt:AbbreviatedLabel ,
         "01.03.03.02"^^dt:LocalHierarchyKey ;
     skos:prefLabel "emerald"@en ;
+    schema:citation "This vocabulary"@en ;
 .
 
 :epsomite
     a skos:Concept ;
-    schema:citation "http://www.galleries.com/Epsomite"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :industrial-mineral ;
@@ -970,11 +987,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Epso"^^dt:AbbreviatedLabel ,
         "01.02.14"^^dt:LocalHierarchyKey ;
     skos:prefLabel "epsomite"@en ;
+    schema:citation "http://www.galleries.com/Epsomite"^^xsd:anyURI ;
 .
 
 :erbium
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Erbium"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :hree ;
@@ -984,11 +1001,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Er"^^dt:AbbreviatedLabel ,
         "02.01.03.01.02"^^dt:LocalHierarchyKey ;
     skos:prefLabel "erbium"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Erbium"^^xsd:anyURI ;
 .
 
 :euclase
     a skos:Concept ;
-    schema:citation "http://www.galleries.com/Euclase"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :gemstones ;
@@ -999,11 +1016,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Eucl"^^dt:AbbreviatedLabel ,
         "01.03.12"^^dt:LocalHierarchyKey ;
     skos:prefLabel "euclase"@en ;
+    schema:citation "http://www.galleries.com/Euclase"^^xsd:anyURI ;
 .
 
 :europium
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Europium"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :hree ;
@@ -1014,11 +1031,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Eu"^^dt:AbbreviatedLabel ,
         "02.01.03.01.03"^^dt:LocalHierarchyKey ;
     skos:prefLabel "europium"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Europium"^^xsd:anyURI ;
 .
 
 :feldspar
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Feldspar"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :industrial-mineral ;
@@ -1029,11 +1046,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Feld"^^dt:AbbreviatedLabel ,
         "01.02.16"^^dt:LocalHierarchyKey ;
     skos:prefLabel "feldspar"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Feldspar"^^xsd:anyURI ;
 .
 
 :fluorine
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Fluorine"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :non-metal ;
@@ -1044,11 +1061,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "F"^^dt:AbbreviatedLabel ,
         "02.03.02"^^dt:LocalHierarchyKey ;
     skos:prefLabel "fluorine"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Fluorine"^^xsd:anyURI ;
 .
 
 :fluorite
     a skos:Concept ;
-    schema:citation "http://www.galleries.com/Fluorite"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel "flurospar"@en ;
@@ -1060,11 +1077,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Fl"^^dt:AbbreviatedLabel ,
         "01.02.17"^^dt:LocalHierarchyKey ;
     skos:prefLabel "fluorite"@en ;
+    schema:citation "http://www.galleries.com/Fluorite"^^xsd:anyURI ;
 .
 
 :foundry-sand
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Foundry_sand"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel "molding sand"@en ;
@@ -1076,11 +1093,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Fsand"^^dt:AbbreviatedLabel ,
         "01.01.06.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "foundry sand"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Foundry_sand"^^xsd:anyURI ;
 .
 
 :frac-sand
     a skos:Concept ;
-    schema:citation "http://geology.com/articles/frac-sand/"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :sand ;
@@ -1091,11 +1108,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Frsand"^^dt:AbbreviatedLabel ,
         "01.01.06.02"^^dt:LocalHierarchyKey ;
     skos:prefLabel "frac sand"@en ;
+    schema:citation "http://geology.com/articles/frac-sand/"^^xsd:anyURI ;
 .
 
 :gadolinium
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Gadolinium"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :hree ;
@@ -1106,11 +1123,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Gd"^^dt:AbbreviatedLabel ,
         "02.01.03.01.04"^^dt:LocalHierarchyKey ;
     skos:prefLabel "gadolinium"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Gadolinium"^^xsd:anyURI ;
 .
 
 :gallium
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Gallium"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :metal ;
@@ -1120,11 +1137,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Ga"^^dt:AbbreviatedLabel ,
         "02.01.11"^^dt:LocalHierarchyKey ;
     skos:prefLabel "gallium"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Gallium"^^xsd:anyURI ;
 .
 
 :garnet
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Garnet"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :industrial-mineral ;
@@ -1135,11 +1152,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Garn"^^dt:AbbreviatedLabel ,
         "01.02.18"^^dt:LocalHierarchyKey ;
     skos:prefLabel "garnet"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Garnet"^^xsd:anyURI ;
 .
 
 :gas-hydrate
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Gas_hydrate"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel "methane clathrate"@en ;
@@ -1151,11 +1168,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Hyd"^^dt:AbbreviatedLabel ,
         "01.01.05.02.02"^^dt:LocalHierarchyKey ;
     skos:prefLabel "gas hydrate"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Gas_hydrate"^^xsd:anyURI ;
 .
 
 :germanium
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Germanium"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :metalloid ;
@@ -1166,11 +1183,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Ge"^^dt:AbbreviatedLabel ,
         "02.02.04"^^dt:LocalHierarchyKey ;
     skos:prefLabel "germanium"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Germanium"^^xsd:anyURI ;
 .
 
 :glauconite
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Glauconite"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :industrial-mineral ;
@@ -1181,11 +1198,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Glau"^^dt:AbbreviatedLabel ,
         "01.02.19"^^dt:LocalHierarchyKey ;
     skos:prefLabel "glauconite"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Glauconite"^^xsd:anyURI ;
 .
 
 :gold
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Gold"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :precious-metal ;
@@ -1196,11 +1213,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Au"^^dt:AbbreviatedLabel ,
         "02.01.02.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "gold"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Gold"^^xsd:anyURI ;
 .
 
 :granite
     a skos:Concept ;
-    schema:citation "http://minerals.usgs.gov/minerals/pubs/commodity/stone_dimension/myb1-2007-stond.pdf"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :dimension-stone ;
@@ -1211,11 +1228,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Gran"^^dt:AbbreviatedLabel ,
         "01.01.03.02"^^dt:LocalHierarchyKey ;
     skos:prefLabel "granite"@en ;
+    schema:citation "http://minerals.usgs.gov/minerals/pubs/commodity/stone_dimension/myb1-2007-stond.pdf"^^xsd:anyURI ;
 .
 
 :graphite
     a skos:Concept ;
-    schema:citation "http://www.galleries.com/Graphite"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :industrial-mineral ;
@@ -1226,11 +1243,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Gr"^^dt:AbbreviatedLabel ,
         "01.02.20"^^dt:LocalHierarchyKey ;
     skos:prefLabel "graphite"@en ;
+    schema:citation "http://www.galleries.com/Graphite"^^xsd:anyURI ;
 .
 
 :greenstone
     a skos:Concept ;
-    schema:citation "http://minerals.usgs.gov/minerals/pubs/commodity/stone_dimension/myb1-2007-stond.pdf"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :dimension-stone ;
@@ -1241,11 +1258,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "GreSt"^^dt:AbbreviatedLabel ,
         "01.01.03.03"^^dt:LocalHierarchyKey ;
     skos:prefLabel "greenstone"@en ;
+    schema:citation "http://minerals.usgs.gov/minerals/pubs/commodity/stone_dimension/myb1-2007-stond.pdf"^^xsd:anyURI ;
 .
 
 :gypsum
     a skos:Concept ;
-    schema:citation "http://www.galleries.com/Gypsum"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :evaporite ;
@@ -1256,11 +1273,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Gp"^^dt:AbbreviatedLabel ,
         "01.02.15.03"^^dt:LocalHierarchyKey ;
     skos:prefLabel "gypsum"@en ;
+    schema:citation "http://www.galleries.com/Gypsum"^^xsd:anyURI ;
 .
 
 :hafnium
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Hafnium"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :metal ;
@@ -1271,11 +1288,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Hf"^^dt:AbbreviatedLabel ,
         "02.01.12"^^dt:LocalHierarchyKey ;
     skos:prefLabel "hafnium"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Hafnium"^^xsd:anyURI ;
 .
 
 :halloysite
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Halloysite"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :clay ;
@@ -1286,11 +1303,22 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Hall"^^dt:AbbreviatedLabel ,
         "01.02.10.04"^^dt:LocalHierarchyKey ;
     skos:prefLabel "halloysite"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Halloysite"^^xsd:anyURI ;
+.
+
+:heavy-mineral-sands
+    a skos:Concept ;
+    reg:status astatus:addition ;
+    rdfs:isDefinedBy this-cs: ;
+    skos:definition "Heavy mineral sands"@en ;
+    skos:inScheme this-cs: ;
+    skos:prefLabel "Heavy mineral sands"@en ;
+    skos:topConceptOf this-cs: ;
+    schema:citation "Added by MER"@en ;
 .
 
 :heavy-rare-earth-oxide
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Rare_earth_element"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :rare-earth-oxide ;
@@ -1300,11 +1328,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "HREO"^^dt:AbbreviatedLabel ,
         "02.04.05.08.2"^^dt:LocalHierarchyKey ;
     skos:prefLabel "heavy rare earth oxide"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Rare_earth_element"^^xsd:anyURI ;
 .
 
 :heliodor
     a skos:Concept ;
-    schema:citation "http://www.galleries.com/Heliodor"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :beryl ;
@@ -1315,11 +1343,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Helio"^^dt:AbbreviatedLabel ,
         "01.03.03.03"^^dt:LocalHierarchyKey ;
     skos:prefLabel "heliodor"@en ;
+    schema:citation "http://www.galleries.com/Heliodor"^^xsd:anyURI ;
 .
 
 :hematite
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Hematite"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel "haematite"@en ;
@@ -1331,11 +1359,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Hem"^^dt:AbbreviatedLabel ,
         "01.02.21"^^dt:LocalHierarchyKey ;
     skos:prefLabel "hematite"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Hematite"^^xsd:anyURI ;
 .
 
 :hematite-gemstone
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Hematite"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :gemstones ;
@@ -1346,11 +1374,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "HemGe"^^dt:AbbreviatedLabel ,
         "01.03.15"^^dt:LocalHierarchyKey ;
     skos:prefLabel "hematite-gemstone"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Hematite"^^xsd:anyURI ;
 .
 
 :hematite-ore
     a skos:Concept ;
-    schema:citation "This vocabulary"@en ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :iron-ore ;
@@ -1361,11 +1389,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "HemOr"^^dt:AbbreviatedLabel ,
         "01.01.02.02.02"^^dt:LocalHierarchyKey ;
     skos:prefLabel "hematite ore"@en ;
+    schema:citation "This vocabulary"@en ;
 .
 
 :holmium
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Holmium"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :hree ;
@@ -1376,11 +1404,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Ho"^^dt:AbbreviatedLabel ,
         "02.01.03.01.05"^^dt:LocalHierarchyKey ;
     skos:prefLabel "holmium"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Holmium"^^xsd:anyURI ;
 .
 
 :ilmenite
     a skos:Concept ;
-    schema:citation "http://www.galleries.com/Ilmenite"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :industrial-mineral ;
@@ -1391,11 +1419,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Ilm"^^dt:AbbreviatedLabel ,
         "01.02.26"^^dt:LocalHierarchyKey ;
     skos:prefLabel "ilmenite"@en ;
+    schema:citation "http://www.galleries.com/Ilmenite"^^xsd:anyURI ;
 .
 
 :indium
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Indium"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :metal ;
@@ -1406,11 +1434,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "In"^^dt:AbbreviatedLabel ,
         "02.01.13"^^dt:LocalHierarchyKey ;
     skos:prefLabel "indium"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Indium"^^xsd:anyURI ;
 .
 
 :iodine
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Iodine"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :non-metal ;
@@ -1421,11 +1449,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "I"^^dt:AbbreviatedLabel ,
         "02.03.03"^^dt:LocalHierarchyKey ;
     skos:prefLabel "iodine"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Iodine"^^xsd:anyURI ;
 .
 
 :iolite
     a skos:Concept ;
-    schema:citation "http://www.galleries.com/Cordierite"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel "iolite"@en ;
@@ -1436,11 +1464,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Cord"^^dt:AbbreviatedLabel ,
         "01.03.06"^^dt:LocalHierarchyKey ;
     skos:prefLabel "cordierite"@en ;
+    schema:citation "http://www.galleries.com/Cordierite"^^xsd:anyURI ;
 .
 
 :iridium
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Iridium"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :platinum-group ;
@@ -1451,11 +1479,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Ir"^^dt:AbbreviatedLabel ,
         "02.01.02.03.1"^^dt:LocalHierarchyKey ;
     skos:prefLabel "iridium"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Iridium"^^xsd:anyURI ;
 .
 
 :iron
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Iron"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :ferrous-metal ;
@@ -1466,11 +1494,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Fe"^^dt:AbbreviatedLabel ,
         "02.01.04.2"^^dt:LocalHierarchyKey ;
     skos:prefLabel "iron"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Iron"^^xsd:anyURI ;
 .
 
 :jade
     a skos:Concept ;
-    schema:citation "http://www.galleries.com/Jade"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :gemstones ;
@@ -1481,11 +1509,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Jade"^^dt:AbbreviatedLabel ,
         "01.03.16"^^dt:LocalHierarchyKey ;
     skos:prefLabel "jade"@en ;
+    schema:citation "http://www.galleries.com/Jade"^^xsd:anyURI ;
 .
 
 :jarosite
     a skos:Concept ;
-    schema:citation "This vocabulary"@en ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :industrial-mineral ;
@@ -1496,11 +1524,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Jaro"^^dt:AbbreviatedLabel ,
         "01.02.22"^^dt:LocalHierarchyKey ;
     skos:prefLabel "jarosite"@en ;
+    schema:citation "This vocabulary"@en ;
 .
 
 :kaolin
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/China_clay"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel
@@ -1514,11 +1542,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Kaol"^^dt:AbbreviatedLabel ,
         "01.02.10.02"^^dt:LocalHierarchyKey ;
     skos:prefLabel "kaolin"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/China_clay"^^xsd:anyURI ;
 .
 
 :kornerupine
     a skos:Concept ;
-    schema:citation "http://www.galleries.com/Kornerupine"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :gemstones ;
@@ -1529,11 +1557,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Korn"^^dt:AbbreviatedLabel ,
         "01.03.17"^^dt:LocalHierarchyKey ;
     skos:prefLabel "kornerupine"@en ;
+    schema:citation "http://www.galleries.com/Kornerupine"^^xsd:anyURI ;
 .
 
 :kyanite
     a skos:Concept ;
-    schema:citation "http://www.webmineral.com/data/Kyanite.shtml http://en.wikipedia.org/wiki/Kyanite"@en ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :aluminosilicate ;
@@ -1544,11 +1572,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Kya"^^dt:AbbreviatedLabel ,
         "01.02.01.02"^^dt:LocalHierarchyKey ;
     skos:prefLabel "kyanite"@en ;
+    schema:citation "http://www.webmineral.com/data/Kyanite.shtml http://en.wikipedia.org/wiki/Kyanite"@en ;
 .
 
 :kyanite-gemstone
     a skos:Concept ;
-    schema:citation "http://www.galleries.com/Kyanite"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :gemstones ;
@@ -1559,11 +1587,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "KyGe"^^dt:AbbreviatedLabel ,
         "01.03.18"^^dt:LocalHierarchyKey ;
     skos:prefLabel "kyanite-gemstone"@en ;
+    schema:citation "http://www.galleries.com/Kyanite"^^xsd:anyURI ;
 .
 
 :lanthanum
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Lanthanum"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :lree ;
@@ -1574,11 +1602,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "La"^^dt:AbbreviatedLabel ,
         "02.01.03.02.02"^^dt:LocalHierarchyKey ;
     skos:prefLabel "lanthanum"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Lanthanum"^^xsd:anyURI ;
 .
 
 :laterite
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Laterite"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :industrial-rock ;
@@ -1589,11 +1617,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Late"^^dt:AbbreviatedLabel ,
         "01.01.04.02"^^dt:LocalHierarchyKey ;
     skos:prefLabel "laterite"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Laterite"^^xsd:anyURI ;
 .
 
 :lazulite
     a skos:Concept ;
-    schema:citation "http://www.galleries.com/Lazulite"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :gemstones ;
@@ -1604,11 +1632,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Lz"^^dt:AbbreviatedLabel ,
         "01.03.19"^^dt:LocalHierarchyKey ;
     skos:prefLabel "lazulite"@en ;
+    schema:citation "http://www.galleries.com/Lazulite"^^xsd:anyURI ;
 .
 
 :lead
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Lead"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :base-metal ;
@@ -1619,11 +1647,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Pb"^^dt:AbbreviatedLabel ,
         "02.01.01.03"^^dt:LocalHierarchyKey ;
     skos:prefLabel "lead"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Lead"^^xsd:anyURI ;
 .
 
 :leucoxene
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Leucoxene"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :industrial-mineral ;
@@ -1634,11 +1662,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Leuc"^^dt:AbbreviatedLabel ,
         "01.02.23"^^dt:LocalHierarchyKey ;
     skos:prefLabel "leucoxene"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Leucoxene"^^xsd:anyURI ;
 .
 
 :light-rare-earth-oxide
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Rare_earth_element"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :rare-earth-oxide ;
@@ -1648,11 +1676,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "LREO"^^dt:AbbreviatedLabel ,
         "02.04.05.08.1"^^dt:LocalHierarchyKey ;
     skos:prefLabel "light rare earth oxide"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Rare_earth_element"^^xsd:anyURI ;
 .
 
 :lime
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Lime_(material)"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel
@@ -1666,11 +1694,22 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "LstL"^^dt:AbbreviatedLabel ,
         "02.04.03"^^dt:LocalHierarchyKey ;
     skos:prefLabel "lime"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Lime_(material)"^^xsd:anyURI ;
+.
+
+:limesand
+    a skos:Concept ;
+    reg:status astatus:addition ;
+    rdfs:isDefinedBy this-cs: ;
+    skos:definition "Limesand"@en ;
+    skos:inScheme this-cs: ;
+    skos:prefLabel "Limesand"@en ;
+    skos:topConceptOf this-cs: ;
+    schema:citation "Added by MER"@en ;
 .
 
 :limestone
     a skos:Concept ;
-    schema:citation "http://minerals.usgs.gov/minerals/pubs/commodity/stone_dimension/myb1-2007-stond.pdf"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader
@@ -1683,11 +1722,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Lst"^^dt:AbbreviatedLabel ,
         "01.01.03.04"^^dt:LocalHierarchyKey ;
     skos:prefLabel "limestone"@en ;
+    schema:citation "http://minerals.usgs.gov/minerals/pubs/commodity/stone_dimension/myb1-2007-stond.pdf"^^xsd:anyURI ;
 .
 
 :lithium
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Lithium"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :metal ;
@@ -1698,11 +1737,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Li"^^dt:AbbreviatedLabel ,
         "02.01.14"^^dt:LocalHierarchyKey ;
     skos:prefLabel "lithium"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Lithium"^^xsd:anyURI ;
 .
 
 :lithium-oxide
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Lithium_oxide"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :chemical-oxide-product ;
@@ -1713,11 +1752,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "LiO2"^^dt:AbbreviatedLabel ,
         "02.04.05.04"^^dt:LocalHierarchyKey ;
     skos:prefLabel "lithium oxide"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Lithium_oxide"^^xsd:anyURI ;
 .
 
 :lutetium
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Lutetium"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :hree ;
@@ -1728,11 +1767,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Lu"^^dt:AbbreviatedLabel ,
         "02.01.03.01.06"^^dt:LocalHierarchyKey ;
     skos:prefLabel "lutetium"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Lutetium"^^xsd:anyURI ;
 .
 
 :magnesia
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Magnesium_oxide"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel "magnesium oxide"@en ;
@@ -1744,11 +1783,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "MgOx"^^dt:AbbreviatedLabel ,
         "02.04.05.05"^^dt:LocalHierarchyKey ;
     skos:prefLabel "magnesia"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Magnesium_oxide"^^xsd:anyURI ;
 .
 
 :magnesite
     a skos:Concept ;
-    schema:citation "http://www.galleries.com/Magnesite"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :industrial-mineral ;
@@ -1758,11 +1797,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Magns"^^dt:AbbreviatedLabel ,
         "01.02.24"^^dt:LocalHierarchyKey ;
     skos:prefLabel "magnesite"@en ;
+    schema:citation "http://www.galleries.com/Magnesite"^^xsd:anyURI ;
 .
 
 :magnesium
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Magnesium"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :metal ;
@@ -1773,11 +1812,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Mg"^^dt:AbbreviatedLabel ,
         "02.01.15"^^dt:LocalHierarchyKey ;
     skos:prefLabel "magnesium"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Magnesium"^^xsd:anyURI ;
 .
 
 :magnetite
     a skos:Concept ;
-    schema:citation "http://www.galleries.com/Magnetite"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel "lodestone"@en ;
@@ -1791,11 +1830,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Mgt"^^dt:AbbreviatedLabel ,
         "01.02.25"^^dt:LocalHierarchyKey ;
     skos:prefLabel "magnetite"@en ;
+    schema:citation "http://www.galleries.com/Magnetite"^^xsd:anyURI ;
 .
 
 :magnetite-ore
     a skos:Concept ;
-    schema:citation "This vocabulary"@en ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :iron-ore ;
@@ -1806,11 +1845,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "MagOr"^^dt:AbbreviatedLabel ,
         "01.01.02.02.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "magnetite ore"@en ;
+    schema:citation "This vocabulary"@en ;
 .
 
 :malachite
     a skos:Concept ;
-    schema:citation "http://www.galleries.com/Malachite"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :gemstones ;
@@ -1821,11 +1860,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Mal"^^dt:AbbreviatedLabel ,
         "01.03.20"^^dt:LocalHierarchyKey ;
     skos:prefLabel "malachite"@en ;
+    schema:citation "http://www.galleries.com/Malachite"^^xsd:anyURI ;
 .
 
 :manganese
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Manganese"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :ferrous-metal ;
@@ -1836,11 +1875,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Mn"^^dt:AbbreviatedLabel ,
         "02.01.04.3"^^dt:LocalHierarchyKey ;
     skos:prefLabel "manganese"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Manganese"^^xsd:anyURI ;
 .
 
 :manganese-ore
     a skos:Concept ;
-    schema:citation "This vocabulary"@en ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :direct-shipping-ore ;
@@ -1851,11 +1890,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "MnOr"^^dt:AbbreviatedLabel ,
         "01.01.02.03"^^dt:LocalHierarchyKey ;
     skos:prefLabel "manganese ore"@en ;
+    schema:citation "This vocabulary"@en ;
 .
 
 :marble
     a skos:Concept ;
-    schema:citation "http://minerals.usgs.gov/minerals/pubs/commodity/stone_dimension/myb1-2007-stond.pdf"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader
@@ -1868,11 +1907,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Mrbl"^^dt:AbbreviatedLabel ,
         "01.01.03.05"^^dt:LocalHierarchyKey ;
     skos:prefLabel "marble"@en ;
+    schema:citation "http://minerals.usgs.gov/minerals/pubs/commodity/stone_dimension/myb1-2007-stond.pdf"^^xsd:anyURI ;
 .
 
 :mercury
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Mercury_(element)"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :metal ;
@@ -1883,11 +1922,22 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Hg"^^dt:AbbreviatedLabel ,
         "02.01.16"^^dt:LocalHierarchyKey ;
     skos:prefLabel "mercury"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Mercury_(element)"^^xsd:anyURI ;
+.
+
+:meta-siltstone
+    a skos:Concept ;
+    reg:status astatus:addition ;
+    rdfs:isDefinedBy this-cs: ;
+    skos:definition "Meta-siltstone"@en ;
+    skos:inScheme this-cs: ;
+    skos:prefLabel "Meta-siltstone"@en ;
+    skos:topConceptOf this-cs: ;
+    schema:citation "Added by MER"@en ;
 .
 
 :mica
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Mica"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :industrial-mineral ;
@@ -1898,11 +1948,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Mica"^^dt:AbbreviatedLabel ,
         "01.02.27"^^dt:LocalHierarchyKey ;
     skos:prefLabel "mica"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Mica"^^xsd:anyURI ;
 .
 
 :miscellaneous-dimension-stones
     a skos:Concept ;
-    schema:citation "http://minerals.usgs.gov/minerals/pubs/commodity/stone_dimension/myb1-2007-stond.pdf"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :dimension-stone ;
@@ -1913,11 +1963,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "MiscDS"^^dt:AbbreviatedLabel ,
         "01.01.03.06"^^dt:LocalHierarchyKey ;
     skos:prefLabel "miscellaneous dimension stones"@en ;
+    schema:citation "http://minerals.usgs.gov/minerals/pubs/commodity/stone_dimension/myb1-2007-stond.pdf"^^xsd:anyURI ;
 .
 
 :molybdenite
     a skos:Concept ;
-    schema:citation "http://www.galleries.com/Molybdenite"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :industrial-mineral ;
@@ -1927,11 +1977,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Molyb"^^dt:AbbreviatedLabel ,
         "01.02.28"^^dt:LocalHierarchyKey ;
     skos:prefLabel "molybdenite"@en ;
+    schema:citation "http://www.galleries.com/Molybdenite"^^xsd:anyURI ;
 .
 
 :molybdenum
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Molybdenum"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :metal ;
@@ -1942,11 +1992,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Mo"^^dt:AbbreviatedLabel ,
         "02.01.17"^^dt:LocalHierarchyKey ;
     skos:prefLabel "molybdenum"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Molybdenum"^^xsd:anyURI ;
 .
 
 :monazite
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Monazite"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :industrial-mineral ;
@@ -1957,11 +2007,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Monaz"^^dt:AbbreviatedLabel ,
         "01.02.29"^^dt:LocalHierarchyKey ;
     skos:prefLabel "monazite"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Monazite"^^xsd:anyURI ;
 .
 
 :moonstone
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Moonstone_(gemstone)"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :feldspar-gemstone ;
@@ -1972,11 +2022,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Most"^^dt:AbbreviatedLabel ,
         "01.03.13.02"^^dt:LocalHierarchyKey ;
     skos:prefLabel "moonstone"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Moonstone_(gemstone)"^^xsd:anyURI ;
 .
 
 :morganite
     a skos:Concept ;
-    schema:citation "http://www.galleries.com/Morganite"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :beryl ;
@@ -1987,11 +2037,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Morg"^^dt:AbbreviatedLabel ,
         "01.03.03.04"^^dt:LocalHierarchyKey ;
     skos:prefLabel "morganite"@en ;
+    schema:citation "http://www.galleries.com/Morganite"^^xsd:anyURI ;
 .
 
 :moss-agate
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Moss_agate"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :agate ;
@@ -2002,11 +2052,22 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Magg"^^dt:AbbreviatedLabel ,
         "01.03.29.01.01.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "moss agate"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Moss_agate"^^xsd:anyURI ;
+.
+
+:natural-gas
+    a skos:Concept ;
+    reg:status astatus:addition ;
+    rdfs:isDefinedBy this-cs: ;
+    skos:definition "Natural gas"@en ;
+    skos:inScheme this-cs: ;
+    skos:prefLabel "Natural gas"@en ;
+    skos:topConceptOf this-cs: ;
+    schema:citation "Added by MER"@en ;
 .
 
 :natural-secondary-aggregate
     a skos:Concept ;
-    schema:citation "BGS"@en ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :aggregate ;
@@ -2017,11 +2078,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Saggr"^^dt:AbbreviatedLabel ,
         "01.01.01.02"^^dt:LocalHierarchyKey ;
     skos:prefLabel "natural secondary aggregate"@en ;
+    schema:citation "BGS"@en ;
 .
 
 :neodymium
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Neodymium"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :lree ;
@@ -2031,11 +2092,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Nd"^^dt:AbbreviatedLabel ,
         "02.01.03.02.03"^^dt:LocalHierarchyKey ;
     skos:prefLabel "neodymium"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Neodymium"^^xsd:anyURI ;
 .
 
 :nepheline-syenite
     a skos:Concept ;
-    schema:citation "This vocabulary"@en ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :industrial-rock ;
@@ -2046,11 +2107,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "NephS"^^dt:AbbreviatedLabel ,
         "01.01.04.03"^^dt:LocalHierarchyKey ;
     skos:prefLabel "nepheline syenite"@en ;
+    schema:citation "This vocabulary"@en ;
 .
 
 :nickel
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Nickel"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :base-metal ;
@@ -2061,11 +2122,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Ni"^^dt:AbbreviatedLabel ,
         "02.01.01.04"^^dt:LocalHierarchyKey ;
     skos:prefLabel "nickel"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Nickel"^^xsd:anyURI ;
 .
 
 :niobium
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Niobium"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :metal ;
@@ -2076,11 +2137,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Nb"^^dt:AbbreviatedLabel ,
         "02.01.18"^^dt:LocalHierarchyKey ;
     skos:prefLabel "niobium"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Niobium"^^xsd:anyURI ;
 .
 
 :niobium-pentoxide
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Niobium_pentoxide"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :chemical-oxide-product ;
@@ -2091,11 +2152,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Nb2O5"^^dt:AbbreviatedLabel ,
         "02.04.05.06"^^dt:LocalHierarchyKey ;
     skos:prefLabel "niobium pentoxide"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Niobium_pentoxide"^^xsd:anyURI ;
 .
 
 :nitrate
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Nitrate"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :chemical-compound-product ;
@@ -2106,11 +2167,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Nitr"^^dt:AbbreviatedLabel ,
         "02.04.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "nitrate"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Nitrate"^^xsd:anyURI ;
 .
 
 :obsidian
     a skos:Concept ;
-    schema:citation "http://www.galleries.com/Obsidian"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :gemstones ;
@@ -2121,11 +2182,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Obs"^^dt:AbbreviatedLabel ,
         "01.03.21"^^dt:LocalHierarchyKey ;
     skos:prefLabel "obsidian"@en ;
+    schema:citation "http://www.galleries.com/Obsidian"^^xsd:anyURI ;
 .
 
 :ochre
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Ochre"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :iron-oxide ;
@@ -2136,11 +2197,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Ochr"^^dt:AbbreviatedLabel ,
         "02.04.05.03.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "ochre"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Ochre"^^xsd:anyURI ;
 .
 
 :oil
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Petroleum"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel
@@ -2154,11 +2215,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Oil"^^dt:AbbreviatedLabel ,
         "01.01.05.03.02"^^dt:LocalHierarchyKey ;
     skos:prefLabel "oil"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Petroleum"^^xsd:anyURI ;
 .
 
 :oil-shale
     a skos:Concept ;
-    schema:citation "BGS"@en ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :liquid-hydrocarbons ;
@@ -2169,11 +2230,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "OilS"^^dt:AbbreviatedLabel ,
         "01.01.05.03.03"^^dt:LocalHierarchyKey ;
     skos:prefLabel "oil shale"@en ;
+    schema:citation "BGS"@en ;
 .
 
 :olivine
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Olivine"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :industrial-mineral ;
@@ -2184,11 +2245,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Olv"^^dt:AbbreviatedLabel ,
         "01.02.30"^^dt:LocalHierarchyKey ;
     skos:prefLabel "olivine"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Olivine"^^xsd:anyURI ;
 .
 
 :olivine-gemstone
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Peridot"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel "peridot"@en ;
@@ -2200,11 +2261,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "OlvGe"^^dt:AbbreviatedLabel ,
         "01.03.22"^^dt:LocalHierarchyKey ;
     skos:prefLabel "olivine-gemstone"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Peridot"^^xsd:anyURI ;
 .
 
 :onyx
     a skos:Concept ;
-    schema:citation "http://www.quartzpage.de/agate.html#onyx"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :agate ;
@@ -2215,11 +2276,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Onyx"^^dt:AbbreviatedLabel ,
         "01.03.29.01.01.02"^^dt:LocalHierarchyKey ;
     skos:prefLabel "onyx"@en ;
+    schema:citation "http://www.quartzpage.de/agate.html#onyx"^^xsd:anyURI ;
 .
 
 :opal
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Opal"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :silica-gemstone ;
@@ -2230,11 +2291,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Opal"^^dt:AbbreviatedLabel ,
         "01.03.29.02"^^dt:LocalHierarchyKey ;
     skos:prefLabel "opal"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Opal"^^xsd:anyURI ;
 .
 
 :osmium
     a skos:Concept ;
-    schema:citation "This vocabulary"@en ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :platinum-group ;
@@ -2245,11 +2306,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Os"^^dt:AbbreviatedLabel ,
         "02.01.02.03.2"^^dt:LocalHierarchyKey ;
     skos:prefLabel "osmium"@en ;
+    schema:citation "This vocabulary"@en ;
 .
 
 :palladium
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Palladium"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :platinum-group ;
@@ -2260,11 +2321,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Pd"^^dt:AbbreviatedLabel ,
         "02.01.02.03.6"^^dt:LocalHierarchyKey ;
     skos:prefLabel "palladium"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Palladium"^^xsd:anyURI ;
 .
 
 :palygorskite
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Attapulgite"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel "attapulgite"@en ;
@@ -2276,11 +2337,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Palyg"^^dt:AbbreviatedLabel ,
         "01.02.10.03.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "palygorskite"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Attapulgite"^^xsd:anyURI ;
 .
 
 :peat
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Peat"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :carbonaceous-material ;
@@ -2291,11 +2352,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Peat"^^dt:AbbreviatedLabel ,
         "01.01.05.01.02"^^dt:LocalHierarchyKey ;
     skos:prefLabel "peat"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Peat"^^xsd:anyURI ;
 .
 
 :perlite
     a skos:Concept ;
-    schema:citation "This vocabulary"@en ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :industrial-rock ;
@@ -2305,11 +2366,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Perl"^^dt:AbbreviatedLabel ,
         "01.01.04.04"^^dt:LocalHierarchyKey ;
     skos:prefLabel "perlite"@en ;
+    schema:citation "This vocabulary"@en ;
 .
 
 :phenakite
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Phenakite"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :gemstones ;
@@ -2320,11 +2381,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Phen"^^dt:AbbreviatedLabel ,
         "01.03.23"^^dt:LocalHierarchyKey ;
     skos:prefLabel "phenakite"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Phenakite"^^xsd:anyURI ;
 .
 
 :phosphate-rock
     a skos:Concept ;
-    schema:citation "Based on Neuendorf et al, 2009 (AGI glossary)."@en ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel "phosphorite"@en ;
@@ -2336,11 +2397,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "PhosR"^^dt:AbbreviatedLabel ,
         "01.01.04.05"^^dt:LocalHierarchyKey ;
     skos:prefLabel "phosphate rock"@en ;
+    schema:citation "Based on Neuendorf et al, 2009 (AGI glossary)."@en ;
 .
 
 :phosphorous
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Phosphorus"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :non-metal ;
@@ -2351,11 +2412,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "P"^^dt:AbbreviatedLabel ,
         "02.03.04"^^dt:LocalHierarchyKey ;
     skos:prefLabel "phosphorous"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Phosphorus"^^xsd:anyURI ;
 .
 
 :phosphorous-pentoxide
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Phosphorous_pentoxide"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :chemical-oxide-product ;
@@ -2366,11 +2427,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "P2O5"^^dt:AbbreviatedLabel ,
         "02.04.05.07"^^dt:LocalHierarchyKey ;
     skos:prefLabel "phosphorous pentoxide"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Phosphorous_pentoxide"^^xsd:anyURI ;
 .
 
 :platinum
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Platinum"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :platinum-group ;
@@ -2381,11 +2442,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Pt"^^dt:AbbreviatedLabel ,
         "02.01.02.03.3"^^dt:LocalHierarchyKey ;
     skos:prefLabel "platinum"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Platinum"^^xsd:anyURI ;
 .
 
 :potash
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Potash"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :chemical-compound-product ;
@@ -2396,11 +2457,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Pota"^^dt:AbbreviatedLabel ,
         "02.04.04"^^dt:LocalHierarchyKey ;
     skos:prefLabel "potash"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Potash"^^xsd:anyURI ;
 .
 
 :potassium
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Potassium"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :metal ;
@@ -2411,11 +2472,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "K"^^dt:AbbreviatedLabel ,
         "02.01.19"^^dt:LocalHierarchyKey ;
     skos:prefLabel "potassium"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Potassium"^^xsd:anyURI ;
 .
 
 :pozzolan
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Pozzolan"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :industrial-rock ;
@@ -2426,11 +2487,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Pozz"^^dt:AbbreviatedLabel ,
         "01.01.04.06"^^dt:LocalHierarchyKey ;
     skos:prefLabel "pozzolan"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Pozzolan"^^xsd:anyURI ;
 .
 
 :praseodymium
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Praseodymium"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :lree ;
@@ -2441,11 +2502,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Pr"^^dt:AbbreviatedLabel ,
         "02.01.03.02.04"^^dt:LocalHierarchyKey ;
     skos:prefLabel "praseodymium"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Praseodymium"^^xsd:anyURI ;
 .
 
 :prehnite
     a skos:Concept ;
-    schema:citation "http://www.galleries.com/Prehnite"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :gemstones ;
@@ -2456,11 +2517,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Preh"^^dt:AbbreviatedLabel ,
         "01.03.24"^^dt:LocalHierarchyKey ;
     skos:prefLabel "prehnite"@en ;
+    schema:citation "http://www.galleries.com/Prehnite"^^xsd:anyURI ;
 .
 
 :promethium
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Promethium"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :lree ;
@@ -2471,11 +2532,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Pm"^^dt:AbbreviatedLabel ,
         "02.01.03.02.05"^^dt:LocalHierarchyKey ;
     skos:prefLabel "promethium"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Promethium"^^xsd:anyURI ;
 .
 
 :pumice
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Pumice"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :industrial-rock ;
@@ -2486,11 +2547,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Pumi"^^dt:AbbreviatedLabel ,
         "01.01.04.07"^^dt:LocalHierarchyKey ;
     skos:prefLabel "pumice"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Pumice"^^xsd:anyURI ;
 .
 
 :pyrite
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Pyrite"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :industrial-mineral ;
@@ -2501,11 +2562,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Py"^^dt:AbbreviatedLabel ,
         "01.02.31"^^dt:LocalHierarchyKey ;
     skos:prefLabel "pyrite"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Pyrite"^^xsd:anyURI ;
 .
 
 :pyrophyllite
     a skos:Concept ;
-    schema:citation "http://www.webmineral.com/data/Pyrophyllite.s html http://en.wikipedia.org/wiki/Pyrophyllite"@en ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :aluminosilicate ;
@@ -2516,11 +2577,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Pphy"^^dt:AbbreviatedLabel ,
         "01.02.01.03"^^dt:LocalHierarchyKey ;
     skos:prefLabel "pyrophyllite"@en ;
+    schema:citation "http://www.webmineral.com/data/Pyrophyllite.s html http://en.wikipedia.org/wiki/Pyrophyllite"@en ;
 .
 
 :quartz
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Quartz"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :industrial-mineral ;
@@ -2531,11 +2592,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Qtz"^^dt:AbbreviatedLabel ,
         "01.02.32"^^dt:LocalHierarchyKey ;
     skos:prefLabel "quartz"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Quartz"^^xsd:anyURI ;
 .
 
 :radium
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Radium"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :metal ;
@@ -2546,11 +2607,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Ra"^^dt:AbbreviatedLabel ,
         "02.01.20"^^dt:LocalHierarchyKey ;
     skos:prefLabel "radium"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Radium"^^xsd:anyURI ;
 .
 
 :recycled-aggregate
     a skos:Concept ;
-    schema:citation "BGS"@en ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :aggregate ;
@@ -2561,11 +2622,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "ReAgg"^^dt:AbbreviatedLabel ,
         "01.01.01.03"^^dt:LocalHierarchyKey ;
     skos:prefLabel "recycled aggregate"@en ;
+    schema:citation "BGS"@en ;
 .
 
 :reservoir-gas
     a skos:Concept ;
-    schema:citation "This vocabulary"@en ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :gaseous-hydrocarbons ;
@@ -2576,11 +2637,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Gas"^^dt:AbbreviatedLabel ,
         "01.01.05.02.03"^^dt:LocalHierarchyKey ;
     skos:prefLabel "reservoir gas"@en ;
+    schema:citation "This vocabulary"@en ;
 .
 
 :rhenium
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Rhenium"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :metal ;
@@ -2591,11 +2652,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Re"^^dt:AbbreviatedLabel ,
         "02.01.21"^^dt:LocalHierarchyKey ;
     skos:prefLabel "rhenium"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Rhenium"^^xsd:anyURI ;
 .
 
 :rhodium
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Rhodium"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :platinum-group ;
@@ -2606,11 +2667,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Rh"^^dt:AbbreviatedLabel ,
         "02.01.02.03.4"^^dt:LocalHierarchyKey ;
     skos:prefLabel "rhodium"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Rhodium"^^xsd:anyURI ;
 .
 
 :rhodonite
     a skos:Concept ;
-    schema:citation "http://www.galleries.com/Rhodonite"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :gemstones ;
@@ -2621,11 +2682,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Rhod"^^dt:AbbreviatedLabel ,
         "01.03.26"^^dt:LocalHierarchyKey ;
     skos:prefLabel "rhodonite"@en ;
+    schema:citation "http://www.galleries.com/Rhodonite"^^xsd:anyURI ;
 .
 
 :riprap
     a skos:Concept ;
-    schema:citation "This vocabulary"@en ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader
@@ -2638,11 +2699,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Rrap"^^dt:AbbreviatedLabel ,
         "01.01.01.01.02"^^dt:LocalHierarchyKey ;
     skos:prefLabel "riprap"@en ;
+    schema:citation "This vocabulary"@en ;
 .
 
 :rose-quartz
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Rose_quartz#Rose_quartz"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :quartz-gemstone ;
@@ -2653,11 +2714,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "RQtz"^^dt:AbbreviatedLabel ,
         "01.03.25.03"^^dt:LocalHierarchyKey ;
     skos:prefLabel "rose quartz"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Rose_quartz#Rose_quartz"^^xsd:anyURI ;
 .
 
 :rubidium
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Rubidium"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :metal ;
@@ -2668,11 +2729,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Rb"^^dt:AbbreviatedLabel ,
         "02.01.22"^^dt:LocalHierarchyKey ;
     skos:prefLabel "rubidium"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Rubidium"^^xsd:anyURI ;
 .
 
 :ruby
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Rub\\\\"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :corundum-gemstone ;
@@ -2683,11 +2744,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Rub"^^dt:AbbreviatedLabel ,
         "01.03.07.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "ruby"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Rub\\\\"^^xsd:anyURI ;
 .
 
 :ruthenium
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Ruthenium"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :platinum-group ;
@@ -2698,11 +2759,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Ru"^^dt:AbbreviatedLabel ,
         "02.01.02.03.5"^^dt:LocalHierarchyKey ;
     skos:prefLabel "ruthenium"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Ruthenium"^^xsd:anyURI ;
 .
 
 :rutile
     a skos:Concept ;
-    schema:citation "http://www.galleries.com/Rutile"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :industrial-mineral ;
@@ -2713,11 +2774,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "TiRt"^^dt:AbbreviatedLabel ,
         "01.02.33"^^dt:LocalHierarchyKey ;
     skos:prefLabel "rutile"@en ;
+    schema:citation "http://www.galleries.com/Rutile"^^xsd:anyURI ;
 .
 
 :salt
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Salt"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel
@@ -2731,11 +2792,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Salt"^^dt:AbbreviatedLabel ,
         "01.02.15.04"^^dt:LocalHierarchyKey ;
     skos:prefLabel "salt"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Salt"^^xsd:anyURI ;
 .
 
 :samarium
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Samarium"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :lree ;
@@ -2746,11 +2807,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Sm"^^dt:AbbreviatedLabel ,
         "02.01.03.02.06"^^dt:LocalHierarchyKey ;
     skos:prefLabel "samarium"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Samarium"^^xsd:anyURI ;
 .
 
 :sandstone
     a skos:Concept ;
-    schema:citation "http://minerals.usgs.gov/minerals/pubs/commodity/stone_dimension/myb1-2007-stond.pdf"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :dimension-stone ;
@@ -2761,11 +2822,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "SndSt"^^dt:AbbreviatedLabel ,
         "01.01.03.07"^^dt:LocalHierarchyKey ;
     skos:prefLabel "sandstone"@en ;
+    schema:citation "http://minerals.usgs.gov/minerals/pubs/commodity/stone_dimension/myb1-2007-stond.pdf"^^xsd:anyURI ;
 .
 
 :saponite
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Saponite"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :industrial-mineral ;
@@ -2775,11 +2836,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Sapon"^^dt:AbbreviatedLabel ,
         "01.02.34"^^dt:LocalHierarchyKey ;
     skos:prefLabel "saponite"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Saponite"^^xsd:anyURI ;
 .
 
 :sapphire
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Sapphire"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :corundum-gemstone ;
@@ -2790,11 +2851,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Saph"^^dt:AbbreviatedLabel ,
         "01.03.07.02"^^dt:LocalHierarchyKey ;
     skos:prefLabel "sapphire"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Sapphire"^^xsd:anyURI ;
 .
 
 :sapphirine
     a skos:Concept ;
-    schema:citation "http://www.galleries.com/Sapphire"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :gemstones ;
@@ -2805,11 +2866,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Sapph"^^dt:AbbreviatedLabel ,
         "01.03.27"^^dt:LocalHierarchyKey ;
     skos:prefLabel "sapphirine"@en ;
+    schema:citation "http://www.galleries.com/Sapphire"^^xsd:anyURI ;
 .
 
 :scandium
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Scandium"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :metal ;
@@ -2820,11 +2881,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Sc"^^dt:AbbreviatedLabel ,
         "02.01.31"^^dt:LocalHierarchyKey ;
     skos:prefLabel "scandium"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Scandium"^^xsd:anyURI ;
 .
 
 :scapolite
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Scapolite"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :gemstones ;
@@ -2835,11 +2896,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Scap"^^dt:AbbreviatedLabel ,
         "01.03.28"^^dt:LocalHierarchyKey ;
     skos:prefLabel "scapolite"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Scapolite"^^xsd:anyURI ;
 .
 
 :selenium
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Selenium"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :non-metal ;
@@ -2850,11 +2911,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Se"^^dt:AbbreviatedLabel ,
         "02.03.05"^^dt:LocalHierarchyKey ;
     skos:prefLabel "selenium"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Selenium"^^xsd:anyURI ;
 .
 
 :sepiolite
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Sepiolite"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :clay ;
@@ -2865,11 +2926,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Sepio"^^dt:AbbreviatedLabel ,
         "01.02.10.05"^^dt:LocalHierarchyKey ;
     skos:prefLabel "sepiolite"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Sepiolite"^^xsd:anyURI ;
 .
 
 :sericite
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Sericite"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :industrial-mineral ;
@@ -2880,11 +2941,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Seri"^^dt:AbbreviatedLabel ,
         "01.02.35"^^dt:LocalHierarchyKey ;
     skos:prefLabel "sericite"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Sericite"^^xsd:anyURI ;
 .
 
 :serpentine
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Serpentine_group"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel "serpentinite"@en ;
@@ -2896,11 +2957,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Serp"^^dt:AbbreviatedLabel ,
         "01.02.36"^^dt:LocalHierarchyKey ;
     skos:prefLabel "serpentine"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Serpentine_group"^^xsd:anyURI ;
 .
 
 :shell-grit
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Shell_grit"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :industrial-rock ;
@@ -2911,11 +2972,22 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "ShGri"^^dt:AbbreviatedLabel ,
         "01.01.04.08"^^dt:LocalHierarchyKey ;
     skos:prefLabel "shell grit"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Shell_grit"^^xsd:anyURI ;
+.
+
+:silica-sand
+    a skos:Concept ;
+    reg:status astatus:addition ;
+    rdfs:isDefinedBy this-cs: ;
+    skos:definition "Silica sand"@en ;
+    skos:inScheme this-cs: ;
+    skos:prefLabel "Silica sand"@en ;
+    skos:topConceptOf this-cs: ;
+    schema:citation "Added by MER"@en ;
 .
 
 :silicon
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Silicon"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :metalloid ;
@@ -2926,11 +2998,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Si"^^dt:AbbreviatedLabel ,
         "02.02.05"^^dt:LocalHierarchyKey ;
     skos:prefLabel "silicon"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Silicon"^^xsd:anyURI ;
 .
 
 :sillimanite
     a skos:Concept ;
-    schema:citation "http://www.webmineral.com/data/Sillimanite.shtml http://en.wikipedia.org/wiki/Sillimanite"@en ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :aluminosilicate ;
@@ -2941,11 +3013,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Sill"^^dt:AbbreviatedLabel ,
         "01.02.01.04"^^dt:LocalHierarchyKey ;
     skos:prefLabel "sillimanite"@en ;
+    schema:citation "http://www.webmineral.com/data/Sillimanite.shtml http://en.wikipedia.org/wiki/Sillimanite"@en ;
 .
 
 :silver
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Silver"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :precious-metal ;
@@ -2956,11 +3028,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Ag"^^dt:AbbreviatedLabel ,
         "02.01.02.02"^^dt:LocalHierarchyKey ;
     skos:prefLabel "silver"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Silver"^^xsd:anyURI ;
 .
 
 :sinhalite
     a skos:Concept ;
-    schema:citation "http://www.galleries.com/Sinhalite"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :gemstones ;
@@ -2971,11 +3043,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Sinh"^^dt:AbbreviatedLabel ,
         "01.03.30"^^dt:LocalHierarchyKey ;
     skos:prefLabel "sinhalite"@en ;
+    schema:citation "http://www.galleries.com/Sinhalite"^^xsd:anyURI ;
 .
 
 :slate
     a skos:Concept ;
-    schema:citation "http://minerals.usgs.gov/minerals/pubs/commodity/stone_dimension/myb1-2007-stond.pdf"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :dimension-stone ;
@@ -2986,11 +3058,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Slt"^^dt:AbbreviatedLabel ,
         "01.01.03.08"^^dt:LocalHierarchyKey ;
     skos:prefLabel "slate"@en ;
+    schema:citation "http://minerals.usgs.gov/minerals/pubs/commodity/stone_dimension/myb1-2007-stond.pdf"^^xsd:anyURI ;
 .
 
 :smokey-quartz
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Smoky_quartz"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :quartz-gemstone ;
@@ -3001,11 +3073,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "SQtz"^^dt:AbbreviatedLabel ,
         "01.03.25.04"^^dt:LocalHierarchyKey ;
     skos:prefLabel "smokey quartz"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Smoky_quartz"^^xsd:anyURI ;
 .
 
 :soda-ash
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Soda_ash"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel
@@ -3019,11 +3091,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Natr"^^dt:AbbreviatedLabel ,
         "02.04.02"^^dt:LocalHierarchyKey ;
     skos:prefLabel "soda ash"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Soda_ash"^^xsd:anyURI ;
 .
 
 :sodalite
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Sodalite"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :gemstones ;
@@ -3034,11 +3106,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Sod"^^dt:AbbreviatedLabel ,
         "01.03.31"^^dt:LocalHierarchyKey ;
     skos:prefLabel "sodalite"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Sodalite"^^xsd:anyURI ;
 .
 
 :spectrolite
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Spectrolite"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel "labradorite"@en ;
@@ -3050,11 +3122,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Spec"^^dt:AbbreviatedLabel ,
         "01.03.13.03"^^dt:LocalHierarchyKey ;
     skos:prefLabel "spectrolite"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Spectrolite"^^xsd:anyURI ;
 .
 
 :spinel
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Spinel"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :industrial-mineral ;
@@ -3065,11 +3137,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Spin"^^dt:AbbreviatedLabel ,
         "01.02.38"^^dt:LocalHierarchyKey ;
     skos:prefLabel "spinel"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Spinel"^^xsd:anyURI ;
 .
 
 :spinel-gemstone
     a skos:Concept ;
-    schema:citation "http://www.galleries.com/Spinel_Group"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :gemstones ;
@@ -3080,11 +3152,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "SplGe"^^dt:AbbreviatedLabel ,
         "01.03.32"^^dt:LocalHierarchyKey ;
     skos:prefLabel "spinel-gemstone"@en ;
+    schema:citation "http://www.galleries.com/Spinel_Group"^^xsd:anyURI ;
 .
 
 :spodumene
     a skos:Concept ;
-    schema:citation "http://www.galleries.com/Spodumene"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :gemstones ;
@@ -3095,11 +3167,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Spod"^^dt:AbbreviatedLabel ,
         "01.03.33"^^dt:LocalHierarchyKey ;
     skos:prefLabel "spodumene"@en ;
+    schema:citation "http://www.galleries.com/Spodumene"^^xsd:anyURI ;
 .
 
 :spongolite
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Spongolite"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :industrial-rock ;
@@ -3110,11 +3182,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Spong"^^dt:AbbreviatedLabel ,
         "01.01.04.09"^^dt:LocalHierarchyKey ;
     skos:prefLabel "spongolite"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Spongolite"^^xsd:anyURI ;
 .
 
 :staurolite
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Staurolite"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :industrial-mineral ;
@@ -3125,11 +3197,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Stau"^^dt:AbbreviatedLabel ,
         "01.02.39"^^dt:LocalHierarchyKey ;
     skos:prefLabel "staurolite"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Staurolite"^^xsd:anyURI ;
 .
 
 :strontianite
     a skos:Concept ;
-    schema:citation "http://www.minerals.net/mineral/strontianite.aspx,"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :industrial-mineral ;
@@ -3140,11 +3212,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "SrCO3"^^dt:AbbreviatedLabel ,
         "01.02.40"^^dt:LocalHierarchyKey ;
     skos:prefLabel "strontianite"@en ;
+    schema:citation "http://www.minerals.net/mineral/strontianite.aspx,"^^xsd:anyURI ;
 .
 
 :strontium
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Strontium"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :metal ;
@@ -3155,11 +3227,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Sr"^^dt:AbbreviatedLabel ,
         "02.01.23"^^dt:LocalHierarchyKey ;
     skos:prefLabel "strontium"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Strontium"^^xsd:anyURI ;
 .
 
 :sulphur
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Sulphur"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :non-metal ;
@@ -3170,11 +3242,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "S"^^dt:AbbreviatedLabel ,
         "02.03.06"^^dt:LocalHierarchyKey ;
     skos:prefLabel "sulphur"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Sulphur"^^xsd:anyURI ;
 .
 
 :sylvite
     a skos:Concept ;
-    schema:citation "http://www.galleries.com/Sylvite"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :evaporite ;
@@ -3185,11 +3257,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Sylv"^^dt:AbbreviatedLabel ,
         "01.02.15.05"^^dt:LocalHierarchyKey ;
     skos:prefLabel "sylvite"@en ;
+    schema:citation "http://www.galleries.com/Sylvite"^^xsd:anyURI ;
 .
 
 :talc
     a skos:Concept ;
-    schema:citation "http://www.galleries.com/Talc"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel "soapstone"@en ;
@@ -3201,11 +3273,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Tlc"^^dt:AbbreviatedLabel ,
         "01.02.41"^^dt:LocalHierarchyKey ;
     skos:prefLabel "talc"@en ;
+    schema:citation "http://www.galleries.com/Talc"^^xsd:anyURI ;
 .
 
 :tantalum
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Tantalum"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :metal ;
@@ -3216,11 +3288,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Ta"^^dt:AbbreviatedLabel ,
         "02.01.24"^^dt:LocalHierarchyKey ;
     skos:prefLabel "tantalum"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Tantalum"^^xsd:anyURI ;
 .
 
 :tantalum-pentoxide
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Tantalum_pentoxide"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :chemical-oxide-product ;
@@ -3231,11 +3303,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Ta2O5"^^dt:AbbreviatedLabel ,
         "02.04.05.09"^^dt:LocalHierarchyKey ;
     skos:prefLabel "tantalum pentoxide"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Tantalum_pentoxide"^^xsd:anyURI ;
 .
 
 :tanzanite
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Tanzanite"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :gemstones ;
@@ -3246,11 +3318,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Tanz"^^dt:AbbreviatedLabel ,
         "01.03.34"^^dt:LocalHierarchyKey ;
     skos:prefLabel "tanzanite"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Tanzanite"^^xsd:anyURI ;
 .
 
 :tar-sand
     a skos:Concept ;
-    schema:citation "This vocabulary"@en ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel "oil sand"@en ;
@@ -3262,11 +3334,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "TarS"^^dt:AbbreviatedLabel ,
         "01.01.05.03.04"^^dt:LocalHierarchyKey ;
     skos:prefLabel "tar sand"@en ;
+    schema:citation "This vocabulary"@en ;
 .
 
 :tellurium
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Tellurium"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :metalloid ;
@@ -3277,11 +3349,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Te"^^dt:AbbreviatedLabel ,
         "02.02.06"^^dt:LocalHierarchyKey ;
     skos:prefLabel "tellurium"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Tellurium"^^xsd:anyURI ;
 .
 
 :terbium
     a skos:Concept ;
-    schema:citation "This vocabulary"@en ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :hree ;
@@ -3291,11 +3363,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Tb"^^dt:AbbreviatedLabel ,
         "02.01.03.01.07"^^dt:LocalHierarchyKey ;
     skos:prefLabel "terbium"@en ;
+    schema:citation "This vocabulary"@en ;
 .
 
 :thallium
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Thallium"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :metal ;
@@ -3306,11 +3378,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Tl"^^dt:AbbreviatedLabel ,
         "02.01.25"^^dt:LocalHierarchyKey ;
     skos:prefLabel "thallium"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Thallium"^^xsd:anyURI ;
 .
 
 :thenardite
     a skos:Concept ;
-    schema:citation "http://www.galleries.com/Thenardite"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel
@@ -3324,11 +3396,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Thern"^^dt:AbbreviatedLabel ,
         "01.02.42"^^dt:LocalHierarchyKey ;
     skos:prefLabel "thenardite"@en ;
+    schema:citation "http://www.galleries.com/Thenardite"^^xsd:anyURI ;
 .
 
 :thorium
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Thorium"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :metal ;
@@ -3339,11 +3411,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Th"^^dt:AbbreviatedLabel ,
         "02.01.26"^^dt:LocalHierarchyKey ;
     skos:prefLabel "thorium"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Thorium"^^xsd:anyURI ;
 .
 
 :thulium
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Thulium"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :hree ;
@@ -3354,11 +3426,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Tm"^^dt:AbbreviatedLabel ,
         "02.01.03.01.08"^^dt:LocalHierarchyKey ;
     skos:prefLabel "thulium"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Thulium"^^xsd:anyURI ;
 .
 
 :tin
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Tin"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :metal ;
@@ -3369,11 +3441,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Sn"^^dt:AbbreviatedLabel ,
         "02.01.27"^^dt:LocalHierarchyKey ;
     skos:prefLabel "tin"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Tin"^^xsd:anyURI ;
 .
 
 :titanium
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Titanium"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :ferrous-metal ;
@@ -3384,11 +3456,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Ti"^^dt:AbbreviatedLabel ,
         "02.01.04.4"^^dt:LocalHierarchyKey ;
     skos:prefLabel "titanium"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Titanium"^^xsd:anyURI ;
 .
 
 :topaz
     a skos:Concept ;
-    schema:citation "http://www.galleries.com/Topaz"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :gemstones ;
@@ -3399,11 +3471,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Tpz"^^dt:AbbreviatedLabel ,
         "01.03.35"^^dt:LocalHierarchyKey ;
     skos:prefLabel "topaz"@en ;
+    schema:citation "http://www.galleries.com/Topaz"^^xsd:anyURI ;
 .
 
 :tourmaline
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Tourmaline"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :gemstones ;
@@ -3414,11 +3486,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "To"^^dt:AbbreviatedLabel ,
         "01.03.36"^^dt:LocalHierarchyKey ;
     skos:prefLabel "tourmaline"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Tourmaline"^^xsd:anyURI ;
 .
 
 :tremolite-actinolite
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Tremolite"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :industrial-mineral ;
@@ -3429,11 +3501,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Trem"^^dt:AbbreviatedLabel ,
         "01.02.43"^^dt:LocalHierarchyKey ;
     skos:prefLabel "tremolite-actinolite"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Tremolite"^^xsd:anyURI ;
 .
 
 :tsavorite
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Tsavorite"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :garnet-gemstone ;
@@ -3444,11 +3516,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Tsav"^^dt:AbbreviatedLabel ,
         "01.03.14.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "tsavorite"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Tsavorite"^^xsd:anyURI ;
 .
 
 :tungsten
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Tungsten"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :metal ;
@@ -3459,11 +3531,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "W"^^dt:AbbreviatedLabel ,
         "02.01.28"^^dt:LocalHierarchyKey ;
     skos:prefLabel "tungsten"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Tungsten"^^xsd:anyURI ;
 .
 
 :turquoise
     a skos:Concept ;
-    schema:citation "http://www.galleries.com/Turquoise"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :gemstones ;
@@ -3474,11 +3546,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Turq"^^dt:AbbreviatedLabel ,
         "01.03.37"^^dt:LocalHierarchyKey ;
     skos:prefLabel "turquoise"@en ;
+    schema:citation "http://www.galleries.com/Turquoise"^^xsd:anyURI ;
 .
 
 :uranium
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Uranium"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :metal ;
@@ -3489,11 +3561,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "U"^^dt:AbbreviatedLabel ,
         "02.01.29"^^dt:LocalHierarchyKey ;
     skos:prefLabel "uranium"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Uranium"^^xsd:anyURI ;
 .
 
 :uranium-oxide
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Uranium_dioxide"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :chemical-oxide-product ;
@@ -3504,11 +3576,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "U3O8"^^dt:AbbreviatedLabel ,
         "02.04.05.10"^^dt:LocalHierarchyKey ;
     skos:prefLabel "uranium oxide"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Uranium_dioxide"^^xsd:anyURI ;
 .
 
 :vanadium
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Vanadium"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :ferrous-metal ;
@@ -3519,11 +3591,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "V"^^dt:AbbreviatedLabel ,
         "02.01.04.5"^^dt:LocalHierarchyKey ;
     skos:prefLabel "vanadium"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Vanadium"^^xsd:anyURI ;
 .
 
 :vanadium-pentoxide
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Vanadium(V)_oxide"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :chemical-oxide-product ;
@@ -3534,11 +3606,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "V2O5"^^dt:AbbreviatedLabel ,
         "02.04.05.11"^^dt:LocalHierarchyKey ;
     skos:prefLabel "vanadium pentoxide"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Vanadium(V)_oxide"^^xsd:anyURI ;
 .
 
 :variscite
     a skos:Concept ;
-    schema:citation "http://www.galleries.com/Variscite"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :gemstones ;
@@ -3549,11 +3621,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Varis"^^dt:AbbreviatedLabel ,
         "01.03.38"^^dt:LocalHierarchyKey ;
     skos:prefLabel "variscite"@en ;
+    schema:citation "http://www.galleries.com/Variscite"^^xsd:anyURI ;
 .
 
 :vermiculite
     a skos:Concept ;
-    schema:citation "http://www.galleries.com/Vermiculite"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :industrial-mineral ;
@@ -3564,11 +3636,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Vrm"^^dt:AbbreviatedLabel ,
         "01.02.44"^^dt:LocalHierarchyKey ;
     skos:prefLabel "vermiculite"@en ;
+    schema:citation "http://www.galleries.com/Vermiculite"^^xsd:anyURI ;
 .
 
 :vesuvianite
     a skos:Concept ;
-    schema:citation "http://www.galleries.com/Vesuvianite"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :gemstones ;
@@ -3579,11 +3651,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Vesu"^^dt:AbbreviatedLabel ,
         "01.03.39"^^dt:LocalHierarchyKey ;
     skos:prefLabel "vesuvianite"@en ;
+    schema:citation "http://www.galleries.com/Vesuvianite"^^xsd:anyURI ;
 .
 
 :white-firing-clay
     a skos:Concept ;
-    schema:citation "http://www.britannica.com/EBchecked/topic/642810/whiteware"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel "china clay"@en ;
@@ -3595,11 +3667,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "ClyR"^^dt:AbbreviatedLabel ,
         "01.02.10.06"^^dt:LocalHierarchyKey ;
     skos:prefLabel "white-firing clay"@en ;
+    schema:citation "http://www.britannica.com/EBchecked/topic/642810/whiteware"^^xsd:anyURI ;
 .
 
 :wollastonite
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Wollastonite"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :industrial-mineral ;
@@ -3610,11 +3682,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Wol"^^dt:AbbreviatedLabel ,
         "01.02.45"^^dt:LocalHierarchyKey ;
     skos:prefLabel "wollastonite"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Wollastonite"^^xsd:anyURI ;
 .
 
 :xenotime-gemstone
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Xenotime"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :gemstones ;
@@ -3625,11 +3697,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "XenoGe"^^dt:AbbreviatedLabel ,
         "01.03.40"^^dt:LocalHierarchyKey ;
     skos:prefLabel "xenotime-gemstone"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Xenotime"^^xsd:anyURI ;
 .
 
 :ytterbium
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Ytterbium"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :hree ;
@@ -3640,11 +3712,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Yb"^^dt:AbbreviatedLabel ,
         "02.01.03.01.10"^^dt:LocalHierarchyKey ;
     skos:prefLabel "ytterbium"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Ytterbium"^^xsd:anyURI ;
 .
 
 :yttrium
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Yttrium"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :hree ;
@@ -3655,11 +3727,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Y"^^dt:AbbreviatedLabel ,
         "02.01.03.01.09"^^dt:LocalHierarchyKey ;
     skos:prefLabel "yttrium"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Yttrium"^^xsd:anyURI ;
 .
 
 :yttrium-oxide
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Yttrium_oxide"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :chemical-oxide-product ;
@@ -3670,11 +3742,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Y2O3"^^dt:AbbreviatedLabel ,
         "02.04.05.12"^^dt:LocalHierarchyKey ;
     skos:prefLabel "yttrium oxide"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Yttrium_oxide"^^xsd:anyURI ;
 .
 
 :zeolite
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Zeolite"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :industrial-mineral ;
@@ -3685,11 +3757,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Zlt"^^dt:AbbreviatedLabel ,
         "01.02.46"^^dt:LocalHierarchyKey ;
     skos:prefLabel "zeolite"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Zeolite"^^xsd:anyURI ;
 .
 
 :zinc
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Zinc"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :base-metal ;
@@ -3700,11 +3772,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Zn"^^dt:AbbreviatedLabel ,
         "02.01.01.05"^^dt:LocalHierarchyKey ;
     skos:prefLabel "zinc"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Zinc"^^xsd:anyURI ;
 .
 
 :zircon
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Zircon"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :industrial-mineral ;
@@ -3715,11 +3787,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Zir"^^dt:AbbreviatedLabel ,
         "01.02.47"^^dt:LocalHierarchyKey ;
     skos:prefLabel "zircon"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Zircon"^^xsd:anyURI ;
 .
 
 :zircon-gemstone
     a skos:Concept ;
-    schema:citation "http://www.galleries.com/Zircon"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :gemstones ;
@@ -3730,11 +3802,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "ZirGe"^^dt:AbbreviatedLabel ,
         "01.03.41"^^dt:LocalHierarchyKey ;
     skos:prefLabel "zircon-gemstone"@en ;
+    schema:citation "http://www.galleries.com/Zircon"^^xsd:anyURI ;
 .
 
 :zirconia
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Zirconia"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel "zirconium dioxide"@en ;
@@ -3746,11 +3818,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "ZrO2"^^dt:AbbreviatedLabel ,
         "02.04.05.13"^^dt:LocalHierarchyKey ;
     skos:prefLabel "zirconia"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Zirconia"^^xsd:anyURI ;
 .
 
 :zirconium
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Zirconium"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :metal ;
@@ -3761,11 +3833,32 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Zr"^^dt:AbbreviatedLabel ,
         "02.01.30"^^dt:LocalHierarchyKey ;
     skos:prefLabel "zirconium"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Zirconium"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/org/cgi>
+    a schema:Organization ;
+    schema:name "Commission for the Management and Application of Geoscience Information" ;
+    schema:url "http://www.cgi-iugs.org"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/org/cgi-gtwg>
+    a schema:Organization ;
+    schema:affiliation <https://linked.data.gov.au/org/cgi> ;
+    schema:name "CGI Geoscience Terminology Working Group" ;
+    schema:url
+        "http://www.cgi-iugs.org/tech_collaboration/geoscience_terminology_working_group.html"^^xsd:anyURI ,
+        "https://cgi-iugs.org/project/geoscienceterminology/"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/org/mer>
+    a schema:Organization ;
+    schema:name "SA Minerals & Energy Resources" ;
+    schema:url "https://www.energymining.sa.gov.au/industry/geological-survey"^^xsd:anyURI ;
 .
 
 :asbestos-serpentine
     a skos:Concept ;
-    schema:citation "This vocabulary"@en ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :asbestos ;
@@ -3777,11 +3870,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "AsbS"^^dt:AbbreviatedLabel ,
         "01.02.04.02"^^dt:LocalHierarchyKey ;
     skos:prefLabel "asbestos-serpentine"@en ;
+    schema:citation "This vocabulary"@en ;
 .
 
 :garnet-gemstone
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Garnet"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :gemstones ;
@@ -3793,11 +3886,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Gt"^^dt:AbbreviatedLabel ,
         "01.03.14"^^dt:LocalHierarchyKey ;
     skos:prefLabel "garnet-gemstone"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Garnet"^^xsd:anyURI ;
 .
 
 :sand-and-gravel
     a skos:Concept ;
-    schema:citation "BGS"@en ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader
@@ -3810,11 +3903,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "SandG"^^dt:AbbreviatedLabel ,
         "01.01.01.01.03"^^dt:LocalHierarchyKey ;
     skos:prefLabel "sand and gravel"@en ;
+    schema:citation "BGS"@en ;
 .
 
 :silica
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Silica"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :industrial-mineral ;
@@ -3825,11 +3918,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Silc"^^dt:AbbreviatedLabel ,
         "01.02.37"^^dt:LocalHierarchyKey ;
     skos:prefLabel "silica"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Silica"^^xsd:anyURI ;
 .
 
 :agate
     a skos:Concept ;
-    schema:citation "http://www.merriam-webster.com/dictionary/agate; http ; http//www.quartzpage.de/agate.html"@en ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel "sardonyx"@en ;
@@ -3844,11 +3937,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Agt"^^dt:AbbreviatedLabel ,
         "01.03.29.01.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "agate"@en ;
+    schema:citation "http://www.merriam-webster.com/dictionary/agate; http ; http//www.quartzpage.de/agate.html"@en ;
 .
 
 :asbestos
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Asbestos"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :industrial-mineral ;
@@ -3862,11 +3955,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Asb"^^dt:AbbreviatedLabel ,
         "01.02.04"^^dt:LocalHierarchyKey ;
     skos:prefLabel "asbestos"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Asbestos"^^xsd:anyURI ;
 .
 
 :asbestos-amphibole
     a skos:Concept ;
-    schema:citation "This vocabulary"@en ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :asbestos ;
@@ -3880,11 +3973,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "AsbA"^^dt:AbbreviatedLabel ,
         "01.02.04.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "asbestos-amphibole"@en ;
+    schema:citation "This vocabulary"@en ;
 .
 
 :carbonaceous-material
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Carbonaceous"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :organic-material ;
@@ -3898,11 +3991,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "CaMa"^^dt:AbbreviatedLabel ,
         "01.01.05.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "carbonaceous material"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Carbonaceous"^^xsd:anyURI ;
 .
 
 :corundum-gemstone
     a skos:Concept ;
-    schema:citation "http://www.galleries.com/Corundum"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :gemstones ;
@@ -3916,11 +4009,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "CorGe"^^dt:AbbreviatedLabel ,
         "01.03.07"^^dt:LocalHierarchyKey ;
     skos:prefLabel "corundum-gemstone"@en ;
+    schema:citation "http://www.galleries.com/Corundum"^^xsd:anyURI ;
 .
 
 :fullers-earth
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Fuller%27s_earth"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :clay ;
@@ -3934,11 +4027,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Feart"^^dt:AbbreviatedLabel ,
         "01.02.10.03"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Fullers earth"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Fuller%27s_earth"^^xsd:anyURI ;
 .
 
 :iron-ore
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Iron_ore"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :direct-shipping-ore ;
@@ -3952,11 +4045,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "FeOr"^^dt:AbbreviatedLabel ,
         "01.01.02.02"^^dt:LocalHierarchyKey ;
     skos:prefLabel "iron ore"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Iron_ore"^^xsd:anyURI ;
 .
 
 :iron-oxide
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Iron_oxide"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :chemical-oxide-product ;
@@ -3968,11 +4061,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "FeOx"^^dt:AbbreviatedLabel ,
         "02.04.05.03"^^dt:LocalHierarchyKey ;
     skos:prefLabel "iron oxide"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Iron_oxide"^^xsd:anyURI ;
 .
 
 :rare-earth-element
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Rare_earth_element"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel "TREE"@en ;
@@ -3987,11 +4080,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "REE"^^dt:AbbreviatedLabel ,
         "02.01.03"^^dt:LocalHierarchyKey ;
     skos:prefLabel "rare earth element"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Rare_earth_element"^^xsd:anyURI ;
 .
 
 :rare-earth-oxide
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Rare_earth_element"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel "TREO"@en ;
@@ -4006,11 +4099,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "REEOx"^^dt:AbbreviatedLabel ,
         "02.04.05.08"^^dt:LocalHierarchyKey ;
     skos:prefLabel "rare earth oxide"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Rare_earth_element"^^xsd:anyURI ;
 .
 
 :sand
     a skos:Concept ;
-    schema:citation "http://www.sand.org/What-is-Industrial-Sand"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader
@@ -4026,11 +4119,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Sand"^^dt:AbbreviatedLabel ,
         "01.01.06"^^dt:LocalHierarchyKey ;
     skos:prefLabel "sand"@en ;
+    schema:citation "http://www.sand.org/What-is-Industrial-Sand"^^xsd:anyURI ;
 .
 
 :silica-gemstone
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Silica"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :gemstones ;
@@ -4044,11 +4137,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "SilcGe"^^dt:AbbreviatedLabel ,
         "01.03.29"^^dt:LocalHierarchyKey ;
     skos:prefLabel "silica-gemstone"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Silica"^^xsd:anyURI ;
 .
 
 :aggregate
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Construction_aggregate"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :industrial-material ;
@@ -4063,11 +4156,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Aggr"^^dt:AbbreviatedLabel ,
         "01.01.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "aggregate"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Construction_aggregate"^^xsd:anyURI ;
 .
 
 :chalcedony
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Chalcedony"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :silica-gemstone ;
@@ -4082,11 +4175,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Chlce"^^dt:AbbreviatedLabel ,
         "01.03.29.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "chalcedony"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Chalcedony"^^xsd:anyURI ;
 .
 
 :coal
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Coal"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :carbonaceous-material ;
@@ -4101,11 +4194,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Coal"^^dt:AbbreviatedLabel ,
         "01.01.05.01.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "coal"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Coal"^^xsd:anyURI ;
 .
 
 :direct-shipping-ore
     a skos:Concept ;
-    schema:citation "This vocabulary"@en ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :industrial-material ;
@@ -4120,11 +4213,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "DsOr"^^dt:AbbreviatedLabel ,
         "01.01.02"^^dt:LocalHierarchyKey ;
     skos:prefLabel "direct shipping ore"@en ;
+    schema:citation "This vocabulary"@en ;
 .
 
 :direct-use-commodity
     a skos:Concept ;
-    schema:citation "This vocabulary"@en ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Commodity mined and used directly as product, in many cases with some sort of 'beneficiation'."@en ;
@@ -4139,11 +4232,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "direct use commodity"@en ;
     skos:topConceptOf this-cs: ;
+    schema:citation "This vocabulary"@en ;
 .
 
 :feldspar-gemstone
     a skos:Concept ;
-    schema:citation "http://www.galleries.com/Feldspar_Group"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :gemstones ;
@@ -4158,11 +4251,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "FldsGe"^^dt:AbbreviatedLabel ,
         "01.03.13"^^dt:LocalHierarchyKey ;
     skos:prefLabel "feldspar-gemstone"@en ;
+    schema:citation "http://www.galleries.com/Feldspar_Group"^^xsd:anyURI ;
 .
 
 :gaseous-hydrocarbons
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Natural_gas"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel "natural gas"@en ;
@@ -4178,11 +4271,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "CHgas"^^dt:AbbreviatedLabel ,
         "01.01.05.02"^^dt:LocalHierarchyKey ;
     skos:prefLabel "gaseous hydrocarbons"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Natural_gas"^^xsd:anyURI ;
 .
 
 :precious-metal
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Precious_metal"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :metal ;
@@ -4197,11 +4290,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "PrMe"^^dt:AbbreviatedLabel ,
         "02.01.02"^^dt:LocalHierarchyKey ;
     skos:prefLabel "precious metal"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Precious_metal"^^xsd:anyURI ;
 .
 
 :primary-aggregate
     a skos:Concept ;
-    schema:citation "This vocabulary"@en ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel "natural aggregate"@en ;
@@ -4217,11 +4310,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Paggr"^^dt:AbbreviatedLabel ,
         "01.01.01.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "primary aggregate"@en ;
+    schema:citation "This vocabulary"@en ;
 .
 
 :aluminosilicate
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Aluminosilicate"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :industrial-mineral ;
@@ -4237,11 +4330,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "And"^^dt:AbbreviatedLabel ,
         "01.02.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "aluminosilicate"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Aluminosilicate"^^xsd:anyURI ;
 .
 
 :beryl
     a skos:Concept ;
-    schema:citation "http://www.galleries.com/Beryl"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :gemstones ;
@@ -4257,11 +4350,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Brl"^^dt:AbbreviatedLabel ,
         "01.03.03"^^dt:LocalHierarchyKey ;
     skos:prefLabel "beryl"@en ;
+    schema:citation "http://www.galleries.com/Beryl"^^xsd:anyURI ;
 .
 
 :liquid-hydrocarbons
     a skos:Concept ;
-    schema:citation "This vocabulary"@en ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :organic-material ;
@@ -4277,11 +4370,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "CHliq"^^dt:AbbreviatedLabel ,
         "01.01.05.03"^^dt:LocalHierarchyKey ;
     skos:prefLabel "liquid hydrocarbons"@en ;
+    schema:citation "This vocabulary"@en ;
 .
 
 :organic-material
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Organic_matter"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :industrial-material ;
@@ -4296,11 +4389,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "OrgM"^^dt:AbbreviatedLabel ,
         "01.01.05"^^dt:LocalHierarchyKey ;
     skos:prefLabel "organic material"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Organic_matter"^^xsd:anyURI ;
 .
 
 :produced-commodity
     a skos:Concept ;
-    schema:citation "This vocabulary"@en ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Commodity is obtained by extracting from material mined from the Earth."@en ;
@@ -4316,11 +4409,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "02"^^dt:LocalHierarchyKey ;
     skos:prefLabel "produced commodity"@en ;
     skos:topConceptOf this-cs: ;
+    schema:citation "This vocabulary"@en ;
 .
 
 :quartz-gemstone
     a skos:Concept ;
-    schema:citation "http://www.galleries.com/Quartz"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :gemstones ;
@@ -4336,11 +4429,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "QtzGe"^^dt:AbbreviatedLabel ,
         "01.03.25"^^dt:LocalHierarchyKey ;
     skos:prefLabel "quartz-gemstone"@en ;
+    schema:citation "http://www.galleries.com/Quartz"^^xsd:anyURI ;
 .
 
 :base-metal
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Base_metal"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :metal ;
@@ -4357,11 +4450,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "BM"^^dt:AbbreviatedLabel ,
         "02.01.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "base metal"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Base_metal"^^xsd:anyURI ;
 .
 
 :chemical-compound-product
     a skos:Concept ;
-    schema:citation "This vocabulary"@en ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :produced-commodity ;
@@ -4378,11 +4471,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "MiPr"^^dt:AbbreviatedLabel ,
         "2.04"^^dt:LocalHierarchyKey ;
     skos:prefLabel "chemical compound product"@en ;
+    schema:citation "This vocabulary"@en ;
 .
 
 :evaporite
     a skos:Concept ;
-    schema:citation "This vocabulary"@en ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :industrial-mineral ;
@@ -4399,11 +4492,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Evap"^^dt:AbbreviatedLabel ,
         "01.02.15"^^dt:LocalHierarchyKey ;
     skos:prefLabel "evaporite"@en ;
+    schema:citation "This vocabulary"@en ;
 .
 
 :ferrous-metal
     a skos:Concept ;
-    schema:citation "This vocabulary"@en ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :metal ;
@@ -4420,11 +4513,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "FME"^^dt:AbbreviatedLabel ,
         "02.01.04"^^dt:LocalHierarchyKey ;
     skos:prefLabel "ferrous metal"@en ;
+    schema:citation "This vocabulary"@en ;
 .
 
 :clay
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Clay"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :industrial-mineral ;
@@ -4442,11 +4535,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Cly"^^dt:AbbreviatedLabel ,
         "01.02.10"^^dt:LocalHierarchyKey ;
     skos:prefLabel "clay"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Clay"^^xsd:anyURI ;
 .
 
 :industrial-material
     a skos:Concept ;
-    schema:citation "This vocabulary"@en ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :direct-use-commodity ;
@@ -4464,11 +4557,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "IndM"^^dt:AbbreviatedLabel ,
         "01.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "industrial material"@en ;
+    schema:citation "This vocabulary"@en ;
 .
 
 :lree
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Rare_earth_element"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :rare-earth-element ;
@@ -4486,11 +4579,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "LREE"^^dt:AbbreviatedLabel ,
         "02.01.03.02"^^dt:LocalHierarchyKey ;
     skos:prefLabel "LREE"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Rare_earth_element"^^xsd:anyURI ;
 .
 
 :metalloid
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Metalloid"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :produced-commodity ;
@@ -4508,11 +4601,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Mtlld"^^dt:AbbreviatedLabel ,
         "2.02"^^dt:LocalHierarchyKey ;
     skos:prefLabel "metalloid"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Metalloid"^^xsd:anyURI ;
 .
 
 :non-metal
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Non-metal"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :produced-commodity ;
@@ -4530,11 +4623,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "NonMe"^^dt:AbbreviatedLabel ,
         "2.0299999999999998"^^dt:LocalHierarchyKey ;
     skos:prefLabel "non metal"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Non-metal"^^xsd:anyURI ;
 .
 
 :platinum-group
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Platinum_group_metal"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :precious-metal ;
@@ -4552,11 +4645,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "PGM"^^dt:AbbreviatedLabel ,
         "02.01.02.03"^^dt:LocalHierarchyKey ;
     skos:prefLabel "platinum group metal"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Platinum_group_metal"^^xsd:anyURI ;
 .
 
 :dimension-stone
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Dimension_stone"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :industrial-material ;
@@ -4576,11 +4669,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "DimSt"^^dt:AbbreviatedLabel ,
         "01.01.03"^^dt:LocalHierarchyKey ;
     skos:prefLabel "dimension stone"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Dimension_stone"^^xsd:anyURI ;
 .
 
 :hree
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Rare_earth_element"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :rare-earth-element ;
@@ -4602,11 +4695,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "HREE"^^dt:AbbreviatedLabel ,
         "02.01.03.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "HREE"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Rare_earth_element"^^xsd:anyURI ;
 .
 
 :chemical-oxide-product
     a skos:Concept ;
-    schema:citation "This vocabulary"@en ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :chemical-compound-product ;
@@ -4631,11 +4724,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "MiPrO"^^dt:AbbreviatedLabel ,
         "02.04.05"^^dt:LocalHierarchyKey ;
     skos:prefLabel "chemical oxide product"@en ;
+    schema:citation "This vocabulary"@en ;
 .
 
 :industrial-rock
     a skos:Concept ;
-    schema:citation "This vocabulary"@en ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :industrial-material ;
@@ -4656,11 +4749,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "IndRo"^^dt:AbbreviatedLabel ,
         "01.01.04"^^dt:LocalHierarchyKey ;
     skos:prefLabel "industrial rock"@en ;
+    schema:citation "This vocabulary"@en ;
 .
 
 :metal
     a skos:Concept ;
-    schema:citation "This vocabulary"@en ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :produced-commodity ;
@@ -4703,11 +4796,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Metal"^^dt:AbbreviatedLabel ,
         "02.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "metal"@en ;
+    schema:citation "This vocabulary"@en ;
 .
 
 :gemstones
     a skos:Concept ;
-    schema:citation "http://en.wikipedia.org/wiki/Gemstone"^^xsd:anyURI ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel
@@ -4763,11 +4856,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "GemSt"^^dt:AbbreviatedLabel ,
         "1.03"^^dt:LocalHierarchyKey ;
     skos:prefLabel "gemstone"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Gemstone"^^xsd:anyURI ;
 .
 
 :industrial-mineral
     a skos:Concept ;
-    schema:citation "This vocabulary"@en ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader :direct-use-commodity ;
@@ -4826,139 +4919,42 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "IndMi"^^dt:AbbreviatedLabel ,
         "1.02"^^dt:LocalHierarchyKey ;
     skos:prefLabel "industrial mineral"@en ;
-.
-
-:shale
-    a skos:Concept ;
-    schema:citation "Added by MER"@en ;
-    reg:status astatus:addition ;
-    rdfs:isDefinedBy this-cs: ;
-    skos:definition "Shale"@en ;
-    skos:inScheme this-cs: ;
-    skos:prefLabel "Shale"@en ;
-    skos:topConceptOf this-cs: ;
-.
-
-:heavy-mineral-sands
-    a skos:Concept ;
-    schema:citation "Added by MER"@en ;
-    reg:status astatus:addition ;
-    rdfs:isDefinedBy this-cs: ;
-    skos:definition "Heavy mineral sands"@en ;
-    skos:inScheme this-cs: ;
-    skos:prefLabel "Heavy mineral sands"@en ;
-    skos:topConceptOf this-cs: ;
-.
-
-:meta-siltstone
-    a skos:Concept ;
-    schema:citation "Added by MER"@en ;
-    reg:status astatus:addition ;
-    rdfs:isDefinedBy this-cs: ;
-    skos:definition "Meta-siltstone"@en ;
-    skos:inScheme this-cs: ;
-    skos:prefLabel "Meta-siltstone"@en ;
-    skos:topConceptOf this-cs: ;
-.
-
-:dolomite
-    a skos:Concept ;
-    schema:citation "Added by MER"@en ;
-    reg:status astatus:addition ;
-    rdfs:isDefinedBy this-cs: ;
-    skos:definition "Dolomite"@en ;
-    skos:inScheme this-cs: ;
-    skos:prefLabel "Dolomite"@en ;
-    skos:topConceptOf this-cs: ;
-.
-
-:silica-sand
-    a skos:Concept ;
-    schema:citation "Added by MER"@en ;
-    reg:status astatus:addition ;
-    rdfs:isDefinedBy this-cs: ;
-    skos:definition "Silica sand"@en ;
-    skos:inScheme this-cs: ;
-    skos:prefLabel "Silica sand"@en ;
-    skos:topConceptOf this-cs: ;
-.
-
-:limesand
-    a skos:Concept ;
-    schema:citation "Added by MER"@en ;
-    reg:status astatus:addition ;
-    rdfs:isDefinedBy this-cs: ;
-    skos:definition "Limesand"@en ;
-    skos:inScheme this-cs: ;
-    skos:prefLabel "Limesand"@en ;
-    skos:topConceptOf this-cs: ;
-.
-
-:critical-minerals
-    a skos:Concept ;
-    schema:citation "Added by MER"@en ;
-    reg:status astatus:addition ;
-    rdfs:isDefinedBy this-cs: ;
-    skos:definition "Critical minerals"@en ;
-    skos:inScheme this-cs: ;
-    skos:prefLabel "Critical minerals"@en ;
-    skos:topConceptOf this-cs: ;
-.
-
-:natural-gas
-    a skos:Concept ;
-    schema:citation "Added by MER"@en ;
-    reg:status astatus:addition ;
-    rdfs:isDefinedBy this-cs: ;
-    skos:definition "Natural gas"@en ;
-    skos:inScheme this-cs: ;
-    skos:prefLabel "Natural gas"@en ;
-    skos:topConceptOf this-cs: ;
-.
-
-<https://linked.data.gov.au/org/mer>
-    a schema:Organization ;
-    schema:name "SA Minerals & Energy Resources" ;
-    schema:url "https://www.energymining.sa.gov.au/industry/geological-survey"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/org/cgi-gtwg>
-    a schema:Organization ;
-    schema:name "CGI Geoscience Terminology Working Group" ;
-    schema:url "https://cgi-iugs.org/project/geoscienceterminology/"^^xsd:anyURI ;
+    schema:citation "This vocabulary"@en ;
 .
 
 this-cs:
     a skos:ConceptScheme ;
-    schema:publisher <https://linked.data.gov.au/org/mer> ;
-    schema:dateCreated "2022-12-05"^^xsd:date ;
-    schema:creator <https://linked.data.gov.au/org/cgi-gtwg> ;
-    schema:dateModified "2024-08-26"^^xsd:date ;
-    schema:citation "The EarthResourceML standard"@en ;
-    schema:citation "https://earthresourceml.org"^^xsd:anyURI ;
-    prov:qualifiedDerivation [
-        prov:entity <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
-        prov:hadRole <https://linked.data.gov.au/def/vocab-derivation-modes/extension> ;
-    ] ;
     reg:status astatus:stable ;
     skos:changeNote
+        "2023-02-17 NJC Formatting changes only for GSSA vocab management system" ,
+        "2024-08-26 NJC Made VocPub 4.10 valid, LongTurtle formatted, no content changes" ,
         "2016-07-18 OLR Reformat SKOS for migration to new vocabulary server. No changes to concepts."@en ,
         "2020-06-23 NJC Added properties to ensure vocab matched Geoscience Australia's vocab profile (https://linked.data.gov.au/def/ga-skos-profile). Just annotation properties, no new content. Agents (creator/publisher) now not text but RDF resource. Dates (create/modified) derived from editorial notes & existing date properties. Simple definition for silica added as missing."@en ,
         "2020-06-26 NJC tidied some definitions with random characters at the end."@en ,
         "2021-12-17 R.Heaven BGS Added prefLabel and altLabel in non English languages, obtained from previously determined alignments between @en labels in CGI and Multi-lingual Thesaurus of Geosciences (MulTG) and Asian Multi-lingual Thesaurus of Geosciences (AMTG). Note that specific language packs are required to render the fonts.  Known issues: @lo and @fi labels were incorrectly encoded in the digitised source datasets; they have been included regardless of this in case the encoding can be corrected."@en ,
-        "2022-12-05 NJC Added MER additions"@en ,
-        "2023-02-17 NJC Formatting changes only for GSSA vocab management system" ;
+        "2022-12-05 NJC Added MER additions"@en ;
     skos:definition "Commodity codes for South Australia, which are mostly the CGI Commodity Codes with additions to meet categorisation obligations under the SA Mining Act"@en ;
     skos:hasTopConcept
-        :direct-use-commodity ,
-        :produced-commodity ,
-        :heavy-mineral-sands ,
-        :meta-siltstone ,
-        :dolomite ,
-        :silica-sand ,
-        :limesand ,
         :critical-minerals ,
-        :natural-gas ;
+        :direct-use-commodity ,
+        :dolomite ,
+        :heavy-mineral-sands ,
+        :limesand ,
+        :meta-siltstone ,
+        :natural-gas ,
+        :produced-commodity ,
+        :silica-sand ;
     skos:prefLabel "South Australian Commodity Codes"@en ;
+    prov:qualifiedDerivation
+        [
+            prov:entity cs: ;
+            prov:hadRole <https://linked.data.gov.au/def/vocab-derivation-modes/extension> ;
+        ] ;
+    schema:citation
+        "https://earthresourceml.org"^^xsd:anyURI ,
+        "The EarthResourceML standard"@en ;
+    schema:creator <https://linked.data.gov.au/org/cgi-gtwg> ;
+    schema:dateCreated "2022-12-05"^^xsd:date ;
+    schema:dateModified "2024-08-26"^^xsd:date ;
+    schema:publisher <https://linked.data.gov.au/org/mer> ;
 .
-

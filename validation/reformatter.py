@@ -6,4 +6,4 @@ VOCABS_DIR = REPO_ROOT_DIR / "vocabularies"
 
 for f in VOCABS_DIR.glob("*.ttl"):
     g = Graph().parse(str(f))
-    g.serialize(destination=f.with_suffix(".2.tt"), format="longturtle")
+    g.serialize(destination=f, format="longturtle")

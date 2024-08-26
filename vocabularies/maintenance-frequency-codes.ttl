@@ -1,7 +1,6 @@
 PREFIX : <http://def.isotc211.org/iso19115/-1/2014/MaintenanceInformation/code/MD_MaintenanceFrequencyCode/>
 PREFIX astatus: <https://linked.data.gov.au/def/reg-statuses/>
 PREFIX cs: <https://linked.data.gov.au/def/maintenancefrequencycode>
-PREFIX schema: <https://schema.org/>
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX reg: <http://purl.org/linked-data/registry#>
@@ -11,170 +10,170 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :annually
     a skos:Concept ;
-    schema:citation "Presented in the original standard's codelist"@en ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "Annually"@en ;
     skos:topConceptOf cs: ;
+    schema:citation "Presented in the original standard's codelist"@en ;
 .
 
 :asNeeded
     a skos:Concept ;
-    schema:citation "Presented in the original standard's codelist"@en ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "As needed"@en ;
     skos:topConceptOf cs: ;
+    schema:citation "Presented in the original standard's codelist"@en ;
 .
 
 :biannually
     a skos:Concept ;
-    schema:citation "Presented in the original standard's codelist"@en ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "Biannually"@en ;
     skos:topConceptOf cs: ;
+    schema:citation "Presented in the original standard's codelist"@en ;
 .
 
 :biennially
     a skos:Concept ;
-    schema:citation "Presented in the original standard's codelist"@en ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "Biennially"@en ;
     skos:topConceptOf cs: ;
+    schema:citation "Presented in the original standard's codelist"@en ;
 .
 
 :continual
     a skos:Concept ;
-    schema:citation "Presented in the original standard's codelist"@en ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "Continual"@en ;
     skos:topConceptOf cs: ;
+    schema:citation "Presented in the original standard's codelist"@en ;
 .
 
 :daily
     a skos:Concept ;
-    schema:citation "Presented in the original standard's codelist"@en ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "Daily"@en ;
     skos:topConceptOf cs: ;
+    schema:citation "Presented in the original standard's codelist"@en ;
 .
 
 :fortnightly
     a skos:Concept ;
-    schema:citation "Presented in the original standard's codelist"@en ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "Fortnightly"@en ;
     skos:topConceptOf cs: ;
+    schema:citation "Presented in the original standard's codelist"@en ;
 .
 
 :irregular
     a skos:Concept ;
-    schema:citation "Presented in the original standard's codelist"@en ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "Irregular"@en ;
     skos:topConceptOf cs: ;
+    schema:citation "Presented in the original standard's codelist"@en ;
 .
 
 :monthly
     a skos:Concept ;
-    schema:citation "Presented in the original standard's codelist"@en ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "Monthly"@en ;
     skos:topConceptOf cs: ;
+    schema:citation "Presented in the original standard's codelist"@en ;
 .
 
 :notPlanned
     a skos:Concept ;
-    schema:citation "Presented in the original standard's codelist"@en ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "Not planned"@en ;
     skos:topConceptOf cs: ;
+    schema:citation "Presented in the original standard's codelist"@en ;
 .
 
 :periodic
     a skos:Concept ;
-    schema:citation "Presented in the original standard's codelist"@en ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "Periodic"@en ;
     skos:topConceptOf cs: ;
+    schema:citation "Presented in the original standard's codelist"@en ;
 .
 
 :quarterly
     a skos:Concept ;
-    schema:citation "Presented in the original standard's codelist"@en ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "Quarterly"@en ;
     skos:topConceptOf cs: ;
+    schema:citation "Presented in the original standard's codelist"@en ;
 .
 
 :semimonthly
     a skos:Concept ;
-    schema:citation "Presented in the original standard's codelist"@en ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "Semimonthly"@en ;
     skos:topConceptOf cs: ;
+    schema:citation "Presented in the original standard's codelist"@en ;
 .
 
 :unknown
     a skos:Concept ;
-    schema:citation "Presented in the original standard's codelist"@en ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "Unknown"@en ;
     skos:topConceptOf cs: ;
+    schema:citation "Presented in the original standard's codelist"@en ;
 .
 
 :weekly
     a skos:Concept ;
-    schema:citation "Presented in the original standard's codelist"@en ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "Weekly"@en ;
     skos:topConceptOf cs: ;
+    schema:citation "Presented in the original standard's codelist"@en ;
 .
 
-<http://def.isotc211.org/org/tc211>
+<https://linked.data.gov.au/org/tc211>
     a schema:Organization ;
     schema:description "The International Organization for Standardization's Technical Committee on \"Geographic information/Geomatics\", charged with standardization in the field of digital geographic information"@en ;
     schema:name "ISO's Technical Committee 211" ;
@@ -183,18 +182,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 cs:
     a skos:ConceptScheme ;
-    schema:dateCreated "2000-01-01"^^xsd:date ;
-    schema:creator <http://def.isotc211.org/org/tc211> ;
-    schema:issued "2023-01-19"^^xsd:date ;
-    schema:dateModified "2024-08-26"^^xsd:date ;
-    schema:citation "Derived from the TC211-produced RDF version of ISO 19115-1's standard's MD_MaintenanceFrequencyCode UML codelist online at https://github.com/ISO-TC211/GOM/tree/master/experimental/codelist-vocabularies/iso19115/-1/2018"@en ;
-    schema:publisher <http://def.isotc211.org/org/tc211> ;
-    schema:citation "http://standards.iso.org/iso/19115/-1/ed-1/en/"^^xsd:anyURI ;
-    prov:qualifiedDerivation [
-        prov:entity <http://def.isotc211.org/iso19115/-1/2014/MaintenanceInformation/code/MD_MaintenanceFrequencyCode> ;
-        prov:hadRole <https://linked.data.gov.au/def/vocab-derivation-modes/direct> ;
-    ] ;
     reg:status astatus:stable ;
+    skos:changeNote "2024-08-26 NJC Made VocPub 4.10 valid, LongTurtle formatted, no content changes" ;
     skos:definition "A direct reimplementation of ISO 19115-1's standard's MD_MaintenanceFrequencyCode UML codelist"@en ;
     skos:hasTopConcept
         :annually ,
@@ -213,5 +202,17 @@ cs:
         :unknown ,
         :weekly ;
     skos:prefLabel "Maintenance Frequency Codes"@en ;
+    prov:qualifiedDerivation
+        [
+            prov:entity <http://def.isotc211.org/iso19115/-1/2014/MaintenanceInformation/code/MD_MaintenanceFrequencyCode> ;
+            prov:hadRole <https://linked.data.gov.au/def/vocab-derivation-modes/direct> ;
+        ] ;
+    schema:citation
+        "http://standards.iso.org/iso/19115/-1/ed-1/en/"^^xsd:anyURI ,
+        "Derived from the TC211-produced RDF version of ISO 19115-1's standard's MD_MaintenanceFrequencyCode UML codelist online at https://github.com/ISO-TC211/GOM/tree/master/experimental/codelist-vocabularies/iso19115/-1/2018"@en ;
+    schema:creator <https://linked.data.gov.au/org/tc211> ;
+    schema:dateCreated "2000-01-01"^^xsd:date ;
+    schema:dateModified "2024-08-26"^^xsd:date ;
+    schema:issued "2023-01-19"^^xsd:date ;
+    schema:publisher <https://linked.data.gov.au/org/tc211> ;
 .
-

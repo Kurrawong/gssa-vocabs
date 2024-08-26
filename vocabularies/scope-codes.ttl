@@ -1,7 +1,6 @@
 PREFIX : <https://linked.data.gov.au/def/mer-scope-codes/>
 PREFIX astatus: <https://linked.data.gov.au/def/reg-statuses/>
 PREFIX cs: <https://linked.data.gov.au/def/mer-scope-codes>
-PREFIX schema: <https://schema.org/>
 PREFIX iso-cs: <http://def.isotc211.org/iso19115/-1/2014/CommonClasses/code/MD_ScopeCode>
 PREFIX iso-ns: <http://def.isotc211.org/iso19115/-1/2014/CommonClasses/code/MD_ScopeCode/>
 PREFIX prov: <http://www.w3.org/ns/prov#>
@@ -13,60 +12,60 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 iso-ns:application
     a skos:Concept ;
-    schema:citation "Presented in the original standard's codelist"@en ;
     reg:status astatus:original ;
     rdfs:isDefinedBy iso-cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "Application"@en ;
     skos:topConceptOf cs: ;
+    schema:citation "Presented in the original standard's codelist"@en ;
 .
 
 iso-ns:dataset
     a skos:Concept ;
-    schema:citation "Presented in the original standard's codelist"@en ;
     reg:status astatus:original ;
     rdfs:isDefinedBy iso-cs: ;
     skos:definition "information applies to the dataset"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "Dataset"@en ;
     skos:topConceptOf cs: ;
+    schema:citation "Presented in the original standard's codelist"@en ;
 .
 
 iso-ns:document
     a skos:Concept ;
-    schema:citation "Presented in the original standard's codelist"@en ;
     reg:status astatus:original ;
     rdfs:isDefinedBy iso-cs: ;
     skos:definition "information applies to a document"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "Document"@en ;
     skos:topConceptOf cs: ;
+    schema:citation "Presented in the original standard's codelist"@en ;
 .
 
 iso-ns:model
     a skos:Concept ;
-    schema:citation "Presented in the original standard's codelist"@en ;
     reg:status astatus:original ;
     rdfs:isDefinedBy iso-cs: ;
     skos:definition "information applies to a copy or imitation of an existing or hypothetical object"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "Model"@en ;
     skos:topConceptOf cs: ;
+    schema:citation "Presented in the original standard's codelist"@en ;
 .
 
 iso-ns:service
     a skos:Concept ;
-    schema:citation "Presented in the original standard's codelist"@en ;
     reg:status astatus:original ;
     rdfs:isDefinedBy iso-cs: ;
     skos:definition "information applies to a capability which a service provider entity makes available to a service user entity through a set of interfaces that define a behaviour, such as a use case"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "Service"@en ;
     skos:topConceptOf cs: ;
+    schema:citation "Presented in the original standard's codelist"@en ;
 .
 
-<http://def.isotc211.org/org/tc211>
+<https://linked.data.gov.au/org/tc211>
     a schema:Organization ;
     schema:description "The International Organization for Standardization's Technical Committee on \"Geographic information/Geomatics\", charged with standardization in the field of digital geographic information"@en ;
     schema:name "ISO's Technical Committee 211" ;
@@ -75,13 +74,13 @@ iso-ns:service
 
 :map
     a skos:Concept ;
-    schema:citation "Created by MER"@en ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "information applies to a map"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "Map"@en ;
     skos:topConceptOf cs: ;
+    schema:citation "Created by MER"@en ;
 .
 
 <https://linked.data.gov.au/org/mer>
@@ -92,26 +91,29 @@ iso-ns:service
 
 cs:
     a skos:ConceptScheme ;
-    schema:contributor <http://def.isotc211.org/org/tc211> ;
-    schema:dateCreated "2022-11-25"^^xsd:date ;
-    schema:creator <https://linked.data.gov.au/org/mer> ;
-    schema:issued "2022-11-25"^^xsd:date ;
-    schema:dateModified "2024-08-26"^^xsd:date ;
-    schema:citation "Derived from http://def.isotc211.org/iso19115/-1/2014/CommonClasses/code/MD_ScopeCode"@en ;
-    schema:publisher <https://linked.data.gov.au/org/mer> ;
-    schema:citation "http://def.isotc211.org/iso19115/-1/2014/CommonClasses/code/MD_ScopeCode"^^xsd:anyURI ;
     reg:status astatus:stable ;
+    skos:changeNote "2024-08-26 NJC Made VocPub 4.10 valid, LongTurtle formatted, no content changes" ;
     skos:definition "An subset and extended version of ISO19115-1's Scope Codes vocabulary"@en ;
     skos:hasTopConcept
         iso-ns:application ,
         iso-ns:dataset ,
         iso-ns:document ,
-        :map ,
         iso-ns:model ,
-        iso-ns:service ;
+        iso-ns:service ,
+        :map ;
     skos:prefLabel "Scope Codes"@en ;
-    prov:qualifiedDerivation [
+    prov:qualifiedDerivation
+        [
+            prov:entity iso-cs: ;
             prov:hadRole <https://linked.data.gov.au/def/vocab-derivation-modes/subsetting-and-extension> ;
-            prov:entity iso-cs:
         ] ;
+    schema:citation
+        "http://def.isotc211.org/iso19115/-1/2014/CommonClasses/code/MD_ScopeCode"^^xsd:anyURI ,
+        "Derived from http://def.isotc211.org/iso19115/-1/2014/CommonClasses/code/MD_ScopeCode"@en ;
+    schema:contributor <https://linked.data.gov.au/org/tc211> ;
+    schema:creator <https://linked.data.gov.au/org/mer> ;
+    schema:dateCreated "2022-11-25"^^xsd:date ;
+    schema:dateModified "2024-08-26"^^xsd:date ;
+    schema:issued "2022-11-25"^^xsd:date ;
+    schema:publisher <https://linked.data.gov.au/org/mer> ;
 .
