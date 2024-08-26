@@ -1,6 +1,6 @@
-PREFIX : <https://linked.data.gov.au/def/vocab-derivation-modes/>
+PREFIX : <https://linked.data.gov.au/def/vocdermods/>
 PREFIX astatus: <https://linked.data.gov.au/def/reg-statuses/>
-PREFIX cs: <https://linked.data.gov.au/def/vocab-derivation-modes>
+PREFIX cs: <https://linked.data.gov.au/def/vocdermods>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX reg: <http://purl.org/linked-data/registry#>
 PREFIX schema: <https://schema.org/>
@@ -9,6 +9,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :subsetting-and-extension
     a skos:Concept ;
+    schema:citation "Created for the MER catalogue upgrade project, 2022"@en ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:broader
@@ -18,28 +19,40 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:prefLabel "Subset & Extension"@en ;
     skos:scopeNote "Use this Concept if the reusing vocabulary both extends and subsets the original vocabulary" ;
-    schema:citation "Created for the MER catalogue upgrade project, 2022"@en ;
 .
 
-<https://kurrawong.net>
+<https://kurrawong.ai>
     a schema:Organization ;
     schema:name "KurrawongAI" ;
-    schema:url "https://kurrawong.net"^^xsd:anyURI ;
+    schema:url "https://kurrawong.ai"^^xsd:anyURI ;
 .
 
 :direct
     a skos:Concept ;
+    schema:citation "Created for the MER catalogue upgrade project, 2022"@en ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Derivation without alteration"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "Direct"@en ;
     skos:topConceptOf cs: ;
-    schema:citation "Created for the MER catalogue upgrade project, 2022"@en ;
+.
+
+:none
+    a skos:Concept ;
+    schema:citation "Added to this vocabulary for multiple projects in 2023"@en ;
+    reg:status astatus:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "This vocabulary does not derive from another"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "None"@en ;
+    skos:scopeNote "Use this Concept if the vocabulary is known to not reuse any other vocabularies" ;
+    skos:topConceptOf cs: ;
 .
 
 :not-applicable
     a skos:Concept ;
+    schema:citation "Created for the MER catalogue upgrade project, 2022"@en ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Derivation mode is not applicable to this vocabulary"@en ;
@@ -47,11 +60,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:prefLabel "Not Applicable"@en ;
     skos:scopeNote "Use this Concept if the vocabulary is known not to reuse any other vocabularies" ;
     skos:topConceptOf cs: ;
-    schema:citation "Created for the MER catalogue upgrade project, 2022"@en ;
 .
 
 :relabelling
     a skos:Concept ;
+    schema:citation "Created for the MER catalogue upgrade project, 2022"@en ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Derivation with relabelling"@en ;
@@ -59,17 +72,17 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:prefLabel "Relabelling"@en ;
     skos:scopeNote "Use this Concept if the reusing vocabulary only relabels Concepts in the original vocabulary but does not alter their place in the Concept hierarchy or their definitions" ;
     skos:topConceptOf cs: ;
-    schema:citation "Created for the MER catalogue upgrade project, 2022"@en ;
 .
 
-<https://linked.data.gov.au/org/mer>
+<https://linked.data.gov.au/org/agldwg>
     a schema:Organization ;
-    schema:name "SA Minerals and Energy Resources" ;
-    schema:url "https://www.energymining.sa.gov.au/industry/geological-survey"^^xsd:anyURI ;
+    schema:name "Australian Government Linked Data Working Group" ;
+    schema:url "https://www.linked.data.gov.au"^^xsd:anyURI ;
 .
 
 :extension
     a skos:Concept ;
+    schema:citation "Created for the MER catalogue upgrade project, 2022"@en ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Derivation with extension"@en ;
@@ -77,11 +90,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:prefLabel "Extension"@en ;
     skos:scopeNote "Use this Concept if the reusing vocabulary extends the original vocabulary but does not subset it" ;
     skos:topConceptOf cs: ;
-    schema:citation "Created for the MER catalogue upgrade project, 2022"@en ;
 .
 
 :subsetting
     a skos:Concept ;
+    schema:citation "Created for the MER catalogue upgrade project, 2022"@en ;
     reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Derivation with subsetting"@en ;
@@ -89,26 +102,24 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:prefLabel "Subsetting"@en ;
     skos:scopeNote "Use this Concept if the reusing vocabulary only subsets the original but does not extend it" ;
     skos:topConceptOf cs: ;
-    schema:citation "Created for the MER catalogue upgrade project, 2022"@en ;
 .
 
 cs:
     a skos:ConceptScheme ;
+    schema:dateCreated "2022-12-05"^^xsd:date ;
+    schema:creator <https://kurrawong.ai> ;
+    schema:issued "2022-12-05"^^xsd:date ;
+    schema:dateModified "2024-08-26"^^xsd:date ;
+    schema:citation "Created for the MER catalogue upgrade project, 2022"@en ;
+    schema:publisher <https://linked.data.gov.au/org/agldwg> ;
     reg:status astatus:stable ;
-    skos:changeNote "2024-08-26 NJC Made VocPub 4.10 valid, LongTurtle formatted, no content changes" ;
     skos:definition "The modes by which one vocabulary may derive from another"@en ;
     skos:hasTopConcept
         :direct ,
         :extension ,
+        :none ,
         :not-applicable ,
         :relabelling ,
         :subsetting ;
     skos:prefLabel "Vocabulary Derivation Modes"@en ;
-    schema:citation "Created for the MER catalogue upgrade project, 2022"@en ;
-    schema:contributor <https://linked.data.gov.au/org/tc211> ;
-    schema:creator <https://kurrawong.net> ;
-    schema:dateCreated "2022-12-05"^^xsd:date ;
-    schema:dateModified "2024-08-26"^^xsd:date ;
-    schema:issued "2022-12-05"^^xsd:date ;
-    schema:publisher <https://linked.data.gov.au/org/mer> ;
 .
