@@ -1,7 +1,7 @@
 PREFIX : <https://linked.data.gov.au/def/mer-distribution-formats/>
-PREFIX agldwgstatus: <https://linked.data.gov.au/def/reg-statuses/>
+PREFIX astatus: <https://linked.data.gov.au/def/reg-statuses/>
 PREFIX cs: <https://linked.data.gov.au/def/mer-distribution-formats>
-PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX schema: <https://schema.org/>
 PREFIX reg: <http://purl.org/linked-data/registry#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
@@ -9,8 +9,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :ascii
     a skos:Concept ;
-    dcterms:identifier "ascii"^^xsd:token ;
-    rdfs:isDefinedBy cs: ;
+        rdfs:isDefinedBy cs: ;
     skos:topConceptOf cs: ;
     skos:definition "American Standard Code for Information Interchange file format"@en ;
     skos:inScheme cs: ;
@@ -19,8 +18,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :csv
     a skos:Concept ;
-    dcterms:identifier "csv"^^xsd:token ;
-    rdfs:isDefinedBy cs: ;
+        rdfs:isDefinedBy cs: ;
     skos:topConceptOf cs: ;
     skos:definition "Comma Separated Values file format"@en ;
     skos:inScheme cs: ;
@@ -29,8 +27,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :doc
     a skos:Concept ;
-    dcterms:identifier "doc"^^xsd:token ;
-    rdfs:isDefinedBy cs: ;
+        rdfs:isDefinedBy cs: ;
     skos:topConceptOf cs: ;
     skos:definition "Microsoft Word Doc file format"@en ;
     skos:inScheme cs: ;
@@ -39,8 +36,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :docx
     a skos:Concept ;
-    dcterms:identifier "docx"^^xsd:token ;
-    rdfs:isDefinedBy cs: ;
+        rdfs:isDefinedBy cs: ;
     skos:topConceptOf cs: ;
     skos:definition "Microsoft Word Docx file format"@en ;
     skos:inScheme cs: ;
@@ -49,8 +45,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :ecw
     a skos:Concept ;
-    dcterms:identifier "ecw"^^xsd:token ;
-    rdfs:isDefinedBy cs: ;
+        rdfs:isDefinedBy cs: ;
     skos:topConceptOf cs: ;
     skos:definition "Enhanced Compressed Wavelet file format"@en ;
     skos:inScheme cs: ;
@@ -59,8 +54,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :ers
     a skos:Concept ;
-    dcterms:identifier "ers"^^xsd:token ;
-    rdfs:isDefinedBy cs: ;
+        rdfs:isDefinedBy cs: ;
     skos:topConceptOf cs: ;
     skos:definition "ERS QGIS text  file format"@en ;
     skos:inScheme cs: ;
@@ -69,8 +63,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :esri-shapefile
     a skos:Concept ;
-    dcterms:identifier "esri-shapefile"^^xsd:token ;
-    rdfs:isDefinedBy cs: ;
+        rdfs:isDefinedBy cs: ;
     skos:topConceptOf cs: ;
     skos:definition "ESRI Shapefile file format"@en ;
     skos:inScheme cs: ;
@@ -79,8 +72,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :geotiff
     a skos:Concept ;
-    dcterms:identifier "geotiff"^^xsd:token ;
-    rdfs:isDefinedBy cs: ;
+        rdfs:isDefinedBy cs: ;
     skos:topConceptOf cs: ;
     skos:definition "Geo-located Tagged Image File Format (TIFF) file format"@en ;
     skos:inScheme cs: ;
@@ -89,8 +81,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :gml
     a skos:Concept ;
-    dcterms:identifier "gml"^^xsd:token ;
-    rdfs:isDefinedBy cs: ;
+        rdfs:isDefinedBy cs: ;
     skos:topConceptOf cs: ;
     skos:definition "Geography Marlup Language (XML) file format"@en ;
     skos:inScheme cs: ;
@@ -99,8 +90,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :jpeg
     a skos:Concept ;
-    dcterms:identifier "jpeg"^^xsd:token ;
-    rdfs:isDefinedBy cs: ;
+        rdfs:isDefinedBy cs: ;
     skos:topConceptOf cs: ;
     skos:definition "Joint Photographic Experts Group (JPEG) compress image file format"@en ;
     skos:inScheme cs: ;
@@ -109,8 +99,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :jpeg2000
     a skos:Concept ;
-    dcterms:identifier "jpeg2000"^^xsd:token ;
-    rdfs:isDefinedBy cs: ;
+        rdfs:isDefinedBy cs: ;
     skos:topConceptOf cs: ;
     skos:definition "Joint Photographic Experts Group (JPEG) compress image file format"@en ;
     skos:inScheme cs: ;
@@ -119,8 +108,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :kml
     a skos:Concept ;
-    dcterms:identifier "kml"^^xsd:token ;
-    rdfs:isDefinedBy cs: ;
+        rdfs:isDefinedBy cs: ;
     skos:topConceptOf cs: ;
     skos:definition "Keyhole Markup Language (XML) file format"@en ;
     skos:inScheme cs: ;
@@ -129,8 +117,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :mapinfo-mif-mid
     a skos:Concept ;
-    dcterms:identifier "mapinfo-mif-mid"^^xsd:token ;
-    rdfs:isDefinedBy cs: ;
+        rdfs:isDefinedBy cs: ;
     skos:topConceptOf cs: ;
     skos:definition "MapInfo Interchange Format"@en ;
     skos:inScheme cs: ;
@@ -139,8 +126,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :mapinfo-tab
     a skos:Concept ;
-    dcterms:identifier "mapinfo-tab"^^xsd:token ;
-    rdfs:isDefinedBy cs: ;
+        rdfs:isDefinedBy cs: ;
     skos:topConceptOf cs: ;
     skos:definition "MapInfo TAB geospatial vector data format "@en ;
     skos:inScheme cs: ;
@@ -149,8 +135,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :mp4
     a skos:Concept ;
-    dcterms:identifier "mp4"^^xsd:token ;
-    rdfs:isDefinedBy cs: ;
+        rdfs:isDefinedBy cs: ;
     skos:topConceptOf cs: ;
     skos:definition "MPEG-4 Part 14 video file format"@en ;
     skos:inScheme cs: ;
@@ -159,8 +144,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :netcdf
     a skos:Concept ;
-    dcterms:identifier "netcdf"^^xsd:token ;
-    rdfs:isDefinedBy cs: ;
+        rdfs:isDefinedBy cs: ;
     skos:topConceptOf cs: ;
     skos:definition "network Common Data Form file format"@en ;
     skos:inScheme cs: ;
@@ -169,8 +153,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :pdf
     a skos:Concept ;
-    dcterms:identifier "pdf"^^xsd:token ;
-    rdfs:isDefinedBy cs: ;
+        rdfs:isDefinedBy cs: ;
     skos:topConceptOf cs: ;
     skos:definition "Portable Document Format"@en ;
     skos:inScheme cs: ;
@@ -179,8 +162,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :png
     a skos:Concept ;
-    dcterms:identifier "png"^^xsd:token ;
-    rdfs:isDefinedBy cs: ;
+        rdfs:isDefinedBy cs: ;
     skos:topConceptOf cs: ;
     skos:definition "Portabel Netowork Graphics"@en ;
     skos:inScheme cs: ;
@@ -189,8 +171,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :pps
     a skos:Concept ;
-    dcterms:identifier "pps"^^xsd:token ;
-    rdfs:isDefinedBy cs: ;
+        rdfs:isDefinedBy cs: ;
     skos:topConceptOf cs: ;
     skos:definition "Microsoft PowerPoint Slide Show file format"@en ;
     skos:inScheme cs: ;
@@ -199,8 +180,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :ppt
     a skos:Concept ;
-    dcterms:identifier "ppt"^^xsd:token ;
-    rdfs:isDefinedBy cs: ;
+        rdfs:isDefinedBy cs: ;
     skos:topConceptOf cs: ;
     skos:definition "Microsoft PowerPoint file format"@en ;
     skos:inScheme cs: ;
@@ -209,8 +189,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :rtf
     a skos:Concept ;
-    dcterms:identifier "rtf"^^xsd:token ;
-    rdfs:isDefinedBy cs: ;
+        rdfs:isDefinedBy cs: ;
     skos:topConceptOf cs: ;
     skos:definition "Rich Text File format"@en ;
     skos:inScheme cs: ;
@@ -219,8 +198,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :text
     a skos:Concept ;
-    dcterms:identifier "text"^^xsd:token ;
-    rdfs:isDefinedBy cs: ;
+        rdfs:isDefinedBy cs: ;
     skos:topConceptOf cs: ;
     skos:definition "Text file format"@en ;
     skos:inScheme cs: ;
@@ -229,8 +207,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :wcs
     a skos:Concept ;
-    dcterms:identifier "wcs"^^xsd:token ;
-    rdfs:isDefinedBy cs: ;
+        rdfs:isDefinedBy cs: ;
     skos:topConceptOf cs: ;
     skos:definition "OGC Web Coverage Service"@en ;
     skos:inScheme cs: ;
@@ -239,8 +216,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :wfs
     a skos:Concept ;
-    dcterms:identifier "wfs"^^xsd:token ;
-    rdfs:isDefinedBy cs: ;
+        rdfs:isDefinedBy cs: ;
     skos:topConceptOf cs: ;
     skos:definition "OGC Web Feature Service"@en ;
     skos:inScheme cs: ;
@@ -249,8 +225,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :wms
     a skos:Concept ;
-    dcterms:identifier "wms"^^xsd:token ;
-    rdfs:isDefinedBy cs: ;
+        rdfs:isDefinedBy cs: ;
     skos:topConceptOf cs: ;
     skos:definition "OGC Web Map Service"@en ;
     skos:inScheme cs: ;
@@ -259,8 +234,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :xlsx
     a skos:Concept ;
-    dcterms:identifier "xlsx"^^xsd:token ;
-    rdfs:isDefinedBy cs: ;
+        rdfs:isDefinedBy cs: ;
     skos:topConceptOf cs: ;
     skos:definition "Microsoft Excel file format"@en ;
     skos:inScheme cs: ;
@@ -269,26 +243,30 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :zip
     a skos:Concept ;
-    dcterms:identifier "zip"^^xsd:token ;
-    rdfs:isDefinedBy cs: ;
+        rdfs:isDefinedBy cs: ;
     skos:topConceptOf cs: ;
     skos:definition "ZIP compressed file format"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "ZIP"@en ;
 .
 
+<https://linked.data.gov.au/org/mer>
+    a schema:Organization ;
+    schema:name "SA Minerals & Energy Resources" ;
+    schema:url "https://www.energymining.sa.gov.au/industry/geological-survey"^^xsd:anyURI ;
+.
+
 cs:
     a skos:ConceptScheme ;
-    dcterms:created "2022-12-05"^^xsd:date ;
-    dcterms:creator <https://linked.data.gov.au/org/mer> ;
-    dcterms:identifier "distribution-formats"^^xsd:token ;
-    dcterms:issued "2022-12-05"^^xsd:date ;
-    dcterms:license <https://purl.org/NET/rdflicense/cc-by4.0> ;
-    dcterms:modified "2022-12-05"^^xsd:date ;
-    dcterms:provenance "Created by MER in 2022 for the catalogue update project"@en ;
-    dcterms:publisher <https://linked.data.gov.au/org/mer> ;
-    dcterms:rights "© Department for Energy and Mining, 2022"@en ;
-    reg:status agldwgstatus:stable ;
+    schema:dateCreated "2022-12-05"^^xsd:date ;
+    schema:creator <https://linked.data.gov.au/org/mer> ;
+    schema:issued "2022-12-05"^^xsd:date ;
+    schema:license <https://purl.org/NET/rdflicense/cc-by4.0> ;
+    schema:dateModified "2024-08-26"^^xsd:date ;
+    schema:citation "Created by MER in 2022 for the catalogue update project"@en ;
+    schema:publisher <https://linked.data.gov.au/org/mer> ;
+    schema:rights "© Department for Energy and Mining, 2022"@en ;
+    reg:status astatus:stable ;
     skos:definition "The format used for a distribution of a dataset"@en ;
     skos:hasTopConcept
         :ascii ,

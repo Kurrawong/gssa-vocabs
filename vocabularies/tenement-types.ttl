@@ -1,437 +1,402 @@
 PREFIX : <https://linked.data.gov.au/def/mer-tenament-types/>
-PREFIX agldwgstatus: <https://linked.data.gov.au/def/reg-statuses/>
+PREFIX astatus: <https://linked.data.gov.au/def/reg-statuses/>
 PREFIX cs: <https://linked.data.gov.au/def/mer-tenament-types>
-PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX schema: <https://schema.org/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX reg: <http://purl.org/linked-data/registry#>
-PREFIX sdo: <https://schema.org/>
+PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :AAL
     a skos:Concept ;
-    dcterms:identifier "AAL"^^xsd:token ;
-    rdfs:isDefinedBy cs: ;
+        rdfs:isDefinedBy cs: ;
     skos:broader :P ;
     skos:definition "Associated activities licences"@en ;
     skos:inScheme cs: ;
-    dcterms:provenance "Defined in the Petroleum and Geothermal Energy Act 2000" ;
+    schema:citation "Defined in the Petroleum and Geothermal Energy Act 2000" ;
     skos:prefLabel "Associated activities licences"@en ;
     skos:topConceptOf cs: ;
 .
 
 :AALA
     a skos:Concept ;
-    dcterms:identifier "AALA"^^xsd:token ;
-    rdfs:isDefinedBy cs: ;
+        rdfs:isDefinedBy cs: ;
     skos:broader :P ;
     skos:definition "Associated activities licences applications"@en ;
     skos:inScheme cs: ;
-    dcterms:provenance "Defined in the Petroleum and Geothermal Energy Act 2000" ;
+    schema:citation "Defined in the Petroleum and Geothermal Energy Act 2000" ;
     skos:prefLabel "Associated activities licences applications"@en ;
     skos:topConceptOf cs: ;
 .
 
 :EL
     a skos:Concept ;
-    dcterms:identifier "EL"^^xsd:token ;
-    rdfs:isDefinedBy cs: ;
+        rdfs:isDefinedBy cs: ;
     skos:broader :M ;
     skos:definition "Exploration Licence"@en ;
     skos:inScheme cs: ;
-    dcterms:provenance "Defined in the Mining Act 1971" ;
+    schema:citation "Defined in the Mining Act 1971" ;
     skos:prefLabel "Exploration Licence"@en ;
     skos:topConceptOf cs: ;
 .
 
 :ELA
     a skos:Concept ;
-    dcterms:identifier "ELA"^^xsd:token ;
-    rdfs:isDefinedBy cs: ;
+        rdfs:isDefinedBy cs: ;
     skos:broader :M ;
     skos:definition "Exploration Licence Application"@en ;
     skos:inScheme cs: ;
-    dcterms:provenance "Defined in the Mining Act 1971" ;
+    schema:citation "Defined in the Mining Act 1971" ;
     skos:prefLabel "Exploration Licence Application"@en ;
     skos:topConceptOf cs: ;
 .
 
 :EML
     a skos:Concept ;
-    dcterms:identifier "EML"^^xsd:token ;
-    rdfs:isDefinedBy cs: ;
+        rdfs:isDefinedBy cs: ;
     skos:broader :M ;
     skos:definition "Extractive mineral lease"@en ;
     skos:inScheme cs: ;
-    dcterms:provenance "Defined in the Mining Act 1971" ;
+    schema:citation "Defined in the Mining Act 1971" ;
     skos:prefLabel "Extractive mineral lease"@en ;
     skos:topConceptOf cs: ;
 .
 
 :ERA
     a skos:Concept ;
-    dcterms:identifier "ERA"^^xsd:token ;
-    rdfs:isDefinedBy cs: ;
+        rdfs:isDefinedBy cs: ;
     skos:broader :M ;
     skos:definition "Exploration Release Area"@en ;
     skos:inScheme cs: ;
-    dcterms:provenance "Defined in the Mining Act 1971" ;
+    schema:citation "Defined in the Mining Act 1971" ;
     skos:prefLabel "Exploration Release Area"@en ;
     skos:topConceptOf cs: ;
 .
 
 :GEL
     a skos:Concept ;
-    dcterms:identifier "GEL"^^xsd:token ;
-    rdfs:isDefinedBy cs: ;
+        rdfs:isDefinedBy cs: ;
     skos:broader :P ;
     skos:definition "Onshore exploration licences: geothermal"@en ;
     skos:inScheme cs: ;
-    dcterms:provenance "Defined in the Petroleum and Geothermal Energy Act 2000" ;
+    schema:citation "Defined in the Petroleum and Geothermal Energy Act 2000" ;
     skos:prefLabel "Onshore exploration licences: geothermal"@en ;
     skos:topConceptOf cs: ;
 .
 
 :GELA
     a skos:Concept ;
-    dcterms:identifier "GELA"^^xsd:token ;
-    rdfs:isDefinedBy cs: ;
+        rdfs:isDefinedBy cs: ;
     skos:broader :P ;
     skos:definition "Onshore exploration licences applications: geothermal"@en ;
     skos:inScheme cs: ;
-    dcterms:provenance "Defined in the Petroleum and Geothermal Energy Act 2000" ;
+    schema:citation "Defined in the Petroleum and Geothermal Energy Act 2000" ;
     skos:prefLabel "Onshore exploration licences applications: geothermal"@en ;
     skos:topConceptOf cs: ;
 .
 
 :GRL
     a skos:Concept ;
-    dcterms:identifier "GRL"^^xsd:token ;
-    rdfs:isDefinedBy cs: ;
+        rdfs:isDefinedBy cs: ;
     skos:broader :P ;
     skos:definition "Onshore retention licences: geothermal"@en ;
     skos:inScheme cs: ;
-    dcterms:provenance "Defined in the Petroleum and Geothermal Energy Act 2000" ;
+    schema:citation "Defined in the Petroleum and Geothermal Energy Act 2000" ;
     skos:prefLabel "Onshore retention licences: geothermal"@en ;
     skos:topConceptOf cs: ;
 .
 
 :GSEL
     a skos:Concept ;
-    dcterms:identifier "GSEL"^^xsd:token ;
-    rdfs:isDefinedBy cs: ;
+        rdfs:isDefinedBy cs: ;
     skos:broader :P ;
     skos:definition "Onshore exploration licences: gas storage"@en ;
     skos:inScheme cs: ;
-    dcterms:provenance "Defined in the Petroleum and Geothermal Energy Act 2000" ;
+    schema:citation "Defined in the Petroleum and Geothermal Energy Act 2000" ;
     skos:prefLabel "Onshore exploration licences: gas storage"@en ;
     skos:topConceptOf cs: ;
 .
 
 :GSELA
     a skos:Concept ;
-    dcterms:identifier "GSELA"^^xsd:token ;
-    rdfs:isDefinedBy cs: ;
+        rdfs:isDefinedBy cs: ;
     skos:broader :P ;
     skos:definition "Onshore exploration licences applications: gas storage"@en ;
     skos:inScheme cs: ;
-    dcterms:provenance "Defined in the Petroleum and Geothermal Energy Act 2000" ;
+    schema:citation "Defined in the Petroleum and Geothermal Energy Act 2000" ;
     skos:prefLabel "Onshore exploration licences applications: gas storage"@en ;
     skos:topConceptOf cs: ;
 .
 
 :GSL
     a skos:Concept ;
-    dcterms:identifier "GSL"^^xsd:token ;
-    rdfs:isDefinedBy cs: ;
+        rdfs:isDefinedBy cs: ;
     skos:broader :P ;
     skos:definition "Gas storage licence"@en ;
     skos:inScheme cs: ;
-    dcterms:provenance "Defined in the Petroleum and Geothermal Energy Act 2000" ;
+    schema:citation "Defined in the Petroleum and Geothermal Energy Act 2000" ;
     skos:prefLabel "Gas storage licence"@en ;
     skos:topConceptOf cs: ;
 .
 
 :GSRL
     a skos:Concept ;
-    dcterms:identifier "GSRL"^^xsd:token ;
-    rdfs:isDefinedBy cs: ;
+        rdfs:isDefinedBy cs: ;
     skos:broader :P ;
     skos:definition "Onshore retention licences: gas storage"@en ;
     skos:inScheme cs: ;
-    dcterms:provenance "Defined in the Petroleum and Geothermal Energy Act 2000" ;
+    schema:citation "Defined in the Petroleum and Geothermal Energy Act 2000" ;
     skos:prefLabel "Onshore retention licences: gas storage"@en ;
     skos:topConceptOf cs: ;
 .
 
 :GSRLA
     a skos:Concept ;
-    dcterms:identifier "GSRLA"^^xsd:token ;
-    rdfs:isDefinedBy cs: ;
+        rdfs:isDefinedBy cs: ;
     skos:broader :P ;
     skos:definition "Onshore retention licences applications: gas storage"@en ;
     skos:inScheme cs: ;
-    dcterms:provenance "Defined in the Petroleum and Geothermal Energy Act 2000" ;
+    schema:citation "Defined in the Petroleum and Geothermal Energy Act 2000" ;
     skos:prefLabel "Onshore retention licences applications: gas storage"@en ;
     skos:topConceptOf cs: ;
 .
 
 :MC
     a skos:Concept ;
-    dcterms:identifier "MC"^^xsd:token ;
-    rdfs:isDefinedBy cs: ;
+        rdfs:isDefinedBy cs: ;
     skos:broader :M ;
     skos:definition "Mineral claim"@en ;
     skos:inScheme cs: ;
-    dcterms:provenance "Defined in the Mining Act 1971" ;
+    schema:citation "Defined in the Mining Act 1971" ;
     skos:prefLabel "Mineral claim"@en ;
     skos:topConceptOf cs: ;
 .
 
 :MCA
     a skos:Concept ;
-    dcterms:identifier "MCA"^^xsd:token ;
-    rdfs:isDefinedBy cs: ;
+        rdfs:isDefinedBy cs: ;
     skos:broader :M ;
     skos:definition "Mineral claim application"@en ;
     skos:inScheme cs: ;
-    dcterms:provenance "Defined in the Mining Act 1971" ;
+    schema:citation "Defined in the Mining Act 1971" ;
     skos:prefLabel "Mineral claim application"@en ;
     skos:topConceptOf cs: ;
 .
 
 :ML
     a skos:Concept ;
-    dcterms:identifier "ML"^^xsd:token ;
-    rdfs:isDefinedBy cs: ;
+        rdfs:isDefinedBy cs: ;
     skos:broader :M ;
     skos:definition "Mineral Licence"@en ;
     skos:inScheme cs: ;
-    dcterms:provenance "Defined in the Mining Act 1971" ;
+    schema:citation "Defined in the Mining Act 1971" ;
     skos:prefLabel "Mineral Licence"@en ;
     skos:topConceptOf cs: ;
 .
 
 :MPL
     a skos:Concept ;
-    dcterms:identifier "MPL"^^xsd:token ;
-    rdfs:isDefinedBy cs: ;
+        rdfs:isDefinedBy cs: ;
     skos:broader :M ;
     skos:definition "Miscellaneous purposes licence"@en ;
     skos:inScheme cs: ;
-    dcterms:provenance "Defined in the Mining Act 1971" ;
+    schema:citation "Defined in the Mining Act 1971" ;
     skos:prefLabel "Miscellaneous purposes licence"@en ;
     skos:topConceptOf cs: ;
 .
 
 :MPLA
     a skos:Concept ;
-    dcterms:identifier "MPLA"^^xsd:token ;
-    rdfs:isDefinedBy cs: ;
+        rdfs:isDefinedBy cs: ;
     skos:broader :M ;
     skos:definition "Mineral licence application"@en ;
     skos:inScheme cs: ;
-    dcterms:provenance "Defined in the Mining Act 1971" ;
+    schema:citation "Defined in the Mining Act 1971" ;
     skos:prefLabel "Mineral licence application"@en ;
     skos:topConceptOf cs: ;
 .
 
 :PEL
     a skos:Concept ;
-    dcterms:identifier "PEL"^^xsd:token ;
-    rdfs:isDefinedBy cs: ;
+        rdfs:isDefinedBy cs: ;
     skos:broader :P ;
     skos:definition "Onshore exploration licences: petroleum"@en ;
     skos:inScheme cs: ;
-    dcterms:provenance "Defined in the Petroleum and Geothermal Energy Act 2000" ;
+    schema:citation "Defined in the Petroleum and Geothermal Energy Act 2000" ;
     skos:prefLabel "Onshore exploration licences: petroleum"@en ;
     skos:topConceptOf cs: ;
 .
 
 :PELA
     a skos:Concept ;
-    dcterms:identifier "PELA"^^xsd:token ;
-    rdfs:isDefinedBy cs: ;
+        rdfs:isDefinedBy cs: ;
     skos:broader :P ;
     skos:definition "Onshore exploration licences applications: petroleum"@en ;
     skos:inScheme cs: ;
-    dcterms:provenance "Defined in the Petroleum and Geothermal Energy Act 2000" ;
+    schema:citation "Defined in the Petroleum and Geothermal Energy Act 2000" ;
     skos:prefLabel "Onshore exploration licences applications: petroleum"@en ;
     skos:topConceptOf cs: ;
 .
 
 :PL
     a skos:Concept ;
-    dcterms:identifier "PL"^^xsd:token ;
-    rdfs:isDefinedBy cs: ;
+        rdfs:isDefinedBy cs: ;
     skos:broader :P ;
     skos:definition "Pipeline licence holders "@en ;
     skos:inScheme cs: ;
-    dcterms:provenance "Defined in the Petroleum and Geothermal Energy Act 2000" ;
+    schema:citation "Defined in the Petroleum and Geothermal Energy Act 2000" ;
     skos:prefLabel "Pipeline licence holders "@en ;
     skos:topConceptOf cs: ;
 .
 
 :PM
     a skos:Concept ;
-    dcterms:identifier "PM"^^xsd:token ;
-    rdfs:isDefinedBy cs: ;
+        rdfs:isDefinedBy cs: ;
     skos:broader :M ;
     skos:definition "Private mine"@en ;
     skos:inScheme cs: ;
-    dcterms:provenance "Defined in the Mining Act 1971" ;
+    schema:citation "Defined in the Mining Act 1971" ;
     skos:prefLabel "Private mine"@en ;
     skos:topConceptOf cs: ;
 .
 
 :PPL
     a skos:Concept ;
-    dcterms:identifier "PPL"^^xsd:token ;
-    rdfs:isDefinedBy cs: ;
+        rdfs:isDefinedBy cs: ;
     skos:broader :P ;
     skos:definition "Petroleum production licence"@en ;
     skos:inScheme cs: ;
-    dcterms:provenance "Defined in the Petroleum and Geothermal Energy Act 2000" ;
+    schema:citation "Defined in the Petroleum and Geothermal Energy Act 2000" ;
     skos:prefLabel "Petroleum production licence"@en ;
     skos:topConceptOf cs: ;
 .
 
 :PPLA
     a skos:Concept ;
-    dcterms:identifier "PPLA"^^xsd:token ;
-    rdfs:isDefinedBy cs: ;
+        rdfs:isDefinedBy cs: ;
     skos:broader :P ;
     skos:definition "Petroleum production licence applications"@en ;
     skos:inScheme cs: ;
-    dcterms:provenance "Defined in the Petroleum and Geothermal Energy Act 2000" ;
+    schema:citation "Defined in the Petroleum and Geothermal Energy Act 2000" ;
     skos:prefLabel "Petroleum production licence applications"@en ;
     skos:topConceptOf cs: ;
 .
 
 :PRL
     a skos:Concept ;
-    dcterms:identifier "PRL"^^xsd:token ;
-    rdfs:isDefinedBy cs: ;
+        rdfs:isDefinedBy cs: ;
     skos:broader :P ;
     skos:definition "Onshore retention Licences: petroleum"@en ;
     skos:inScheme cs: ;
-    dcterms:provenance "Defined in the Petroleum and Geothermal Energy Act 2000" ;
+    schema:citation "Defined in the Petroleum and Geothermal Energy Act 2000" ;
     skos:prefLabel "Onshore retention Licences: petroleum"@en ;
     skos:topConceptOf cs: ;
 .
 
 :PSL
     a skos:Concept ;
-    dcterms:identifier "PSL"^^xsd:token ;
-    rdfs:isDefinedBy cs: ;
+        rdfs:isDefinedBy cs: ;
     skos:broader :P ;
     skos:definition "Preliminary survey licence"@en ;
     skos:inScheme cs: ;
-    dcterms:provenance "Defined in the Petroleum and Geothermal Energy Act 2000" ;
+    schema:citation "Defined in the Petroleum and Geothermal Energy Act 2000" ;
     skos:prefLabel "Preliminary survey licence"@en ;
     skos:topConceptOf cs: ;
 .
 
 :PSLA
     a skos:Concept ;
-    dcterms:identifier "PSLA"^^xsd:token ;
-    rdfs:isDefinedBy cs: ;
+        rdfs:isDefinedBy cs: ;
     skos:broader :P ;
     skos:definition "Preliminary survey licence applications"@en ;
     skos:inScheme cs: ;
-    dcterms:provenance "Defined in the Petroleum and Geothermal Energy Act 2000" ;
+    schema:citation "Defined in the Petroleum and Geothermal Energy Act 2000" ;
     skos:prefLabel "Preliminary survey licence applications"@en ;
     skos:topConceptOf cs: ;
 .
 
 :RG
     a skos:Concept ;
-    dcterms:identifier "RG"^^xsd:token ;
-    rdfs:isDefinedBy cs: ;
+        rdfs:isDefinedBy cs: ;
     skos:broader :M ;
     skos:definition "Relinquished Ground"@en ;
     skos:inScheme cs: ;
-    dcterms:provenance "Defined in the Mining Act 1971" ;
+    schema:citation "Defined in the Mining Act 1971" ;
     skos:prefLabel "Relinquished Ground"@en ;
     skos:topConceptOf cs: ;
 .
 
 :RL
     a skos:Concept ;
-    dcterms:identifier "RL"^^xsd:token ;
-    rdfs:isDefinedBy cs: ;
+        rdfs:isDefinedBy cs: ;
     skos:broader :M ;
     skos:definition "Retention lease"@en ;
     skos:inScheme cs: ;
-    dcterms:provenance "Defined in the Mining Act 1971" ;
+    schema:citation "Defined in the Mining Act 1971" ;
     skos:prefLabel "Retention lease"@en ;
     skos:topConceptOf cs: ;
 .
 
 :SFL
     a skos:Concept ;
-    dcterms:identifier "SFL"^^xsd:token ;
-    rdfs:isDefinedBy cs: ;
+        rdfs:isDefinedBy cs: ;
     skos:broader :P ;
     skos:definition "Special facilities licence"@en ;
     skos:inScheme cs: ;
-    dcterms:provenance "Defined in the Petroleum and Geothermal Energy Act 2000" ;
+    schema:citation "Defined in the Petroleum and Geothermal Energy Act 2000" ;
     skos:prefLabel "Special facilities licence"@en ;
     skos:topConceptOf cs: ;
 .
 
 :SFLA
     a skos:Concept ;
-    dcterms:identifier "SFLA"^^xsd:token ;
-    rdfs:isDefinedBy cs: ;
+        rdfs:isDefinedBy cs: ;
     skos:broader :P ;
     skos:definition "Special facilities licence applications"@en ;
     skos:inScheme cs: ;
-    dcterms:provenance "Defined in the Petroleum and Geothermal Energy Act 2000" ;
+    schema:citation "Defined in the Petroleum and Geothermal Energy Act 2000" ;
     skos:prefLabel "Special facilities licence applications"@en ;
     skos:topConceptOf cs: ;
 .
 
 <https://linked.data.gov.au/org/mer>
-    a sdo:Organization ;
-    sdo:name "SA Minerals & Energy Resources" ;
-    sdo:url "https://www.energymining.sa.gov.au/industry/geological-survey"^^xsd:anyURI ;
+    a schema:Organization ;
+    schema:name "SA Minerals & Energy Resources" ;
+    schema:url "https://www.energymining.sa.gov.au/industry/geological-survey"^^xsd:anyURI ;
 .
 
 :M
     a skos:Concept ;
-    dcterms:identifier "M"^^xsd:token ;
-    rdfs:isDefinedBy cs: ;
+        rdfs:isDefinedBy cs: ;
     skos:definition "A mineral exploration or mining tenement under the Mining Act 1971" ;
     skos:inScheme cs: ;
-    dcterms:provenance "Defined in the Petroleum and Geothermal Energy Act 2000" ;
+    schema:citation "Defined in the Petroleum and Geothermal Energy Act 2000" ;
     skos:prefLabel "Mineral"@en ;
     skos:topConceptOf cs: ;
 .
 
 :P
     a skos:Concept ;
-    dcterms:identifier "P"^^xsd:token ;
-    rdfs:isDefinedBy cs: ;
+        rdfs:isDefinedBy cs: ;
     skos:definition "A petroleum, geothermal, gas and other licences held under Petroleum and Geothermal Energy Act 2000" ;
     skos:inScheme cs: ;
-    dcterms:provenance "Defined in the Petroleum and Geothermal Energy Act 2000" ;
+    schema:citation "Defined in the Petroleum and Geothermal Energy Act 2000" ;
     skos:prefLabel "Petroleum"@en ;
     skos:topConceptOf cs: ;
 .
 
 cs:
     a skos:ConceptScheme ;
-    dcterms:created "2022-12-06"^^xsd:date ;
-    dcterms:creator <https://linked.data.gov.au/org/mer> ;
-    dcterms:identifier "mer-tenement-types"^^xsd:token ;
-    dcterms:issued "2022-12-06"^^xsd:date ;
-    dcterms:license <https://purl.org/NET/rdflicense/cc-by4.0> ;
-    dcterms:modified "2022-12-06"^^xsd:date ;
-    dcterms:provenance "Created by MER in 2022 for the catalogue update project"@en ;
-    dcterms:publisher <https://linked.data.gov.au/org/mer> ;
-    dcterms:rights "© Department for Energy and Mining, 2022"@en ;
-    reg:status agldwgstatus:stable ;
+    schema:dateCreated "2022-12-06"^^xsd:date ;
+    schema:creator <https://linked.data.gov.au/org/mer> ;
+    schema:issued "2022-12-06"^^xsd:date ;
+    schema:license <https://purl.org/NET/rdflicense/cc-by4.0> ;
+    schema:dateModified "2024-08-26"^^xsd:date ;
+    schema:citation "Created by MER in 2022 for the catalogue update project"@en ;
+    schema:publisher <https://linked.data.gov.au/org/mer> ;
+    schema:rights "© Department for Energy and Mining, 2022"@en ;
+    reg:status astatus:stable ;
     skos:definition "Types of South Australian mining and petroleum tenements constituted under the Mining Act 1971 and the Petroleum and Geothermal Energy Act 2000"@en ;
     skos:hasTopConcept
         :M ,

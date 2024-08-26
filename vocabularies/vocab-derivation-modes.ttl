@@ -1,18 +1,17 @@
 PREFIX : <https://linked.data.gov.au/def/vocab-derivation-modes/>
-PREFIX agldwgstatus: <https://linked.data.gov.au/def/reg-statuses/>
+PREFIX astatus: <https://linked.data.gov.au/def/reg-statuses/>
 PREFIX cs: <https://linked.data.gov.au/def/vocab-derivation-modes>
-PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX schema: <https://schema.org/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX reg: <http://purl.org/linked-data/registry#>
-PREFIX sdo: <https://schema.org/>
+PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :direct
     a skos:Concept ;
-    dcterms:identifier "direct"^^xsd:token ;
-    dcterms:provenance "Created for the MER catalogue upgrade project, 2022"@en ;
-    reg:status agldwgstatus:original ;
+    schema:citation "Created for the MER catalogue upgrade project, 2022"@en ;
+    reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Derivation without alteration"@en ;
     skos:inScheme cs: ;
@@ -22,9 +21,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :extension
     a skos:Concept ;
-    dcterms:identifier "extension"^^xsd:token ;
-    dcterms:provenance "Created for the MER catalogue upgrade project, 2022"@en ;
-    reg:status agldwgstatus:original ;
+    schema:citation "Created for the MER catalogue upgrade project, 2022"@en ;
+    reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Derivation with extension"@en ;
     skos:inScheme cs: ;
@@ -35,9 +33,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :not-applicable
     a skos:Concept ;
-    dcterms:identifier "not-applicable"^^xsd:token ;
-    dcterms:provenance "Created for the MER catalogue upgrade project, 2022"@en ;
-    reg:status agldwgstatus:original ;
+    schema:citation "Created for the MER catalogue upgrade project, 2022"@en ;
+    reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Derivation mode is not applicable to this vocabulary"@en ;
     skos:inScheme cs: ;
@@ -48,9 +45,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :relabelling
     a skos:Concept ;
-    dcterms:identifier "relabelling"^^xsd:token ;
-    dcterms:provenance "Created for the MER catalogue upgrade project, 2022"@en ;
-    reg:status agldwgstatus:original ;
+    schema:citation "Created for the MER catalogue upgrade project, 2022"@en ;
+    reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Derivation with relabelling"@en ;
     skos:inScheme cs: ;
@@ -61,9 +57,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :subsetting
     a skos:Concept ;
-    dcterms:identifier "subsetting"^^xsd:token ;
-    dcterms:provenance "Created for the MER catalogue upgrade project, 2022"@en ;
-    reg:status agldwgstatus:original ;
+    schema:citation "Created for the MER catalogue upgrade project, 2022"@en ;
+    reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Derivation with subsetting"@en ;
     skos:inScheme cs: ;
@@ -74,9 +69,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :subsetting-and-extension
     a skos:Concept ;
-    dcterms:identifier "subsetting-and-extension"^^xsd:token ;
-    dcterms:provenance "Created for the MER catalogue upgrade project, 2022"@en ;
-    reg:status agldwgstatus:original ;
+    schema:citation "Created for the MER catalogue upgrade project, 2022"@en ;
+    reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Derivation with subsetting and extension"@en ;
     skos:inScheme cs: ;
@@ -88,28 +82,27 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 .
 
 <https://kurrawong.net>
-    a sdo:Organization ;
-    sdo:name "KurrawongAI" ;
-    sdo:url "https://kurrawong.net"^^xsd:anyURI ;
+    a schema:Organization ;
+    schema:name "KurrawongAI" ;
+    schema:url "https://kurrawong.net"^^xsd:anyURI ;
 .
 
 <https://linked.data.gov.au/org/mer>
-    a sdo:Organization ;
-    sdo:name "SA Minerals and Energy Resources" ;
-    sdo:url "https://www.energymining.sa.gov.au/industry/geological-survey"^^xsd:anyURI ;
+    a schema:Organization ;
+    schema:name "SA Minerals and Energy Resources" ;
+    schema:url "https://www.energymining.sa.gov.au/industry/geological-survey"^^xsd:anyURI ;
 .
 
 cs:
     a skos:ConceptScheme ;
-    dcterms:contributor <http://def.isotc211.org/org/tc211> ;
-    dcterms:created "2022-12-05"^^xsd:date ;
-    dcterms:creator <https://kurrawong.net> ;
-    dcterms:identifier "vocab-derivation-modes"^^xsd:token ;
-    dcterms:issued "2022-12-05"^^xsd:date ;
-    dcterms:modified "2022-12-05"^^xsd:date ;
-    dcterms:provenance "Created for the MER catalogue upgrade project, 2022"@en ;
-    dcterms:publisher <https://linked.data.gov.au/org/mer> ;
-    reg:status agldwgstatus:stable ;
+    schema:contributor <http://def.isotc211.org/org/tc211> ;
+    schema:dateCreated "2022-12-05"^^xsd:date ;
+    schema:creator <https://kurrawong.net> ;
+    schema:issued "2022-12-05"^^xsd:date ;
+    schema:dateModified "2024-08-26"^^xsd:date ;
+    schema:citation "Created for the MER catalogue upgrade project, 2022"@en ;
+    schema:publisher <https://linked.data.gov.au/org/mer> ;
+    reg:status astatus:stable ;
     skos:definition "The modes by which one vocabulary may derive from another"@en ;
     skos:hasTopConcept
         :direct ,

@@ -1,17 +1,15 @@
 PREFIX : <https://linked.data.gov.au/def/mer-work-statuses/>
-PREFIX agldwgstatus: <https://linked.data.gov.au/def/reg-statuses/>
+PREFIX astatus: <https://linked.data.gov.au/def/reg-statuses/>
 PREFIX cs: <https://linked.data.gov.au/def/mer-work-statuses>
-PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX reg: <http://purl.org/linked-data/registry#>
-PREFIX sdo: <https://schema.org/>
+PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :completed
     a skos:Concept ;
-    dcterms:identifier "completed"^^xsd:token ;
-    reg:status agldwgstatus:original ;
+    reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "The work is completed"@en ;
     skos:inScheme cs: ;
@@ -21,8 +19,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :final
     a skos:Concept ;
-    dcterms:identifier "final"^^xsd:token ;
-    reg:status agldwgstatus:original ;
+    reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "The work is final"@en ;
     skos:inScheme cs: ;
@@ -32,8 +29,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :historical-archive
     a skos:Concept ;
-    dcterms:identifier "historical-archive"^^xsd:token ;
-    reg:status agldwgstatus:original ;
+    reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "The work is in historical archive"@en ;
     skos:inScheme cs: ;
@@ -43,8 +39,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :on-going
     a skos:Concept ;
-    dcterms:identifier "on-going"^^xsd:token ;
-    reg:status agldwgstatus:original ;
+    reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "The work is on going"@en ;
     skos:inScheme cs: ;
@@ -54,8 +49,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :planned
     a skos:Concept ;
-    dcterms:identifier "planned"^^xsd:token ;
-    reg:status agldwgstatus:original ;
+    reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "The work is planned"@en ;
     skos:inScheme cs: ;
@@ -65,8 +59,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :superseded
     a skos:Concept ;
-    dcterms:identifier "superseded"^^xsd:token ;
-    reg:status agldwgstatus:original ;
+    reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "The work is superseded"@en ;
     skos:inScheme cs: ;
@@ -76,8 +69,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :under-development
     a skos:Concept ;
-    dcterms:identifier "under-development"^^xsd:token ;
-    reg:status agldwgstatus:original ;
+    reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "The work is "@en ;
     skos:inScheme cs: ;
@@ -86,24 +78,23 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 .
 
 <https://linked.data.gov.au/org/mer>
-    a sdo:Organization ;
-    sdo:name "Geological Survey of South Australia" ;
-    sdo:url "https://www.energymining.sa.gov.au/industry/geological-survey"^^xsd:anyURI ;
+    a schema:Organization ;
+    schema:name "Geological Survey of South Australia" ;
+    schema:url "https://www.energymining.sa.gov.au/industry/geological-survey"^^xsd:anyURI ;
 .
 
 cs:
     a skos:ConceptScheme ;
-    dcterms:created "2022-12-05"^^xsd:date ;
-    dcterms:creator <https://linked.data.gov.au/org/mer> ;
-    dcterms:identifier "work-status"^^xsd:token ;
-    dcterms:issued "2022-12-05"^^xsd:date ;
-    dcterms:license <https://purl.org/NET/rdflicense/cc-by4.0> ;
-    dcterms:modified "2022-12-05"^^xsd:date ;
-    dcterms:provenance "Created by MER in 2022 for the catalogue update project"@en ;
-    dcterms:publisher <https://linked.data.gov.au/org/mer> ;
-    dcterms:rights "© Department for Energy and Mining, 2022"@en ;
-    dcterms:source "http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation/code/MD_TopicCategoryCode"^^xsd:anyURI ;
-    reg:status agldwgstatus:stable ;
+    schema:dateCreated "2022-12-05"^^xsd:date ;
+    schema:creator <https://linked.data.gov.au/org/mer> ;
+    schema:issued "2022-12-05"^^xsd:date ;
+    schema:license <https://purl.org/NET/rdflicense/cc-by4.0> ;
+    schema:dateModified "2024-08-26"^^xsd:date ;
+    schema:citation "Created by MER in 2022 for the catalogue update project"@en ;
+    schema:publisher <https://linked.data.gov.au/org/mer> ;
+    schema:rights "© Department for Energy and Mining, 2022"@en ;
+    schema:citation "http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation/code/MD_TopicCategoryCode"^^xsd:anyURI ;
+    reg:status astatus:stable ;
     skos:definition "The status of work on data"@en ;
     skos:hasTopConcept
         :completed ,
