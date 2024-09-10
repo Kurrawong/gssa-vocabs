@@ -92,14 +92,14 @@ this-cs:
     a skos:ConceptScheme ;
     reg:status astatus:stable ;
     skos:changeNote "2024-08-26 NJC Made VocPub 4.10 valid, LongTurtle formatted, no content changes" ;
-    skos:definition "High-level	geographic data thematic classification to assist in the grouping and search of available geographic datasets"@en ;
+    skos:definition "High-level geographic data thematic classification to assist in the grouping and search of available geographic datasets"@en ;
     skos:hasTopConcept
         :boundaries ,
         :environment ,
         :geoscientificInformation ,
         :transportation ,
         :utilitiesCommunication ;
-    skos:prefLabel "Topic Category Codes"@en ;
+    skos:prefLabel "Topic Categories"@en ;
     prov:qualifiedDerivation
         [
             prov:entity cs: ;
