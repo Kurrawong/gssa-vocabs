@@ -1,0 +1,131 @@
+PREFIX : <https://linked.data.gov.au/def/mer-stakeholder-types/>
+PREFIX astatus: <https://linked.data.gov.au/def/reg-statuses/>
+PREFIX cs: <https://linked.data.gov.au/def/mer-stakeholder-types>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX reg: <http://purl.org/linked-data/registry#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+
+:aboriginal-group-or-body
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Aboriginal Group or Body"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Aboriginal Group or Body"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:agriculture-farming
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Agriculture / Farming"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Agriculture / Farming"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:exploration-company
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Exploration Company"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Exploration Company"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:farming-association
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Farming Association"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Farming Association"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:landowner
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Landowner"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Landowner"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:member-of-the-public
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Member of the Public"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Member of the Public"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:mining-association
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Mining Association"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Mining Association"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:mining-company
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Mining Company"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Mining Company"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:ngo
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "NGO"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "NGO"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:other
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Other"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Other"@en ;
+    skos:topConceptOf cs: ;
+.
+
+<https://linked.data.gov.au/org/mer>
+    a schema:Organization ;
+    schema:name "SA Minerals & Energy Resources" ;
+    schema:url "https://www.energymining.sa.gov.au/industry/geological-survey"^^xsd:anyURI ;
+.
+
+cs:
+    a skos:ConceptScheme ;
+    reg:status astatus:stable ;    
+    skos:definition "Types of stakeholder relevant to the South Australian Minerals and Energy Resources"@en ;
+    skos:hasTopConcept
+      :aboriginal-group-or-body ,
+      :agriculture-farming ,
+      :exploration-company ,
+      :farming-association ,
+      :landowner ,
+      :member-of-the-public ,
+      :mining-association ,
+      :mining-company ,
+      :ngo ,
+      :other ;
+    skos:prefLabel "MER Stakeholder Types"@en ;
+    schema:citation "Created by MER in 2023 for the TNS portal project" ;
+    schema:creator <https://linked.data.gov.au/org/mer> ;
+    schema:dateCreated "2022-12-05"^^xsd:date ;
+    schema:dateModified "2023-05-04"^^xsd:date ;
+    schema:issued "2022-12-05"^^xsd:date ;
+    schema:license <https://purl.org/NET/rdflicense/cc-by4.0> ;
+    schema:publisher <https://linked.data.gov.au/org/mer> ;
+    schema:rights "© Department for Energy and Mining, 2022" ;
+.
