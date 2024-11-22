@@ -1,0 +1,24 @@
+# https://taskfile.dev
+
+version: '3'
+
+vars:
+  COMPOSE_FILE: docker/docker-compose.yml
+
+tasks:
+  default:
+    cmd: task -a
+
+  stack:up:
+    cmd: docker compose -f {{.COMPOSE_FILE}} up -d
+
+  stack:down:
+    cmd: docker compose -f {{.COMPOSE_FILE}} down
+
+  stack:clean:
+    cmd: docker compose -f {{.COMPOSE_FILE}} down -v
+
+  load-data:
+    cmds:
+      - kurra fuseki upload background-resources/ http://localhost:3030/ds -u admin -p fuseki
+      - kurra fuseki upload vocabularies/ http://localhost:3030/ds -u admin -p fuseki
