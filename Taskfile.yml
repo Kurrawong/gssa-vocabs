@@ -18,7 +18,7 @@ tasks:
   stack:clean:
     cmd: docker compose -f {{.COMPOSE_FILE}} down -v
 
-  load-data:
+  stack:load-data:
     cmds:
       - kurra fuseki upload background-resources/ http://localhost:3030/ds -u admin -p fuseki
       - kurra fuseki upload vocabularies/ http://localhost:3030/ds -u admin -p fuseki
