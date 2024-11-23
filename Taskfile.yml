@@ -22,3 +22,9 @@ tasks:
     cmds:
       - kurra fuseki upload background-resources/ http://localhost:3030/ds -u admin -p fuseki
       - kurra fuseki upload vocabularies/ http://localhost:3030/ds -u admin -p fuseki
+      - kurra fuseki upload prez/ http://localhost:3030/ds -u admin -p fuseki
+
+  stack:up:init:
+    cmds:
+      - task: stack:up
+      - task: stack:load-data

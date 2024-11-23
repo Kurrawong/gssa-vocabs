@@ -1,0 +1,29 @@
+PREFIX astatus: <https://linked.data.gov.au/def/reg-statuses/>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX reg: <http://purl.org/linked-data/registry#>
+PREFIX schema: <https://schema.org/>
+
+<urn:gssa:vocabs>
+    a dcat:Catalog ;
+    dcterms:hasPart
+        <https://linked.data.gov.au/def/maintenancefrequencycode> ,
+        <https://linked.data.gov.au/def/mer-distribution-formats> ,
+        <https://linked.data.gov.au/def/mer-doc-types> ,
+        <https://linked.data.gov.au/def/mer-for-codes> ,
+        <https://linked.data.gov.au/def/sa-commodity-codes> ,
+        <https://linked.data.gov.au/def/sa-geological-features> ,
+        <https://linked.data.gov.au/def/scope-codes> ,
+        <https://linked.data.gov.au/def/stakeholder-types> ,
+        <https://linked.data.gov.au/def/tenament-types> ,
+        <https://linked.data.gov.au/def/topic-categories> ,
+        <https://linked.data.gov.au/def/vocab-derivation-modes> ,
+        <https://linked.data.gov.au/def/work-status> ;
+    reg:status astatus:experimental ;
+    schema:codeRepository "https://github.com/kurrawong/gssa-vocabs" ;
+    schema:creator <https://kurrawong.ai> ;
+    schema:description "GSSA controlled vocabularies." ;
+    schema:name "GSSA Vocabularies" ;
+    schema:publisher <https://kurrawong.ai> ;
+.
+
