@@ -1,0 +1,6 @@
+PREFIX vann: <http://purl.org/vocab/vann/>
+
+[]    vann:preferredNamespacePrefix "gssa" ;
+    vann:preferredNamespaceUri <urn:gssa:> ;
+.
+
