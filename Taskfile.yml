@@ -1,6 +1,6 @@
 # https://taskfile.dev
 
-version: '3'
+version: "3"
 
 vars:
   COMPOSE_FILE: docker/docker-compose.yml
@@ -8,6 +8,9 @@ vars:
 tasks:
   default:
     cmd: task -a
+  
+  stack:build:
+    cmd: docker compose -f {{.COMPOSE_FILE}} build
 
   stack:up:
     cmd: docker compose -f {{.COMPOSE_FILE}} up -d

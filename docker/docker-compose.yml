@@ -9,7 +9,7 @@ services:
       - ./config.ttl:/fuseki/config.ttl
 
     healthcheck:
-      test: ["CMD","curl", "-f", "http://localhost:3030/$/ping"]
+      test: ["CMD", "curl", "-f", "http://localhost:3030/$/ping"]
       interval: 10s
       timeout: 5s
       retries: 5
@@ -32,6 +32,15 @@ services:
       timeout: 5s
       retries: 5
       start_period: 5s
+
+  prez-ui:
+    build:
+      context: .
+      dockerfile: Dockerfile.prez-ui
+      args:
+        - NUXT_PUBLIC_PREZ_API_ENDPOINT=http://localhost:8000
+    ports:
+      - 3000:3000
 
 volumes:
   fuseki_data:

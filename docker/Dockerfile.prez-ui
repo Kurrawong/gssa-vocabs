@@ -1,0 +1,33 @@
+ARG NODE_VERSION=20.18.0
+ARG PNPM_VERSION=9.0.5
+ARG NUXT_PUBLIC_PREZ_API_ENDPOINT=http://localhost:8000
+
+#
+# JS
+#
+FROM node:${NODE_VERSION} AS js
+
+ARG NUXT_PUBLIC_PREZ_API_ENDPOINT
+ENV NUXT_PUBLIC_PREZ_API_ENDPOINT=$NUXT_PUBLIC_PREZ_API_ENDPOINT
+ENV PNPM_HOME="/pnpm"
+ENV PATH="$PNPM_HOME:$PATH"
+ENV COREPACK_ENABLE_DOWNLOAD_PROMPT=0
+
+RUN corepack enable && \
+    corepack install --global pnpm@${PNPM_VERSION}
+
+RUN git clone --single-branch --branch hjohns/next/alpha https://github.com/rdflib/prez-ui.git /app
+WORKDIR /app/packages/core
+RUN pnpm install
+RUN NODE_OPTIONS="--max-old-space-size=4096" \
+    NUXT_PUBLIC_PREZ_API_ENDPOINT=$NUXT_PUBLIC_PREZ_API_ENDPOINT \
+    pnpm -- nuxt generate
+
+#
+# Final
+#
+FROM nginx:alpine
+COPY nginx.conf /etc/nginx/nginx.conf
+COPY --from=js /app/packages/core/.output/public /usr/share/nginx/html
+EXPOSE 3000
+CMD ["nginx", "-g", "daemon off;"]
