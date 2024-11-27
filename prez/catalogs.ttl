@@ -13,12 +13,12 @@ PREFIX schema: <https://schema.org/>
         <https://linked.data.gov.au/def/mer-for-codes> ,
         <https://linked.data.gov.au/def/sa-commodity-codes> ,
         <https://linked.data.gov.au/def/sa-geological-features> ,
-        <https://linked.data.gov.au/def/scope-codes> ,
-        <https://linked.data.gov.au/def/stakeholder-types> ,
-        <https://linked.data.gov.au/def/tenament-types> ,
-        <https://linked.data.gov.au/def/topic-categories> ,
-        <https://linked.data.gov.au/def/vocab-derivation-modes> ,
-        <https://linked.data.gov.au/def/work-status> ;
+        <https://linked.data.gov.au/def/mer-scope-codes> ,
+        <https://linked.data.gov.au/def/mer-stakeholder-types> ,
+        <https://linked.data.gov.au/def/mer-tenament-types> ,
+        <http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation/code/MD_TopicCategoryCode> ,
+        <https://linked.data.gov.au/def/vocdermods> ,
+        <https://linked.data.gov.au/def/mer-work-statuses> ;
     reg:status astatus:experimental ;
     schema:codeRepository "https://github.com/kurrawong/gssa-vocabs" ;
     schema:creator <https://kurrawong.ai> ;

@@ -21,8 +21,7 @@ services:
       - 8000:8000
     environment:
       - SPARQL_ENDPOINT=http://fuseki:3030/ds
-    volumes:
-      - ../prez/namespaces.ttl:/opt/venv/lib/python3.12/site-packages/prez/reference_data/prefixes/gssa-namespaces.ttl
+      - SEARCH_METHOD=fts_fuseki
     depends_on:
       fuseki:
         condition: service_healthy

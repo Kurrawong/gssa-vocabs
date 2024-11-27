@@ -7,7 +7,7 @@ PREFIX fuseki:    <http://jena.apache.org/fuseki#>
 PREFIX geosparql: <http://jena.apache.org/geosparql#>
 PREFIX rdf:       <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs:      <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX schema:    <http://schema.org/>
+PREFIX schema:    <https://schema.org/>
 PREFIX skos:      <http://www.w3.org/2004/02/skos/core#>
 PREFIX tdb2:      <http://jena.apache.org/2016/tdb#>
 PREFIX text:      <http://jena.apache.org/text#>
@@ -74,6 +74,15 @@ PREFIX text:      <http://jena.apache.org/text#>
                              ]
                              [ text:field      "altLabel";
                                text:predicate  skos:altLabel
+                             ]
+                             [ text:field      "notation";
+                               text:predicate  skos:notation
+                             ]
+                             [ text:field      "definition";
+                               text:predicate  skos:definition
+                             ]
+                             [ text:field      "hidden";
+                               text:predicate  skos:hiddenLabel
                              ]
                              [ text:field      "rdfslabel";
                                text:predicate  rdfs:label

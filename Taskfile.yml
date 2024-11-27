@@ -8,7 +8,7 @@ vars:
 tasks:
   default:
     cmd: task -a
-  
+
   stack:build:
     cmd: docker compose -f {{.COMPOSE_FILE}} build
 
@@ -23,9 +23,10 @@ tasks:
 
   stack:load-data:
     cmds:
-      - kurra fuseki upload background-resources/ http://localhost:3030/ds -u admin -p fuseki
-      - kurra fuseki upload vocabularies/ http://localhost:3030/ds -u admin -p fuseki
-      - kurra fuseki upload prez/ http://localhost:3030/ds -u admin -p fuseki
+      - kurra fuseki upload background-resources/ http://localhost:3030/ds
+      - kurra fuseki upload vocabularies/ http://localhost:3030/ds
+      - kurra fuseki upload prez/ http://localhost:3030/ds
+      - rupdate --service http://localhost:3030/ds --update docker/namespaces.rq
 
   stack:up:init:
     cmds:
