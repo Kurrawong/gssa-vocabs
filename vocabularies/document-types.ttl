@@ -369,6 +369,34 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:prefLabel "Compliance"@en ;
 .
 
+:hydrogen-and-renewable-energy-information-sheet
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :legislation-and-policy ;
+    skos:definition "Hydrogen and Renewable Energy information relevant to industry and community."@en ;
+    skos:inScheme cs: ;
+    skos:notation "IS HRE" ;
+    skos:prefLabel "Hydrogen and Renewable Energy Information Sheet"@en ;
+.
+:hydrogen-and-renewable-energy-policy
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :legislation-and-policy ;
+    skos:definition "Statements relating to the administration and regulation of Hydrogen and Renewable Energy activities."@en ;
+    skos:inScheme cs: ;
+    skos:notation "HREpol" ;
+    skos:prefLabel "Hydrogen and Renewable Energy Policy"@en ;
+.
+:hydrogen-and-renewable-energy-regulatory-guideline
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :legislation-and-policy ;
+    skos:definition "Detailed information to support industry in meeting requirements under the Hydrogen and Renewable Energy Act."@en ;
+    skos:inScheme cs: ;
+    skos:notation "HRERG" ;
+    skos:prefLabel "Hydrogen and Renewable Energy Regulatory Guideline"@en ;
+.
+
 :energy-information-sheet
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
