@@ -1,12 +1,12 @@
 services:
   fuseki:
-    image: ghcr.io/kurrawong/fuseki-geosparql:git-main-e642d849
+    build:
+      context: .
+      dockerfile: Dockerfile.fuseki
     ports:
       - 3030:3030
     volumes:
       - fuseki_data:/fuseki
-      - ./shiro.ini:/fuseki/shiro.ini
-      - ./config.ttl:/fuseki/config.ttl
 
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:3030/$/ping"]
@@ -20,7 +20,7 @@ services:
     ports:
       - 8000:8000
     environment:
-      - SPARQL_ENDPOINT=http://fuseki:3030/ds
+      - SPARQL_ENDPOINT=http://fuseki:3030/${FUSEKI_DATASET}
       - SEARCH_METHOD=fts_fuseki
     depends_on:
       fuseki:
