@@ -1,112 +1,190 @@
 PREFIX : <https://linked.data.gov.au/def/mer-doc-types/>
-PREFIX agldwgstatus: <https://linked.data.gov.au/def/reg-statuses/>
+PREFIX astatus: <https://linked.data.gov.au/def/reg-statuses/>
 PREFIX cs: <https://linked.data.gov.au/def/mer-doc-types>
-PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX reg: <http://purl.org/linked-data/registry#>
-PREFIX sdo: <https://schema.org/>
+PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-cs:
-    a skos:ConceptScheme ;
-    dcterms:created "2022-11-25"^^xsd:date ;
-    dcterms:creator <https://linked.data.gov.au/org/mer> ;
-    dcterms:identifier "mer-doc-types"^^xsd:token ;
-    dcterms:license <https://purl.org/NET/rdflicense/cc-by4.0> ;
-    dcterms:modified "2022-11-25"^^xsd:date ;
-    dcterms:issued "2022-11-25"^^xsd:date ;
-    dcterms:publisher <https://linked.data.gov.au/org/mer> ;
-    dcterms:rights "© Department for Energy and Mining, 2022" ;
-    dcterms:provenance "This vocabulary was created in 2022 by and for the MER to support its data catalogue." ;
-    reg:status agldwgstatus:stable ;
-    skos:definition """Types of document produced and used by South Australian Minerals and Energy Resources"""@en ;
-    skos:hasTopConcept
-        :departmental-publication ,
-        :exploration-initiative ,
-        :external-publication ,
-        :legislation-and-policy ,
-        :mineral-company-report ,
-        :energy-company-report ,
-        :geophysical-report ;
-    skos:prefLabel "MER Document Types"@en ;
-.
-
-:samrefReference
-    a rdfs:Datatype ;
-    rdfs:label "SAMRef ID" ;
-.
-
-:tabIndex
-    a rdfs:Datatype ;
-    rdfs:label "Tab Index" ;
-    rdfs:comment "Decanted non DEM publications or Report Books records woksheet tab index"
-.
-
-<https://linked.data.gov.au/org/mer>
-    a sdo:Organization ;
-    sdo:name "SA Minerals & Energy Resources" ;
-    sdo:url "https://www.energymining.sa.gov.au/industry/geological-survey"^^xsd:anyURI ;
-.
-
-:annual-report
+:annual-licence-or-technical-report
     a skos:Concept ;
-    dcterms:identifier "annual-report"^^xsd:token ;
     rdfs:isDefinedBy cs: ;
-    skos:broader :departmental-publication ;
-    skos:definition "A report that describes at departmental activities and finances over a 12months period."@en ;
+    skos:broader :energy-company-report ;
+    skos:definition "Report detailing activities performed over a licence, including  exploration, retention, production, pipeline, survey and facilities for petroleum, geothermal and gas storage."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "Annual Report"@en ;
-    skos:notation "ANNRep"^^:samrefReference , "MERAR"^^:samrefReference ;
+    skos:notation
+        "ENV"^^:samrefReference ,
+        "RB"^^:samrefReference ,
+        "Comp PG Exp"^^:tabIndex ;
+    skos:prefLabel "Annual licence or technical report"@en ;
 .
 
-:collaborative-drilling
-    a skos:Concept ;
-    dcterms:identifier "collaborative-drilling"^^xsd:token ;
-    rdfs:isDefinedBy cs: ;
-    skos:broader :exploration-initiative ;
-    skos:definition "A report detailing the drilling activities and results of a project that received support from a exploration initiative."@en ;
+:departmental-publications
+    a skos:Collection ;
+    skos:definition "All Departmental Publications document types"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "Collaborative Drilling"@en ;
-    skos:notation "SAEI"^^:samrefReference , "BHEI"^^:samrefReference , "TEiSA"^^:samrefReference , "PACE"^^:samrefReference , "ADI"^^:samrefReference ;
+    skos:member
+        :annual-report ,
+        :bulletin ,
+        :commodity-review ,
+        :compliance ,
+        :departmental-other ,
+        :energy-geoscience ,
+        :engineering-geology-publication ,
+        :geological-survey-geoscience-publication ,
+        :handbook ,
+        :hydrogeological-publication ,
+        :inspector-of-mines-report ,
+        :letter-book ,
+        :mesa-journal ,
+        :mineral-and-energy-resources-annual-review ,
+        :mineral-industry-quarterly ,
+        :mineral-information-series ,
+        :mineral-production ,
+        :mineral-resources-review ,
+        :mines-and-energy-review ,
+        :mining-review ,
+        :quarterly-geological-notes ,
+        :quarterly-note ,
+        :record-of-mine ,
+        :report-of-investigation ,
+        :special-publication ;
+    skos:prefLabel "Departmental Publications document types"@en ;
 .
 
-:collaborative-exploration
+:environmental-register
     a skos:Concept ;
-    dcterms:identifier "collaborative-exploration"^^xsd:token ;
     rdfs:isDefinedBy cs: ;
-    skos:broader :exploration-initiative ;
-    skos:definition "A report detailing the activities and results of a project that received support from a exploration initiative."@en ;
+    skos:broader :energy-company-report ;
+    skos:definition "Company and South Australia's Department for Energy and Mining assessment reports, including environmental impact reports, statements of environmental objectives and environmental impact classifications.  Also public and government consultation reports."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "Collaborative Exploration"@en ;
-    skos:notation "SAEI"^^:samrefReference , "BHEI"^^:samrefReference , "TEiSA"^^:samrefReference , "PACE"^^:samrefReference , "ADI"^^:samrefReference ;
+    skos:notation
+        "PGER"^^:samrefReference ,
+        "PGER Envir Reg"^^:tabIndex ;
+    skos:prefLabel "Environmental Register"@en ;
 .
 
-:commodity-review
-    a skos:Concept ;
-    dcterms:identifier "commodity-review"^^xsd:token ;
-    rdfs:isDefinedBy cs: ;
-    skos:broader :departmental-publication-closed-series ;
-    skos:definition "Commodity Review (1994:2016)"@en ;
+:exploration-initiatives
+    a skos:Collection ;
+    skos:definition "All Exploration Initiatives document types"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "Commodity Review"@en ;
-    skos:notation "ComRev"^^:samrefReference ;
+    skos:member
+        :collaborative-drilling ,
+        :collaborative-exploration ;
+    skos:prefLabel "Exploration Initiatives document types"@en ;
 .
 
-:compliance
+:external-other
     a skos:Concept ;
-    dcterms:identifier "compliance"^^xsd:token ;
     rdfs:isDefinedBy cs: ;
-    skos:broader :departmental-publication ;
-    skos:definition "Report on compliance monitoring and surveillance activities of the mineral and energy resources sectors."@en ;
+    skos:broader :external-publication ;
+    skos:definition "Publication related to the acquisition, results or processing of geoscientific information."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "Compliance"@en ;
-    skos:notation "selected RBs"^^:samrefReference , "PGAR"^^:samrefReference ;
+    skos:notation "Ext"^^:samrefReference ;
+    skos:prefLabel "External other"@en ;
+.
+
+:geophysical-survey-report-acquisition
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :geophysical-report ;
+    skos:definition "A report, often outlining the activities or movements of individuals or teams whilst undertaking field activities, e.g., a production log. Often included in the final report."@en ;
+    skos:inScheme cs: ;
+    skos:notation "geophysical survey"^^:tabIndex ;
+    skos:prefLabel "Acquisition"@en ;
+.
+
+:geophysical-survey-report-final
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :geophysical-report ;
+    skos:definition "A detailed report, containing all information pertaining to the survey. It should contain information such as the dates of the survey, who was involved, technical information regarding instrumentation(s), field safety protocols, data format explanations, and data processing notes. It may also contain Acquisition and Logistics information and should be part of the geophysical data package."@en ;
+    skos:inScheme cs: ;
+    skos:notation "geophysical survey"^^:tabIndex ;
+    skos:prefLabel "Final"@en ;
+.
+
+:geophysical-survey-report-logistics
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :geophysical-report ;
+    skos:definition "A report, often as part of the Final Report, outlining field logistics. E.g., Campsite details, land access, a timeline and/or maps demonstrating how field activities were conducted."@en ;
+    skos:inScheme cs: ;
+    skos:notation "geophysical survey"^^:tabIndex ;
+    skos:prefLabel "Logistics"@en ;
+.
+
+:geoscience-reports-and-publications
+    a skos:Collection ;
+    skos:definition "All Geoscience Reports and Publications document types"@en ;
+    skos:inScheme cs: ;
+    skos:member
+        :energy-geoscience ,
+        :geological-survey-geoscience-publication ,
+        :mesa-journal ;
+    skos:prefLabel "Geoscience Reports and Publications document types"@en ;
+.
+
+:groundwater-report
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :external-publication ;
+    skos:definition "Report on the potential and recommended places for finding near-surface supplies of groundwater."@en ;
+    skos:inScheme cs: ;
+    skos:notation
+        "DEWNRTN"^^:samrefReference ,
+        "DEWNRTR"^^:samrefReference ,
+        "DWLBC"^^:samrefReference ,
+        "RWS"^^:samrefReference ;
+    skos:prefLabel "Consultant's groundwater report (closed series)"@en ;
+.
+
+:laboratory-analyses
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :external-publication ;
+    skos:definition "A report commissioned by the department for sample analyses."@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Laboratory Analyses"@en ;
+.
+
+:legislation-and-guidance
+    a skos:Collection ;
+    skos:definition "All Legislation and Guidance document types"@en ;
+    skos:inScheme cs: ;
+    skos:member
+        :energy-information-sheet ,
+        :energy-policy ,
+        :energy-regulatory-guideline ,
+        :mineral-information-sheet ,
+        :mineral-ministerial-determination ,
+        :mineral-policy ,
+        :mineral-regulatory-guideline ;
+    skos:prefLabel "Legislation and Guidance document types"@en ;
+.
+
+:mineral-exploration-company-reports
+    a skos:Collection ;
+    skos:definition "All Mineral Exploration Company Reports document types"@en ;
+    skos:inScheme cs: ;
+    skos:member :mineral-exploration ;
+    skos:prefLabel "Mineral Exploration Company Reports document types"@en ;
+.
+
+:mineral-mining-reports
+    a skos:Collection ;
+    skos:definition "All Mineral Mining Reports document types"@en ;
+    skos:inScheme cs: ;
+    skos:member
+        :mining-environmental-program ,
+        :mining-operation-compliance ,
+        :mining-operation-proposal ;
+    skos:prefLabel "Mineral Mining Reports document types"@en ;
 .
 
 :other
     a skos:Concept ;
-    dcterms:identifier "departmental-other"^^xsd:token ;
     rdfs:isDefinedBy cs: ;
     skos:broader :departmental-publication ;
     skos:definition "A publication or report that does not fall under any other departmental publication category."@en ;
@@ -114,77 +192,247 @@ cs:
     skos:prefLabel "Other"@en ;
 .
 
-:annual-licence-or-technical-report
+:private-mine-program
     a skos:Concept ;
-    dcterms:identifier "annual-licence-or-technical-report"^^xsd:token ;
     rdfs:isDefinedBy cs: ;
-    skos:broader :energy-company-report ;
-    skos:definition "Report detailing activities performed over a licence, including  exploration, retention, production, pipeline, survey and facilities for petroleum, geothermal and gas storage."@en ;
+    skos:broader :mineral-company-report ;
+    skos:definition "Mineral Private Mines (PM) operational report"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "Annual licence or technical report"@en ;
-    skos:notation "ENV"^^:samrefReference , "RB"^^:samrefReference ;
-    skos:notation "Comp PG Exp"^^:tabIndex ;
+    skos:notation
+        "MOP"^^:samrefReference ,
+        "Comp MCR"^^:tabIndex ,
+        "MOP"^^:tabIndex ;
+    skos:prefLabel "Private Mine Program"@en ;
 .
 
-:environmental-register
+:quarterly-geological-Notes
     a skos:Concept ;
-    dcterms:identifier "environmental-register"^^xsd:token ;
     rdfs:isDefinedBy cs: ;
-    skos:broader :energy-company-report ;
-    skos:definition "Company and South Australia's Department for Energy and Mining assessment reports, including environmental impact reports, statements of environmental objectives and environmental impact classifications.  Also public and government consultation reports."@en ;
+    skos:broader :departmental-publication-closed-series ;
+    skos:definition "Published from 1962 to 1996. Replaced by the MESA Journal."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "Environmental Register"@en ;
-    skos:notation "PGER"^^:samrefReference ;
-    skos:notation "PGER Envir Reg"^^:tabIndex ;
+    skos:notation "QGN"^^:samrefReference ;
+    skos:prefLabel "Quarterly Geological Notes"@en ;
 .
 
-:energy-geoscience
+:samrefReference
+    a rdfs:Datatype ;
+    rdfs:label "SAMRef ID" ;
+.
+
+:seismic-report-acquisition
     a skos:Concept ;
-    dcterms:identifier "energy-geoscience"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :seismic-report ;
+    skos:definition "A report pertaining to Seismic data acquisition, the first of the three distinct stages of seismic exploration. The report should include information such as location of the survey, survey scope and objectives, field operations such as line preparation, surveying and recording/acquisition of the data."@en ;
+    skos:inScheme cs: ;
+    skos:notation "geophysical survey"^^:tabIndex ;
+    skos:prefLabel "Acquisition"@en ;
+.
+
+:seismic-report-final
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :seismic-report ;
+    skos:definition "Overarching report that covers some/all aspects of seismic exploration. Usually includes embedded reports/appendices about Acquisition, Field Supervision, Operations, Processing, Surveying, Interpretation etc."@en ;
+    skos:inScheme cs: ;
+    skos:notation "geophysical survey"^^:tabIndex ;
+    skos:prefLabel "Final"@en ;
+.
+
+:seismic-report-interpretation
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :seismic-report ;
+    skos:definition "A report pertaining to Seismic data interpretation, the third of the three distinct stages of seismic exploration. The report should include information such as objectives of the survey acquisition, regional geology and exploration history of the area of interest, seismic mapping/interpretation including key horizons mapped and methodology, leads and prospects and conclusions."@en ;
+    skos:inScheme cs: ;
+    skos:notation "geophysical survey"^^:tabIndex ;
+    skos:prefLabel "Interpretation"@en ;
+.
+
+:seismic-report-operations
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :seismic-report ;
+    skos:definition "Generally refers to Field Operation activities undertaken during the acquisition of a survey. Includes line preparation, surveying, recording, QC/pre-processing of the data."@en ;
+    skos:inScheme cs: ;
+    skos:notation "geophysical survey"^^:tabIndex ;
+    skos:prefLabel "Operations"@en ;
+.
+
+:seismic-report-other
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :seismic-report ;
+    skos:definition "Refers to any other Seismic Report not captured by main categories."@en ;
+    skos:inScheme cs: ;
+    skos:notation "geophysical survey"^^:tabIndex ;
+    skos:prefLabel "Other"@en ;
+.
+
+:seismic-report-processing
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :seismic-report ;
+    skos:definition "A report pertaining to Seismic data processing, the second of the three distinct stages of seismic exploration. The report should include information such as acquisition parameters, goals and outcomes of the processing, processing sequence and final deliverable products."@en ;
+    skos:inScheme cs: ;
+    skos:notation "geophysical survey"^^:tabIndex ;
+    skos:prefLabel "Processing"@en ;
+.
+
+:tabIndex
+    a rdfs:Datatype ;
+    rdfs:label "Tab Index" ;
+    rdfs:comment "Decanted non DEM publications or Report Books records woksheet tab index" ;
+.
+
+:water-report
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :external-publication ;
+    skos:definition "A prospector’s reports concerning the potential and recommended placesor finding near-surface supplies of groundwater."@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Water Report"@en ;
+.
+
+:annual-report
+    a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:broader :departmental-publication ;
-    skos:definition "Publication on petroleum, geothermal or hydrogen, including acreage releases."@en ;
+    skos:definition "A report that describes at departmental activities and finances over a 12months period."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "Energy Geoscience"@en ;
-    skos:notation "PGSA"^^:samrefReference , "PEDP"^^:samrefReference , "RB"^^:samrefReference , "Broch 027"^^:samrefReference ;
+    skos:notation
+        "ANNRep"^^:samrefReference ,
+        "MERAR"^^:samrefReference ;
+    skos:prefLabel "Annual Report"@en ;
+.
+
+:bulletin
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :departmental-publication ;
+    skos:definition "Publication on a specialised geoscience subject."@en ;
+    skos:inScheme cs: ;
+    skos:notation "BULL"^^:samrefReference ;
+    skos:prefLabel "Bulletin"@en ;
+.
+
+:collaborative-drilling
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :exploration-initiative ;
+    skos:definition "A report detailing the drilling activities and results of a project that received support from a exploration initiative."@en ;
+    skos:inScheme cs: ;
+    skos:notation
+        "ADI"^^:samrefReference ,
+        "BHEI"^^:samrefReference ,
+        "PACE"^^:samrefReference ,
+        "SAEI"^^:samrefReference ,
+        "TEiSA"^^:samrefReference ;
+    skos:prefLabel "Collaborative Drilling"@en ;
+.
+
+:collaborative-exploration
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :exploration-initiative ;
+    skos:definition "A report detailing the activities and results of a project that received support from a exploration initiative."@en ;
+    skos:inScheme cs: ;
+    skos:notation
+        "ADI"^^:samrefReference ,
+        "BHEI"^^:samrefReference ,
+        "PACE"^^:samrefReference ,
+        "SAEI"^^:samrefReference ,
+        "TEiSA"^^:samrefReference ;
+    skos:prefLabel "Collaborative Exploration"@en ;
+.
+
+:commodity-review
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :departmental-publication-closed-series ;
+    skos:definition "Commodity Review (1994:2016)"@en ;
+    skos:inScheme cs: ;
+    skos:notation "ComRev"^^:samrefReference ;
+    skos:prefLabel "Commodity Review"@en ;
+.
+
+:compliance
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :departmental-publication ;
+    skos:definition "Report on compliance monitoring and surveillance activities of the mineral and energy resources sectors."@en ;
+    skos:inScheme cs: ;
+    skos:notation
+        "PGAR"^^:samrefReference ,
+        "selected RBs"^^:samrefReference ;
+    skos:prefLabel "Compliance"@en ;
+.
+
+:hydrogen-and-renewable-energy-information-sheet
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :legislation-and-policy ;
+    skos:definition "Hydrogen and Renewable Energy information relevant to industry and community."@en ;
+    skos:inScheme cs: ;
+    skos:notation "IS HRE" ;
+    skos:prefLabel "Hydrogen and Renewable Energy Information Sheet"@en ;
+.
+:hydrogen-and-renewable-energy-policy
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :legislation-and-policy ;
+    skos:definition "Statements relating to the administration and regulation of Hydrogen and Renewable Energy activities."@en ;
+    skos:inScheme cs: ;
+    skos:notation "HREpol" ;
+    skos:prefLabel "Hydrogen and Renewable Energy Policy"@en ;
+.
+:hydrogen-and-renewable-energy-regulatory-guideline
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :legislation-and-policy ;
+    skos:definition "Detailed information to support industry in meeting requirements under the Hydrogen and Renewable Energy Act."@en ;
+    skos:inScheme cs: ;
+    skos:notation "HRERG" ;
+    skos:prefLabel "Hydrogen and Renewable Energy Regulatory Guideline"@en ;
 .
 
 :energy-information-sheet
     a skos:Concept ;
-    dcterms:identifier "energy-information-sheet"^^xsd:token ;
     rdfs:isDefinedBy cs: ;
     skos:broader :legislation-and-policy ;
     skos:definition "Energy exploration and production operations information relevant to industry and community"@en ;
     skos:inScheme cs: ;
+    skos:notation
+        "FS"^^:samrefReference ,
+        "IS P"^^:samrefReference ;
     skos:prefLabel "Energy Information Sheet"@en ;
-    skos:notation "IS P"^^:samrefReference , "FS"^^:samrefReference ;
 .
 
 :energy-policy
     a skos:Concept ;
-    dcterms:identifier "energy-policy"^^xsd:token ;
     rdfs:isDefinedBy cs: ;
     skos:broader :legislation-and-policy ;
     skos:definition "Statements relating to the administration and regulation of energy resources exploration and production activities."@en ;
     skos:inScheme cs: ;
+    skos:notation
+        "PGPol"^^:samrefReference ,
+        "RB 2018/00008"^^:samrefReference ;
     skos:prefLabel "Energy Policy"@en ;
-    skos:notation "PGPol"^^:samrefReference , "RB 2018/00008"^^:samrefReference ;
 .
 
 :energy-regulatory-guideline
     a skos:Concept ;
-    dcterms:identifier "energy-regulatory-guideline"^^xsd:token ;
     rdfs:isDefinedBy cs: ;
     skos:broader :legislation-and-policy ;
     skos:definition "Detailed information to support exploration and production companies in meeting requirements under the Petroleum and Geothermal Act, 2000"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "Energy Regulatory Guideline"@en ;
     skos:notation "PGRG"^^:samrefReference ;
+    skos:prefLabel "Energy Regulatory Guideline"@en ;
 .
 
 :engineering-geology-publication
     a skos:Concept ;
-    dcterms:identifier "engineering-geology-publication"^^xsd:token ;
     rdfs:isDefinedBy cs: ;
     skos:broader :departmental-publication ;
     skos:definition "A publcation for engineering related data and interpretations derived from geosphere materials."@en ;
@@ -192,74 +440,18 @@ cs:
     skos:prefLabel "Engineering Geology Publication"@en ;
 .
 
-:bulletin
-    a skos:Concept ;
-    dcterms:identifier "bulletin"^^xsd:token ;
-    rdfs:isDefinedBy cs: ;
-    skos:broader :departmental-publication ;
-    skos:definition "Publication on a specialised geoscience subject."@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Bulletin"@en ;
-    skos:notation "BULL"^^:samrefReference ;
-.
-
-:geological-survey-geoscience-publication
-    a skos:Concept ;
-    dcterms:identifier "geological-survey-geoscience-publication"^^xsd:token ;
-    rdfs:isDefinedBy cs: ;
-    skos:broader :departmental-publication ;
-    skos:definition "A publication or technical report that has been produced by, for or in collaboration with South Australian Minerals and Energy Resources."@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Geological Survey Geoscience Publication"@en ;
-.
-
-:geophysical-survey-report-acquisition
-    a skos:Concept ;
-    dcterms:identifier "geophysical-survey-report-acquisition"^^xsd:token ;
-    rdfs:isDefinedBy cs: ;
-    skos:broader :geophysical-report ;
-    skos:definition "A report, often outlining the activities or movements of individuals or teams whilst undertaking field activities, e.g., a production log. Often included in the final report."@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Acquisition"@en ;
-    skos:notation "geophysical survey"^^:tabIndex ;
-.
-
-:geophysical-survey-report-final
-    a skos:Concept ;
-    dcterms:identifier "geophysical-survey-report-final"^^xsd:token ;
-    rdfs:isDefinedBy cs: ;
-    skos:broader :geophysical-report ;
-    skos:definition "A detailed report, containing all information pertaining to the survey. It should contain information such as the dates of the survey, who was involved, technical information regarding instrumentation(s), field safety protocols, data format explanations, and data processing notes. It may also contain Acquisition and Logistics information and should be part of the geophysical data package."@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Final"@en ;
-    skos:notation "geophysical survey"^^:tabIndex ;
-.
-
-:geophysical-survey-report-logistics
-    a skos:Concept ;
-    dcterms:identifier "geophysical-survey-report-logistics"^^xsd:token ;
-    rdfs:isDefinedBy cs: ;
-    skos:broader :geophysical-report ;
-    skos:definition "A report, often as part of the Final Report, outlining field logistics. E.g., Campsite details, land access, a timeline and/or maps demonstrating how field activities were conducted."@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Logistics"@en ;
-    skos:notation "geophysical survey"^^:tabIndex ;
-.
-
 :handbook
     a skos:Concept ;
-    dcterms:identifier "handbook"^^xsd:token ;
     rdfs:isDefinedBy cs: ;
     skos:broader :departmental-publication-closed-series ;
     skos:definition "Handbook (1980:1993)"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "Handbook"@en ;
     skos:notation "HANDBK"^^:samrefReference ;
+    skos:prefLabel "Handbook"@en ;
 .
 
 :hydrogeological-publication
     a skos:Concept ;
-    dcterms:identifier "hydrogeological-publication"^^xsd:token ;
     rdfs:isDefinedBy cs: ;
     skos:broader :departmental-publication ;
     skos:definition "A publication  where the major subject matter involves the science and practical applications of hydrogeology, using data obtained in South Australia."@en ;
@@ -269,40 +461,26 @@ cs:
 
 :inspector-of-mines-report
     a skos:Concept ;
-    dcterms:identifier "inspector-of-mines-report"^^xsd:token ;
     rdfs:isDefinedBy cs: ;
     skos:broader :departmental-publication-closed-series ;
     skos:definition "Inspector of Mines reports published from 1899 to 1945."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "Inspector Of Mines Report"@en ;
     skos:notation "IMR"^^:samrefReference ;
+    skos:prefLabel "Inspector Of Mines Report"@en ;
 .
 
 :letter-book
     a skos:Concept ;
-    dcterms:identifier "letter-book"^^xsd:token ;
     rdfs:isDefinedBy cs: ;
     skos:broader :departmental-publication-closed-series ;
     skos:definition "Published from 1883 to 1914. Historical letters between Government Geologist HYL Brown and the Inspector of Mines (originals held by State Records of South Australia due to fragile nature)."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "Letter Book"@en ;
     skos:notation "LB"^^:samrefReference ;
-.
-
-:mesa-journal
-    a skos:Concept ;
-    dcterms:identifier "mesa-journal"^^xsd:token ;
-    rdfs:isDefinedBy cs: ;
-    skos:broader :departmental-publication ;
-    skos:definition "The South Australia MESA Journal  publication detailing activities of the Geological Survey of South Australian, government initiatives and news relating to the mineral and energy resource sectors"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Mesa Journal"@en ;
-    skos:notation "MESAJ"^^:samrefReference ;
+    skos:prefLabel "Letter Book"@en ;
 .
 
 :mineral-and-energy-resources-annual-review
     a skos:Concept ;
-    dcterms:identifier "mineral-and-energy-resources-annual-review"^^xsd:token ;
     rdfs:isDefinedBy cs: ;
     skos:broader :departmental-publication-closed-series ;
     skos:definition "Mineral and Energy Resources Annual Review (2000:2003)"@en ;
@@ -312,197 +490,156 @@ cs:
 
 :mineral-exploration
     a skos:Concept ;
-    dcterms:identifier "mineral-exploration"^^xsd:token ;
     rdfs:isDefinedBy cs: ;
     skos:broader :mineral-company-report ;
     skos:definition "Report on activities performed over a mineral exploration tenement."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "Mineral Exploration"@en ;
     skos:notation "ENV"^^:samrefReference ;
+    skos:prefLabel "Mineral Exploration"@en ;
 .
 
 :mineral-industry-quarterly
     a skos:Concept ;
-    dcterms:identifier "mineral-industry-quarterly"^^xsd:token ;
     rdfs:isDefinedBy cs: ;
     skos:broader :departmental-publication-closed-series ;
     skos:definition "Mineral Industry Quarterly (1976-1995)"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "Mineral Industry Quarterly"@en ;
     skos:notation "MIQ"^^:samrefReference ;
+    skos:prefLabel "Mineral Industry Quarterly"@en ;
 .
 
 :mineral-information-series
     a skos:Concept ;
-    dcterms:identifier "mineral-information-series"^^xsd:token ;
     rdfs:isDefinedBy cs: ;
     skos:broader :departmental-publication-closed-series ;
     skos:definition "Mineral Information Series (1958:1985)"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "Mineral Information Series"@en ;
     skos:notation "MIS"^^:samrefReference ;
+    skos:prefLabel "Mineral Information Series"@en ;
 .
 
 :mineral-information-sheet
     a skos:Concept ;
-    dcterms:identifier "mineral-information-sheet"^^xsd:token ;
     rdfs:isDefinedBy cs: ;
     skos:broader :legislation-and-policy ;
     skos:definition "Mineral exploration and mining operation Information relevant to industry and community"@en ;
     skos:inScheme cs: ;
+    skos:notation
+        "FS"^^:samrefReference ,
+        "IS M"^^:samrefReference ;
     skos:prefLabel "Mineral Information Sheet"@en ;
-    skos:notation "IS M"^^:samrefReference , "FS"^^:samrefReference ;
-.
-
-:laboratory-analyses
-    a skos:Concept ;
-    dcterms:identifier "laboratory-analyses"^^xsd:token ;
-    rdfs:isDefinedBy cs: ;
-    skos:broader :external-publication ;
-    skos:definition "A report commissioned by the department for sample analyses."@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Laboratory Analyses"@en ;
 .
 
 :mineral-ministerial-determination
     a skos:Concept ;
-    dcterms:identifier "mineral-ministerial-determination"^^xsd:token ;
     rdfs:isDefinedBy cs: ;
     skos:broader :legislation-and-policy ;
     skos:definition "Determinations are statutory instruments that enable the Minister to make specific decisions about the regulation of mineral exploration and mining"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "Mineral Ministerial Determination"@en ;
     skos:notation "MD"^^:samrefReference ;
+    skos:prefLabel "Mineral Ministerial Determination"@en ;
 .
 
 :mineral-policy
     a skos:Concept ;
-    dcterms:identifier "mineral-policy"^^xsd:token ;
     rdfs:isDefinedBy cs: ;
     skos:broader :legislation-and-policy ;
     skos:definition "Statements relating to the administration and regulation of mineral exploration and mining activities."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "Mineral Policy"@en ;
     skos:notation "Mpol"^^:samrefReference ;
+    skos:prefLabel "Mineral Policy"@en ;
 .
 
 :mineral-production
     a skos:Concept ;
-    dcterms:identifier "mineral-production"^^xsd:token ;
     rdfs:isDefinedBy cs: ;
     skos:broader :departmental-publication ;
     skos:definition "Statistics on mineral production (primary and extractive), quantified by main commodity types itemised by subcategories."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "Mineral Production"@en ;
     skos:notation "RBs"^^:samrefReference ;
+    skos:prefLabel "Mineral Production"@en ;
 .
 
 :mineral-regulatory-guideline
     a skos:Concept ;
-    dcterms:identifier "mineral-regulatory-guideline"^^xsd:token ;
     rdfs:isDefinedBy cs: ;
     skos:broader :legislation-and-policy ;
     skos:definition "Detailed information to support exploration and mining companies in meeting requirements under the Mining Act"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "Mineral Regulatory Guideline"@en ;
     skos:notation "MRG"^^:samrefReference ;
+    skos:prefLabel "Mineral Regulatory Guideline"@en ;
 .
 
 :mineral-resources-review
     a skos:Concept ;
-    dcterms:identifier "mineral-resources-review"^^xsd:token ;
     rdfs:isDefinedBy cs: ;
     skos:broader :departmental-publication-closed-series ;
     skos:definition "Mineral Resources Review :(1904:1988):superseded by MESA Journal"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "Mineral Resources Review"@en ;
     skos:notation "MRR"^^:samrefReference ;
+    skos:prefLabel "Mineral Resources Review"@en ;
 .
 
 :mines-and-energy-review
     a skos:Concept ;
-    dcterms:identifier "mines-and-energy-review"^^xsd:token ;
     rdfs:isDefinedBy cs: ;
     skos:broader :departmental-publication-closed-series ;
     skos:definition "Mines and Energy Review:(1904:1988):superseded by MESA Journal"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "Mines And Energy Review"@en ;
     skos:notation "MER"^^:samrefReference ;
-.
-
-:mining-operation-compliance
-    a skos:Concept ;
-    dcterms:identifier "mining-operation-compliance"^^xsd:token ;
-    rdfs:isDefinedBy cs: ;
-    skos:broader :mineral-company-report ;
-    skos:definition "An annual compliance report for authorised operations on a mining lease, miscellaneous purpose licence, retention lease "@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Mining Operation Compliance"@en ;
-    skos:notation "MCP"^^:samrefReference ;
-    skos:notation "Comp MCR"^^:tabIndex ;
+    skos:prefLabel "Mines And Energy Review"@en ;
 .
 
 :mining-environmental-program
     a skos:Concept ;
-    dcterms:identifier "mining-environmental-program"^^xsd:token ;
     rdfs:isDefinedBy cs: ;
     skos:broader :mineral-company-report ;
     skos:definition "Program for environment protection and rehabilitation report for mineral exploration or mining production."@en ;
     skos:inScheme cs: ;
+    skos:notation
+        "EPEPR"^^:samrefReference ,
+        "PEPR"^^:samrefReference ,
+        "Comp PEPR"^^:tabIndex ;
     skos:prefLabel "Mining Environmental Program"@en ;
-    skos:notation "PEPR"^^:samrefReference , "EPEPR"^^:samrefReference ;
-    skos:notation "Comp PEPR"^^:tabIndex ;
+.
+
+:mining-operation-compliance
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :mineral-company-report ;
+    skos:definition "An annual compliance report for authorised operations on a mining lease, miscellaneous purpose licence, retention lease "@en ;
+    skos:inScheme cs: ;
+    skos:notation
+        "MCP"^^:samrefReference ,
+        "Comp MCR"^^:tabIndex ;
+    skos:prefLabel "Mining Operation Compliance"@en ;
 .
 
 :mining-operation-proposal
     a skos:Concept ;
-    dcterms:identifier "mining-operation-proposal"^^xsd:token ;
     rdfs:isDefinedBy cs: ;
     skos:broader :mineral-company-report ;
     skos:definition "Mineral Lease (ML), Extractive Mineral Lease (EML) or Miscellaneous Purposes Licence (MPL) tenement application prior to commencing mining operations"@en ;
     skos:inScheme cs: ;
+    skos:notation
+        "MP"^^:samrefReference ,
+        "Comp MP"^^:tabIndex ,
+        "MOP"^^:tabIndex ;
     skos:prefLabel "Mining Operation Proposal"@en ;
-    skos:notation "MP"^^:samrefReference ;
-    skos:notation "Comp MP"^^:tabIndex , "MOP"^^:tabIndex ;
 .
 
 :mining-review
     a skos:Concept ;
-    dcterms:identifier "mining-review"^^xsd:token ;
     rdfs:isDefinedBy cs: ;
     skos:broader :departmental-publication-closed-series ;
     skos:definition "Mining Review:(1904:1988):superseded by MESA Journal"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "Mining Review"@en ;
     skos:notation "MR"^^:samrefReference ;
-.
-
-:quarterly-geological-Notes
-    a skos:Concept ;
-    dcterms:identifier "quarterly-geological-notes"^^xsd:token ;
-    rdfs:isDefinedBy cs: ;
-    skos:broader :departmental-publication-closed-series ;
-    skos:definition "Published from 1962 to 1996. Replaced by the MESA Journal."@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Quarterly Geological Notes"@en ;
-    skos:notation "QGN"^^:samrefReference ;
-.
-
-:private-mine-program
-    a skos:Concept ;
-    dcterms:identifier "private-mine-program"^^xsd:token ;
-    rdfs:isDefinedBy cs: ;
-    skos:broader :mineral-company-report ;
-    skos:definition "Mineral Private Mines (PM) operational report"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Private Mine Program"@en ;
-    skos:notation "MOP"^^:samrefReference ;
-    skos:notation "Comp MCR"^^:tabIndex , "MOP"^^:tabIndex ;
+    skos:prefLabel "Mining Review"@en ;
 .
 
 :quarterly-note
     a skos:Concept ;
-    dcterms:identifier "quarterly-note"^^xsd:token ;
     rdfs:isDefinedBy cs: ;
     skos:broader :departmental-publication-closed-series ;
     skos:definition "Quarterly Notes (1962:1975)"@en ;
@@ -512,138 +649,75 @@ cs:
 
 :record-of-mine
     a skos:Concept ;
-    dcterms:identifier "record-of-mine"^^xsd:token ;
     rdfs:isDefinedBy cs: ;
     skos:broader :departmental-publication-closed-series ;
     skos:definition "Record of Mines (1899:1936)"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "Record Of Mine"@en ;
     skos:notation "RM"^^:samrefReference ;
+    skos:prefLabel "Record Of Mine"@en ;
 .
 
 :report-of-investigation
     a skos:Concept ;
-    dcterms:identifier "report-of-investigation"^^xsd:token ;
     rdfs:isDefinedBy cs: ;
     skos:broader :departmental-publication-closed-series ;
     skos:definition "Report of Investigations (1954:1999)"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "Report Of Investigation"@en ;
     skos:notation "RI"^^:samrefReference ;
-.
-
-:seismic-report-acquisition
-    a skos:Concept ;
-    dcterms:identifier "seismic-report-acquisition"^^xsd:token ;
-    rdfs:isDefinedBy cs: ;
-    skos:broader :seismic-report ;
-    skos:definition "A report pertaining to Seismic data acquisition, the first of the three distinct stages of seismic exploration. The report should include information such as location of the survey, survey scope and objectives, field operations such as line preparation, surveying and recording/acquisition of the data."@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Acquisition"@en ;
-    skos:notation "geophysical survey"^^:tabIndex ;
-.
-
-:seismic-report-final
-    a skos:Concept ;
-    dcterms:identifier "seismic-report-final"^^xsd:token ;
-    rdfs:isDefinedBy cs: ;
-    skos:broader :seismic-report ;
-    skos:definition "Overarching report that covers some/all aspects of seismic exploration. Usually includes embedded reports/appendices about Acquisition, Field Supervision, Operations, Processing, Surveying, Interpretation etc."@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Final"@en ;
-    skos:notation "geophysical survey"^^:tabIndex ;
-.
-
-:seismic-report-interpretation
-    a skos:Concept ;
-    dcterms:identifier "seismic-report-interpretation"^^xsd:token ;
-    rdfs:isDefinedBy cs: ;
-    skos:broader :seismic-report ;
-    skos:definition "A report pertaining to Seismic data interpretation, the third of the three distinct stages of seismic exploration. The report should include information such as objectives of the survey acquisition, regional geology and exploration history of the area of interest, seismic mapping/interpretation including key horizons mapped and methodology, leads and prospects and conclusions."@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Interpretation"@en ;
-    skos:notation "geophysical survey"^^:tabIndex ;
-.
-
-:seismic-report-operations
-    a skos:Concept ;
-    dcterms:identifier "seismic-report-operations"^^xsd:token ;
-    rdfs:isDefinedBy cs: ;
-    skos:broader :seismic-report ;
-    skos:definition "Generally refers to Field Operation activities undertaken during the acquisition of a survey. Includes line preparation, surveying, recording, QC/pre-processing of the data."@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Operations"@en ;
-    skos:notation "geophysical survey"^^:tabIndex ;
-.
-
-:seismic-report-other
-    a skos:Concept ;
-    dcterms:identifier "seismic-report-other"^^xsd:token ;
-    rdfs:isDefinedBy cs: ;
-    skos:broader :seismic-report ;
-    skos:definition "Refers to any other Seismic Report not captured by main categories."@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Other"@en ;
-    skos:notation "geophysical survey"^^:tabIndex ;
-.
-
-:seismic-report-processing
-    a skos:Concept ;
-    dcterms:identifier "seismic-report-processing"^^xsd:token ;
-    rdfs:isDefinedBy cs: ;
-    skos:broader :seismic-report ;
-    skos:definition "A report pertaining to Seismic data processing, the second of the three distinct stages of seismic exploration. The report should include information such as acquisition parameters, goals and outcomes of the processing, processing sequence and final deliverable products."@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Processing"@en ;
-    skos:notation "geophysical survey"^^:tabIndex ;
+    skos:prefLabel "Report Of Investigation"@en ;
 .
 
 :special-publication
     a skos:Concept ;
-    dcterms:identifier "special-publication"^^xsd:token ;
     rdfs:isDefinedBy cs: ;
     skos:broader :departmental-publication-closed-series ;
     skos:definition "Special Publication (1908:2004)"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "Special Publication"@en ;
     skos:notation "SP"^^:samrefReference ;
+    skos:prefLabel "Special Publication"@en ;
 .
 
-:water-report
+:energy-geoscience
     a skos:Concept ;
-    dcterms:identifier "water-report"^^xsd:token ;
     rdfs:isDefinedBy cs: ;
-    skos:broader :external-publication ;
-    skos:definition "A prospector’s reports concerning the potential and recommended placesor finding near-surface supplies of groundwater."@en ;
+    skos:broader :departmental-publication ;
+    skos:definition "Publication on petroleum, geothermal or hydrogen, including acreage releases."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "Water Report"@en ;
+    skos:notation
+        "Broch 027"^^:samrefReference ,
+        "PEDP"^^:samrefReference ,
+        "PGSA"^^:samrefReference ,
+        "RB"^^:samrefReference ;
+    skos:prefLabel "Energy Geoscience"@en ;
 .
 
-:groundwater-report
+:geological-survey-geoscience-publication
     a skos:Concept ;
-    dcterms:identifier "groundwater-report"^^xsd:token ;
     rdfs:isDefinedBy cs: ;
-    skos:broader :external-publication ;
-    skos:definition "Report on the potential and recommended places for finding near-surface supplies of groundwater."@en ;
+    skos:broader :departmental-publication ;
+    skos:definition "A publication or technical report that has been produced by, for or in collaboration with South Australian Minerals and Energy Resources."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "Consultant's groundwater report (closed series)"@en ;
-    skos:notation "DEWNRTN"^^:samrefReference , "DEWNRTR"^^:samrefReference , "DWLBC"^^:samrefReference , "RWS"^^:samrefReference ;
+    skos:prefLabel "Geological Survey Geoscience Publication"@en ;
 .
 
-:external-other
+:mesa-journal
     a skos:Concept ;
-    dcterms:identifier "external-other"^^xsd:token ;
     rdfs:isDefinedBy cs: ;
-    skos:broader :external-publication ;
-    skos:definition "Publication related to the acquisition, results or processing of geoscientific information."@en ;
+    skos:broader :departmental-publication ;
+    skos:definition "The South Australia MESA Journal  publication detailing activities of the Geological Survey of South Australian, government initiatives and news relating to the mineral and energy resource sectors"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "External other"@en ;
-    skos:notation "Ext"^^:samrefReference ;
+    skos:notation "MESAJ"^^:samrefReference ;
+    skos:prefLabel "Mesa Journal"@en ;
+.
+
+<https://linked.data.gov.au/org/mer>
+    a schema:Organization ;
+    schema:name "SA Minerals & Energy Resources" ;
+    schema:url "https://www.energymining.sa.gov.au/industry/geological-survey"^^xsd:anyURI ;
 .
 
 :energy-company-report
     a skos:Concept ;
-    dcterms:identifier "energy-company-report"^^xsd:token ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Company reports governed by the Petroleum and Geothermal Act 2000 of South Australia"@en ;
     skos:inScheme cs: ;
@@ -653,7 +727,6 @@ cs:
 
 :exploration-initiative
     a skos:Concept ;
-    dcterms:identifier "exploration-initiative"^^xsd:token ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Reports that were funded either fully or partially by a South Australian Government grant in aid of exploration ((South Australian Exploration Initiative (SAEI), Broken Hill Exploration Initiative (BHEI), Targeted Exploration Initiative South Australia (TEiSA), Plan for Accelerating Exploration (PACE), Accelerated Discovery Initiative (ADI))."@en ;
     skos:inScheme cs: ;
@@ -663,7 +736,6 @@ cs:
 
 :external-publication
     a skos:Concept ;
-    dcterms:identifier "external-publication"^^xsd:token ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Publications or reports that were produced by sources external to South Australia's Department for Energy and Mining related to the acquisition, results or processing of geoscientific information."@en ;
     skos:inScheme cs: ;
@@ -673,7 +745,6 @@ cs:
 
 :geophysical-report
     a skos:Concept ;
-    dcterms:identifier "geophysical-report"^^xsd:token ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Reports pertaining to the aquisition, processing or result interpretation of geophysical data."@en ;
     skos:inScheme cs: ;
@@ -683,7 +754,6 @@ cs:
 
 :mineral-company-report
     a skos:Concept ;
-    dcterms:identifier "mineral-company-report"^^xsd:token ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Mineral company reports pertaining to exploration, mining operation and environmental activities to meet Mining Act 1971 and associated Mining Regulations 2020 requirements"@en ;
     skos:inScheme cs: ;
@@ -693,18 +763,16 @@ cs:
 
 :seismic-report
     a skos:Concept ;
-    dcterms:identifier "seismic-report"^^xsd:token ;
     rdfs:isDefinedBy cs: ;
     skos:broader :geophysical-report ;
     skos:definition "Generic parent of all Seismic Report types"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "Seismic Report"@en ;
     skos:notation "geophysical survey"^^:tabIndex ;
+    skos:prefLabel "Seismic Report"@en ;
 .
 
 :legislation-and-policy
     a skos:Concept ;
-    dcterms:identifier "legislation-and-policy"^^xsd:token ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Legislation, policies, and guidelines to regulate and aid in mineral exploration and mining operations in South Australia under the Mines and Works Inspection Act 1920 and Opal Mining Act 1995, Mining Act 1971 and associated regulations, and Petroleum and Geothermal Act 2000 of South Australia"@en ;
     skos:inScheme cs: ;
@@ -714,7 +782,6 @@ cs:
 
 :departmental-publication
     a skos:Concept ;
-    dcterms:identifier "departmental-publication"^^xsd:token ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Publications produced by South Australia's Department for Energy and Mining."@en ;
     skos:inScheme cs: ;
@@ -724,7 +791,6 @@ cs:
 
 :departmental-publication-closed-series
     a skos:Concept ;
-    dcterms:identifier "departmental-publication-closed-series"^^xsd:token ;
     rdfs:isDefinedBy cs: ;
     skos:broader :departmental-publication ;
     skos:definition "Publications produced by South Australia's Department for Energy and Mining, that have been superseded or discontinued."@en ;
@@ -732,97 +798,26 @@ cs:
     skos:prefLabel "Closed Series"@en ;
 .
 
-:departmental-publications
-    a skos:Collection ;
-    dcterms:identifier "departmental-publications"^^xsd:token ;
-    skos:definition "All Departmental Publications document types"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Departmental Publications document types"@en ;
-    skos:member
-        :annual-report ,
-		:bulletin ,
-		:commodity-review ,
-		:handbook ,
-		:inspector-of-mines-report ,
-		:letter-book ,
-		:mineral-and-energy-resources-annual-review ,
-		:mineral-industry-quarterly ,
-		:mineral-information-series ,
-		:mineral-resources-review ,
-		:mines-and-energy-review ,
-		:mining-review ,
-		:quarterly-geological-notes ,
-		:quarterly-note ,
-		:record-of-mine ,
-		:report-of-investigation ,
-		:special-publication ,
-		:compliance ,
-		:energy-geoscience ,
-        :engineering-geology-publication ,
-        :geological-survey-geoscience-publication ,
-        :hydrogeological-publication ,
-        :mesa-journal ,
-		:mineral-production ,
-        :departmental-other ;
-.
-
-:legislation-and-guidance
-    a skos:Collection ;
-    dcterms:identifier "legislation-and-guidance"^^xsd:token ;
-    skos:definition "All Legislation and Guidance document types"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Legislation and Guidance document types"@en ;
-    skos:member
-        :energy-information-sheet ,
-        :energy-policy ,
-        :energy-regulatory-guideline ,
-        :mineral-information-sheet ,
-        :mineral-ministerial-determination ,
-        :mineral-policy ,
-        :mineral-regulatory-guideline ;
-.
-
-:mineral-exploration-company-reports
-    a skos:Collection ;
-    dcterms:identifier "mineral-exploration-company-reports"^^xsd:token ;
-    skos:definition "All Mineral Exploration Company Reports document types"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Mineral Exploration Company Reports document types"@en ;
-    skos:member
-        :mineral-exploration ;
-.
-
-:exploration-initiatives
-    a skos:Collection ;
-    dcterms:identifier "exploration-initiatives"^^xsd:token ;
-    skos:definition "All Exploration Initiatives document types"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Exploration Initiatives document types"@en ;
-    skos:member
-        :collaborative-drilling ,
-        :collaborative-exploration ;
-.
-
-:mineral-mining-reports
-    a skos:Collection ;
-    dcterms:identifier "mineral-mining-reports"^^xsd:token ;
-    skos:definition "All Mineral Mining Reports document types"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Mineral Mining Reports document types"@en ;
-    skos:member
-        :mining-operation-proposal ,
-        :mining-operation-compliance ,
-        :mining-environmental-program ;
-.
-
-:geoscience-reports-and-publications
-    a skos:Collection ;
-    dcterms:identifier "geoscience-reports-and-publications"^^xsd:token ;
-    skos:definition "All Geoscience Reports and Publications document types"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Geoscience Reports and Publications document types"@en ;
-    skos:member
-        :mesa-journal ,
-        :geological-survey-geoscience-publication ,
-        :energy-geoscience ;
+cs:
+    a skos:ConceptScheme ;
+    reg:status astatus:stable ;
+    skos:changeNote "2024-08-26 NJC Made VocPub 4.10 valid, LongTurtle formatted, no content changes" ;
+    skos:definition "Types of document produced and used by South Australian Minerals and Energy Resources"@en ;
+    skos:hasTopConcept
+        :departmental-publication ,
+        :energy-company-report ,
+        :exploration-initiative ,
+        :external-publication ,
+        :geophysical-report ,
+        :legislation-and-policy ,
+        :mineral-company-report ;
+    skos:prefLabel "MER Document Types"@en ;
+    schema:citation "This vocabulary was created in 2022 by and for the MER to support its data catalogue." ;
+    schema:creator <https://linked.data.gov.au/org/mer> ;
+    schema:dateCreated "2022-11-25"^^xsd:date ;
+    schema:dateModified "2024-08-26"^^xsd:date ;
+    schema:issued "2022-11-25"^^xsd:date ;
+    schema:license <https://purl.org/NET/rdflicense/cc-by4.0> ;
+    schema:publisher <https://linked.data.gov.au/org/mer> ;
+    schema:rights "© Department for Energy and Mining, 2022" ;
 .

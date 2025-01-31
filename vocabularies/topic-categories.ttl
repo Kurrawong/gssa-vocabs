@@ -1,28 +1,24 @@
 PREFIX : <http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation/code/MD_TopicCategoryCode/>
-PREFIX agldwgstatus: <https://linked.data.gov.au/def/reg-statuses/>
+PREFIX astatus: <https://linked.data.gov.au/def/reg-statuses/>
 PREFIX cs: <http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation/code/MD_TopicCategoryCode>
-PREFIX dcat: <http://www.w3.org/ns/dcat#>
-PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX reg: <http://purl.org/linked-data/registry#>
-PREFIX sdo: <https://schema.org/>
+PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX this-cs: <https://linked.data.gov.au/def/mer-topic-categories>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<http://def.isotc211.org/org/tc211>
-    a sdo:Organization ;
-    sdo:description "The International Organization for Standardization's Technical Committee on \"Geographic information/Geomatics\", charged with standardization in the field of digital geographic information"@en ;
-    sdo:name "ISO's Technical Committee 211" ;
-    sdo:url "https://www.iso.org/committee/54904.html"^^xsd:anyURI ;
+<https://linked.data.gov.au/org/tc211>
+    a schema:Organization ;
+    schema:description "The International Organization for Standardization's Technical Committee on \"Geographic information/Geomatics\", charged with standardization in the field of digital geographic information"@en ;
+    schema:name "ISO's Technical Committee 211" ;
+    schema:url "https://www.iso.org/committee/54904.html"^^xsd:anyURI ;
 .
 
 :boundaries
     a skos:Concept ;
-    dcterms:identifier "boundaries"^^xsd:token ;
-    dcterms:provenance "Presented in the original standard's codelist"@en ;
-    reg:status agldwgstatus:original ;
+    reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition """Legal land descriptions.
 
@@ -30,13 +26,12 @@ Examples: political and administrative boundaries"""@en ;
     skos:inScheme this-cs: ;
     skos:prefLabel "Boundaries"@en ;
     skos:topConceptOf this-cs: ;
+    schema:citation "Presented in the original standard's codelist"@en ;
 .
 
 :environment
     a skos:Concept ;
-    dcterms:identifier "environment"^^xsd:token ;
-    dcterms:provenance "Presented in the original standard's codelist"@en ;
-    reg:status agldwgstatus:original ;
+    reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition """Environmental resources, protection and conservation.
 
@@ -45,13 +40,12 @@ Examples: environmental pollution, waste storage and treatment, environmental im
     skos:inScheme this-cs: ;
     skos:prefLabel "Environment"@en ;
     skos:topConceptOf this-cs: ;
+    schema:citation "Presented in the original standard's codelist"@en ;
 .
 
 :geoscientificInformation
     a skos:Concept ;
-    dcterms:identifier "geoscientificInformation"^^xsd:token ;
-    dcterms:provenance "Presented in the original standard's codelist"@en ;
-    reg:status agldwgstatus:original ;
+    reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition """Information pertaining to earth sciences.
 
@@ -59,13 +53,12 @@ Examples: geophysical features and processes, geology, minerals, sciences dealin
     skos:inScheme this-cs: ;
     skos:prefLabel "Geoscientific Information"@en ;
     skos:topConceptOf this-cs: ;
+    schema:citation "Presented in the original standard's codelist"@en ;
 .
 
 :transportation
     a skos:Concept ;
-    dcterms:identifier "transportation"^^xsd:token ;
-    dcterms:provenance "Presented in the original standard's codelist"@en ;
-    reg:status agldwgstatus:original ;
+    reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition """Means and aids for conveying persons and/or goods.
 
@@ -73,13 +66,12 @@ Examples: roads, airports/airstrips, shipping routes, tunnels, nautical charts, 
     skos:inScheme this-cs: ;
     skos:prefLabel "Transportation"@en ;
     skos:topConceptOf this-cs: ;
+    schema:citation "Presented in the original standard's codelist"@en ;
 .
 
 :utilitiesCommunication
     a skos:Concept ;
-    dcterms:identifier "utilitiesCommunication"^^xsd:token ;
-    dcterms:provenance "Presented in the original standard's codelist"@en ;
-    reg:status agldwgstatus:original ;
+    reg:status astatus:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition """Energy, water and waste systems and communications infrastructure and services.
 
@@ -87,36 +79,38 @@ Examples: hydroelectricity, geothermal, solar and nuclear sources of energy, wat
     skos:inScheme this-cs: ;
     skos:prefLabel "Utilities Communication"@en ;
     skos:topConceptOf this-cs: ;
+    schema:citation "Presented in the original standard's codelist"@en ;
 .
 
 <https://linked.data.gov.au/org/mer>
-    a sdo:Organization ;
-    sdo:name "SA Minerals & Energy Resources" ;
-    sdo:url "https://www.energymining.sa.gov.au/industry/geological-survey"^^xsd:anyURI ;
+    a schema:Organization ;
+    schema:name "SA Minerals & Energy Resources" ;
+    schema:url "https://www.energymining.sa.gov.au/industry/geological-survey"^^xsd:anyURI ;
 .
 
 this-cs:
     a skos:ConceptScheme ;
-    dcterms:created "2022-12-04"^^xsd:date ;
-    dcterms:creator <https://linked.data.gov.au/org/mer> ;
-    dcterms:identifier "topic-categories"^^xsd:token ;
-    dcterms:issued "2022-12-04"^^xsd:date ;
-    dcterms:license <https://purl.org/NET/rdflicense/cc-by4.0> ;
-    dcterms:modified "2022-12-05"^^xsd:date ;
-    dcterms:provenance "Derived from http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation/code/MD_TopicCategoryCode"@en ;
-    dcterms:publisher <https://linked.data.gov.au/org/mer> ;
-    dcterms:rights "© Department for Energy and Mining, 2022"@en ;
-    prov:qualifiedDerivation [
-        prov:entity <http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation/code/MD_TopicCategoryCode> ;
-        dcat:hadRole <https://linked.data.gov.au/def/vocab-derivation-modes/subsetting> ;
-    ] ;
-    reg:status agldwgstatus:stable ;
-    skos:definition "High-level	geographic data thematic classification to assist in the grouping and search of available geographic datasets"@en ;
+    reg:status astatus:stable ;
+    skos:changeNote "2024-08-26 NJC Made VocPub 4.10 valid, LongTurtle formatted, no content changes" ;
+    skos:definition "High-level geographic data thematic classification to assist in the grouping and search of available geographic datasets"@en ;
     skos:hasTopConcept
         :boundaries ,
         :environment ,
         :geoscientificInformation ,
         :transportation ,
         :utilitiesCommunication ;
-    skos:prefLabel "Topic Category Codes"@en ;
+    skos:prefLabel "Topic Categories"@en ;
+    prov:qualifiedDerivation
+        [
+            prov:entity cs: ;
+            prov:hadRole <https://linked.data.gov.au/def/vocab-derivation-modes/subsetting> ;
+        ] ;
+    schema:citation "Derived from http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation/code/MD_TopicCategoryCode"@en ;
+    schema:creator <https://linked.data.gov.au/org/mer> ;
+    schema:dateCreated "2022-12-04"^^xsd:date ;
+    schema:dateModified "2024-08-26"^^xsd:date ;
+    schema:issued "2022-12-04"^^xsd:date ;
+    schema:license <https://purl.org/NET/rdflicense/cc-by4.0> ;
+    schema:publisher <https://linked.data.gov.au/org/mer> ;
+    schema:rights "© Department for Energy and Mining, 2022"@en ;
 .

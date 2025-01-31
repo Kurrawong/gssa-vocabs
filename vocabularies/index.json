@@ -1,5 +1,5 @@
 {
-  "vocab-derivation-modes.ttl": "https://linked.data.gov.au/def/vocab-derivation-modes",
+  "vocab-derivation-modes.ttl": "https://linked.data.gov.au/def/vocdermods",
   "sa-geological-features.ttl": "https://linked.data.gov.au/def/sa-geological-features",
   "commodity-codes.sa.ttl": "https://linked.data.gov.au/def/sa-commodity-codes",
   "document-types.ttl": "https://linked.data.gov.au/def/mer-doc-types",

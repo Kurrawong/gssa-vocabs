@@ -1,1530 +1,278 @@
-PREFIX agldwgstatus: <https://linked.data.gov.au/def/reg-statuses/>
+PREFIX astatus: <https://linked.data.gov.au/def/reg-statuses/>
 PREFIX cs: <https://linked.data.gov.au/def/mer-for-codes>
-PREFIX dcat: <http://www.w3.org/ns/dcat#>
-PREFIX dcterms: <http://purl.org/dc/terms/>
-PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX for: <https://linked.data.gov.au/def/anzsrc-for/2020/>
 PREFIX merfor: <https://linked.data.gov.au/def/mer-for-codes/>
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX reg: <http://purl.org/linked-data/registry#>
-PREFIX sdo: <https://schema.org/>
+PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 for:3103
     a skos:Concept ;
-    dcterms:identifier "3103"^^xsd:token ;
-    dcterms:source "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
     skos:broader for:31 ;
     skos:definition "Ecology"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "Ecology"@en ;
+    schema:citation "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
 .
 
 for:330404
     a skos:Concept ;
-    dcterms:identifier "330404"^^xsd:token ;
-    dcterms:source "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
     skos:broader for:3304 ;
     skos:definition "Land Use And Environmental Planning"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "Land Use And Environmental Planning"@en ;
+    schema:citation "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
 .
 
 for:3701
     a skos:Concept ;
-    dcterms:identifier "3701"^^xsd:token ;
-    dcterms:source "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
     skos:broader for:37 ;
     skos:definition "Atmospheric Sciences"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "Atmospheric Sciences"@en ;
-.
-
-for:370301
-    a skos:Concept ;
-    dcterms:identifier "370301"^^xsd:token ;
-    dcterms:source "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
-    skos:broader for:3703 ;
-    skos:definition "Exploration Geochemistry"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Exploration Geochemistry"@en ;
+    schema:citation "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
 .
 
 for:370303
     a skos:Concept ;
-    dcterms:identifier "370303"^^xsd:token ;
-    dcterms:source "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
     skos:broader for:3703 ;
     skos:definition "Isotope Geochemistry"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "Isotope Geochemistry"@en ;
+    schema:citation "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
 .
 
 for:370304
     a skos:Concept ;
-    dcterms:identifier "370304"^^xsd:token ;
-    dcterms:source "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
     skos:broader for:3703 ;
     skos:definition "Organic Geochemistry"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "Organic Geochemistry"@en ;
-.
-
-for:370502
-    a skos:Concept ;
-    dcterms:identifier "370502"^^xsd:token ;
-    dcterms:source "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
-    skos:broader for:3705 ;
-    skos:definition "Geochronology"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Geochronology"@en ;
-.
-
-for:370503
-    a skos:Concept ;
-    dcterms:identifier "370503"^^xsd:token ;
-    dcterms:source "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
-    skos:broader merfor:petrology ;
-    skos:definition "Igneous And Metamorphic Petrology"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Igneous And Metamorphic Petrology"@en ;
-.
-
-for:370504
-    a skos:Concept ;
-    dcterms:identifier "370504"^^xsd:token ;
-    dcterms:source "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
-    skos:broader for:3705 ;
-    skos:definition "Marine Geoscience"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Marine Geoscience"@en ;
-.
-
-for:370505
-    a skos:Concept ;
-    dcterms:identifier "370505"^^xsd:token ;
-    dcterms:source "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
-    skos:broader for:3705 ;
-    skos:definition "Mineralogy And Crystallography"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Mineralogy And Crystallography"@en ;
-.
-
-merfor:sedimentary-geology
-    a skos:Concept ;
-    dcterms:identifier "sedimentary-geology"^^xsd:token ;
-    dcterms:provenance "Created by MER for this vocabulary" ;
-    rdfs:isDefinedBy cs: ;
-    skos:broader for:3705 ;
-    skos:definition "Sedimentary Geology"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Sedimentary Geology"@en ;
-.
-
-for:370509
-    a skos:Concept ;
-    dcterms:identifier "370509"^^xsd:token ;
-    dcterms:source "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
-    skos:broader for:3705 ;
-    skos:definition "Sedimentology"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Sedimentology"@en ;
-.
-
-for:370510
-    a skos:Concept ;
-    dcterms:identifier "370510"^^xsd:token ;
-    dcterms:source "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
-    skos:broader for:3705 ;
-    skos:definition "Stratigraphy"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Stratigraphy"@en ;
-.
-
-for:370511
-    a skos:Concept ;
-    dcterms:identifier "370511"^^xsd:token ;
-    dcterms:source "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
-    skos:broader for:3705 ;
-    skos:definition "Structural Geology & Tectonics"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Structural Geology & Tectonics"@en ;
-.
-
-for:370512
-    a skos:Concept ;
-    dcterms:identifier "370512"^^xsd:token ;
-    dcterms:source "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
-    skos:broader for:3705 ;
-    skos:definition "Volcanology"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Volcanology"@en ;
+    schema:citation "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
 .
 
 for:370603
     a skos:Concept ;
-    dcterms:identifier "370603"^^xsd:token ;
-    dcterms:source "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
     skos:broader for:4013 ;
     skos:definition "Geodesy"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "Geodesy"@en ;
-.
-
-for:370604
-    a skos:Concept ;
-    dcterms:identifier "370604"^^xsd:token ;
-    dcterms:source "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
-    skos:broader for:3706 ;
-    skos:definition "Geodynamics"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Geodynamics"@en ;
-.
-
-for:370902
-    a skos:Concept ;
-    dcterms:identifier "370902"^^xsd:token ;
-    dcterms:source "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
-    skos:broader merfor:physical-geography ;
-    skos:definition "Glaciology"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Glaciology"@en ;
-.
-
-for:370903
-    a skos:Concept ;
-    dcterms:identifier "370903"^^xsd:token ;
-    dcterms:source "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
-    skos:broader merfor:physical-geography ;
-    skos:definition "Natural Hazards"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Natural Hazards"@en ;
-.
-
-for:370905
-    a skos:Concept ;
-    dcterms:identifier "370905"^^xsd:token ;
-    dcterms:source "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
-    skos:broader merfor:physical-geography ;
-    skos:definition "Quaternary Environments"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Quaternary Environments"@en ;
+    schema:citation "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
 .
 
 for:4004
     a skos:Concept ;
-    dcterms:identifier "4004"^^xsd:token ;
-    dcterms:source "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
     skos:broader for:40 ;
     skos:definition "Chemical Engineering"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "Chemical Engineering"@en ;
+    schema:citation "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
 .
 
 for:4005
     a skos:Concept ;
-    dcterms:identifier "4005"^^xsd:token ;
-    dcterms:source "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
     skos:broader for:40 ;
     skos:definition "Civil Engineering"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "Civil Engineering"@en ;
+    schema:citation "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
 .
 
 for:401208
     a skos:Concept ;
-    dcterms:identifier "401208"^^xsd:token ;
-    dcterms:source "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
     skos:broader for:3706 ;
     skos:definition "Geophysics Fluid Dynamics"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "Geophysics Fluid Dynamics"@en ;
+    schema:citation "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
 .
 
 for:401303
     a skos:Concept ;
-    dcterms:identifier "401303"^^xsd:token ;
-    dcterms:source "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
     skos:broader for:4013 ;
     skos:definition "Navigation And Position Fixing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "Navigation And Position Fixing"@en ;
+    schema:citation "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
 .
 
 for:401304
     a skos:Concept ;
-    dcterms:identifier "401304"^^xsd:token ;
-    dcterms:source "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
     skos:broader for:4013 ;
     skos:definition "Photogrammetry And Remote Sensing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "Photogrammetry And Remote Sensing"@en ;
+    schema:citation "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
 .
 
 for:401306
     a skos:Concept ;
-    dcterms:identifier "401306"^^xsd:token ;
-    dcterms:source "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
     skos:broader for:4013 ;
     skos:definition "Surveying (Incl. Hydrographic Surveying)"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "Surveying (Incl. Hydrographic Surveying)"@en ;
+    schema:citation "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
 .
 
 for:401901
     a skos:Concept ;
-    dcterms:identifier "401901"^^xsd:token ;
-    dcterms:source "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
     skos:broader merfor:resources-engineering ;
     skos:definition "Electrometallurgy"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "Electrometallurgy"@en ;
+    schema:citation "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
 .
 
 for:401902
     a skos:Concept ;
-    dcterms:identifier "401902"^^xsd:token ;
-    dcterms:source "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
     skos:broader merfor:resources-engineering ;
     skos:definition "Geomechanics And Resources Geotechnical Engineering"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "Geomechanics And Resources Geotechnical Engineering"@en ;
+    schema:citation "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
 .
 
 for:401903
     a skos:Concept ;
-    dcterms:identifier "401903"^^xsd:token ;
-    dcterms:source "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
     skos:broader merfor:resources-engineering ;
     skos:definition "Hydrometallurgy"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "Hydrometallurgy"@en ;
+    schema:citation "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
 .
 
 for:401904
     a skos:Concept ;
-    dcterms:identifier "401904"^^xsd:token ;
-    dcterms:source "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
     skos:broader merfor:resources-engineering ;
     skos:definition "Mineral Processing/Beneficiation"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "Mineral Processing/Beneficiation"@en ;
+    schema:citation "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
 .
 
 for:401905
     a skos:Concept ;
-    dcterms:identifier "401905"^^xsd:token ;
-    dcterms:source "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
     skos:broader merfor:resources-engineering ;
     skos:definition "Mining Engineering"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "Mining Engineering"@en ;
+    schema:citation "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
 .
 
 for:401907
     a skos:Concept ;
-    dcterms:identifier "401907"^^xsd:token ;
-    dcterms:source "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
     skos:broader merfor:resources-engineering ;
     skos:definition "Petroleum And Reservoir Engineering"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "Petroleum And Reservoir Engineering"@en ;
+    schema:citation "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
 .
 
 for:401908
     a skos:Concept ;
-    dcterms:identifier "401908"^^xsd:token ;
-    dcterms:source "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
     skos:broader merfor:resources-engineering ;
     skos:definition "Pyrometallurgy"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "Pyrometallurgy"@en ;
-.
-
-for:410101
-    a skos:Concept ;
-    dcterms:identifier "410101"^^xsd:token ;
-    dcterms:source "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
-    skos:broader merfor:soil-science ;
-    skos:definition "Carbon Sequestration Science"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Carbon Sequestration Science"@en ;
-.
-
-for:4104
-    a skos:Concept ;
-    dcterms:identifier "4104"^^xsd:token ;
-    dcterms:source "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
-    skos:broader merfor:environmental-science-and-management ;
-    skos:definition "Environmental Management"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Environmental Management"@en ;
-.
-
-for:410406
-    a skos:Concept ;
-    dcterms:identifier "410406"^^xsd:token ;
-    dcterms:source "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
-    skos:broader merfor:environmental-science-and-management ;
-    skos:definition "Natural Resource Management"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Natural Resource Management"@en ;
-.
-
-for:410603
-    a skos:Concept ;
-    dcterms:identifier "410603"^^xsd:token ;
-    dcterms:source "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
-    skos:broader merfor:soil-science ;
-    skos:definition "Soil Biology"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Soil Biology"@en ;
-.
-
-for:410605
-    a skos:Concept ;
-    dcterms:identifier "410605"^^xsd:token ;
-    dcterms:source "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
-    skos:broader merfor:soil-science ;
-    skos:definition "Soil Physics"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Soil Physics"@en ;
+    schema:citation "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
 .
 
 for:4301
     a skos:Concept ;
-    dcterms:identifier "4301"^^xsd:token ;
-    dcterms:source "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
     skos:broader for:43 ;
     skos:definition "Archaeology"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "Archaeology"@en ;
+    schema:citation "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
 .
 
 for:460306
     a skos:Concept ;
-    dcterms:identifier "460306"^^xsd:token ;
-    dcterms:source "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
     skos:broader merfor:artificial-intelligence-and-image-processing ;
     skos:definition "Image Processing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "Image Processing"@en ;
+    schema:citation "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
 .
 
 for:460702
     a skos:Concept ;
-    dcterms:identifier "460702"^^xsd:token ;
-    dcterms:source "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
     skos:broader merfor:artificial-intelligence-and-image-processing ;
     skos:definition "Computer Graphics"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "Computer Graphics"@en ;
-.
-
-merfor:basement-geology
-    a skos:Concept ;
-    dcterms:identifier "basement-geology"^^xsd:token ;
-    dcterms:provenance "Created by MER for this vocabulary" ;
-    rdfs:isDefinedBy cs: ;
-    skos:broader for:3705 ;
-    skos:definition "Basement Geology"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Basement Geology"@en ;
-.
-
-merfor:basin-analysis
-    a skos:Concept ;
-    dcterms:identifier "basin-analysis"^^xsd:token ;
-    dcterms:provenance "Created by MER for this vocabulary" ;
-    rdfs:isDefinedBy cs: ;
-    skos:broader for:3705 ;
-    skos:definition "Basin Analysis"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Basin Analysis"@en ;
+    schema:citation "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
 .
 
 merfor:biogeochemistry
     a skos:Concept ;
-    dcterms:identifier "biogeochemistry"^^xsd:token ;
-    dcterms:provenance "Created by MER for this vocabulary" ;
     rdfs:isDefinedBy cs: ;
     skos:broader for:3703 ;
     skos:definition "Biogeochemistry"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "Biogeochemistry"@en ;
-.
-
-merfor:biogeology
-    a skos:Concept ;
-    dcterms:identifier "biogeology"^^xsd:token ;
-    dcterms:provenance "Created by MER for this vocabulary" ;
-    rdfs:isDefinedBy cs: ;
-    skos:broader for:3705 ;
-    skos:definition "Biogeology"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Biogeology"@en ;
-.
-
-merfor:carbon-capture-and-storage
-    a skos:Concept ;
-    dcterms:identifier "carbon-capture-and-storage"^^xsd:token ;
-    dcterms:provenance "Created by MER for this vocabulary" ;
-    rdfs:isDefinedBy cs: ;
-    skos:broader for:3705 ;
-    skos:definition "Carbon Capture And Storage"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Carbon Capture And Storage"@en ;
+    schema:citation "Created by MER for this vocabulary" ;
 .
 
 merfor:cartography
     a skos:Concept ;
-    dcterms:identifier "cartography"^^xsd:token ;
-    dcterms:provenance "Created by MER for this vocabulary" ;
     rdfs:isDefinedBy cs: ;
     skos:broader for:4013 ;
     skos:definition "Cartography"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "Cartography"@en ;
+    schema:citation "Created by MER for this vocabulary" ;
 .
 
 merfor:conserving-aboriginal-and-torres-strait-islander-heritage
     a skos:Concept ;
-    dcterms:identifier "conserving-aboriginal-and-torres-strait-islander-heritage"^^xsd:token ;
-    dcterms:provenance "Created by MER for this vocabulary" ;
     rdfs:isDefinedBy cs: ;
     skos:broader for:43 ;
     skos:definition "Conserving Aboriginal And Torres Strait Islander Heritage"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "Conserving Aboriginal And Torres Strait Islander Heritage"@en ;
+    schema:citation "Created by MER for this vocabulary" ;
 .
 
 merfor:conserving-natural-heritage
     a skos:Concept ;
-    dcterms:identifier "conserving-natural-heritage"^^xsd:token ;
-    dcterms:provenance "Created by MER for this vocabulary" ;
     rdfs:isDefinedBy cs: ;
     skos:broader for:43 ;
     skos:definition "Conserving Natural Heritage"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "Conserving Natural Heritage"@en ;
-.
-
-merfor:drilling-engineering
-    a skos:Concept ;
-    dcterms:identifier "drilling-engineering"^^xsd:token ;
-    dcterms:provenance "Created by MER for this vocabulary" ;
-    rdfs:isDefinedBy cs: ;
-    skos:broader merfor:resources-engineering ;
-    skos:definition "Drilling Engineering"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Drilling Engineering"@en ;
-.
-
-merfor:energy-conservation-and-efficiency
-    a skos:Concept ;
-    dcterms:identifier "energy-conservation-and-efficiency"^^xsd:token ;
-    dcterms:provenance "Created by MER for this vocabulary" ;
-    rdfs:isDefinedBy cs: ;
-    skos:broader merfor:energy ;
-    skos:definition "Energy Conservation And Efficiency"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Energy Conservation And Efficiency"@en ;
-.
-
-merfor:energy-exploration
-    a skos:Concept ;
-    dcterms:identifier "energy-exploration"^^xsd:token ;
-    dcterms:provenance "Created by MER for this vocabulary" ;
-    rdfs:isDefinedBy cs: ;
-    skos:broader merfor:energy ;
-    skos:definition "Energy Exploration"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Energy Exploration"@en ;
-.
-
-merfor:energy-storage-distribution-and-supply
-    a skos:Concept ;
-    dcterms:identifier "energy-storage-distribution-and-supply"^^xsd:token ;
-    dcterms:provenance "Created by MER for this vocabulary" ;
-    rdfs:isDefinedBy cs: ;
-    skos:broader merfor:energy ;
-    skos:definition "Energy Storage, Distribution And Supply"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Energy Storage, Distribution And Supply"@en ;
-.
-
-merfor:energy-transformation
-    a skos:Concept ;
-    dcterms:identifier "energy-transformation"^^xsd:token ;
-    dcterms:provenance "Created by MER for this vocabulary" ;
-    rdfs:isDefinedBy cs: ;
-    skos:broader merfor:energy ;
-    skos:definition "Energy Transformation"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Energy Transformation"@en ;
-.
-
-merfor:environemental-engineering
-    a skos:Concept ;
-    dcterms:identifier "environemental-engineering"^^xsd:token ;
-    dcterms:provenance "Created by MER for this vocabulary" ;
-    rdfs:isDefinedBy cs: ;
-    skos:broader for:40 ;
-    skos:definition "Environemental Engineering"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Environemental Engineering"@en ;
-.
-
-merfor:environmental-impact-assessment
-    a skos:Concept ;
-    dcterms:identifier "environmental-impact-assessment"^^xsd:token ;
-    dcterms:provenance "Created by MER for this vocabulary" ;
-    rdfs:isDefinedBy cs: ;
-    skos:broader merfor:environmental-science-and-management ;
-    skos:definition "Environmental Impact Assessment"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Environmental Impact Assessment"@en ;
-.
-
-merfor:environmental-monitoring
-    a skos:Concept ;
-    dcterms:identifier "environmental-monitoring"^^xsd:token ;
-    dcterms:provenance "Created by MER for this vocabulary" ;
-    rdfs:isDefinedBy cs: ;
-    skos:broader merfor:environmental-science-and-management ;
-    skos:definition "Environmental Monitoring"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Environmental Monitoring"@en ;
-.
-
-merfor:environmental-rehabilitation-excl-bioremediation
-    a skos:Concept ;
-    dcterms:identifier "environmental-rehabilitation-excl-bioremediation"^^xsd:token ;
-    dcterms:provenance "Created by MER for this vocabulary" ;
-    rdfs:isDefinedBy cs: ;
-    skos:broader merfor:environmental-science-and-management ;
-    skos:definition "Environmental Rehabilitation (Excl. Bioremediation)"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Environmental Rehabilitation (Excl. Bioremediation)"@en ;
-.
-
-merfor:environmentally-sustainable-energy-activities
-    a skos:Concept ;
-    dcterms:identifier "environmentally-sustainable-energy-activities"^^xsd:token ;
-    dcterms:provenance "Created by MER for this vocabulary" ;
-    rdfs:isDefinedBy cs: ;
-    skos:broader merfor:energy ;
-    skos:definition "Environmentally Sustainable Energy Activities"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Environmentally Sustainable Energy Activities"@en ;
-.
-
-merfor:environmentally-sustainable-mineral-resource-activities
-    a skos:Concept ;
-    dcterms:identifier "environmentally-sustainable-mineral-resource-activities"^^xsd:token ;
-    dcterms:provenance "Created by MER for this vocabulary" ;
-    rdfs:isDefinedBy cs: ;
-    skos:broader merfor:energy ;
-    skos:definition "Environmentally Sustainable Mineral Resource Activities"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Environmentally Sustainable Mineral Resource Activities"@en ;
-.
-
-merfor:expert-systems
-    a skos:Concept ;
-    dcterms:identifier "expert-systems"^^xsd:token ;
-    dcterms:provenance "Created by MER for this vocabulary" ;
-    rdfs:isDefinedBy cs: ;
-    skos:broader merfor:artificial-intelligence-and-image-processing ;
-    skos:definition "Expert Systems"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Expert Systems"@en ;
-.
-
-merfor:extraterrestrial-geology
-    a skos:Concept ;
-    dcterms:identifier "extraterrestrial-geology"^^xsd:token ;
-    dcterms:provenance "Created by MER for this vocabulary" ;
-    rdfs:isDefinedBy cs: ;
-    skos:broader for:3705 ;
-    skos:definition "Extraterrestrial Geology"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Extraterrestrial Geology"@en ;
-.
-
-merfor:first-stage-treatment-of-ores-and-minerals
-    a skos:Concept ;
-    dcterms:identifier "first-stage-treatment-of-ores-and-minerals"^^xsd:token ;
-    dcterms:provenance "Created by MER for this vocabulary" ;
-    rdfs:isDefinedBy cs: ;
-    skos:broader merfor:mineral-resources-exc-energy-resources ;
-    skos:definition "First Stage Treatment Of Ores And Minerals"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "First Stage Treatment Of Ores And Minerals"@en ;
-.
-
-merfor:geomorphology-and-regolith-and-landscape-evolution
-    a skos:Concept ;
-    dcterms:identifier "geomorphology-and-regolith-and-landscape-evolution"^^xsd:token ;
-    dcterms:provenance "Created by MER for this vocabulary" ;
-    rdfs:isDefinedBy cs: ;
-    skos:broader merfor:physical-geography ;
-    skos:definition "Geomorphology And Regolith And Landscape Evolution"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Geomorphology And Regolith And Landscape Evolution"@en ;
-.
-
-merfor:geospatial-information-systems
-    a skos:Concept ;
-    dcterms:identifier "geospatial-information-systems"^^xsd:token ;
-    dcterms:provenance "Created by MER for this vocabulary" ;
-    rdfs:isDefinedBy cs: ;
-    skos:broader for:4013 ;
-    skos:definition "Geospatial Information Systems"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Geospatial Information Systems"@en ;
-.
-
-merfor:information-systems
-    a skos:Concept ;
-    dcterms:identifier "information-systems"^^xsd:token ;
-    dcterms:provenance "Created by MER for this vocabulary" ;
-    rdfs:isDefinedBy cs: ;
-    skos:broader for:4013 ;
-    skos:definition "Information Systems"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Information Systems"@en ;
-.
-
-merfor:geostorage-engineering
-    a skos:Concept ;
-    dcterms:identifier "geostorage-engineering"^^xsd:token ;
-    dcterms:provenance "Created by MER for this vocabulary" ;
-    rdfs:isDefinedBy cs: ;
-    skos:broader merfor:resources-engineering ;
-    skos:definition "Geostorage Engineering"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Geostorage Engineering"@en ;
-.
-
-merfor:geothermal-resource-geology
-    a skos:Concept ;
-    dcterms:identifier "geothermal-resource-geology"^^xsd:token ;
-    dcterms:provenance "Created by MER for this vocabulary" ;
-    rdfs:isDefinedBy cs: ;
-    skos:broader merfor:resource-geology ;
-    skos:definition "Geothermal Resource Geology"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Geothermal Resource Geology"@en ;
-.
-
-merfor:gravity-gradiometry
-    a skos:Concept ;
-    dcterms:identifier "gravity-gradiometry"^^xsd:token ;
-    dcterms:provenance "Created by MER for this vocabulary" ;
-    rdfs:isDefinedBy cs: ;
-    skos:broader merfor:gravity ;
-    skos:definition "Gravity Gradiometry"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Gravity Gradiometry"@en ;
-.
-
-merfor:historical-geology
-    a skos:Concept ;
-    dcterms:identifier "historical-geology"^^xsd:token ;
-    dcterms:provenance "Created by MER for this vocabulary" ;
-    rdfs:isDefinedBy cs: ;
-    skos:broader for:3705 ;
-    skos:definition "Historical Geology"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Historical Geology"@en ;
-.
-
-merfor:hydrogeochemistry
-    a skos:Concept ;
-    dcterms:identifier "hydrogeochemistry"^^xsd:token ;
-    dcterms:provenance "Created by MER for this vocabulary" ;
-    rdfs:isDefinedBy cs: ;
-    skos:broader for:3703 ;
-    skos:definition "Hydrogeochemistry"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Hydrogeochemistry"@en ;
-.
-
-merfor:hydrogeology
-    a skos:Concept ;
-    dcterms:identifier "hydrogeology"^^xsd:token ;
-    dcterms:provenance "Created by MER for this vocabulary" ;
-    rdfs:isDefinedBy cs: ;
-    skos:broader merfor:physical-geography ;
-    skos:definition "Hydrogeology"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Hydrogeology"@en ;
-.
-
-merfor:land-capability-and-soil-degradation
-    a skos:Concept ;
-    dcterms:identifier "land-capability-and-soil-degradation"^^xsd:token ;
-    dcterms:provenance "Created by MER for this vocabulary" ;
-    rdfs:isDefinedBy cs: ;
-    skos:broader merfor:soil-science ;
-    skos:definition "Land Capability And Soil Degradation"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Land Capability And Soil Degradation"@en ;
-.
-
-merfor:lithogeochemistry
-    a skos:Concept ;
-    dcterms:identifier "lithogeochemistry"^^xsd:token ;
-    dcterms:provenance "Created by MER for this vocabulary" ;
-    rdfs:isDefinedBy cs: ;
-    skos:broader for:370302 ;
-    skos:definition "Lithogeochemistry"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Lithogeochemistry"@en ;
-.
-
-merfor:magnetic-gradiometry
-    a skos:Concept ;
-    dcterms:identifier "magnetic-gradiometry"^^xsd:token ;
-    dcterms:provenance "Created by MER for this vocabulary" ;
-    rdfs:isDefinedBy cs: ;
-    skos:broader merfor:magnetics ;
-    skos:definition "Magnetic Gradiometry"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Magnetic Gradiometry"@en ;
-.
-
-merfor:magnetotellurics
-    a skos:Concept ;
-    dcterms:identifier "magnetotellurics"^^xsd:token ;
-    dcterms:provenance "Created by MER for this vocabulary" ;
-    rdfs:isDefinedBy cs: ;
-    skos:broader for:370602 ;
-    skos:definition "Magnetotellurics"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Magnetotellurics"@en ;
-.
-
-merfor:mineral-exploration
-    a skos:Concept ;
-    dcterms:identifier "mineral-exploration"^^xsd:token ;
-    dcterms:provenance "Created by MER for this vocabulary" ;
-    rdfs:isDefinedBy cs: ;
-    skos:broader merfor:mineral-resources-exc-energy-resources ;
-    skos:definition "Mineral Exploration"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Mineral Exploration"@en ;
-.
-
-merfor:mineral-resource-geology
-    a skos:Concept ;
-    dcterms:identifier "mineral-resource-geology"^^xsd:token ;
-    dcterms:provenance "Created by MER for this vocabulary" ;
-    rdfs:isDefinedBy cs: ;
-    skos:broader merfor:resource-geology ;
-    skos:definition "Mineral Resource Geology"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Mineral Resource Geology"@en ;
-.
-
-merfor:mineral-system-geology
-    a skos:Concept ;
-    dcterms:identifier "mineral-system-geology"^^xsd:token ;
-    dcterms:provenance "Created by MER for this vocabulary" ;
-    rdfs:isDefinedBy cs: ;
-    skos:broader for:3705 ;
-    skos:definition "Mineral System Geology"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Mineral System Geology"@en ;
-.
-
-merfor:mining-and-extraction-of-energy-resources
-    a skos:Concept ;
-    dcterms:identifier "mining-and-extraction-of-energy-resources"^^xsd:token ;
-    dcterms:provenance "Created by MER for this vocabulary" ;
-    rdfs:isDefinedBy cs: ;
-    skos:broader merfor:energy ;
-    skos:definition "Mining And Extraction Of Energy Resources"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Mining And Extraction Of Energy Resources"@en ;
-.
-
-merfor:numerical-computation
-    a skos:Concept ;
-    dcterms:identifier "numerical-computation"^^xsd:token ;
-    dcterms:provenance "Created by MER for this vocabulary" ;
-    rdfs:isDefinedBy cs: ;
-    skos:broader merfor:computation-theory-and-mathematics ;
-    skos:definition "Numerical Computation"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Numerical Computation"@en ;
-.
-
-merfor:organic-petrology
-    a skos:Concept ;
-    dcterms:identifier "organic-petrology"^^xsd:token ;
-    dcterms:provenance "Created by MER for this vocabulary" ;
-    rdfs:isDefinedBy cs: ;
-    skos:broader merfor:petrology ;
-    skos:definition "Organic Petrology"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Organic Petrology"@en ;
-.
-
-merfor:paleoclimatology
-    a skos:Concept ;
-    dcterms:identifier "paleoclimatology"^^xsd:token ;
-    dcterms:provenance "Created by MER for this vocabulary" ;
-    rdfs:isDefinedBy cs: ;
-    skos:broader merfor:physical-geography ;
-    skos:definition "Paleoclimatology"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Paleoclimatology"@en ;
-.
-
-merfor:palynology
-    a skos:Concept ;
-    dcterms:identifier "palynology"^^xsd:token ;
-    dcterms:provenance "Created by MER for this vocabulary" ;
-    rdfs:isDefinedBy cs: ;
-    skos:broader for:370506 ;
-    skos:definition "Palynology"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Palynology"@en ;
-.
-
-merfor:passive-seismic
-    a skos:Concept ;
-    dcterms:identifier "passive-seismic"^^xsd:token ;
-    dcterms:provenance "Created by MER for this vocabulary" ;
-    rdfs:isDefinedBy cs: ;
-    skos:broader for:370609 ;
-    skos:definition "Passive Seismic"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Passive Seismic"@en ;
-.
-
-merfor:pattern-recognition-and-data-mining
-    a skos:Concept ;
-    dcterms:identifier "pattern-recognition-and-data-mining"^^xsd:token ;
-    dcterms:provenance "Created by MER for this vocabulary" ;
-    rdfs:isDefinedBy cs: ;
-    skos:broader merfor:artificial-intelligence-and-image-processing ;
-    skos:definition "Pattern Recognition And Data Mining"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Pattern Recognition And Data Mining"@en ;
-.
-
-merfor:petroleum-geology
-    a skos:Concept ;
-    dcterms:identifier "petroleum-geology"^^xsd:token ;
-    dcterms:provenance "Created by MER for this vocabulary" ;
-    rdfs:isDefinedBy cs: ;
-    skos:broader merfor:resource-geology ;
-    skos:definition "Petroleum Geology"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Petroleum Geology"@en ;
-.
-
-merfor:petroleum-system-geology
-    a skos:Concept ;
-    dcterms:identifier "petroleum-system-geology"^^xsd:token ;
-    dcterms:provenance "Created by MER for this vocabulary" ;
-    rdfs:isDefinedBy cs: ;
-    skos:broader for:3705 ;
-    skos:definition "Petroleum System Geology"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Petroleum System Geology"@en ;
-.
-
-merfor:petrophysics
-    a skos:Concept ;
-    dcterms:identifier "petrophysics"^^xsd:token ;
-    dcterms:provenance "Created by MER for this vocabulary" ;
-    rdfs:isDefinedBy cs: ;
-    skos:broader for:3706 ;
-    skos:definition "Petrophysics"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Petrophysics"@en ;
-.
-
-merfor:preparation-and-production-of-energy-sources
-    a skos:Concept ;
-    dcterms:identifier "preparation-and-production-of-energy-sources"^^xsd:token ;
-    dcterms:provenance "Created by MER for this vocabulary" ;
-    rdfs:isDefinedBy cs: ;
-    skos:broader merfor:energy ;
-    skos:definition "Preparation And Production Of Energy Sources"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Preparation And Production Of Energy Sources"@en ;
-.
-
-merfor:primary-mining-and-extraction-of-mineral-resources
-    a skos:Concept ;
-    dcterms:identifier "primary-mining-and-extraction-of-mineral-resources"^^xsd:token ;
-    dcterms:provenance "Created by MER for this vocabulary" ;
-    rdfs:isDefinedBy cs: ;
-    skos:broader merfor:mineral-resources-exc-energy-resources ;
-    skos:definition "Primary Mining And Extraction Of Mineral Resources"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Primary Mining And Extraction Of Mineral Resources"@en ;
-.
-
-merfor:quarry-and-extractive-resource-geology
-    a skos:Concept ;
-    dcterms:identifier "quarry-and-extractive-resource-geology"^^xsd:token ;
-    dcterms:provenance "Created by MER for this vocabulary" ;
-    rdfs:isDefinedBy cs: ;
-    skos:broader merfor:resource-geology ;
-    skos:definition "Quarry And Extractive Resource Geology"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Quarry And Extractive Resource Geology"@en ;
-.
-
-merfor:radiometrics
-    a skos:Concept ;
-    dcterms:identifier "radiometrics"^^xsd:token ;
-    dcterms:provenance "Created by MER for this vocabulary" ;
-    rdfs:isDefinedBy cs: ;
-    skos:broader for:3706 ;
-    skos:definition "Radiometrics"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Radiometrics"@en ;
-.
-
-merfor:regional-geology
-    a skos:Concept ;
-    dcterms:identifier "regional-geology"^^xsd:token ;
-    dcterms:provenance "Created by MER for this vocabulary" ;
-    rdfs:isDefinedBy cs: ;
-    skos:broader for:3705 ;
-    skos:definition "Regional Geology"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Regional Geology"@en ;
-.
-
-merfor:remote-sensing
-    a skos:Concept ;
-    dcterms:identifier "remote-sensing"^^xsd:token ;
-    dcterms:provenance "Created by MER for this vocabulary" ;
-    rdfs:isDefinedBy cs: ;
-    skos:broader for:4013 ;
-    skos:definition "Remote Sensing"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Remote Sensing"@en ;
-.
-
-merfor:renewable-energy
-    a skos:Concept ;
-    dcterms:identifier "renewable-energy"^^xsd:token ;
-    dcterms:provenance "Created by MER for this vocabulary" ;
-    rdfs:isDefinedBy cs: ;
-    skos:broader merfor:energy ;
-    skos:definition "Renewable Energy"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Renewable Energy"@en ;
-.
-
-merfor:sedimentary-petrology
-    a skos:Concept ;
-    dcterms:identifier "sedimentary-petrology"^^xsd:token ;
-    dcterms:provenance "Created by MER for this vocabulary" ;
-    rdfs:isDefinedBy cs: ;
-    skos:broader merfor:petrology ;
-    skos:definition "Sedimentary Petrology"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Sedimentary Petrology"@en ;
-.
-
-merfor:simulation-and-modelling
-    a skos:Concept ;
-    dcterms:identifier "simulation-and-modelling"^^xsd:token ;
-    dcterms:provenance "Created by MER for this vocabulary" ;
-    rdfs:isDefinedBy cs: ;
-    skos:broader merfor:artificial-intelligence-and-image-processing ;
-    skos:definition "Simulation And Modelling"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Simulation And Modelling"@en ;
-.
-
-merfor:soil-chemistry
-    a skos:Concept ;
-    dcterms:identifier "soil-chemistry"^^xsd:token ;
-    dcterms:provenance "Created by MER for this vocabulary" ;
-    rdfs:isDefinedBy cs: ;
-    skos:broader merfor:soil-science ;
-    skos:definition "Soil Chemistry"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Soil Chemistry"@en ;
-.
-
-merfor:surface-geology
-    a skos:Concept ;
-    dcterms:identifier "surface-geology"^^xsd:token ;
-    dcterms:provenance "Created by MER for this vocabulary" ;
-    rdfs:isDefinedBy cs: ;
-    skos:broader for:3705 ;
-    skos:definition "Surface Geology"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Surface Geology"@en ;
-.
-
-merfor:surface-processes
-    a skos:Concept ;
-    dcterms:identifier "surface-processes"^^xsd:token ;
-    dcterms:provenance "Created by MER for this vocabulary" ;
-    rdfs:isDefinedBy cs: ;
-    skos:broader merfor:physical-geography ;
-    skos:definition "Surface Processes"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Surface Processes"@en ;
-.
-
-merfor:surfacewater-hydrology
-    a skos:Concept ;
-    dcterms:identifier "surfacewater-hydrology"^^xsd:token ;
-    dcterms:provenance "Created by MER for this vocabulary" ;
-    rdfs:isDefinedBy cs: ;
-    skos:broader merfor:physical-geography ;
-    skos:definition "Surfacewater Hydrology"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Surfacewater Hydrology"@en ;
-.
-
-for:3304
-    a skos:Concept ;
-    dcterms:identifier "3304"^^xsd:token ;
-    dcterms:source "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
-    skos:broader for:33 ;
-    skos:definition "Urban And Regional Planning"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Urban And Regional Planning"@en ;
-.
-
-for:370302
-    a skos:Concept ;
-    dcterms:identifier "370302"^^xsd:token ;
-    dcterms:source "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
-    skos:broader for:3703 ;
-    skos:definition "Inorganic Geochemistry"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Inorganic Geochemistry"@en ;
-.
-
-for:370506
-    a skos:Concept ;
-    dcterms:identifier "370506"^^xsd:token ;
-    dcterms:source "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
-    skos:broader for:3705 ;
-    skos:definition "Paleontology"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Paleontology"@en ;
-.
-
-for:370602
-    a skos:Concept ;
-    dcterms:identifier "370602"^^xsd:token ;
-    dcterms:source "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
-    skos:broader for:3706 ;
-    skos:definition "Electrical And Electromagnetic Methods In Geophysics"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Electrical And Electromagnetic Methods In Geophysics"@en ;
-.
-
-for:370609
-    a skos:Concept ;
-    dcterms:identifier "370609"^^xsd:token ;
-    dcterms:source "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
-    skos:broader for:3706 ;
-    skos:definition "Seismology And Seismic Exploration"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Seismology And Seismic Exploration"@en ;
-.
-
-for:4407
-    a skos:Concept ;
-    dcterms:identifier "4407"^^xsd:token ;
-    dcterms:source "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
-    skos:definition "Policy And Administration"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Policy And Administration"@en ;
-    skos:topConceptOf cs: ;
-.
-
-merfor:computation-theory-and-mathematics
-    a skos:Concept ;
-    dcterms:identifier "computation-theory-and-mathematics"^^xsd:token ;
-    dcterms:provenance "Created by MER for this vocabulary" ;
-    rdfs:isDefinedBy cs: ;
-    skos:broader for:46 ;
-    skos:definition "Computation Theory And Mathematics"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Computation Theory And Mathematics"@en ;
-.
-
-merfor:cultural-understanding
-    a skos:Concept ;
-    dcterms:identifier "cultural-understanding"^^xsd:token ;
-    dcterms:provenance "Created by MER for this vocabulary" ;
-    rdfs:isDefinedBy cs: ;
-    skos:definition "Cultural Understanding"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Cultural Understanding"@en ;
-    skos:topConceptOf cs: ;
-.
-
-merfor:gravity
-    a skos:Concept ;
-    dcterms:identifier "gravity"^^xsd:token ;
-    dcterms:provenance "Created by MER for this vocabulary" ;
-    rdfs:isDefinedBy cs: ;
-    skos:broader for:3706 ;
-    skos:definition "Gravity"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Gravity"@en ;
-.
-
-merfor:magnetics
-    a skos:Concept ;
-    dcterms:identifier "magnetics"^^xsd:token ;
-    dcterms:provenance "Created by MER for this vocabulary" ;
-    rdfs:isDefinedBy cs: ;
-    skos:broader for:3706 ;
-    skos:definition "Magnetics"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Magnetics"@en ;
-.
-
-for:31
-    a skos:Concept ;
-    dcterms:identifier "31"^^xsd:token ;
-    dcterms:source "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
-    skos:definition "Biological Sciences"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Biological Sciences"@en ;
-    skos:topConceptOf cs: ;
-.
-
-for:33
-    a skos:Concept ;
-    dcterms:identifier "33"^^xsd:token ;
-    dcterms:source "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
-    skos:definition "Built Environment And Design"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Built Environment And Design"@en ;
-    skos:topConceptOf cs: ;
-.
-
-for:46
-    a skos:Concept ;
-    dcterms:identifier "46"^^xsd:token ;
-    dcterms:source "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
-    skos:definition "Information And Computing Sciences"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Information And Computing Sciences"@en ;
-    skos:topConceptOf cs: ;
-.
-
-<https://linked.data.gov.au/org/mer>
-    a sdo:Organization ;
-    sdo:name "SA Minerals & Energy Resources" ;
-    sdo:url "https://www.energymining.sa.gov.au/industry/geological-survey"^^xsd:anyURI ;
-.
-
-for:41
-    a skos:Concept ;
-    dcterms:identifier "41"^^xsd:token ;
-    dcterms:source "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
-    skos:definition "Environmental Sciences"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Environmental Sciences"@en ;
-    skos:topConceptOf cs: ;
-.
-
-for:43
-    a skos:Concept ;
-    dcterms:identifier "43"^^xsd:token ;
-    dcterms:source "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
-    skos:definition "History And Archaeology"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "History And Archaeology"@en ;
-    skos:topConceptOf cs: ;
-.
-
-merfor:petrology
-    a skos:Concept ;
-    dcterms:identifier "petrology"^^xsd:token ;
-    dcterms:provenance "Created by MER for this vocabulary" ;
-    rdfs:isDefinedBy cs: ;
-    skos:broader for:3705 ;
-    skos:definition "Petrology"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Petrology"@en ;
-.
-
-merfor:mineral-resources-exc-energy-resources
-    a skos:Concept ;
-    dcterms:identifier "mineral-resources"^^xsd:token ;
-    dcterms:provenance "Created by MER for this vocabulary" ;
-    rdfs:isDefinedBy cs: ;
-    skos:definition "Mineral Resources (Excl. Energy Resources)"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Mineral Resources (Excl. Energy Resources)"@en ;
-    skos:topConceptOf cs: ;
-.
-
-merfor:resource-geology
-    a skos:Concept ;
-    dcterms:identifier "resource-geology"^^xsd:token ;
-    dcterms:provenance "Created by MER for this vocabulary" ;
-    rdfs:isDefinedBy cs: ;
-    skos:broader for:3705 ;
-    skos:definition "Resource Geology"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Resource Geology"@en ;
-.
-
-merfor:artificial-intelligence-and-image-processing
-    a skos:Concept ;
-    dcterms:identifier "artificial-intelligence-and-image-processing"^^xsd:token ;
-    dcterms:provenance "Created by MER for this vocabulary" ;
-    rdfs:isDefinedBy cs: ;
-    skos:broader for:46 ;
-    skos:definition "Artificial Intelligence And Image Processing"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Artificial Intelligence And Image Processing"@en ;
-.
-
-merfor:environmental-science-and-management
-    a skos:Concept ;
-    dcterms:identifier "environmental-science-and-management"^^xsd:token ;
-    dcterms:provenance "Created by MER for this vocabulary" ;
-    rdfs:isDefinedBy cs: ;
-    skos:broader for:41 ;
-    skos:definition "Environmental Science And Management"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Environmental Science And Management"@en ;
-.
-
-merfor:soil-science
-    a skos:Concept ;
-    dcterms:identifier "soil-science"^^xsd:token ;
-    dcterms:provenance "Created by MER for this vocabulary" ;
-    rdfs:isDefinedBy cs: ;
-    skos:broader for:41 ;
-    skos:definition "Soil Science"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Soil Science"@en ;
-.
-
-for:37
-    a skos:Concept ;
-    dcterms:identifier "37"^^xsd:token ;
-    dcterms:source "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
-    skos:definition "Earth Sciences"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Earth Sciences"@en ;
-    skos:topConceptOf cs: ;
-.
-
-for:3703
-    a skos:Concept ;
-    dcterms:identifier "3703"^^xsd:token ;
-    dcterms:source "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
-    skos:broader for:37 ;
-    skos:definition "Geochemistry"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Geochemistry"@en ;
-.
-
-for:40
-    a skos:Concept ;
-    dcterms:identifier "40"^^xsd:token ;
-    dcterms:source "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
-    skos:definition "Engineering"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Engineering"@en ;
-    skos:topConceptOf cs: ;
-.
-
-for:4013
-    a skos:Concept ;
-    dcterms:identifier "4013"^^xsd:token ;
-    dcterms:source "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
-    skos:broader for:40 ;
-    skos:definition "Geomatic Engineering"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Geomatic Engineering"@en ;
-.
-
-for:3706
-    a skos:Concept ;
-    dcterms:identifier "3706"^^xsd:token ;
-    dcterms:source "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
-    skos:broader for:37 ;
-    skos:definition "Geophysics"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Geophysics"@en ;
-.
-
-merfor:physical-geography
-    a skos:Concept ;
-    dcterms:identifier "physical-geography"^^xsd:token ;
-    dcterms:provenance "Created by MER for this vocabulary" ;
-    rdfs:isDefinedBy cs: ;
-    skos:broader for:37 ;
-    skos:definition "Physical Geography"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Physical Geography"@en ;
-.
-
-merfor:energy
-    a skos:Concept ;
-    dcterms:identifier "energy"^^xsd:token ;
-    dcterms:provenance "Created by MER for this vocabulary" ;
-    rdfs:isDefinedBy cs: ;
-    skos:definition "Energy"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Energy"@en ;
-    skos:topConceptOf cs: ;
-.
-
-merfor:resources-engineering
-    a skos:Concept ;
-    dcterms:identifier "resources-engineering"^^xsd:token ;
-    dcterms:provenance "Created by MER for this vocabulary" ;
-    rdfs:isDefinedBy cs: ;
-    skos:broader for:40 ;
-    skos:definition "Resources Engineering"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Resources Engineering"@en ;
-.
-
-for:3705
-    a skos:Concept ;
-    dcterms:identifier "3705"^^xsd:token ;
-    dcterms:source "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
-    skos:broader for:37 ;
-    skos:definition "Geology"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Geology"@en ;
-.
-
-cs:
-    a skos:ConceptScheme ;
-    dcterms:created "2021-09-14"^^xsd:date ;
-    dcterms:creator <https://linked.data.gov.au/org/mer> ;
-    dcterms:identifier "for-codes"^^xsd:token ;
-    dcterms:license <https://purl.org/NET/rdflicense/cc-by4.0> ;
-    dcterms:modified "2022-11-22"^^xsd:date ;
-    dcterms:issued "2022-11-01"^^xsd:date ;
-    dcterms:publisher <https://linked.data.gov.au/org/mer> ;
-    dcterms:rights "© Department for Energy and Mining, 2022" ;
-    dcterms:source "https://linked.data.gov.au/def/anzsrc-for"^^xsd:anyURI ;
-    prov:qualifiedDerivation [
-        prov:entity <https://linked.data.gov.au/def/anzsrc-for> ;
-        dcat:hadRole <https://linked.data.gov.au/def/vocab-derivation-modes/subsetting-and-extension> ;
-    ] ;
-    reg:status agldwgstatus:experimental ;
-    skos:definition """Fields of Research Codes used as categories for data by South Australian Minerals and Energy Resources.
-        
-        These categories are mostly the Australian/New Zealand Fields of Research (ANZSRC FoR) 2020 codes but with fine-grained additions in MER's areas of interest and excluding many codes in unrelated areas."""@en ;
-    skos:hasTopConcept
-        for:31 ,
-        for:33 ,
-        for:37 ,
-        for:40 ,
-        for:41 ,
-        for:4407 ,
-        merfor:cultural-understanding ,
-        merfor:energy ,
-        for:43 ,
-        for:46 ,
-        merfor:mineral-resources-exc-energy-resources ;
-    skos:prefLabel "MER Fields of Research Codes"@en ;
-.
-
-merfor:exploration-collection
-    a skos:Collection ;
-    dcterms:identifier "exploration-collection"^^xsd:token ;
-    dcterms:provenance "Made for the MER catalogue upgrade project, 2022" ;
-    skos:definition "Exploration Fields of Research Codes"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Exploration Fields of Research Codes"@en ;
-    skos:member
-        merfor:drilling-engineering ,
-        merfor:energy-exploration ,
-        for:370301 ,
-        merfor:mineral-exploration ;
+    schema:citation "Created by MER for this vocabulary" ;
 .
 
 merfor:energy-collection
     a skos:Collection ;
-    dcterms:identifier "energy-collection"^^xsd:token ;
-    dcterms:provenance "Made for the MER catalogue upgrade project, 2022" ;
     skos:definition "Energy Fields of Research Codes"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "Energy Fields of Research Codes"@en ;
     skos:member
         merfor:energy-conservation-and-efficiency ,
         merfor:energy-exploration ,
@@ -1534,111 +282,1222 @@ merfor:energy-collection
         merfor:mining-and-extraction-of-energy-resources ,
         merfor:preparation-and-production-of-energy-sources ,
         merfor:renewable-energy ;
+    skos:prefLabel "Energy Fields of Research Codes"@en ;
+    schema:citation "Made for the MER catalogue upgrade project, 2022" ;
+.
+
+merfor:environemental-engineering
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader for:40 ;
+    skos:definition "Environemental Engineering"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Environemental Engineering"@en ;
+    schema:citation "Created by MER for this vocabulary" ;
+.
+
+merfor:environment-collection
+    a skos:Collection ;
+    skos:definition "Environment Fields of Research Codes"@en ;
+    skos:inScheme cs: ;
+    skos:member
+        for:370902 ,
+        for:370903 ,
+        for:370905 ,
+        for:41 ,
+        for:410101 ,
+        for:4104 ,
+        for:410406 ,
+        for:410603 ,
+        for:410605 ,
+        merfor:environmental-impact-assessment ,
+        merfor:environmental-monitoring ,
+        merfor:environmental-rehabilitation-excl-bioremediation ,
+        merfor:environmental-science-and-management ,
+        merfor:environmentally-sustainable-energy-activities ,
+        merfor:environmentally-sustainable-mineral-resource-activities ,
+        merfor:geomorphology-and-regolith-and-landscape-evolution ,
+        merfor:hydrogeology ,
+        merfor:land-capability-and-soil-degradation ,
+        merfor:paleoclimatology ,
+        merfor:physical-geography ,
+        merfor:renewable-energy ,
+        merfor:soil-chemistry ,
+        merfor:soil-science ,
+        merfor:surface-processes ,
+        merfor:surfacewater-hydrology ;
+    skos:prefLabel "Environment Fields of Research Codes"@en ;
+    schema:citation "Made for the MER catalogue upgrade project, 2022" ;
+.
+
+merfor:expert-systems
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader merfor:artificial-intelligence-and-image-processing ;
+    skos:definition "Expert Systems"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Expert Systems"@en ;
+    schema:citation "Created by MER for this vocabulary" ;
+.
+
+merfor:exploration-collection
+    a skos:Collection ;
+    skos:definition "Exploration Fields of Research Codes"@en ;
+    skos:inScheme cs: ;
+    skos:member
+        for:370301 ,
+        merfor:drilling-engineering ,
+        merfor:energy-exploration ,
+        merfor:mineral-exploration ;
+    skos:prefLabel "Exploration Fields of Research Codes"@en ;
+    schema:citation "Made for the MER catalogue upgrade project, 2022" ;
+.
+
+merfor:first-stage-treatment-of-ores-and-minerals
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader merfor:mineral-resources-exc-energy-resources ;
+    skos:definition "First Stage Treatment Of Ores And Minerals"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "First Stage Treatment Of Ores And Minerals"@en ;
+    schema:citation "Created by MER for this vocabulary" ;
 .
 
 merfor:geology-collection
     a skos:Collection ;
-    dcterms:identifier "geology-collection"^^xsd:token ;
-    dcterms:provenance "Made for the MER catalogue upgrade project, 2022" ;
     skos:definition "Geology Fields of Research Codes"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "Geology Fields of Research Codes"@en ;
     skos:member
+        for:370502 ,
+        for:370503 ,
+        for:370504 ,
+        for:370505 ,
+        for:370506 ,
+        for:370509 ,
+        for:370510 ,
+        for:370511 ,
+        for:370512 ,
         merfor:basement-geology ,
         merfor:basin-analysis ,
         merfor:biogeology ,
         merfor:carbon-capture-and-storage ,
         merfor:extraterrestrial-geology ,
-        for:370502 ,
+        merfor:geothermal-resource-geology ,
         merfor:historical-geology ,
-        for:370504 ,
+        merfor:mineral-resource-geology ,
         merfor:mineral-system-geology ,
-        for:370505 ,
-        for:370506 ,
+        merfor:organic-petrology ,
         merfor:palynology ,
+        merfor:petroleum-geology ,
         merfor:petroleum-system-geology ,
         merfor:petrology ,
-        for:370503 ,
-        merfor:organic-petrology ,
-		merfor:sedimentary-geology ,
-        merfor:sedimentary-petrology ,
+        merfor:quarry-and-extractive-resource-geology ,
         merfor:regional-geology ,
         merfor:resource-geology ,
-        merfor:geothermal-resource-geology ,
-        merfor:mineral-resource-geology ,
-        merfor:petroleum-geology ,
-        merfor:quarry-and-extractive-resource-geology ,
-        for:370509 ,
-        for:370510 ,
-        for:370511 ,
-        merfor:surface-geology ,
-        for:370512 ;
+        merfor:sedimentary-geology ,
+        merfor:sedimentary-petrology ,
+        merfor:surface-geology ;
+    skos:prefLabel "Geology Fields of Research Codes"@en ;
+    schema:citation "Made for the MER catalogue upgrade project, 2022" ;
 .
 
 merfor:geophysics-collection
     a skos:Collection ;
-    dcterms:identifier "geophysics-collection"^^xsd:token ;
-    dcterms:provenance "Made for the MER catalogue upgrade project, 2022" ;
     skos:definition "Geophysics Fields of Research Codes"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "Geophysics Fields of Research Codes"@en ;
     skos:member
         for:370602 ,
-        merfor:magnetotellurics ,
         for:370604 ,
+        for:370609 ,
         merfor:401208 ,
         merfor:gravity ,
         merfor:gravity-gradiometry ,
-        merfor:magnetics ,
         merfor:magnetic-gradiometry ,
+        merfor:magnetics ,
+        merfor:magnetotellurics ,
+        merfor:passive-seismic ,
         merfor:petrophysics ,
-        merfor:radiometrics ,
-        for:370609 ,
-        merfor:passive-seismic ;
+        merfor:radiometrics ;
+    skos:prefLabel "Geophysics Fields of Research Codes"@en ;
+    schema:citation "Made for the MER catalogue upgrade project, 2022" ;
 .
 
-
-merfor:environment-collection
-    a skos:Collection ;
-    dcterms:identifier "environment-collection"^^xsd:token ;
-    dcterms:provenance "Made for the MER catalogue upgrade project, 2022" ;
-    skos:definition "Environment Fields of Research Codes"@en ;
+merfor:geostorage-engineering
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader merfor:resources-engineering ;
+    skos:definition "Geostorage Engineering"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "Environment Fields of Research Codes"@en ;
-    skos:member
-        for:41 ,
-        merfor:environmental-science-and-management ,
-        merfor:environmental-impact-assessment ,
-        for:4104 ,
-        merfor:environmental-monitoring ,
-        merfor:environmental-rehabilitation-excl-bioremediation ,
-        for:410406 ,
-        merfor:soil-science ,
-        for:410101 ,
-        merfor:land-capability-and-soil-degradation ,
-        for:410603 ,
-        merfor:soil-chemistry ,
-        for:410605 ,
-        merfor:physical-geography ,
-        merfor:geomorphology-and-regolith-and-landscape-evolution ,
-        for:370902 ,
-        merfor:hydrogeology ,
-        for:370903 ,
-        merfor:paleoclimatology ,
-        for:370905 ,
-        merfor:surface-processes ,
-        merfor:surfacewater-hydrology ,
-        merfor:environmentally-sustainable-mineral-resource-activities ,
-        merfor:environmentally-sustainable-energy-activities ,
-        merfor:renewable-energy ;
+    skos:prefLabel "Geostorage Engineering"@en ;
+    schema:citation "Created by MER for this vocabulary" ;
+.
+
+merfor:hydrogeochemistry
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader for:3703 ;
+    skos:definition "Hydrogeochemistry"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Hydrogeochemistry"@en ;
+    schema:citation "Created by MER for this vocabulary" ;
+.
+
+merfor:information-systems
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader for:4013 ;
+    skos:definition "Information Systems"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Information Systems"@en ;
+    schema:citation "Created by MER for this vocabulary" ;
+.
+
+merfor:lithogeochemistry
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader for:370302 ;
+    skos:definition "Lithogeochemistry"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Lithogeochemistry"@en ;
+    schema:citation "Created by MER for this vocabulary" ;
+.
+
+merfor:numerical-computation
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader merfor:computation-theory-and-mathematics ;
+    skos:definition "Numerical Computation"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Numerical Computation"@en ;
+    schema:citation "Created by MER for this vocabulary" ;
+.
+
+merfor:pattern-recognition-and-data-mining
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader merfor:artificial-intelligence-and-image-processing ;
+    skos:definition "Pattern Recognition And Data Mining"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Pattern Recognition And Data Mining"@en ;
+    schema:citation "Created by MER for this vocabulary" ;
+.
+
+merfor:primary-mining-and-extraction-of-mineral-resources
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader merfor:mineral-resources-exc-energy-resources ;
+    skos:definition "Primary Mining And Extraction Of Mineral Resources"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Primary Mining And Extraction Of Mineral Resources"@en ;
+    schema:citation "Created by MER for this vocabulary" ;
+.
+
+merfor:remote-sensing
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader for:4013 ;
+    skos:definition "Remote Sensing"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Remote Sensing"@en ;
+    schema:citation "Created by MER for this vocabulary" ;
+.
+
+merfor:simulation-and-modelling
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader merfor:artificial-intelligence-and-image-processing ;
+    skos:definition "Simulation And Modelling"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Simulation And Modelling"@en ;
+    schema:citation "Created by MER for this vocabulary" ;
 .
 
 merfor:spatial-collection
     a skos:Collection ;
-    dcterms:identifier "spatial-collection"^^xsd:token ;
-    dcterms:provenance "Made for the MER catalogue upgrade project, 2022" ;
     skos:definition "Spatial Fields of Research Codes"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "Spatial Fields of Research Codes"@en ;
     skos:member merfor:geospatial-information-systems ;
+    skos:prefLabel "Spatial Fields of Research Codes"@en ;
+    schema:citation "Made for the MER catalogue upgrade project, 2022" ;
+.
+
+for:3304
+    a skos:Concept ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
+    skos:broader for:33 ;
+    skos:definition "Urban And Regional Planning"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Urban And Regional Planning"@en ;
+    schema:citation "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
+.
+
+for:370301
+    a skos:Concept ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
+    skos:broader for:3703 ;
+    skos:definition "Exploration Geochemistry"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Exploration Geochemistry"@en ;
+    schema:citation "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
+.
+
+for:370302
+    a skos:Concept ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
+    skos:broader for:3703 ;
+    skos:definition "Inorganic Geochemistry"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Inorganic Geochemistry"@en ;
+    schema:citation "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
+.
+
+for:370502
+    a skos:Concept ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
+    skos:broader for:3705 ;
+    skos:definition "Geochronology"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Geochronology"@en ;
+    schema:citation "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
+.
+
+for:370503
+    a skos:Concept ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
+    skos:broader merfor:petrology ;
+    skos:definition "Igneous And Metamorphic Petrology"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Igneous And Metamorphic Petrology"@en ;
+    schema:citation "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
+.
+
+for:370504
+    a skos:Concept ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
+    skos:broader for:3705 ;
+    skos:definition "Marine Geoscience"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Marine Geoscience"@en ;
+    schema:citation "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
+.
+
+for:370505
+    a skos:Concept ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
+    skos:broader for:3705 ;
+    skos:definition "Mineralogy And Crystallography"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Mineralogy And Crystallography"@en ;
+    schema:citation "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
+.
+
+for:370509
+    a skos:Concept ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
+    skos:broader for:3705 ;
+    skos:definition "Sedimentology"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Sedimentology"@en ;
+    schema:citation "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
+.
+
+for:370510
+    a skos:Concept ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
+    skos:broader for:3705 ;
+    skos:definition "Stratigraphy"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Stratigraphy"@en ;
+    schema:citation "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
+.
+
+for:370511
+    a skos:Concept ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
+    skos:broader for:3705 ;
+    skos:definition "Structural Geology & Tectonics"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Structural Geology & Tectonics"@en ;
+    schema:citation "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
+.
+
+for:370512
+    a skos:Concept ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
+    skos:broader for:3705 ;
+    skos:definition "Volcanology"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Volcanology"@en ;
+    schema:citation "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
+.
+
+for:370604
+    a skos:Concept ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
+    skos:broader for:3706 ;
+    skos:definition "Geodynamics"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Geodynamics"@en ;
+    schema:citation "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
+.
+
+for:370902
+    a skos:Concept ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
+    skos:broader merfor:physical-geography ;
+    skos:definition "Glaciology"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Glaciology"@en ;
+    schema:citation "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
+.
+
+for:370903
+    a skos:Concept ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
+    skos:broader merfor:physical-geography ;
+    skos:definition "Natural Hazards"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Natural Hazards"@en ;
+    schema:citation "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
+.
+
+for:370905
+    a skos:Concept ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
+    skos:broader merfor:physical-geography ;
+    skos:definition "Quaternary Environments"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Quaternary Environments"@en ;
+    schema:citation "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
+.
+
+for:410101
+    a skos:Concept ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
+    skos:broader merfor:soil-science ;
+    skos:definition "Carbon Sequestration Science"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Carbon Sequestration Science"@en ;
+    schema:citation "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
+.
+
+for:4104
+    a skos:Concept ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
+    skos:broader merfor:environmental-science-and-management ;
+    skos:definition "Environmental Management"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Environmental Management"@en ;
+    schema:citation "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
+.
+
+for:410406
+    a skos:Concept ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
+    skos:broader merfor:environmental-science-and-management ;
+    skos:definition "Natural Resource Management"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Natural Resource Management"@en ;
+    schema:citation "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
+.
+
+for:410603
+    a skos:Concept ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
+    skos:broader merfor:soil-science ;
+    skos:definition "Soil Biology"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Soil Biology"@en ;
+    schema:citation "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
+.
+
+for:410605
+    a skos:Concept ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
+    skos:broader merfor:soil-science ;
+    skos:definition "Soil Physics"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Soil Physics"@en ;
+    schema:citation "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
+.
+
+for:4407
+    a skos:Concept ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
+    skos:definition "Policy And Administration"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Policy And Administration"@en ;
+    skos:topConceptOf cs: ;
+    schema:citation "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
+.
+
+merfor:basement-geology
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader for:3705 ;
+    skos:definition "Basement Geology"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Basement Geology"@en ;
+    schema:citation "Created by MER for this vocabulary" ;
+.
+
+merfor:basin-analysis
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader for:3705 ;
+    skos:definition "Basin Analysis"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Basin Analysis"@en ;
+    schema:citation "Created by MER for this vocabulary" ;
+.
+
+merfor:biogeology
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader for:3705 ;
+    skos:definition "Biogeology"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Biogeology"@en ;
+    schema:citation "Created by MER for this vocabulary" ;
+.
+
+merfor:carbon-capture-and-storage
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader for:3705 ;
+    skos:definition "Carbon Capture And Storage"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Carbon Capture And Storage"@en ;
+    schema:citation "Created by MER for this vocabulary" ;
+.
+
+merfor:computation-theory-and-mathematics
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader for:46 ;
+    skos:definition "Computation Theory And Mathematics"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Computation Theory And Mathematics"@en ;
+    schema:citation "Created by MER for this vocabulary" ;
+.
+
+merfor:cultural-understanding
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Cultural Understanding"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Cultural Understanding"@en ;
+    skos:topConceptOf cs: ;
+    schema:citation "Created by MER for this vocabulary" ;
+.
+
+merfor:drilling-engineering
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader merfor:resources-engineering ;
+    skos:definition "Drilling Engineering"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Drilling Engineering"@en ;
+    schema:citation "Created by MER for this vocabulary" ;
+.
+
+merfor:energy-conservation-and-efficiency
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader merfor:energy ;
+    skos:definition "Energy Conservation And Efficiency"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Energy Conservation And Efficiency"@en ;
+    schema:citation "Created by MER for this vocabulary" ;
+.
+
+merfor:energy-storage-distribution-and-supply
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader merfor:energy ;
+    skos:definition "Energy Storage, Distribution And Supply"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Energy Storage, Distribution And Supply"@en ;
+    schema:citation "Created by MER for this vocabulary" ;
+.
+
+merfor:energy-transformation
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader merfor:energy ;
+    skos:definition "Energy Transformation"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Energy Transformation"@en ;
+    schema:citation "Created by MER for this vocabulary" ;
+.
+
+merfor:environmental-impact-assessment
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader merfor:environmental-science-and-management ;
+    skos:definition "Environmental Impact Assessment"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Environmental Impact Assessment"@en ;
+    schema:citation "Created by MER for this vocabulary" ;
+.
+
+merfor:environmental-monitoring
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader merfor:environmental-science-and-management ;
+    skos:definition "Environmental Monitoring"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Environmental Monitoring"@en ;
+    schema:citation "Created by MER for this vocabulary" ;
+.
+
+merfor:environmental-rehabilitation-excl-bioremediation
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader merfor:environmental-science-and-management ;
+    skos:definition "Environmental Rehabilitation (Excl. Bioremediation)"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Environmental Rehabilitation (Excl. Bioremediation)"@en ;
+    schema:citation "Created by MER for this vocabulary" ;
+.
+
+merfor:environmentally-sustainable-mineral-resource-activities
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader merfor:energy ;
+    skos:definition "Environmentally Sustainable Mineral Resource Activities"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Environmentally Sustainable Mineral Resource Activities"@en ;
+    schema:citation "Created by MER for this vocabulary" ;
+.
+
+merfor:extraterrestrial-geology
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader for:3705 ;
+    skos:definition "Extraterrestrial Geology"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Extraterrestrial Geology"@en ;
+    schema:citation "Created by MER for this vocabulary" ;
+.
+
+merfor:geomorphology-and-regolith-and-landscape-evolution
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader merfor:physical-geography ;
+    skos:definition "Geomorphology And Regolith And Landscape Evolution"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Geomorphology And Regolith And Landscape Evolution"@en ;
+    schema:citation "Created by MER for this vocabulary" ;
+.
+
+merfor:geospatial-information-systems
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader for:4013 ;
+    skos:definition "Geospatial Information Systems"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Geospatial Information Systems"@en ;
+    schema:citation "Created by MER for this vocabulary" ;
+.
+
+merfor:geothermal-resource-geology
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader merfor:resource-geology ;
+    skos:definition "Geothermal Resource Geology"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Geothermal Resource Geology"@en ;
+    schema:citation "Created by MER for this vocabulary" ;
+.
+
+merfor:gravity-gradiometry
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader merfor:gravity ;
+    skos:definition "Gravity Gradiometry"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Gravity Gradiometry"@en ;
+    schema:citation "Created by MER for this vocabulary" ;
+.
+
+merfor:historical-geology
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader for:3705 ;
+    skos:definition "Historical Geology"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Historical Geology"@en ;
+    schema:citation "Created by MER for this vocabulary" ;
+.
+
+merfor:hydrogeology
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader merfor:physical-geography ;
+    skos:definition "Hydrogeology"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Hydrogeology"@en ;
+    schema:citation "Created by MER for this vocabulary" ;
+.
+
+merfor:land-capability-and-soil-degradation
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader merfor:soil-science ;
+    skos:definition "Land Capability And Soil Degradation"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Land Capability And Soil Degradation"@en ;
+    schema:citation "Created by MER for this vocabulary" ;
+.
+
+merfor:magnetic-gradiometry
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader merfor:magnetics ;
+    skos:definition "Magnetic Gradiometry"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Magnetic Gradiometry"@en ;
+    schema:citation "Created by MER for this vocabulary" ;
+.
+
+merfor:magnetotellurics
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader for:370602 ;
+    skos:definition "Magnetotellurics"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Magnetotellurics"@en ;
+    schema:citation "Created by MER for this vocabulary" ;
+.
+
+merfor:mineral-exploration
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader merfor:mineral-resources-exc-energy-resources ;
+    skos:definition "Mineral Exploration"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Mineral Exploration"@en ;
+    schema:citation "Created by MER for this vocabulary" ;
+.
+
+merfor:mineral-resource-geology
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader merfor:resource-geology ;
+    skos:definition "Mineral Resource Geology"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Mineral Resource Geology"@en ;
+    schema:citation "Created by MER for this vocabulary" ;
+.
+
+merfor:mineral-system-geology
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader for:3705 ;
+    skos:definition "Mineral System Geology"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Mineral System Geology"@en ;
+    schema:citation "Created by MER for this vocabulary" ;
+.
+
+merfor:mining-and-extraction-of-energy-resources
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader merfor:energy ;
+    skos:definition "Mining And Extraction Of Energy Resources"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Mining And Extraction Of Energy Resources"@en ;
+    schema:citation "Created by MER for this vocabulary" ;
+.
+
+merfor:organic-petrology
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader merfor:petrology ;
+    skos:definition "Organic Petrology"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Organic Petrology"@en ;
+    schema:citation "Created by MER for this vocabulary" ;
+.
+
+merfor:paleoclimatology
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader merfor:physical-geography ;
+    skos:definition "Paleoclimatology"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Paleoclimatology"@en ;
+    schema:citation "Created by MER for this vocabulary" ;
+.
+
+merfor:palynology
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader for:370506 ;
+    skos:definition "Palynology"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Palynology"@en ;
+    schema:citation "Created by MER for this vocabulary" ;
+.
+
+merfor:passive-seismic
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader for:370609 ;
+    skos:definition "Passive Seismic"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Passive Seismic"@en ;
+    schema:citation "Created by MER for this vocabulary" ;
+.
+
+merfor:petroleum-geology
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader merfor:resource-geology ;
+    skos:definition "Petroleum Geology"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Petroleum Geology"@en ;
+    schema:citation "Created by MER for this vocabulary" ;
+.
+
+merfor:petroleum-system-geology
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader for:3705 ;
+    skos:definition "Petroleum System Geology"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Petroleum System Geology"@en ;
+    schema:citation "Created by MER for this vocabulary" ;
+.
+
+merfor:petrophysics
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader for:3706 ;
+    skos:definition "Petrophysics"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Petrophysics"@en ;
+    schema:citation "Created by MER for this vocabulary" ;
+.
+
+merfor:preparation-and-production-of-energy-sources
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader merfor:energy ;
+    skos:definition "Preparation And Production Of Energy Sources"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Preparation And Production Of Energy Sources"@en ;
+    schema:citation "Created by MER for this vocabulary" ;
+.
+
+merfor:quarry-and-extractive-resource-geology
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader merfor:resource-geology ;
+    skos:definition "Quarry And Extractive Resource Geology"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Quarry And Extractive Resource Geology"@en ;
+    schema:citation "Created by MER for this vocabulary" ;
+.
+
+merfor:radiometrics
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader for:3706 ;
+    skos:definition "Radiometrics"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Radiometrics"@en ;
+    schema:citation "Created by MER for this vocabulary" ;
+.
+
+merfor:regional-geology
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader for:3705 ;
+    skos:definition "Regional Geology"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Regional Geology"@en ;
+    schema:citation "Created by MER for this vocabulary" ;
+.
+
+merfor:sedimentary-geology
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader for:3705 ;
+    skos:definition "Sedimentary Geology"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Sedimentary Geology"@en ;
+    schema:citation "Created by MER for this vocabulary" ;
+.
+
+merfor:sedimentary-petrology
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader merfor:petrology ;
+    skos:definition "Sedimentary Petrology"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Sedimentary Petrology"@en ;
+    schema:citation "Created by MER for this vocabulary" ;
+.
+
+merfor:soil-chemistry
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader merfor:soil-science ;
+    skos:definition "Soil Chemistry"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Soil Chemistry"@en ;
+    schema:citation "Created by MER for this vocabulary" ;
+.
+
+merfor:surface-geology
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader for:3705 ;
+    skos:definition "Surface Geology"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Surface Geology"@en ;
+    schema:citation "Created by MER for this vocabulary" ;
+.
+
+merfor:surface-processes
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader merfor:physical-geography ;
+    skos:definition "Surface Processes"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Surface Processes"@en ;
+    schema:citation "Created by MER for this vocabulary" ;
+.
+
+merfor:surfacewater-hydrology
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader merfor:physical-geography ;
+    skos:definition "Surfacewater Hydrology"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Surfacewater Hydrology"@en ;
+    schema:citation "Created by MER for this vocabulary" ;
+.
+
+for:31
+    a skos:Concept ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
+    skos:definition "Biological Sciences"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Biological Sciences"@en ;
+    skos:topConceptOf cs: ;
+    schema:citation "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
+.
+
+for:33
+    a skos:Concept ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
+    skos:definition "Built Environment And Design"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Built Environment And Design"@en ;
+    skos:topConceptOf cs: ;
+    schema:citation "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
+.
+
+for:370506
+    a skos:Concept ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
+    skos:broader for:3705 ;
+    skos:definition "Paleontology"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Paleontology"@en ;
+    schema:citation "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
+.
+
+for:370602
+    a skos:Concept ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
+    skos:broader for:3706 ;
+    skos:definition "Electrical And Electromagnetic Methods In Geophysics"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Electrical And Electromagnetic Methods In Geophysics"@en ;
+    schema:citation "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
+.
+
+for:370609
+    a skos:Concept ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
+    skos:broader for:3706 ;
+    skos:definition "Seismology And Seismic Exploration"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Seismology And Seismic Exploration"@en ;
+    schema:citation "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
+.
+
+merfor:energy-exploration
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader merfor:energy ;
+    skos:definition "Energy Exploration"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Energy Exploration"@en ;
+    schema:citation "Created by MER for this vocabulary" ;
+.
+
+merfor:environmentally-sustainable-energy-activities
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader merfor:energy ;
+    skos:definition "Environmentally Sustainable Energy Activities"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Environmentally Sustainable Energy Activities"@en ;
+    schema:citation "Created by MER for this vocabulary" ;
+.
+
+merfor:gravity
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader for:3706 ;
+    skos:definition "Gravity"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Gravity"@en ;
+    schema:citation "Created by MER for this vocabulary" ;
+.
+
+merfor:magnetics
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader for:3706 ;
+    skos:definition "Magnetics"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Magnetics"@en ;
+    schema:citation "Created by MER for this vocabulary" ;
+.
+
+merfor:renewable-energy
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader merfor:energy ;
+    skos:definition "Renewable Energy"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Renewable Energy"@en ;
+    schema:citation "Created by MER for this vocabulary" ;
+.
+
+<https://linked.data.gov.au/org/mer>
+    a schema:Organization ;
+    schema:name "SA Minerals & Energy Resources" ;
+    schema:url "https://www.energymining.sa.gov.au/industry/geological-survey"^^xsd:anyURI ;
+.
+
+for:46
+    a skos:Concept ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
+    skos:definition "Information And Computing Sciences"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Information And Computing Sciences"@en ;
+    skos:topConceptOf cs: ;
+    schema:citation "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
+.
+
+for:41
+    a skos:Concept ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
+    skos:definition "Environmental Sciences"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Environmental Sciences"@en ;
+    skos:topConceptOf cs: ;
+    schema:citation "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
+.
+
+for:43
+    a skos:Concept ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
+    skos:definition "History And Archaeology"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "History And Archaeology"@en ;
+    skos:topConceptOf cs: ;
+    schema:citation "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
+.
+
+merfor:mineral-resources-exc-energy-resources
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Mineral Resources (Excl. Energy Resources)"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Mineral Resources (Excl. Energy Resources)"@en ;
+    skos:topConceptOf cs: ;
+    schema:citation "Created by MER for this vocabulary" ;
+.
+
+merfor:petrology
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader for:3705 ;
+    skos:definition "Petrology"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Petrology"@en ;
+    schema:citation "Created by MER for this vocabulary" ;
+.
+
+merfor:artificial-intelligence-and-image-processing
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader for:46 ;
+    skos:definition "Artificial Intelligence And Image Processing"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Artificial Intelligence And Image Processing"@en ;
+    schema:citation "Created by MER for this vocabulary" ;
+.
+
+merfor:resource-geology
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader for:3705 ;
+    skos:definition "Resource Geology"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Resource Geology"@en ;
+    schema:citation "Created by MER for this vocabulary" ;
+.
+
+for:37
+    a skos:Concept ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
+    skos:definition "Earth Sciences"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Earth Sciences"@en ;
+    skos:topConceptOf cs: ;
+    schema:citation "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
+.
+
+for:3703
+    a skos:Concept ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
+    skos:broader for:37 ;
+    skos:definition "Geochemistry"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Geochemistry"@en ;
+    schema:citation "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
+.
+
+for:40
+    a skos:Concept ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
+    skos:definition "Engineering"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Engineering"@en ;
+    skos:topConceptOf cs: ;
+    schema:citation "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
+.
+
+merfor:environmental-science-and-management
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader for:41 ;
+    skos:definition "Environmental Science And Management"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Environmental Science And Management"@en ;
+    schema:citation "Created by MER for this vocabulary" ;
+.
+
+merfor:soil-science
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader for:41 ;
+    skos:definition "Soil Science"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Soil Science"@en ;
+    schema:citation "Created by MER for this vocabulary" ;
+.
+
+for:3706
+    a skos:Concept ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
+    skos:broader for:37 ;
+    skos:definition "Geophysics"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Geophysics"@en ;
+    schema:citation "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
+.
+
+for:4013
+    a skos:Concept ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
+    skos:broader for:40 ;
+    skos:definition "Geomatic Engineering"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Geomatic Engineering"@en ;
+    schema:citation "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
+.
+
+merfor:physical-geography
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader for:37 ;
+    skos:definition "Physical Geography"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Physical Geography"@en ;
+    schema:citation "Created by MER for this vocabulary" ;
+.
+
+merfor:resources-engineering
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader for:40 ;
+    skos:definition "Resources Engineering"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Resources Engineering"@en ;
+    schema:citation "Created by MER for this vocabulary" ;
+.
+
+merfor:energy
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Energy"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Energy"@en ;
+    skos:topConceptOf cs: ;
+    schema:citation "Created by MER for this vocabulary" ;
+.
+
+for:3705
+    a skos:Concept ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
+    skos:broader for:37 ;
+    skos:definition "Geology"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Geology"@en ;
+    schema:citation "https://linked.data.gov.au/def/anzsrc-for/2020"^^xsd:anyURI ;
+.
+
+cs:
+    a skos:ConceptScheme ;
+    reg:status astatus:experimental ;
+    skos:changeNote "2024-08-26 NJC Made VocPub 4.10 valid, LongTurtle formatted, no content changes" ;
+    skos:definition """Fields of Research Codes used as categories for data by South Australian Minerals and Energy Resources.
+        
+        These categories are mostly the Australian/New Zealand Fields of Research (ANZSRC FoR) 2020 codes but with fine-grained additions in MER's areas of interest and excluding many codes in unrelated areas."""@en ;
+    skos:hasTopConcept
+        for:31 ,
+        for:33 ,
+        for:37 ,
+        for:40 ,
+        for:41 ,
+        for:43 ,
+        for:4407 ,
+        for:46 ,
+        merfor:cultural-understanding ,
+        merfor:energy ,
+        merfor:mineral-resources-exc-energy-resources ;
+    skos:prefLabel "MER Fields of Research Codes"@en ;
+    prov:qualifiedDerivation
+        [
+            prov:entity <https://linked.data.gov.au/def/anzsrc-for> ;
+            prov:hadRole <https://linked.data.gov.au/def/vocab-derivation-modes/subsetting-and-extension> ;
+        ] ;
+    schema:citation "https://linked.data.gov.au/def/anzsrc-for"^^xsd:anyURI ;
+    schema:creator <https://linked.data.gov.au/org/mer> ;
+    schema:dateCreated "2021-09-14"^^xsd:date ;
+    schema:dateModified "2024-08-26"^^xsd:date ;
+    schema:issued "2022-11-01"^^xsd:date ;
+    schema:license <https://purl.org/NET/rdflicense/cc-by4.0> ;
+    schema:publisher <https://linked.data.gov.au/org/mer> ;
+    schema:rights "© Department for Energy and Mining, 2022" ;
 .

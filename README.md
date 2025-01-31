@@ -10,11 +10,11 @@ This repository is managed so that vocabularies merged into the main branch here
 
 These vocabularies are presented online at:
 
-* LOCATION NOT AVAILABLE YET (Nov, 2022)
+* LOCATION NOT AVAILABLE YET (Aug, 2024)
     * check back soon...
 
 ## License  
-MER's vocabularies in this repository are licensed using the [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) licence if created by MER. Vocabularies not created by MER have the licenses assigned to them declaread in their metadata. For the CC BY 4.0 license deed, see the [LICENSE file](LICENSE).
+MER's vocabularies in this repository are licensed using the [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) licence if created by MER. Vocabularies not created by MER have the licenses assigned to them declared in their metadata. For the CC BY 4.0 license deed, see the [LICENSE file](LICENSE).
 
 ## Rights
 
@@ -30,25 +30,6 @@ These vocabularies are managed by the MER. Please contact MER via their main web
 
 For technical issues to do with this repository, please contact:
 
-**Nicholas Car**  
-_Vocabulary Specialist_  
-Kurrawong AI  
-<nick@kurrawong.net>  
-<https://kurrawong.net>
-
-## Checklist
-
-**Vocab** | **Status**
---- | ---
-South Australian Minerals and Energy Resources Categories | [Implemented](https://prezcli.azurewebsites.net/vocab/mer-categories)
-SA Commodity Codes | [Implemented](https://prezcli.azurewebsites.net/vocab/commodity-codes)
-Maintenance Frequency Code | [Implemented](https://prezcli.azurewebsites.net/vocab/MD_MaintenanceFrequencyCode)
-Stratigraphy | ?
-SA Geological Features | [Implemented](https://prezcli.azurewebsites.net/vocab/sa-geological-features) but doesn't look correct (hierarchy off)
-Document Type | [Implemented](https://prezcli.azurewebsites.net/vocab/mer-doc-types)
-MD Scope | [Implemented](https://prezcli.azurewebsites.net/vocab/MD_ScopeCode)
-MD Topic Category | [Implemented](https://prezcli.azurewebsites.net/vocab/topic-categories)
-Distribution format | [Implemented](https://prezcli.azurewebsites.net/vocab/distribution-formats)
-Status | [Implemented](https://prezcli.azurewebsites.net/vocab/work-status)
-&nbsp; | &nbsp;
-Vocab Derivation Modes | [Implemented](https://prezcli.azurewebsites.net/vocab/vocab-derivation-modes)
+**KurrawongAI*  
+<info@kurrawong.ai>  
+<https://kurrawong.ai>
