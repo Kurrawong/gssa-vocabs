@@ -10,28 +10,38 @@ variables:
   pythonVersion: "3.13"
 
 steps:
-  - displayName: "Install Taskfile"
-    bash: |
-      sh -c "$(curl --location https://taskfile.dev/install.sh)" -- -d -b ~/.local/bin
-      echo '##vso[task.prependpath]~/.local/bin'
-      task --version
+  - task: bash@3
+    displayName: "Install Taskfile"
+    inputs:
+      script: |
+        sh -c "$(curl --location https://taskfile.dev/install.sh)" -- -d -b ~/.local/bin
+        echo '##vso[task.prependpath]~/.local/bin'
+        task --version
 
-  - displayName: "Install uv"
-    bash: |
-      curl -LsSf https://astral.sh/uv/install.sh | sh
-      echo '##vso[task.prependpath]~/.local/bin'
-      uv --version
+  - task: bash@3
+    displayName: "Install uv"
+    inputs:
+      script: |
+        curl -LsSf https://astral.sh/uv/install.sh | sh
+        echo '##vso[task.prependpath]~/.local/bin'
+        uv --version
 
-  - displayName: "Install python"
-    bash: |
-      uv install python@${{ variables.pythonVersion }}
-      python --version
+  - task: bash@3
+    displayName: "Install python"
+    inputs:
+      script: |
+        uv install python@$(pythonVersion)
+        python --version
 
-  - displayName: "Install pyshacl"
-    bash: |
-      uv tool install pyshacl
-      pyshacl --version
+  - task: bash@3
+    displayName: "Install pyshacl"
+    inputs:
+      script: |
+        uv tool install pyshacl
+        pyshacl --version
 
-  - displayName: "Validate vocabularies"
-    bash: |
-      task validate
+  - task: bash@3
+    displayName: "Validate vocabularies"
+    inputs:
+      script: |
+        task validate
