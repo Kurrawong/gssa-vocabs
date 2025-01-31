@@ -46,7 +46,7 @@ tasks:
   validate:
     cmd: |
       for file in vocabularies/*.ttl; do
-        echo "Validating $file..."
+        echo -e "\nValidating $file..."
         pyshacl --allow-warnings --shapes vocpub.ttl "$file"
         if [ $? -ne 0 ]; then
           echo "Validation failed for $file"
