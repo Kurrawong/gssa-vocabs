@@ -31,14 +31,14 @@ steps:
         python --version
 
   - task: CmdLine@2
-    displayName: "Install pyshacl"
+    displayName: "Install kurra"
     inputs:
       script: |
-        uv tool install pyshacl
-        pyshacl --version
+        uv tool install kurra
+        kurra --version
 
   - task: CmdLine@2
-    displayName: "Validate vocabularies"
+    displayName: "Upload vocabularies"
     inputs:
       script: |
-        task validate
+        kurra file upload vocabularies/ $(FUSEKI_URL)/$(FUSEKI_DATASET) --username $(FUSEKI_USERNAME) --password $(FUSEKI_PASSWORD)
