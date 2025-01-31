@@ -1,0 +1,29 @@
+trigger:
+  branches:
+    exclude:
+      - main
+
+pool:
+  vmImage: "ubuntu-latest"
+
+steps:
+  - task: CmdLine@2
+    displayName: "Install Task"
+    inputs:
+      script: |
+        sh -c "$(curl --location https://taskfile.dev/install.sh)" -- -d -b ~/.local/bin
+        echo '##vso[task.prependpath]~/.local/bin'
+
+  - task: CmdLine@2
+    displayName: "Install uv"
+    inputs:
+      script: |
+        curl -LsSf https://astral.sh/uv/install.sh | sh
+        echo '##vso[task.prependpath]~/.local/bin'
+
+  - task: CmdLine@2
+    displayName: "Verify installations"
+    inputs:
+      script: |
+        task --version
+        uv --version
