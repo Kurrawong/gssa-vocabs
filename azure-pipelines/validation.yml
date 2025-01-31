@@ -10,7 +10,7 @@ variables:
   pythonVersion: "3.13"
 
 steps:
-  - task: bash@3
+  - task: CmdLine@2
     displayName: "Install Taskfile"
     inputs:
       script: |
@@ -18,7 +18,7 @@ steps:
         echo '##vso[task.prependpath]~/.local/bin'
         task --version
 
-  - task: bash@3
+  - task: CmdLine@2
     displayName: "Install uv"
     inputs:
       script: |
@@ -26,21 +26,21 @@ steps:
         echo '##vso[task.prependpath]~/.local/bin'
         uv --version
 
-  - task: bash@3
+  - task: CmdLine@2
     displayName: "Install python"
     inputs:
       script: |
         uv install python@$(pythonVersion)
         python --version
 
-  - task: bash@3
+  - task: CmdLine@2
     displayName: "Install pyshacl"
     inputs:
       script: |
         uv tool install pyshacl
         pyshacl --version
 
-  - task: bash@3
+  - task: CmdLine@2
     displayName: "Validate vocabularies"
     inputs:
       script: |
