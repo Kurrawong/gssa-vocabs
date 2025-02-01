@@ -4,7 +4,7 @@ trigger:
       - main
 
 jobs:
-  - deployment: vocabs-dev-deployment
+  - deployment: vocabs_dev_deployment
     environment: vocabs-dev
     pool:
       vmImage: "ubuntu-latest"
