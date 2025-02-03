@@ -50,7 +50,7 @@ jobs:
               displayName: "Test database connection"
               inputs:
                 script: |
-                  kurra db test '$(FUSEKI_URL)' --username '$(FUSEKI_USERNAME)' --password '$(FUSEKI_PASSWORD)'
+                  kurra db list '$(FUSEKI_URL)' --username '$(FUSEKI_USERNAME)' --password '$(FUSEKI_PASSWORD)'
 
             - task: CmdLine@2
               displayName: "Upload vocabularies"
