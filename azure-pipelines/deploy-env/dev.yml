@@ -47,7 +47,13 @@ jobs:
                   kurra --version
 
             - task: CmdLine@2
+              displayName: "Test database connection"
+              inputs:
+                script: |
+                  kurra db test '$(FUSEKI_URL)' --username '$(FUSEKI_USERNAME)' --password '$(FUSEKI_PASSWORD)'
+
+            - task: CmdLine@2
               displayName: "Upload vocabularies"
               inputs:
                 script: |
-                  kurra file upload vocabularies/ $(FUSEKI_URL)/$(FUSEKI_DATASET) --username $(FUSEKI_USERNAME) --password $(FUSEKI_PASSWORD)
+                  kurra file upload vocabularies/ '$(FUSEKI_URL)/$(FUSEKI_DATASET)' --username '$(FUSEKI_USERNAME)' --password '$(FUSEKI_PASSWORD)'
