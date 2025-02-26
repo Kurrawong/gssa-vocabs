@@ -1,5 +1,18 @@
 # User Guide
 
+## High-level Architecture
+
+> TODO: Add a diagram and describe the data flow between systems.
+
+```mermaid
+graph LR;
+    A[Hard edge] -->|Link text| B(Round edge) --> C{Decision}
+    C -->|One| D[Result one]
+    C -->|Two| E[Result two]
+```
+
+## Background
+
 The vocabularies in this repository are encoded in [RDF Turtle](https://www.w3.org/TR/turtle/) using the [SKOS](https://www.w3.org/TR/skos-reference/). Each vocabulary is stored in its own `.ttl` file in the [vocabularies](./vocabularies) directory and each vocabulary file conforms to the [VocPub Profile](https://w3id.org/profile/vocpub).
 
 The VocPub Profile is maintained and published by the [Australian Government Linked Data Working Group (AGLDWG)](https://www.linked.data.gov.au/) and provides an opinionated set of best practices for structuring and publishing SKOS vocabularies.
@@ -88,6 +101,8 @@ cs:
 
 Now, add the concepts that will fall under this vocabulary. For example, we add Basalt, a top concept of the vocabulary.
 
+> TODO: Add diagram with concept scheme and concept.
+
 ```turtle
 :basalt
     a skos:Concept ;
@@ -106,6 +121,8 @@ It is important to remember to add the directional relationships from the concep
 cs: skos:hasTopConcept :basalt .
 ```
 
+> TODO: Add diagram with concept scheme and concept in the other direction.
+
 Next, we will create a new concept that is a narrower and more specific version of basalt. We call this concept Alkali basalt. Notice that we specify that the concept has a `skos:broader` relationship to the `:basalt` concept.
 
 ```turtle
@@ -122,13 +139,21 @@ Next, we will create a new concept that is a narrower and more specific version 
 
 Likewise, we want to specify that the `:basalt` concept has an `skos:narrower` relationship to the `:alkali-basalt` concept.
 
+> TODO: Add diagram with concept scheme and concept in the other direction.
+
 ```turtle
 :basalt skos:narrower :alkali-basalt .
 ```
 
+> TODO: Add diagram with concept scheme and concept in the other direction.
+
 And that's all there is to creating and updating SKOS vocabularies. As long as the expected metadata properties exist, the vocabulary will be valid and conform to the VocPub Profile. But don't worry, if you forget to add a property, the validator will let you know.
 
 ### Pull Request
+
+> TODO: Add flow diagram
+
+> TODO: Add screenshots of where to create a pull request.
 
 Once you have made your changes, you can create a pull request to merge your changes back into the `main` branch.
 
@@ -153,6 +178,8 @@ Once the pull request has been approved, you can merge the pull request into the
 Once the pull request has been merged into the `main` branch, a `vocabs-dev-deploy` pipeline will automatically trigger to deploy the new changes to the `vocabs-dev` environment.
 
 ### Deploy to UAT
+
+> TODO: Add screenshots of where to approve the deployment of pipelines for both UAT and PROD.
 
 At any time, you can manually trigger a `vocabs-uat-deploy` pipeline to deploy the new changes to the `vocabs-uat` environment.
 
