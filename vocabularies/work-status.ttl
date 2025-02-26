@@ -13,7 +13,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "The work is completed"@en ;
     skos:inScheme cs: ;
-    # skos:prefLabel "Completed"@en ;
+    skos:prefLabel "Completed"@en ;
     skos:topConceptOf cs: ;
 .
 
