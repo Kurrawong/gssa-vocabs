@@ -4,12 +4,18 @@
 
 > TODO: Add a diagram and describe the data flow between systems.
 
-```mermaid
-graph LR;
-    A[Hard edge] -->|Link text| B(Round edge) --> C{Decision}
-    C -->|One| D[Result one]
-    C -->|Two| E[Result two]
-```
+:::mermaid
+
+stateDiagram
+[*] --> NewMessage
+NewMessage --> Processing: Process Message
+Processing --> Stored: Store in DB
+Processing --> Error: Fail
+Stored --> Sent: Send Notification
+Sent --> [*]
+Error --> [*]
+
+:::
 
 ## Background
 
