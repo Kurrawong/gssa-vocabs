@@ -1,5 +1,33 @@
 # User Guide
 
+## Systems
+
+This repository implements several pipelines that update services running in Azure Cloud. The following diagram illustrates the actions performed by each service and their dependencies.
+
+:::mermaid
+
+graph LR;
+subgraph D[Azure DevOps]
+R[Azure Repo 'vocabs']
+end
+
+R --> |pipeline - update Fuseki vocab data| B
+R --> |pipeline - purge VocPrez cache| B
+
+subgraph A[Azure Cloud]
+B[Bastion host]
+F[Fuseki]
+B --> |update vocab data| F
+B --> |purge cache| P
+P[VocPrez]
+P --> |SPARQL query| F
+C[CKAN] --> |Prez API| P
+end
+
+:::
+
+## Background
+
 The vocabularies in this repository are encoded in [RDF Turtle](https://www.w3.org/TR/turtle/) using the [SKOS](https://www.w3.org/TR/skos-reference/). Each vocabulary is stored in its own `.ttl` file in the [vocabularies](./vocabularies) directory and each vocabulary file conforms to the [VocPub Profile](https://w3id.org/profile/vocpub).
 
 The VocPub Profile is maintained and published by the [Australian Government Linked Data Working Group (AGLDWG)](https://www.linked.data.gov.au/) and provides an opinionated set of best practices for structuring and publishing SKOS vocabularies.
@@ -88,6 +116,21 @@ cs:
 
 Now, add the concepts that will fall under this vocabulary. For example, we add Basalt, a top concept of the vocabulary.
 
+:::mermaid
+graph TD;
+CS["cs: (ConceptScheme)<br/>MER Rock Types"]
+B["basalt (Concept)<br/>Basalt"]
+AB["alkali-basalt (Concept)<br/>Alkali basalt"]
+
+    B -->|"skos:inScheme"| CS
+    B -->|"skos:topConceptOf"| CS
+    CS -->|"skos:hasTopConcept"| B
+    AB -->|"skos:inScheme"| CS
+    AB -->|"skos:broader"| B
+    B -->|"skos:narrower"| AB
+
+:::
+
 ```turtle
 :basalt
     a skos:Concept ;
@@ -106,6 +149,17 @@ It is important to remember to add the directional relationships from the concep
 cs: skos:hasTopConcept :basalt .
 ```
 
+:::mermaid
+graph TD;
+CS["cs: (ConceptScheme)<br/>MER Rock Types"]
+B["basalt (Concept)<br/>Basalt"]
+
+    B -->|"skos:inScheme"| CS
+    B -->|"skos:topConceptOf"| CS
+    CS -->|"skos:hasTopConcept"| B
+
+:::
+
 Next, we will create a new concept that is a narrower and more specific version of basalt. We call this concept Alkali basalt. Notice that we specify that the concept has a `skos:broader` relationship to the `:basalt` concept.
 
 ```turtle
@@ -122,13 +176,59 @@ Next, we will create a new concept that is a narrower and more specific version 
 
 Likewise, we want to specify that the `:basalt` concept has an `skos:narrower` relationship to the `:alkali-basalt` concept.
 
+:::mermaid
+graph TD;
+CS["cs: (ConceptScheme)<br/>MER Rock Types"]
+B["basalt (Concept)<br/>Basalt"]
+AB["alkali-basalt (Concept)<br/>Alkali basalt"]
+
+    B -->|"skos:inScheme"| CS
+    B -->|"skos:topConceptOf"| CS
+    CS -->|"skos:hasTopConcept"| B
+    AB -->|"skos:inScheme"| CS
+    AB -->|"skos:broader"| B
+
+:::
+
 ```turtle
 :basalt skos:narrower :alkali-basalt .
 ```
 
+:::mermaid
+graph TD;
+CS["cs: (ConceptScheme)<br/>MER Rock Types"]
+B["basalt (Concept)<br/>Basalt"]
+AB["alkali-basalt (Concept)<br/>Alkali basalt"]
+
+    B -->|"skos:inScheme"| CS
+    B -->|"skos:topConceptOf"| CS
+    CS -->|"skos:hasTopConcept"| B
+    AB -->|"skos:inScheme"| CS
+    AB -->|"skos:broader"| B
+    B -->|"skos:narrower"| AB
+
+:::
+
 And that's all there is to creating and updating SKOS vocabularies. As long as the expected metadata properties exist, the vocabulary will be valid and conform to the VocPub Profile. But don't worry, if you forget to add a property, the validator will let you know.
 
 ### Pull Request
+
+:::mermaid
+graph TD
+A[Make changes in your branch] --> B[Push branch to remote repository]
+B --> C[Create Pull Request in Azure DevOps]
+C --> D[Automated validation pipeline runs]
+D -->|Validation passes| E[Request reviewers]
+D -->|Validation fails| F[Fix issues in branch]
+F --> B
+E --> G[Reviewers approve PR]
+G --> H[Merge PR to main branch]
+H --> I[Automated deployment to DEV environment]
+I --> J[Manual deployment to UAT]
+J --> K[Manual deployment to PROD]
+:::
+
+> TODO: Add screenshots of where to create a pull request.
 
 Once you have made your changes, you can create a pull request to merge your changes back into the `main` branch.
 
@@ -153,6 +253,8 @@ Once the pull request has been approved, you can merge the pull request into the
 Once the pull request has been merged into the `main` branch, a `vocabs-dev-deploy` pipeline will automatically trigger to deploy the new changes to the `vocabs-dev` environment.
 
 ### Deploy to UAT
+
+> TODO: Add screenshots of where to approve the deployment of pipelines for both UAT and PROD.
 
 At any time, you can manually trigger a `vocabs-uat-deploy` pipeline to deploy the new changes to the `vocabs-uat` environment.
 
