@@ -1,19 +1,28 @@
 # User Guide
 
-## High-level Architecture
+## Systems
 
-> TODO: Add a diagram and describe the data flow between systems.
+This repository implements several pipelines that update services running in Azure Cloud. The following diagram illustrates the actions performed by each service and their dependencies.
 
 :::mermaid
 
-stateDiagram
-[*] --> NewMessage
-NewMessage --> Processing: Process Message
-Processing --> Stored: Store in DB
-Processing --> Error: Fail
-Stored --> Sent: Send Notification
-Sent --> [*]
-Error --> [*]
+graph LR;
+subgraph D[Azure DevOps]
+R[Azure Repo 'vocabs']
+end
+
+R --> |pipeline - update Fuseki vocab data| B
+R --> |pipeline - purge VocPrez cache| B
+
+subgraph A[Azure Cloud]
+B[Bastion host]
+F[Fuseki]
+B --> |update vocab data| F
+B --> |purge cache| P
+P[VocPrez]
+P --> |SPARQL query| F
+C[CKAN] --> |Prez API| P
+end
 
 :::
 
@@ -107,7 +116,20 @@ cs:
 
 Now, add the concepts that will fall under this vocabulary. For example, we add Basalt, a top concept of the vocabulary.
 
-> TODO: Add diagram with concept scheme and concept.
+:::mermaid
+graph TD;
+CS["cs: (ConceptScheme)<br/>MER Rock Types"]
+B["basalt (Concept)<br/>Basalt"]
+AB["alkali-basalt (Concept)<br/>Alkali basalt"]
+
+    B -->|"skos:inScheme"| CS
+    B -->|"skos:topConceptOf"| CS
+    CS -->|"skos:hasTopConcept"| B
+    AB -->|"skos:inScheme"| CS
+    AB -->|"skos:broader"| B
+    B -->|"skos:narrower"| AB
+
+:::
 
 ```turtle
 :basalt
@@ -127,7 +149,16 @@ It is important to remember to add the directional relationships from the concep
 cs: skos:hasTopConcept :basalt .
 ```
 
-> TODO: Add diagram with concept scheme and concept in the other direction.
+:::mermaid
+graph TD;
+CS["cs: (ConceptScheme)<br/>MER Rock Types"]
+B["basalt (Concept)<br/>Basalt"]
+
+    B -->|"skos:inScheme"| CS
+    B -->|"skos:topConceptOf"| CS
+    CS -->|"skos:hasTopConcept"| B
+
+:::
 
 Next, we will create a new concept that is a narrower and more specific version of basalt. We call this concept Alkali basalt. Notice that we specify that the concept has a `skos:broader` relationship to the `:basalt` concept.
 
@@ -145,19 +176,57 @@ Next, we will create a new concept that is a narrower and more specific version 
 
 Likewise, we want to specify that the `:basalt` concept has an `skos:narrower` relationship to the `:alkali-basalt` concept.
 
-> TODO: Add diagram with concept scheme and concept in the other direction.
+:::mermaid
+graph TD;
+CS["cs: (ConceptScheme)<br/>MER Rock Types"]
+B["basalt (Concept)<br/>Basalt"]
+AB["alkali-basalt (Concept)<br/>Alkali basalt"]
+
+    B -->|"skos:inScheme"| CS
+    B -->|"skos:topConceptOf"| CS
+    CS -->|"skos:hasTopConcept"| B
+    AB -->|"skos:inScheme"| CS
+    AB -->|"skos:broader"| B
+
+:::
 
 ```turtle
 :basalt skos:narrower :alkali-basalt .
 ```
 
-> TODO: Add diagram with concept scheme and concept in the other direction.
+:::mermaid
+graph TD;
+CS["cs: (ConceptScheme)<br/>MER Rock Types"]
+B["basalt (Concept)<br/>Basalt"]
+AB["alkali-basalt (Concept)<br/>Alkali basalt"]
+
+    B -->|"skos:inScheme"| CS
+    B -->|"skos:topConceptOf"| CS
+    CS -->|"skos:hasTopConcept"| B
+    AB -->|"skos:inScheme"| CS
+    AB -->|"skos:broader"| B
+    B -->|"skos:narrower"| AB
+
+:::
 
 And that's all there is to creating and updating SKOS vocabularies. As long as the expected metadata properties exist, the vocabulary will be valid and conform to the VocPub Profile. But don't worry, if you forget to add a property, the validator will let you know.
 
 ### Pull Request
 
-> TODO: Add flow diagram
+:::mermaid
+graph TD
+A[Make changes in your branch] --> B[Push branch to remote repository]
+B --> C[Create Pull Request in Azure DevOps]
+C --> D[Automated validation pipeline runs]
+D -->|Validation passes| E[Request reviewers]
+D -->|Validation fails| F[Fix issues in branch]
+F --> B
+E --> G[Reviewers approve PR]
+G --> H[Merge PR to main branch]
+H --> I[Automated deployment to DEV environment]
+I --> J[Manual deployment to UAT]
+J --> K[Manual deployment to PROD]
+:::
 
 > TODO: Add screenshots of where to create a pull request.
 
