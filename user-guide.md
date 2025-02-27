@@ -209,6 +209,29 @@ AB["alkali-basalt (Concept)<br/>Alkali basalt"]
 
 :::
 
+### Adding more concept properties
+
+More properties can be added to each concepts to improve the semantics of the vocabulary. A definition is required in the VocPub specification and needed for each concept to pass VocPub validation:
+
+- a `skos:definition` - a short statement defining the concept
+
+To improve the performance of the vocabulary in data operations, it is recommended that alternative labels are added in addition to the mandatory preferred label.
+
+- a `skos:altLabel` is an alterative label by which the concept may be known or understood. Here, the variants 'Alkali olivine basalt' and 'Alkaline basalt' are added as skos:altLabel (each with a language tag).
+
+```turtle
+:alkali-basalt
+    a skos:Concept ;
+    reg:status astatus:stable ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "A description of alkali basalt"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Alkali basalt"@en ;
+    skos:altLabel "Alkali olivine basalt"@en ,
+        "Alkaline basalt"@en ;
+    skos:broader :basalt ;
+```
+
 And that's all there is to creating and updating SKOS vocabularies. As long as the expected metadata properties exist, the vocabulary will be valid and conform to the VocPub Profile. But don't worry, if you forget to add a property, the validator will let you know.
 
 ### Pull Request
