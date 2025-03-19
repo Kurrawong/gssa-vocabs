@@ -1,0 +1,19 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+
+schema:publisher rdfs:label "Publisher" .
+schema:creator rdfs:label "Creator" .
+schema:issued rdfs:label "Date Issued" .
+schema:dateCreated rdfs:label "Date Created" .
+schema:dateModified rdfs:label "Date Modified" .
+schema:citation rdfs:label "Citation" .
+schema:license rdfs:label "License" .
+schema:version rdfs:label "Version" .
+schema:url rdfs:label "URL" .
+schema:rights rdfs:label "Rights" .
+schema:name rdfs:label "Name" .
+schema:description rdfs:label "Description" .
+schema:keywords rdfs:label "Keywords" .
+schema:subject rdfs:label "Subject" .
+schema:audience rdfs:label "Audience" .
+schema:inLanguage rdfs:label "In Language" .
