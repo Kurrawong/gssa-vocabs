@@ -104,13 +104,13 @@ jobs:
               displayName: "Upload background resources"
               inputs:
                 script: |
-                  kurra db upload background-resources/ 'https://localhost:8443/$(FUSEKI_DATASET)' --username '$(FUSEKI_USERNAME)' --password '$(FUSEKI_PASSWORD)' --insecure
+                  kurra db upload background-resources/ 'https://localhost:8443/$(FUSEKI_DATASET)' --username '$(FUSEKI_USERNAME)' --password '$(FUSEKI_PASSWORD)' --disable-ssl-verification --host-header $(FUSEKI_DOMAIN_NAME)
 
             - task: CmdLine@2
               displayName: "Upload prez catalogue"
               inputs:
                 script: |
-                  kurra db upload prez/ 'https://localhost:8443/$(FUSEKI_DATASET)' --username '$(FUSEKI_USERNAME)' --password '$(FUSEKI_PASSWORD)' --insecure
+                  kurra db upload prez/ 'https://localhost:8443/$(FUSEKI_DATASET)' --username '$(FUSEKI_USERNAME)' --password '$(FUSEKI_PASSWORD)' --disable-ssl-verification --host-header $(FUSEKI_DOMAIN_NAME)
 
             - task: CmdLine@2
               displayName: "Upload vocabularies"
