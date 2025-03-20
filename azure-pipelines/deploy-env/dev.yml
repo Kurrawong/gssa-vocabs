@@ -63,10 +63,28 @@ jobs:
               inputs:
                 script: |
                   mkdir -p ~/.ssh
+                  # Debug: Check if secure file exists
+                  echo "Secure file path: $(sshKey.secureFilePath)"
+                  ls -la $(sshKey.secureFilePath)
+
                   # Copy the secure file to the proper location
                   cp $(sshKey.secureFilePath) ~/.ssh/id_rsa
+
+                  # Debug: Check the copied file
+                  ls -la ~/.ssh/id_rsa
+
                   chmod 600 ~/.ssh/id_rsa
+
+                  # Debug: Check permissions after chmod
+                  ls -la ~/.ssh/id_rsa
+
+                  # Debug: Check bastion host value
+                  echo "Bastion host: $(BASTION_HOST)"
+
                   ssh-keyscan -H $(BASTION_HOST) >> ~/.ssh/known_hosts
+
+                  # Debug: Check known_hosts file
+                  cat ~/.ssh/known_hosts
 
             - task: CmdLine@2
               displayName: "Set up SSH tunnel to Fuseki"
