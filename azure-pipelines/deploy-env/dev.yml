@@ -53,13 +53,47 @@ jobs:
                   curl ifconfig.me
 
             - task: CmdLine@2
-              displayName: "Test database connection"
+              displayName: "Set up SSH keys for bastion access"
               inputs:
                 script: |
-                  kurra db list '$(FUSEKI_URL)' --username '$(FUSEKI_USERNAME)' --password '$(FUSEKI_PASSWORD)'
+                  mkdir -p ~/.ssh
+                  echo "$(BASTION_SSH_PRIVATE_KEY)" > ~/.ssh/id_rsa
+                  chmod 600 ~/.ssh/id_rsa
+                  ssh-keyscan -H $(BASTION_HOST) >> ~/.ssh/known_hosts
+
+            - task: CmdLine@2
+              displayName: "Set up SSH tunnel to Fuseki"
+              inputs:
+                script: |
+                  # Start SSH tunnel in background (using port 443 for HTTPS)
+                  ssh -i ~/.ssh/id_rsa -L 8443:$(FUSEKI_URL):443 -N -f $(BASTION_USER)@$(BASTION_HOST)
+                  SSH_PID=$!
+                  echo "Started SSH tunnel with PID $SSH_PID"
+
+                  # Ensure tunnel is established
+                  sleep 2
+
+                  # Store PID for later cleanup
+                  echo "##vso[task.setvariable variable=SSH_PID]$SSH_PID"
+
+            - task: CmdLine@2
+              displayName: "Test database connection through SSH tunnel"
+              inputs:
+                script: |
+                  curl -k -u '$(FUSEKI_USERNAME):$(FUSEKI_PASSWORD)' https://localhost:8443/$/ping
 
             - task: CmdLine@2
               displayName: "Upload vocabularies"
               inputs:
                 script: |
-                  kurra file upload vocabularies/ '$(FUSEKI_URL)/$(FUSEKI_DATASET)' --username '$(FUSEKI_USERNAME)' --password '$(FUSEKI_PASSWORD)'
+                  kurra file upload vocabularies/ 'https://localhost:8443/$(FUSEKI_DATASET)' --username '$(FUSEKI_USERNAME)' --password '$(FUSEKI_PASSWORD)' --insecure
+
+            - task: CmdLine@2
+              displayName: "Cleanup SSH tunnel"
+              condition: always()
+              inputs:
+                script: |
+                  if [[ -n "$(SSH_PID)" ]]; then
+                    echo "Killing SSH tunnel with PID $(SSH_PID)"
+                    kill $(SSH_PID) 2>/dev/null || true
+                  fi
