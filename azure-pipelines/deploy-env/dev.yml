@@ -68,7 +68,23 @@ jobs:
                   # Start SSH tunnel in background (using port 443 for HTTPS)
                   ssh -i ~/.ssh/id_rsa -L 8443:$(FUSEKI_URL):443 -N -f $(BASTION_USER)@$(BASTION_HOST)
                   SSH_PID=$!
-                  echo "Started SSH tunnel with PID $SSH_PID"
+                  echo "Starting SSH tunnel with PID $SSH_PID"
+
+                  # Check if SSH process is actually running
+                  if ! ps -p $SSH_PID > /dev/null; then
+                    echo "##vso[task.logissue type=error]SSH tunnel failed to start"
+                    echo "##vso[task.complete result=Failed;]"
+                    exit 1
+                  fi
+
+                  # Test the connection
+                  echo "Testing if tunnel port is open..."
+                  if ! timeout 10 bash -c "until nc -z localhost 8443; do sleep 1; done"; then
+                    echo "##vso[task.logissue type=error]SSH tunnel port 8443 is not accessible after 10 seconds"
+                    echo "##vso[task.complete result=Failed;]"
+                    exit 1
+                  fi
+                  echo "SSH tunnel established successfully!"
 
                   # Ensure tunnel is established
                   sleep 2
