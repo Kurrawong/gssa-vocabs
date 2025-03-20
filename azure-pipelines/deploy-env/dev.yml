@@ -125,15 +125,26 @@ jobs:
                   # Run all SPARQL update queries in the prez-queries folder
                   for query_file in prez-queries/*.ru; do
                     echo "Applying query: $query_file"
-                    curl -X POST -H "Content-Type: application/sparql-update" -d @"$query_file" \
+                    
+                    # Store the response and capture the status code
+                    response=$(curl -X POST -H "Content-Type: application/sparql-update" -d @"$query_file" \
                       -k \
                       -u '$(FUSEKI_USERNAME):$(FUSEKI_PASSWORD)' \
                       -H "Host: $(FUSEKI_DOMAIN_NAME)" \
-                      https://localhost:8443/$(FUSEKI_DATASET)/update
+                      -w "\n%{http_code}" \
+                      https://localhost:8443/$(FUSEKI_DATASET)/update)
                     
-                    # Check if the query was successful
-                    if [ $? -ne 0 ]; then
-                      echo "##vso[task.logissue type=error]Failed to apply query: $query_file"
+                    # Extract status code (last line) and response body (everything else)
+                    status_code=$(echo "$response" | tail -n1)
+                    response_body=$(echo "$response" | sed '$d')
+                    
+                    # Echo the response and status code
+                    echo "Response status code: $status_code"
+                    echo "Response body: $response_body"
+                    
+                    # Check if the query was successful (status code 2xx)
+                    if [[ ! $status_code =~ ^2[0-9][0-9]$ ]]; then
+                      echo "##vso[task.logissue type=error]Failed to apply query: $query_file. Status code: $status_code"
                       exit 1
                     fi
                   done
