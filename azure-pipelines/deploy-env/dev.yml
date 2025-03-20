@@ -98,13 +98,13 @@ jobs:
               displayName: "Test database connection through SSH tunnel"
               inputs:
                 script: |
-                  curl -k -u '$(FUSEKI_USERNAME):$(FUSEKI_PASSWORD)' https://localhost:8443/$/ping
+                  curl -k -u '$(FUSEKI_USERNAME):$(FUSEKI_PASSWORD)' -H "Host: $(FUSEKI_DOMAIN_NAME)" https://localhost:8443/$/ping
 
             - task: CmdLine@2
               displayName: "Upload vocabularies"
               inputs:
                 script: |
-                  kurra file upload vocabularies/ 'https://localhost:8443/$(FUSEKI_DATASET)' --username '$(FUSEKI_USERNAME)' --password '$(FUSEKI_PASSWORD)' --insecure
+                  kurra db upload vocabularies/ 'https://localhost:8443/$(FUSEKI_DATASET)' --username '$(FUSEKI_USERNAME)' --password '$(FUSEKI_PASSWORD)' --disable-ssl-verification --host-header $(FUSEKI_DOMAIN_NAME)
 
             - task: CmdLine@2
               displayName: "Cleanup SSH tunnel"
