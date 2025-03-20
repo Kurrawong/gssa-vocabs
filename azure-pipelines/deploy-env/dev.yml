@@ -56,7 +56,7 @@ jobs:
               name: sshKey
               displayName: "Download SSH Key"
               inputs:
-                secureFile: "bastion_id_rsa"
+                secureFile: "bastion_dev_id_rsa"
 
             - task: CmdLine@2
               displayName: "Set up SSH keys for bastion access"
@@ -73,7 +73,7 @@ jobs:
               inputs:
                 script: |
                   # Start SSH tunnel in background (using port 443 for HTTPS)
-                  ssh -i ~/.ssh/id_rsa -L 8443:$(FUSEKI_URL):443 -N -f $(BASTION_USER)@$(BASTION_HOST)
+                  ssh -i ~/.ssh/id_rsa -L 8443:$(FUSEKI_DOMAIN_NAME):443 -N -f $(BASTION_USER)@$(BASTION_HOST)
                   SSH_PID=$!
                   echo "Starting SSH tunnel with PID $SSH_PID"
 
