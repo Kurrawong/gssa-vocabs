@@ -113,6 +113,12 @@ jobs:
                   kurra file upload prez/ 'https://localhost:8443/$(FUSEKI_DATASET)' --username '$(FUSEKI_USERNAME)' --password '$(FUSEKI_PASSWORD)' --insecure
 
             - task: CmdLine@2
+              displayName: "Upload vocabularies"
+              inputs:
+                script: |
+                  kurra db upload vocabularies/ 'https://localhost:8443/$(FUSEKI_DATASET)' --username '$(FUSEKI_USERNAME)' --password '$(FUSEKI_PASSWORD)' --disable-ssl-verification --host-header $(FUSEKI_DOMAIN_NAME)
+
+            - task: CmdLine@2
               displayName: "Apply Prez SPARQL Update data expansion queries"
               inputs:
                 script: |
@@ -131,12 +137,6 @@ jobs:
                       exit 1
                     fi
                   done
-
-            - task: CmdLine@2
-              displayName: "Upload vocabularies"
-              inputs:
-                script: |
-                  kurra db upload vocabularies/ 'https://localhost:8443/$(FUSEKI_DATASET)' --username '$(FUSEKI_USERNAME)' --password '$(FUSEKI_PASSWORD)' --disable-ssl-verification --host-header $(FUSEKI_DOMAIN_NAME)
 
             - task: CmdLine@2
               displayName: "Cleanup SSH tunnel"
