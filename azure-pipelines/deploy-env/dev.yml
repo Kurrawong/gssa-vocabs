@@ -52,12 +52,19 @@ jobs:
                 script: |
                   curl ifconfig.me
 
+            - task: DownloadSecureFile@1
+              name: sshKey
+              displayName: "Download SSH Key"
+              inputs:
+                secureFile: "bastion_id_rsa"
+
             - task: CmdLine@2
               displayName: "Set up SSH keys for bastion access"
               inputs:
                 script: |
                   mkdir -p ~/.ssh
-                  echo "$(BASTION_SSH_PRIVATE_KEY)" > ~/.ssh/id_rsa
+                  # Copy the secure file to the proper location
+                  cp $(sshKey.secureFilePath) ~/.ssh/id_rsa
                   chmod 600 ~/.ssh/id_rsa
                   ssh-keyscan -H $(BASTION_HOST) >> ~/.ssh/known_hosts
 
