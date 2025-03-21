@@ -1,0 +1,29 @@
+trigger: none
+
+jobs:
+  - deployment: vocabs_prod_deployment
+    environment: vocabs-prod
+    pool:
+      vmImage: "ubuntu-latest"
+    variables:
+      - group: vocabs-prod
+    strategy:
+      runOnce:
+        deploy:
+          steps:
+            - task: DownloadSecureFile@1
+              name: sshKey
+              displayName: "Download SSH Key"
+              inputs:
+                secureFile: bastion_prod_id_rsa
+
+            - template: ../templates/deploy.yml
+              parameters:
+                python_version: $(PYTHON_VERSION)
+                bastion_file_path: $(sshKey.secureFilePath)
+                bastion_host: $(BASTION_HOST)
+                bastion_user: $(BASTION_USER)
+                fuseki_domain_name: $(FUSEKI_DOMAIN_NAME)
+                fuseki_username: $(FUSEKI_USERNAME)
+                fuseki_password: $(FUSEKI_PASSWORD)
+                fuseki_dataset: $(FUSEKI_DATASET)
