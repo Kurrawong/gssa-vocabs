@@ -1,11 +1,13 @@
 parameters:
   - name: python_version
-  - name: bastion_file_name
+  - name: bastion_file_path
+    secret: true
   - name: bastion_host
   - name: bastion_user
   - name: fuseki_domain_name
   - name: fuseki_username
   - name: fuseki_password
+    secret: true
   - name: fuseki_dataset
 
 steps:
@@ -47,23 +49,17 @@ steps:
       script: |
         curl ifconfig.me
 
-  - task: DownloadSecureFile@1
-    name: sshKey
-    displayName: "Download SSH Key"
-    inputs:
-      secureFile: "${{ parameters.bastion_file_name }}"
-
   - task: CmdLine@2
     displayName: "Set up SSH keys for bastion access"
     inputs:
       script: |
         mkdir -p ~/.ssh
         # Debug: Check if secure file exists
-        echo "Secure file path: $(sshKey.secureFilePath)"
-        ls -la $(sshKey.secureFilePath)
+        echo "Secure file path: ${{ parameters.bastion_file_path }}"
+        ls -la ${{ parameters.bastion_file_path }}
 
         # Copy the secure file to the proper location
-        cp $(sshKey.secureFilePath) ~/.ssh/id_rsa
+        cp ${{ parameters.bastion_file_path }} ~/.ssh/id_rsa
 
         # Debug: Check the copied file
         ls -la ~/.ssh/id_rsa

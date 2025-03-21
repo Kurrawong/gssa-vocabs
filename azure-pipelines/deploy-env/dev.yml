@@ -14,10 +14,16 @@ jobs:
       runOnce:
         deploy:
           steps:
+            - task: DownloadSecureFile@1
+              name: sshKey
+              displayName: "Download SSH Key"
+              inputs:
+                secureFile: bastion_dev_id_rsa
+
             - template: ../templates/deploy.yml
               parameters:
                 python_version: $(PYTHON_VERSION)
-                bastion_file_name: $(BASTION_SECURE_FILE)
+                bastion_ssh_key: $(sshKey.secureFilePath)
                 bastion_host: $(BASTION_HOST)
                 bastion_user: $(BASTION_USER)
                 fuseki_domain_name: $(FUSEKI_DOMAIN_NAME)
