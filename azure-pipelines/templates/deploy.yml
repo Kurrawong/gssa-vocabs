@@ -1,0 +1,172 @@
+parameters:
+  - name: python_version
+  - name: bastion_file_name
+  - name: bastion_host
+  - name: bastion_user
+  - name: fuseki_domain_name
+  - name: fuseki_username
+  - name: fuseki_password
+  - name: fuseki_dataset
+
+steps:
+  - checkout: self
+
+  - task: CmdLine@2
+    displayName: "Install Taskfile"
+    inputs:
+      script: |
+        sh -c "$(curl --location https://taskfile.dev/install.sh)" -- -d -b ~/.local/bin
+        echo '##vso[task.prependpath]~/.local/bin'
+        task --version
+
+  - task: CmdLine@2
+    displayName: "Install uv"
+    inputs:
+      script: |
+        curl -LsSf https://astral.sh/uv/install.sh | sh
+        echo '##vso[task.prependpath]~/.local/bin'
+        uv --version
+
+  - task: CmdLine@2
+    displayName: "Install python"
+    inputs:
+      script: |
+        uv install python@{{ parameters.python_version }}
+        python --version
+
+  - task: CmdLine@2
+    displayName: "Install kurra"
+    inputs:
+      script: |
+        uv tool install kurra
+        kurra --version
+
+  - task: CmdLine@2
+    displayName: "Get IP address of runner"
+    inputs:
+      script: |
+        curl ifconfig.me
+
+  - task: DownloadSecureFile@1
+    name: sshKey
+    displayName: "Download SSH Key"
+    inputs:
+      secureFile: "{{ parameters.bastion_file_name }}"
+
+  - task: CmdLine@2
+    displayName: "Set up SSH keys for bastion access"
+    inputs:
+      script: |
+        mkdir -p ~/.ssh
+        # Debug: Check if secure file exists
+        echo "Secure file path: $(sshKey.secureFilePath)"
+        ls -la $(sshKey.secureFilePath)
+
+        # Copy the secure file to the proper location
+        cp $(sshKey.secureFilePath) ~/.ssh/id_rsa
+
+        # Debug: Check the copied file
+        ls -la ~/.ssh/id_rsa
+
+        chmod 600 ~/.ssh/id_rsa
+
+        # Debug: Check permissions after chmod
+        ls -la ~/.ssh/id_rsa
+
+        # Debug: Check bastion host value
+        echo "Bastion host: {{ parameters.bastion_host }}"
+
+        ssh-keyscan -H {{ parameters.bastion_host }} >> ~/.ssh/known_hosts
+
+        # Debug: Check known_hosts file
+        cat ~/.ssh/known_hosts
+
+  - task: CmdLine@2
+    displayName: "Set up SSH tunnel to Fuseki"
+    inputs:
+      script: |
+        echo "Target Fuseki host: {{ parameters.fuseki_domain_name }}"
+
+        # Start SSH tunnel in background (using port 443 for HTTPS)
+        ssh -i ~/.ssh/id_rsa -L 8443:{{ parameters.fuseki_domain_name }}:443 -N -f {{ parameters.bastion_user }}@{{ parameters.bastion_host }}
+
+        # Test the connection
+        echo "Testing if tunnel port is open..."
+        if ! timeout 10 bash -c "until nc -z localhost 8443; do sleep 1; done"; then
+          echo "##vso[task.logissue type=error]SSH tunnel port 8443 is not accessible after 10 seconds"
+          # Try to get more diagnostic information
+          echo "SSH process status:"
+          ps -ef | grep ssh | grep 8443 || true
+          echo "SSH tunnel may have failed. Checking SSH process output:"
+          ssh -i ~/.ssh/id_rsa -L 8443:{{ parameters.fuseki_domain_name }}:443 -v {{ parameters.bastion_user }}@{{ parameters.bastion_host }} 2>&1 | head -20 || true
+          echo "##vso[task.complete result=Failed;]"
+          exit 1
+        fi
+        echo "SSH tunnel established successfully!"
+
+        # For debugging only - show running SSH processes
+        ps -ef | grep ssh
+
+  - task: CmdLine@2
+    displayName: "Test database connection through SSH tunnel"
+    inputs:
+      script: |
+        curl -k -u '{{ parameters.fuseki_username }}:{{ parameters.fuseki_password }}' -H "Host: {{ parameters.fuseki_domain_name }}" https://localhost:8443/$/ping
+
+  - task: CmdLine@2
+    displayName: "Upload background resources"
+    inputs:
+      script: |
+        kurra db upload background-resources/ 'https://localhost:8443/{{ parameters.fuseki_dataset }}' --username '{{ parameters.fuseki_username }}' --password '{{ parameters.fuseki_password }}' --disable-ssl-verification --host-header {{ parameters.fuseki_domain_name }}
+
+  - task: CmdLine@2
+    displayName: "Upload prez catalogue"
+    inputs:
+      script: |
+        kurra db upload prez/ 'https://localhost:8443/{{ parameters.fuseki_dataset }}' --username '{{ parameters.fuseki_username }}' --password '{{ parameters.fuseki_password }}' --disable-ssl-verification --host-header {{ parameters.fuseki_domain_name }}
+
+  - task: CmdLine@2
+    displayName: "Upload vocabularies"
+    inputs:
+      script: |
+        kurra db upload vocabularies/ 'https://localhost:8443/{{ parameters.fuseki_dataset }}' --username '{{ parameters.fuseki_username }}' --password '{{ parameters.fuseki_password }}' --disable-ssl-verification --host-header {{ parameters.fuseki_domain_name }}
+
+  - task: CmdLine@2
+    displayName: "Apply Prez SPARQL Update data expansion queries"
+    inputs:
+      script: |
+        # Run all SPARQL update queries in the prez-queries folder
+        for query_file in prez-queries/*.ru; do
+          echo "Applying query: $query_file"
+          
+          # Store the response and capture the status code
+          response=$(curl -X POST -H "Content-Type: application/sparql-update" --data-binary @"$query_file" \
+            -k \
+            -u '{{ parameters.fuseki_username }}:{{ parameters.fuseki_password }}' \
+            -H "Host: {{ parameters.fuseki_domain_name }}" \
+            -w "\n%{http_code}" \
+            https://localhost:8443/{{ parameters.fuseki_dataset }}/update)
+          
+          # Extract status code (last line) and response body (everything else)
+          status_code=$(echo "$response" | tail -n1)
+          response_body=$(echo "$response" | sed '$d')
+          
+          # Echo the response and status code
+          echo "Response status code: $status_code"
+          echo "Response body: $response_body"
+          
+          # Check if the query was successful (status code 2xx)
+          if [[ ! $status_code =~ ^2[0-9][0-9]$ ]]; then
+            echo "##vso[task.logissue type=error]Failed to apply query: $query_file. Status code: $status_code"
+            exit 1
+          fi
+        done
+
+  - task: CmdLine@2
+    displayName: "Cleanup SSH tunnel"
+    condition: always()
+    inputs:
+      script: |
+        # Kill any SSH tunnels matching our port pattern
+        pkill -f "ssh.*8443" || true
+        echo "SSH tunnel cleanup attempted"
