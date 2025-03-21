@@ -31,7 +31,7 @@ steps:
     displayName: "Install python"
     inputs:
       script: |
-        uv install python@{{ parameters.python_version }}
+        uv install python@${{ parameters.python_version }}
         python --version
 
   - task: CmdLine@2
@@ -51,7 +51,7 @@ steps:
     name: sshKey
     displayName: "Download SSH Key"
     inputs:
-      secureFile: "{{ parameters.bastion_file_name }}"
+      secureFile: "${{ parameters.bastion_file_name }}"
 
   - task: CmdLine@2
     displayName: "Set up SSH keys for bastion access"
@@ -74,9 +74,9 @@ steps:
         ls -la ~/.ssh/id_rsa
 
         # Debug: Check bastion host value
-        echo "Bastion host: {{ parameters.bastion_host }}"
+        echo "Bastion host: ${parameters.bastion_host}"
 
-        ssh-keyscan -H {{ parameters.bastion_host }} >> ~/.ssh/known_hosts
+        ssh-keyscan -H ${parameters.bastion_host} >> ~/.ssh/known_hosts
 
         # Debug: Check known_hosts file
         cat ~/.ssh/known_hosts
@@ -85,10 +85,10 @@ steps:
     displayName: "Set up SSH tunnel to Fuseki"
     inputs:
       script: |
-        echo "Target Fuseki host: {{ parameters.fuseki_domain_name }}"
+        echo "Target Fuseki host: ${parameters.fuseki_domain_name}"
 
         # Start SSH tunnel in background (using port 443 for HTTPS)
-        ssh -i ~/.ssh/id_rsa -L 8443:{{ parameters.fuseki_domain_name }}:443 -N -f {{ parameters.bastion_user }}@{{ parameters.bastion_host }}
+        ssh -i ~/.ssh/id_rsa -L 8443:${parameters.fuseki_domain_name}:443 -N -f ${parameters.bastion_user}@${parameters.bastion_host}
 
         # Test the connection
         echo "Testing if tunnel port is open..."
@@ -98,7 +98,7 @@ steps:
           echo "SSH process status:"
           ps -ef | grep ssh | grep 8443 || true
           echo "SSH tunnel may have failed. Checking SSH process output:"
-          ssh -i ~/.ssh/id_rsa -L 8443:{{ parameters.fuseki_domain_name }}:443 -v {{ parameters.bastion_user }}@{{ parameters.bastion_host }} 2>&1 | head -20 || true
+          ssh -i ~/.ssh/id_rsa -L 8443:${parameters.fuseki_domain_name}:443 -v ${parameters.bastion_user}@${parameters.bastion_host} 2>&1 | head -20 || true
           echo "##vso[task.complete result=Failed;]"
           exit 1
         fi
@@ -111,25 +111,25 @@ steps:
     displayName: "Test database connection through SSH tunnel"
     inputs:
       script: |
-        curl -k -u '{{ parameters.fuseki_username }}:{{ parameters.fuseki_password }}' -H "Host: {{ parameters.fuseki_domain_name }}" https://localhost:8443/$/ping
+        curl -k -u '${{ parameters.fuseki_username }}:${{ parameters.fuseki_password }}' -H "Host: ${parameters.fuseki_domain_name}" https://localhost:8443/$/ping
 
   - task: CmdLine@2
     displayName: "Upload background resources"
     inputs:
       script: |
-        kurra db upload background-resources/ 'https://localhost:8443/{{ parameters.fuseki_dataset }}' --username '{{ parameters.fuseki_username }}' --password '{{ parameters.fuseki_password }}' --disable-ssl-verification --host-header {{ parameters.fuseki_domain_name }}
+        kurra db upload background-resources/ 'https://localhost:8443/${{ parameters.fuseki_dataset }}' --username '${{ parameters.fuseki_username }}' --password '${{ parameters.fuseki_password }}' --disable-ssl-verification --host-header ${parameters.fuseki_domain_name}
 
   - task: CmdLine@2
     displayName: "Upload prez catalogue"
     inputs:
       script: |
-        kurra db upload prez/ 'https://localhost:8443/{{ parameters.fuseki_dataset }}' --username '{{ parameters.fuseki_username }}' --password '{{ parameters.fuseki_password }}' --disable-ssl-verification --host-header {{ parameters.fuseki_domain_name }}
+        kurra db upload prez/ 'https://localhost:8443/${{ parameters.fuseki_dataset }}' --username '${{ parameters.fuseki_username }}' --password '${{ parameters.fuseki_password }}' --disable-ssl-verification --host-header ${parameters.fuseki_domain_name}
 
   - task: CmdLine@2
     displayName: "Upload vocabularies"
     inputs:
       script: |
-        kurra db upload vocabularies/ 'https://localhost:8443/{{ parameters.fuseki_dataset }}' --username '{{ parameters.fuseki_username }}' --password '{{ parameters.fuseki_password }}' --disable-ssl-verification --host-header {{ parameters.fuseki_domain_name }}
+        kurra db upload vocabularies/ 'https://localhost:8443/${{ parameters.fuseki_dataset }}' --username '${{ parameters.fuseki_username }}' --password '${{ parameters.fuseki_password }}' --disable-ssl-verification --host-header ${parameters.fuseki_domain_name}
 
   - task: CmdLine@2
     displayName: "Apply Prez SPARQL Update data expansion queries"
@@ -142,10 +142,10 @@ steps:
           # Store the response and capture the status code
           response=$(curl -X POST -H "Content-Type: application/sparql-update" --data-binary @"$query_file" \
             -k \
-            -u '{{ parameters.fuseki_username }}:{{ parameters.fuseki_password }}' \
-            -H "Host: {{ parameters.fuseki_domain_name }}" \
+            -u '${{ parameters.fuseki_username }}:${{ parameters.fuseki_password }}' \
+            -H "Host: ${parameters.fuseki_domain_name}" \
             -w "\n%{http_code}" \
-            https://localhost:8443/{{ parameters.fuseki_dataset }}/update)
+            https://localhost:8443/${{ parameters.fuseki_dataset }}/update)
           
           # Extract status code (last line) and response body (everything else)
           status_code=$(echo "$response" | tail -n1)
