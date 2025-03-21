@@ -10,7 +10,7 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 
 INSERT {
-  GRAPH ?graph {
+  GRAPH <https://prez.dev/systemGraph> {
     ?iri dcterms:creator ?creator 
   }
 }
@@ -23,9 +23,9 @@ WHERE {
 
     ?iri a ?class_type ;
          schema:creator ?creator .
-    
-    FILTER NOT EXISTS {
-      ?iri dcterms:creator ?_creator
-    }
+  }
+
+  FILTER NOT EXISTS {
+    ?iri dcterms:creator ?_creator
   }
 }

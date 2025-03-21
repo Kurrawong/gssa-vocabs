@@ -10,7 +10,7 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 
 INSERT {
-  GRAPH ?graph {
+  GRAPH <https://prez.dev/systemGraph> {
     ?iri rdfs:label ?label 
   }
 }
@@ -24,9 +24,9 @@ WHERE {
 
     ?iri a ?class_type ;
          skos:prefLabel ?label .
-    
-    FILTER NOT EXISTS {
-      ?iri rdfs:label ?label
-    }
+  }
+
+  FILTER NOT EXISTS {
+    ?iri rdfs:label ?label
   }
 }

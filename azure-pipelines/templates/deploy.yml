@@ -102,12 +102,6 @@ steps:
         curl -k -H "Host: ${{ parameters.fuseki_domain_name }}" -u '${{ parameters.fuseki_username }}:${{ parameters.fuseki_password }}' https://localhost:8443/$/ping
 
   - task: CmdLine@2
-    displayName: "Drop dataset data"
-    inputs:
-      script: |
-        curl -k -H "Host: ${{ parameters.fuseki_domain_name }}" -H "Content-Type: application/sparql-update" -u '${{ parameters.fuseki_username }}:${{ parameters.fuseki_password }}' --data 'DROP ALL' https://localhost:8443/${{ parameters.fuseki_dataset }}/update
-
-  - task: CmdLine@2
     displayName: "Upload background resources"
     inputs:
       script: |
@@ -126,7 +120,13 @@ steps:
         kurra db upload vocabularies/ 'https://localhost:8443/${{ parameters.fuseki_dataset }}' --username '${{ parameters.fuseki_username }}' --password '${{ parameters.fuseki_password }}' --disable-ssl-verification --host-header ${{ parameters.fuseki_domain_name }}
 
   - task: CmdLine@2
-    displayName: "Apply Prez SPARQL Update data expansion queries"
+    displayName: "Drop Prez system graph"
+    inputs:
+      script: |
+        curl -k -H "Host: ${{ parameters.fuseki_domain_name }}" -H "Content-Type: application/sparql-update" -u '${{ parameters.fuseki_username }}:${{ parameters.fuseki_password }}' --data 'DROP GRAPH <https://prez.dev/systemGraph>' https://localhost:8443/${{ parameters.fuseki_dataset }}/update
+
+  - task: CmdLine@2
+    displayName: "Apply Prez SPARQL Update data expansion into the Prez system graph"
     inputs:
       script: |
         # Run all SPARQL update queries in the prez-queries folder

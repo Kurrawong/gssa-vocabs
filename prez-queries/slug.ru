@@ -9,7 +9,7 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 
 INSERT {
-  GRAPH ?graph {
+  GRAPH <https://prez.dev/systemGraph> {
     ?iri dcterms:identifier ?identifier 
   }
 }
