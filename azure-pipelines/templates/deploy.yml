@@ -1,13 +1,11 @@
 parameters:
   - name: python_version
   - name: bastion_file_path
-    secret: true
   - name: bastion_host
   - name: bastion_user
   - name: fuseki_domain_name
   - name: fuseki_username
   - name: fuseki_password
-    secret: true
   - name: fuseki_dataset
 
 steps:
