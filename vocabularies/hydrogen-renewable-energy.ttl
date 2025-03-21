@@ -1,9 +1,32 @@
-PREFIX : <https://linked.data.gov.au/def/mer-doc-types/>
+PREFIX : <https://linked.data.gov.au/def/hydrogen-and-renewable-energy-information-sheet/>
 PREFIX agldwgstatus: <https://linked.data.gov.au/def/reg-statuses/>
-PREFIX cs: <https://linked.data.gov.au/def/mer-doc-types>
+PREFIX cs: <https://linked.data.gov.au/def/hydrogen-and-renewable-energy-information-sheet>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX reg: <http://purl.org/linked-data/registry#>
 PREFIX sdo: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+cs:
+  a skos:ConceptScheme ;
+  reg:status astatus:stable ;
+  skos:definition "Hydrogen and Renewable Energy information relevant to industry and community."@en ;
+  skos:prefLabel "IS HRE"@en ;
+  schema:creator <https://linked.data.gov.au/org/mer> ;
+  schema:dateCreated "2025-02-25"^^xsd:date ;
+  schema:dateModified "2025-02-25"^^xsd:date ;
+  schema:issued "2025-02-25"^^xsd:date ;
+  schema:license <https://purl.org/NET/rdflicense/cc-by4.0> ;
+  schema:publisher <https://linked.data.gov.au/org/mer> ;
+  schema:rights "© Department for Energy and Mining, 2025"@en ;
+
+
+:basalt
+  a skos:Concept ;
+  reg:status astatus:stable ;
+  rdfs:isDefinedBy cs: ;
+  skos:definition "A description of basalt"@en ;
+  skos:inScheme cs: ;
+  skos:prefLabel "Basalt"@en ;
+  skos:topConceptOf cs: ;
