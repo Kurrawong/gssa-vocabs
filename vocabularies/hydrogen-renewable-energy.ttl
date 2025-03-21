@@ -20,7 +20,7 @@ cs:
   schema:license <https://purl.org/NET/rdflicense/cc-by4.0> ;
   schema:publisher <https://linked.data.gov.au/org/mer> ;
   schema:rights "© Department for Energy and Mining, 2025"@en ;
-
+.
 
 :basalt
   a skos:Concept ;
@@ -30,3 +30,4 @@ cs:
   skos:inScheme cs: ;
   skos:prefLabel "Basalt"@en ;
   skos:topConceptOf cs: ;
+.
