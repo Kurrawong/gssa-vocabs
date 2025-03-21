@@ -42,12 +42,6 @@ steps:
         kurra --version
 
   - task: CmdLine@2
-    displayName: "Get IP address of runner"
-    inputs:
-      script: |
-        curl ifconfig.me
-
-  - task: CmdLine@2
     displayName: "Set up SSH keys for bastion access"
     inputs:
       script: |
@@ -105,7 +99,13 @@ steps:
     displayName: "Test database connection through SSH tunnel"
     inputs:
       script: |
-        curl -k -u '${{ parameters.fuseki_username }}:${{ parameters.fuseki_password }}' -H "Host: ${{ parameters.fuseki_domain_name }}" https://localhost:8443/$/ping
+        curl -k -H "Host: ${{ parameters.fuseki_domain_name }}" -u '${{ parameters.fuseki_username }}:${{ parameters.fuseki_password }}' https://localhost:8443/$/ping
+
+  - task: CmdLine@2
+    displayName: "Drop dataset data"
+    inputs:
+      script: |
+        curl -k -H "Host: ${{ parameters.fuseki_domain_name }}" -H "Content-Type: application/sparql-update" --data 'DROP ALL' https://localhost:8443/${{ parameters.fuseki_dataset }}/update
 
   - task: CmdLine@2
     displayName: "Upload background resources"
@@ -134,7 +134,7 @@ steps:
           echo "Applying query: $query_file"
           
           # Store the response and capture the status code
-          response=$(curl -X POST -H "Content-Type: application/sparql-update" --data-binary @"$query_file" \
+          response=$(curl -H "Content-Type: application/sparql-update" --data-binary @"$query_file" \
             -k \
             -u '${{ parameters.fuseki_username }}:${{ parameters.fuseki_password }}' \
             -H "Host: ${{ parameters.fuseki_domain_name }}" \
