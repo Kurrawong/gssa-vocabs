@@ -145,7 +145,7 @@ jobs:
                     echo "Applying query: $query_file"
                     
                     # Store the response and capture the status code
-                    response=$(curl -X POST -H "Content-Type: application/sparql-update" -d @"$query_file" \
+                    response=$(curl -X POST -H "Content-Type: application/sparql-update" --data-binary @"$query_file" \
                       -k \
                       -u '$(FUSEKI_USERNAME):$(FUSEKI_PASSWORD)' \
                       -H "Host: $(FUSEKI_DOMAIN_NAME)" \
