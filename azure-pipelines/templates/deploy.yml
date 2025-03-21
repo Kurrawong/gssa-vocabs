@@ -51,8 +51,7 @@ steps:
     name: sshKey
     displayName: "Download SSH Key"
     inputs:
-      # secureFile: "${{ parameters.bastion_file_name }}"
-      secureFile: bastion_dev_id_rsa
+      secureFile: "${{ parameters.bastion_file_name }}"
 
   - task: CmdLine@2
     displayName: "Set up SSH keys for bastion access"
