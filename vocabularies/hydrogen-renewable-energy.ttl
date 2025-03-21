@@ -1,5 +1,5 @@
 PREFIX : <https://linked.data.gov.au/def/hydrogen-and-renewable-energy-information-sheet/>
-PREFIX agldwgstatus: <https://linked.data.gov.au/def/reg-statuses/>
+PREFIX astatus: <https://linked.data.gov.au/def/reg-statuses/>
 PREFIX cs: <https://linked.data.gov.au/def/hydrogen-and-renewable-energy-information-sheet>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
