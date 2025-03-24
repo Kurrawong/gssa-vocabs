@@ -6,6 +6,7 @@ trigger:
 jobs:
   - deployment: vocabs_dev_deployment
     environment: vocabs-dev
+    timeoutInMinutes: 10
     pool:
       vmImage: "ubuntu-latest"
     variables:
