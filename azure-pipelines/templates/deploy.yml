@@ -113,7 +113,7 @@ steps:
     timeoutInMinutes: 1
     inputs:
       script: |
-        curl -k -H "Host: ${{ parameters.fuseki_domain_name }}" -H "Content-Type: application/sparql-update" --data 'DROP ALL' https://localhost:8443/${{ parameters.fuseki_dataset }}/update
+        curl -k -H "Host: ${{ parameters.fuseki_domain_name }}" -H "Content-Type: application/sparql-update" -u '${{ parameters.fuseki_username }}:${{ parameters.fuseki_password }}' --data 'DROP ALL' https://localhost:8443/${{ parameters.fuseki_dataset }}/update
 
   - task: CmdLine@2
     displayName: "Upload background resources"
