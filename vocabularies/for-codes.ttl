@@ -1490,7 +1490,7 @@ cs:
     prov:qualifiedDerivation
         [
             prov:entity <https://linked.data.gov.au/def/anzsrc-for> ;
-            prov:hadRole <https://linked.data.gov.au/def/vocab-derivation-modes/subsetting-and-extension> ;
+            prov:hadRole <https://linked.data.gov.au/def/vocdermods/subsetting-and-extension> ;
         ] ;
     schema:citation "https://linked.data.gov.au/def/anzsrc-for"^^xsd:anyURI ;
     schema:creator <https://linked.data.gov.au/org/mer> ;
