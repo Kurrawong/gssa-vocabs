@@ -109,6 +109,13 @@ steps:
         curl -k -H "Host: ${{ parameters.fuseki_domain_name }}" -u '${{ parameters.fuseki_username }}:${{ parameters.fuseki_password }}' https://localhost:8443/$/ping
 
   - task: CmdLine@2
+    displayName: "Drop dataset data"
+    timeoutInMinutes: 1
+    inputs:
+      script: |
+        curl -k -H "Host: ${{ parameters.fuseki_domain_name }}" -H "Content-Type: application/sparql-update" --data 'DROP ALL' https://localhost:8443/${{ parameters.fuseki_dataset }}/update
+
+  - task: CmdLine@2
     displayName: "Upload background resources"
     timeoutInMinutes: 5
     inputs:
