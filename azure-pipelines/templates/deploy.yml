@@ -13,6 +13,7 @@ steps:
 
   - task: CmdLine@2
     displayName: "Install Taskfile"
+    timeoutInMinutes: 1
     inputs:
       script: |
         sh -c "$(curl --location https://taskfile.dev/install.sh)" -- -d -b ~/.local/bin
@@ -21,6 +22,7 @@ steps:
 
   - task: CmdLine@2
     displayName: "Install uv"
+    timeoutInMinutes: 1
     inputs:
       script: |
         curl -LsSf https://astral.sh/uv/install.sh | sh
@@ -29,6 +31,7 @@ steps:
 
   - task: CmdLine@2
     displayName: "Install python"
+    timeoutInMinutes: 1
     inputs:
       script: |
         uv install python@${{ parameters.python_version }}
@@ -36,6 +39,7 @@ steps:
 
   - task: CmdLine@2
     displayName: "Install kurra"
+    timeoutInMinutes: 1
     inputs:
       script: |
         uv tool install kurra
@@ -43,6 +47,7 @@ steps:
 
   - task: CmdLine@2
     displayName: "Set up SSH keys for bastion access"
+    timeoutInMinutes: 1
     inputs:
       script: |
         mkdir -p ~/.ssh
@@ -71,6 +76,7 @@ steps:
 
   - task: CmdLine@2
     displayName: "Set up SSH tunnel to Fuseki"
+    timeoutInMinutes: 1
     inputs:
       script: |
         echo "Target Fuseki host: ${{ parameters.fuseki_domain_name }}"
@@ -97,36 +103,42 @@ steps:
 
   - task: CmdLine@2
     displayName: "Test database connection through SSH tunnel"
+    timeoutInMinutes: 1
     inputs:
       script: |
         curl -k -H "Host: ${{ parameters.fuseki_domain_name }}" -u '${{ parameters.fuseki_username }}:${{ parameters.fuseki_password }}' https://localhost:8443/$/ping
 
   - task: CmdLine@2
     displayName: "Upload background resources"
+    timeoutInMinutes: 5
     inputs:
       script: |
         kurra db upload background-resources/ 'https://localhost:8443/${{ parameters.fuseki_dataset }}' --username '${{ parameters.fuseki_username }}' --password '${{ parameters.fuseki_password }}' --disable-ssl-verification --host-header ${{ parameters.fuseki_domain_name }}
 
   - task: CmdLine@2
     displayName: "Upload prez catalogue"
+    timeoutInMinutes: 5
     inputs:
       script: |
         kurra db upload prez/ 'https://localhost:8443/${{ parameters.fuseki_dataset }}' --username '${{ parameters.fuseki_username }}' --password '${{ parameters.fuseki_password }}' --disable-ssl-verification --host-header ${{ parameters.fuseki_domain_name }}
 
   - task: CmdLine@2
     displayName: "Upload vocabularies"
+    timeoutInMinutes: 5
     inputs:
       script: |
         kurra db upload vocabularies/ 'https://localhost:8443/${{ parameters.fuseki_dataset }}' --username '${{ parameters.fuseki_username }}' --password '${{ parameters.fuseki_password }}' --disable-ssl-verification --host-header ${{ parameters.fuseki_domain_name }}
 
   - task: CmdLine@2
     displayName: "Drop Prez system graph"
+    timeoutInMinutes: 1
     inputs:
       script: |
         curl -k -H "Host: ${{ parameters.fuseki_domain_name }}" -H "Content-Type: application/sparql-update" -u '${{ parameters.fuseki_username }}:${{ parameters.fuseki_password }}' --data 'DROP GRAPH <https://prez.dev/systemGraph>' https://localhost:8443/${{ parameters.fuseki_dataset }}/update
 
   - task: CmdLine@2
     displayName: "Apply Prez SPARQL Update data expansion into the Prez system graph"
+    timeoutInMinutes: 5
     inputs:
       script: |
         # Run all SPARQL update queries in the prez-queries folder
@@ -158,6 +170,7 @@ steps:
 
   - task: CmdLine@2
     displayName: "Cleanup SSH tunnel"
+    timeoutInMinutes: 1
     condition: always()
     inputs:
       script: |
