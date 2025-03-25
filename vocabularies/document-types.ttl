@@ -466,7 +466,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "Inspector of Mines reports published from 1899 to 1945."@en ;
     skos:inScheme cs: ;
     skos:notation "IMR"^^:samrefReference ;
-    skos:prefLabel "Inspector Of Mines Report"@en ;
+    skos:prefLabel "Inspector of Mines Report"@en ;
 .
 
 :letter-book
@@ -485,7 +485,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:broader :departmental-publication-closed-series ;
     skos:definition "Mineral and Energy Resources Annual Review (2000:2003)"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "Mineral And Energy Resources Annual Review"@en ;
+    skos:prefLabel "Mineral and Energy Resources Annual Review"@en ;
 .
 
 :mineral-exploration
@@ -587,7 +587,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "Mines and Energy Review:(1904:1988):superseded by MESA Journal"@en ;
     skos:inScheme cs: ;
     skos:notation "MER"^^:samrefReference ;
-    skos:prefLabel "Mines And Energy Review"@en ;
+    skos:prefLabel "Mines and Energy Review"@en ;
 .
 
 :mining-environmental-program
@@ -654,7 +654,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "Record of Mines (1899:1936)"@en ;
     skos:inScheme cs: ;
     skos:notation "RM"^^:samrefReference ;
-    skos:prefLabel "Record Of Mine"@en ;
+    skos:prefLabel "Record of Mine"@en ;
 .
 
 :report-of-investigation
@@ -664,7 +664,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "Report of Investigations (1954:1999)"@en ;
     skos:inScheme cs: ;
     skos:notation "RI"^^:samrefReference ;
-    skos:prefLabel "Report Of Investigation"@en ;
+    skos:prefLabel "Report of Investigation"@en ;
 .
 
 :special-publication
@@ -707,7 +707,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "The South Australia MESA Journal  publication detailing activities of the Geological Survey of South Australian, government initiatives and news relating to the mineral and energy resource sectors"@en ;
     skos:inScheme cs: ;
     skos:notation "MESAJ"^^:samrefReference ;
-    skos:prefLabel "Mesa Journal"@en ;
+    skos:prefLabel "MESA Journal"@en ;
 .
 
 <https://linked.data.gov.au/org/mer>
