@@ -776,7 +776,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Legislation, policies, and guidelines to regulate and aid in mineral exploration and mining operations in South Australia under the Mines and Works Inspection Act 1920 and Opal Mining Act 1995, Mining Act 1971 and associated regulations, and Petroleum and Geothermal Act 2000 of South Australia"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "Legislation And Policy"@en ;
+    skos:prefLabel "Legislation and Policy"@en ;
     skos:topConceptOf cs: ;
 .
 
