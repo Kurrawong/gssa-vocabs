@@ -3,7 +3,7 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
 PREFIX sdo: <https://schema.org/>
 
 
-<https://linked.data.gov.au/org/mer>
+<https://catalogue.linked.data.gov.au/org/gssa>
     rdfs:label "SA Minerals & Energy Resources" ;
 .
 

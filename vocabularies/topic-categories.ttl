@@ -82,7 +82,7 @@ Examples: hydroelectricity, geothermal, solar and nuclear sources of energy, wat
     schema:citation "Presented in the original standard's codelist"@en ;
 .
 
-<https://linked.data.gov.au/org/mer>
+<https://catalogue.linked.data.gov.au/org/gssa>
     a schema:Organization ;
     schema:name "SA Minerals & Energy Resources" ;
     schema:url "https://www.energymining.sa.gov.au/industry/geological-survey"^^xsd:anyURI ;
@@ -106,11 +106,11 @@ this-cs:
             prov:hadRole <https://linked.data.gov.au/def/vocdermods/subsetting> ;
         ] ;
     schema:citation "Derived from http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation/code/MD_TopicCategoryCode"@en ;
-    schema:creator <https://linked.data.gov.au/org/mer> ;
+    schema:creator <https://catalogue.linked.data.gov.au/org/gssa> ;
     schema:dateCreated "2022-12-04"^^xsd:date ;
     schema:dateModified "2024-08-26"^^xsd:date ;
     schema:issued "2022-12-04"^^xsd:date ;
     schema:license <https://purl.org/NET/rdflicense/cc-by4.0> ;
-    schema:publisher <https://linked.data.gov.au/org/mer> ;
+    schema:publisher <https://catalogue.linked.data.gov.au/org/gssa> ;
     schema:rights "© Department for Energy and Mining, 2022"@en ;
 .
