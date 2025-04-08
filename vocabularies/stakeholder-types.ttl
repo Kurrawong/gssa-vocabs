@@ -100,7 +100,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://catalogue.linked.data.gov.au/org/gssa>
     a schema:Organization ;
-    schema:name "SA Minerals & Energy Resources" ;
+    schema:name "The Geological Survey of South Australia" ;
     schema:url "https://www.energymining.sa.gov.au/industry/geological-survey"^^xsd:anyURI ;
 .
 
