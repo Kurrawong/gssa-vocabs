@@ -1,6 +1,6 @@
 # MER's Vocabularies
 
-This repository contains the source files of the Geological Survey of South Australia (GSSA) within Minerals and Energy Resources ([MER](https://www.energymining.sa.gov.au/industry/geological-survey)).
+This repository contains the source files of the Geological Survey of South Australia (GSSA) ([GSSA](https://www.energymining.sa.gov.au/industry/geological-survey)) within The Department for Energy and Mining ([DEM](https://www.energymining.sa.gov.au/)).
 
 These vocabularies are presented as [Simple Knowledge Organization System (SKOS)](https://www.w3.org/TR/skos-reference/) vocabularies online.
 

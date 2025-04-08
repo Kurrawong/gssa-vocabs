@@ -1293,7 +1293,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:topConceptOf cs: ;
 .
 
-<https://linked.data.gov.au/org/mer>
+<https://catalogue.linked.data.gov.au/org/gssa>
     a schema:Organization ;
     schema:name "Geological Survey of South Australia" ;
     schema:url "https://www.energymining.sa.gov.au/industry/geological-survey"^^xsd:anyURI ;
@@ -1533,11 +1533,11 @@ cs:
         :yoolperlunna-inlier ;
     skos:prefLabel "SA Geological Features"@en ;
     schema:citation "This vocabulary was created in 2022 by and for the MER to support its data catalogue."@en ;
-    schema:creator <https://linked.data.gov.au/org/mer> ;
+    schema:creator <https://catalogue.linked.data.gov.au/org/gssa> ;
     schema:dateCreated "2022-12-02"^^xsd:date ;
     schema:dateModified "2024-08-26"^^xsd:date ;
     schema:issued "2022-12-02"^^xsd:date ;
     schema:license <https://purl.org/NET/rdflicense/cc-by4.0> ;
-    schema:publisher <https://linked.data.gov.au/org/mer> ;
+    schema:publisher <https://catalogue.linked.data.gov.au/org/gssa> ;
     schema:rights "© Department for Energy and Mining, 2022"@en ;
 .

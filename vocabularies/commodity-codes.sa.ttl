@@ -3851,9 +3851,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "https://cgi-iugs.org/project/geoscienceterminology/"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/org/mer>
+<https://catalogue.linked.data.gov.au/org/gssa>
     a schema:Organization ;
-    schema:name "SA Minerals & Energy Resources" ;
+    schema:name "The Geological Survey of South Australia" ;
     schema:url "https://www.energymining.sa.gov.au/industry/geological-survey"^^xsd:anyURI ;
 .
 
@@ -4956,5 +4956,5 @@ this-cs:
     schema:creator <https://linked.data.gov.au/org/cgi-gtwg> ;
     schema:dateCreated "2022-12-05"^^xsd:date ;
     schema:dateModified "2024-08-26"^^xsd:date ;
-    schema:publisher <https://linked.data.gov.au/org/mer> ;
+    schema:publisher <https://catalogue.linked.data.gov.au/org/gssa> ;
 .
