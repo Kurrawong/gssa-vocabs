@@ -104,12 +104,12 @@ cs:
     reg:status astatus:stable ;
     skos:definition "MER's rock types"@en ;
     skos:prefLabel "MER Rock Types"@en ;
-    schema:creator <https://catalogue.linked.data.gov.au/org/gssa> ;
+    schema:creator <https://linked.data.gov.au/org/gssa> ;
     schema:dateCreated "2025-02-25"^^xsd:date ;
     schema:dateModified "2025-02-25"^^xsd:date ;
     schema:issued "2025-02-25"^^xsd:date ;
     schema:license <https://purl.org/NET/rdflicense/cc-by4.0> ;
-    schema:publisher <https://catalogue.linked.data.gov.au/org/gssa> ;
+    schema:publisher <https://linked.data.gov.au/org/gssa> ;
     schema:rights "© Department for Energy and Mining, 2025"@en ;
 .
 ```

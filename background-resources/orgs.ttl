@@ -3,7 +3,7 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
 PREFIX sdo: <https://schema.org/>
 
 
-<https://catalogue.linked.data.gov.au/org/gssa>
+<https://linked.data.gov.au/org/gssa>
     rdfs:label "The Geological Survey of South Australia" ;
 .
 
