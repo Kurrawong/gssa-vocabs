@@ -152,7 +152,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 :legislation-and-guidance
     a skos:Collection ;
     skos:definition "All Legislation and Guidance document types"@en ;
+    skos:editorialNote "The members of this collection are generated from MER Document Types vocabulary."@en ;
     skos:inScheme cs: ;
+    skos:member :energy-information-sheet ;
     skos:prefLabel "Legislation and Guidance document types"@en ;
 .
 
