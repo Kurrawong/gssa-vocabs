@@ -153,14 +153,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a skos:Collection ;
     skos:definition "All Legislation and Guidance document types"@en ;
     skos:inScheme cs: ;
-    skos:member
-        :energy-information-sheet ,
-        :energy-policy ,
-        :energy-regulatory-guideline ,
-        :mineral-information-sheet ,
-        :mineral-ministerial-determination ,
-        :mineral-policy ,
-        :mineral-regulatory-guideline ;
     skos:prefLabel "Legislation and Guidance document types"@en ;
 .
 
