@@ -148,8 +148,8 @@ steps:
     timeoutInMinutes: 5
     inputs:
       script: |
-        # Run all SPARQL update queries in the prez-queries folder
-        for query_file in prez-queries/*.ru; do
+        # Run all SPARQL update queries in the prez-queries folder and its subdirectories
+        find prez-queries -type f -name "*.ru" | while read query_file; do
           echo "Applying query: $query_file"
           
           # Store the response and capture the status code
