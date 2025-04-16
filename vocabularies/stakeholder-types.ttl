@@ -98,10 +98,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:topConceptOf cs: ;
 .
 
-<https://linked.data.gov.au/org/gssa>
+<https://linked.data.gov.au/org/dem>
     a schema:Organization ;
-    schema:name "The Geological Survey of South Australia" ;
-    schema:url "https://www.energymining.sa.gov.au/industry/geological-survey"^^xsd:anyURI ;
+    schema:name "The Department for Energy and Mining (DEM)" ;
+    schema:url "https://www.energymining.sa.gov.au"^^xsd:anyURI ;
 .
 
 cs:
@@ -121,7 +121,7 @@ cs:
       :other ;
     skos:prefLabel "MER Stakeholder Types"@en ;
     schema:citation "Created by MER in 2023 for the TNS portal project" ;
-    schema:creator <https://linked.data.gov.au/org/gssa> ;
+    schema:creator <https://linked.data.gov.au/org/dem> ;
     schema:dateCreated "2022-12-05"^^xsd:date ;
     schema:dateModified "2023-05-04"^^xsd:date ;
     schema:issued "2022-12-05"^^xsd:date ;
