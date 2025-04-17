@@ -365,6 +365,12 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://www.energymining.sa.gov.au"^^xsd:anyURI ;
 .
 
+<https://linked.data.gov.au/org/gssa>
+    a schema:Organization ;
+    schema:name "The Geological Survey of South Australia" ;
+    schema:url "https://www.energymining.sa.gov.au/industry/geological-survey"^^xsd:anyURI ;
+.
+
 :M
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;

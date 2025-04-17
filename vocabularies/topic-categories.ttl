@@ -88,6 +88,12 @@ Examples: hydroelectricity, geothermal, solar and nuclear sources of energy, wat
     schema:url "https://www.energymining.sa.gov.au/industry/geological-survey"^^xsd:anyURI ;
 .
 
+<https://linked.data.gov.au/org/dem>
+    a schema:Organization ;
+    schema:name "The Department for Energy and Mining (DEM)" ;
+    schema:url "https://www.energymining.sa.gov.au"^^xsd:anyURI ;
+.
+
 this-cs:
     a skos:ConceptScheme ;
     reg:status astatus:stable ;
