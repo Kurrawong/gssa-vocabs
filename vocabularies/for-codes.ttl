@@ -1281,6 +1281,12 @@ merfor:renewable-energy
     schema:citation "Created by MER for this vocabulary" ;
 .
 
+<https://linked.data.gov.au/org/dem>
+    a schema:Organization ;
+    schema:name "The Department for Energy and Mining (DEM)" ;
+    schema:url "https://www.energymining.sa.gov.au"^^xsd:anyURI ;
+.
+
 <https://linked.data.gov.au/org/gssa>
     a schema:Organization ;
     schema:name "The Geological Survey of South Australia" ;
@@ -1493,7 +1499,7 @@ cs:
             prov:hadRole <https://linked.data.gov.au/def/vocdermods/subsetting-and-extension> ;
         ] ;
     schema:citation "https://linked.data.gov.au/def/anzsrc-for"^^xsd:anyURI ;
-    schema:creator <https://linked.data.gov.au/org/gssa> ;
+    schema:creator <https://linked.data.gov.au/org/dem> ;
     schema:dateCreated "2021-09-14"^^xsd:date ;
     schema:dateModified "2024-08-26"^^xsd:date ;
     schema:issued "2022-11-01"^^xsd:date ;

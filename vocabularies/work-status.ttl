@@ -77,9 +77,15 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:topConceptOf cs: ;
 .
 
+<https://linked.data.gov.au/org/dem>
+    a schema:Organization ;
+    schema:name "The Department for Energy and Mining (DEM)" ;
+    schema:url "https://www.energymining.sa.gov.au"^^xsd:anyURI ;
+.
+
 <https://linked.data.gov.au/org/gssa>
     a schema:Organization ;
-    schema:name "Geological Survey of South Australia" ;
+    schema:name "The Geological Survey of South Australia" ;
     schema:url "https://www.energymining.sa.gov.au/industry/geological-survey"^^xsd:anyURI ;
 .
 
@@ -100,7 +106,7 @@ cs:
     schema:citation
         "http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation/code/MD_TopicCategoryCode"^^xsd:anyURI ,
         "Created by MER in 2022 for the catalogue update project"@en ;
-    schema:creator <https://linked.data.gov.au/org/gssa> ;
+    schema:creator <https://linked.data.gov.au/org/dem> ;
     schema:dateCreated "2022-12-05"^^xsd:date ;
     schema:dateModified "2024-08-26"^^xsd:date ;
     schema:issued "2022-12-05"^^xsd:date ;

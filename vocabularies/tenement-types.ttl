@@ -359,6 +359,12 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:citation "Defined in the Petroleum and Geothermal Energy Act 2000" ;
 .
 
+<https://linked.data.gov.au/org/dem>
+    a schema:Organization ;
+    schema:name "The Department for Energy and Mining (DEM)" ;
+    schema:url "https://www.energymining.sa.gov.au"^^xsd:anyURI ;
+.
+
 <https://linked.data.gov.au/org/gssa>
     a schema:Organization ;
     schema:name "The Geological Survey of South Australia" ;
@@ -395,7 +401,7 @@ cs:
         :P ;
     skos:prefLabel "MER Tenement Types"@en ;
     schema:citation "Created by MER in 2022 for the catalogue update project"@en ;
-    schema:creator <https://linked.data.gov.au/org/gssa> ;
+    schema:creator <https://linked.data.gov.au/org/dem> ;
     schema:dateCreated "2022-12-06"^^xsd:date ;
     schema:dateModified "2024-08-26"^^xsd:date ;
     schema:issued "2022-12-06"^^xsd:date ;

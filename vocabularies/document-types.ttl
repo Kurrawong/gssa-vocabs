@@ -704,6 +704,12 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:prefLabel "MESA Journal"@en ;
 .
 
+<https://linked.data.gov.au/org/dem>
+    a schema:Organization ;
+    schema:name "The Department for Energy and Mining (DEM)" ;
+    schema:url "https://www.energymining.sa.gov.au"^^xsd:anyURI ;
+.
+
 <https://linked.data.gov.au/org/gssa>
     a schema:Organization ;
     schema:name "The Geological Survey of South Australia" ;
@@ -807,7 +813,7 @@ cs:
         :mineral-company-report ;
     skos:prefLabel "MER Document Types"@en ;
     schema:citation "This vocabulary was created in 2022 by and for the MER to support its data catalogue." ;
-    schema:creator <https://linked.data.gov.au/org/gssa> ;
+    schema:creator <https://linked.data.gov.au/org/dem> ;
     schema:dateCreated "2022-11-25"^^xsd:date ;
     schema:dateModified "2024-08-26"^^xsd:date ;
     schema:issued "2022-11-25"^^xsd:date ;
